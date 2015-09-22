@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-22 13:29+0200\n"
+"POT-Creation-Date: 2015-09-22 14:59+0200\n"
 "PO-Revision-Date: 2015-05-10 08:22+0000\n"
 "Last-Translator: Yongmin Hong <revi@fastlizard4.org>\n"
 "Language-Team: Korean <ko@li.org>\n"
@@ -102,7 +102,7 @@ msgstr "취소"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:371
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:261
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:155
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:160
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:100
@@ -133,14 +133,17 @@ msgstr "들여온 연락처"
 msgid "No contacts imported"
 msgstr "들여온 연락처 없음"
 
+#. TRANSLATORS: Indicates result of a single contact import.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:474
+#, fuzzy
+msgid "This contact is on Telegram."
+msgstr "%1 은(는) 현재 텔레그램에 없습니다"
+
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#. NOTE: Please KEEP ALL format strings! The first %1 in "%1This contact.." will actually
-#. be replaced with empty space, and is a workaround for a launchpad translations bug.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:475
+#: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:477
 #, fuzzy, qt-format
-msgid "%1This contact is on Telegram."
-msgid_plural "%1 out of %2 contacts are on Telegram."
-msgstr[0] "%1 은(는) 현재 텔레그램에 없습니다"
+msgid "%1 out of %2 contacts are on Telegram."
+msgstr "%1 은(는) 현재 텔레그램에 없습니다"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:41
 msgid "Select chat to forward messages"
@@ -330,7 +333,7 @@ msgstr "설정"
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:94
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:628
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:633
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:102
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
@@ -355,7 +358,7 @@ msgstr "메세지"
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:120
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:475
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:480
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:345
 msgid "Notifications"
 msgstr "알림"
@@ -378,7 +381,7 @@ msgstr "질문 물어보기"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:225
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:234
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:66
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:71
 msgid "online"
 msgstr "온라인"
 
@@ -386,7 +389,7 @@ msgstr "온라인"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:228
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:237
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:69
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:74
 #, qt-format
 msgid "last seen %1"
 msgstr "%1 에 마지막으로 접속함"
@@ -395,7 +398,7 @@ msgstr "%1 에 마지막으로 접속함"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:231
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:240
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:72
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:77
 #, fuzzy
 msgid "last seen recently"
 msgstr "%1 에 마지막으로 접속함"
@@ -404,7 +407,7 @@ msgstr "%1 에 마지막으로 접속함"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:234
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:243
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:75
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:80
 msgid "last seen within a week"
 msgstr ""
 
@@ -412,7 +415,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:237
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:246
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:78
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:83
 msgid "last seen within a month"
 msgstr ""
 
@@ -420,7 +423,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:240
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:249
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:81
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:86
 msgid "last seen a long time ago"
 msgstr ""
 
@@ -664,7 +667,7 @@ msgstr "회원 추가"
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:223
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:56
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:61
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr ""
@@ -672,43 +675,48 @@ msgstr ""
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:226
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:59
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:64
 #, fuzzy, qt-format
 msgid "%1 members"
 msgstr "%1/%2 회원"
 
-#. TRANSLATORS: %1 is a contact or list of contacts who are typing.
-#. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:266
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:47
+#. TRANSLATORS: Indicates in the chat header who is typing.
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:267
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:48
 #, fuzzy, qt-format
-msgid "%1 is typing..."
-msgid_plural "%1 are typing..."
-msgstr[0] "%1 이(가) 입력 중..."
+msgid "%1 is typing"
+msgstr "%1 이(가) 입력 중..."
+
+#. TRANSLATORS: Indicates in the chat header which contacts are typing.
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:270
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:51
+#, fuzzy, qt-format
+msgid "%1 are typing"
+msgstr "%1 이(가) 입력 중..."
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:330
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:335
 msgid "Unknown"
 msgstr "알 수 없음"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:340
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:345
 msgid "Mobile"
 msgstr ""
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:392
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:397
 #, qt-format
 msgid "@%1"
 msgstr ""
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:552
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:557
 msgid "Block user"
 msgstr "사용자 차단"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:615
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:620
 msgid "Remove from group"
 msgstr "그룹에서 제거"
 
@@ -795,7 +803,7 @@ msgstr "정말로 역사를 비우시겠습니까?"
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:203
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:50
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:55
 msgid "typing..."
 msgstr "입력 중..."
 
@@ -815,7 +823,7 @@ msgstr ""
 msgid "Deleted"
 msgstr "삭제"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:155
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:160
 msgid "Connecting..."
 msgstr "연결 중..."
 
