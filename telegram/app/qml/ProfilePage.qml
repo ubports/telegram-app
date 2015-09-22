@@ -227,14 +227,14 @@ Page {
                     }
                     return result;
                 } else {
-                    switch(user.status.classType)
+                    switch(profile_page.user.status.classType)
                     {
                     case userStatusType.typeUserStatusOnline:
                         // TRANSLATORS: Indicates when the contact was last seen.
                         return i18n.tr("online");
                     case userStatusType.typeUserStatusOffline:
                         // TRANSLATORS: %1 is the time when the person was last seen.
-                        return i18n.tr("last seen %1").arg(Time.formatLastSeen(i18n, user.status.wasOnline * 1000));
+                        return i18n.tr("last seen %1").arg(Time.formatLastSeen(i18n, profile_page.user.status.wasOnline * 1000));
                     case userStatusType.typeUserStatusRecently:
                         // TRANSLATORS: Indicates when the contact was last seen.
                         return i18n.tr("last seen recently");
@@ -255,7 +255,7 @@ Page {
             for( var i=0; i<list.length; i++ ) {
                 var uid = list[i]
                 var user = telegram.user(list[i])
-                var uname = user.firstName + " " + user.lastName
+                var uname = profile_page.user.firstName + " " + profile_page.user.lastName
                 result += uname.trim()
 
                 if( i < list.length-1 )

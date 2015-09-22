@@ -7,19 +7,13 @@ import Ubuntu.Content 1.0
 import TelegramQML 1.0
 
 import "qrc:/qml/components/"
+import "qrc:/qml/js/time.js" as Time
 
 Page {
     id: page
 
     property Telegram telegram
     property User user: telegram.user(telegram.me)
-
-    property real typeUserStatusOffline: 0x8c703f
-    property real typeUserStatusEmpty: 0x9d05049
-    property real typeUserStatusOnline: 0xedb93949
-    property real typeUserStatusRecently: 0xe26f42f1
-    property real typeUserStatusLastWeek: 0x7bf09fc
-    property real typeUserStatusLastMonth: 0x77ebc742
 
     property list<Action> actions: [
         Action {
@@ -226,28 +220,25 @@ Page {
             var result = "";
             switch(user.status.classType)
             {
-            case typeUserStatusRecently:
-                // TRANSLATORS: Refers to when the user was seen.
-                result = i18n.tr("Recently")
-                break;
-            case typeUserStatusLastMonth:
-                // TRANSLATORS: Refers to when the user was seen.
-                result = i18n.tr("Last Month")
-                break;
-            case typeUserStatusLastWeek:
-                // TRANSLATORS: Refers to when the user was seen.
-                result = i18n.tr("Last Week")
-                break;
-            case typeUserStatusOnline:
-                // TRANSLATORS: Refers to when the user was seen - currently is online.
-                result = i18n.tr("Online")
-                break;
-            case typeUserStatusOffline:
-                // TRANSLATORS: %1 is formatted date/time when the user was last seen.
-                result = i18n.tr("last seen %1").arg(Cutegram.getTimeString(CalendarConv.fromTime_t(user.status.wasOnline)))
-                break;
+            case userStatusType.typeUserStatusOnline:
+                // TRANSLATORS: Indicates when the contact was last seen.
+                return i18n.tr("online");
+            case userStatusType.typeUserStatusOffline:
+                // TRANSLATORS: %1 is the time when the person was last seen.
+                return i18n.tr("last seen %1").arg(Time.formatLastSeen(i18n, user.status.wasOnline * 1000));
+            case userStatusType.typeUserStatusRecently:
+                // TRANSLATORS: Indicates when the contact was last seen.
+                return i18n.tr("last seen recently");
+            case userStatusType.typeUserStatusLastWeek:
+                // TRANSLATORS: Indicates when the contact was last seen.
+                return i18n.tr("last seen within a week");
+            case userStatusType.typeUserStatusLastMonth:
+                // TRANSLATORS: Indicates when the contact was last seen.
+                return i18n.tr("last seen within a month");
+            default:
+                // TRANSLATORS: Indicates when the contact was last seen.
+                return i18n.tr("last seen a long time ago");
             }
-            return result;
         }
     }
 
