@@ -1,0 +1,48 @@
+i18n.
+_\(
+// no-i18n
+^import
+""
+" "
+"+"
+"/"
+"file://"
+"undefined"
+appId
+applicationName
+objectName
+console.log
+console.info
+console.warn
+Qt.openUrlExternally
+^[ \t]*color
+^[ \t]*iconName
+^[ \t]*fontSize
+^[ \t]*"url"
+^[ \t]*"handler"
+^[ \t]*"contentType"
+qDebug
+qCritical
+QSqlDatabase
+query\.prepare
+query\.bindValue
+record[\(\)]*\.indexOf
+add_column
+add_attribute_mapping
+add_attribute_value
+PreviewWidget
+_PATH
+#include
+#define
+extern
+# app specific:
+type ==
+://
+","
+appSettings
+phoneNumber
+"bad auth"
+AsemanApplication::settings
+# push specific:
+QJsonObject
+keys\(\).contains

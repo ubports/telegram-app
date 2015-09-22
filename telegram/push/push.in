@@ -1,0 +1,1 @@
+{"message":{"loc_key":"MESSAGE_TEXT","loc_args":["Karni","asdf"],"custom":{"msg_id":"37","from_id":"48674673"}},"notification":{"tag":"chat","card":{"summary":"Karni","body":"asdf","popup":true,"persist":true},"sound":"buzz.mp3","vibrate":{"pattern":[200,100],"duration":200,"repeat":2},"emblem-counter":{"count":2,"visible":true}}}

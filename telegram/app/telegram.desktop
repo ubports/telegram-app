@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=telegram %u
+_Name=Telegram
+Icon=telegram.png
+X-Ubuntu-Touch=true
+X-Ubuntu-Default-Department-ID=communication
+X-Ubuntu-Splash-Show-Header=false
+X-Ubuntu-Splash-Color=White
+_X-Ubuntu-Splash-Title=Telegram
+X-Ubuntu-Supported-Orientations=portrait

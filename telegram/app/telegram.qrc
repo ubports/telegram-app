@@ -1,0 +1,142 @@
+<RCC>
+    <qresource prefix="/">
+        <file>database/database.sqlite</file>
+        <file>database/profiles.sqlite</file>
+        <file>database/userdata.sqlite</file>
+
+        <file>images/telegram.png</file>
+        <file>images/telegram.svg</file>
+
+        <file>qml/telegram.qml</file>
+
+        <file>qml/AccountContactsPage.qml</file>
+        <file>qml/AccountDialogList.qml</file>
+        <file>qml/AccountDialogPage.qml</file>
+        <file>qml/AccountNamePage.qml</file>
+        <file>qml/AccountUsernamePage.qml</file>
+        <file>qml/AccountListFrame.qml</file>
+        <file>qml/AccountListItem.qml</file>
+        <file>qml/AccountList.qml</file>
+        <file>qml/AccountLoading.qml</file>
+        <file>qml/AccountMessageAction.qml</file>
+        <file>qml/AccountMessageItem.qml</file>
+        <file>qml/AccountMessageList.qml</file>
+        <file>qml/AccountMessageMedia.qml</file>
+        <file>qml/AccountMessageUpload.qml</file>
+        <file>qml/AccountPage.qml</file>
+        <file>qml/AccountSendMessage.qml</file>
+        <file>qml/AccountSettings.qml</file>
+        <file>qml/AddContactPage.qml</file>
+        <file>qml/AuthCodePage.qml</file>
+        <file>qml/AuthCountriesPage.qml</file>
+        <file>qml/AuthNumberPage.qml</file>
+        <file>qml/ClickableContactImage.qml</file>
+        <file>qml/ContactImage.qml</file>
+        <file>qml/FramedContactImage.qml</file>
+        <file>qml/IntroPage.qml</file>
+        <file>qml/IntroPageListModel.qml</file>
+        <file>qml/MediaPlayerItem.qml</file>
+        <file>qml/MessageLinkImage.qml</file>
+        <file>qml/MessageReplyItem.qml</file>
+        <file>qml/ProfilePage.qml</file>
+        <file>qml/TagSuggestionMenu.qml</file>
+
+        <file>qml/components/AccountPanel.qml</file>
+        <file>qml/components/Avatar.qml</file>
+        <file>qml/components/ContactImport.qml</file>
+        <file>qml/components/ColoredImage.qml</file>
+        <file>qml/components/DialogsListItem.qml</file>
+        <file>qml/components/MediaImport.qml</file>
+        <file>qml/components/MessagesListItem.qml</file>
+        <file>qml/components/MessageStatus.qml</file>
+        <file>qml/components/MultipleSelectionListView.qml</file>
+        <file>qml/components/MultipleSelectionVisualModel.qml</file>
+        <file>qml/components/PageHeaderHint.qml</file>
+        <file>qml/components/PageWithBottomEdge.qml</file>
+        <file>qml/components/SingleMediaViewer.qml</file>
+        <file>qml/components/SubtitledListItem.qml</file>
+        <file>qml/components/TelegramBubble.qml</file>
+        <file>qml/components/TelegramButton.qml</file>
+        <file>qml/components/TelegramContactsListItem.qml</file>
+        <file>qml/components/TelegramHeader.qml</file>
+        <file>qml/components/TelegramPage.qml</file>
+
+        <file>qml/components/listitems/ListItemWithActions.qml</file>
+        <file>qml/components/listitems/ListItemWithActionsCheckBox.qml</file>
+
+        <file>qml/js/avatar.js</file>
+        <file>qml/js/ba-linkify.js</file>
+        <file>qml/js/colors.js</file>
+        <file>qml/js/time.js</file>
+        <file>qml/js/version.js</file>
+
+
+        <file>qml/files/attach_document.png</file>
+        <file>qml/files/attach_gallery.png</file>
+        <file>qml/files/attach_location.png</file>
+        <file>qml/files/attachment_cancel.png</file>
+        <file>qml/files/attachment_download.png</file>
+        <file>qml/files/attachment_play.png</file>
+        <file>qml/files/attach_photo.png</file>
+        <file>qml/files/attach.png</file>
+        <file>qml/files/attach_video.png</file>
+        <file>qml/files/background_hd.jpg</file>
+        <file>qml/files/call.png</file>
+        <file>qml/files/check_double_white.png</file>
+        <file>qml/files/check_single_white.png</file>
+        <file>qml/files/conversation_bubble_arrow.png</file>
+        <file>qml/files/delete.png</file>
+        <file>qml/files/document.png</file>
+        <file>qml/files/down.png</file>
+        <file>qml/files/forward.png</file>
+        <file>qml/files/group_aqua.png</file>
+        <file>qml/files/group_blue.png</file>
+        <file>qml/files/group_green.png</file>
+        <file>qml/files/group_orange.png</file>
+        <file>qml/files/group_pink.png</file>
+        <file>qml/files/group.png</file>
+        <file>qml/files/group_red.png</file>
+        <file>qml/files/group_violet.png</file>
+        <file>qml/files/group_yellow.png</file>
+        <file>qml/files/intro1.png</file>
+        <file>qml/files/intro2.png</file>
+        <file>qml/files/intro3.png</file>
+        <file>qml/files/intro4.png</file>
+        <file>qml/files/intro5.png</file>
+        <file>qml/files/intro6.png</file>
+        <file>qml/files/intro7.png</file>
+        <file>qml/files/lock.png</file>
+        <file>qml/files/msg_clock_white.png</file>
+        <file>qml/files/menu_broadcast.png</file>
+        <file>qml/files/menu_contacts.png</file>
+        <file>qml/files/menu_help.png</file>
+        <file>qml/files/menu_invite.png</file>
+        <file>qml/files/menu_newgroup.png</file>
+        <file>qml/files/menu_secret.png</file>
+        <file>qml/files/menu_settings.png</file>
+        <file>qml/files/online.png</file>
+        <file>qml/files/phone_grey.png</file>
+        <file>qml/files/profile_list.png</file>
+        <file>qml/files/select-none.png</file>
+        <file>qml/files/send_disabled.png</file>
+        <file>qml/files/send.png</file>
+        <file>qml/files/symbol_lock.png</file>
+        <file>qml/files/symbol_group.png</file>
+        <file>qml/files/telegram_background.png</file>
+        <file>qml/files/user_aqua.png</file>
+        <file>qml/files/user_blue.png</file>
+        <file>qml/files/user_green.png</file>
+        <file>qml/files/user_orange.png</file>
+        <file>qml/files/user_pink.png</file>
+        <file>qml/files/user.png</file>
+        <file>qml/files/user_red.png</file>
+        <file>qml/files/user_violet.png</file>
+        <file>qml/files/user_yellow.png</file>
+
+        <file>qml/ui/dialogs/ConfirmationDialog.qml</file>
+        <file>qml/PickerPage.qml</file>
+        <file>qml/PreviewPage.qml</file>
+        <file>qml/UserNameSuggestionMenu.qml</file>
+    </qresource>
+</RCC>
+

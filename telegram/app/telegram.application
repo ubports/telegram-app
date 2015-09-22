@@ -1,0 +1,7 @@
+<application>
+    <services>
+        <service id="com.ubuntu.telegram_telegram">
+            <description>Get Telegram notifications with Ubuntu Push</description>
+        </service>
+    </services>
+</application>

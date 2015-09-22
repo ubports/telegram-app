@@ -1,0 +1,15 @@
+{
+    "policy_groups": [
+        "accounts",
+        "audio",
+        "video",
+        "networking",
+        "connectivity",
+        "content_exchange",
+        "content_exchange_source",
+        "push-notification-client",
+        "usermetrics"
+    ],
+    "policy_version": 1.3
+}
+
