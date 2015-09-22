@@ -1,22 +1,23 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Uyghur translation for libqtelegram
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the libqtelegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 12:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-05-26 04:38+0000\n"
+"Last-Translator: Gheyret T.Kenji <Unknown>\n"
+"Language-Team: Uyghur <ug@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2015-06-27 05:39+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:64
@@ -35,18 +36,18 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:29
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:84
 msgid "Contacts"
-msgstr ""
+msgstr "ئالاقەداشلار"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:41
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:93
 msgid "Search"
-msgstr ""
+msgstr "ئىزدە"
 
 #. TRANSLATORS: As in: add new contact
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:47
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:100
 msgid "Add"
-msgstr ""
+msgstr "قوش"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:58
@@ -56,8 +57,9 @@ msgstr ""
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:75
+#, fuzzy
 msgid "Search contacts..."
-msgstr ""
+msgstr "ئالاقەداش يوق"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:122
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:358
@@ -65,7 +67,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:273
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
-msgstr ""
+msgstr "تامام"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:205
@@ -93,7 +95,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
-msgstr ""
+msgstr "ئەمەلدىن قالدۇر"
 
 #. TRANSLATORS: Application name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:371
@@ -135,7 +137,6 @@ msgstr ""
 msgid "%1This contact is on Telegram."
 msgid_plural "%1 out of %2 contacts are on Telegram."
 msgstr[0] ""
-msgstr[1] ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:41
 msgid "Select chat to forward messages"
@@ -163,17 +164,17 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:53
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:240
 msgid "Copy"
-msgstr ""
+msgstr "كۆچۈر"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:60
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:246
 msgid "Forward"
-msgstr ""
+msgstr "ئالدى"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:67
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Delete"
-msgstr ""
+msgstr "ئۆچۈر"
 
 #. TRANSLATORS: 'Account' represents the label visible next to the phone number on the grey strip
 #. under page header, only if there are more than one account signed in in the application.
@@ -287,17 +288,17 @@ msgstr ""
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:303
 msgid "Photo"
-msgstr ""
+msgstr "سۈرەت"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:312
 msgid "Video"
-msgstr ""
+msgstr "سىن"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:322
 msgid "File"
-msgstr ""
+msgstr "ھۆججەت"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:537
 msgid "Close"
@@ -350,7 +351,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:475
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:345
 msgid "Notifications"
-msgstr ""
+msgstr "ئۇقتۇرۇشلار"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:159
 msgid "Send by Enter"
@@ -383,8 +384,9 @@ msgstr ""
 
 #. TRANSLATORS: Refers to when the user was seen - currently is online.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:243
+#, fuzzy
 msgid "Online"
-msgstr ""
+msgstr "توردا"
 
 #. TRANSLATORS: %1 is formatted date/time when the user was last seen.
 #. TRANSLATORS: %1 is the time when the person was last seen.
@@ -442,7 +444,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
 msgid "Done"
-msgstr ""
+msgstr "تامام"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:115
 msgid "Phone number (required)"
@@ -506,8 +508,9 @@ msgstr ""
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:158
+#, fuzzy
 msgid "Resend Code"
-msgstr ""
+msgstr "قايتا يوللا"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:174
 msgid "Request Call"
@@ -641,7 +644,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:66
 msgid "online"
-msgstr ""
+msgstr "توردا"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:240
@@ -679,7 +682,6 @@ msgstr ""
 msgid "%1 is typing..."
 msgid_plural "%1 are typing..."
 msgstr[0] ""
-msgstr[1] ""
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:330
@@ -736,35 +738,34 @@ msgstr ""
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:31
 msgid "Disabled"
-msgstr ""
+msgstr "ئىناۋەتسىز قىلىنغان"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:34
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 سېكۇنت"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:37
 msgid "1 minute"
-msgstr ""
+msgstr "%1 مىنۇت"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:40
 msgid "1 hour"
-msgstr ""
+msgstr "1 سائەت"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:43
 msgid "1 day"
-msgstr ""
+msgstr "1 كۈن"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:46
 msgid "1 week"
-msgstr ""
+msgstr "1 ھەپتە"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:51
 msgid "Leave chat"
@@ -801,12 +802,13 @@ msgstr ""
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#, fuzzy
 msgid "Deleted"
-msgstr ""
+msgstr "ئۆچۈر"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:155
 msgid "Connecting..."
-msgstr ""
+msgstr "باغلىنىۋاتىدۇ…"
 
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
@@ -819,7 +821,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:46
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
-msgstr ""
+msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -827,7 +829,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:35
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:49
 msgid "MMM d"
-msgstr ""
+msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:54
@@ -1116,3 +1118,18 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr ""
+
+#~ msgid "Next"
+#~ msgstr "كېيىنكى"
+
+#~ msgid "Unauthorized"
+#~ msgstr "سالاھىيىتى تەكشۈرۈلمىگەن"
+
+#~ msgid "Ok"
+#~ msgstr "تامام"
+
+#~ msgid "Text"
+#~ msgstr "تېكىست"
+
+#~ msgid "Not connected."
+#~ msgstr "باغلانمىغان."
