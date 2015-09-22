@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-22 14:59+0200\n"
+"POT-Creation-Date: 2015-09-22 16:27+0200\n"
 "PO-Revision-Date: 2015-06-07 10:13+0000\n"
 "Last-Translator: Anne <anneonyme017@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -102,7 +102,7 @@ msgstr "Annuler"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:371
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:261
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:160
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:100
@@ -382,7 +382,7 @@ msgstr "Poser une question"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:225
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:234
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:71
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:67
 msgid "online"
 msgstr "connecté"
 
@@ -390,7 +390,7 @@ msgstr "connecté"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:228
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:237
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:74
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
 msgstr "vu la dernière fois à %1"
@@ -399,7 +399,7 @@ msgstr "vu la dernière fois à %1"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:231
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:240
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:77
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:73
 #, fuzzy
 msgid "last seen recently"
 msgstr "vu la dernière fois à %1"
@@ -408,7 +408,7 @@ msgstr "vu la dernière fois à %1"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:234
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:243
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:80
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
 msgstr ""
 
@@ -416,7 +416,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:237
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:246
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:83
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
 msgstr ""
 
@@ -424,7 +424,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:240
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:249
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:86
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
 msgstr ""
 
@@ -675,7 +675,7 @@ msgstr "Ajouter un membre"
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:223
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:61
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr ""
@@ -683,21 +683,23 @@ msgstr ""
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:226
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:64
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:60
 #, fuzzy, qt-format
 msgid "%1 members"
 msgstr "%1/%2 membres"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
+#. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:267
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:48
 #, fuzzy, qt-format
 msgid "%1 is typing"
-msgstr "%1 est en train d'écrire..."
+msgid_plural "%1 are typing"
+msgstr[0] "%1 est en train d'écrire..."
+msgstr[1] "%1 est en train d'écrire..."
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:270
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:51
 #, fuzzy, qt-format
 msgid "%1 are typing"
 msgstr "%1 est en train d'écrire..."
@@ -813,7 +815,7 @@ msgstr "Êtes-vous sûr de vouloir nettoyer l'historique ?"
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:203
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:55
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
 msgstr "écrit..."
 
@@ -833,7 +835,7 @@ msgstr ""
 msgid "Deleted"
 msgstr "Supprimer"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:160
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
 msgstr "Connexion..."
 
