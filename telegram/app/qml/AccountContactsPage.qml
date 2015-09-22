@@ -469,12 +469,13 @@ Page {
             if (importedCount == 0) {
                 dialogText = "";
             } else {
-                // TRANSLATORS: Indicates result of contacts import (how many have been imported).
-                // NOTE: Please KEEP ALL format strings! The first %1 in "%1This contact.." will actually
-                // be replaced with empty space, and is a workaround for a launchpad translations bug.
-                dialogText = i18n.tr("%1This contact is on Telegram.",
-                        "%1 out of %2 contacts are on Telegram.",
-                        importedContactCount).arg(importedCount == 1 ? "" : importedCount).arg(importedContactCount);
+                if (importedCount == 1 && importedContactCount == 1) {
+                    // TRANSLATORS: Indicates result of a single contact import.
+                    dialogText = i18n.tr("This contact is on Telegram.");
+                } else {
+                    // TRANSLATORS: Indicates result of contacts import (how many have been imported).
+                    dialogText = i18n.tr("%1 out of %2 contacts are on Telegram.").arg(importedCount).arg(importedContactCount);
+                }
             }
 
             dialogText = importedCount == 0 ? "" :

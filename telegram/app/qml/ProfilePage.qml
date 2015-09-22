@@ -262,8 +262,13 @@ Page {
                     result += ", "
             }
 
-            // TRANSLATORS: %1 is a contact or list of contacts who are typing.
-            result = i18n.tr("%1 is typing...", "%1 are typing...", list.length).arg(result.trim())
+            if (list.length == 1) {
+                // TRANSLATORS: Indicates in the chat header who is typing.
+                result = i18n.tr("%1 is typing").arg(result.trim());
+            } else {
+                // TRANSLATORS: Indicates in the chat header which contacts are typing.
+                result = i18n.tr("%1 are typing").arg(result.trim());
+            }
             return result;
         }
     }
