@@ -6,11 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-09-22 16:27+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-23 10:42+0200\n"
 "PO-Revision-Date: 2015-09-22 22:20+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
+"Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -459,10 +460,11 @@ msgid "Checking username..."
 msgstr "የ ተጠቃሚ ስም በ መመርመር ላይ..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:139
+#, fuzzy
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores. "
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "እርስዎ የ ተጠቃሚ ስም ይምረጡ በ <b>ቴሌግራም</b>. ይህን ካደረጉ: ሌሎች ሰዎች ሊያገኝዎት ይችላሉ: በዚህ ተጠቃሚ "
@@ -583,8 +585,7 @@ msgid "Fast"
 msgstr "ፈጣን"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid ""
-"<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr "<b>ቴሌግራም</b> መልእክቶችን በ ፍጥነት ያደርሳል<br> ከ ማንኛውም መተግበሪያ በላይ"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -620,8 +621,7 @@ msgid "Cloud-Based"
 msgstr "ክላውድ-መሰረት ያደረገ"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid ""
-"<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr "<b>ቴሌግራም</b> የ እርስዎን መልእክቶች <br> ከ በርካታ አካሎች ጋር መገናኘት ያስችላል"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
