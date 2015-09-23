@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 16:27+0200\n"
-"PO-Revision-Date: 2015-06-12 17:52+0000\n"
+"PO-Revision-Date: 2015-09-22 10:48+0000\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <ast@li.org>\n"
-"Language: ast\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-06-27 05:39+0000\n"
-"X-Generator: Launchpad (build 17578)\n"
+"X-Launchpad-Export-Date: 2015-09-23 07:18+0000\n"
+"X-Generator: Launchpad (build 17749)\n"
+"Language: ast\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:64
@@ -30,9 +30,8 @@ msgstr "Amestar al grupu"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:27
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:74
-#, fuzzy
 msgid "New Secret Chat"
-msgstr "Charres secretes:"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:29
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:84
@@ -58,9 +57,8 @@ msgstr ""
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:75
-#, fuzzy
 msgid "Search contacts..."
-msgstr "Ensin contautos"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:122
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:358
@@ -135,24 +133,18 @@ msgstr "Nun s'importaron contautos"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:474
-#, fuzzy
 msgid "This contact is on Telegram."
 msgstr ""
-"Esti contautu ta en Telegram.\r\n"
-"%1 de %2 contautu ta en Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:477
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr ""
-"Esti contautu ta en Telegram.\r\n"
-"%1 de %2 contautu ta en Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:41
-#, fuzzy
 msgid "Select chat to forward messages"
-msgstr "Esbilla la charra pa compartir el conteníu"
+msgstr ""
 
 #. TRANSLATORS: %1 represents person to whom forwarding the messages to.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:104
@@ -196,21 +188,21 @@ msgstr ""
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:57
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created a secret chat"
-msgstr "Aniciar charra secreta"
+msgstr ""
 
 #. TRANSLATORS: %1 indicates who created the group chat titled %2.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:60
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group \"%2\""
-msgstr "%1 volvió a xunise al grupu"
+msgstr ""
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:67
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2 to group"
-msgstr "%1 amestó a %2"
+msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:76
@@ -228,36 +220,34 @@ msgstr "%1 desanició %2"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:84
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed group name to \"%2\""
-msgstr "%1 camudó'l nome del grupu a %2"
+msgstr ""
 
 #. TRANSLATORS: %1 is the person, who changed the gruop phot.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:89
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed group photo."
-msgstr "%1 camudó la semeya del grupu"
+msgstr ""
 
 #. TRANSLATORS: %1 is the person, who deleted the group photo.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 deleted group photo"
-msgstr "%1 desanició la semeya del grupu"
+msgstr ""
 
 #. TRANSLATORS: Default message for received audio messages.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageItem.qml:263
-#, fuzzy
 msgid "Audio messages not supported yet."
-msgstr "Equí entá nun hai mensaxes..."
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageItem.qml:292
 msgid "Media files are currently not supported in secret chats."
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:656
-#, fuzzy
 msgid "Secret chat requested."
-msgstr "Solicitóse una charra secreta"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:668
 msgid ""
@@ -326,9 +316,8 @@ msgid "Change photo"
 msgstr "Camudar semeya"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:34
-#, fuzzy
 msgid "Log out"
-msgstr "Zarrar sesión"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:40
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:94
@@ -404,9 +393,8 @@ msgstr "vistu %1"
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:240
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:73
-#, fuzzy
 msgid "last seen recently"
-msgstr "vistu %1"
+msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:234
@@ -433,11 +421,10 @@ msgid "last seen a long time ago"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:262
-#, fuzzy
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
-msgstr "¿De xuru que quies zarrar la sesión?"
+msgstr ""
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:35
@@ -457,9 +444,8 @@ msgstr ""
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:100
-#, fuzzy
 msgid "Your Username"
-msgstr "El to teléfonu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
@@ -488,9 +474,9 @@ msgstr "Númberu teléfonu (riquíu)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:184
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr "Anguaño %1 nun ta en Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
@@ -511,15 +497,13 @@ msgstr "Nun ye un númberu de teléfonu válidu"
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:147
 #: /home/karni/src/telegram2/telegram/app/qml/AuthenticatePage.qml:8
-#, fuzzy
 msgid "Sign In"
-msgstr "Rexistrase"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:147
-#, fuzzy
 msgid "Sign Up"
-msgstr "Rexistrase"
+msgstr ""
 
 #. TRANSLATORS: Error text for an invalid phone code.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:30
@@ -537,20 +521,17 @@ msgid "Code"
 msgstr "Códigu"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:127
-#, fuzzy
 msgid "First Name"
-msgstr "nome"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:136
-#, fuzzy
 msgid "Last Name"
-msgstr "apellíos"
+msgstr ""
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:158
-#, fuzzy
 msgid "Resend Code"
-msgstr "Reunviar"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:174
 msgid "Request Call"
@@ -573,9 +554,8 @@ msgstr "Númberu de teléfonu"
 
 #. TRANSLATORS: Button text right under the phone number text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthenticatePage.qml:79
-#, fuzzy
 msgid "Log in"
-msgstr "Zarrar sesión"
+msgstr ""
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:69
@@ -597,7 +577,8 @@ msgid "Fast"
 msgstr "Rápidu"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> unvia mensaxes más rápido<br> que cualesquier otra apliación"
 
@@ -639,7 +620,8 @@ msgid "Cloud-Based"
 msgstr "Basáu na ñube"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> déxate acceder a los tos mensaxes<br> dende múltiples preseos"
 
@@ -649,17 +631,14 @@ msgid "Private"
 msgstr "Priváu"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:48
-#, fuzzy
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr ""
-"Los mensaxes de <b>Telegram</b> cífrense de<br>mou fuerte y pue "
-"autodestruyise"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /home/karni/src/telegram2/telegram/app/qml/PreviewPage.qml:29
-#, fuzzy, qt-format
+#, qt-format
 msgid "From: %1"
-msgstr "De: "
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
@@ -686,25 +665,25 @@ msgstr ""
 #. TRANSLATORS: %1 is gropu chat member count.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:226
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:60
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 members"
-msgstr "%1/%2 miembros"
+msgstr ""
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:267
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:48
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] "%1 ta teclexando..."
-msgstr[1] "%1 ta teclexando..."
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:270
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 are typing"
-msgstr "%1 ta teclexando..."
+msgstr ""
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:335
@@ -733,13 +712,10 @@ msgid "Remove from group"
 msgstr "Desaniciar del grupu"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:346
-#, fuzzy
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
-"Si quies les notificaciones de Telegram cuando nun teas usando l'aplicación, "
-"anicia sesión na to cuenta d'Ubuntu One y llueu vuelvi a Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:353
 msgid "Sign in to Ubuntu One"
@@ -758,9 +734,8 @@ msgid "Telegram FAQ"
 msgstr "Telegram FAQ"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:114
-#, fuzzy
 msgid "Add Account"
-msgstr "Amestar contautu"
+msgstr ""
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:31
@@ -796,14 +771,12 @@ msgid "1 week"
 msgstr "1 selmana"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:51
-#, fuzzy
 msgid "Leave chat"
-msgstr "Desaniciar charra"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:57
-#, fuzzy
 msgid "Are you sure you want to leave this chat?"
-msgstr "¿De xuru que quies desaniciar esta charra?"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:75
 msgid "Clear history"
@@ -822,9 +795,9 @@ msgstr "teclexando..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:166
-#, fuzzy, qt-format
+#, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr "Reunviáu dende "
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:231
 msgid "Audio messages not supported."
@@ -832,9 +805,8 @@ msgstr ""
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
-#, fuzzy
 msgid "Deleted"
-msgstr "Desaniciar"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
@@ -900,9 +872,8 @@ msgid "dd MMM yy"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:109
-#, fuzzy
 msgid "sent you a message"
-msgstr "Teclexa'l mensaxe"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:113
 msgid "sent you a photo"
@@ -921,9 +892,8 @@ msgid "sent you a voice message"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:129
-#, fuzzy
 msgid "shared a contact with you"
-msgstr "¿Compartir conteníu con %1?"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:133
 msgid "sent you a map"
@@ -935,24 +905,24 @@ msgid "%1: %2"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:143
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a message to the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:148
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a photo to the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:153
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a video to the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:158
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a document to the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:163
 #, qt-format
@@ -960,51 +930,51 @@ msgid "%1 sent a voice message to the group"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:168
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a contact to the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:173
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a map to the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:178
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:199
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited you to the group"
-msgstr "%1 volvió a xunise al grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:183
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed group name"
-msgstr "%1 camudó'l nome del grupu a %2"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:188
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed group photo"
-msgstr "%1 camudó la semeya del grupu"
+msgstr ""
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:194
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited %2"
-msgstr "%1 creó %2"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:210
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 removed you from the group"
-msgstr "%1 desanició la semeya del grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:215
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 has left the group"
-msgstr "%1 dexó'l grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:220
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 has returned to the group"
-msgstr "%1 volvió a xunise al grupu"
+msgstr ""
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:225
@@ -1020,9 +990,9 @@ msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:233
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 volvió a xunise al grupu"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:238
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
@@ -1036,9 +1006,8 @@ msgid "%1 @ %2"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:248
-#, fuzzy
 msgid "updated profile photo"
-msgstr "Nun pudo anovase'l perfil: "
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:253
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:258
@@ -1060,18 +1029,16 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:86
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:120
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:149
-#, fuzzy
 msgid "Open chat"
-msgstr "Desaniciar charra"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:57
-#, fuzzy
 msgid "Failed to get Telegram data"
-msgstr "Convidar a Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:58
 msgid "Touch here to open app"
@@ -1090,9 +1057,8 @@ msgid "People You Talk To"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:260
-#, fuzzy
 msgid "Recent Chats"
-msgstr "Charres secretes:"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:261
 msgid "Recent Photos"
@@ -1100,14 +1066,14 @@ msgstr ""
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:269
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 new message"
-msgstr "Teclexa'l mensaxe"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:269
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 new messages"
-msgstr "Teclexa'l mensaxe"
+msgstr ""
 
 #. TRANSLATORS: The argument is a string saying how many new messages are there, like '5 new messages'.
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:271
@@ -1116,14 +1082,12 @@ msgid "Unread Chats (%1)"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:614
-#, fuzzy
 msgid "Audio message"
-msgstr "Teclexa'l mensaxe"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:618
-#, fuzzy
 msgid "Contact received"
-msgstr "Contautos importaos"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:622
 msgid "Document received"
@@ -1142,248 +1106,17 @@ msgid "Unhandled media type"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:720
-#, fuzzy
 msgid "Login to Telegram"
-msgstr "Convidar a Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:757
-#, fuzzy
 msgid "No messages received Today."
-msgstr "Nun se recibió dengún mensaxe de Telegram güei."
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:2
-#, fuzzy
 msgid "This is the Telegram scope"
 msgstr ""
-"Esti contautu ta en Telegram.\r\n"
-"%1 de %2 contautu ta en Telegram."
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Online"
-#~ msgstr "en llinia"
-
-#~ msgid "You"
-#~ msgstr "Tu"
-
-#~ msgid "DELETED"
-#~ msgstr "DESANICIÁU"
-
-#~ msgid "Waiting for user to get online..."
-#~ msgstr "Esperando qu'el usuariu se coneute..."
-
-#~ msgid "Secret chat created"
-#~ msgstr "Creóse la charra secreta"
-
-#~ msgid "Secret chat cancelled"
-#~ msgstr "Encaboxóse la charra secreta"
-
-#~ msgid "Next"
-#~ msgstr "Siguiente"
-
-#~ msgid "Enter local path to send"
-#~ msgstr "Introduz el camín llocal pa unviar"
-
-#~ msgid "Enter msg to send"
-#~ msgstr "Introduz el mensaxe pa unviar"
-
-#~ msgid ""
-#~ "Please enter your full phone \n"
-#~ "number with country code"
-#~ msgstr ""
-#~ "Por favor, introduz el to númberu \n"
-#~ "completu col códigu de país"
-
-#~ msgid "with '+' sign"
-#~ msgstr "col signu '+'"
-
-#~ msgid ""
-#~ "You are not registered yet.\n"
-#~ "Please provide registration data"
-#~ msgstr ""
-#~ "Entá nun tas rexistráu.\n"
-#~ "Por favor, apurri los datos de rexistru"
-
-#~ msgid ""
-#~ "We have sent you a code via SMS.\n"
-#~ "Please enter it below\n"
-#~ msgstr ""
-#~ "Unviémoste un códigu pente SMS.\n"
-#~ "Por favor, introdúxelu embaxo\n"
-
-#~ msgid "Enter your code"
-#~ msgstr "Introduz el to códigu"
-
-#~ msgid "The code you have entered is not valid. Try again"
-#~ msgstr "Nun ye válidu'l códigu qu'introduxesti. inténtalo de nueves"
-
-#~ msgid "calling user's mobile"
-#~ msgstr "llamando al móvil del usuariu"
-
-#~ msgid "Telegram messages received today: %1"
-#~ msgstr "Mensaxes de Telegram recibíos güei: %1"
-
-#~ msgid "Telegram messages sent today: %1"
-#~ msgstr "Mensaxes de Telegram unviaos güei: %1"
-
-#~ msgid "No Telegram messages sent today."
-#~ msgstr "Nun s'unvió dengún mensaxe de Telegram güei."
-
-#~ msgid "Unauthorized"
-#~ msgstr "Non autorizáu"
-
-#~ msgid "You have been logged out. Please log in."
-#~ msgstr "Zarresti sesión. Por favor, aníciala."
-
-#~ msgid "%1 has a pending invite"
-#~ msgstr "%1 tien una invitación pendiente"
-
-#~ msgid "An invite text will be added to your Clipboard"
-#~ msgstr "Amestaráse un mensaxe d'invitación nel to cartafueyu"
-
-#~ msgid "Not connected, try again later"
-#~ msgstr "Nun tas coneutáu, inténtalo de nueves sero"
-
-#~ msgid "Blocked Users"
-#~ msgstr "Usuarios bloquiaos"
-
-#~ msgid "Block contact"
-#~ msgstr "Bloquiar contautu"
-
-#~ msgid "Unblock contact"
-#~ msgstr "Desbloquiar contautu"
-
-#~ msgid "Unblock this user?"
-#~ msgstr "¿Desbloquiar a esti usuariu?"
-
-#~ msgid "Ok"
-#~ msgstr "Aceutar"
-
-#~ msgid "New group chat"
-#~ msgstr "Grupu nuevu"
-
-#~ msgid "Text"
-#~ msgstr "Testu"
-
-#~ msgid "Self destruct "
-#~ msgstr "Autodestruyir "
-
-#~ msgid "Set self-destruct timer"
-#~ msgstr "Afitar temporizador d'autodestruición"
-
-#~ msgid "Add to contacts"
-#~ msgstr "Amestar a contautos"
-
-#~ msgid "Not connected."
-#~ msgstr "Ensin coneutar"
-
-#~ msgid ""
-#~ " - unsupported message type. We're working on improving that! Meanwhile, "
-#~ "make sure the app is up to date."
-#~ msgstr ""
-#~ " - triba de mensaxe ensin sofitu. ¡Tamos trabayando n'ameyorar eso! "
-#~ "Entrín y non, asegúrate que l'aplicación ta anovada."
-
-#~ msgid "Secret chat with"
-#~ msgstr "Charra secreta con"
-
-#~ msgid "- Use end-to-end encryption"
-#~ msgstr "- Usa cifráu puntu a puntu"
-
-#~ msgid "- Leave no trace on Telegram servers"
-#~ msgstr "- Nun dexa denguna buelga nos sirvidores de Telegram"
-
-#~ msgid "- Do not allow forwarding"
-#~ msgstr "- Nun permite'l reunviu"
-
-#~ msgid "Compose"
-#~ msgstr "Componer"
-
-#~ msgid "Disconnected"
-#~ msgstr "Desconeutáu"
-
-#~ msgid "No chats"
-#~ msgstr "Ensin charres"
-
-#~ msgid "Waiting for connection..."
-#~ msgstr "Esperando pola conexón..."
-
-#~ msgid "Select different chat"
-#~ msgstr "Esbillar una charra diferente"
-
-#~ msgid "members"
-#~ msgstr "miembros"
-
-#~ msgid "Start chat"
-#~ msgstr "Aniciar charra"
-
-#~ msgid "Your Phone Number"
-#~ msgstr "El to númberu teléfonu"
-
-#~ msgid "Blocked users"
-#~ msgstr "Usuarios bloquiaos"
-
-#~ msgid "Terminate All Other Sessions"
-#~ msgstr "Finar toles otres sesiones"
-
-#~ msgid "Are you sure you want to terminate all other sessions?"
-#~ msgstr "¿De xuru que quies finar toles otres sesiones?"
-
-#~ msgid "Messages Text Size"
-#~ msgstr "Tamañu de testu nos mensaxes"
-
-#~ msgid "Small"
-#~ msgstr "Pequeñu"
-
-#~ msgid "Medium"
-#~ msgstr "Mediu"
-
-#~ msgid "Large"
-#~ msgstr "Grande"
-
-#~ msgid "Telegram for Ubuntu %1"
-#~ msgstr "Telegram pa Ubuntu %1"
-
-#~ msgid "Offline"
-#~ msgstr "Fuera de llinia"
-
-#~ msgid ""
-#~ "Please confirm your country code\n"
-#~ "and enter your phone number."
-#~ msgstr ""
-#~ "Por favor, confirma'l to códigu de país\n"
-#~ "ya introduz el to númberu de teléfonu."
-
-#~ msgid "Please wait a moment and try again"
-#~ msgstr "Por favor, espera un momentu ya inténtalo de nueves"
-
-#~ msgid "Incorrect phone number."
-#~ msgstr "Númberu de teléfonu incorreutu."
-
-#~ msgid "Your first and last name:"
-#~ msgstr "El to nome y apellíos:"
-
-#~ msgid "Your code"
-#~ msgstr "El to códigu"
-
-#~ msgid ""
-#~ "We've sent an SMS with an activation code.\n"
-#~ "Please enter it below.\n"
-#~ msgstr ""
-#~ "Unviémoste un SMS con un códigu d'activación.\n"
-#~ "Por favor, introdúxilu embaxo\n"
-
-#~ msgid "We will call you in %1"
-#~ msgstr "Llamarémoste en %1"
-
-#~ msgid "Enter"
-#~ msgstr "Enter"
-
-#~ msgid "Calling you (this may take a while)..."
-#~ msgstr "Llamándote (esto pue tardar un poco)..."
-
-#~ msgid "Incorrect code. Please try again."
-#~ msgstr "Códigu incorreutu. Inténtalo de nueves."

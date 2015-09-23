@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 16:27+0200\n"
-"PO-Revision-Date: 2015-03-31 14:22+0000\n"
+"PO-Revision-Date: 2015-09-22 11:10+0000\n"
 "Last-Translator: Yaron <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
-"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-05-22 05:12+0000\n"
-"X-Generator: Launchpad (build 17514)\n"
+"X-Launchpad-Export-Date: 2015-09-23 07:18+0000\n"
+"X-Generator: Launchpad (build 17749)\n"
+"Language: he\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:64
@@ -130,15 +130,14 @@ msgstr ""
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:474
-#, fuzzy
 msgid "This contact is on Telegram."
-msgstr "לאיש קשר זה יש טלגרם. (%1 - %2)"
+msgstr ""
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:477
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr "לאיש קשר זה יש טלגרם. (%1 - %2)"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:41
 msgid "Select chat to forward messages"
@@ -472,9 +471,9 @@ msgstr ""
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:184
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr "לאיש קשר זה יש טלגרם. (%1 - %2)"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
@@ -575,7 +574,8 @@ msgid "Fast"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -611,7 +611,8 @@ msgid "Cloud-Based"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
@@ -1103,9 +1104,8 @@ msgid "No messages received Today."
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:2
-#, fuzzy
 msgid "This is the Telegram scope"
-msgstr "לאיש קשר זה יש טלגרם. (%1 - %2)"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:3
 msgid "Search for a chat, contact or message"

@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 16:27+0200\n"
-"PO-Revision-Date: 2015-03-31 17:36+0000\n"
-"Last-Translator: Rafael Neri <Unknown>\n"
+"PO-Revision-Date: 2015-09-22 10:43+0000\n"
+"Last-Translator: Michał Karnicki <michal.karnicki@canonical.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2015-05-22 05:13+0000\n"
-"X-Generator: Launchpad (build 17514)\n"
+"X-Launchpad-Export-Date: 2015-09-23 07:18+0000\n"
+"X-Generator: Launchpad (build 17749)\n"
+"Language: pt_BR\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:64
@@ -30,9 +30,8 @@ msgstr "Adicionar ao grupo"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:27
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:74
-#, fuzzy
 msgid "New Secret Chat"
-msgstr "Novo grupo"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:29
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:84
@@ -131,15 +130,14 @@ msgstr "Nenhum contato importado"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:474
-#, fuzzy
 msgid "This contact is on Telegram."
-msgstr "%1 não está no Telegram"
+msgstr ""
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:477
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr "%1 não está no Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:41
 msgid "Select chat to forward messages"
@@ -199,9 +197,9 @@ msgstr ""
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:67
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2 to group"
-msgstr "Adicionar ao grupo"
+msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:76
@@ -473,9 +471,9 @@ msgstr ""
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:184
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr "%1 não está no Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
@@ -576,7 +574,8 @@ msgid "Fast"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -612,7 +611,8 @@ msgid "Cloud-Based"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
@@ -655,9 +655,9 @@ msgstr ""
 #. TRANSLATORS: %1 is gropu chat member count.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:226
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:60
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 members"
-msgstr "%1/%2 membros"
+msgstr ""
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -724,9 +724,8 @@ msgid "Telegram FAQ"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:114
-#, fuzzy
 msgid "Add Account"
-msgstr "Adicionar contato"
+msgstr ""
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:31
@@ -981,9 +980,9 @@ msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:233
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 não está no Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:238
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
@@ -1077,9 +1076,8 @@ msgid "Audio message"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:618
-#, fuzzy
 msgid "Contact received"
-msgstr "Contatos importados"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:622
 msgid "Document received"
@@ -1098,9 +1096,8 @@ msgid "Unhandled media type"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:720
-#, fuzzy
 msgid "Login to Telegram"
-msgstr "Telegram"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:757
 msgid "No messages received Today."
@@ -1113,40 +1110,3 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Online"
-#~ msgstr "online"
-
-#~ msgid "You"
-#~ msgstr "Você"
-
-#~ msgid "DELETED"
-#~ msgstr "APAGADO"
-
-#~ msgid "Next"
-#~ msgstr "Próximo"
-
-#~ msgid "Unauthorized"
-#~ msgstr "Não autorizado"
-
-#~ msgid "You have been logged out. Please log in."
-#~ msgstr "Você foi desconectado. Por favor, faça login."
-
-#~ msgid "Not connected, try again later"
-#~ msgstr "Não conectado, tente novamente mais tarde"
-
-#~ msgid "Blocked Users"
-#~ msgstr "Usuários bloqueados"
-
-#~ msgid "Block contact"
-#~ msgstr "Bloquear contato"
-
-#~ msgid "Unblock contact"
-#~ msgstr "Desbloquear contato"
-
-#~ msgid "Unblock this user?"
-#~ msgstr "Desbloquear este usuário?"
-
-#~ msgid "Ok"
-#~ msgstr "Ok"
