@@ -136,7 +136,7 @@ Page {
 
             width: parent.width
             wrapMode: Text.WordWrap
-            text: i18n.tr("You can choose a username on <b>Telegram</b>. If you do, other people will be able to find you by this username and contact you without knowing your phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores. <br />Minimum length is <b>5</b> characters.")
+            text: i18n.tr("You can choose a username on <b>Telegram</b>. If you do, other people will be able to find you by this username and contact you without knowing your phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores.<br />Minimum length is <b>5</b> characters.")
         }
     }
 
