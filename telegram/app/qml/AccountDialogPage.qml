@@ -99,17 +99,6 @@ Page {
         });
     }
 
-//    property bool refreshing: false
-
-//    property int onlineCount: 0
-
-//    property real typeUserStatusOffline: 0x8c703f
-//    property real typeUserStatusEmpty: 0x9d05049
-//    property real typeUserStatusOnline: 0xedb93949
-//    property real typeUserStatusRecently: 0xe26f42f1
-//    property real typeUserStatusLastWeek: 0x7bf09fc
-//    property real typeUserStatusLastMonth: 0x77ebc742
-
     Component.onDestruction: {
         dialogClosed();
     }
@@ -133,7 +122,7 @@ Page {
             clip: true
             telegramObject: dialog_page.telegramObject
             currentDialog: dialog_page.currentDialog
-                
+
 //            onFocusRequest: send_msg.setFocus()
             onForwardRequest: dialog_page.forwardRequest(messageIds);
             onDialogRequest: account_page.currentDialog = dialogObject

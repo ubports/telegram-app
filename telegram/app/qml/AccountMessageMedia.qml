@@ -17,8 +17,8 @@ Item {
     property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
 
-    property real maximumMediaHeight: 300*Devices.density
-    property real maximumMediaWidth: width*0.75
+    property real maximumMediaHeight: units.gu(24)//300*Devices.density
+    property real maximumMediaWidth: units.gu(20)//width*0.75
     property real maximumMediaRatio: maximumMediaWidth/maximumMediaHeight
 
     property variant msgDate: CalendarConv.fromTime_t(message.date)

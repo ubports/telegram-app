@@ -17,7 +17,11 @@ var list_pressed = "#efefef"
 
 var transparent = "#00000000"
 
-var outgoing = "#e6ffd1"
+var outgoing = "#eeffdd"
 var incoming = "#ffffff"
+var time_out = "#8bb778"
+var time_in = "#abaeb3"
 
 var chat_section = "#99a6bcca"
+
+var header_blue = "#53749d"

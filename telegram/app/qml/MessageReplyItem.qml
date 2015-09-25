@@ -1,6 +1,6 @@
 import QtQuick 2.0
+import Ubuntu.Components 1.2
 import TelegramQML 1.0
-// import CutegramTypes 1.0
 import AsemanTools 1.0
 import "qrc:/qml/js/colors.js" as Colors
 
@@ -13,6 +13,8 @@ Item {
     property Telegram telegram
     property Message message
     property Message replyMessage
+
+    property real maximumWidth: 100
 
     property real typeMessageMediaDocument: 0x2fda2204
     property real typeMessageMediaContact: 0x5e7d2f39
@@ -32,9 +34,9 @@ Item {
 
         Rectangle {
             id: reply_separator
-            width: units.dp(3)
+            width: units.dp(2)
             height: parent.height
-            color: message.out ? "#ffffff" : "#3fb24f"
+            color: message.out ? Colors.dark_green : Colors.header_blue
         }
 
         Column {
@@ -42,13 +44,14 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             spacing: 2*Devices.density
 
-            Text {
+            Label {
                 id: name_text
-                font.pixelSize: Math.floor(11*Devices.fontDensity)
-                font.family: AsemanApp.globalFont.family
-                opacity: 0.8
-                color: message.out ? "#ffffff" : "#3fb24f"
-//                {
+                // font.pixelSize: Math.floor(11*Devices.fontDensity)
+                // font.family: AsemanApp.globalFont.family
+                fontSize: "small"
+                font.weight: Font.Normal
+                // opacity: 0.8
+                color: message.out ? Colors.dark_green : Colors.header_blue
 //                    if(!replyMessage && (!message || message.out))
 //                        return Cutegram.currentTheme.messageOutgoingNameColor
 //                    else
@@ -144,15 +147,16 @@ Item {
                 }
             }
 
-            Text {
+            Label {
                 id: txt
-                width: htmlWidth>200*Devices.density? 200*Devices.density : htmlWidth
-                font.pixelSize: Math.floor(Cutegram.font.pointSize*Devices.fontDensity)-1
-                font.family: Cutegram.font.family
+                width: Math.min(htmlWidth, maximumWidth)
+                // font.pixelSize: Math.floor(Cutegram.font.pointSize*Devices.fontDensity)-1
+                // font.family: Cutegram.font.family
+                fontSize: "small"
+                font.weight: Font.Normal
                 horizontalAlignment: Text.AlignLeft
-                opacity: 0.8
+                // opacity: 0.8
                 visible: text.length != 0
-                color: message.out ? "#ffffff" : "#3fb24f"
 //                {
 //                    if(!replyMessage && (!message || message.out))
 //                        return Cutegram.currentTheme.messageOutgoingFontColor
@@ -186,4 +190,3 @@ Item {
         }
     }
 }
-

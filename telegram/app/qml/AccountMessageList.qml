@@ -82,21 +82,24 @@ Rectangle {
             }
         }
         onFocusToNewRequest: {
-            if(!hasNewMessage)
-                return
+            if(!hasNewMessage) {
+                return;
+            }
 
+            //mlist.positionViewAtBeginning();
+            console.log("unreads " + unreads);
             focus_msg_timer.msgIndex = unreads>0? unreads-1 : 0
             focus_msg_timer.restart()
         }
     }
 
-    Timer {
-        id: refresh_timer
-        repeat: true
-        interval: 10000
-        //onTriggered: messages_model.refresh()
-        Component.onCompleted: start()
-    }
+    // Timer {
+    //     id: refresh_timer
+    //     repeat: true
+    //     interval: 10000
+    //     onTriggered: messages_model.refresh()
+    //     Component.onCompleted: start()
+    // }
 
     Image {
         anchors.fill: parent
@@ -127,7 +130,7 @@ Rectangle {
             anchors.centerIn: parent
             font.pixelSize: Math.floor((Cutegram.font.pointSize+1)*Devices.fontDensity)
             font.family: Cutegram.font.family
-            text: qsTr("Welcome :)")
+            text: i18n.tr("Please select chat")
             color: "#111111"
         }
     }
@@ -163,8 +166,8 @@ Rectangle {
         maximumFlickVelocity: 5000
         flickDeceleration: 2000
 
-        header: Item{ width: 4; height: units.gu(1) }
-        footer: Item{ width: 4; height: units.gu(1) }
+        header: Item{ width: 4; height: units.dp(4) }
+        footer: Item{ width: 4; height: units.dp(4) }
 
         onAtYBeginningChanged: if( atYBeginning && contentHeight>height &&
                                    currentDialog != telegramObject.nullDialog ) messages_model.loadMore()
@@ -212,15 +215,25 @@ Rectangle {
         }
 
         listModel: messages_model
+        
         listDelegate: MessagesListItem {
+            /*
+                // XiaoGuo, uncomment this
+                Rectangle {
+                    color: Qt.rgba(0, 0.3, 0.0, 0.5)
+                    anchors.fill: parent
+                    z: 128
+                }
+            */
+
             id: message_item
             anchors {
                 left: parent ? parent.left : undefined
                 right: parent ? parent.right : undefined
             }
-
-            maximumMediaHeight: acc_msg_list.maximumMediaHeight
-            maximumMediaWidth: acc_msg_list.maximumMediaWidth
+            width: mlist.width
+            // maximumMediaHeight: acc_msg_list.maximumMediaHeight
+            // maximumMediaWidth: acc_msg_list.maximumMediaWidth
             message: item
             visibleNames: isChat
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
@@ -251,6 +264,8 @@ Rectangle {
 
             selected: mlist.isSelected(message_item)
             selectionMode: mlist.isInSelectionMode
+
+            onMessageFocusRequest: focusOnMessage(msgId)
 
             onItemPressAndHold: {
                 mlist.clearSelection();
@@ -311,209 +326,7 @@ Rectangle {
             flickDeceleration = flickDeceleration * scaleFactor;
         }
 
-    /*
-            AccountMessageItem {
-            id: msg_item
-            x: 8*Devices.density
-            maximumMediaHeight: acc_msg_list.maximumMediaHeight
-            maximumMediaWidth: acc_msg_list.maximumMediaWidth
-            message: item
-            width: mlist.width - 2*x
-            opacity: filterId == user.id || filterId == -1? 1 : 0.1
-            onSelectedTextChanged: {
-                if(selectedText.length = 0)
-                    return
-
-                acc_msg_list.selectedText = selectedText
-                mlist.currentIndex = index
-            }
-            onDialogRequest: acc_msg_list.dialogRequest(dialogObject)
-            onTagSearchRequest: acc_msg_list.tagSearchRequest(tag)
-            onMessageFocusRequest: focusOnMessage(msgId)
-
-            property string messageFile
-            property bool selected: mlist.currentIndex == index
-
-            onSelectedChanged: if(!selected) discardSelection()
-            onSentChanged: if(sent && message.out) add_anim_disabler.restart()
-
-            Behavior on opacity {
-                NumberAnimation{ easing.type: Easing.OutCubic; duration: 200 }
-            }
-
-            Rectangle {
-                id: select_rect
-                anchors.fill: parent
-                color: Cutegram.currentTheme.masterColor
-                opacity: 0.2
-                z: -100
-                visible: selected_list.count==0? false : selected_list.contains(message)
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    if(select_rect.visible)
-                        selected_list.removeOne(message)
-                    else
-                        selected_list.append(message)
-                }
-
-                z: -100
-            }
-
-            DragObject {
-                id: drag
-                mimeData: mime
-                source: marea
-                image: "files/message.png"
-                hotSpot: Qt.point(12,12)
-                dropAction: Qt.CopyAction
-                onDraggingChanged: anim_enabler_timer.restart()
-            }
-
-            ItemImageGrabber {
-                id: grabber
-                item: msg_item.messageRect
-                defaultImage: "files/message.png"
-                onImageChanged: {
-                    drag.imageData = image
-                    drag.start()
-                    messageDraging = false
-
-                    file_delete_timer.filePath = msg_item.messageFile
-                    file_delete_timer.restart()
-                }
-            }
-
-            MimeData {
-                id: mime
-                dataMap: message.encrypted? {} : {"land.aseman.cutegram/messageId": message.id}
-                urls: msg_item.hasMedia? [msg_item.mediaLocation] : [msg_item.messageFile]
-                text: message.message
-            }
-
-            MouseArea {
-                id: marea
-                x: messageFrameX
-                y: messageFrameY
-                width: messageFrameWidth
-                height: messageFrameHeight
-                z: -1
-                acceptedButtons: Qt.LeftButton | Qt.RightButton
-                cursorShape: Qt.PointingHandCursor
-                onPositionChanged: {
-                    if(user.id == telegram.cutegramId)
-                        return
-                    var destX = mouseX-startPoint.x
-                    var destY = mouseY-startPoint.y
-                    var dest = Math.pow(destX*destX+destY*destY, 0.5)
-                    if(dest < 7)
-                        return
-                    if(messageDraging)
-                        return
-
-                    if(!msg_item.hasMedia)
-                        msg_item.messageFile = Devices.localFilesPrePath + Cutegram.storeMessage(msg_item.message.message)
-                    else
-                        msg_item.messageFile = ""
-
-                    messageDraging = true
-                    grabber.start()
-                }
-
-                onReleased: {
-                    if(menuRequested) {
-                        menuRequested = false
-                        return
-                    }
-                    if(user.id == telegram.cutegramId)
-                        return
-                    if(msg_item.click())
-                        return
-                    if(filterId == -1)
-                        filterId = user.id
-                    else
-                        filterId = -1
-                }
-
-                onPressed: {
-                    messageDraging = false
-                    menuRequested = false
-
-                    if(user.id == telegram.cutegramId)
-                        return
-                    if( mouse.button == Qt.RightButton ) {
-                        menuRequested = true
-                        var actions
-                        var res
-                        if(message.encrypted) {
-                            actions = [qsTr("Copy"),qsTr("Delete")]
-                            res = Desktop.showMenu(actions)
-                            switch(res) {
-                            case 0:
-                                msg_item.copy()
-                                break;
-
-                            case 1:
-                                telegramObject.deleteMessages([message.id])
-                                break;
-                            }
-                        } else {
-                            if(msg_item.isSticker)
-                                actions = [qsTr("Reply"), qsTr("Forward"),qsTr("Copy"),qsTr("Delete"), qsTr("Add to Personal")]
-                            else
-                            if(msg_item.selectedText.length == 0)
-                                actions = [qsTr("Reply"), qsTr("Forward"),qsTr("Copy"),qsTr("Delete")]
-                            else
-                                actions = [qsTr("Reply"), qsTr("Forward"),qsTr("Copy"),qsTr("Delete"), qsTr("Search on the Web")]
-
-                            res = Desktop.showMenu(actions)
-                            switch(res) {
-                            case 0:
-                                acc_msg_list.replyToRequest(message.id)
-                                break;
-
-                            case 1:
-                                acc_msg_list.forwardRequest([message])
-                                break;
-
-                            case 2:
-                                msg_item.copy()
-                                break;
-
-                            case 3:
-                                telegramObject.deleteMessages([message.id])
-                                break;
-
-                            case 4:
-                                if(msg_item.isSticker)
-                                    Cutegram.addToPersonal(msg_item.mediaLocation)
-                                else
-                                    Qt.openUrlExternally(Cutegram.searchEngine + msg_item.selectedText.replace(" ","+"))
-                                break;
-                            }
-                        }
-                    }
-                    else {
-                        startPoint = Qt.point(mouseX, mouseY)
-                    }
-                }
-
-                property point startPoint
-                property bool menuRequested: false
-            }
-        }
-    */
     }
-
-//    MouseArea {
-//        anchors.fill: parent
-//        onPressed: {
-//            acc_msg_list.focusRequest()
-//            mouse.accepted = false
-//        }
-//    }
 
     NormalWheelScroll {
         flick: mlist
@@ -616,9 +429,9 @@ Rectangle {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: bottomMargin + 8*Devices.density
         anchors.rightMargin: 8*Devices.density
-        width: 32*Devices.density
+        width: units.gu(7)//64*Devices.density
         height: width
-        radius: 5*Devices.density
+        radius: height / 2//5*Devices.density
         color: "#88000000"
 //        normalColor: "#88000000"
 //        highlightColor: "#aa000000"
@@ -637,7 +450,7 @@ Rectangle {
 
         Image {
             anchors.centerIn: parent
-            height: 18*Devices.density
+            height: units.gu(2)
             fillMode: Image.PreserveAspectFit
             source: "qrc:/qml/files/down.png"
         }

@@ -33,7 +33,6 @@ Rectangle {
         var text = temp_hash.value(currentDialog)
         txt.text = text? text : ""
         txt.cursorPosition = txt.length
-        txt.focus = true
 
         privates.lastDialog = currentDialog
     }
@@ -481,10 +480,6 @@ Rectangle {
         smsg.accepted(msg, 0);//messageReply.replyMessage? messageReply.replyMessage.id : 0)
 //        messageReply.discard()
         txt.text = ""
-    }
-
-    function setFocus() {
-        txt.focus = true
     }
 
     function replyTo(msgId) {

@@ -6,6 +6,7 @@ import AsemanTools 1.0
 
 import "qrc:/"
 import "qrc:/qml/js/colors.js" as Colors
+import "qrc:/qml/js/time.js" as Time
 
 Item {
     id: status_item
@@ -31,6 +32,7 @@ Item {
     Row {
         id: message_status_row
         spacing: units.dp(4)
+        anchors.right: parent.right
 
         Label {
             id: time_label
@@ -41,7 +43,7 @@ Item {
                 if (hasMedia) {
                     return Colors.white;
                 }
-                return message.out ? Colors.dark_green : Colors.grey;
+                return message.out ? Colors.time_out : Colors.time_in;//Colors.dark_green : Colors.grey;
             }
             text: Cutegram.getTimeString(messageDate)
 
@@ -58,11 +60,11 @@ Item {
             fillMode: Image.PreserveAspectFit
             source: {
                 if (!message.sent) {
-                    return Qt.resolvedUrl("qrc:/qml/files/msg_clock_white.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/msg_clock.png");
                 } else if (message.out && message.unread) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_single_white.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/check_single_green.png");
                 } else if (message.out) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_double_white.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/check_double_green.png");
                 } else {
                     return "";
                 }

@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import QtGraphicalEffects 1.0
 import Ubuntu.Components 1.2
 
 import TelegramQML 1.0
@@ -10,11 +11,12 @@ import "qrc:/qml/js/colors.js" as Colors
 
 ListItemWithActions {
     id: message_item
-//    divider.visible: false
+    width: 100
     height: Math.max(logicalHeight, minimumHeight)
     clip: true
+
     color: Qt.rgba(0, 0, 0, 0)
-    selectedColor: Qt.rgba(0, 0, 0, 0.1)
+    selectedColor: Qt.rgba(0, 0, 0, 0.2)
 
     property real messageFrameX: back_rect.x
     property real messageFrameY: back_rect.y
@@ -23,15 +25,14 @@ ListItemWithActions {
 
     property real logicalHeight: action_item.hasAction
             ? action_item.height : column.height + frameMargins*2 + textMargins*2
-    property real minimumHeight: 0//48*Devices.density
-    property real maximumWidth: 3*width/5
-
-    property alias maximumMediaHeight: message_media.maximumMediaHeight
-    property alias maximumMediaWidth: message_media.maximumMediaWidth
+    property real minimumHeight: contact_image.visible ? contact_image.height + units.gu(1) : 0
+    property real maximumWidth: 7*width/10.0
+            - (contact_image.visible ? contact_image.width : 0)
+            - (forward_contact_image.visible ? forward_contact_image.width : 0)
 
     property real minimumWidth: 0//100*Devices.density
     property real textMargins: units.dp(4)
-    property real frameMargins: units.dp(4)
+    property real frameMargins: units.dp(3)
 
     property bool visibleNames: false
 
@@ -42,15 +43,19 @@ ListItemWithActions {
 
     property bool sent: message.sent
     property bool uploading: message.upload.fileId !== 0
-    property alias isSticker: message_media.isSticker
 
-    property alias hasMedia: message_media.hasMedia
     property bool encryptMedia: message.message.length === 0 && message.encrypted
-    property alias mediaLocation: message_media.location
 
     property variant messageLinks: Tools.stringLinks(message.message)
     property bool hasLink: messageLinks.length !== 0
     property bool allowLoadLinks: telegram.userData.isLoadLink(user.id)
+
+    property alias maximumMediaHeight: message_media.maximumMediaHeight
+    property alias maximumMediaWidth: message_media.maximumMediaWidth
+
+    property alias isSticker: message_media.isSticker
+    property alias hasMedia: message_media.hasMedia
+    property alias mediaLocation: message_media.location
 
     signal dialogRequest(variant dialog);
     signal tagSearchRequest(string tag);
@@ -72,21 +77,32 @@ ListItemWithActions {
         message: message_item.message
     }
 
+/*
+    // XiaoGuo: uncomment this
+    Rectangle {
+        color: Qt.rgba(0, 0, 0.5, 0.5)
+        anchors.fill: parent
+        z: 128
+    }
+*/
     Row {
         id: frame_row
+        // anchors.fill: parent
         anchors {
-            left: parent.left
-            leftMargin: units.gu(1)
-            right: parent.right
-            rightMargin: units.gu(1)
+            fill: parent
+            leftMargin: units.dp(4)
         }
-        layoutDirection: message.out? Qt.RightToLeft : Qt.LeftToRight
+        layoutDirection: message.out ? Qt.RightToLeft : Qt.LeftToRight
         visible: !action_item.hasAction
-        spacing: frameMargins
+        spacing: units.dp(4)
 
         Avatar {
             id: contact_image
-            anchors.bottom: back_rect.bottom
+            anchors {
+                leftMargin: units.dp(4)
+                bottom: frame_row.bottom
+                // verticalCenter: parent.verticalCenter
+            }
             height: units.gu(5)
             visible: message_item.visibleNames && !message.out
 
@@ -110,8 +126,8 @@ ListItemWithActions {
         }
 
         Item {
-            height: 10
-            width: units.dp(4)
+            height: units.gu(1)
+            width: units.gu(1)
         }
 
         Item {
@@ -120,25 +136,74 @@ ListItemWithActions {
             height: column.height + 2*textMargins
             anchors.verticalCenter: parent.verticalCenter
 
-            TelegramBubble {
+            Item {
                 id: msg_frame_box
                 anchors.fill: parent
+                anchors.margins: -20*Devices.density
                 visible: !message_media.isSticker && !upload_item.isSticker
-                outgoing: message.out
-                height: parent.height
-                width: parent.width
+
+                Item {
+                    anchors.fill: parent
+                    anchors.margins: 20*Devices.density
+
+                    Rectangle {
+                        id: pointer_rect
+                        height: units.gu(1)
+                        width: height
+                        anchors.horizontalCenter: message.out ? parent.right : parent.left
+                        // anchors.verticalCenter: parent.verticalCenter
+                        // anchors.verticalCenter: contact_image.verticalCenter
+                        y: contact_image.visible
+                                ? (contact_image.y + contact_image.height / 2)
+                                : back_rect_layer.y + back_rect_layer.height - units.gu(2.6)
+                        color: back_rect_layer.color
+                        transformOrigin: Item.Center
+                        rotation: 45
+                    }
+
+                    Rectangle {
+                        id: back_rect_layer
+                        anchors.fill: parent
+                        radius: 6*Devices.density
+                        color: {
+                            // if(message_media.mediaPlayer)
+                            //     return "white"
+                            // else
+                                return message.out ? Colors.outgoing : Colors.incoming
+                        }
+                    }
+                }
+            }
+
+            DropShadow {
+                anchors.fill: source
+                source: msg_frame_box
+                radius: 6*Devices.density
+                samples: 16
+                horizontalOffset: 1*Devices.density
+                verticalOffset: 2*Devices.density
+                visible: !message_media.isSticker && !upload_item.isSticker
+                color: Qt.rgba(0,0,0,0.2)
             }
 
             Column {
                 id: column
+
+                property real maxWidthNoMsg: Math.max(
+                    user_name.visible ? user_name.width : 0,
+                    forward_user_name.visible ? forward_user_name.width : 0,
+                    message_reply.visible ? message_reply.width : 0,
+                    upload_item.visible ? upload_item.width : 0,
+                    message_media.visible ? message_media.width : 0);
+
                 anchors.centerIn: parent
                 height: (user_name.visible ? user_name.height : 0)
                         + (forward_user_name.visible ? forward_user_name.height : 0)
                         + (message_reply.visible ? message_reply.height : 0)
-                        + (uploading ? upload_item.height : 0)
-                        + (message_media.hasMedia ? message_media.height : 0)// + spacing
-                        + message_column.height + units.dp(10)
-                spacing: units.dp(4)
+                        + (upload_item.visible ? upload_item.height : 0)
+                        + (message_media.visible ? message_media.height : 0)
+                        + (message_wrapper.visible ? message_wrapper.height : 0)
+                width: Math.max(maxWidthNoMsg, message_wrapper.width)
                 clip: true
 
                 Label {
@@ -170,6 +235,7 @@ ListItemWithActions {
                     id: message_reply
                     telegram: telegramObject
                     message: message_item.message
+                    maximumWidth: message_item.maximumWidth
                     onMessageFocusRequest: message_item.messageFocusRequest(msgId)
                 }
 
@@ -178,205 +244,106 @@ ListItemWithActions {
                     telegram: telegramObject
                     message: message_item.message
                 }
-
+                
                 AccountMessageMedia {
                     id: message_media
                     message: message_item.message
-                    visible: hasMedia && !uploading
+                    visible: message_media.hasMedia && !uploading
 
                     onMediaClicked: {
                         openMedia(type, path);
                     }
                 }
 
-                Column {
-                    id: message_column
-                    width: Math.max(user_name.width, forward_user_name.width,
-                                    message_reply.width, message_media.width,
-                                    (message_text_frame.visible ? message_text_frame.width : 0))
+                Item {
+                    id: message_wrapper
 
-                    Item {
-                        id: message_text_frame
-                        width: message_text.width + units.dp(12)
-                        height: message_text.height// + units.dp(8)
-                        visible: !message_media.hasMedia && !uploading || message_media.isAudioMessage
+                    // Determine if time should go to the left or below the message.
+                    property bool timeFitsSide: !message_item.hasMedia
+                            && (message_text.contentWidth < maximumWidth - message_status.width - units.gu(2))
 
-                        TextEdit {
-                            id: message_text
-                            width: Math.min(htmlWidth, maximumWidth)
-                            height: contentHeight
-                            anchors.left: parent.left
-                            persistentSelection: true
-                            activeFocusOnPress: false
-                            readOnly: true
-                            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                            verticalAlignment: TextEdit.AlignLeft
-                            font.pixelSize: FontUtils.sizeToPixels(
-                                    message_item.hasMedia ? "small" : "medium")
-                            font.weight: Font.Normal
-                            color: message.out ? "white" : "#333333"
-                            text: emojis.bodyTextToEmojiText(messageText)
-                            textFormat: Text.RichText
+                    // Determine width, but expand if parent allows, so time fills to the far right.
+                    width: message_text.width + (timeFitsSide ? message_status.width + units.dp(4) : 0)
+                    // Math.max(message_status.x + message_status.width - message_text_frame.x)//, column.maxWidthNoMsg)
+                    height: childrenRect.height
+                    anchors.left: parent.left
+                    visible: !hasMedia
 
-                            onLinkActivated: {
-                                if (link.slice(0,6) === "tag://") {
-                                    message_item.tagSearchRequest(link.slide(6, link.length));
-                                } else {
-                                    Qt.openUrlExternally(link);
-                                }
-                            }
-
-                            property real htmlWidth: Cutegram.htmlWidth(text)
-                            property string messageText: message_media.isAudioMessage
-                                    ? i18n.tr("Audio messages not supported.")
-                                    : encryptMedia
-                                            ? qsTr("Media files are currently not supported in secret chats.")
-                                            : message.message
+                    TextEdit {
+                        id: message_text
+                        anchors {
+                            top: parent.top
+                            left: parent.left
+                            leftMargin: units.dp(3)
                         }
+                        width: Math.min(htmlWidth, maximumWidth)
+                        height: contentHeight
+                        font.pixelSize: FontUtils.sizeToPixels(message_item.hasMedia ? "small" : "medium")
+                        font.weight: Font.Normal
+                        horizontalAlignment: Text.AlignLeft
+                        persistentSelection: false
+                        activeFocusOnPress: false
+                        selectByMouse: false
+                        readOnly: true
+                        wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                        textFormat: Text.RichText
+                        text: emojis.bodyTextToEmojiText(messageText)
 
-                        // MessageLinkImage
+                        property real htmlWidth: Cutegram.htmlWidth(text)
+                        property string messageText: {
+                            // if (message_media.isAudioMessage) {
 
+                            // } else
+                            if (encryptMedia) {
+                                return i18n.tr("Media files are currently not supported in secret chats.")
+                            } else {
+                                return message.message
+                            }
+                        }
                     }
 
                     MessageStatus {
+                        id: message_status
                         anchors {
+                            top: message_text.bottom
                             right: parent.right
-                            rightMargin: units.gu(1)
                         }
+
                         message: message_item.message
                         hasMedia: message_item.hasMedia
+
+                        property int deltaY: message_wrapper.timeFitsSide ? -units.dp(4) : height
+                        property int extraHeight: message_wrapper.timeFitsSide ? 0 : height
+
+                        states: [
+                            State {
+                                name: "timeFitsText"
+                                when: message_wrapper.timeFitsSide
+                                PropertyChanges {
+                                    target: message_status
+                                    anchors.right: undefined
+                                    anchors.topMargin: -units.dp(12)
+                                    x: column.x + column.width - message_status.width - units.gu(1)
+                                }
+                            },
+                            State {
+                                name: "timeBottom"
+                                when: !message_wrapper.timeFitsSide
+                                PropertyChanges {
+                                    target: message_status
+                                    anchors.topMargin: units.dp(2)
+                                }
+                            }
+                        ]
                     }
 
-//                    ActivityIndicator {
-//                        id: indicator
-//                        anchors.centerIn: parent
-//                        width: units.dp(12)
-//                        height: width
-//                        running: !sent
-//                    }
                 }
-            } // column
+            }
+
         }
     }
 
     function click() {
         return message_media.click();
     }
-
-/*
-    Column {
-        id: column
-        anchors {
-            left: parent.left
-            right: parent.right
-            verticalCenter: parent.verticalCenter
-        }
-        spacing: units.gu(1)
-
-        // TelegramSection{}
-
-        Item {
-            id: internal_delegate
-            anchors {
-                left: parent ? parent.left : undefined
-                right: parent ? parent.right : undefined
-            }
-            height: isAction ? 0 : bubble.height
-            visible: !isAction
-
-            ContactImage {
-                id: image
-                anchors{
-                    left: parent.left
-                    leftMargin: visible ? units.gu(1) : 0
-                    //bottom: sectionVisible ? bubble.bottom : parent.bottom
-                    bottom: parent.bottom
-                }
-                width: visible ? units.gu(5) : 0
-                height: width
-                visible: message_item.isChat && !message.out
-                user: message_item.user
-                circleMode: false
-            }
-
-            Item {
-
-                width: units.gu(5)
-                height: width
-            }
-
-            TelegramBubble {
-                id: bubble
-                outgoing: message.out
-                anchors {
-                    top: parent.top
-                    left: outgoing ? undefined : image.right
-                    leftMargin: units.gu(2)
-                    right: outgoing ? parent.right : undefined
-                    rightMargin: units.gu(2)
-                }
-                height: message_contents.height + units.gu(1)
-                width: Math.max(sender_label.width,
-                                message_label.width) + units.gu(2)
-
-                Item {
-                    id: message_contents
-                    anchors {
-                        top: parent.top
-                        topMargin: units.dp(4)
-                        left: parent.left
-                        leftMargin: units.gu(1)
-                        right: parent.right
-                        rightMargin: units.gu(1)
-                    }
-                    height: childrenRect.height
-
-                    Label {
-                        id: sender_label
-                        anchors.top: parent.top
-                        height: text === "" ? 0 : implicitHeight
-                        fontSize: "medium" //userSettings.contents.fontSize
-                        font.weight: Font.Normal
-                        elide: Text.ElideRight
-                        visible: visibleNames
-                        text: user.firstName + " " + user.lastName
-//                        color: {
-//                            if(message_media.mediaPlayer)
-//                                return Cutegram.currentTheme.messageAudioNameColor
-//                            else
-//                            if(hasMedia || encryptMedia)
-//                                return Cutegram.currentTheme.messageMediaNameColor
-//                            else
-//                            if(message.out)
-//                                return Cutegram.currentTheme.messageOutgoingNameColor
-//                            else
-//                                return Cutegram.currentTheme.messageIncomingNameColor
-//                        }
-
-                        Component.onCompleted: {
-                            if (sender_label.paintedWidth > units.gu(28)) {
-                                sender_label.width = units.gu(28);
-                            }
-                        }
-                    }
-
-                    Label {
-                        id: message_label
-                        anchors {
-                            top: sender_label.bottom
-                        }
-                        height: paintedHeight
-                        width: Math.min(implicitWidth, 0.7 * internal_delegate.width)
-                        wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                        fontSize: "small"
-                        font.weight: Font.Normal
-                        text: emojis.bodyTextToEmojiText(message.message)
-                        textFormat: Text.RichText
-                    }
-                }
-            }
-        }
-    }
-*/
-
 }

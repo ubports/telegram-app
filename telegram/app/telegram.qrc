@@ -82,8 +82,8 @@
         <file>qml/files/attach_video.png</file>
         <file>qml/files/background_hd.jpg</file>
         <file>qml/files/call.png</file>
-        <file>qml/files/check_double_white.png</file>
-        <file>qml/files/check_single_white.png</file>
+        <file>qml/files/check_double_green.png</file>
+        <file>qml/files/check_single_green.png</file>
         <file>qml/files/conversation_bubble_arrow.png</file>
         <file>qml/files/delete.png</file>
         <file>qml/files/document.png</file>
@@ -106,7 +106,7 @@
         <file>qml/files/intro6.png</file>
         <file>qml/files/intro7.png</file>
         <file>qml/files/lock.png</file>
-        <file>qml/files/msg_clock_white.png</file>
+        <file>qml/files/msg_clock.png</file>
         <file>qml/files/menu_broadcast.png</file>
         <file>qml/files/menu_contacts.png</file>
         <file>qml/files/menu_help.png</file>
