@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 09:34+0200\n"
+"POT-Creation-Date: 2015-09-25 15:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,17 +162,17 @@ msgid "Select all"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:257
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:238
 msgid "Copy"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:263
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:244
 msgid "Forward"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:248
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:229
 msgid "Delete"
 msgstr ""
 
@@ -232,25 +232,15 @@ msgstr ""
 msgid "%1 deleted group photo"
 msgstr ""
 
-#. TRANSLATORS: Default message for received audio messages.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageItem.qml:263
-msgid "Audio messages not supported yet."
-msgstr ""
-
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageItem.qml:292
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:300
-msgid "Media files are currently not supported in secret chats."
-msgstr ""
-
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:137
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:132
 msgid "Please select chat"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:473
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:464
 msgid "Secret chat requested."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:485
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:476
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -786,9 +776,17 @@ msgid "typing..."
 msgstr ""
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:231
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:217
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
+msgstr ""
+
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:279
+msgid "Audio attachment not supported yet ;("
+msgstr ""
+
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:281
+msgid "Media files are currently not supported in secret chats."
 msgstr ""
 
 #. TRANSLATORS: User status: deleted

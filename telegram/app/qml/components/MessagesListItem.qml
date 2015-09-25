@@ -12,7 +12,7 @@ import "qrc:/qml/js/colors.js" as Colors
 ListItemWithActions {
     id: message_item
     width: 100
-    height: Math.max(logicalHeight, minimumHeight)
+    height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
 
     color: Qt.rgba(0, 0, 0, 0)
@@ -60,7 +60,7 @@ ListItemWithActions {
     signal dialogRequest(variant dialog);
     signal tagSearchRequest(string tag);
     signal messageFocusRequest(int msgId);
-    signal openMedia(int type, string path);
+    signal previewRequest(int type, string path)
 
 //    Connections {
 //        target: telegram.userData
@@ -77,14 +77,6 @@ ListItemWithActions {
         message: message_item.message
     }
 
-/*
-    // XiaoGuo: uncomment this
-    Rectangle {
-        color: Qt.rgba(0, 0, 0.5, 0.5)
-        anchors.fill: parent
-        z: 128
-    }
-*/
     Row {
         id: frame_row
         // anchors.fill: parent
@@ -197,12 +189,6 @@ ListItemWithActions {
                     message_media.visible ? message_media.width : 0);
 
                 anchors.centerIn: parent
-                height: (user_name.visible ? user_name.height : 0)
-                        + (forward_user_name.visible ? forward_user_name.height : 0)
-                        + (message_reply.visible ? message_reply.height : 0)
-                        + (upload_item.visible ? upload_item.height : 0)
-                        + (message_media.visible ? message_media.height : 0)
-                        + (message_wrapper.visible ? message_wrapper.height : 0)
                 width: Math.max(maxWidthNoMsg, message_wrapper.width)
                 clip: true
 
@@ -250,9 +236,7 @@ ListItemWithActions {
                     message: message_item.message
                     visible: message_media.hasMedia && !uploading
 
-                    onMediaClicked: {
-                        openMedia(type, path);
-                    }
+                    onMediaClicked: message_item.previewRequest(type, path)
                 }
 
                 Item {
@@ -267,7 +251,7 @@ ListItemWithActions {
                     // Math.max(message_status.x + message_status.width - message_text_frame.x)//, column.maxWidthNoMsg)
                     height: childrenRect.height
                     anchors.left: parent.left
-                    visible: !hasMedia
+                    visible: !hasMedia || message_media.isAudioMessage
 
                     TextEdit {
                         id: message_text
@@ -291,10 +275,9 @@ ListItemWithActions {
 
                         property real htmlWidth: Cutegram.htmlWidth(text)
                         property string messageText: {
-                            // if (message_media.isAudioMessage) {
-
-                            // } else
-                            if (encryptMedia) {
+                            if (message_media.isAudioMessage) {
+                                return i18n.tr("Audio attachment not supported yet ;(")
+                            } else if (encryptMedia) {
                                 return i18n.tr("Media files are currently not supported in secret chats.")
                             } else {
                                 return message.message
@@ -344,6 +327,6 @@ ListItemWithActions {
     }
 
     function click() {
-        return message_media.click();
+        return message_media.click()
     }
 }

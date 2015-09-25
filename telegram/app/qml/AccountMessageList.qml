@@ -24,7 +24,8 @@ Rectangle {
     property real topMargin
     property real bottomMargin
 
-    property real maximumMediaHeight: (height-topMargin-bottomMargin)*0.75
+    property real maximumMediaHeight: maximumMediaWidth
+    // This is neat, but I don't like it resizes the photo live: (height-topMargin-bottomMargin)*0.75
     property real maximumMediaWidth: width*0.75
 
     property bool isActive: View.active && View.visible
@@ -86,8 +87,6 @@ Rectangle {
                 return;
             }
 
-            //mlist.positionViewAtBeginning();
-            console.log("unreads " + unreads);
             focus_msg_timer.msgIndex = unreads>0? unreads-1 : 0
             focus_msg_timer.restart()
         }
@@ -215,26 +214,12 @@ Rectangle {
         }
 
         listModel: messages_model
-        
         listDelegate: MessagesListItem {
-            /*
-                // XiaoGuo, uncomment this
-                Rectangle {
-                    color: Qt.rgba(0, 0.3, 0.0, 0.5)
-                    anchors.fill: parent
-                    z: 128
-                }
-            */
-
             id: message_item
-            anchors {
-                left: parent ? parent.left : undefined
-                right: parent ? parent.right : undefined
-            }
-            width: mlist.width
-            // maximumMediaHeight: acc_msg_list.maximumMediaHeight
-            // maximumMediaWidth: acc_msg_list.maximumMediaWidth
+            maximumMediaHeight: acc_msg_list.maximumMediaHeight
+            maximumMediaWidth: acc_msg_list.maximumMediaWidth
             message: item
+            width: mlist.width
             visibleNames: isChat
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
 
@@ -276,18 +261,20 @@ Rectangle {
             }
 
             onItemClicked: {
+                console.log("on item clicked");
                 if (mlist.isInSelectionMode) {
                     if (selected) {
                         mlist.deselectItem(message_item);
                     } else {
                         mlist.selectItem(message_item);
                     }
-                } else {
-                    message_item.click();
                 }
+
+                mouse.accepted = true;
+                message_item.click();
             }
 
-            onOpenMedia: {
+            onPreviewRequest: {
                 console.log("onOpenMedia");
                 var properties;
                 switch (type) {
@@ -326,6 +313,14 @@ Rectangle {
             flickDeceleration = flickDeceleration * scaleFactor;
         }
 
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onPressed: {
+            acc_msg_list.focusRequest()
+            mouse.accepted = false
+        }
     }
 
     NormalWheelScroll {

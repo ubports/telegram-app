@@ -412,6 +412,7 @@ Item {
         property real lastX: -1
 
         anchors.fill: parent
+        z: -100
 
         drag {
             target: locked ? null : main

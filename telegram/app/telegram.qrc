@@ -19,7 +19,6 @@
         <file>qml/AccountList.qml</file>
         <file>qml/AccountLoading.qml</file>
         <file>qml/AccountMessageAction.qml</file>
-        <file>qml/AccountMessageItem.qml</file>
         <file>qml/AccountMessageList.qml</file>
         <file>qml/AccountMessageMedia.qml</file>
         <file>qml/AccountMessageUpload.qml</file>
@@ -84,6 +83,8 @@
         <file>qml/files/call.png</file>
         <file>qml/files/check_double_green.png</file>
         <file>qml/files/check_single_green.png</file>
+        <file>qml/files/check_double_white.png</file>
+        <file>qml/files/check_single_white.png</file>
         <file>qml/files/conversation_bubble_arrow.png</file>
         <file>qml/files/delete.png</file>
         <file>qml/files/document.png</file>

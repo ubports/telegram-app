@@ -140,7 +140,6 @@ Page {
             currentDialog: dialog_page.currentDialog
             onAccepted: message_list.sendMessage(text, inReplyTo)
 //            onCopyRequest: message_list.copy()
-            //onEmojiRequest:
         }
     }
 

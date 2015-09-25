@@ -19,14 +19,14 @@ Item {
     Rectangle {
         visible: hasMedia
         anchors {
-            leftMargin: units.gu(-1)
-            rightMargin: units.gu(-1)
-            topMargin: units.dp(-2)
-            bottomMargin: units.dp(-2)
+            leftMargin: units.dp(-4)
+            rightMargin: units.dp(-5)
+            topMargin: units.dp(-1)
+            bottomMargin: units.dp(-1)
             fill: message_status_row
         }
-        color: Qt.rgba(0, 0, 0, 0.4)
-        radius: units.dp(3)
+        color: Qt.rgba(0, 0, 0, 0.3)
+        radius: units.dp(2)
     }
 
     Row {
@@ -62,9 +62,9 @@ Item {
                 if (!message.sent) {
                     return Qt.resolvedUrl("qrc:/qml/files/msg_clock.png");
                 } else if (message.out && message.unread) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_single_green.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/check_single_" + (status_item.hasMedia ? "white.png" : "green.png"));
                 } else if (message.out) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_double_green.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/check_double_" + (status_item.hasMedia ? "white.png" : "green.png"));
                 } else {
                     return "";
                 }

@@ -219,7 +219,7 @@ ListItem {
         visible: showMessage
         font.pixelSize: units.dp(12)
         color: Colors.grey
-        text: Cutegram.getTimeString(messageDate)
+        text: messageDate > 0 ? Cutegram.getTimeString(messageDate) : ""
     }
 
     Rectangle {

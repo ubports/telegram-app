@@ -5,7 +5,8 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import QtGraphicalEffects 1.0
 
-import "qrc:/qml/ui"
+import "ui"
+import "components"
 
 Item {
     id: msg_media
@@ -17,8 +18,8 @@ Item {
     property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
 
-    property real maximumMediaHeight: units.gu(24)//300*Devices.density
-    property real maximumMediaWidth: units.gu(20)//width*0.75
+    property real maximumMediaHeight: 256*Devices.density
+    property real maximumMediaWidth: width*0.75
     property real maximumMediaRatio: maximumMediaWidth/maximumMediaHeight
 
     property variant msgDate: CalendarConv.fromTime_t(message.date)
@@ -79,6 +80,7 @@ Item {
     }
 
     height: {
+        // return units.gu(26);
         var result
         if(mediaPlayer)
             return mediaPlayer.height
@@ -202,10 +204,17 @@ Item {
         }
     }
 
+    FastBlur {
+        anchors.fill: media_img
+        source: media_img
+        radius: 32
+        visible: !media_img.visible
+    }
+
     Rectangle {
         id: video_frame
         color: "#44000000"
-        visible: file_handler.targetType == FileHandler.TypeTargetMediaVideo// && fileLocation.length != 0
+        visible: file_handler.targetType == FileHandler.TypeTargetMediaVideo && fileLocation.length != 0
         anchors.fill: media_img
 
         Image {
@@ -221,32 +230,32 @@ Item {
         id: download_frame
         anchors.fill: parent
         color: "#88000000"
-        visible: fileLocation.length == 0 && file_handler.targetType != FileHandler.TypeTargetMediaPhoto && !isSticker && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
+        visible: fileLocation.length == 0 && !isSticker
+                && file_handler.targetType != FileHandler.TypeTargetMediaPhoto
+                && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
         radius: 3*Devices.density
 
         Image {
             width: units.gu(6)
             height: width
+            anchors.centerIn: parent
             sourceSize: Qt.size(width,height)
             source: {
-                if (!video_frame.visible) {
-                    if (file_handler.targetType == FileHandler.TypeTargetUnknown) {
-                        return "qrc:/qml/files/attachment_cancel.png"; // indicating error
-                    } else {
-                        return isAudioMessage ? "" : "qrc:/qml/files/attachment_download.png";
-                    }
+                return Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
+
+                if (file_handler.targetType == FileHandler.TypeTargetUnknown) {
+                    return "qrc:/qml/files/attachment_cancel.png"; // indicating error
                 } else {
-                    return "";
+                    return msg_item.isAudioMessage ? "" : Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
                 }
             }
-            anchors.centerIn: parent
             visible: !downloading
         }
 
         Text {
             anchors.top: parent.top
             anchors.left: parent.left
-            anchors.margins: 2*Devices.density
+            anchors.margins: 3*Devices.density
             font.family: AsemanApp.globalFont.family
             font.pixelSize: Math.floor(9*Devices.fontDensity)
             color: "#ffffff"
@@ -262,13 +271,6 @@ Item {
         }
     }
 
-    FastBlur {
-        anchors.fill: media_img
-        source: media_img
-        radius: 32
-        visible: !media_img.visible
-    }
-
     ProgressBar {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
@@ -279,16 +281,6 @@ Item {
         percent: downloading ? file_handler.progressPercent : 0
         visible: downloading
     }
-
-//    ActivityIndicator {
-//        id: indicator
-//        anchors.centerIn: parent
-//        width: units.gu(3)
-//        height: width
-//        running: active
-
-//        property bool active: file_handler.progressType != FileHandler.TypeProgressEmpty
-//    }
 
     Image {
         anchors.horizontalCenter: parent.horizontalCenter
@@ -303,10 +295,23 @@ Item {
         smooth: true
     }
 
+    MessageStatus {
+        id: message_status
+        anchors {
+            bottom: parent.bottom
+            bottomMargin: units.dp(4)
+            right: parent.right
+            rightMargin: units.dp(4)
+        }
+        visible: file_handler.targetType != FileHandler.TypeTargetMediaAudio
+
+        message: msg_media.message
+        hasMedia: msg_media.hasMedia
+    }
+
     Image {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
-//        anchors.topMargin: 20*Devices.density
         height: units.gu(6)
         width: units.gu(6)
         source: "qrc:/qml/files/attachment_cancel.png"
@@ -319,9 +324,10 @@ Item {
     }
 
     function click() {
-        console.log("media clicked");
+        console.log("AccountMessageMedia click()");
         if (fileLocation.length != 0) {
-            mediaClicked(mediaType, fileLocation);
+            console.log("opening! " + fileLocation);
+            msg_media.mediaClicked(mediaType, fileLocation);
         }
         else
         {
@@ -336,7 +342,7 @@ Item {
                 break;
 
             case FileHandler.TypeTargetMediaGeoPoint:
-                Qt.openUrlExternally( mapDownloader.webLinkOf(Qt.point(media.geo.lat, media.geo.longitude)) )
+                //Qt.openUrlExternally( mapDownloader.webLinkOf(Qt.point(media.geo.lat, media.geo.longitude)) )
                 break;
 
             case FileHandler.TypeTargetUnknown:
@@ -352,13 +358,10 @@ Item {
     Component {
         id: media_player_component
         MediaPlayerItem {
-            width: units.gu(28)
-            height: units.gu(6)
+            width: 180*Devices.density
+            height: 40*Devices.density
             anchors.verticalCenter: parent.verticalCenter
-            filePath: {
-                console.log("audio file location: " + fileLocation);
-                return fileLocation;
-            }
+            filePath: fileLocation
             z: fileLocation.length == 0? -1 : 0
 
             MouseArea {
