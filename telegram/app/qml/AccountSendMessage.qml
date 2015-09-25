@@ -9,7 +9,7 @@ import Ubuntu.Content 1.0
 import AsemanTools 1.0
 import TelegramQML 1.0
 
-import "qrc:/qml/components"
+import "components"
 
 Rectangle {
     id: smsg
@@ -109,6 +109,7 @@ Rectangle {
             right: send_button_box.left
             bottom: parent.bottom
             margins: units.gu(1)
+            rightMargin: 0
         }
 
         // This value is to avoid letter and underline being cut off.
@@ -145,146 +146,6 @@ Rectangle {
         }
     }
 
-//    TextAreaCore {
-//        id: txt
-//        anchors {
-//            left: parent.left
-//            right: send_button_box.right
-//            bottom: parent.bottom
-//            margins: units.gu(1)
-//        }
-//        selectByMouse: true
-//        selectionColor: Cutegram.currentTheme.masterColor
-//        selectedTextColor: masterPalette.highlightedText
-//        pickerEnable: true
-//        color: Cutegram.currentTheme.sendFrameFontColor
-//        font.family: Cutegram.currentTheme.sendFrameFont.family
-//        font.pixelSize: Cutegram.currentTheme.sendFrameFont.pointSize*Devices.fontDensity
-//        wrapMode: TextEdit.WrapAtWordBoundaryOrAnywhere
-//        clip: true
-//        //placeholder: qsTr("Write a message...")
-
-//        //onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
-//        onTextChanged: {
-//            if (text.trim().length === 0)
-//                text = ""
-
-//            typing_update_timer.startTyping()
-//        }
-//        Keys.onPressed: {
-//            if((event.key == Qt.Key_Enter || event.key == Qt.Key_Return) && privates.suggestionItem)
-//            {
-//                var result
-//                if(privates.suggestionItem.isTagSuggestion) {
-//                    result = privates.suggestionItem.currentTag()
-//                } else {
-//                    var uId = privates.suggestionItem.currentUserId()
-//                    if(!uId) {
-//                        if( event.modifiers == Qt.NoModifier )
-//                            smsg.send()
-
-//                        typing_timer.finishTyping()
-//                        return
-//                    }
-
-//                    var userObj = telegramObject.user(uId)
-//                    var userName = userObj.username
-//                    result = userName
-//                }
-
-//                txt.selectWord()
-//                txt.remove(txt.selectionStart, txt.selectionEnd)
-//                txt.insert(txt.cursorPosition, result)
-
-//                last_line_remover.restart()
-//                privates.suggestionItem.destroy()
-//                event.accepted = false
-//            }
-//            else
-//            if( event.key == Qt.Key_Return || event.key == Qt.Key_Enter )
-//            {
-//                if( event.modifiers == Qt.NoModifier )
-//                    smsg.send()
-
-//                typing_timer.finishTyping()
-//            }
-//            else
-//            if(event.key == 8204 && event.modifiers == Qt.ShiftModifier)
-//            {
-//                if(txt.selectedText.length!=0)
-//                    txt.remove(txt.selectionStart, txt.selectionEnd)
-
-//                var npos = txt.cursorPosition+1
-//                txt.insert(txt.cursorPosition,"‌") //! Persian mid space character. you can't see it
-//                txt.cursorPosition = npos
-
-//                event.accepted = false
-//            }
-//            else
-//            if(event.modifiers == Qt.ControlModifier && event.key == Qt.Key_C)
-//            {
-//                if(txt.selectedText.length == 0) {
-//                    smsg.copyRequest()
-//                    event.accepted = false
-//                }
-//            }
-//            else
-//            if(event.key == Qt.Key_At || event.key == Qt.Key_NumberSign)
-//            {
-//                if(!privates.suggestionItem) {
-//                    if(event.key == Qt.Key_At)
-//                        privates.suggestionItem = username_sgs_component.createObject(mainFrame)
-//                    else
-//                    if(event.key == Qt.Key_NumberSign)
-//                        privates.suggestionItem = tags_sgs_component.createObject(mainFrame)
-
-//                    var pnt = smsg.mapToItem(mainFrame, 0, 0)
-//                    var pntY = pnt.y
-//                    var pntX = pnt.x + txt.positionToRectangle(txt.cursorPosition).x + txt_frame.x
-
-//                    privates.suggestionItem.x = pntX
-//                    privates.suggestionItem.y = pntY - privates.suggestionItem.height
-//                } else {
-//                    privates.suggestionItem.keyword = ""
-//                }
-//            }
-//            else
-//            if(event.key == Qt.Key_Space || event.key == Qt.Key_Escape || event.key == Qt.Key_Delete)
-//            {
-//                if(privates.suggestionItem)
-//                    privates.suggestionItem.destroy()
-//            }
-//            else
-//            if(event.key == Qt.Key_Up && privates.suggestionItem)
-//            {
-//                privates.suggestionItem.up()
-//                event.accepted = false
-//            }
-//            else
-//            if(event.key == Qt.Key_Down && privates.suggestionItem)
-//            {
-//                privates.suggestionItem.down()
-//                event.accepted = false
-//            }
-//            else
-//            if((event.modifiers == Qt.NoModifier || event.modifiers == Qt.ShiftModifier) && privates.suggestionItem &&
-//               event.key != Qt.Key_Left && event.key != Qt.Key_Right)
-//            {
-//                check_suggestion.restart()
-//            }
-//        }
-
-//        Timer {
-//            id: last_line_remover
-//            interval: 1
-//            onTriggered: {
-//                var cpos = txt.cursorPosition
-//                txt.text = txt.text.slice(0, cpos-1) + " " + txt.text.slice(cpos+1, txt.length)
-//                txt.cursorPosition = cpos
-//            }
-//        }
-//    }
-
     Component {
         id: attach_popover_component
 
@@ -305,8 +166,8 @@ Rectangle {
                     // TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
                     text: i18n.tr("Photo")
                     onTriggered: {
-                        attach_popover.hide();
-                        requestMedia(ContentType.Pictures);
+                        attach_popover.hide()
+                        requestMedia(ContentType.Pictures)
                     }
                 }
                 Action {
@@ -314,9 +175,8 @@ Rectangle {
                     // TRANSLATORS: Used in attach menu, when sending a video to the conversation.
                     text: i18n.tr("Video")
                     onTriggered: {
-                        txt.forceActiveFocus();
-                        attach_popover.hide();
-                        requestMedia(ContentType.Videos);
+                        attach_popover.hide()
+                        requestMedia(ContentType.Videos)
                     }
                 }
                 Action {
@@ -324,9 +184,8 @@ Rectangle {
                     // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
                     text: i18n.tr("File")
                     onTriggered: {
-                        txt.forceActiveFocus();
-                        attach_popover.hide();
-                        requestMedia(ContentType.All);
+                        attach_popover.hide()
+                        requestMedia(ContentType.All)
                     }
                 }
             }
@@ -354,113 +213,61 @@ Rectangle {
         id: send_button_box
         anchors {
             top: parent.top
-            bottom: parent.bottom
             right: parent.right
-            rightMargin: units.gu(2)
+            bottom: parent.bottom
         }
-        width: buttons_row.width
+        width: send_mouse_area.width
         visible: !messagePlaceholder.visible
 
-        Row {
-            id: buttons_row
-            spacing: units.gu(2)
-            anchors.verticalCenter: send_button_box.verticalCenter
+        MouseArea {
+            id: send_mouse_area
+            height: parent.height
+            width: units.gu(6)
+            enabled: telegramObject.connected
 
-            Image {
-                id: attach_button
-                height: units.gu(3.5)
-                fillMode: Image.PreserveAspectFit
-                focus: false
-                enabled: /* TODO isConnected && */ message.text.length === 0
-                source: "qrc:/qml/files/attach.png"
-
-                states: [
-                    State {
-                        name: "text"
-                        when: txt.text.length > 0
-                        PropertyChanges {
-                            target: attach_button
-                            width: 0
-                            opacity: 0.0
-                        }
-                    },
-                    State {
-                        name: "notext"
-                        when: txt.text.length === 0
-                        PropertyChanges {
-                            target: attach_button
-                            width: units.gu(3.5)
-                            opacity: 1.0
-                        }
+            states: [
+                State {
+                    name: "send"
+                    when: txt.text.length > 0
+                    PropertyChanges {
+                        target: send_image
+                        source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
                     }
-                ]
-
-                transitions: [
-                    Transition {
-                        PropertyAnimation {
-                            target: attach_button
-                            properties: "width, opacity"
-                            duration: UbuntuAnimation.FastDuration
-                        }
+                },
+                State {
+                    name: "attach"
+                    when: txt.text.length == 0
+                    PropertyChanges {
+                        target: send_image
+                        source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
                     }
-                ]
+                }
+            ]
 
-                MouseArea {
-                    anchors.fill: attach_button
-                    onClicked: {
-                        if (telegramObject.connected && actionsEnabled) {
-                            txt.focus = false;
-                            Qt.inputMethod.hide();
-                            PopupUtils.open(attach_popover_component, attach_button);
-                        }
-                    }
+            onClicked: {
+                if (!telegramObject.connected) return;
+
+                if (state == "attach") {
+                    Haptics.play()
+                    PopupUtils.open(attach_popover_component, send_button_box)
+                } else if (state == "send" && txt.text.length > 0) {
+                    Haptics.play()
+                    smsg.send()
                 }
             }
 
-//            Image {
-//                id: emoji_btn
-//                height: units.gu(3.5)
-//                width: height
-//                source: "qrc:/qml/files/emoji.png" // "qrc:/qml/files/emoji-light.png"
-
-//                MouseArea {
-//                    anchors.fill: attach_button
-//                    onClicked: {
-//                        var pnt = smsg.mapFromItem(emoji_btn,0,0)
-//                        smsg.emojiRequest(pnt.x + width/2, pnt.y + height*0.2)
-//                    }
-//                }
-//            }
-
-            Image {
-                id: send_button
-                height: units.gu(3.5)
+            CrossFadeImage {
+                id: send_image
+                anchors.centerIn: parent
+                height: units.dp(22)
                 width: height
                 fillMode: Image.PreserveAspectFit
-                focus: false
-                enabled: isConnected
-                source: enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png"
-
-                MouseArea {
-                    anchors.fill: send_button
-                    onClicked: {
-                        if (txt.text.length > 0) {
-                            smsg.send()
-                        }
-                    }
-                }
+                fadeStyle: "cross"
+                source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
             }
         }
+
     }
-
-    // TODO clipboard: txt.copy()
-
-// TODO attach file
-//    if( file.length == 0 )
-//        return
-
-//    var dId = isChat? currentDialog.peer.chatId : currentDialog.peer.userId
-//    telegramObject.sendFile(dId, file)
 
     function insertText( str ) {
         if( txt.selectedText.length != 0 )

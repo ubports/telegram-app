@@ -20,8 +20,8 @@ import Ubuntu.Content 0.1
 
 import TelegramQML 1.0
 
-import "qrc:/qml/components/"
-import "qrc:/qml/js/colors.js" as Colors
+import "components"
+import "js/colors.js" as Colors
 
 Page {
     id: preview_page

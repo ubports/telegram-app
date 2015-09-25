@@ -24,5 +24,6 @@ var time_in = "#abaeb3"
 
 var chat_section = "#99a6bcca"
 
-var header_blue = "#53749d"
+var header_blue = "#0053749d"
+var header_blue_ff = "#ff53749d"
 var unread_section_foreground = header_blue

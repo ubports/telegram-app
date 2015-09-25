@@ -1,9 +1,8 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.2
 import AsemanTools 1.0
-//import Cutegram 1.0
 
-import "qrc:/qml/components"
+import "components"
 
 TelegramPage {
     id: auth_code_page

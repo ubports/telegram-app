@@ -7,9 +7,9 @@ import AsemanTools.Controls 1.0 as Controls
 import AsemanTools 1.0
 import TelegramQML 1.0
 
+import "components"
 import "js/colors.js" as Colors
-import "qrc:/qml/ui"
-import "qrc:/qml/components"
+import "ui"
 
 Rectangle {
     id: acc_msg_list
@@ -193,7 +193,7 @@ Rectangle {
                 id: unread_texts
                 anchors.centerIn: parent
                 color: Colors.unread_section_foreground
-                text: section=="false" ? i18n.tr("New messages").arg(messages_model.unreads) : ""
+                text: section=="false" ? i18n.tr("New messages") : ""
                 fontSize: "medium"
                 font.weight: Font.Normal
             }
@@ -511,6 +511,11 @@ Rectangle {
                 rejectSecretRequest()
             }
         }
+    }
+
+    // Could use wrapping in a Loader { active: currentDialog.encrypted }
+    SecretChatEdges {
+        visible: currentDialog.encrypted
     }
 
     Timer {

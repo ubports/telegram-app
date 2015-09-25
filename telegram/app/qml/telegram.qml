@@ -26,10 +26,9 @@ import Ubuntu.PushNotifications 0.1
 
 import TelegramQML 1.0
 
-import "qrc:/qml"
-import "qrc:/qml/ui"
-import "qrc:/qml/components"
-import "qrc:/qml/js/version.js" as Version
+import "components"
+import "js/version.js" as Version
+import "ui"
 
 MainView {
     id: mainView

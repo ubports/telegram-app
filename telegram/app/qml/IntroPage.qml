@@ -1,7 +1,8 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.2
-import "js/colors.js" as Colors
+
 import "components"
+import "js/colors.js" as Colors
 
 TelegramPage {
     id: page

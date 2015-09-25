@@ -3,7 +3,7 @@ import Ubuntu.Components 1.2
 import Ubuntu.Components.Popups 1.0
 import AsemanTools 1.0
 
-import "qrc:/qml/components"
+import "components"
 
 TelegramPage {
     id: auth_phone_page

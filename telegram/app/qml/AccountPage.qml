@@ -6,7 +6,7 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import Cutegram 1.0
 
-import "qrc:/qml/components"
+import "components"
 
 // Cutegram: AccountView.qml
 

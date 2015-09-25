@@ -5,8 +5,8 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import QtGraphicalEffects 1.0
 
-import "ui"
 import "components"
+import "ui"
 
 Item {
     id: msg_media

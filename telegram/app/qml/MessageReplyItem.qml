@@ -2,7 +2,8 @@ import QtQuick 2.0
 import Ubuntu.Components 1.2
 import TelegramQML 1.0
 import AsemanTools 1.0
-import "qrc:/qml/js/colors.js" as Colors
+
+import "js/colors.js" as Colors
 
 Item {
     id: msg_reply

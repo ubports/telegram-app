@@ -6,11 +6,10 @@ import Ubuntu.Content 1.0
 
 import TelegramQML 1.0
 
-import "qrc:/qml"
-import "qrc:/qml/components"
-import "qrc:/qml/js/avatar.js" as Avatar
-import "qrc:/qml/js/time.js" as Time
-import "qrc:/qml/js/colors.js" as Colors
+import "components"
+import "js/avatar.js" as Avatar
+import "js/time.js" as Time
+import "js/colors.js" as Colors
 
 Page {
     id: profile_page

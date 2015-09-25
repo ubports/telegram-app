@@ -23,7 +23,7 @@ ListItem {
     property string fullName: user.firstName + " " + user.lastName
     property UserStatus status: user.status
 
-    property bool isOnline: status.classType == typeUserStatusOnline
+    property bool isOnline: status.classType == userStatusType.typeUserStatusOnline
     property string title: fullName
     property string subtitle: {
         // TODO check classType vs typeUserEmpty, typeUserDeleted

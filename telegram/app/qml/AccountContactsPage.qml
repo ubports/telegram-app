@@ -8,10 +8,9 @@ import Ubuntu.Contacts 0.1
 import AsemanTools 1.0
 import TelegramQML 1.0
 
+import "components"
 import "js/time.js" as Time
 import "js/colors.js" as Colors
-
-import "qrc:/qml/components"
 
 // Cutegram: AccountContactList.qml
 

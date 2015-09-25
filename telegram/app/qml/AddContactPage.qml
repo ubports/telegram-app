@@ -3,8 +3,8 @@ import Ubuntu.Components 1.2
 
 import TelegramQML 1.0
 
-import "qrc:/qml/js/colors.js" as Colors
-import "qrc:/qml/js/time.js" as Time
+import "js/colors.js" as Colors
+import "js/time.js" as Time
 
 Page {
     property Telegram telegram

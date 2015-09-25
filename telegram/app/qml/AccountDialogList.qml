@@ -5,8 +5,10 @@ import Ubuntu.Components.Popups 1.0
 import AsemanTools 1.0
 import TelegramQML 1.0
 
-import "qrc:/qml/components"
-import "qrc:/qml/ui/dialogs"
+import "components"
+import "ui/dialogs"
+import "js/time.js" as Time
+import "js/colors.js" as Colors
 
 // Cutegram: AccountDialogList.qml
 

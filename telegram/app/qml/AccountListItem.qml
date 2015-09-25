@@ -6,8 +6,6 @@ import Ubuntu.Components.ListItems 1.0 as ListItem
 import AsemanTools 1.0
 import TelegramQML 1.0
 
-import "qrc:/qml"
-
 // Cutegram: AccountFrame.qml
 
 Item {

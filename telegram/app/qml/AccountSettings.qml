@@ -6,8 +6,8 @@ import Ubuntu.Content 1.0
 
 import TelegramQML 1.0
 
-import "qrc:/qml/components/"
-import "qrc:/qml/js/time.js" as Time
+import "components"
+import "js/time.js" as Time
 
 Page {
     id: page
