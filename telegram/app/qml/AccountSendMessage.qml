@@ -81,6 +81,10 @@ Rectangle {
 
     Label {
         id: messagePlaceholder
+
+        property bool isWaiting: enchat && enchat.classType == encryptedTypes.typeEncryptedChatWaiting
+        property bool isDiscarded: enchat && enchat.classType == encryptedTypes.typeEncryptedChatDiscarded
+
         anchors {
             left: parent.left
             right: parent.right
@@ -89,10 +93,10 @@ Rectangle {
         height: parent.height
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
-        visible: false // TODO is secret && state != 2
+        visible: enchat && (isWaiting || isDiscarded)
         color: "grey"
         fontSize: "medium"
-        text: "" // TODO secret chat state
+        text: enchat ? delegate_utils.getSecretChatState(encryptedTypes, enchat.classType) : ""
     }
 
     TextArea {

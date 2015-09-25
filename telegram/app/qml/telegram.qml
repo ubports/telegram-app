@@ -385,11 +385,11 @@ MainView {
     Item {
         id: encryptedTypes
 
+        property real typeEncryptedChatEmpty: 0xab7ec0a0
         property real typeEncryptedChatWaiting: 0x3bf703dc
         property real typeEncryptedChatRequested: 0xc878527e
-        property real typeEncryptedChatEmpty: 0xab7ec0a0
-        property real typeEncryptedChatDiscarded: 0x13d6dd27
         property real typeEncryptedChat: 0xfa56ce36
+        property real typeEncryptedChatDiscarded: 0x13d6dd27
     }
 
     Item {

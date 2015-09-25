@@ -4,12 +4,13 @@ import "../js/colors.js" as TelegramColors
 Rectangle {
     property alias text: buttonLabel.text
     property alias textColor: buttonLabel.color
+    property color backgroundColor: TelegramColors.blue
 
     signal clicked
 
     width: buttonLabel.width + units.gu(5)
     height: buttonLabel.height + units.gu(2)
-    color: enabled ? TelegramColors.blue : TelegramColors.grey
+    color: enabled ? backgroundColor : TelegramColors.grey
     radius: 3
 
     Behavior on color {

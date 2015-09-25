@@ -43,17 +43,12 @@ Rectangle {
 
     property int filterId: -1
 
-    property real typeEncryptedChatWaiting: 0x3bf703dc
-    property real typeEncryptedChatRequested: 0xc878527e
-    property real typeEncryptedChatEmpty: 0xab7ec0a0
-    property real typeEncryptedChatDiscarded: 0x13d6dd27
-    property real typeEncryptedChat: 0xfa56ce36
-
     signal forwardRequest(variant messageIds)
     signal focusRequest()
     signal dialogRequest(variant dialogObject)
     signal tagSearchRequest(string tag)
     signal replyToRequest(int msgId)
+    signal rejectSecretRequest()
 
     onIsActiveChanged: {
         if( isActive )
@@ -161,7 +156,7 @@ Rectangle {
         focus: false
         highlightFollowsCurrentItem: false
         verticalLayoutDirection: ListView.BottomToTop
-        visible: enchat.classType != typeEncryptedChatDiscarded
+        visible: !enchat || enchat.classType != encryptedTypes.typeEncryptedChatDiscarded
 
         maximumFlickVelocity: 5000
         flickDeceleration: 2000
@@ -453,7 +448,7 @@ Rectangle {
         anchors.topMargin: units.gu(5)
         fontSize: "large"
         text: i18n.tr("Secret chat requested.")
-        visible: enchat.classType == typeEncryptedChatRequested
+        visible: enchat && enchat.classType == encryptedTypes.typeEncryptedChatRequested
         onVisibleChanged: secret_chat_indicator.stop()
     }
 
@@ -465,7 +460,7 @@ Rectangle {
         fontSize: "x-small"
         horizontalAlignment: Text.AlignHCenter
         text: i18n.tr("Secret chat rejected or accepted from another device.\nNote that Android accepts secret chats automatically.")
-        visible: enchat.classType == typeEncryptedChatDiscarded
+        visible: enchat && enchat.classType == encryptedTypes.typeEncryptedChatDiscarded
         onVisibleChanged: secret_chat_indicator.stop()
     }
 
@@ -479,6 +474,43 @@ Rectangle {
 
         function start() { running = true; }
         function stop() { running = false; }
+    }
+
+    Column {
+        anchors.top: acc_rjc_txt.bottom
+        anchors.topMargin: 10*Devices.density
+        anchors.left: parent.left
+        anchors.right: parent.right
+        spacing: 10*Devices.density
+        visible: acc_rjc_txt.visible
+
+        TelegramButton {
+            anchors {
+                right: parent.right
+                left: parent.left
+                margins: units.gu(2)
+            }
+            text: i18n.tr("Accept")
+            onClicked: {
+                secret_chat_indicator.start()
+                telegramObject.messagesAcceptEncryptedChat(currentDialog.peer.userId)
+            }
+        }
+
+        TelegramButton {
+            anchors {
+                right: parent.right
+                left: parent.left
+                margins: units.gu(2)
+            }
+            text: i18n.tr("Reject")
+            backgroundColor: Colors.dark_blue
+            onClicked: {
+                secret_chat_indicator.start()
+                telegramObject.messagesDiscardEncryptedChat(currentDialog.peer.userId)
+                rejectSecretRequest()
+            }
+        }
     }
 
     Timer {

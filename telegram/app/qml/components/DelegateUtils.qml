@@ -25,6 +25,21 @@ Item {
         }
     }
 
+    function getSecretChatState(types, type) {
+        switch (type) {
+            case types.typeEncryptedChatEmpty:
+                return ""
+            case types.typeEncryptedChatWaiting:
+                return i18n.tr("Waiting for user to get online...")
+            case types.typeEncryptedChatRequested:
+                return i18n.tr("Secret chat requested")
+            case types.typeEncryptedChat:
+                return i18n.tr("Secert chat created")
+            case types.typeEncryptedChatDiscarded:
+                return i18n.tr("Secret chat discarded")
+        }
+    }
+
     function getSecretChatSelfDestructTime(seconds) {
         if (seconds === 0) {
             // TRANSLATORS: Secret chat self destruct timer disabled.

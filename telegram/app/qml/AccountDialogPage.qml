@@ -6,7 +6,7 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import Cutegram 1.0
 
-import "qrc:/qml"
+import "components"
 
 // Cutegram: AccountMessageBox.qml
 
@@ -111,6 +111,10 @@ Page {
         }
         clip: true
 
+        DelegateUtils {
+            id: delegate_utils
+        }
+
         AccountMessageList {
             id: message_list
             anchors {
@@ -128,6 +132,7 @@ Page {
             onDialogRequest: account_page.currentDialog = dialogObject
             onTagSearchRequest: msg_box.tagSearchRequest(tag)
             onReplyToRequest: send_msg.replyTo(msgId)
+            onRejectSecretRequest: dialog_page.closeChat()
         }
 
         AccountSendMessage {
@@ -145,6 +150,10 @@ Page {
 
     function focusOn(msgId) {
         message_list.focusOn(msgId);
+    }
+
+    function closeChat() {
+        pageStack.pop()
     }
 }
 

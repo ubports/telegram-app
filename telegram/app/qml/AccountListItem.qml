@@ -71,7 +71,7 @@ Item {
         publicKeyFile: "tg-server.pub"
         phoneNumber: accountItem.number
         autoCleanUpMessages: true
-        autoAcceptEncrypted: true
+        autoAcceptEncrypted: false
 
         onErrorSignal: {
             if (errorText === "PHONE_NUMBER_INVALID") {
