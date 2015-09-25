@@ -7,6 +7,7 @@ import AsemanTools.Controls 1.0 as Controls
 import AsemanTools 1.0
 import TelegramQML 1.0
 
+import "js/colors.js" as Colors
 import "qrc:/qml/ui"
 import "qrc:/qml/components"
 
@@ -171,45 +172,35 @@ Rectangle {
         onAtYBeginningChanged: if( atYBeginning && contentHeight>height &&
                                    currentDialog != telegramObject.nullDialog ) messages_model.loadMore()
 
-//        displaced: Transition {
-//            NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: 300 }
-//        }
-//        add: Transition {
-//            NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: add_anim_disabler.running? 0 : 300 }
-//        }
+        displaced: Transition {
+            NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: 300 }
+        }
+        add: Transition {
+            NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: add_anim_disabler.running? 0 : 300 }
+        }
 
         section.property: "unreaded"
         section.criteria: ViewSection.FullString
         section.delegate: Item {
+            property int padding: units.dp(3)
+
             width: mlist.width
-            height: unread_texts.text.length != 0 && messages_model.hasNewMessage? 30*Devices.density : 0
+            height: unread_texts.text.length != 0 && messages_model.hasNewMessage ? unread_texts.height + 2*padding : 0
             clip: true
 
-            Text {
+            Rectangle {
+                id: unread_background
+                anchors.fill: parent
+                color: Qt.rgba(1, 1, 1, 0.5)
+            }
+
+            Label {
                 id: unread_texts
                 anchors.centerIn: parent
-                font.family: AsemanApp.globalFont.family
-                font.pixelSize: 9*Devices.fontDensity
-                color: "#333333"
-                text: section=="false"? qsTr("New Messages") : ""
-            }
-
-            Rectangle {
-                anchors.left: parent.left
-                anchors.right: unread_texts.left
-                anchors.margins: 10*Devices.density
-                anchors.verticalCenter: parent.verticalCenter
-                color: Cutegram.currentTheme.masterColor
-                height: 1*Devices.density
-            }
-
-            Rectangle {
-                anchors.left: unread_texts.right
-                anchors.right: parent.right
-                anchors.margins: 10*Devices.density
-                anchors.verticalCenter: parent.verticalCenter
-                color: Cutegram.currentTheme.masterColor
-                height: 1*Devices.density
+                color: Colors.unread_section_foreground
+                text: section=="false" ? i18n.tr("New messages").arg(messages_model.unreads) : ""
+                fontSize: "medium"
+                font.weight: Font.Normal
             }
         }
 
