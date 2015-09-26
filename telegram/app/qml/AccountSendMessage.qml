@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.4
 import Ubuntu.Components 1.2
 import Ubuntu.Components.Popups 0.1
 import Ubuntu.Components.ListItems 1.0 as ListItem
@@ -45,6 +45,7 @@ Rectangle {
         id: privates
         property Dialog lastDialog: telegramObject.nullDialog
         property variant suggestionItem
+        property variant attachmentItem
     }
 
     Timer {
@@ -146,52 +147,6 @@ Rectangle {
         }
     }
 
-    Component {
-        id: attach_popover_component
-
-        ActionSelectionPopover {
-            id: attach_popover
-            contentWidth: units.gu(22)
-            focus: false
-            z: 3
-            delegate: ListItem.Standard {
-                iconFrame: false
-                iconSource: Qt.resolvedUrl(action.iconSource)
-                focus: false
-                text: action.text
-            }
-            actions: ActionList {
-                Action {
-                    iconSource: "qrc:/qml/files/attach_gallery.png"
-                    // TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-                    text: i18n.tr("Photo")
-                    onTriggered: {
-                        attach_popover.hide()
-                        requestMedia(ContentType.Pictures)
-                    }
-                }
-                Action {
-                    iconSource: "qrc:/qml/files/attach_video.png"
-                    // TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-                    text: i18n.tr("Video")
-                    onTriggered: {
-                        attach_popover.hide()
-                        requestMedia(ContentType.Videos)
-                    }
-                }
-                Action {
-                    iconSource: "qrc:/qml/files/attach_document.png"
-                    // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-                    text: i18n.tr("File")
-                    onTriggered: {
-                        attach_popover.hide()
-                        requestMedia(ContentType.All)
-                    }
-                }
-            }
-        }
-    }
-
     MediaImport {
         id: mediaImporter
 
@@ -249,7 +204,10 @@ Rectangle {
 
                 if (state == "attach") {
                     Haptics.play()
-                    PopupUtils.open(attach_popover_component, send_button_box)
+                    if (!privates.attachmentItem) {
+                        privates.attachmentItem = attach_panel_component.createObject(smsg)
+                    }
+                    privates.attachmentItem.isShown = true;
                 } else if (state == "send" && txt.text.length > 0) {
                     Haptics.play()
                     smsg.send()
@@ -383,6 +341,16 @@ Rectangle {
         TagSuggestionMenu {
             telegram: telegramObject
             property bool isTagSuggestion: true
+        }
+    }
+
+    Component {
+        id: attach_panel_component
+
+        AttachPanel {
+            onPhotoRequested: requestMedia(ContentType.Pictures)
+            onVideoRequested: requestMedia(ContentType.Videos)
+            onFileRequested: requestMedia(ContentType.All)
         }
     }
 }

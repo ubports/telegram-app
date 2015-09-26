@@ -41,6 +41,8 @@
         <file>qml/TagSuggestionMenu.qml</file>
 
         <file>qml/components/AccountPanel.qml</file>
+        <file>qml/components/AttachPanel.qml</file>
+        <file>qml/components/AttachPanelItem.qml</file>
         <file>qml/components/Avatar.qml</file>
         <file>qml/components/ContactImport.qml</file>
         <file>qml/components/ColoredImage.qml</file>
@@ -135,6 +137,13 @@
         <file>qml/files/user_red.png</file>
         <file>qml/files/user_violet.png</file>
         <file>qml/files/user_yellow.png</file>
+
+        <file>qml/files/android/attach_camera.png</file>
+        <file>qml/files/android/attach_gallery.png</file>
+        <file>qml/files/android/attach_video.png</file>
+        <file>qml/files/android/attach_file.png</file>
+        <file>qml/files/android/attach_hide1.png</file>
+        <file>qml/files/android/attach_hide2.png</file>
 
         <file>qml/ui/dialogs/ConfirmationDialog.qml</file>
         <file>qml/PickerPage.qml</file>
