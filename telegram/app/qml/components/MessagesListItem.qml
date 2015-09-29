@@ -44,8 +44,6 @@ ListItemWithActions {
     property bool sent: message.sent
     property bool uploading: message.upload.fileId !== 0
 
-    property bool encryptMedia: message.message.length === 0 && message.encrypted
-
     property variant messageLinks: Tools.stringLinks(message.message)
     property bool hasLink: messageLinks.length !== 0
     property bool allowLoadLinks: telegram.userData.isLoadLink(user.id)
@@ -277,8 +275,6 @@ ListItemWithActions {
                         property string messageText: {
                             if (message_media.isAudioMessage) {
                                 return i18n.tr("Audio attachment not supported yet ;(")
-                            } else if (encryptMedia) {
-                                return i18n.tr("Media files are currently not supported in secret chats.")
                             } else {
                                 return message.message
                             }

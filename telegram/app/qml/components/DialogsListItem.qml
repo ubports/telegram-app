@@ -19,16 +19,15 @@ ListItem {
     property bool connected: true
 
     property Dialog dialog
-    property int peerId: isChat ? dialog.peer.chatId
-                                  : (dialog.encrypted ? encryptedChatUid : dialog.peer.userId)
-
+    property int dialogId: isChat ? dialog.peer.chatId : dialog.peer.userId
     property bool isChat: dialog.peer.chatId !== 0
+    property bool isEncrypted: dialog.encrypted
     property User user: telegram.user(dialog.encrypted ? encryptedChatUid : dialog.peer.userId)
     property Chat chat: telegram.chat(dialog.peer.chatId)
 
     property EncryptedChat encryptedChat: telegramObject.encryptedChat(dialog.peer.userId)
-    property int encryptedChatUid: encryptedChat.adminId === telegram.me ?
-            encryptedChat.participantId : encryptedChat.adminId
+    property int encryptedChatUid: encryptedChat.adminId === telegram.me
+            ? encryptedChat.participantId : encryptedChat.adminId
 
     property bool showMessage: true
     property Message message: telegram.message(dialog.topMessage)
@@ -56,15 +55,7 @@ ListItem {
                         list_item, {
                             text: i18n.tr("Are you sure you want to leave this chat?"),
                             onAccept: function() {
-                                if (dialog.encrypted) {
-                                    telegram.messagesDeleteHistory(dialog.peer.userId);
-                                    telegram.messagesDiscardEncryptedChat(dialog.peer.userId);
-                                } else if (isChat) {
-                                    telegram.messagesDeleteHistory(dialog.peer.chatId);
-                                    telegram.messagesDeleteChatUser(chat.id, telegram.me);
-                                } else {
-                                    telegram.messagesDeleteHistory(dialog.peer.userId);
-                                }
+                                telegram.messagesDeleteHistory(dialogId, true)
                             }
                         }
                     );
@@ -73,20 +64,14 @@ ListItem {
             Action {
                 iconName: "edit-clear"
                 text: i18n.tr("Clear history")
-                visible: connected
+                visible: connected && !isEncrypted
 
                 onTriggered: {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
                         list_item, {
                             text: i18n.tr("Are you sure you want to clear history?"),
                             onAccept: function() {
-                                if (isChat) {
-                                    telegram.messagesDeleteHistory(dialog.peer.chatId);
-                                } else {
-                                    telegram.messagesDeleteHistory(dialog.peer.userId);
-                                }
-
-
+                                telegram.messagesDeleteHistory(dialogId, false)
                             }
                         }
                     );
