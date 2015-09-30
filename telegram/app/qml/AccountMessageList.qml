@@ -1,6 +1,6 @@
 import QtQuick 2.0
-import Ubuntu.Components 1.2
-import Ubuntu.Components 1.2 as UC
+import Ubuntu.Components 1.3
+import Ubuntu.Components 1.3 as UC
 import Ubuntu.Content 0.1
 import AsemanTools.Controls 1.0 as Controls
 

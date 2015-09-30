@@ -1,5 +1,5 @@
 import QtQuick 2.0
-import Ubuntu.Components 1.2
+import Ubuntu.Components 1.3
 import AsemanTools 1.0
 import TelegramQML 1.0
 

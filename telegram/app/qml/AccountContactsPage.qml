@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.2
-import Ubuntu.Components 1.2 as UC
+import Ubuntu.Components 1.3
+import Ubuntu.Components 1.3 as UC
 import Ubuntu.Components.ListItems 1.0 as ListItems
 import Ubuntu.Components.Popups 1.0 as Popups
 import Ubuntu.Contacts 0.1
