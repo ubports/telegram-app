@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-23 10:42+0200\n"
-"PO-Revision-Date: 2015-09-24 18:27+0000\n"
-"Last-Translator: Phillip Sz <Unknown>\n"
+"POT-Creation-Date: 2015-09-25 15:56+0200\n"
+"PO-Revision-Date: 2015-09-26 12:51+0000\n"
+"Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-09-25 05:57+0000\n"
+"X-Launchpad-Export-Date: 2015-09-27 05:46+0000\n"
 "X-Generator: Launchpad (build 17754)\n"
 "Language: de\n"
 
@@ -166,23 +166,23 @@ msgid "Select all"
 msgstr "Alle auswählen"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:240
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:238
 msgid "Copy"
 msgstr "Kopieren"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:246
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:244
 msgid "Forward"
 msgstr "Weiterleiten"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:231
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:229
 msgid "Delete"
 msgstr "Löschen"
 
 #. TRANSLATORS: 'Account' represents the label visible next to the phone number on the grey strip
 #. under page header, only if there are more than one account signed in in the application.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountListItem.qml:189
+#: /home/karni/src/telegram2/telegram/app/qml/AccountListItem.qml:195
 msgid "Account"
 msgstr "Konto"
 
@@ -236,20 +236,15 @@ msgstr "%1 hat das Gruppenbild geändert"
 msgid "%1 deleted group photo"
 msgstr "%1 hat das Gruppenbild gelöscht"
 
-#. TRANSLATORS: Default message for received audio messages.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageItem.qml:263
-msgid "Audio messages not supported yet."
-msgstr "Sprachnachrichten werden noch nicht unterstützt."
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:132
+msgid "Please select chat"
+msgstr "Bitte Chat auswählen"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageItem.qml:292
-msgid "Media files are currently not supported in secret chats."
-msgstr "Die Funktion »Geheimer Chat« unterstützt noch keine Mediendateien."
-
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:656
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:464
 msgid "Secret chat requested."
 msgstr "Anfrage für geheimen Chat erhalten."
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:668
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:476
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -287,26 +282,26 @@ msgid "Last name (optional)"
 msgstr "Nachname (optional)"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:116
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:115
 msgid "Type message"
 msgstr "Eine Nachricht schreiben"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:303
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:302
 msgid "Photo"
 msgstr "Foto"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:312
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:311
 msgid "Video"
 msgstr "Video"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:322
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:321
 msgid "File"
 msgstr "Datei"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:537
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:532
 msgid "Close"
 msgstr "Beenden"
 
@@ -805,14 +800,18 @@ msgid "typing..."
 msgstr "schreibt gerade …"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:166
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:217
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Weitergeleitet von <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:231
-msgid "Audio messages not supported."
-msgstr "Sprachnachrichten werden nicht unterstützt."
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:279
+msgid "Audio attachment not supported yet ;("
+msgstr "Sprachanhänge werden noch nicht unterstützt"
+
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:281
+msgid "Media files are currently not supported in secret chats."
+msgstr "Die Funktion »Geheimer Chat« unterstützt noch keine Mediendateien."
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
