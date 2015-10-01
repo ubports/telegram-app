@@ -236,6 +236,8 @@ Rectangle {
             selected: mlist.isSelected(message_item)
             selectionMode: mlist.isInSelectionMode
 
+            onDialogRequest: acc_msg_list.dialogRequest(dialog)
+            onTagSearchRequest: acc_msg_list.tagSearchRequest(tag)
             onMessageFocusRequest: focusOnMessage(msgId)
 
             onItemPressAndHold: {

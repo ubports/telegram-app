@@ -99,6 +99,8 @@ ListItemWithActions {
             telegram: telegramObject
             user: message_item.user
             isChat: false
+
+            onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
         }
 
         Avatar {
@@ -113,6 +115,8 @@ ListItemWithActions {
             telegram: telegramObject
             user: message_item.fwdUser
             isChat: false
+
+            onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(forward_contact_image.user.id, false))
         }
 
         Item {
