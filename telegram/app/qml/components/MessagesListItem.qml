@@ -271,6 +271,14 @@ ListItemWithActions {
                         textFormat: Text.RichText
                         text: emojis.bodyTextToEmojiText(messageText)
 
+                        onLinkActivated: {
+                            if (link.slice(0,6) == "tag://") {
+                                console.log("tag links not supported yet");
+                            } else {
+                                Qt.openUrlExternally(link);
+                            }
+                        }
+
                         property real htmlWidth: Cutegram.htmlWidth(text)
                         property string messageText: {
                             if (message_media.isAudioMessage) {
