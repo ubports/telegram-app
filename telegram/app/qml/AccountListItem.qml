@@ -49,10 +49,6 @@ Item {
         }
     }
 
-    Component.onDestruction: {
-        console.log("destroying account item for " + telegram.phoneNumber);
-    }
-
     Telegram {
         id: telegram
 

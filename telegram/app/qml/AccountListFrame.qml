@@ -27,7 +27,6 @@ Item {
         } else {
             var key = profiles.keys[0];
             var account = hash.value(key);
-            panel.close();
             pageStack.clear();
             account.show();
 

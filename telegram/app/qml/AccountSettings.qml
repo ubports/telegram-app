@@ -28,11 +28,6 @@ Page {
             // TRANSLATORS: Edit your profile first and last name.
             text: i18n.tr("Edit name")
             onTriggered: changeFullName()
-        },
-        Action {
-            iconName: "close"
-            text: i18n.tr("Log out")
-            onTriggered: PopupUtils.open(logout_dialog_component)
         }
     ]
 
@@ -177,6 +172,17 @@ Page {
             // TRANSLATORS: Text of settings item visible in the Support section.
             text: i18n.tr("Ask a Question")
             onClicked: Qt.openUrlExternally("http://askubuntu.com/search?q=telegram");
+        }
+
+        ListItem.Header {
+            // TRANSLATORS: Settings section header.
+            text: i18n.tr("Account")
+        }
+
+        ListItem.Standard {
+            showDivider: false
+            text: i18n.tr("Log out ") + " | " + telegram.phoneNumber
+            onClicked: PopupUtils.open(logout_dialog_component)
         }
 
         // TODO app version

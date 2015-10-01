@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 16:11+0200\n"
+"POT-Creation-Date: 2015-10-01 17:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:79
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:77
 msgid "New Group"
 msgstr ""
 
@@ -28,12 +28,12 @@ msgid "Add to group"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:89
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:87
 msgid "New Secret Chat"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:99
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:97
 msgid "Contacts"
 msgstr ""
 
@@ -62,7 +62,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:121
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:357
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:385
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:264
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:270
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
 msgstr ""
@@ -89,7 +89,7 @@ msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:336
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:395
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:275
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:281
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
@@ -98,7 +98,7 @@ msgstr ""
 #. TRANSLATORS: Application name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:17
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:261
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:267
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
@@ -298,18 +298,14 @@ msgstr ""
 msgid "Change photo"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:34
-msgid "Log out"
-msgstr ""
-
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:40
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:109
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:35
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:107
 msgid "Settings"
 msgstr ""
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:94
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:89
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:632
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
@@ -317,45 +313,54 @@ msgid "Info"
 msgstr ""
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:100
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:95
 msgid "Phone"
 msgstr ""
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:108
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:103
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
 msgstr ""
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:115
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:110
 msgid "Messages"
 msgstr ""
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:120
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:115
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:320
 msgid "Notifications"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:153
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:148
 msgid "Send by Enter"
 msgstr ""
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:172
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:167
 msgid "Support"
 msgstr ""
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:178
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:173
 msgid "Ask a Question"
 msgstr ""
 
+#. TRANSLATORS: Settings section header.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:179
+msgid "Account"
+msgstr ""
+
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:184
+msgid "Log out "
+msgstr ""
+
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:225
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:231
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:233
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:67
@@ -363,7 +368,7 @@ msgid "online"
 msgstr ""
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:228
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:234
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:236
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:44
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:70
@@ -372,7 +377,7 @@ msgid "last seen %1"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:231
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:237
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:239
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:73
@@ -380,7 +385,7 @@ msgid "last seen recently"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:234
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:240
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:242
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:76
@@ -388,7 +393,7 @@ msgid "last seen within a week"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:237
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:243
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:245
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:79
@@ -396,14 +401,14 @@ msgid "last seen within a month"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:240
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:246
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:248
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:262
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:268
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -703,30 +708,30 @@ msgstr ""
 msgid "Don't want notifications"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:119
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:117
 msgid "Telegram FAQ"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:145
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Accounts"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:168
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:166
 msgid "Add Account"
 msgstr ""
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:70
+#: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
 msgstr ""
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-#: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:81
+#: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
 msgstr ""
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-#: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:92
+#: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
 msgstr ""
 

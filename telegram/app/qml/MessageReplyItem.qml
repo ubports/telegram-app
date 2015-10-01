@@ -37,7 +37,7 @@ Item {
             id: reply_separator
             width: units.dp(2)
             height: parent.height
-            color: message.out ? Colors.dark_green : Colors.header_blue
+            color: message.out ? Colors.dark_green : Colors.telegram_blue
         }
 
         Column {
@@ -52,7 +52,7 @@ Item {
                 fontSize: "small"
                 font.weight: Font.Normal
                 // opacity: 0.8
-                color: message.out ? Colors.dark_green : Colors.header_blue
+                color: message.out ? Colors.dark_green : Colors.telegram_blue
 //                    if(!replyMessage && (!message || message.out))
 //                        return Cutegram.currentTheme.messageOutgoingNameColor
 //                    else

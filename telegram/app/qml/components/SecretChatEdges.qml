@@ -16,8 +16,8 @@ Item {
         width: parent.height
         height: units.dp(6)
         gradient: Gradient {
-            GradientStop { position: 0.0; color: Colors.header_blue; }
-            GradientStop { position: 1.0; color: Colors.header_blue_ff; }
+            GradientStop { position: 0.0; color: Colors.secret_start }
+            GradientStop { position: 1.0; color: Colors.secret_end }
         }
     }
 
@@ -30,8 +30,8 @@ Item {
         width: parent.height
         height: units.dp(6)
         gradient: Gradient {
-            GradientStop { position: 0.0; color: Colors.header_blue; }
-            GradientStop { position: 1.0; color: Colors.header_blue_ff; }
+            GradientStop { position: 0.0; color: Colors.secret_start }
+            GradientStop { position: 1.0; color: Colors.secret_end }
         }
     }
 }

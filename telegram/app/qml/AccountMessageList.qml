@@ -192,7 +192,7 @@ Rectangle {
             Label {
                 id: unread_texts
                 anchors.centerIn: parent
-                color: Colors.unread_section_foreground
+                color: Colors.telegram_blue
                 text: section=="false" ? i18n.tr("New messages") : ""
                 fontSize: "medium"
                 font.weight: Font.Normal
