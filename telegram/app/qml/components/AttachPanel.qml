@@ -1,3 +1,19 @@
+/*
+ * Copyright 2015 Canonical Ltd.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; version 3.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 
@@ -24,7 +40,7 @@ Item {
         id: attach_box
         width: parent.width
         height: units.gu(12)+units.gu(3)
-        y: attach_panel.isShown ? -height+units.gu(3) : attach_box_edge.height
+        y: attach_panel.isShown ? -height+units.gu(3) : shadow.height
 
         Behavior on y {
             SequentialAnimation {
@@ -70,6 +86,7 @@ Item {
                 text: i18n.tr("Photo")
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_gallery.png")
                 onClicked: {
+                    Haptics.play()
                     attach_panel.photoRequested()
                     attach_panel.close()
                 }
@@ -80,6 +97,7 @@ Item {
                 text: i18n.tr("Video")
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_video.png")
                 onClicked: {
+                    Haptics.play()
                     attach_panel.videoRequested()
                     attach_panel.close()
                 }
@@ -90,6 +108,7 @@ Item {
                 text: i18n.tr("File")
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_file.png")
                 onClicked: {
+                    Haptics.play()
                     attach_panel.fileRequested()
                     attach_panel.close()
                 }
@@ -100,25 +119,18 @@ Item {
                 // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_hide1.png")
                 showTick: true
-                onClicked: attach_panel.close()
+                onClicked: {
+                    Haptics.play()
+                    attach_panel.close()
+                }
             }
 
         }
     }
 
-    Rectangle {
-        id: attach_box_edge
-        anchors.bottom: attach_box.top
-        width: parent.width
-        height: units.dp(6)
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#00000000"; }
-            GradientStop { position: 1.0; color: "#aa000000"; }
-        }
-        opacity: attach_panel.isShown ? 0.4 : 0
-
-        Behavior on opacity {
-            NumberAnimation { easing.type: Easing.OutBack; duration: 400; }
-        }
+    EdgeShadow {
+        id: shadow
+        source: attach_box
+        topShadow: true
     }
 }

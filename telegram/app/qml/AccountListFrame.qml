@@ -57,7 +57,6 @@ Item {
                     if (i == 0) {
                         mainView.pushProfile = number;
                     }
-                    panel.close();
                     pageStack.clear();
                     account.show();
                     break;

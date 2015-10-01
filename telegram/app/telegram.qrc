@@ -48,6 +48,7 @@
         <file>qml/components/ColoredImage.qml</file>
         <file>qml/components/DelegateUtils.qml</file>
         <file>qml/components/DialogsListItem.qml</file>
+        <file>qml/components/EdgeShadow.qml</file>
         <file>qml/components/MediaImport.qml</file>
         <file>qml/components/MessagesListItem.qml</file>
         <file>qml/components/MessageStatus.qml</file>

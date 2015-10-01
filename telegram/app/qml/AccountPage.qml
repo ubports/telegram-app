@@ -13,15 +13,26 @@ import "components"
 Page {
     id: account_page
     objectName: "accountPage"
+    // TRANSLATORS: Application name.
+    title: i18n.tr("Telegram")
     flickable: null
+
+    property int profileCount: 0
+    property AccountDialogPage dialogPage;
 
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
 
-    property AccountDialogPage dialogPage;
-
     signal openDialog(var dialogId)
     signal addParticipantRequest()
+
+    head {
+        sections.model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
+        backAction: Action {
+            iconName: "navigation-menu"
+            onTriggered: account_panel.opened ? account_panel.close() : account_panel.open()
+        }
+    }
 
     onOpenDialog: {
         // while (pageStack.currentPage && pageStack.currentPage.objectName != "accountPage") {
@@ -61,6 +72,54 @@ Page {
         target: mainView
         onChatToOpenChanged: {
             open_chat_timer.start();
+        }
+    }
+
+    AccountPanel {
+        id: account_panel
+        anchors {
+            left: parent.left
+            top: parent.top
+        }
+        maxHeight: parent.height - units.gu(7)
+        z: 10
+
+        onNewSecretChatClicked: {
+            pageStack.push(contacts_page_component, {
+                    "telegram": telegramObject,
+                    "state": "new-secret-chat"
+            });
+        }
+
+        onNewGroupClicked: {
+            pageStack.push(contacts_page_component, {
+                    "telegram": telegramObject,
+                    "state": "new-group-chat"
+            });
+        }
+
+        onContactsClicked: {
+            pageStack.push(contacts_page_component, {
+                    "telegram": telegramObject
+            });
+        }
+
+        onSettingsClicked: {
+            pageStack.push(settings_page_component, {
+                    "telegram": telegramObject
+            });
+        }
+
+        onFaqClicked: {
+            Qt.openUrlExternally("https://telegram.org/faq");
+        }
+
+        onAddAccountClicked: {
+            pageStack.push(auth_countries_page_component);
+        }
+
+        onAccountClicked: {
+            mainView.accountList.accountSelected(number);
         }
     }
 
@@ -205,37 +264,6 @@ Page {
 
         ProfilePage {
             onOpenDialog: account_page.openDialog(dialogId)
-        }
-    }
-
-    Connections {
-        target: mainView.panel
-        ignoreUnknownSignals: true
-
-        onNewSecretChatClicked: {
-            pageStack.push(contacts_page_component, {
-                    "telegram": telegramObject,
-                    "state": "new-secret-chat"
-            });
-        }
-
-        onNewGroupClicked: {
-            pageStack.push(contacts_page_component, {
-                    "telegram": telegramObject,
-                    "state": "new-group-chat"
-            });
-        }
-
-        onContactsClicked: {
-            pageStack.push(contacts_page_component, {
-                    "telegram": telegramObject
-            });
-        }
-
-        onSettingsClicked: {
-            pageStack.push(settings_page_component, {
-                    "telegram": telegramObject
-            });
         }
     }
 

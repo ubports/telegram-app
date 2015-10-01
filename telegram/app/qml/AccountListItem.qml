@@ -69,7 +69,7 @@ Item {
         publicKeyFile: "tg-server.pub"
         phoneNumber: accountItem.number
         autoCleanUpMessages: true
-        autoAcceptEncrypted: false
+        autoAcceptEncrypted: true
 
         onErrorSignal: {
             if (errorText === "PHONE_NUMBER_INVALID") {
@@ -180,43 +180,8 @@ Item {
 
         AccountPage {
             id: dialogs_page
-            title: "Telegram" //account_list_item.text
             telegramObject: telegram
-
-            head {
-
-                sections {
-                    enabled: false
-                    selectedIndex: -1
-                    // TRANSLATORS: 'Account' represents the label visible next to the phone number on the grey strip
-                    // under page header, only if there are more than one account signed in in the application.
-                    model: profiles.count > 1 ? [ i18n.tr("Account"), telegramObject.phoneNumber] : undefined
-                }
-
-                actions: [
-                    // Action {
-                    //     iconName: "search"
-                    //     text: i18n.tr("Search")
-                    //     onTriggered: {
-                    //         // TODO implement dialog/contact search
-                    //         console.log("not implmeneted")
-                    //     }
-                    // }
-                ]
-
-                backAction: Action {
-                    iconName: "navigation-menu"
-                    onTriggered: {
-                        mainView.panel.isOpen = true;
-                    }
-                }
-            }
-
-            Component.onCompleted: {
-               if (!mainView.panel) {
-                    mainView.panel = panel_component.createObject(mainView, {"pageStack": pageStack});
-                }
-            }
+            profileCount: profiles.count
         }
     }
 }

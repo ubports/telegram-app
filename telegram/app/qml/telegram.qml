@@ -42,8 +42,7 @@ MainView {
 
     property string appId: "com.ubuntu.telegram_telegram" // no-i18n
 
-    property variant panel
-
+    property alias accountList: account_list.accountList
 
     property alias profiles: profile_model
     property alias pushClient: push_client_loader.item
@@ -221,29 +220,6 @@ MainView {
         Component {
             id: add_contact_page_component
             AddContactPage {}
-        }
-    }
-
-    Component {
-        id: panel_component
-        AccountPanel {
-            pageStack: mainView.pageStack
-
-            onSettingsClicked: {
-                // TODO settings
-            }
-
-            onFaqClicked: {
-                Qt.openUrlExternally("https://telegram.org/faq");
-            }
-
-            onAddAccountClicked: {
-                pageStack.push(auth_countries_page_component);
-            }
-
-            onAccountClicked: {
-                account_list.accountList.accountSelected(number);
-            }
         }
     }
 
