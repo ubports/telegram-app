@@ -241,15 +241,13 @@ Item {
             anchors.centerIn: parent
             sourceSize: Qt.size(width,height)
             source: {
-                return Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
-
                 if (file_handler.targetType == FileHandler.TypeTargetUnknown) {
-                    return "qrc:/qml/files/attachment_cancel.png"; // indicating error
+                    return Qt.resolvedUrl("qrc:/qml/files/attachment_cancel.png"); // indicating error
                 } else {
-                    return msg_item.isAudioMessage ? "" : Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
                 }
             }
-            visible: !downloading
+            visible: !downloading && !msg_media.isAudioMessage
         }
 
         Text {
