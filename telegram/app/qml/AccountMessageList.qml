@@ -536,8 +536,8 @@ Rectangle {
         property int msgIndex
     }
 
-    function clearSelection() {
-        mlist.clearSelection();
+    function cancelSelection() {
+        mlist.cancelSelection();
     }
 
     function selectAll() {

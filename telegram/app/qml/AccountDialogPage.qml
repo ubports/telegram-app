@@ -74,7 +74,20 @@ Page {
     property alias maxId: message_list.maxId
     
     objectName: "dialogPage"
+
     head.actions: message_list.inSelectionMode ? selectionActions : defaultActions
+    head.backAction: Action {
+        id: back_action
+        iconName: message_list.inSelectionMode ? "close" : "back"
+        onTriggered: {
+            if (message_list.inSelectionMode) {
+                message_list.cancelSelection()
+            } else {
+                pageStack.pop();
+            }
+        }
+    }
+
     flickable: null
     title: {
         if (!currentDialog) return "";
