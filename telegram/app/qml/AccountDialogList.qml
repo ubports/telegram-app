@@ -105,7 +105,7 @@ Item {
                             // TRANSLATORS: %1 represents person to whom forwarding the messages to.
                             text: i18n.tr("Forward message to %1?".arg(title)),
                             onAccept: function() {
-                                telegram.forwardMessages(messageIdsToForward, peerId);
+                                telegramObject.forwardMessages(messageIdsToForward, dialogId);
                                 messageIdsToForward = [];
                                 currentDialogChanged(dialog);
                             }
