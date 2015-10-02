@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 17:15+0200\n"
+"POT-Creation-Date: 2015-10-02 09:53+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,21 +235,21 @@ msgstr ""
 msgid "New messages"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:450
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:452
 msgid "Secret chat requested."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:462
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:464
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:493
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:495
 msgid "Accept"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:506
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:508
 msgid "Reject"
 msgstr ""
 
@@ -744,7 +744,7 @@ msgid "Secret chat requested"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:37
-msgid "Secert chat created"
+msgid "Secret chat created"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:39
@@ -808,12 +808,12 @@ msgid "typing..."
 msgstr ""
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:215
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:219
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:277
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:289
 msgid "Audio attachment not supported yet ;("
 msgstr ""
 

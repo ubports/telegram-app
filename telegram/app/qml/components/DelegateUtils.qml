@@ -34,7 +34,7 @@ Item {
             case types.typeEncryptedChatRequested:
                 return i18n.tr("Secret chat requested")
             case types.typeEncryptedChat:
-                return i18n.tr("Secert chat created")
+                return i18n.tr("Secret chat created")
             case types.typeEncryptedChatDiscarded:
                 return i18n.tr("Secret chat discarded")
         }
