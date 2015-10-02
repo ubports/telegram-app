@@ -35,12 +35,13 @@ Column {
             id: attach_image
             objectName: "attach_gallery"
             asynchronous: true
-            width: units.gu(7.5);
-            height: width;
+            width: units.gu(7.5)
+            height: width
+            sourceSize: Qt.size(width, height)
 
             Image {
                 anchors.centerIn: parent
-                source: attach_item.showTick ? Qt.resolvedUrl("qrc:/qml/files/android/attach_hide2.png") : ""
+                source: attach_item.showTick ? Qt.resolvedUrl("../files/android/attach_hide2.png") : ""
                 visible: attach_item.showTick
             }
 
@@ -54,6 +55,7 @@ Column {
             id: shadow
             source: attach_image
             horizontalOffset: 0
+            cached: true
         }
     }
 

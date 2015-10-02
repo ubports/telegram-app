@@ -119,22 +119,34 @@ Page {
     Item {
         id: message_box
         anchors {
-            topMargin: units.gu(8)
+            // FIXME message_list sills under Page header! :/
+            topMargin: units.gu(6)
             fill: parent
         }
-        clip: true
 
         DelegateUtils {
             id: delegate_utils
+        }
+
+        AccountSendMessage {
+            id: send_msg
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                left: parent.left
+            }
+            currentDialog: dialog_page.currentDialog
+            onAccepted: message_list.sendMessage(text, inReplyTo)
+//            onCopyRequest: message_list.copy()
         }
 
         AccountMessageList {
             id: message_list
             anchors {
                 top: parent.top
-                left: parent.left
-                bottom: send_msg.top
                 right: parent.right
+                bottom: send_msg.top
+                left: parent.left
             }
             clip: true
             telegramObject: dialog_page.telegramObject
@@ -146,18 +158,6 @@ Page {
             onTagSearchRequest: msg_box.tagSearchRequest(tag)
             onReplyToRequest: send_msg.replyTo(msgId)
             onRejectSecretRequest: dialog_page.closeChat()
-        }
-
-        AccountSendMessage {
-            id: send_msg
-            anchors {
-                left: parent.left
-                bottom: parent.bottom
-                right: parent.right
-            }
-            currentDialog: dialog_page.currentDialog
-            onAccepted: message_list.sendMessage(text, inReplyTo)
-//            onCopyRequest: message_list.copy()
         }
     }
 
