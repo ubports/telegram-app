@@ -77,10 +77,10 @@ ListItemWithActions {
 
     Row {
         id: frame_row
-        // anchors.fill: parent
         anchors {
             fill: parent
             leftMargin: units.dp(4)
+            rightMargin: units.dp(4)
         }
         layoutDirection: message.out ? Qt.RightToLeft : Qt.LeftToRight
         visible: !action_item.hasAction
