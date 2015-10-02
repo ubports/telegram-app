@@ -41,6 +41,7 @@
         <file>qml/TagSuggestionMenu.qml</file>
 
         <file>qml/components/AccountPanel.qml</file>
+        <file>qml/components/AccountPanelItem.qml</file>
         <file>qml/components/AttachPanel.qml</file>
         <file>qml/components/AttachPanelItem.qml</file>
         <file>qml/components/Avatar.qml</file>

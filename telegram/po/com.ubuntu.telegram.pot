@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 12:43+0200\n"
+"POT-Creation-Date: 2015-10-02 13:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:77
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
 msgstr ""
 
@@ -28,12 +28,12 @@ msgid "Add to group"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:87
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:97
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
 msgstr ""
 
@@ -302,7 +302,7 @@ msgid "Change photo"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:36
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:107
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
 msgstr ""
 
@@ -355,7 +355,7 @@ msgstr ""
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:181
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:117
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
 msgstr ""
 
@@ -724,11 +724,11 @@ msgid "Don't want notifications"
 msgstr ""
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:144
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:167
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
 msgstr ""
 

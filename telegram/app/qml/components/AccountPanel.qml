@@ -65,58 +65,50 @@ Panel {
         Column {
             id: column
 
-            property bool showIcons: true
-
             anchors {
-                left: parent.left
-                right: parent.right
                 top: parent.top
+                right: parent.right
+                left: parent.left
             }
 
-            ListItem.Standard {
+            AccountPanelItem {
+                icon: "../files/menu_newgroup.png"
                 text: i18n.tr("New Group")
-                iconSource: showIcons ? "../files/menu_newgroup.png" : ""
-                iconFrame: false
                 showDivider: false
                 onClicked: {
                     panel.close();
                     panel.newGroupClicked();
                 }
             }
-            ListItem.Standard {
+            AccountPanelItem {
+                icon: "../files/menu_secret.png"
                 text: i18n.tr("New Secret Chat")
-                iconSource: showIcons ? "../files/menu_secret.png" : ""
-                iconFrame: false
-                showDivider: true
                 onClicked: {
                     panel.close();
                     panel.newSecretChatClicked();
                 }
             }
-            ListItem.Standard {
+            AccountPanelItem {
+                icon: "../files/menu_contacts.png"
                 text: i18n.tr("Contacts")
-                iconSource: showIcons ? "../files/menu_contacts.png" : ""
-                iconFrame: false
                 showDivider: false
                 onClicked: {
                     panel.close();
                     panel.contactsClicked();
                 }
             }
-            ListItem.Standard {
+            AccountPanelItem {
+                icon: "../files/menu_settings.png"
                 text: i18n.tr("Settings")
-                iconSource: showIcons ? "../files/menu_settings.png" : ""
-                iconFrame: false
                 showDivider: false
                 onClicked: {
                     panel.close();
                     panel.settingsClicked();
                 }
             }
-            ListItem.Standard {
+            AccountPanelItem {
+                icon: "../files/menu_help.png"
                 text: i18n.tr("Telegram FAQ")
-                iconSource: showIcons ? "../files/menu_help.png" : ""
-                iconFrame: false
                 showDivider: false
                 onClicked: {
                     panel.close();
@@ -152,21 +144,23 @@ Panel {
             Repeater {
                 id: aclist
                 model: profiles
-                delegate: ListItem.Standard {
+                delegate: AccountPanelItem {
+                    icon: ""
                     text: number
                     showDivider: false
-                    progression: profiles.count > 1
+                    showProgression: profiles.count > 1
                     onClicked: {
                         panel.close();
-                        panel.accountClicked(number)
+                        if (profiles.count > 1) {
+                            panel.accountClicked(number)
+                        }
                     }
                 }
             }
 
-            ListItem.Standard {
+            AccountPanelItem {
+                icon: "../files/menu_invite.png"
                 text: i18n.tr("Add Account")
-                iconSource: showIcons ? "../files/menu_invite.png" : ""
-                iconFrame: false
                 showDivider: false
                 onClicked: {
                     panel.close();
