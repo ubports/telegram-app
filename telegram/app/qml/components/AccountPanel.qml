@@ -117,7 +117,7 @@ Panel {
                 text: i18n.tr("Telegram FAQ")
                 iconSource: showIcons ? "../files/menu_help.png" : ""
                 iconFrame: false
-                showDivider: true
+                showDivider: false
                 onClicked: {
                     panel.close();
                     panel.faqClicked();
@@ -130,7 +130,7 @@ Panel {
                     right: parent.right
                 }
                 height: section_label.height
-                color: Qt.rgba(0, 0, 0, 0.1)
+                color: Qt.rgba(0.6, 0.6, 0.6, 0.2)
 
                 Label {
                     id: section_label
