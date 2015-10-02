@@ -718,7 +718,7 @@ void TelegramQuery::pushLogin(SearchReplyProxy const &reply) {
      CategorisedResult result(category);
      result.set_uri("telegram://launch");
      result["title"] = N_("Login to Telegram"); // We should really use a verb..
-     result["avatar"] =  QString("file://%1/telegram-suru-small.png").arg(mScopeDir).toStdString();
+     result["avatar"] =  QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
      result["type"] = "error"; // no-i18n
      reply->push(result);
 }
@@ -743,7 +743,7 @@ void TelegramQuery::pushAggregatedResult(SearchReplyProxy const &reply, Categori
         {"value", Variant("")} // no-i18n
     });
     result["attributes"] = attrs.end(); // no-i18n
-    std::string icon = QString("file://%1/telegram-suru-small.png").arg(mScopeDir).toStdString();
+    std::string icon = QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
     result["mascot"] = icon; // no-i18n
 
     reply->push(result);
@@ -755,6 +755,6 @@ void TelegramQuery::pushNoMessagesToday(SearchReplyProxy const &reply) {
     CategorisedResult result(category);
     result.set_uri("scope://com.ubuntu.telegram_scope");
     result["title"] = QString(N_("No messages received Today.")).toStdString();
-    result["mascot"] = QString("file://%1/telegram-suru-small.png").arg(mScopeDir).toStdString();
+    result["mascot"] = QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
     reply->push(result);
 }

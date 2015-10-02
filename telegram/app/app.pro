@@ -47,13 +47,12 @@ OTHER_FILES += \
     content-hub.json \
     urls.json \
     telegram.application \
-    telegram.png \
     database \
     js \
     icons
 
 SCOPE_DATA += \
-    icons/telegram-suru-small.png \
+    icons/telegram.png \
     qml/files/user_aqua.png \
     qml/files/user_blue.png \
     qml/files/user_green.png \
