@@ -8,6 +8,7 @@ import TelegramQML 1.0
 
 import "components"
 import "js/time.js" as Time
+import "js/version.js" as Version
 
 Page {
     id: page
@@ -171,7 +172,14 @@ Page {
             showDivider: false
             // TRANSLATORS: Text of settings item visible in the Support section.
             text: i18n.tr("Ask a Question")
-            onClicked: Qt.openUrlExternally("http://askubuntu.com/search?q=telegram");
+            onClicked: Qt.openUrlExternally("http://askubuntu.com/search?q=telegram")
+        }
+
+        ListItem.Standard {
+            showDivider: false
+            // TRANSLATORS: Text of settings item visible in the Support section
+            text: i18n.tr("Telegram FAQ")
+            onClicked: Qt.openUrlExternally("https://telegram.org/faq")
         }
 
         ListItem.Header {
@@ -180,12 +188,31 @@ Page {
         }
 
         ListItem.Standard {
-            showDivider: false
+            showDivider: true
             text: i18n.tr("Log out ") + " | " + telegram.phoneNumber
             onClicked: PopupUtils.open(logout_dialog_component)
         }
 
-        // TODO app version
+        ListItem.SingleControl {
+            showDivider: false
+            control: Label {
+                width: parent.width
+                height: units.gu(5)
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                // TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
+                text: i18n.tr("Telegram for Ubuntu %1").arg(getVersionString())
+
+                function getVersionString() {
+                    var v = Version.version.split(".");
+                    var major = v[0];
+                    var minor = v[1];
+                    var patch = v[2];
+                    var revision = v.slice(3, v.length).join(".");
+                    return "v" + major + "." + minor + "." + patch + " (" + revision + ")";
+                }
+            }
+        }
     }
 
     ClickableContactImage {
