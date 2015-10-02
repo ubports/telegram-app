@@ -125,6 +125,7 @@ Rectangle {
             anchors.centerIn: parent
             font.pixelSize: Math.floor((Cutegram.font.pointSize+1)*Devices.fontDensity)
             font.family: Cutegram.font.family
+            // TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
             text: i18n.tr("Please select chat")
             color: "#111111"
         }
@@ -492,6 +493,7 @@ Rectangle {
                 left: parent.left
                 margins: units.gu(2)
             }
+            // TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
             text: i18n.tr("Accept")
             onClicked: {
                 secret_chat_indicator.start()
@@ -505,6 +507,7 @@ Rectangle {
                 left: parent.left
                 margins: units.gu(2)
             }
+            // TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
             text: i18n.tr("Reject")
             backgroundColor: Colors.dark_blue
             onClicked: {

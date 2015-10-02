@@ -30,12 +30,14 @@ Item {
             case types.typeEncryptedChatEmpty:
                 return ""
             case types.typeEncryptedChatWaiting:
+                // TRANSLATORS: Used at bottom of screen when requesting secret chat.
                 return i18n.tr("Waiting for user to get online...")
             case types.typeEncryptedChatRequested:
                 return i18n.tr("Secret chat requested")
             case types.typeEncryptedChat:
                 return i18n.tr("Secret chat created")
             case types.typeEncryptedChatDiscarded:
+                // TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
                 return i18n.tr("Secret chat discarded")
         }
     }

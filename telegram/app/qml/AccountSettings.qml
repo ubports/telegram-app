@@ -189,7 +189,7 @@ Page {
 
         ListItem.Standard {
             showDivider: true
-            text: i18n.tr("Log out ") + " | " + telegram.phoneNumber
+            text: i18n.tr("Log out") + " | " + telegram.phoneNumber
             onClicked: PopupUtils.open(logout_dialog_component)
         }
 

@@ -140,6 +140,7 @@ Panel {
                         right: parent.right
                         rightMargin: units.gu(2)
                     }
+                    // TRANSLATORS: Main menu list separator, right above signed in accounts list.
                     text: i18n.tr("Accounts")
                     height: units.gu(4)
                     fontSize: "medium"
