@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-02 16:09+0200\n"
-"PO-Revision-Date: 2015-10-02 09:36+0000\n"
+"PO-Revision-Date: 2015-10-03 07:50+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-10-03 06:27+0000\n"
+"X-Launchpad-Export-Date: 2015-10-04 06:30+0000\n"
 "X-Generator: Launchpad (build 17783)\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
@@ -371,13 +371,13 @@ msgstr "حساب"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:192
 msgid "Log out"
-msgstr ""
+msgstr "خروج از حساب"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:204
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "تلگرام برای اوبونتو %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:258

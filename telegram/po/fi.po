@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-02 16:09+0200\n"
-"PO-Revision-Date: 2015-10-02 17:07+0000\n"
+"PO-Revision-Date: 2015-10-03 17:33+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-03 06:27+0000\n"
+"X-Launchpad-Export-Date: 2015-10-04 06:30+0000\n"
 "X-Generator: Launchpad (build 17783)\n"
 "Language: fi\n"
 
@@ -439,7 +439,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr ""
+msgstr "%1 on tavoitettavissa."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:38
@@ -666,7 +666,7 @@ msgstr "Lisää jäsen"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr ""
+msgstr "%1 jäsentä, %2 linjoilla"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
