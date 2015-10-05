@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-01 17:15+0200\n"
-"PO-Revision-Date: 2015-09-23 00:27+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
+"POT-Creation-Date: 2015-10-02 16:09+0200\n"
+"PO-Revision-Date: 2015-10-02 16:59+0000\n"
+"Last-Translator: Víctor R. Ruiz <Unknown>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-02 05:52+0000\n"
+"X-Launchpad-Export-Date: 2015-10-03 06:27+0000\n"
 "X-Generator: Launchpad (build 17783)\n"
 "Language: es\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:77
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
 msgstr "Grupo nuevo"
 
@@ -29,12 +29,12 @@ msgid "Add to group"
 msgstr "Añadir a un grupo"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:87
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
 msgstr "Nuevo chat secreto"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:97
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
 msgstr "Contactos"
 
@@ -63,7 +63,7 @@ msgstr "Buscar contactos..."
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:121
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:357
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:385
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:270
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:297
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
 msgstr "Aceptar"
@@ -90,7 +90,7 @@ msgstr "Introduzca detalles"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:336
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:395
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:281
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:308
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
@@ -99,7 +99,7 @@ msgstr "Cancelar"
 #. TRANSLATORS: Application name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:17
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:267
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:294
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
@@ -145,7 +145,7 @@ msgstr "%1 de %2 contactos están en Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:43
 msgid "Select chat to forward messages"
-msgstr ""
+msgstr "Seleccionar chat para reenviar mensajes"
 
 #. TRANSLATORS: %1 represents person to whom forwarding the messages to.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:106
@@ -153,31 +153,31 @@ msgstr ""
 msgid "Forward message to %1?"
 msgstr "¿Reenviar mensaje a %1?"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:31
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
 msgstr "Información del grupo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:31
 msgid "Profile Info"
 msgstr "Información del perfil"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:41
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:42
 msgid "Select all"
 msgstr "Seleccionar todo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:224
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:54
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
 msgstr "Copiar"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:230
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:61
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
 msgstr "Reenviar"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:215
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:68
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -231,31 +231,36 @@ msgstr "%1 cambió la foto del grupo."
 msgid "%1 deleted group photo"
 msgstr "%1 borró la foto del grupo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:128
+#. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
-msgstr ""
+msgstr "Por favor, seleccione chat"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:196
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
-msgstr ""
+msgstr "Nuevos mensajes"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:450
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:453
 msgid "Secret chat requested."
 msgstr "Se solicitó una charla secreta."
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:462
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:465
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
+"Chat secreto aceptado o rechazado desde otro dispositivo.\n"
+"Tenga en cuenta que en Android se aceptan automáticamente."
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:493
+#. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:497
 msgid "Accept"
-msgstr ""
+msgstr "Aceptar"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:506
+#. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:511
 msgid "Reject"
-msgstr ""
+msgstr "Rechazar"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:18
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:21
@@ -265,7 +270,7 @@ msgstr "Guardar"
 
 #. TRANSLATORS: Edit your profile first and last name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:23
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:29
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
 msgstr "Editar nombre"
 
@@ -297,19 +302,19 @@ msgstr "Cerrar"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:22
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
 msgstr "Cambiar foto"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:35
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:107
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:36
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
 msgstr "Configuración"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:89
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:90
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:632
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
@@ -317,54 +322,66 @@ msgid "Info"
 msgstr "Información"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:95
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:96
 msgid "Phone"
 msgstr "Teléfono"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:103
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:104
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
 msgstr "Nombre de usuario"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:110
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:111
 msgid "Messages"
 msgstr "Mensajes"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:115
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:320
 msgid "Notifications"
 msgstr "Notificaciones"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:148
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:149
 msgid "Send by Enter"
 msgstr "Enviar al pulsar Intro"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:167
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:168
 msgid "Support"
 msgstr "Asistencia"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:173
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:174
 msgid "Ask a Question"
 msgstr "Realizar una pregunta"
 
+#. TRANSLATORS: Text of settings item visible in the Support section
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:181
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:111
+msgid "Telegram FAQ"
+msgstr "Preguntas frecuentes de Telegram"
+
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:179
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:187
 msgid "Account"
 msgstr "Cuenta"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:184
-msgid "Log out "
-msgstr ""
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:192
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+#. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:204
+#, qt-format
+msgid "Telegram for Ubuntu %1"
+msgstr "Telegram para Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:231
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:258
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:233
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:67
@@ -372,7 +389,7 @@ msgid "online"
 msgstr "conectado"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:234
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:261
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:236
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:44
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:70
@@ -381,38 +398,38 @@ msgid "last seen %1"
 msgstr "visto por última vez %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:237
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:264
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:239
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
-msgstr ""
+msgstr "visto hace poco"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:240
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:267
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:242
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
-msgstr ""
+msgstr "visto esta semana"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:243
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:270
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:245
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
-msgstr ""
+msgstr "visto este mes"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:246
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:273
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:248
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "visto hace mucho tiempo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:268
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:295
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -439,7 +456,7 @@ msgstr "Este nombre de usuario no es válido."
 #. TRANSLATORS: Placeholder of the username text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:100
 msgid "Your Username"
-msgstr ""
+msgstr "Nombre de usuario"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
@@ -456,6 +473,10 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
 "underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
+"Puede seleccionar un nombre de usuario en <b>Telegram</b>. Al hacerlo, otras "
+"personas podrán buscarlo por este nombre y contactar con usted sin tener que "
+"saber el número de teléfono.<br /><br />Puede usar <b>a-z</b>, <b>0-9</b> y "
+"subrayado.<br />La longitud mínima son <b>5</b> caracteres."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
@@ -470,7 +491,7 @@ msgstr "Número de teléfono (obligatorio)"
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:184
 #, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr ""
+msgstr "%1 aún no está en Telegram"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
@@ -723,15 +744,12 @@ msgstr "Recordarme más tarde"
 msgid "Don't want notifications"
 msgstr "No deseo notificaciones."
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:117
-msgid "Telegram FAQ"
-msgstr "Preguntas frecuentes de Telegram"
-
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:143
+#. TRANSLATORS: Main menu list separator, right above signed in accounts list.
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
-msgstr ""
+msgstr "Cuentas"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:166
+#: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
 msgstr "Añadir cuenta"
 
@@ -750,29 +768,31 @@ msgstr "Vídeo"
 msgid "File"
 msgstr "Archivo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:33
+#. TRANSLATORS: Used at bottom of screen when requesting secret chat.
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr ""
+msgstr "Esperando que el usuario se conecte..."
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:35
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr ""
+msgstr "Charla secreta solicitada"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:37
-msgid "Secert chat created"
-msgstr ""
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:38
+msgid "Secret chat created"
+msgstr "Charla secreta creada"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:39
+#. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr ""
+msgstr "Charla secreta descartada"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:46
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "Desactivado"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:49
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -780,22 +800,22 @@ msgstr[0] "%1 segundo"
 msgstr[1] "%1 segundos"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:52
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "un minuto"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:55
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "Una hora"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:58
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "un día"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:61
+#: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "una semana"
 
@@ -823,19 +843,19 @@ msgid "typing..."
 msgstr "escribiendo..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:215
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:219
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr ""
+msgstr "Reenviado desde <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:277
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:289
 msgid "Audio attachment not supported yet ;("
-msgstr ""
+msgstr "Los adjuntos de audio aún no están soportados :("
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
-msgstr ""
+msgstr "Borrado"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
@@ -1026,7 +1046,7 @@ msgstr "%1 se unió a Telegram"
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:238
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "Nueva sesión desde dispositivo no reconocido"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:243
@@ -1036,7 +1056,7 @@ msgstr "%1 en %2"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:248
 msgid "updated profile photo"
-msgstr ""
+msgstr "foto de perfil actualizada"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:253
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:258
@@ -1067,7 +1087,7 @@ msgstr "Llamar"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:57
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "Falló al obtener datos de Telegram"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:58
 msgid "Touch here to open app"
@@ -1132,7 +1152,7 @@ msgstr "Vídeo recibido"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:647
 msgid "Unhandled media type"
-msgstr ""
+msgstr "Tipo de fichero no soportado"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:720
 msgid "Login to Telegram"
@@ -1144,8 +1164,8 @@ msgstr "No se han recibido mensajes hoy."
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:2
 msgid "This is the Telegram scope"
-msgstr ""
+msgstr "Este es el scope de Telegram"
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "Buscar una charla, contacto o mensaje"
