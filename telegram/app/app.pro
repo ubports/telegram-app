@@ -48,8 +48,7 @@ OTHER_FILES += \
     urls.json \
     telegram.application \
     database \
-    js \
-    icons
+    js
 
 SCOPE_DATA += \
     icons/telegram.png \
@@ -74,8 +73,8 @@ configs.path = /
 scopeData.files = $${SCOPE_DATA}
 scopeData.path = /scope/
 
-icons.files = icons
-icons.path = /
+icons.files = icons/telegram.png
+icons.path = /icons/
 
 emojis.files = emojis
 emojis.path = /
