@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-02 16:09+0200\n"
-"PO-Revision-Date: 2015-09-22 12:23+0000\n"
-"Last-Translator: Siamion Šachalevič <semen.shah@gmail.com>\n"
+"PO-Revision-Date: 2015-10-05 19:40+0000\n"
+"Last-Translator: XiveZ <kyrsant2008@list.ru>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Launchpad-Export-Date: 2015-10-03 06:27+0000\n"
-"X-Generator: Launchpad (build 17783)\n"
+"X-Launchpad-Export-Date: 2015-10-06 06:41+0000\n"
+"X-Generator: Launchpad (build 17796)\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
@@ -135,63 +135,63 @@ msgstr "Кантакты не імпартаваныя"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
-msgstr ""
+msgstr "Гэты кантакт у Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr ""
+msgstr "%1 з %2 кантактаў у Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:43
 msgid "Select chat to forward messages"
-msgstr ""
+msgstr "Выбраць гутарку для перасылання паведамленняў"
 
 #. TRANSLATORS: %1 represents person to whom forwarding the messages to.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:106
 #, qt-format
 msgid "Forward message to %1?"
-msgstr ""
+msgstr "Пераслаць паведамлення для %1?"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:31
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
-msgstr ""
+msgstr "Инфармацыя пра гурт"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:31
 msgid "Profile Info"
-msgstr ""
+msgstr "Інфармацыя пра профіль"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:42
 msgid "Select all"
-msgstr ""
+msgstr "Вылучыць усё"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:54
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
-msgstr ""
+msgstr "Капіяваць"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:61
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
-msgstr ""
+msgstr "Далей"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:68
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
-msgstr ""
+msgstr "Выдаліць"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:57
 #, qt-format
 msgid "%1 created a secret chat"
-msgstr ""
+msgstr "%1 стварыў сакрэтную гутарку"
 
 #. TRANSLATORS: %1 indicates who created the group chat titled %2.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "%1 created the group \"%2\""
-msgstr ""
+msgstr "%1 стварыў гурт «%2»"
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:67
