@@ -5,7 +5,7 @@ import Ubuntu.Components.ListItems 1.0 as ListItem
 import AsemanTools.Controls 1.0 as Controls
 import AsemanTools.Controls.Styles 1.0 as Styles
 
-import Ubuntu.Content 1.0
+import Ubuntu.Content 1.1
 import AsemanTools 1.0
 import TelegramQML 1.0
 
@@ -26,6 +26,36 @@ Rectangle {
     signal emojiRequest(real x, real y)
     signal copyRequest()
 
+    function checkForSharedContent() {
+        if (transfer_helper.hasContent) {
+            var url = String(transfer_helper.transfer.items[0].url)
+            var isFile = url.indexOf("file://") == 0
+
+            if (isFile) {
+                var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+                var i = 0
+                for ( ; i < transfer_helper.count; i++) {
+                    url = String(transfer_helper.transfer.items[i].url)
+                    var path = url.substring("file://".length, url.length)
+
+                    if (transfer_helper.transfer.contentType === ContentType.Pictures ||
+                        transfer_helper.transfer.contentType === ContentType.Videos) {
+                        console.log("sending media attachment")
+                        send_file_timer.send(peerId, path, false, false)
+                    } else {
+                        console.log("sending document attachment")
+                        send_file_timer.send(peerId, path, true, false)
+                    }
+                }
+            } else {
+                var text = String(transfer_helper.transfer.items[0].text)
+                var message = url.length > 0 ? url : text
+                txt.text = message
+            }
+            clearSharedContent()
+        }
+    }
+
     onCurrentDialogChanged: {
         temp_hash.remove(privates.lastDialog)
         temp_hash.insert(privates.lastDialog, txt.text)
@@ -35,6 +65,8 @@ Rectangle {
         txt.cursorPosition = txt.length
 
         privates.lastDialog = currentDialog
+
+        checkForSharedContent()
     }
 
     HashObject {

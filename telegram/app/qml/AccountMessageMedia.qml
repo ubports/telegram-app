@@ -132,7 +132,7 @@ Item {
                 break;
 
             case FileHandler.TypeTargetMediaPhoto:
-                console.log("downloading photo: " + filePath);
+                // console.log("downloading photo: " + filePath);
                 download()
                 break;
 
@@ -170,7 +170,7 @@ Item {
                 break;
 
             case FileHandler.TypeTargetMediaVideo:
-                console.log("thumb is " + file_handler.thumbPath)
+                // console.log("thumb is " + file_handler.thumbPath)
                 result = file_handler.thumbPath
                 break;
 

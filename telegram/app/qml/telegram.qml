@@ -19,7 +19,7 @@ import QtQuick 2.4
 
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 0.1 as Popup
-import Ubuntu.Content 0.1
+import Ubuntu.Content 1.1
 //import UserMetrics 0.1
 import Ubuntu.OnlineAccounts.Client 0.1
 import Ubuntu.PushNotifications 0.1
@@ -57,13 +57,6 @@ MainView {
     signal pushLoaded()
     signal pushRegister(string token, string version)
     signal pushUnregister(string token)
-
-    function showIntro() {
-        if (profiles.count == 0) {
-            pageStack.clear();
-            pageStack.push(intro_page_component);
-        }
-    }
     
     onActiveFocusChanged: {
         if (activeFocus) {
@@ -86,6 +79,13 @@ MainView {
             console.log("push - started from notification");
             mainView.uri = Cutegram.args[0];
             processUri();
+        }
+    }
+
+    function showIntro() {
+        if (profiles.count == 0) {
+            pageStack.clear();
+            pageStack.push(intro_page_component);
         }
     }
 
@@ -140,10 +140,56 @@ MainView {
     }
 
     Connections {
+        target: ContentHub
+        onShareRequested: {
+            backToDialogsPage()
+            transfer_helper.prepare(transfer)
+        }
+    }
+
+    Connections {
         target: Cutegram
         onLoggedOut: {
-            pageStack.clear();
-            profiles.remove(phone);
+            pageStack.clear()
+            profiles.remove(phone)
+        }
+    }
+
+    Item {
+        id: transfer_helper
+
+        property var transfer
+        property int count: 0
+        property bool hasContent: count > 0
+
+        function prepare(transfer) {
+            transfer_helper.transfer = transfer
+        }
+
+        function reset() {
+            console.log("transfered resetted")
+            transfer_helper.count = 0
+        }
+
+        function cancel() {
+            transfer_helper.transfer.state = ContentTransfer.Aborted
+        }
+
+        Connections {
+            target: transfer_helper.transfer
+            onStateChanged: {
+                switch (transfer_helper.transfer.state) {
+                case ContentTransfer.Charged:
+                case ContentTransfer.Collected:
+                    console.log("transfer charged/collected")
+                    transfer_helper.count = transfer_helper.transfer.items.length
+                    break
+                case ContentTransfer.Aborted:
+                    console.log("transfer aborted")
+                    transfer_helper.reset()
+                    break
+                }
+            }
         }
     }
 

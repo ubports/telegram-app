@@ -56,14 +56,12 @@ int main(int argc, char *argv[])
     parser.addOption(ipAdrsOption);
     parser.process(app);
 
-/*
     if(!parser.isSet(verboseOption))
         qputenv("QT_LOGGING_RULES", "tg.*=false");
     else
         qputenv("QT_LOGGING_RULES", "tg.core.settings=false\n"
                                     "tg.core.outboundpkt=false\n"
                                     "tg.core.inboundpkt=false");
-*/
 
     if(app.readSetting("Proxy/enable",false).toBool())
     {

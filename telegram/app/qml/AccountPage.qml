@@ -12,10 +12,6 @@ import "components"
 
 Page {
     id: account_page
-    objectName: "accountPage"
-    // TRANSLATORS: Application name.
-    title: i18n.tr("Telegram")
-    flickable: null
 
     property int profileCount: 0
     property AccountDialogPage dialogPage;
@@ -25,14 +21,6 @@ Page {
 
     signal openDialog(var dialogId)
     signal addParticipantRequest()
-
-    head {
-        sections.model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
-        backAction: Action {
-            iconName: "navigation-menu"
-            onTriggered: account_panel.opened ? account_panel.close() : account_panel.open()
-        }
-    }
 
     onOpenDialog: {
         // while (pageStack.currentPage && pageStack.currentPage.objectName != "accountPage") {
@@ -63,6 +51,22 @@ Page {
 
         telegramObject.messagesReadHistory(dId)
     }
+
+    function clearForwardedMessages() {
+        dialogs.messageIdsToForward = []
+    }
+
+    function clearSharedContent() {
+        transfer_helper.reset()
+    }
+
+    function cancelSharedContent() {
+        transfer_helper.cancel()
+    }
+
+    objectName: "accountPage"
+    flickable: null
+    head.sections.model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
 
     Component.onCompleted: {
         open_chat_timer.start();
@@ -278,4 +282,48 @@ Page {
 //    }
 //    bottomEdgeTitle: i18n.tr("Contacts")
 
+    state: "default"
+    states: [
+        PageHeadState {
+            name: "default"
+            when: dialogs.messageIdsToForward.length == 0 && !transfer_helper.hasContent
+            head: account_page.head
+            contents: Label {
+                // TRANSLATORS: Application name.
+                text: i18n.tr("Telegram")
+            }
+            backAction: Action {
+                iconName: "navigation-menu"
+                onTriggered: {
+                    account_panel.opened ? account_panel.close() : account_panel.open()
+                }
+            }
+        },
+        PageHeadState {
+            name: "forward"
+            when: dialogs.messageIdsToForward.length > 0
+            head: account_page.head
+            contents: Label {
+                // TRANSLATORS: Page title when forwarding messages.
+                text: i18n.tr("Select Chat")
+            }
+            backAction: Action {
+                iconName: "go-previous"
+                onTriggered: clearForwardedMessages()
+            }
+        },
+        PageHeadState {
+            name: "share"
+            when: transfer_helper.hasContent
+            head: account_page.head
+            contents: Label {
+                // TRANSLATORS: Page title when sharing files.
+                text: i18n.tr("Select Chat")
+            }
+            backAction: Action {
+                iconName: "go-previous"
+                onTriggered: cancelSharedContent()
+            }
+        }
+    ]
 }

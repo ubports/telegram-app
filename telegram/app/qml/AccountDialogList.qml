@@ -37,21 +37,10 @@ Item {
         id: dialogs_model
     }
 
-    PageHeaderHint {
-        id: forward_header_hint
-        anchors.top: parent.top
-        text: i18n.tr("Select chat to forward messages")
-        visible: messageIdsToForward.length > 0
-
-        onClicked: {
-            messageIdsToForward = [];
-        }
-    }
-
     ListView {
         id: dialog_list
         anchors {
-            top: forward_header_hint.bottom
+            top: parent.top
             left: parent.left
             right: parent.right
             bottom: parent.bottom
@@ -102,12 +91,23 @@ Item {
                 if (messageIdsToForward.length > 0) {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
                         list_item, {
-                            // TRANSLATORS: %1 represents person to whom forwarding the messages to.
+                            // TRANSLATORS: %1 represents person to whom we are forwarding messages to.
                             text: i18n.tr("Forward message to %1?".arg(title)),
                             onAccept: function() {
-                                telegramObject.forwardMessages(messageIdsToForward, dialogId);
-                                messageIdsToForward = [];
-                                currentDialogChanged(dialog);
+                                telegramObject.forwardMessages(messageIdsToForward, dialogId)
+                                clearForwardedMessages()
+                                currentDialogChanged(dialog)
+                            }
+                        }
+                    );
+                } else if (transfer_helper.hasContent) {
+                    PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
+                        list_item, {
+                            // TRANSLATORS: %1 represents person to whom we are sending files to.
+                            text: i18n.tr("Send messages to %1?".arg(title)),
+                            onAccept: function() {
+                                // Shared content is processed in AccountSendMessage.qml
+                                currentDialogChanged(dialog)
                             }
                         }
                     );
