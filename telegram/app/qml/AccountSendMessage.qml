@@ -34,18 +34,18 @@ Rectangle {
             if (isFile) {
                 var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
                 var i = 0
+                var paths = []
                 for ( ; i < transfer_helper.count; i++) {
                     url = String(transfer_helper.transfer.items[i].url)
-                    var path = url.substring("file://".length, url.length)
-
-                    if (transfer_helper.transfer.contentType === ContentType.Pictures ||
-                        transfer_helper.transfer.contentType === ContentType.Videos) {
-                        console.log("sending media attachment")
-                        send_file_timer.send(peerId, path, false, false)
-                    } else {
-                        console.log("sending document attachment")
-                        send_file_timer.send(peerId, path, true, false)
-                    }
+                    paths.push(url)
+                }
+                if (transfer_helper.transfer.contentType === ContentType.Pictures ||
+                    transfer_helper.transfer.contentType === ContentType.Videos) {
+                    console.log("sending media attachments")
+                    send_files_timer.send(peerId, paths, false, false)
+                } else {
+                    console.log("sending document attachments")
+                    send_files_timer.send(peerId, paths, true, false)
                 }
             } else {
                 var text = String(transfer_helper.transfer.items[0].text)
@@ -183,15 +183,12 @@ Rectangle {
         id: mediaImporter
 
         onMediaReceived: {
-            var filePath = String(mediaUrl).replace('file://', '');
-            console.log("media path received: " + filePath);
-            var dId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
-            if (contentType === ContentType.Pictures) {
-                send_file_timer.send(dId, filePath, false, false);
-            } else if (contentType === ContentType.Videos) {
-                send_file_timer.send(dId, filePath, false, false);
+            var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+            if (contentType === ContentType.Pictures ||
+                contentType === ContentType.Videos) {
+                send_files_timer.send(peerId, urls, false, false)
             } else {
-                send_file_timer.send(dId, filePath, true, false);
+                send_files_timer.send(peerId, urls, true, false)
             }
         }
     }
@@ -336,26 +333,32 @@ Rectangle {
     }
 
     Timer {
-        id: send_file_timer
+        id: send_files_timer
 
         property int dialogId: 0
-        property string path: ""
+        property var urls: []
         property bool document: false
         property bool audio: false
 
-        function send(dialogId, filePath, forceDocument, forceAudio) {
+        function send(peerId, urls, forceDocument, forceAudio) {
             stop();
-            send_file_timer.dialogId = dialogId;
-            send_file_timer.document = forceDocument ? forceDocument : false;
-            send_file_timer.audio = forceAudio ? forceAudio : false;
-            send_file_timer.path = filePath;
+            send_files_timer.dialogId = peerId
+            send_files_timer.urls = urls
+            send_files_timer.document = forceDocument ? forceDocument : false
+            send_files_timer.audio = forceAudio ? forceAudio : false
             restart();
         }
 
         interval: 1000
         repeat: false
         onTriggered: {
-            telegramObject.sendFile(dialogId, path, document, audio);
+            if (urls.length > 0) {
+                var i = 0
+                for ( ; i < urls.length; i++) {
+                    var path = String(urls[i]).replace("file://", "")
+                    telegramObject.sendFile(dialogId, path, document, audio)
+                }
+            }
         }
     }
 

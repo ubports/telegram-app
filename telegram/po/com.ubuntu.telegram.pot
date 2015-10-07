@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-07 15:44+0200\n"
+"POT-Creation-Date: 2015-10-07 16:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,7 +299,7 @@ msgstr ""
 msgid "Type message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:333
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:330
 msgid "Close"
 msgstr ""
 
@@ -344,7 +344,7 @@ msgstr ""
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:370
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:366
 msgid "Notifications"
 msgstr ""
 
@@ -714,21 +714,21 @@ msgstr ""
 msgid "Remove from group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:371
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:367
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:378
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:374
 msgid "Sign in to Ubuntu One"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:386
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
 msgid "Remind me later"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:394
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
 msgid "Don't want notifications"
 msgstr ""
 
