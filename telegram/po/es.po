@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-02 16:09+0200\n"
-"PO-Revision-Date: 2015-10-02 16:59+0000\n"
-"Last-Translator: Víctor R. Ruiz <Unknown>\n"
+"PO-Revision-Date: 2015-10-05 18:37+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-03 06:27+0000\n"
-"X-Generator: Launchpad (build 17783)\n"
+"X-Launchpad-Export-Date: 2015-10-06 06:41+0000\n"
+"X-Generator: Launchpad (build 17796)\n"
 "Language: es\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
@@ -234,11 +234,11 @@ msgstr "%1 borró la foto del grupo"
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
-msgstr "Por favor, seleccione chat"
+msgstr "Seleccione una charla"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
-msgstr "Nuevos mensajes"
+msgstr "Mensajes nuevos"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:453
 msgid "Secret chat requested."
@@ -1152,7 +1152,7 @@ msgstr "Vídeo recibido"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:647
 msgid "Unhandled media type"
-msgstr "Tipo de fichero no soportado"
+msgstr "Este tipo de archivo no es compatible"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:720
 msgid "Login to Telegram"
