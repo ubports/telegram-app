@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-07 16:29+0200\n"
-"PO-Revision-Date: 2015-10-02 13:39+0000\n"
+"PO-Revision-Date: 2015-10-10 13:18+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2015-10-08 06:00+0000\n"
+"X-Launchpad-Export-Date: 2015-10-11 05:39+0000\n"
 "X-Generator: Launchpad (build 17802)\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
@@ -152,7 +152,7 @@ msgstr "መልእክት ወደ ፊት ማስተላለፊያ %1?"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "መልእክት ልላክ ለ %1?"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
@@ -297,7 +297,7 @@ msgstr "የ አባት ስም (በ ምርጫ)"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:308
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:321
 msgid "Select Chat"
-msgstr ""
+msgstr "ውይይት ይምረጡ"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:153
