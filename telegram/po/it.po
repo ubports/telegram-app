@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-02 16:09+0200\n"
-"PO-Revision-Date: 2015-10-03 12:40+0000\n"
-"Last-Translator: Claudio Arseni <claudio.arseni@gmail.com>\n"
+"POT-Creation-Date: 2015-10-07 16:29+0200\n"
+"PO-Revision-Date: 2015-10-07 15:01+0000\n"
+"Last-Translator: Milo Casagrande <milo.casagrande@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-06 06:41+0000\n"
-"X-Generator: Launchpad (build 17796)\n"
+"X-Launchpad-Export-Date: 2015-10-08 06:00+0000\n"
+"X-Generator: Launchpad (build 17802)\n"
 "Language: it\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
@@ -71,7 +71,7 @@ msgstr "OK"
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:204
 msgid "Chat title"
-msgstr "Titolo della chat"
+msgstr "Titolo chat"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:316
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:30
@@ -98,7 +98,7 @@ msgstr "Annulla"
 
 #. TRANSLATORS: Application name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:17
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:293
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:294
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
@@ -143,40 +143,42 @@ msgstr "Questo contatto è su Telegram"
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "%1 contatto su %2 sono su Telegram."
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:43
-msgid "Select chat to forward messages"
-msgstr "Seleziona chat in cui inoltrare i messaggi"
-
-#. TRANSLATORS: %1 represents person to whom forwarding the messages to.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:106
+#. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:95
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "Inoltrare messaggi a %1?"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:31
+#. TRANSLATORS: %1 represents person to whom we are sending files to.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:107
+#, qt-format
+msgid "Send messages to %1?"
+msgstr "Iviare messaggi a %1?"
+
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
 msgstr "Info gruppo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:31
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
 msgstr "Info profilo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:42
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
 msgstr "Seleziona tutto"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:54
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:53
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
 msgstr "Copia"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:61
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:60
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
 msgstr "Inoltra"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:68
+#: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:67
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
 msgstr "Elimina"
@@ -240,11 +242,11 @@ msgstr "Selezionare una chat"
 msgid "New messages"
 msgstr "Nuovi messaggi"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:453
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."
 msgstr "Chat segreta richiesta."
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:465
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:381
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -253,12 +255,12 @@ msgstr ""
 "Ricorda che Android accetta le chat segrete automaticamente."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:497
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:413
 msgid "Accept"
 msgstr "Accetta"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:511
+#: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:427
 msgid "Reject"
 msgstr "Rifiuta"
 
@@ -291,12 +293,19 @@ msgstr "Nome (obbligatorio)"
 msgid "Last name (optional)"
 msgstr "Cognome (opzionale)"
 
+#. TRANSLATORS: Page title when forwarding messages.
+#. TRANSLATORS: Page title when sharing files.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:308
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:321
+msgid "Select Chat"
+msgstr "Seleziona chat"
+
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:121
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:153
 msgid "Type message"
 msgstr "Scrivi messaggio"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:301
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:330
 msgid "Close"
 msgstr "Chiudi"
 
@@ -341,7 +350,7 @@ msgstr "Messaggi"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:320
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:366
 msgid "Notifications"
 msgstr "Notifiche"
 
@@ -627,7 +636,7 @@ msgstr "Potente"
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
-"<b>Telegram</b> non ha limiti di dimensioni<br> per le tue chat e i file "
+"<b>Telegram</b> non ha limiti di dimensioni<br> per le chat e i file "
 "multimediali"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
@@ -728,7 +737,7 @@ msgstr "Blocca utente"
 msgid "Remove from group"
 msgstr "Rimuovi dal gruppo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:321
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:367
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -736,15 +745,15 @@ msgstr ""
 "Se vuoi ricevere le notifiche di Telegram quando non usi l'app, accedi al "
 "tuo account Ubuntu One."
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:328
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:374
 msgid "Sign in to Ubuntu One"
 msgstr "Accedi a Ubuntu One"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:336
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
 msgid "Remind me later"
 msgstr "Ricorda più tardi"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:344
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
 msgid "Don't want notifications"
 msgstr "Nessuna notifica"
 
@@ -829,7 +838,7 @@ msgstr "Lascia la chat"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:56
 msgid "Are you sure you want to leave this chat?"
-msgstr "Sei sicuro di voler lasciare questa chat?"
+msgstr "Lasciare veramente questa chat?"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:66
 msgid "Clear history"
