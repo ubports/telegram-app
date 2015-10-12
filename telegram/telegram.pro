@@ -1,5 +1,7 @@
 TEMPLATE = subdirs
 
+CONFIG += c++11
+
 # value matching manifest name field
 UBUNTU_TRANSLATION_DOMAIN="com.ubuntu.telegram"
 

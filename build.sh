@@ -7,8 +7,9 @@ TG_DIR=`pwd`
 TG_LIBS=$TG_DIR/usr/lib/arm-linux-gnueabihf
 TG_INCS=$TG_DIR/usr/include/arm-linux-gnueabihf
 
-TH_LIBS=$TG_DIR/thumbnailer/lib
-TH_INCS=$TG_DIR/thumbnailer/include
+# new thumbnailer
+TH_LIBS=/usr/lib/arm-linux-gnueabihf
+TH_INCS=/usr/include/thumbnailer-qt-1.0/unity/thumbnailer/qt
 
 #echo "Remember to build the scope FIRST!"
 echo "Building scope first..."
@@ -31,7 +32,6 @@ cd $TG_DIR
 echo "Copying libs to click directory..."
 
 mkdir -p click/lib/arm-linux-gnueabihf/
-cp usr/lib/arm-linux-gnueabihf/* click/lib/arm-linux-gnueabihf/
-cp thumbnailer/lib/* click/lib/arm-linux-gnueabihf/
+cp -P usr/lib/arm-linux-gnueabihf/* click/lib/arm-linux-gnueabihf/
 
 echo "Done."

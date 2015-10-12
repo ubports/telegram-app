@@ -10,6 +10,9 @@ If you don't have a 15.04 click chroot yet:
 
 #### Get and build dependencies.
 
+In the above click chroot, install:
+    libthumbnailer-qt-dev libthumbnailer-qt1.0:armhf thumbnailer-service:armhf
+
 This app requires:
 - libqtelegram-aseman-edition library and
 - TelegramQML plugin
@@ -18,7 +21,7 @@ Simply run:
 
 ./bootstrap.sh
 
-It'll git clone both projects to the deps directory and build them.
+It'll git clone both projects to the deps directory and build them inside the click chroot.
 You can use same command to re-build, if you have changed them, too.
 
 #### Build Telegram for Ubuntu

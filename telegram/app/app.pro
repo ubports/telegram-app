@@ -1,4 +1,5 @@
 TEMPLATE = app
+CONFIG += c++11
 TARGET = telegram
 QT += qml quick sql xml multimedia
 # QT += webkitwidgets webkit
