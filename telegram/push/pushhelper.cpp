@@ -1,16 +1,17 @@
 #include <QApplication>
 #include <QDebug>
+#include <QDir>
 #include <QFile>
 #include <QJsonDocument>
 #include <QJsonArray>
+#include <QSqlDatabase>
 #include <QStringList>
+#include <QSqlQuery>
+#include <QSqlRecord>
 #include <QTextStream>
 
 #include "i18n.h"
 #include "pushhelper.h"
-
-//#include <libintl.h>
-//const char* tr(const char* value) { return gettext(value); }
 
 PushHelper::PushHelper(QString appId, QString infile, QString outfile,
                        QObject *parent) : QObject(parent) {
@@ -88,13 +89,13 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
         args = message["loc_args"].toArray();   // no-i18n
     }
 
-    QString chatId = "0"; // More useful as string in this context. // no-i18n
     if (custom.keys().contains("from_id")) {
-        chatId = custom["from_id"].toString();  // no-i18n
+        tag = custom["from_id"].toString();
     }
     if (custom.keys().contains("chat_id")) {
-        chatId = custom["chat_id"].toString();  // no-i18n
+        tag = custom["chat_id"].toString();
     }
+    qint64 chatId = tag.toInt();
 
     // TRANSLATORS: Application name.
     QString tg = QString(N_("Telegram")); // no-i18n
@@ -281,9 +282,8 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
                 .toInt();
     }
 
-    tag = chatId;
-
     QJsonObject card;
+    card["icon"] = getAvatar(chatId);
     card["summary"] = summary;  // no-i18n
     card["body"]    = body;     // no-i18n
     card["actions"] = actions;  // no-i18n
@@ -305,4 +305,55 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
     postalMessage["notification"] = notification; // no-i18n
 
     return postalMessage;
+}
+
+// TODO: This should be placed in a class shared between app, scope, push.
+
+QString PushHelper::getPrimaryPhoneNumber() {
+    QString number;
+
+    QFile db(PROFILES_PATH);
+    if (!db.exists()) {
+        qCritical() << "profiles db: file not found";
+        return number;
+    }
+
+    QSqlDatabase profiles = QSqlDatabase::addDatabase("QSQLITE", "tg-profiles");
+    profiles.setDatabaseName(PROFILES_PATH);
+
+    if (!profiles.open()) {
+        qCritical() << "profiles db: failed to open";
+        return number;
+    }
+
+    QSqlQuery query(profiles);
+    query.prepare("SELECT number FROM Profiles ORDER BY rowid LIMIT 1");
+    if (!query.exec() || !query.first()) {
+        qCritical() << "profiles db: failed to query phone number";
+        return number;
+    }
+
+    int numberIndex = query.record().indexOf("number");
+    number = query.value(numberIndex).toString();
+    profiles.close();
+
+    return number;
+}
+
+QString PushHelper::getAvatar(qint64 peerId) {
+    QString avatar = "";
+    QString phone = getPrimaryPhoneNumber();
+    if (!phone.isEmpty()) {
+        QStringList nameFilters;
+        nameFilters << "*.jpeg" << "*.jpeg";
+
+        QDir profilesDir(PROFILE_DIR_FMT.arg(phone).arg(peerId));
+        profilesDir.setNameFilters(nameFilters);
+
+        QStringList fileNames = profilesDir.entryList();
+        if (fileNames.length() > 0) {
+            avatar = PROFILE_FILE_FMT.arg(phone).arg(peerId).arg(fileNames[0]);
+        } // TODO else: generic avatar
+    }
+    return avatar;
 }

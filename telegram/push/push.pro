@@ -1,6 +1,7 @@
 TEMPLATE = app
 TARGET = push
-QT += dbus widgets
+QT -= gui
+QT += sql dbus widgets
 INCLUDEPATH += .
 
 MOC_DIR = mocs

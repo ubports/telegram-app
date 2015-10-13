@@ -6,6 +6,7 @@
 #include <QJsonObject>
 #include <string>
 
+#include "config.h"
 #include "pushclient.h"
 
 // See: https://core.telegram.org/api/push-updates
@@ -29,6 +30,9 @@ protected:
     void writePostalMessage(const QJsonObject &postalMessage, const QString &filename);
     void dismissNotification(const QString &tag);
     QJsonObject pushToPostalMessage(const QJsonObject &push, QString &tag);
+
+    QString getPrimaryPhoneNumber();
+    QString getAvatar(qint64 peerId);
 
 private:
     PushClient mPushClient;
