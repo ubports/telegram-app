@@ -3,7 +3,7 @@ TARGET = com.ubuntu.telegram_scope
 #VERSION = 1.0.0
 QT -= gui
 QT += sql
-INCLUDEPATH += . /usr/include/unity-scopes-0
+INCLUDEPATH += . /usr/include/unity-scopes-3
 
 load(ubuntu-click)
 

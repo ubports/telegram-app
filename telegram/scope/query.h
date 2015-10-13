@@ -57,6 +57,9 @@ typedef std::map<qint64, Chat> ChatMap;
 typedef std::vector<Message> MessageList;
 typedef std::vector<CategorisedResult> ResultList;
 
+#define KEYWORD_RECENT "recent"
+#define KEYWORD_PHOTOS "photos"
+
 class TelegramQuery : public SearchQueryBase
 {
 public:
@@ -65,11 +68,14 @@ public:
 
     virtual void cancelled() override;
     virtual void run(SearchReplyProxy const& reply) override;
+    bool aggregates(std::string keyword);
 
 private:
     SearchMetadata mMetadata;
     QString mScopeDir;
-    bool mIsAggregated;
+    bool mIsAggregated = false;
+    bool mInRecent = false;
+    bool mInPhotos = false;
 
     QSqlDatabase mDatabase;
     QString mOwnNumber;

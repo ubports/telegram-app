@@ -30,12 +30,10 @@ void TelegramQuery::cancelled() {
 }
 
 void TelegramQuery::run(SearchReplyProxy const &reply) {
-    mIsAggregated = false;
     if (mMetadata.is_aggregated()) {
-        auto keywords = mMetadata.aggregated_keywords();
-        if (keywords.find("recent") != keywords.end()) { // no-i18n
-            mIsAggregated = true;
-        }
+        mInRecent = aggregates(KEYWORD_RECENT);
+        mInPhotos = aggregates(KEYWORD_PHOTOS);
+        mIsAggregated = mInRecent || mInPhotos;
     }
 
     const QString searchQuery = QString::fromStdString(query().query_string());
@@ -63,11 +61,17 @@ void TelegramQuery::run(SearchReplyProxy const &reply) {
     if (isSearch && mIsAggregated) return;
 
     if (isSearch) {
+        // TODO: Should we allow Telegram messages search when aggregated?
         processSearch(reply, searchQuery, LIMIT_SEARCH);
     } else {
-        int limit = mIsAggregated ? 1 : LIMIT_SURFACE;
+        int limit = mInRecent ? 1 : LIMIT_SURFACE;
         processDialogs(reply, searchQuery, limit);
     }
+}
+
+bool TelegramQuery::aggregates(std::string keyword) {
+    auto keywords = mMetadata.aggregated_keywords();
+    return keywords.find(keyword) != keywords.end();
 }
 
 bool TelegramQuery::openDatabase(QString const &number) {
@@ -249,8 +253,6 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
     MessageList messages;
     ResultList results;
 
-    // const bool isSearch = !searchQuery.isEmpty();
-
     CategoryRenderer contactsRenderer(isSearch ? CONTACTS_SEARCH_TEMPLATE : CONTATS_TEMPLATE);
     CategoryRenderer unreadRenderer(UNREAD_MESSAGES_TEMPLATE);
     CategoryRenderer recentRenderer(isSearch ? MESSAGES_SEARCH_TEMPLATE : RECENT_MESSAGES_TEMPLATE);
@@ -263,11 +265,31 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
     getUsers(uids, users);
     getChats(cids, chats);
 
+    if (mInPhotos) {
+        // Aggregated in Photos scope.
+        CategoryRenderer photosRenderer(PHOTO_MESSAGES_TEMPLATE);
+        // TRANSLATORS: Telegram section label visible in the Photos scope when Telegram photos are aggregated.
+        auto photoCategory = reply->register_category("photos", N_("Telegram"), "", photosRenderer);
+
+        // last photos
+        getMessages(users, chats, "", messages, true);
+        const int messageCount = messages.size();
+        for (int i = 0; i < messageCount && i < limit; i++) {
+            auto result = messageToResult(photoCategory, messages[i]);
+            if (result["type"].get_string() != "unknown") {
+                if (!reply->push(result)) break;
+            }
+        }
+        messages.clear();
+        return;
+    }
+
     if (unreadTotal > 0) {
-        // unread chats
+        // lists unread chats (not messages, as in v1), shows total unread count
         // TRANSLATORS: Unread message count shown in the scope unread category.
-        QString newMessages = unreadTotal == 1 ? N_("%1 new message") : N_("%1 new messages");
+        QString newMessagesFormat = unreadTotal == 1 ? N_("%1 new message") : N_("%1 new messages");
         // TRANSLATORS: The argument is a string saying how many new messages are there, like '5 new messages'.
+        QString newMessages = newMessagesFormat.arg(unreadTotal);
         QString unreadTitle = QString(N_("Unread Chats (%1)")).arg(newMessages);
         auto unreadCategory = reply->register_category("unread", unreadTitle.toStdString(), "", unreadRenderer);
 
@@ -279,7 +301,7 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
         messages.clear();
     }
 
-    if (mIsAggregated && results.size() > 0) {
+    if (mInRecent && results.size() > 0) {
         pushAggregatedResult(reply, results[0]);
         return;
     }
@@ -695,7 +717,9 @@ CategorisedResult TelegramQuery::chatToResult(Category::SCPtr category, const Ch
 
 void TelegramQuery::push(SearchReplyProxy const &reply, ResultList &results) {
     for (auto result : results) {
-        reply->push(result);
+        if (result["type"].get_string() != "unknown") {
+            if (!reply->push(result)) break;
+        }
     }
 }
 
