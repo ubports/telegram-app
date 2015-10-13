@@ -74,7 +74,9 @@ configs.path = /
 scopeData.files = $${SCOPE_DATA}
 scopeData.path = /scope/
 
-icons.files = icons/telegram.png
+icons.files = \
+    icons/telegram.png \
+    images/telegram_symbolic.svg
 icons.path = /icons/
 
 emojis.files = emojis
