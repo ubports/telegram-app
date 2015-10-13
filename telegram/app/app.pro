@@ -53,6 +53,7 @@ OTHER_FILES += \
 
 SCOPE_DATA += \
     icons/telegram.png \
+    images/plane.png \
     qml/files/user_aqua.png \
     qml/files/user_blue.png \
     qml/files/user_green.png \
