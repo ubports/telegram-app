@@ -139,6 +139,8 @@ Item {
             }
             Cutegram.pushNotifications = false;
         }
+        onMessagesSent: outgoingMessagesMetric.increment(count)
+        onMessagesReceived: incomingMessagesMetric.increment(count)
     }
 
     Component {

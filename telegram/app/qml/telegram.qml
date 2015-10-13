@@ -20,7 +20,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 0.1 as Popup
 import Ubuntu.Content 1.1
-//import UserMetrics 0.1
+import UserMetrics 0.1
 import Ubuntu.OnlineAccounts.Client 0.1
 import Ubuntu.PushNotifications 0.1
 
@@ -153,6 +153,22 @@ MainView {
             pageStack.clear()
             profiles.remove(phone)
         }
+    }
+
+    Metric {
+        id: incomingMessagesMetric
+        name: "tg-incoming-msgs"
+        format: i18n.tr("Telegram messages received today: %1")
+        emptyFormat: i18n.tr("No Telegram messages received today.")
+        domain: applicationName
+    }
+
+    Metric {
+        id: outgoingMessagesMetric
+        name: "tg-outgoing-msgs"
+        format: i18n.tr("Telegram messages sent today: %1")
+        emptyFormat: i18n.tr("No Telegram messages sent today.")
+        domain: applicationName
     }
 
     Item {
