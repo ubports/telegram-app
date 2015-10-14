@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-12 15:52+0200\n"
-"PO-Revision-Date: 2015-10-07 23:44+0000\n"
+"POT-Creation-Date: 2015-10-13 13:26+0200\n"
+"PO-Revision-Date: 2015-10-13 22:33+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-13 06:33+0000\n"
+"X-Launchpad-Export-Date: 2015-10-14 06:04+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: pt\n"
 
@@ -97,6 +97,7 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #. TRANSLATORS: Application name.
+#. TRANSLATORS: Telegram section label visible in the Photos scope when Telegram photos are aggregated.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:293
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:294
@@ -105,6 +106,7 @@ msgstr "Cancelar"
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:100
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:272
 #: /home/karni/src/telegram2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:1
 msgid "Telegram"
@@ -350,7 +352,7 @@ msgstr "Mensagens"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:366
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
 msgid "Notifications"
 msgstr "Notificações"
 
@@ -734,7 +736,25 @@ msgstr "Bloquear utilizador"
 msgid "Remove from group"
 msgstr "Eliminar do grupo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:367
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
+#, qt-format
+msgid "Telegram messages received today: %1"
+msgstr "Mensagens do Telegram recebidas hoje: %1"
+
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
+msgid "No Telegram messages received today."
+msgstr "Sem mensagens do Telegram recebidas hoje"
+
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
+#, qt-format
+msgid "Telegram messages sent today: %1"
+msgstr "Mensagens do Telegram enviadas hoje: %1"
+
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
+msgid "No Telegram messages sent today."
+msgstr "Sem mensagens do Telegram enviadas hoje"
+
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -742,15 +762,15 @@ msgstr ""
 "Se quiser notificações do Telegram quando não estiver a usar a app, inicie "
 "sessão na sua conta Ubuntu One."
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:374
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
 msgid "Sign in to Ubuntu One"
 msgstr "Inicie sessão em Ubuntu One"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
 msgid "Remind me later"
 msgstr "Lembrar-me mais tarde"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:406
 msgid "Don't want notifications"
 msgstr "Não quero notificações"
 
@@ -1095,80 +1115,79 @@ msgstr "Abrir conversa"
 msgid "Call"
 msgstr "Ligar"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:57
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:55
 msgid "Failed to get Telegram data"
 msgstr "Falhou ao obter dados do Telegram"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:58
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:56
 msgid "Touch here to open app"
 msgstr "Clique aqui para abrir a app"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:155
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:159
 msgid "Results in: Contacts & Chats"
 msgstr "Resultados em: contactos e conversas"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:172
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:176
 msgid "Results in: Messages"
 msgstr "Resultados em: mensagens"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:259
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:261
 msgid "People You Talk To"
 msgstr "Pessoas com quem conversa"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:260
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:262
 msgid "Recent Chats"
 msgstr "Conversas recentes"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:261
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:263
 msgid "Recent Photos"
 msgstr "Fotos recentes"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:269
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 mensagem nova"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:269
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 mensagens novas"
 
-#. TRANSLATORS: The argument is a string saying how many new messages are there, like '5 new messages'.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:271
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:293
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Conversas por ler (%1)"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:614
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:636
 msgid "Audio message"
 msgstr "Mensagem de áudio"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:618
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:640
 msgid "Contact received"
 msgstr "Contacto recebido"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:622
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:644
 msgid "Document received"
 msgstr "Documento recebido"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:626
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:648
 msgid "Photo received"
 msgstr "Foto recebida"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:637
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:659
 msgid "Video received"
 msgstr "Vídeo recebido"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:647
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:669
 msgid "Unhandled media type"
 msgstr "Tipo de multimédia não suportado"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:720
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:744
 msgid "Login to Telegram"
 msgstr "Entre no Telegram"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:757
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:781
 msgid "No messages received Today."
 msgstr "Sem mensagens recebidas hoje."
 
