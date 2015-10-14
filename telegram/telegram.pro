@@ -26,7 +26,7 @@ UBUNTU_TRANSLATION_SOURCES+= \
     $$files(scope/*.h,true) \
     $$files(scope/*.cpp,true) \
     $$files(app/*.desktop, true) \
-    $$files(scope/*scope.ini, true)
+    $$files(scope/*sctelegram.ini, true)
 
 # specifies all translations files and makes sure they are
 # compiled and installed into the right place in the click package
@@ -105,7 +105,7 @@ defineTest(ubuntuAddPreTargetDep) {
 
                 translated_desktop_files+=$$file
             } else {
-                SCOPEINI = $$find(file, "scope\\.ini$")
+                SCOPEINI = $$find(file, "sctelegram\\.ini$")
                 count(SCOPEINI, 1) {
                     # extract the strings from the ini file, and feed them to xgettext
                     target_file = "$$shadowed($$_PRO_FILE_PWD_)/$$relative_path($$file,$$_PRO_FILE_PWD_).h"

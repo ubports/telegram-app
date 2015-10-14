@@ -31,10 +31,13 @@ void TelegramQuery::cancelled() {
 
 void TelegramQuery::run(SearchReplyProxy const &reply) {
     if (mMetadata.is_aggregated()) {
-        mInRecent = aggregates(KEYWORD_RECENT);
-        mInPhotos = aggregates(KEYWORD_PHOTOS);
+        mInRecent = aggregated(KEYWORD_RECENT);
+        // XXX This line should be returning true when aggregated by "photos",
+        // but it does not. Above (agg by "recent") works fine.
+        mInPhotos = aggregated(KEYWORD_PHOTOS);
         mIsAggregated = mInRecent || mInPhotos;
     }
+    qDebug().noquote() << TAG << "in recent" << mInRecent << ", in photos" << mInPhotos;
 
     const QString searchQuery = QString::fromStdString(query().query_string());
     const bool isSearch = !searchQuery.isEmpty();
@@ -64,12 +67,14 @@ void TelegramQuery::run(SearchReplyProxy const &reply) {
         // TODO: Should we allow Telegram messages search when aggregated?
         processSearch(reply, searchQuery, LIMIT_SEARCH);
     } else {
-        int limit = mInRecent ? 1 : LIMIT_SURFACE;
+        int limit = LIMIT_SURFACE;
+        if (mInRecent) limit = 1;
+        if (mInPhotos) limit = LIMIT_MEDIA;
         processDialogs(reply, searchQuery, limit);
     }
 }
 
-bool TelegramQuery::aggregates(std::string keyword) {
+inline bool TelegramQuery::aggregated(std::string keyword) {
     auto keywords = mMetadata.aggregated_keywords();
     return keywords.find(keyword) != keywords.end();
 }
@@ -197,7 +202,7 @@ void TelegramQuery::processSearch(SearchReplyProxy const &reply, const QString &
     }
 }
 
-void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString &searchQuery, int limit) {
+void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString &searchQuery, uint limit) {
     const bool isSearch = !searchQuery.isEmpty();
 
     QString dialogQuerySql = QString(
@@ -252,37 +257,39 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
     ChatMap chats;
     MessageList messages;
     ResultList results;
+    unsigned int resultCount;
 
-    CategoryRenderer contactsRenderer(isSearch ? CONTACTS_SEARCH_TEMPLATE : CONTATS_TEMPLATE);
-    CategoryRenderer unreadRenderer(UNREAD_MESSAGES_TEMPLATE);
-    CategoryRenderer recentRenderer(isSearch ? MESSAGES_SEARCH_TEMPLATE : RECENT_MESSAGES_TEMPLATE);
     CategoryRenderer photosRenderer(PHOTO_MESSAGES_TEMPLATE);
-
-    auto usersCategory = reply->register_category("users", N_("People You Talk To"), "", contactsRenderer);
-    auto recentCategory = reply->register_category("recent", N_("Recent Chats"), "", recentRenderer);
-    auto photoCategory = reply->register_category("media", N_("Recent Photos"), "", photosRenderer);
 
     getUsers(uids, users);
     getChats(cids, chats);
 
     if (mInPhotos) {
-        // Aggregated in Photos scope.
-        CategoryRenderer photosRenderer(PHOTO_MESSAGES_TEMPLATE);
+        // TODO Should photo aggregator respect the category title provided here? It currently does not.
         // TRANSLATORS: Telegram section label visible in the Photos scope when Telegram photos are aggregated.
         auto photoCategory = reply->register_category("photos", N_("Telegram"), "", photosRenderer);
 
-        // last photos
         getMessages(users, chats, "", messages, true);
-        const int messageCount = messages.size();
-        for (int i = 0; i < messageCount && i < limit; i++) {
+        unsigned int messageCount = messages.size();
+        qDebug().noquote() << TAG << "returning" << messageCount << "results";
+
+        for (uint i = 0, resultCount = 0; i < messageCount && resultCount < limit; i++) {
             auto result = messageToResult(photoCategory, messages[i]);
             if (result["type"].get_string() != "unknown") {
                 if (!reply->push(result)) break;
+                resultCount++;
             }
         }
-        messages.clear();
         return;
     }
+
+    CategoryRenderer contactsRenderer(isSearch ? CONTACTS_SEARCH_TEMPLATE : CONTATS_TEMPLATE);
+    CategoryRenderer unreadRenderer(UNREAD_MESSAGES_TEMPLATE);
+    CategoryRenderer recentRenderer(isSearch ? MESSAGES_SEARCH_TEMPLATE : RECENT_MESSAGES_TEMPLATE);
+
+    auto usersCategory = reply->register_category("users", N_("People You Talk To"), "", contactsRenderer);
+    auto recentCategory = reply->register_category("recent", N_("Recent Chats"), "", recentRenderer);
+    auto photoCategory = reply->register_category("photos", N_("Recent Photos"), "", photosRenderer);
 
     if (unreadTotal > 0) {
         // lists unread chats (not messages, as in v1), shows total unread count
@@ -294,9 +301,10 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
         auto unreadCategory = reply->register_category("unread", unreadTitle.toStdString(), "", unreadRenderer);
 
         getMessages(users, chats, unreadIds, messages);
-        for (unsigned int i = 0; i < messages.size(); i++) {
+        for (unsigned int i = 0, resultCount = 0; i < messages.size() && resultCount < limit; i++) {
             auto result = messageToResult(unreadCategory, messages[i]);
             results.push_back(result);
+            resultCount++;
         }
         messages.clear();
     }
@@ -308,27 +316,28 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
 
     // recent read chats
     getMessages(users, chats, readIds, messages);
-    for (unsigned int i = 0; i < messages.size(); i++) {
+    for (uint i = 0, resultCount = 0; i < messages.size() && resultCount < limit; i++) {
         auto result = messageToResult(recentCategory, messages[i]);
         results.push_back(result);
+        resultCount++;
     }
     messages.clear();
 
-    if (mIsAggregated && results.size() > 0) {
-        pushAggregatedResult(reply, results[0]);
-        return;
-    }
-
-    if (mIsAggregated) {
-        pushNoMessagesToday(reply);
+    if (mInRecent) {
+        if (results.size() > 0) {
+            pushAggregatedResult(reply, results[0]);
+        } else {
+            pushNoMessagesToday(reply);
+        }
         return;
     }
 
     // last photos
     getMessages(users, chats, "", messages, true);
-    for (unsigned int i = 0; i < messages.size(); i++) {
+    for (uint i = 0, resultCount = 0; i < messages.size() && resultCount < limit; i++) {
         auto result = messageToResult(photoCategory, messages[i]);
         results.push_back(result);
+        resultCount++;
     }
     messages.clear();
 
@@ -339,12 +348,8 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
         auto result = userToResult(usersCategory, user.second);
         results.insert(results.begin(), result);
     }
-
-    for (auto &result: results) {
-        if (result["type"].get_string() != "unknown") { // no-i18n
-            if (!reply->push(result)) return;
-        }
-    }
+    qDebug().noquote() << TAG << "returning" << results.size() << "results";
+    push(reply, results);
 }
 
 void TelegramQuery::queryUsers(const QString &sql, UserMap &users) {
@@ -440,7 +445,7 @@ void TelegramQuery::getMessages(const UserMap &users, const ChatMap &chats, cons
     QString whereSql = " WHERE "; // no-i18n
     int limit = 0;
 
-    if (mIsAggregated) {
+    if (mInRecent) {
         // clam date column to results from today and LIMIT 1
         const QDate today = QDate::currentDate();//QDateTime::currentDateTime().toLocalTime().date();
         const QDateTime todayStart(today, QTime(0, 0, 0));
@@ -462,7 +467,7 @@ void TelegramQuery::getMessages(const UserMap &users, const ChatMap &chats, cons
         .arg((unsigned int)MessageMedia::typeMessageMediaPhoto)
         .arg((unsigned int)MessageMedia::typeMessageMediaVideo);
         */
-        if (!mIsAggregated) {
+        if (!mInPhotos) {
             limit = LIMIT_MEDIA;
         }
     }
@@ -494,7 +499,7 @@ void TelegramQuery::getMessages(const UserMap &users, const ChatMap &chats, cons
         if (msg.isChat) {
             if (chats.find(toId) != chats.end()) {
                 msg.chat = chats.at(toId);
-            } else {
+            } else if (!mIsAggregated) {
                 qCritical() << "chat not found: " << toId;
             }
         }
@@ -502,8 +507,8 @@ void TelegramQuery::getMessages(const UserMap &users, const ChatMap &chats, cons
         qint64 userId = (fromId == mOwnId) ? toId : fromId;
         if (users.find(userId) != users.end()) {
             msg.user = users.at(userId);
-        } else {
-            qCritical() << "user not found: " << fromId;
+        } else if (!mIsAggregated) {
+            qCritical().noquote() << TAG << "user not found" << fromId;
         }
 
         msg.date = query.value(record.indexOf("mdate")).toInt();
@@ -650,6 +655,12 @@ CategorisedResult TelegramQuery::messageToResult(Category::SCPtr category, const
         if (QFile(message.mediaUrl.mid(7)).exists()) {
             result["mediaUrl"] = message.mediaUrl.toStdString(); // no-i18n
             result["mediaThumb"] = message.mediaUrl.toStdString(); // no-i18n
+/*
+            if (mInPhotos) {
+                result["art"] = result["mediaThumb"];
+            }
+*/
+            result["art"] = result["mediaThumb"];
         } else {
             result["type"] = "unknown"; // no-i18n
         }
@@ -749,7 +760,7 @@ void TelegramQuery::pushLogin(SearchReplyProxy const &reply) {
 
 void TelegramQuery::pushAggregatedResult(SearchReplyProxy const &reply, CategorisedResult const &aggregatedResult) {
     CategorisedResult result = aggregatedResult;
-    result.set_uri("scope://com.ubuntu.telegram_scope");
+    result.set_uri("scope://com.ubuntu.telegram_sctelegram");
 
     std::string title = result["title"].get_string(); // no-i18n
     result["title"] = result["from"]; // no-i18n
@@ -769,7 +780,6 @@ void TelegramQuery::pushAggregatedResult(SearchReplyProxy const &reply, Categori
     result["attributes"] = attrs.end(); // no-i18n
     std::string icon = QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
     result["mascot"] = icon; // no-i18n
-
     reply->push(result);
 }
 
@@ -777,7 +787,7 @@ void TelegramQuery::pushNoMessagesToday(SearchReplyProxy const &reply) {
     CategoryRenderer renderer(LOGIN_TEMPLATE);
     auto category = reply->register_category("empty", "", "", renderer);
     CategorisedResult result(category);
-    result.set_uri("scope://com.ubuntu.telegram_scope");
+    result.set_uri("scope://com.ubuntu.telegram_sctelegram");
     result["title"] = QString(N_("No messages received Today.")).toStdString();
     result["mascot"] = QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
     reply->push(result);

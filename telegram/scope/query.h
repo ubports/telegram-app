@@ -56,9 +56,7 @@ typedef std::map<qint64, User> UserMap;
 typedef std::map<qint64, Chat> ChatMap;
 typedef std::vector<Message> MessageList;
 typedef std::vector<CategorisedResult> ResultList;
-
-#define KEYWORD_RECENT "recent"
-#define KEYWORD_PHOTOS "photos"
+typedef unsigned int uint;
 
 class TelegramQuery : public SearchQueryBase
 {
@@ -68,9 +66,11 @@ public:
 
     virtual void cancelled() override;
     virtual void run(SearchReplyProxy const& reply) override;
-    bool aggregates(std::string keyword);
+    bool aggregated(std::string keyword);
 
 private:
+    const QString TAG = "Telegram:";
+
     SearchMetadata mMetadata;
     QString mScopeDir;
     bool mIsAggregated = false;
@@ -87,7 +87,7 @@ private:
     QString getPrimaryPhoneNumber();
     qint64 getPrimaryUserId();
 
-    void processDialogs(SearchReplyProxy const &reply, const QString &query, int limit);
+    void processDialogs(SearchReplyProxy const &reply, const QString &query, uint limit);
     void getUsers(const QString &ids, UserMap &users);
     void getChats(const QString &ids, ChatMap &chats);
     void getMessages(const UserMap &users, const ChatMap &chats, const QString mids, MessageList &messages, bool hasMedia = false);

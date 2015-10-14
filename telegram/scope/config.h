@@ -1,8 +1,14 @@
 #pragma once
 
 #include "i18n.h"
+#include <string>
 
 const bool DEBUG = false;
+
+const int LIMIT_UNREAD  = 10;
+const int LIMIT_SURFACE = 10;
+const int LIMIT_MEDIA   =  9;
+const int LIMIT_SEARCH  = 30;
 
 const QString CONFIG_PATH       = "/home/phablet/.config/com.ubuntu.telegram";
 const QString CACHE_PATH        = "/home/phablet/.cache/com.ubuntu.telegram";
@@ -17,10 +23,8 @@ const QString VIDEO_THUMB2_PATH_FMT     = "file://" + CACHE_PATH + "/%1/download
 // TRANSLATORS: Time format for items displayed in the scope.
 const QString TIME_FORMAT = N_("h:mm ddd, dd-MM-yy");
 
-const int LIMIT_UNREAD  = 10;
-const int LIMIT_SURFACE = 10;
-const int LIMIT_MEDIA   =  9;
-const int LIMIT_SEARCH  = 30;
+const std::string KEYWORD_RECENT = "recent";
+const std::string KEYWORD_PHOTOS = "photos";
 
 enum PeerType {
     typePeerUser = 0x9db1bc6d,
