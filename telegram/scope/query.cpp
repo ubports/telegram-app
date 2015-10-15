@@ -257,7 +257,6 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
     ChatMap chats;
     MessageList messages;
     ResultList results;
-    unsigned int resultCount;
 
     CategoryRenderer photosRenderer(PHOTO_MESSAGES_TEMPLATE);
 
@@ -301,7 +300,7 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
         auto unreadCategory = reply->register_category("unread", unreadTitle.toStdString(), "", unreadRenderer);
 
         getMessages(users, chats, unreadIds, messages);
-        for (unsigned int i = 0, resultCount = 0; i < messages.size() && resultCount < limit; i++) {
+        for (uint i = 0, resultCount = 0; i < messages.size() && resultCount < limit; i++) {
             auto result = messageToResult(unreadCategory, messages[i]);
             results.push_back(result);
             resultCount++;
