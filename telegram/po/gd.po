@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-13 13:26+0200\n"
+"POT-Creation-Date: 2015-10-14 18:51+0200\n"
 "PO-Revision-Date: 2015-09-22 10:48+0000\n"
 "Last-Translator: Michał Karnicki <michal.karnicki@canonical.com>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2015-10-14 06:04+0000\n"
+"X-Launchpad-Export-Date: 2015-10-15 06:11+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: gd\n"
 
@@ -106,10 +106,10 @@ msgstr "Sguir dheth"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:100
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:272
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:101
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:270
 #: /home/karni/src/telegram2/telegram/build/app/telegram.desktop.h:1
-#: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:1
+#: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Teileagram"
 
@@ -213,7 +213,7 @@ msgstr "Dh'fhàg %1 am buidheann"
 #. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:79
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:205
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "Thug %1 %2 air falbh"
@@ -948,152 +948,152 @@ msgstr ""
 msgid "dd MMM yy"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:109
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:113
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:117
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:121
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:125
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:129
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:133
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:138
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:143
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:148
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:153
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:158
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:163
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:168
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:173
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:178
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:199
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:179
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:183
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:188
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr ""
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:194
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:210
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:215
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:220
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr ""
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:225
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr ""
 
 #. TRANSLATORS: This format string tells who has checked in.
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:227
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:233
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:238
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:239
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr ""
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:243
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:248
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:253
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:258
-#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:263
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:254
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:259
+#: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr ""
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/karni/src/telegram2/telegram/scope/config.h:18
+#: /home/karni/src/telegram2/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr ""
 
@@ -1113,86 +1113,86 @@ msgstr ""
 msgid "Call"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:55
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:56
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:159
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:164
 msgid "Results in: Contacts & Chats"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:176
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:181
 msgid "Results in: Messages"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:261
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 msgid "People You Talk To"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:262
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
 msgid "Recent Chats"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:263
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:292
 msgid "Recent Photos"
 msgstr ""
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:297
 #, qt-format
 msgid "%1 new message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:297
 #, qt-format
 msgid "%1 new messages"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:293
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:300
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:636
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:641
 msgid "Audio message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:640
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:645
 msgid "Contact received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:644
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:649
 msgid "Document received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:648
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:653
 msgid "Photo received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:659
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:670
 msgid "Video received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:669
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:680
 msgid "Unhandled media type"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:744
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:781
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:2
+#: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_scope.ini.h:3
+#: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr ""
