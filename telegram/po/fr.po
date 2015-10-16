@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-14 18:51+0200\n"
+"POT-Creation-Date: 2015-10-15 11:00+0200\n"
 "PO-Revision-Date: 2015-10-12 16:54+0000\n"
 "Last-Translator: Jean-Marc <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2015-10-15 06:11+0000\n"
+"X-Launchpad-Export-Date: 2015-10-16 06:04+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: fr\n"
 
@@ -106,7 +106,7 @@ msgstr "Annuler"
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:101
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:270
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:269
 #: /home/karni/src/telegram2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
@@ -1135,63 +1135,63 @@ msgstr "Résultats dans : Contacts & discussions"
 msgid "Results in: Messages"
 msgstr "Résultats dans : Messages"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:289
 msgid "People You Talk To"
 msgstr "Personnes à qui vous parlez"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 msgid "Recent Chats"
 msgstr "Discussions récentes"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:292
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
 msgid "Recent Photos"
 msgstr "Photos récentes"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:297
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:296
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 nouveau message"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:297
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:296
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 nouveaux messages"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:300
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:299
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Discussions non lues (%1)"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:641
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:640
 msgid "Audio message"
 msgstr "Message audio"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:645
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:644
 msgid "Contact received"
 msgstr "Contact reçu"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:649
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:648
 msgid "Document received"
 msgstr "Document reçu"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:653
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:652
 msgid "Photo received"
 msgstr "Photo reçue"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:670
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:669
 msgid "Video received"
 msgstr "Vidéo reçue"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:680
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:679
 msgid "Unhandled media type"
 msgstr "Type de média non géré"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:756
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:754
 msgid "Login to Telegram"
 msgstr "Se connecter à Telegram"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:792
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:790
 msgid "No messages received Today."
 msgstr "Aucun message reçu aujourd'hui."
 

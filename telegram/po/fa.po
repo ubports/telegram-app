@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-10-14 18:51+0200\n"
+"POT-Creation-Date: 2015-10-15 11:00+0200\n"
 "PO-Revision-Date: 2015-10-09 19:01+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-10-15 06:11+0000\n"
+"X-Launchpad-Export-Date: 2015-10-16 06:05+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
@@ -105,7 +105,7 @@ msgstr "لغو"
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:101
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:270
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:269
 #: /home/karni/src/telegram2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
@@ -1125,63 +1125,63 @@ msgstr "یافته‌ها در: مخاطبین و گپ‌ها"
 msgid "Results in: Messages"
 msgstr "یافته‌ها در: پیام‌ها"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:289
 msgid "People You Talk To"
 msgstr "افرادی که با آن‌ها صحبت می‌کنید"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 msgid "Recent Chats"
 msgstr "گپ‌های اخیر"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:292
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
 msgid "Recent Photos"
 msgstr "نکاره‌های اخیر"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:297
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:296
 #, qt-format
 msgid "%1 new message"
 msgstr "‫%1 پیام جدید"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:297
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:296
 #, qt-format
 msgid "%1 new messages"
 msgstr "‫%1 پیام جدید"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:300
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:299
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "گپ‌های ناخوانده (%1)"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:641
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:640
 msgid "Audio message"
 msgstr "پیام صوتی"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:645
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:644
 msgid "Contact received"
 msgstr "مخاطب دریافت شد"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:649
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:648
 msgid "Document received"
 msgstr "سند دریافت شد"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:653
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:652
 msgid "Photo received"
 msgstr "نگاره دریافت شد"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:670
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:669
 msgid "Video received"
 msgstr "ویدیو دریافت شد"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:680
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:679
 msgid "Unhandled media type"
 msgstr "نوع رسانهٔ مدیریت نشده"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:756
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:754
 msgid "Login to Telegram"
 msgstr "ورود به تلگرام"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:792
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:790
 msgid "No messages received Today."
 msgstr "امروز پیامی دریافت نشد"
 
