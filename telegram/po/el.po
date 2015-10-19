@@ -1,64 +1,63 @@
-# Hungarian translation for libqtelegram
+# Greek translation for telegram-app
 # Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
-# This file is distributed under the same license as the libqtelegram package.
+# This file is distributed under the same license as the telegram-app package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: libqtelegram\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: telegram-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-10-15 11:00+0200\n"
-"PO-Revision-Date: 2015-10-13 13:33+0000\n"
-"Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
-"Language-Team: Hungarian <hu@li.org>\n"
+"PO-Revision-Date: 2015-10-16 12:54+0000\n"
+"Last-Translator: Aggelos Arnaoutis <angelosarn@hotmail.com>\n"
+"Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2015-10-18 06:08+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
-"Language: hu\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
-msgstr "Új csoport"
+msgstr "Νέα ομάδα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
-msgstr "Hozzáadás csoporthoz"
+msgstr "Προσθήκη στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:26
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
-msgstr "Új titkos csevegés"
+msgstr "Νέα μυστική συνομιλία"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:28
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
-msgstr "Partnerek"
+msgstr "Επαφές"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:40
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
-msgstr "Keresés"
+msgstr "Αναζήτηση"
 
 #. TRANSLATORS: As in: add new contact
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:46
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
-msgstr "Hozzáadás"
+msgstr "Προσθήκη"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:57
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:128
 msgid "Back"
-msgstr "Vissza"
+msgstr "Πίσω"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
-msgstr "Partner keresése…"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:121
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:357
@@ -66,27 +65,27 @@ msgstr "Partner keresése…"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:297
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
-msgstr "OK"
+msgstr "Εντάξει"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:204
 msgid "Chat title"
-msgstr "Csevegés címe"
+msgstr "Τίτλος συνομιλίας"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:316
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
-msgstr "Hozzáadás"
+msgstr "Προσθήκη Επαφής"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
-msgstr "Névjegyek alkalmazásból"
+msgstr "Από βιβλίο διευθύνσεων"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
-msgstr "Kézzel megadva"
+msgstr "Εισαγωγή λεπτομερειών"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:336
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:395
@@ -94,7 +93,7 @@ msgstr "Kézzel megadva"
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
-msgstr "Mégse"
+msgstr "Ακύρωση"
 
 #. TRANSLATORS: Application name.
 #. TRANSLATORS: Telegram section label visible in the Photos scope when Telegram photos are aggregated.
@@ -120,94 +119,94 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
-"Hozzáadja %1-t ehhez: %2?\n"
+"Προσθήκη %1 σε %2;\n"
 "\n"
-"Utolsó továbbítandó üzenetek száma:"
+"Αριθμός τελευταίων μηνυμάτων προς προώθηση:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
-msgstr "Partnerek importálva"
+msgstr "Επαφές εισήχθησαν"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
-msgstr "Nem lettek partnerek importálva"
+msgstr "Καμία επαφή δεν εισήχθησε"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
-msgstr "Ez a partner rendelkezik Telegram fiókkal."
+msgstr "Αυτή η επαφή είναι στο Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr "A megadott %2 partnerből %1 rendelkezik Telegram fiókkal."
+msgstr "%1 από %2 επαφές είναι στο Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:95
 #, qt-format
 msgid "Forward message to %1?"
-msgstr "Továbbítsuk az üzenetet %1 részére?"
+msgstr "Προώθηση μηνύματος σε %1;"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
-msgstr "Üzenetek elküldése neki: %1?"
+msgstr "Αποστολή μηνυμάτων σε %1;"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
-msgstr "Csoportinformáció"
+msgstr "Πληροφορίες ομάδας"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
-msgstr "Profilinformáció"
+msgstr "Πληροφορίες προφιλ"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
-msgstr "Összes kijelölése"
+msgstr "Επιλογή όλων"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:53
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
-msgstr "Másolás"
+msgstr "Αντιγραφή"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:60
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
-msgstr "Továbbítás"
+msgstr "Προώθηση"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:67
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
-msgstr "Törlés"
+msgstr "Διαγραφή"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:57
 #, qt-format
 msgid "%1 created a secret chat"
-msgstr "%1 létrehozott egy titkos csevegést"
+msgstr "%1 δημιούργησε μυστική συνομιλία"
 
 #. TRANSLATORS: %1 indicates who created the group chat titled %2.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "%1 created the group \"%2\""
-msgstr "%1 létrehozott egy „%2” nevű csoportot"
+msgstr "%1 δημιούργησε την ομάδα %2\""
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
 msgid "%1 added %2 to group"
-msgstr "%2 hozzá lett adva a csoporthoz %1 által"
+msgstr "%1 πρόσεθεσε %2 στην ομάδα"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:76
 #, qt-format
 msgid "%1 left the group"
-msgstr "%1 elhagyta a csoportot"
+msgstr "%1 αποχώρησε από την ομάδα"
 
 #. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
@@ -215,113 +214,113 @@ msgstr "%1 elhagyta a csoportot"
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
-msgstr "%2 eltávolítva %1 által"
+msgstr "%1 αφαίρεσε %2"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:84
 #, qt-format
 msgid "%1 changed group name to \"%2\""
-msgstr "%1 átnevezte a csoportot: „%2”"
+msgstr "%1 άλλαξε το όνομα ομάδας σε %2\""
 
 #. TRANSLATORS: %1 is the person, who changed the gruop phot.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:89
 #, qt-format
 msgid "%1 changed group photo."
-msgstr "%1 megváltoztatta a csoportképet."
+msgstr "%1 άλλαγε την φωτογραφία ομάδας."
 
 #. TRANSLATORS: %1 is the person, who deleted the group photo.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "%1 deleted group photo"
-msgstr "%1 törölte a csoportképet."
+msgstr "%1 διέγραψε την φωτογραφία ομάδας"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
-msgstr "Csevegés megadása"
+msgstr "Παρακαλώ επιλέξτε συνομιλία"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
-msgstr "Új üzenetek"
+msgstr "Νέα μηνύματα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."
-msgstr "Titkos csevegés igényelve."
+msgstr "Αίτηση για μυστική συνομιλία."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:381
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
-"A titkos csevegés elfogadható/elutasítható egy másik eszközön.\n"
-"Az Android alapértelmezetten elfogadja azt."
+"Μυστική συνομιλία απερρίφθη ή απεδείχθη από άλλη συσκευή.\n"
+"Σημειώστε πως  το Android αποδέχεται της μυστικές συνομιλίες αυτόματα."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:413
 msgid "Accept"
-msgstr "Elfogadás"
+msgstr "Αποδοχή"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/karni/src/telegram2/telegram/app/qml/AccountMessageList.qml:427
 msgid "Reject"
-msgstr "Elutasítás"
+msgstr "Απόρριψη"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:18
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:21
 #: /home/karni/src/telegram2/telegram/app/qml/PreviewPage.qml:50
 msgid "Save"
-msgstr "Mentés"
+msgstr "Αποθήκευση"
 
 #. TRANSLATORS: Edit your profile first and last name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
-msgstr "Szerkesztés"
+msgstr "Επεξεργασία ονόματος"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
-msgstr "A keresztnév megadása szükséges."
+msgstr "Απαιτείται μικρό όνομα"
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:52
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
-msgstr "Keresztnév (szükséges)"
+msgstr "Μικρό όνομα (απαιτείται)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:71
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
-msgstr "Vezetéknév (opcionális)"
+msgstr "Επίθετο (προαιρετικό)"
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:308
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:321
 msgid "Select Chat"
-msgstr "Csevegés kiválasztása"
+msgstr "Επιλογή συνομιλίας"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:153
 msgid "Type message"
-msgstr "Üzenet írása"
+msgstr "Πληκτρολογήστε μήνυμα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:330
 msgid "Close"
-msgstr "Bezárás"
+msgstr "Κλείσιμο"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
-msgstr "Fénykép megváltoztatása"
+msgstr "Αλλαγή φωτογραφίας"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:36
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
-msgstr "Beállítások"
+msgstr "Ρυθμίσεις"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
@@ -330,23 +329,23 @@ msgstr "Beállítások"
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
-msgstr "Információ"
+msgstr "Πληροφορίες"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:96
 msgid "Phone"
-msgstr "Telefonszám"
+msgstr "Τηλέφωνο"
 
 #. TRANSLATORS: Visible right under username in settings page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:104
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
-msgstr "Felhasználónév"
+msgstr "Όνομα χρήστη"
 
 #. TRANSLATORS: Settings section header.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:111
 msgid "Messages"
-msgstr "Üzenetek"
+msgstr "Μηνύματα"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
@@ -354,42 +353,42 @@ msgstr "Üzenetek"
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
 msgid "Notifications"
-msgstr "Értesítések"
+msgstr "Ειδοποιήσεις"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:149
 msgid "Send by Enter"
-msgstr "Küldés Enter billentyűvel"
+msgstr ""
 
 #. TRANSLATORS: Settings section header.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:168
 msgid "Support"
-msgstr "Támogatás"
+msgstr "Υποστήριξη"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:174
 msgid "Ask a Question"
-msgstr "Kérdés küldése"
+msgstr "Κάντε μια Ερώτηση"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:181
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
-msgstr "Telegram GYIK"
+msgstr "Telegram συχνές ερωτήσεις"
 
 #. TRANSLATORS: Settings section header.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:187
 msgid "Account"
-msgstr "Fiók"
+msgstr "Λογαριασμός"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:192
 msgid "Log out"
-msgstr "Kijelentkezés"
+msgstr "Αποσύνδεση"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:204
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr "Telegram Ubuntuhoz %1"
+msgstr "Telegram για Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:258
@@ -397,7 +396,7 @@ msgstr "Telegram Ubuntuhoz %1"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:67
 msgid "online"
-msgstr "elérhető"
+msgstr "συνδεδεμένος"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:261
@@ -406,7 +405,7 @@ msgstr "elérhető"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
-msgstr "Itt járt: %1"
+msgstr "εμφανίστηκε τελευταία %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:264
@@ -414,7 +413,7 @@ msgstr "Itt járt: %1"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
-msgstr "nem rég járt itt"
+msgstr "εμφανίστηκε τελευταία πρόσφατα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:267
@@ -422,7 +421,7 @@ msgstr "nem rég járt itt"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
-msgstr "egy héten belül járt itt"
+msgstr "εμφανίστηκε τελευταία μέσα στην εβδομάδα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:270
@@ -430,7 +429,7 @@ msgstr "egy héten belül járt itt"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
-msgstr "egy hónapon belül járt itt"
+msgstr "εμφανίστηκε τελευταία μέσα στο μήνα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:273
@@ -438,44 +437,44 @@ msgstr "egy hónapon belül járt itt"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
-msgstr "régen járt itt"
+msgstr "εμφανίστηκε τελευταία αρκετό καιρό"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:295
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
-"Biztos benne, hogy kijelentkezik?\n"
-"Minden titkos csevegés el fog veszni."
+"Είστε σίγουρος πως θέλετε να αποσυνδεθείτε;\n"
+"Τυχόν μυστικές συνομιλίες θα χαθούν."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr "%1 elérhető"
+msgstr "%1 είναι διαθέσιμος"
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr "Sajnáljuk, ez a felhasználónév foglalt."
+msgstr "Λυπούμαστε, αυτό το όνομα χρήστη δεν είναι διαθέσιμο."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr "Sajnáljuk ez a felhasználónév érvénytelen."
+msgstr "Συγγνώμη, αυτό το όνομα χρήστη είναι μη έγκυρο."
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:100
 msgid "Your Username"
-msgstr "Az Ön felhasználóneve"
+msgstr "Το όνομα χρήστη σας"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
-msgstr "A felhasználónév legalább 5 karakter hosszú kell, hogy legyen."
+msgstr "Το όνομα χρήστη πρέπει να έχει τουλάχιστον 5 χαρακτήρες."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:131
 msgid "Checking username..."
-msgstr "Felhasználónév ellenőrzése…"
+msgstr "Έλεγχος ονόματος χρήστη..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountUsernamePage.qml:139
 msgid ""
@@ -484,203 +483,196 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
 "underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
-"A <b>Telegram</b> szolgáltatásban választhat magának felhasználónevet is. "
-"Ennek segítségével mások kapcsolatba léphetnek Önnel a telefonszáma ismerete "
-"nélkül.<br /><br />Használható karakterek: <b>a-z</b>, <b>0-9</b> és "
-"aláhúzás.<br />Minimum hosszúság: <b>5</b> karakter."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
 msgid "Done"
-msgstr "Kész"
+msgstr "Ολοκληρώθηκε"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:115
 msgid "Phone number (required)"
-msgstr "Telefonszám (szükséges)"
+msgstr "Νούμερο τηλεφώνου (απαιτείται)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:184
 #, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr "%1 nem rendelkezik Telegram fiókkal"
+msgstr "%1 δεν είναι ακόμα στο Telegram"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
-msgstr "Meghívás a Telegramra"
+msgstr "Προσκαλέστε στο Telegram"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:236
 msgid "Could not add contact"
-msgstr "Nem sikerült a partner hozzáadása"
+msgstr "Αδυναμία προσθήκης επαφής"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:256
 msgid "Please include the country code."
-msgstr "Kérjük adja meg az országhívót is."
+msgstr "Παρακαλώ συμπεριλάβετε τον κωδικό χώρας."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:258
 msgid "Number is not a valid phone number"
-msgstr "A megadott szám nem érvényes telefonszám"
+msgstr "Ο αριθμός δεν είναι έγκυρος αριθμός τηλεφώνου."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:146
 #: /home/karni/src/telegram2/telegram/app/qml/AuthenticatePage.qml:7
 msgid "Sign In"
-msgstr "Bejelentkezés"
+msgstr "Είσοδος"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:146
 msgid "Sign Up"
-msgstr "Regisztrálás"
+msgstr "Εγγραφή"
 
 #. TRANSLATORS: Error text for an invalid phone code.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:29
 msgid "Invalid phone code"
-msgstr "Érvénytelen telefonkód"
+msgstr "Μη έγκυρος κωδικός τηλεφώνου"
 
 #. TRANSLATORS: Error text for missing first name.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:44
 msgid "First name is required"
-msgstr "A keresztnév megadása szükséges"
+msgstr "Απαιτείται μικρό ονόμα"
 
 #. TRANSLATORS: One time code entered during sign in process.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:110
 msgid "Code"
-msgstr "Kód"
+msgstr "Κωδικός"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:126
 msgid "First Name"
-msgstr "Keresztnév"
+msgstr "Μικρό όνομα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:135
 msgid "Last Name"
-msgstr "Vezetéknév"
+msgstr "Επίθετο"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:157
 msgid "Resend Code"
-msgstr "Kód újraküldése"
+msgstr "Επαναποστολή κωδικού"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:173
 msgid "Request Call"
-msgstr "Felhívás kérése"
+msgstr "Αίτηση κλήσης"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCodePage.qml:175
 msgid "Calling, please wait..."
-msgstr "Hívás, kérjük várjon…"
+msgstr "Γίνεται κλήση, παρακαλώ περιμένετε..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AuthCountriesPage.qml:15
 msgid "Country Code"
-msgstr "Országkód"
+msgstr "Κωδικός χώρας"
 
 #. TRANSLATORS: Placeholder for the phone number field.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthenticatePage.qml:61
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:21
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:62
 msgid "Phone Number"
-msgstr "Telefonszám"
+msgstr "Αριθμός τηλεφώνου"
 
 #. TRANSLATORS: Button text right under the phone number text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthenticatePage.qml:78
 msgid "Log in"
-msgstr "Bejelenkezés"
+msgstr "Σύνδεση"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:69
 msgid "Number correct?"
-msgstr "A telefonszám helyes?"
+msgstr "Αριθμός σωστός;"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPage.qml:142
 msgid "Start Messaging"
-msgstr "Csevegés elkezdése"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr ""
-"Üdvözöljük a gyors és<br>biztonságos üzenetküldés korában\r\n"
-"Welcome to the era<br>of fast and secure messaging"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr "Gyors"
+msgstr "Γρήγορο"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
 msgid ""
 "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
-"A <b>Telegram</b> gyorsabban kézbesíti az üzeneteket,<br>mint bármely más "
-"alkalmazás"
+"<b>Το Telegram</b> παραδίδει τα μηνύματα ταχύτερα<br> από κάθε άλλη εφαρμογή"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr "Ingyenes"
+msgstr "Δωρεάν"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
-"A <b>Telegram</b> mindig ingyenes marad. Nincs reklám.<br> Nincs előfizetési "
-"díj"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
-msgstr "Biztonságos"
+msgstr "Ασφαλής"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
-"A <b>Telegram</b> biztonságosan tárolja az üzeneteit,<br> még a hacker-"
-"támadásokkal szemben is"
+"<b>Το Telegram</b> κρατάει τα μηνύματά σας ασφαλή<br> από επιθέσεις χάκερ"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
-msgstr "Hatékony"
+msgstr "Ισχυρό"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
-"A <b>Telegram</b> nem korlátozza sem<br>a médiafájlok, sem a csevegés méretét"
+"<b>Το Telegram</b> δεν βάζει όρια στο μέγεθος<br> των μέσων σας και των "
+"συνομιλιών σας."
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
-msgstr "Felhőalapú"
+msgstr "Βασισμένο στο σύννεφο"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
 msgid ""
 "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
-"A <b>Telegram</b> lehetővé teszi üzenetei<br>elérését több eszközről is"
+"<b>Το Telegram</b> σας επιτρέπει να έχετε πρόσβαση στα μηνύματά σας<br> από "
+"πολλαπλές συσκευές."
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Magánjellegű"
+msgstr "Ιδιωτικό"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr "A <b>Telegram</b> üzenetek erősen titkosítottak<br>"
+msgstr ""
+"Τα μηνύματα του <b>Telegram</b> είναι κρυπτογραφημένο σε μεγάλο βαθμό<br>"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /home/karni/src/telegram2/telegram/app/qml/PreviewPage.qml:29
 #, qt-format
 msgid "From: %1"
-msgstr "Tőle: %1"
+msgstr "Από: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
-msgstr "Megosztás"
+msgstr "Κοινή χρήση"
 
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
 msgid "Contact Info"
-msgstr "Információ"
+msgstr "Πληροφορίες επικοινωνίας"
 
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:39
 msgid "Add member"
-msgstr "Résztvevő hozzáadása"
+msgstr "Προσθήκη μέλους"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -688,7 +680,7 @@ msgstr "Résztvevő hozzáadása"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr "%1 résztvevő, %2 elérhető"
+msgstr "%1 μέλη, %2 συνδεδεμένα"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
@@ -696,7 +688,7 @@ msgstr "%1 résztvevő, %2 elérhető"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:60
 #, qt-format
 msgid "%1 members"
-msgstr "%1 résztvevő"
+msgstr "%1 μέλη"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -705,24 +697,24 @@ msgstr "%1 résztvevő"
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] "%1 gépel"
-msgstr[1] "%1 gépel"
+msgstr[0] "%1 πληκτρογραφεί"
+msgstr[1] "%1 πληκτρογραφούν"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:269
 #, qt-format
 msgid "%1 are typing"
-msgstr "%1 gépel"
+msgstr "%1 πληκτρογραφούν"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:334
 msgid "Unknown"
-msgstr "Ismeretlen"
+msgstr "Άγνωστο"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:344
 msgid "Mobile"
-msgstr "Mobil"
+msgstr "Κινητό τηλέφωνο"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:396
@@ -733,172 +725,172 @@ msgstr "@%1"
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:556
 msgid "Block user"
-msgstr "Partner blokkolása"
+msgstr "Μπλοκάρισμα χρήστη"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:619
 msgid "Remove from group"
-msgstr "Eltávolítás a csoportból"
+msgstr "Αφαίρεση από ομάδα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr "Ma érkezett Telegram üzenetek: %1"
+msgstr "Μηνύματα του Telegram που παρελήφθησαν σήμερα: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
 msgid "No Telegram messages received today."
-msgstr "Nem érkeztek ma Telegram üzenetek."
+msgstr "Δεν παρελήφθησαν μηνύματα του Telegram σήμερα."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr "Ma küldött Telegram üzenetek: %1"
+msgstr "Μηνύματα του Telegram που στάλθηκαν σήμερα: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
 msgid "No Telegram messages sent today."
-msgstr "Nem küldött ma Telegram üzenetet."
+msgstr "Δεν στάλθηκαν μηνύματα του Telegram σήμερα."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
-"Ha szeretne Telegram értesítéseket úgyis, hogy nem fut az alkalmazás, akkor "
-"jelentkezzen be az Ubuntu One fiókjába."
+"Εάν θέλετε ειδοποιήσεις Telegram όταν δεν χρησιμοποιείτε την εφαρμογή, "
+"συνδεθείτε στον λογαριασμό Ubuntu One."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
 msgid "Sign in to Ubuntu One"
-msgstr "Bejelentkezés az Ubuntu One fiókba"
+msgstr "Σύνδεση στο Ubuntu One"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
 msgid "Remind me later"
-msgstr "Emlékeztessen később"
+msgstr "Υπενθύμιση αργότερα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:406
 msgid "Don't want notifications"
-msgstr "Nem szeretnék értesítéseket"
+msgstr "Δεν θέλετε ειδοποιήσεις"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
-msgstr "Fiókok"
+msgstr "Λογαριασμοί"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
-msgstr "Új fiók"
+msgstr "Προσθήκη λογαριασμού"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
-msgstr "Fénykép"
+msgstr "Φωτογραφία"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
 #: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
-msgstr "Videó"
+msgstr "Βίντεο"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
 #: /home/karni/src/telegram2/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
-msgstr "Fájl"
+msgstr "Αρχείο"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr "Várakozás a partnerre…"
+msgstr "Αναμονή μέχρι ο χρήστης να συνδεθεί..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr "Felkérve titkos csevegésre"
+msgstr "Έγινε αίτηση για μυστική συνομιλία"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
-msgstr "Titkos csevegés létrehozva"
+msgstr "Δημιουργήθηκε μυστική συνομιλία"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr "Titkos csevegés elvetve"
+msgstr "Απόρριψη μυστικής συνομιλίας"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr "Letiltott"
+msgstr "Απενεργοποιημένο"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
-msgstr[0] "%1 másodperc"
-msgstr[1] "%1 másodperc"
+msgstr[0] "%1 δευτερόλεπτο"
+msgstr[1] "%1 δευτερόλεπτα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
-msgstr "1 perc"
+msgstr "1 λεπτό"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
-msgstr "1 óra"
+msgstr "1 ώρα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
-msgstr "1 nap"
+msgstr "1 ημέρα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
-msgstr "1 hét"
+msgstr "1 εβδομάδα"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:50
 msgid "Leave chat"
-msgstr "Csevegés elhagyása"
+msgstr "Αποχώρηση από συνομιλία"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:56
 msgid "Are you sure you want to leave this chat?"
-msgstr "Biztos, hogy el akarja hagyni ezt a csevegést?"
+msgstr "Είστε σίγουροι πως θέλετε να αποχωρήσετε από την συνομιλία;"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:66
 msgid "Clear history"
-msgstr "Előzmények törlése"
+msgstr "Εκκαθάριση ιστορικού"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:72
 msgid "Are you sure you want to clear history?"
-msgstr "Biztos benne, hogy törölni szeretné az előzményeket?"
+msgstr "Είστε σίγουροι ότι θέλετε να εκκαθαρίσετε το ιστορικό"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:188
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
-msgstr "gépel…"
+msgstr "πληκτρολογεί..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:219
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr "Továbbítva tőle: <b>%1</b>"
+msgstr "Προώθηση από <b>%1</b>"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:289
 msgid "Audio attachment not supported yet ;("
-msgstr "A hangcsatolmányok egyelőre nem támogatottak ;("
+msgstr "Η σύναψη ήχου δεν υποστηρίζεται ακόμα ;("
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
-msgstr "Törölt"
+msgstr "Διαγραφή"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
-msgstr "Kapcsolódás…"
+msgstr "Γίνεται σύνδεση..."
 
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
-msgstr "Önmegsemmisítő-időzítő"
+msgstr ""
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -906,7 +898,7 @@ msgstr "Önmegsemmisítő-időzítő"
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:46
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
-msgstr "hh.mm"
+msgstr "ωω:λλ"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -914,73 +906,73 @@ msgstr "hh.mm"
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:35
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:49
 msgid "MMM d"
-msgstr "MMM. d."
+msgstr "ΜΜΜ η"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
-msgstr "ma, %1"
+msgstr "σήμερα στις %1"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
-msgstr "tegnap, %1"
+msgstr "εχτές στις %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
 #: /home/karni/src/telegram2/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
-msgstr "%1, %2"
+msgstr "%1 στις %2"
 
 #. TRANSLATORS: Format string: time.
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:251
 msgid "HH:mm"
-msgstr "HH.mm"
+msgstr "ΩΩ:λλ"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:255
 msgid "ddd HH:mm"
-msgstr "ddd HH.mm"
+msgstr "ηηη ΩΩΩ¨λλ"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:259
 msgid "dd MMM"
-msgstr "MMM. dd."
+msgstr "ηη ΜΜΜ"
 
 #. TRANSLATORS: Format string: full date
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:262
 msgid "dd MMM yy"
-msgstr "yy. MMM. dd."
+msgstr "ηη ΜΜΜ εε"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
-msgstr "üzenetet küldött"
+msgstr "έστειλε σε εσάς ένα μήνυμα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
-msgstr "fényképet küldött"
+msgstr "έστειλε σε εσάς μια φωτογραφία"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
-msgstr "videót küldött"
+msgstr "έστειλε σε εσάς ένα βίντεο"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
-msgstr "dokumentumot küldött"
+msgstr "έστειλε σε εσάς ένα έγγραφο"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
-msgstr "hangüzenetet küldött"
+msgstr "έστειλε σε εσάς ένα μήνυμα ήχου"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
-msgstr "megosztott egy partnert"
+msgstr "διαμοίρασε μια επαφή σε εσάς"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
-msgstr "térképet küldött"
+msgstr "έστειλε σε εσάς ένα χάρτη"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:139
 #, qt-format
@@ -990,74 +982,74 @@ msgstr "%1: %2"
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr "%1 üzenetet küldött a csoportnak"
+msgstr "%1 έστειλε ένα μήνυμα στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr "%1 fényképet küldött a csoportnak"
+msgstr "%1 έστειλε μια φωτογραφία στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr "%1 videót küldött a csoportnak"
+msgstr "%1 έστειλε ένα βίντεο στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr "%1 dokumentumot küldött a csoportnak"
+msgstr "%1 έστειλε ένα έγγραφο στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr "%1 hangüzenetet küldött a csoportnak"
+msgstr "%1 έστειλε ένα μήνυμα ήχου στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr "%1 egy partner küldött a csoportnak"
+msgstr "%1 έστειλε μια επαφή στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr "%1 térképet küldött a csoportnak"
+msgstr "%1 έστειλε ένα χάρτη στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:179
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr "%1 meghívott a csoportba"
+msgstr "%1 σας προσκάλεσε στην ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
-msgstr "%1 megváltoztatta  a csoportnevét"
+msgstr "%1 άλλαξε το όνομα ομάδας"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
-msgstr "%1 megváltoztatta  a csoportképét"
+msgstr "%1 άλλαξε την φωτογραφία ομάδας"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
-msgstr "%1 meghívta Őt: %2"
+msgstr "%1 προσκάλεσε %2"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr "%1 eltávolított a csoportból"
+msgstr "%1 σας αφαίρεσε από την ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
-msgstr "%1 elhagyta a csoportot"
+msgstr "%1 αποχώρησε από την ομάδα"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr "%1 visszatért a csoportba"
+msgstr "%1 επέστρεψε στην ομάδα"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:226
@@ -1069,18 +1061,18 @@ msgstr "@ %1"
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
-msgstr "%1 bejelentkezett valahonnan"
+msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 csatlakozott a Telegram szolgáltatáshoz!"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:239
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr "Új bejelentkezés ismeretlen eszközről"
+msgstr "Νέα είσοδος από μη αναγνωρισμένη συσκευή"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
@@ -1090,115 +1082,115 @@ msgstr "%1 @ %2"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
-msgstr "profilkép frissítve"
+msgstr "ενημερωμένη φωτογραφία προφίλ"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:254
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:259
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
-msgstr "Új üzenete érkezett"
+msgstr "Έχετε ένα νέο μήυμα"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/karni/src/telegram2/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr "yy.MM.dd. ddd. h.mm"
+msgstr "ω:λλ ηηη, ηη-ΜΜ-εε"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr "Alkalmazás megnyitása"
+msgstr "Άνοιγμα εφαρμογής"
 
 #. TRANSLATORS: call to action: open this chat
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:86
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:120
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr "Csevegés megnyitása"
+msgstr "Άνοιγμα συνομιλίας"
 
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr "Hívás"
+msgstr "Κλήση"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr "Nem sikerült a Telegram adatok megszerzése"
+msgstr "Αδυναμία απόκτησης δεδομένων Telegram"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr "Koppintson az alkalmazás megnyitásához"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:164
 msgid "Results in: Contacts & Chats"
-msgstr "Találat a partnerek és a csevegések között"
+msgstr "Αποτελέσματα σε: Επαφές & Συνομιλίες"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:181
 msgid "Results in: Messages"
-msgstr "Találat az üzenetek között"
+msgstr "Αποτελέσματα σε: Μηνύματα"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:289
 msgid "People You Talk To"
-msgstr "Beszélgetőpartnerek"
+msgstr "Άτομα που μιλάτε"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 msgid "Recent Chats"
-msgstr "Legutóbbi csevegések"
+msgstr "Πρόσφατες συνομιλίες"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:291
 msgid "Recent Photos"
-msgstr "Legutóbbi fényképek"
+msgstr "Πρόσφατες φωτογραφίες"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:296
 #, qt-format
 msgid "%1 new message"
-msgstr "%1 új üzenet"
+msgstr "%1 νέο μήνυμα"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:296
 #, qt-format
 msgid "%1 new messages"
-msgstr "%1 új üzenet"
+msgstr "%1 νέα μηνύματα"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:299
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr "Olvasatlan csevegések (%1)"
+msgstr "Μη αναγνωσμένες συνομιλίες (%1)"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:640
 msgid "Audio message"
-msgstr "Hangüzenet"
+msgstr "Μήνυμα ήχου"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:644
 msgid "Contact received"
-msgstr "A partner megérkezett"
+msgstr "Έγινε λήψη επαφής"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:648
 msgid "Document received"
-msgstr "A dokumentum megérkezett"
+msgstr "Έγινε λήψη εγγράφου"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:652
 msgid "Photo received"
-msgstr "A fénykép megérkezett"
+msgstr "Έγινε λήψη τηλεφώνου"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:669
 msgid "Video received"
-msgstr "A videó megérkezett"
+msgstr "Έγινε λήψη βίντεο"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:679
 msgid "Unhandled media type"
-msgstr "Nem kezelt médiatípus"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:754
 msgid "Login to Telegram"
-msgstr "Telegram bejelentkezés"
+msgstr "Είσοδος στο Telegram"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:790
 msgid "No messages received Today."
-msgstr "Nem érkezett ma üzenet."
+msgstr "Κανένα μήνυμα δεν λήφθηκε σήμερα."
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr "Telegram lencse"
+msgstr "Αυτό είναι το επισκόπιο Telegram"
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr "Keressen csevegésre, partnerre vagy üzenetre"
+msgstr "Αναζήτηση για συνομιλία, επαφή ή μήνυμα"

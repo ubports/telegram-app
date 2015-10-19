@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-15 11:00+0200\n"
-"PO-Revision-Date: 2015-10-02 16:40+0000\n"
+"PO-Revision-Date: 2015-10-17 10:53+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-10-16 06:05+0000\n"
+"X-Launchpad-Export-Date: 2015-10-18 06:09+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: uk\n"
 
@@ -157,7 +157,7 @@ msgstr "Переспрямувати повідомлення до %1?"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "Надіслати повідомлення %1?"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountDialogPage.qml:30
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:16
@@ -303,7 +303,7 @@ msgstr "Прізвище (обов’язкове)"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:308
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:321
 msgid "Select Chat"
-msgstr ""
+msgstr "Виберіть спілкування"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:153
@@ -744,20 +744,20 @@ msgstr "Вилучити з групи"
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Отриманих сьогодні повідомлень Telegram: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "Сьогодні не отримано жодного повідомлення Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Надісланих сьогодні повідомлень Telegram: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "Сьогодні не було надіслано жодного повідомлення Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
 msgid ""
