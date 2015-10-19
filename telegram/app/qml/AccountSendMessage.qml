@@ -335,6 +335,7 @@ Rectangle {
     Timer {
         id: send_files_timer
 
+        property int tries: 0
         property int dialogId: 0
         property var urls: []
         property bool document: false
@@ -342,6 +343,7 @@ Rectangle {
 
         function send(peerId, urls, forceDocument, forceAudio) {
             stop();
+            tries = 0
             send_files_timer.dialogId = peerId
             send_files_timer.urls = urls
             send_files_timer.document = forceDocument ? forceDocument : false
@@ -350,13 +352,22 @@ Rectangle {
         }
 
         interval: 1000
-        repeat: false
+        repeat: true
         onTriggered: {
-            if (urls.length > 0) {
-                var i = 0
-                for ( ; i < urls.length; i++) {
-                    var path = String(urls[i]).replace("file://", "")
-                    telegramObject.sendFile(dialogId, path, document, audio)
+            if (telegramObject.connected) {
+                stop();
+                if (urls.length > 0) {
+                    var i = 0
+                    for ( ; i < urls.length; i++) {
+                        var path = String(urls[i]).replace("file://", "")
+                        telegramObject.sendFile(dialogId, path, document, audio)
+                    }
+                }
+            } else {
+                tries += 1
+                if (tries >= 3) {
+                    consolelog("attachment(s) not sent, giving up");
+                    stop();
                 }
             }
         }
