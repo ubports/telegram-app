@@ -24,7 +24,7 @@ const QString VIDEO_THUMB2_PATH_FMT     = "file://" + CACHE_PATH + "/%1/download
 const QString TIME_FORMAT = N_("h:mm ddd, dd-MM-yy");
 
 const std::string KEYWORD_RECENT = "recent";
-const std::string KEYWORD_PHOTOS = "photos";
+const std::string KEYWORD_PHOTOS_TELEGRAM = "photos.telegram";
 
 enum PeerType {
     typePeerUser = 0x9db1bc6d,

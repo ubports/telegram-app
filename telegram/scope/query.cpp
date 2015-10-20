@@ -32,9 +32,7 @@ void TelegramQuery::cancelled() {
 void TelegramQuery::run(SearchReplyProxy const &reply) {
     if (mMetadata.is_aggregated()) {
         mInRecent = aggregated(KEYWORD_RECENT);
-        // XXX This line should be returning true when aggregated by "photos",
-        // but it does not. Above (agg by "recent") works fine.
-        mInPhotos = aggregated(KEYWORD_PHOTOS);
+        mInPhotos = aggregated(KEYWORD_PHOTOS_TELEGRAM);
         mIsAggregated = mInRecent || mInPhotos;
     }
     qDebug().noquote() << TAG << "in recent" << mInRecent << ", in photos" << mInPhotos;
@@ -43,10 +41,12 @@ void TelegramQuery::run(SearchReplyProxy const &reply) {
     const bool isSearch = !searchQuery.isEmpty();
 
     mOwnNumber = getPrimaryPhoneNumber();
+    if (mOwnNumber.isEmpty()) {
+        pushLogin(reply);
+        return;
+    }
     bool opened = openDatabase(mOwnNumber);
-    if (mOwnNumber.isEmpty() || !opened) {
-        if (mIsAggregated) return; // No results.
-
+    if (!opened) {
         pushLogin(reply);
         return;
     }
@@ -265,8 +265,7 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
 
     if (mInPhotos) {
         // TODO Should photo aggregator respect the category title provided here? It currently does not.
-        // TRANSLATORS: Telegram section label visible in the Photos scope when Telegram photos are aggregated.
-        auto photoCategory = reply->register_category("photos", N_("Telegram"), "", photosRenderer);
+        auto photoCategory = reply->register_category("photos", "Telegram", "", photosRenderer); // no-i18n
 
         getMessages(users, chats, "", messages, true);
         unsigned int messageCount = messages.size();
@@ -748,11 +747,11 @@ void TelegramQuery::pushError(SearchReplyProxy const &reply, QString const &titl
 
 void TelegramQuery::pushLogin(SearchReplyProxy const &reply) {
      CategoryRenderer renderer(LOGIN_TEMPLATE);
-     auto category = reply->register_category("login", "", "", renderer);
+     auto category = reply->register_category("login", mIsAggregated ? "Telegram" : "", "", renderer);
      CategorisedResult result(category);
      result.set_uri("telegram://launch");
      result["title"] = N_("Login to Telegram"); // We should really use a verb..
-     result["avatar"] =  QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
+     result["mascot"] =  QString("file://%1/telegram.png").arg(mScopeDir).toStdString();
      result["type"] = "error"; // no-i18n
      reply->push(result);
 }

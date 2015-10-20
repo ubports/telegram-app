@@ -17,13 +17,12 @@ const static std::string ERROR_TEMPLATE = R"({
 const static std::string LOGIN_TEMPLATE = R"({
     "schema-version": 1,
     "template": {
-        "category-layout": "vertical-journal",
-        "card-layout": "horizontal",
+        "category-layout": "grid",
         "card-size": "large"
     },
     "components": {
         "title": "title",
-        "mascot": "avatar"
+        "mascot": "mascot"
     }
 })";
 
