@@ -65,11 +65,14 @@ void TelegramQuery::run(SearchReplyProxy const &reply) {
 
     if (isSearch) {
         // TODO: Should we allow Telegram messages search when aggregated?
+        if (DEBUG) qDebug().noquote() << TAG << "search with limit:" << LIMIT_SEARCH;
         processSearch(reply, searchQuery, LIMIT_SEARCH);
     } else {
         int limit = LIMIT_SURFACE;
         if (mInRecent) limit = 1;
         if (mInPhotos) limit = LIMIT_MEDIA;
+
+        if (DEBUG) qDebug().noquote() << TAG << "surfacing with limit:" << limit;
         processDialogs(reply, searchQuery, limit);
     }
 }
@@ -269,7 +272,7 @@ void TelegramQuery::processDialogs(SearchReplyProxy const &reply, const QString 
 
         getMessages(users, chats, "", messages, true);
         unsigned int messageCount = messages.size();
-        qDebug().noquote() << TAG << "returning" << messageCount << "results";
+        if (DEBUG) qDebug().noquote() << TAG << "returning" << messageCount << "results";
 
         for (uint i = 0, resultCount = 0; i < messageCount && resultCount < limit; i++) {
             auto result = messageToResult(photoCategory, messages[i]);
