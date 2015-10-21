@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-15 11:00+0200\n"
+"POT-Creation-Date: 2015-10-20 19:20+0200\n"
 "PO-Revision-Date: 2015-09-22 11:12+0000\n"
 "Last-Translator: Michał Karnicki <michal.karnicki@canonical.com>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
 "n%100==4 ? 3 : 0);\n"
-"X-Launchpad-Export-Date: 2015-10-18 06:09+0000\n"
+"X-Launchpad-Export-Date: 2015-10-21 06:40+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: sl\n"
 
@@ -98,7 +98,6 @@ msgid "Cancel"
 msgstr ""
 
 #. TRANSLATORS: Application name.
-#. TRANSLATORS: Telegram section label visible in the Photos scope when Telegram photos are aggregated.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
 #: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:293
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:294
@@ -107,7 +106,6 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
 #: /home/karni/src/telegram2/telegram/app/telegram.cpp:570
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:101
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:269
 #: /home/karni/src/telegram2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
@@ -1113,63 +1111,63 @@ msgstr ""
 msgid "Results in: Messages"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:289
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:288
 msgid "People You Talk To"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:289
 msgid "Recent Chats"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
 msgid "Recent Photos"
 msgstr ""
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:296
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:295
 #, qt-format
 msgid "%1 new message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:296
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:295
 #, qt-format
 msgid "%1 new messages"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:299
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:640
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:639
 msgid "Audio message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:644
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:643
 msgid "Contact received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:648
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:647
 msgid "Document received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:652
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:651
 msgid "Photo received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:669
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:668
 msgid "Video received"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:679
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:678
 msgid "Unhandled media type"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:754
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:753
 msgid "Login to Telegram"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:790
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:789
 msgid "No messages received Today."
 msgstr ""
 
