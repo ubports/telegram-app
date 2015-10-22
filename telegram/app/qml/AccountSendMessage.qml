@@ -20,7 +20,7 @@ Rectangle {
     property Dialog currentDialog
     property real minimumHeight: Cutegram.currentTheme.sendFrameHeight*Devices.density
 
-    property bool isChat: currentDialog? currentDialog.peer.chatId != 0 : false
+    property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
 
     signal accepted( string text, int inReplyTo )
     signal emojiRequest(real x, real y)
@@ -65,6 +65,10 @@ Rectangle {
         txt.cursorPosition = txt.length
 
         privates.lastDialog = currentDialog
+
+        // For some reason, smsg.isChat binding is failing. This is required to make
+        // sharing from gallery with group chats work..
+        isChat = currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
 
         checkForSharedContent()
     }
