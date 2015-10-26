@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-20 19:20+0200\n"
-"PO-Revision-Date: 2015-10-18 05:27+0000\n"
+"PO-Revision-Date: 2015-10-26 03:55+0000\n"
 "Last-Translator: Eltikin <eltikinuyghur@hotmail.com>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-10-23 05:55+0000\n"
+"X-Launchpad-Export-Date: 2015-10-26 05:29+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: \n"
 
@@ -76,17 +76,17 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:316
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
-msgstr ""
+msgstr "ئالاقىلاشقۇچى قۇشۇش"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
-msgstr ""
+msgstr "تىلفۇن دەپىتىردىن"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
-msgstr ""
+msgstr "تەپسىلى كىرگۈزۈش"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:336
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:395
@@ -108,7 +108,7 @@ msgstr "ئەمەلدىن قالدۇر"
 #: /home/karni/src/telegram2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:402
@@ -274,19 +274,19 @@ msgstr "نام تەھىرىرلە"
 #. TRANSLATORS: Error message when first name was not provided.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
-msgstr ""
+msgstr "ئىسىم كېرەك"
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:52
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
-msgstr ""
+msgstr "ئاتى (چۇقۇم بۇلۇشى كېرەك)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountNamePage.qml:71
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
-msgstr ""
+msgstr "فامىلە(تاللاشقا بۇلىدۇ)"
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
@@ -298,7 +298,7 @@ msgstr ""
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:153
 msgid "Type message"
-msgstr ""
+msgstr "ئۇچۇرىڭزنى كىرگۈزۈڭ"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:330
 msgid "Close"
@@ -309,7 +309,7 @@ msgstr "ياپ"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:23
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
-msgstr ""
+msgstr "سۈرەت ئۆزگەرتىش"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:36
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:102
@@ -361,13 +361,13 @@ msgstr "قوللاش"
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:174
 msgid "Ask a Question"
-msgstr ""
+msgstr "سۇئال"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:181
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
-msgstr ""
+msgstr "Telegram FAQ"
 
 #. TRANSLATORS: Settings section header.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:187
@@ -382,7 +382,7 @@ msgstr "تىزىمدىن چىق"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:204
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "Telegram for Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:258
@@ -399,7 +399,7 @@ msgstr "توردا"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
-msgstr ""
+msgstr "ئەڭ ئاخىرقى توردىكى ۋاقىت %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:264
