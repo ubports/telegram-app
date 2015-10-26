@@ -1,11 +1,19 @@
 #include "compabilitytools.h"
-#include "asemantools/asemanapplication.h"
 
+#include <QDebug>
 #include <QDir>
 #include <QCoreApplication>
 #include <QFileInfo>
 #include <QFile>
+#include <QIODevice>
 
+#include <iostream>
+
+#include "asemantools/asemanapplication.h"
+#include "telegramqml_macros.h"
+#include "upgradev2.h"
+
+// Cutegram upgrade.
 void CompabilityTools::version1()
 {
     const QString & oldProfile = QDir::homePath() + "/.config/" + QCoreApplication::organizationDomain().toLower() + "." + QCoreApplication::applicationName().toLower();
@@ -20,4 +28,11 @@ void CompabilityTools::version1()
 
     QDir oldDir(oldProfile);
     oldDir.rename(oldProfile, newProfile);
+}
+
+void CompabilityTools::version2()
+{
+    UpgradeV2 *upgrader = new UpgradeV2();
+    upgrader->upgrade();
+    upgrader->deleteLater();
 }
