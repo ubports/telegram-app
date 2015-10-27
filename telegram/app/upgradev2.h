@@ -17,6 +17,14 @@ public:
 
     void upgrade();
 
+    const qint64 typePeerChat = 0xbad0e5bb;
+
+    const qint64 typeMessageActionEmpty = 0xb6aef7b0;
+
+    const qint64 typeMessageMediaVideo = 0xa2d24290;
+    const qint64 typeMessageMediaPhoto = 0xc8c45a2a;
+    const qint64 typeMessageMediaDocument = 0x2fda2204;
+
 private:
     void getPhoneNumber();
     void setUpPhonePaths();
@@ -24,10 +32,13 @@ private:
     void copyDatabaseFiles();
     void createConfig();
 
-    void copySecretMessage(qint64 peer, const QSqlRecord &message, QSqlDatabase &newDb);
-    void copySecretMessages(qint64 peer, QSqlDatabase &newDb);
-    void copySecretChat(const QSqlRecord &record, QSqlDatabase &newDb);
     void copySecretChats();
+    void copySecretChat(const QSqlRecord &record, QSqlDatabase &newDb);
+    void copySecretMessages(qint64 peer, QSqlDatabase &newDb);
+    void copySecretMessage(qint64 peer, const QSqlRecord &message, QSqlDatabase &newDb);
+    void copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase &newDb);
+    void copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase &newDb);
+    void copySecretDocument(qint64 peer, qint64 mediaId, QSqlDatabase &newDb);
 
     void renameConfigDirectory();
     void insertProfile();
@@ -50,6 +61,8 @@ private:
     QString newDatabasePath;
 
     QDir config;
+
+    qint64 localId;
 
     QSqlDatabase db;
 };

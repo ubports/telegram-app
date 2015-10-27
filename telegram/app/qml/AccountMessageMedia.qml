@@ -132,7 +132,6 @@ Item {
                 break;
 
             case FileHandler.TypeTargetMediaPhoto:
-                // console.log("downloading photo: " + filePath);
                 download()
                 break;
 
