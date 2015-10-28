@@ -17,6 +17,7 @@ public:
 
     void upgrade();
 
+    const qint64 typePeerUser = 0x9db1bc6d;
     const qint64 typePeerChat = 0xbad0e5bb;
 
     const qint64 typeMessageActionEmpty = 0xb6aef7b0;
@@ -36,9 +37,9 @@ private:
     void copySecretChat(const QSqlRecord &record, QSqlDatabase &newDb);
     void copySecretMessages(qint64 peer, QSqlDatabase &newDb);
     void copySecretMessage(qint64 peer, const QSqlRecord &message, QSqlDatabase &newDb);
-    void copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase &newDb);
-    void copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase &newDb);
-    void copySecretDocument(qint64 peer, qint64 mediaId, QSqlDatabase &newDb);
+    void copySecretPhoto(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb);
+    void copySecretVideo(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb);
+    void copySecretDocument(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb);
 
     void renameConfigDirectory();
     void insertProfile();
@@ -46,6 +47,7 @@ private:
 
 private:
     const QString TAG = "UpgradeV2";
+    const bool DEBUG = false;
 
     QString phone;
     QString configPath;

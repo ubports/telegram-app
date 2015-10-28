@@ -5,6 +5,7 @@
 #include <QFileInfo>
 #include <QFile>
 #include <QFileInfo>
+#include <QImageReader>
 #include <QIODevice>
 #include <QSqlError>
 #include <QSqlQuery>
@@ -106,7 +107,7 @@ void UpgradeV2::createConfig() {
     */
 }
 
-inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase &newDb) {
+inline void UpgradeV2::copySecretPhoto(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb) {
     QSqlQuery photo(db);
     photo.prepare("SELECT caption, date, accessHash, userId FROM mediaPhotos WHERE id = :id");
     photo.bindValue(":id", mediaId);
@@ -117,11 +118,15 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase
     if (photo.next()) {
         QSqlQuery newPhoto(newDb);
 
-        newPhoto.prepare("INSERT INTO Photos VALUES (:id, :caption, :date, :accessHash, :userId)");
+        qint64 accessHash = photo.value("accessHash").toLongLong();
+        if (accessHash == 0) accessHash = 1;
+
+        newPhoto.prepare("INSERT INTO Photos (id, caption, date, accessHash, userId) "
+                "VALUES (:id, :caption, :date, :accessHash, :userId)");
         newPhoto.bindValue(":id", mediaId);
         newPhoto.bindValue(":caption", photo.value("caption").toString());
         newPhoto.bindValue(":date", photo.value("date").toLongLong());
-        newPhoto.bindValue(":accessHash", photo.value("accessHash").toLongLong());
+        newPhoto.bindValue(":accessHash", accessHash);
         newPhoto.bindValue(":userId", photo.value("userId").toLongLong());
 
         if (!newPhoto.exec()) {
@@ -161,6 +166,21 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase
         qint64 dcId     = 1; // query.value("dcId").toLongLong();
         qint64 volumeId = 1; // query.value("volumeId").toLongLong();
 
+        QString oldFilePath = query.value("localPath").toString();
+
+        if (w == 0 || h == 0) {
+            QImageReader reader(oldFilePath);
+            if (reader.canRead()) {
+                QSize size = reader.size();
+                w = size.width();
+                h = size.height();
+            } else {
+                w = 100;
+                h = 100;
+            }
+        }
+
+
         insert.prepare("INSERT INTO PhotoSizes (pid, type, size, w, h, "
                 "locationLocalId, locationSecret, locationDcId, locationVolumeId) "
                 "VALUES (:pid, :type, :size, :w, :h, :localId, :secret, :dcId, :volumeId)");
@@ -179,7 +199,6 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase
             return;
         }
 
-        const QString oldFilePath = query.value("localPath").toString();
         QFile oldFile(oldFilePath);
         if (!oldFilePath.isEmpty() && oldFile.exists()) {
             // secret chat attachments as photo
@@ -187,25 +206,24 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase
             // secret chat attachments as document
             // QString newFilePath = QString("%1/%2.jpeg").arg(newPath).arg(mediaId);
 
-            // Overwrite the thumbnail. This is only for when secret chat attachments are always Documents (current TelegramQML way).
             QFile t(newFilePath);
             if (t.exists()) {
                 t.remove();
             }
 
             bool hasCopied = QFile::copy(oldFilePath, newFilePath);
-            if (hasCopied) {
-                oldFile.remove();
-            } else {
+            if (DEBUG) qDebug() << TAG << "photo copying from" << oldFilePath << hasCopied;
+            if (DEBUG) qDebug() << TAG << "photo copying   to" << newFilePath;
+            if (!hasCopied) {
                 qCritical() << TAG << "failed to copy photo attachment thumbnail";
             }
         }
     }
 }
 
-inline void UpgradeV2::copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase &newDb) {
+inline void UpgradeV2::copySecretVideo(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb) {
     QSqlQuery video(db);
-    video.prepare("SELECT caption, mimeType, date, duration, width, height, size, userId, accessHash FROM mediaVideos WHERE id = :id");
+    video.prepare("SELECT caption, mimeType, date, duration, width, height, size, userId, accessHash, localPath FROM mediaVideos WHERE id = :id");
     video.bindValue(":id", mediaId);
     if (!video.exec()) {
         qCritical() << TAG << "failed to get secret video" << video.lastError();
@@ -214,19 +232,26 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase
     if (video.next()) {
         QSqlQuery newVideo(newDb);
 
+        qint64 width = video.value("width").toLongLong();
+        if (width == 0) width = 100;
+        qint64 height = video.value("height").toLongLong();
+        if (height == 0) height = 100;
+        qint64 accessHash = video.value("accessHash").toLongLong();
+        if (accessHash == 0) accessHash = 1;
+
         newVideo.prepare("INSERT INTO Videos (id, dcId, caption, mimeType, date, duration, w, h, size, userId, accessHash, type) "
                 "VALUES (:id, :dcId, :caption, :mimeType, :date, :duration, :w, :h, :size, :userId, :accessHash, :type)");
         newVideo.bindValue(":id", mediaId);
-        newVideo.bindValue(":dcId", 1); // This metadata is missing in action.
+        newVideo.bindValue(":dcId", 1);
         newVideo.bindValue(":caption", video.value("caption").toString());
         newVideo.bindValue(":mimeType", video.value("mimeType").toString());
         newVideo.bindValue(":date", video.value("date").toLongLong());
         newVideo.bindValue(":duration", video.value("duration").toLongLong());
-        newVideo.bindValue(":w", video.value("width").toLongLong());
-        newVideo.bindValue(":h", video.value("height").toLongLong());
+        newVideo.bindValue(":w", width);
+        newVideo.bindValue(":h", height);
         newVideo.bindValue(":size", video.value("size").toLongLong());
         newVideo.bindValue(":userId", video.value("userId").toLongLong());
-        newVideo.bindValue(":accessHash", video.value("accessHash").toLongLong());
+        newVideo.bindValue(":accessHash", accessHash);
         newVideo.bindValue(":type", typeMessageMediaVideo);
 
         if (!newVideo.exec()) {
@@ -248,13 +273,21 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase
         return;
     }
 
-    QString oldFilePath = QString("%1/videos/%2.mp4").arg(cachePhonePath).arg(mediaId);
+    QString oldFilePath;
+    if (out) {
+        oldFilePath = video.value("localPath").toString();
+    } else {
+        oldFilePath = QString("%1/videos/%2.mp4").arg(cachePhonePath).arg(mediaId);
+    }
     QString newPath = QString("%1/%2/downloads/%3").arg(cachePath).arg(phone).arg(peer);
+    QString newThumbPath = QString("%1/thumb").arg(newPath);
     QString newFilePath = QString("%1/%2.mp4").arg(newPath).arg(mediaId);
 
     QDir dir;
-    dir.mkpath(newPath);
+    dir.mkpath(newThumbPath);
     bool hasCopied = QFile::copy(oldFilePath, newFilePath);
+    if (DEBUG) qDebug() << TAG << "video copying from" << oldFilePath << hasCopied;
+    if (DEBUG) qDebug() << TAG << "video copying   to" << newFilePath;
     if (!hasCopied) {
         qCritical() << TAG << "failed to copy secret video file";
     }
@@ -293,8 +326,11 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase
         const QString oldFilePath = query.value("localPath").toString();
         QFile oldFile(oldFilePath);
         if (!oldFilePath.isEmpty() && oldFile.exists()) {
-            QString newThumbPath = QString("%1.jpg").arg(newFilePath);
-            bool hasCopied = QFile::copy(oldFilePath, newThumbPath);
+            //QString newThumbFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(volumeId).arg(localId);
+            QString newThumbFilePath = QString("%1.jpg").arg(newFilePath);
+            bool hasCopied = QFile::copy(oldFilePath, newThumbFilePath);
+            if (DEBUG) qDebug() << TAG << "video thumb copying from" << oldFilePath << hasCopied;
+            if (DEBUG) qDebug() << TAG << "video thumb copying   to" << newThumbFilePath;
             if (hasCopied) {
                 oldFile.remove();
             } else {
@@ -304,19 +340,77 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, qint64 mediaId, QSqlDatabase
     }
 }
 
-inline void UpgradeV2::copySecretDocument(qint64 peer, qint64 mediaId, QSqlDatabase &newDb) {
-    // TODO
+inline void UpgradeV2::copySecretDocument(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb) {
+    QSqlQuery documents(db);
+    documents.prepare("SELECT dcId, mimeType, date, fileName, size, accessHash, userId, localPath FROM mediaDocuments WHERE id = :id");
+    documents.bindValue(":id", mediaId);
+    if (!documents.exec()) {
+        qCritical() << TAG << "failed to get secret document" << documents.lastError();
+        return;
+    }
+
+    QString fileExtension;
+    if (documents.next()) {
+        QSqlRecord doc = documents.record();
+        QSqlQuery newDocument(newDb);
+
+        qint64 accessHash = doc.value("accessHash").toLongLong();
+        if (accessHash == 0) accessHash = 1;
+
+        QString originalFileName = doc.value("fileName").toString();
+        int extensionPosition = originalFileName.indexOf(".");
+        fileExtension = extensionPosition > 0 ? originalFileName.mid(extensionPosition + 1) : "";
+
+        newDocument.prepare("INSERT INTO Documents (id, dcId, mimeType, date, fileName, size, accessHash, userId, type) "
+                "VALUES (:id, :dcId, :mimeType, :date, :fileName, :size, :accessHash, :userId, :type)");
+        newDocument.bindValue(":id", mediaId);
+        newDocument.bindValue(":dcId", doc.value("dcId").toLongLong());
+        newDocument.bindValue(":mimeType", doc.value("mimeType").toString());
+        newDocument.bindValue(":date", doc.value("date").toLongLong());
+        newDocument.bindValue(":fileName", originalFileName);
+        newDocument.bindValue(":size", doc.value("size").toLongLong());
+        newDocument.bindValue(":accessHash", accessHash);
+        newDocument.bindValue(":userId", doc.value("userId").toLongLong());
+        newDocument.bindValue(":type", typeMessageMediaDocument);
+
+        if (!newDocument.exec()) {
+            qCritical() << TAG << "failed to insert secret document" << newDocument.lastError();
+            return;
+        }
+    } else {
+        qCritical() << TAG << "secret document not found";
+        return;
+    }
+
+    QString fileName = fileExtension.isEmpty() ? QString::number(mediaId) : QString("%1.%2").arg(mediaId).arg(fileExtension);
+    QString oldFilePath;
+    if (out) {
+        oldFilePath = documents.value("localPath").toString();
+    } else {
+        oldFilePath = QString("%1/documents/%3").arg(cachePhonePath).arg(fileName);
+    }
+
+    QString newPath = QString("%1/%2/downloads/%3").arg(cachePath).arg(phone).arg(peer);
+    QString newFilePath = QString("%1/%2").arg(newPath).arg(fileName);
+
+    QDir dir;
+    dir.mkpath(newPath);
+
+    bool hasCopied = QFile::copy(oldFilePath, newFilePath);
+    if (DEBUG) qDebug() << TAG << "doc copying from" << oldFilePath << hasCopied;
+    if (DEBUG) qDebug() << TAG << "doc copying   to" << newFilePath;
+    if (!hasCopied) {
+        qCritical() << TAG << "failed to copy secret document file";
+    }
 }
 
 inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message, QSqlDatabase &newDb) {
-
-
     QSqlQuery insert(newDb);
     insert.prepare("INSERT INTO Messages (id, toId, toPeerType, unread, fromId, out, date, fwdDate, fwdFromId, message, "
             "actionUserId, actionPhoto, actionType, mediaAudio, mediaPhoneNumber, mediaDocument, mediaGeo, mediaPhoto, mediaUserId, mediaVideo, mediaType) "
             "VALUES (:id, :toId, :toPeerType, :unread, :fromId, :out, :date, :fwdDate, :fwdFromId, :message, "
             "0, 0, :actionType, 0, 0, :mediaDocument, 0, :mediaPhoto, 0, :mediaVideo, :mediaType)");
-    // TODO actions and media attachments
+
     bool out = message.value("out").toInt();
     qint64 actionType = message.value("actionType").toLongLong();
     if (actionType == 0) {
@@ -348,11 +442,11 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
     }
 
     if (mediaType == typeMessageMediaPhoto) {
-        copySecretPhoto(peer, mediaId, newDb);
+        copySecretPhoto(peer, out, mediaId, newDb);
     } else if (mediaType == typeMessageMediaVideo) {
-        copySecretVideo(peer, mediaId, newDb);
+        copySecretVideo(peer, out, mediaId, newDb);
     } else if (mediaType == typeMessageMediaDocument) {
-        copySecretDocument(peer, mediaId, newDb);
+        copySecretDocument(peer, out, mediaId, newDb);
     }
 }
 
@@ -381,7 +475,7 @@ inline void UpgradeV2::copySecretChat(const QSqlRecord &record, QSqlDatabase &ne
     // secret chats from the secrets file, and the db doesn't enforce relations
 
     qint64 peer = record.value("id").toLongLong();
-    qint64 peerType = 0L;
+    qint64 peerType = typePeerUser;
     qint64 topMessage = 0L;
     qint64 unreadCount = record.value("unreadCount").toLongLong();
     bool encrypted = true;
