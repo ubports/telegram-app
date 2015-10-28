@@ -183,9 +183,9 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase
         QFile oldFile(oldFilePath);
         if (!oldFilePath.isEmpty() && oldFile.exists()) {
             // secret chat attachments as photo
-            //QString newFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(1 /* volumeId */).arg(localId);
+            QString newFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(1 /* volumeId */).arg(localId);
             // secret chat attachments as document
-            QString newFilePath = QString("%1/%2.jpeg").arg(newPath).arg(mediaId);
+            // QString newFilePath = QString("%1/%2.jpeg").arg(newPath).arg(mediaId);
 
             // Overwrite the thumbnail. This is only for when secret chat attachments are always Documents (current TelegramQML way).
             QFile t(newFilePath);
@@ -337,10 +337,10 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
     insert.bindValue(":fwdDate", message.value("fwdDate").toLongLong());
     insert.bindValue(":message", message.value("message").toString());
     insert.bindValue(":actionType", actionType);
-    insert.bindValue(":mediaPhoto", 0);//mediaType == typeMessageMediaPhoto ? mediaId : 0);
-    insert.bindValue(":mediaVideo", 0);//mediaType == typeMessageMediaVideo ? mediaId : 0);
-    insert.bindValue(":mediaDocument", mediaId);
-    insert.bindValue(":mediaType", typeMessageMediaDocument);//mediaType);
+    insert.bindValue(":mediaPhoto", mediaType == typeMessageMediaPhoto ? mediaId : 0);
+    insert.bindValue(":mediaVideo", mediaType == typeMessageMediaVideo ? mediaId : 0);
+    insert.bindValue(":mediaDocument", mediaType == typeMessageMediaDocument ? mediaId : 0);
+    insert.bindValue(":mediaType", mediaType);
 
     if (!insert.exec()) {
         qCritical() << TAG << "failed to copy secret message" << insert.lastError();
