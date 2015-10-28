@@ -182,7 +182,17 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, qint64 mediaId, QSqlDatabase
         const QString oldFilePath = query.value("localPath").toString();
         QFile oldFile(oldFilePath);
         if (!oldFilePath.isEmpty() && oldFile.exists()) {
-            QString newFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(1 /* volumeId */).arg(localId);
+            // secret chat attachments as photo
+            //QString newFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(1 /* volumeId */).arg(localId);
+            // secret chat attachments as document
+            QString newFilePath = QString("%1/%2.jpeg").arg(newPath).arg(mediaId);
+
+            // Overwrite the thumbnail. This is only for when secret chat attachments are always Documents (current TelegramQML way).
+            QFile t(newFilePath);
+            if (t.exists()) {
+                t.remove();
+            }
+
             bool hasCopied = QFile::copy(oldFilePath, newFilePath);
             if (hasCopied) {
                 oldFile.remove();
@@ -305,30 +315,32 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
     insert.prepare("INSERT INTO Messages (id, toId, toPeerType, unread, fromId, out, date, fwdDate, fwdFromId, message, "
             "actionUserId, actionPhoto, actionType, mediaAudio, mediaPhoneNumber, mediaDocument, mediaGeo, mediaPhoto, mediaUserId, mediaVideo, mediaType) "
             "VALUES (:id, :toId, :toPeerType, :unread, :fromId, :out, :date, :fwdDate, :fwdFromId, :message, "
-            "0, 0, :actionType, 0, 0, 0, 0, :mediaPhoto, 0, :mediaVideo, :mediaType)");
+            "0, 0, :actionType, 0, 0, :mediaDocument, 0, :mediaPhoto, 0, :mediaVideo, :mediaType)");
     // TODO actions and media attachments
     bool out = message.value("out").toInt();
     qint64 actionType = message.value("actionType").toLongLong();
     if (actionType == 0) {
         actionType = typeMessageActionEmpty;
     }
+    qint64 date = message.value("date").toLongLong();
     qint64 mediaType = message.value("mediaType").toLongLong();
     qint64 mediaId = message.value("mediaId").toLongLong();
 
-    insert.bindValue(":id", message.value("id").toLongLong());
+    insert.bindValue(":id", date); // Yes, that's right.
     insert.bindValue(":toId", peer);
     insert.bindValue(":fromId", message.value("fromId").toLongLong());
     insert.bindValue(":toPeerType", typePeerChat);
     insert.bindValue(":unread", message.value("unread").toLongLong());
     insert.bindValue(":out", out);
-    insert.bindValue(":date", message.value("date").toLongLong());
+    insert.bindValue(":date", date);
     insert.bindValue(":fwdFromId", message.value("fwdFromId").toLongLong());
     insert.bindValue(":fwdDate", message.value("fwdDate").toLongLong());
     insert.bindValue(":message", message.value("message").toString());
     insert.bindValue(":actionType", actionType);
-    insert.bindValue(":mediaPhoto", mediaType == typeMessageMediaPhoto ? mediaId : 0);
-    insert.bindValue(":mediaVideo", mediaType == typeMessageMediaVideo ? mediaId : 0);
-    insert.bindValue(":mediaType", message.value("mediaType").toLongLong());
+    insert.bindValue(":mediaPhoto", 0);//mediaType == typeMessageMediaPhoto ? mediaId : 0);
+    insert.bindValue(":mediaVideo", 0);//mediaType == typeMessageMediaVideo ? mediaId : 0);
+    insert.bindValue(":mediaDocument", mediaId);
+    insert.bindValue(":mediaType", typeMessageMediaDocument);//mediaType);
 
     if (!insert.exec()) {
         qCritical() << TAG << "failed to copy secret message" << insert.lastError();
