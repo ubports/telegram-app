@@ -1,5 +1,5 @@
 TEMPLATE = app
-CONFIG += c++11
+CONFIG += c++11 console
 TARGET = telegram
 QT += qml quick sql xml multimedia
 # QT += webkitwidgets webkit
@@ -22,6 +22,7 @@ SOURCES += main.cpp \
     emojis.cpp \
     unitysystemtray.cpp \
     compabilitytools.cpp \
+    upgradev2.cpp \
     cutegramenums.cpp \
     textemojiwrapper.cpp \
     emoticonsmodel.cpp
@@ -36,6 +37,7 @@ HEADERS += \
     emojis.h \
     unitysystemtray.h \
     compabilitytools.h \
+    upgradev2.h \
     cutegramenums.h \
     themeitem.h \
     textemojiwrapper.h \

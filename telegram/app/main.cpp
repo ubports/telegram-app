@@ -96,6 +96,7 @@ int main(int argc, char *argv[])
 #endif
 
     CompabilityTools::version1();
+    CompabilityTools::version2();
 
     Cutegram cutegram;
     if (parser.isSet(dcIdOption))
