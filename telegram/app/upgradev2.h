@@ -32,7 +32,6 @@ private:
     void copySecretVideo(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb);
     void copySecretDocument(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb);
 
-    void renameConfigDirectory();
     void insertProfile();
     void deleteFiles();
 

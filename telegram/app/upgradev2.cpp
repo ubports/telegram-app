@@ -32,6 +32,10 @@ UpgradeV2::~UpgradeV2() {
 void UpgradeV2::upgrade() {
     getPhoneNumber();
     if (phone.isEmpty()) {
+        qDebug() << TAG << "not signed in to v1";
+        return;
+    }
+    if (!QFile(configFilePath).exists()) {
         qDebug() << TAG << "nothing to do for v1";
         return;
     }
@@ -43,8 +47,6 @@ void UpgradeV2::upgrade() {
     createConfig();
 
     copySecretChats();
-
-    renameConfigDirectory();
 
     insertProfile();
 
@@ -62,15 +64,15 @@ void UpgradeV2::getPhoneNumber() {
     QStringList entries = dir.entryList();
     for (QString entry: entries) {
         if (re.indexIn(entry) == 0) {
-            phone = entry.mid(1);
+            phone = entry;
             break;
         }
     }
 }
 
 void UpgradeV2::setUpPhonePaths() {
-    configPhonePath = configPath + "/+" + phone;
-    cachePhonePath  = cachePath + "/+" + phone;
+    configPhonePath = configPath + "/" + phone;
+    cachePhonePath  = cachePath + "/" + phone;
 
     databaseFilePath = cachePhonePath + "/telegram.sqlite";
 
@@ -512,12 +514,6 @@ void UpgradeV2::copySecretChats() {
     }
     db.close();
     newDb.close();
-}
-
-void UpgradeV2::renameConfigDirectory() {
-    const QString & newConfigPhonePath = configPath + "/" + phone;
-    QDir dir;
-    dir.rename(configPhonePath, newConfigPhonePath);
 }
 
 void UpgradeV2::insertProfile() {
