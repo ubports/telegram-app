@@ -19,7 +19,7 @@ UpgradeV2::UpgradeV2(QObject *parent) : QObject(parent) {
 
     config.setPath(configPath);
 
-    localId = 1;
+    localId = 1; // This a fake localId value, used as an incremental counter.
 }
 
 UpgradeV2::~UpgradeV2() {
@@ -28,7 +28,7 @@ UpgradeV2::~UpgradeV2() {
 void UpgradeV2::upgrade() {
     getPhoneNumber();
     if (phone.isEmpty()) {
-        qDebug() << TAG << "v1 not logged in, nothing to do";
+        qDebug() << TAG << "nothing to do for v1";
         return;
     }
 
@@ -201,15 +201,7 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, bool out, qint64 mediaId, QS
 
         QFile oldFile(oldFilePath);
         if (!oldFilePath.isEmpty() && oldFile.exists()) {
-            // secret chat attachments as photo
             QString newFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(1 /* volumeId */).arg(localId);
-            // secret chat attachments as document
-            // QString newFilePath = QString("%1/%2.jpeg").arg(newPath).arg(mediaId);
-
-            QFile t(newFilePath);
-            if (t.exists()) {
-                t.remove();
-            }
 
             bool hasCopied = QFile::copy(oldFilePath, newFilePath);
             if (DEBUG) qDebug() << TAG << "photo copying from" << oldFilePath << hasCopied;
@@ -233,9 +225,11 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, bool out, qint64 mediaId, QS
         QSqlQuery newVideo(newDb);
 
         qint64 width = video.value("width").toLongLong();
-        if (width == 0) width = 100;
         qint64 height = video.value("height").toLongLong();
-        if (height == 0) height = 100;
+        if (width == 0 || height == 0) {
+            width = 100;
+            height = 100;
+        }
         qint64 accessHash = video.value("accessHash").toLongLong();
         if (accessHash == 0) accessHash = 1;
 
@@ -326,7 +320,6 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, bool out, qint64 mediaId, QS
         const QString oldFilePath = query.value("localPath").toString();
         QFile oldFile(oldFilePath);
         if (!oldFilePath.isEmpty() && oldFile.exists()) {
-            //QString newThumbFilePath = QString("%1/%2_%3.jpg").arg(newPath).arg(volumeId).arg(localId);
             QString newThumbFilePath = QString("%1.jpg").arg(newFilePath);
             bool hasCopied = QFile::copy(oldFilePath, newThumbFilePath);
             if (DEBUG) qDebug() << TAG << "video thumb copying from" << oldFilePath << hasCopied;
@@ -471,9 +464,6 @@ inline void UpgradeV2::copySecretMessages(qint64 peer, QSqlDatabase &newDb) {
 }
 
 inline void UpgradeV2::copySecretChat(const QSqlRecord &record, QSqlDatabase &newDb) {
-    // copying into dialogs may be unnecessary, TelegramQML refreshes 
-    // secret chats from the secrets file, and the db doesn't enforce relations
-
     qint64 peer = record.value("id").toLongLong();
     qint64 peerType = typePeerUser;
     qint64 topMessage = 0L;
