@@ -155,7 +155,6 @@ Rectangle {
         visible: !messagePlaceholder.visible
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
-        inputMethodHints: Qt.ImhNoPredictiveText
 
         autoSize: true
         maximumLineCount: 4
