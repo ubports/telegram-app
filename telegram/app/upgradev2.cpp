@@ -11,6 +11,10 @@
 #include <QSqlQuery>
 #include <QTextStream>
 
+#include "types/peer.h"
+#include "types/messageaction.h"
+#include "types/messagemedia.h"
+
 UpgradeV2::UpgradeV2(QObject *parent) : QObject(parent) {
     phone = "";
     configPath = QDir::homePath() + "/.config/" + QCoreApplication::organizationDomain().toLower();
@@ -195,7 +199,7 @@ inline void UpgradeV2::copySecretPhoto(qint64 peer, bool out, qint64 mediaId, QS
         insert.bindValue(":volumeId", volumeId);
 
         if (!insert.exec()) {
-            qCritical() << TAG << "failed to insert secert photo photosize" << insert.lastError();
+            qCritical() << TAG << "failed to insert secret photo photosize" << insert.lastError();
             return;
         }
 
@@ -246,7 +250,7 @@ inline void UpgradeV2::copySecretVideo(qint64 peer, bool out, qint64 mediaId, QS
         newVideo.bindValue(":size", video.value("size").toLongLong());
         newVideo.bindValue(":userId", video.value("userId").toLongLong());
         newVideo.bindValue(":accessHash", accessHash);
-        newVideo.bindValue(":type", typeMessageMediaVideo);
+        newVideo.bindValue(":type", MessageMedia::typeMessageMediaVideo);
 
         if (!newVideo.exec()) {
             qCritical() << TAG << "failed to insert secret video" << newVideo.lastError();
@@ -364,7 +368,7 @@ inline void UpgradeV2::copySecretDocument(qint64 peer, bool out, qint64 mediaId,
         newDocument.bindValue(":size", doc.value("size").toLongLong());
         newDocument.bindValue(":accessHash", accessHash);
         newDocument.bindValue(":userId", doc.value("userId").toLongLong());
-        newDocument.bindValue(":type", typeMessageMediaDocument);
+        newDocument.bindValue(":type", MessageMedia::typeMessageMediaDocument);
 
         if (!newDocument.exec()) {
             qCritical() << TAG << "failed to insert secret document" << newDocument.lastError();
@@ -407,7 +411,7 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
     bool out = message.value("out").toInt();
     qint64 actionType = message.value("actionType").toLongLong();
     if (actionType == 0) {
-        actionType = typeMessageActionEmpty;
+        actionType = MessageAction::typeMessageActionEmpty;
     }
     qint64 date = message.value("date").toLongLong();
     qint64 mediaType = message.value("mediaType").toLongLong();
@@ -416,7 +420,7 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
     insert.bindValue(":id", date); // Yes, that's right.
     insert.bindValue(":toId", peer);
     insert.bindValue(":fromId", message.value("fromId").toLongLong());
-    insert.bindValue(":toPeerType", typePeerChat);
+    insert.bindValue(":toPeerType", Peer::typePeerChat);
     insert.bindValue(":unread", message.value("unread").toLongLong());
     insert.bindValue(":out", out);
     insert.bindValue(":date", date);
@@ -424,9 +428,9 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
     insert.bindValue(":fwdDate", message.value("fwdDate").toLongLong());
     insert.bindValue(":message", message.value("message").toString());
     insert.bindValue(":actionType", actionType);
-    insert.bindValue(":mediaPhoto", mediaType == typeMessageMediaPhoto ? mediaId : 0);
-    insert.bindValue(":mediaVideo", mediaType == typeMessageMediaVideo ? mediaId : 0);
-    insert.bindValue(":mediaDocument", mediaType == typeMessageMediaDocument ? mediaId : 0);
+    insert.bindValue(":mediaPhoto", mediaType == MessageMedia::typeMessageMediaPhoto ? mediaId : 0);
+    insert.bindValue(":mediaVideo", mediaType == MessageMedia::typeMessageMediaVideo ? mediaId : 0);
+    insert.bindValue(":mediaDocument", mediaType == MessageMedia::typeMessageMediaDocument ? mediaId : 0);
     insert.bindValue(":mediaType", mediaType);
 
     if (!insert.exec()) {
@@ -434,11 +438,11 @@ inline void UpgradeV2::copySecretMessage(qint64 peer, const QSqlRecord &message,
         return;
     }
 
-    if (mediaType == typeMessageMediaPhoto) {
+    if (mediaType == MessageMedia::typeMessageMediaPhoto) {
         copySecretPhoto(peer, out, mediaId, newDb);
-    } else if (mediaType == typeMessageMediaVideo) {
+    } else if (mediaType == MessageMedia::typeMessageMediaVideo) {
         copySecretVideo(peer, out, mediaId, newDb);
-    } else if (mediaType == typeMessageMediaDocument) {
+    } else if (mediaType == MessageMedia::typeMessageMediaDocument) {
         copySecretDocument(peer, out, mediaId, newDb);
     }
 }
@@ -465,7 +469,7 @@ inline void UpgradeV2::copySecretMessages(qint64 peer, QSqlDatabase &newDb) {
 
 inline void UpgradeV2::copySecretChat(const QSqlRecord &record, QSqlDatabase &newDb) {
     qint64 peer = record.value("id").toLongLong();
-    qint64 peerType = typePeerUser;
+    qint64 peerType = Peer::typePeerUser;
     qint64 topMessage = 0L;
     qint64 unreadCount = record.value("unreadCount").toLongLong();
     bool encrypted = true;

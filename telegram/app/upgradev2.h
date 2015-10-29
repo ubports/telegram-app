@@ -17,15 +17,6 @@ public:
 
     void upgrade();
 
-    const qint64 typePeerUser = 0x9db1bc6d;
-    const qint64 typePeerChat = 0xbad0e5bb;
-
-    const qint64 typeMessageActionEmpty = 0xb6aef7b0;
-
-    const qint64 typeMessageMediaVideo = 0xa2d24290;
-    const qint64 typeMessageMediaPhoto = 0xc8c45a2a;
-    const qint64 typeMessageMediaDocument = 0x2fda2204;
-
 private:
     void getPhoneNumber();
     void setUpPhonePaths();

@@ -1,11 +1,9 @@
 #include "compabilitytools.h"
 
-#include <QDebug>
 #include <QDir>
 #include <QCoreApplication>
 #include <QFileInfo>
 #include <QFile>
-#include <QIODevice>
 
 #include <iostream>
 
