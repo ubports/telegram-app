@@ -62,6 +62,7 @@ Item {
         asynchronous: true
         //source: !hasChatPhoto && !hasChatId ? logo : chatPhoto
         source: file_handler.thumbPath
+        sourceSize: Qt.size(width, height)
         visible: hasThumb && !ubuntuShape
     }
 
