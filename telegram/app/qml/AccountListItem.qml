@@ -47,6 +47,9 @@ Item {
                telegram.accountUnregisterDevice(token);
            }
         }
+        onReconnect: {
+            telegram.reconnect()
+        }
     }
 
     Telegram {
