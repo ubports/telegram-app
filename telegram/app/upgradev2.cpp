@@ -535,5 +535,4 @@ void UpgradeV2::insertProfile() {
 
 void UpgradeV2::deleteFiles() {
     QFile::remove(configFilePath);
-    QFile::remove(databaseFilePath);
 }
