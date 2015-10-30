@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-20 19:20+0200\n"
+"POT-Creation-Date: 2015-10-29 18:48+0100\n"
 "PO-Revision-Date: 2015-10-17 15:43+0000\n"
 "Last-Translator: schuko24 <gerdsaenger@t-online.de>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2015-10-23 05:54+0000\n"
-"X-Generator: Launchpad (build 17812)\n"
+"X-Launchpad-Export-Date: 2015-10-30 05:38+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
 "Language: fr\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
@@ -301,11 +301,11 @@ msgid "Select Chat"
 msgstr "Sélectionner une discussion"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:153
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:157
 msgid "Type message"
 msgstr "Écrire un message"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:330
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:334
 msgid "Close"
 msgstr "Fermer"
 
@@ -1125,71 +1125,71 @@ msgstr "Impossible d'obtenir des données de la part de Telegram"
 msgid "Touch here to open app"
 msgstr "Touchez ici pour ouvrir l'application"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:164
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Résultats dans : Contacts & discussions"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:181
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Résultats dans : Messages"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:288
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Personnes à qui vous parlez"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:289
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Discussions récentes"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:290
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Photos récentes"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:295
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 nouveau message"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:295
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 nouveaux messages"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:298
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Discussions non lues (%1)"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:639
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Message audio"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:643
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "Contact reçu"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:647
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "Document reçu"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:651
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "Photo reçue"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:668
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "Vidéo reçue"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:678
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr "Type de média non géré"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:753
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Se connecter à Telegram"
 
-#: /home/karni/src/telegram2/telegram/scope/query.cpp:789
+#: /home/karni/src/telegram2/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Aucun message reçu aujourd'hui."
 
