@@ -81,20 +81,19 @@ Item {
                 telegram.authLogout();
             }
 
-            mainView.error(id, errorCode, errorText);
+            mainView.error(id, errorCode, errorText)
         }
         onErrorChanged: {
-            console.log("auth error: " + error);
+            console.log("auth error: " + error)
         }
         onAuthNeededChanged: {
-            console.log("authNeeded " + authNeeded);
+            console.log("authNeeded " + authNeeded)
         }
         onAuthPhoneCheckedChanged: {
-            console.log("authPhoneChecked " + authPhoneChecked);
+            console.log("authPhoneChecked " + authPhoneChecked)
         }
         onAuthCallRequested: {
-            console.log("authCallRequested");
-            auth_code_page.allowCallButton = false;
+            console.log("authCallRequested")
         }
         onAuthCodeRequested: {
             console.log("authCodeRequested");
@@ -166,6 +165,7 @@ Item {
             Connections {
                 target: telegramObject
                 onAuthSignInErrorChanged: auth_code_page.error(telegramObject.authSignInError)
+                onAuthCallRequested: auth_code_page.allowCall = false
             }
         }
     }
