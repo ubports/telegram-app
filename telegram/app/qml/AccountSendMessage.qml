@@ -232,6 +232,8 @@ Rectangle {
             ]
 
             onClicked: {
+                Qt.inputMethod.commit();
+
                 if (!telegramObject.connected) return;
 
                 if (state == "attach") {

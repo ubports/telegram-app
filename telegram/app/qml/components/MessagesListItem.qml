@@ -255,16 +255,16 @@ ListItemWithActions {
                     anchors.left: parent.left
                     visible: !hasMedia || message_media.isAudioMessage
 
-                    TextEdit {
+                    Label {
                         id: message_text
                         anchors {
                             top: parent.top
                             left: parent.left
-                            leftMargin: units.dp(3)
                         }
-                        width: Math.min(htmlWidth, maximumWidth)
+                        // units.dp is used here, because Label wraps too early as compared to TextEdit.
+                        width: Math.min(units.dp(htmlWidth), maximumWidth)
                         height: contentHeight
-                        font.pixelSize: FontUtils.sizeToPixels(message_item.hasMedia ? "small" : "medium")
+                        textSize: message_item.hasMedia ? "small" : "medium"
                         font.weight: Font.Normal
                         horizontalAlignment: Text.AlignLeft
                         persistentSelection: false
