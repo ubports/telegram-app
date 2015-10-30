@@ -609,7 +609,11 @@ Page {
             telegram: profile_page.telegram
             user: telegram.user(item.userId)
 
-            onClicked: profile_page.openDialog(item.userId)
+            onClicked: {
+                if (item.userId != telegram.me) {
+                    profile_page.openDialog(item.userId)
+                }
+            }
 
             leadingActions: ListItemActions {
                 actions: [
