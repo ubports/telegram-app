@@ -267,10 +267,6 @@ ListItemWithActions {
                         textSize: message_item.hasMedia ? "small" : "medium"
                         font.weight: Font.Normal
                         horizontalAlignment: Text.AlignLeft
-                        persistentSelection: false
-                        activeFocusOnPress: false
-                        selectByMouse: false
-                        readOnly: true
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
                         text: emojis.bodyTextToEmojiText(messageText)
