@@ -215,7 +215,7 @@ Rectangle {
             states: [
                 State {
                     name: "send"
-                    when: txt.text.length > 0
+                    when: txt.inputMethodComposing || txt.text.length > 0
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
@@ -223,7 +223,7 @@ Rectangle {
                 },
                 State {
                     name: "attach"
-                    when: txt.text.length == 0
+                    when: !txt.inputMethodComposing && txt.text.length == 0
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
