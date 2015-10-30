@@ -187,7 +187,7 @@ ListItem {
                 // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
                 return i18n.tr("typing...")
             } else {
-                return emojis.textToEmojiText(message.message, 16, true);
+                return emojis.bodyTextToEmojiText(message.message, 16, true);
             }
         }
     }
