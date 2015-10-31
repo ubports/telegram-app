@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-10-30 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-10-31 05:38+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
 "Language: ru\n"
 
@@ -736,20 +736,20 @@ msgstr "Удалить из группы"
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Сообщений Telegram за сегодня: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "Нет сообщений Telegram за сегодня."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Отправленных сообщений Telegram за сегодня: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "Сегодня не отправлялись сообщения Telegram."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
 msgid ""
