@@ -260,7 +260,8 @@ Page {
     }
 
     function updateFromUser() {
-        page.phone = user.phone;
+        var phone = user.phone.indexOf("+") == -1 ? "+" + user.phone : user.phone
+        page.phone = phone
         if (user.status.wasOnline != 0) {
             lastSeen = Time.formatLastSeen(i18n, user.status.wasOnline * 1000)
         } else {

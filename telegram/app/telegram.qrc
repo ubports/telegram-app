@@ -9,6 +9,7 @@
 
         <file>qml/telegram.qml</file>
 
+        <file>qml/AccountAddContactHeader.qml</file>
         <file>qml/AccountContactsPage.qml</file>
         <file>qml/AccountDialogList.qml</file>
         <file>qml/AccountDialogPage.qml</file>

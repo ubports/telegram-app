@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:48+0100\n"
+"POT-Creation-Date: 2015-11-02 15:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:46
+msgid "Add to contacts"
+msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
@@ -299,7 +303,7 @@ msgstr ""
 msgid "Type message"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:334
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:335
 msgid "Close"
 msgstr ""
 
@@ -318,7 +322,7 @@ msgstr ""
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:90
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:632
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:636
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
@@ -344,7 +348,7 @@ msgstr ""
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
 msgid "Notifications"
 msgstr ""
 
@@ -710,43 +714,43 @@ msgid "Block user"
 msgstr ""
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:619
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:623
 msgid "Remove from group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:177
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:178
 msgid "No Telegram messages received today."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:185
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:186
 msgid "No Telegram messages sent today."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:399
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:406
 msgid "Sign in to Ubuntu One"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:414
 msgid "Remind me later"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:406
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:422
 msgid "Don't want notifications"
 msgstr ""
 
@@ -854,7 +858,7 @@ msgstr ""
 msgid "Forwarded from <b>%1</b>"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:289
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:285
 msgid "Audio attachment not supported yet ;("
 msgstr ""
 

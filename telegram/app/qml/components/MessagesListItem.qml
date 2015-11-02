@@ -264,7 +264,7 @@ ListItemWithActions {
                         // units.dp is used here, because Label wraps too early as compared to TextEdit.
                         width: Math.min(units.dp(htmlWidth), maximumWidth)
                         height: contentHeight
-                        textSize: message_item.hasMedia ? "small" : "medium"
+                        fontSize: message_item.hasMedia ? "small" : "medium"
                         font.weight: Font.Normal
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
