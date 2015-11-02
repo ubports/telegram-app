@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-30 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-10-31 05:38+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
 "Language: nl\n"
 
@@ -740,20 +740,20 @@ msgstr "Verwijderen uit groep"
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Vandaag ontvangen Telegram-berichten: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "Vandaag geen Telegram-berichten ontvangen."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Vandaag verstuurde Telegram-berichten: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "Er zijn geen Telegram-berichten verstuurd vandaag."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
 msgid ""

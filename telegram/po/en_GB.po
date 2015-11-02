@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-30 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-10-31 05:38+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
 "Language: \n"
 
@@ -780,15 +780,15 @@ msgstr ""
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr ""
+msgstr "Waiting for user to get online..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr ""
+msgstr "Secret chat requested"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
-msgstr ""
+msgstr "Secret chat created"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:41

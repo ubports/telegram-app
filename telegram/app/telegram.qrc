@@ -70,7 +70,6 @@
         <file>qml/components/listitems/ListItemWithActionsCheckBox.qml</file>
 
         <file>qml/js/avatar.js</file>
-        <file>qml/js/ba-linkify.js</file>
         <file>qml/js/colors.js</file>
         <file>qml/js/time.js</file>
         <file>qml/js/version.js</file>

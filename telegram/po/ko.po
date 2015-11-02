@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-10-30 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-10-31 05:38+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
 "Language: ko\n"
 
@@ -385,7 +385,7 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:204
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "우분투용 텔레그램 %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:258
@@ -723,16 +723,16 @@ msgstr "그룹에서 제거"
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "텔레그램 메시지 오늘 수신됨: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "오늘 받은 텔레그램 메시지가 없습니다."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "오늘 보낸 텔레그램 메시지: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
 msgid "No Telegram messages sent today."
@@ -783,15 +783,15 @@ msgstr "파일"
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr ""
+msgstr "사용자가 온라인이 되기를 기다리고 있습니다..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr ""
+msgstr "비밀 대화 요청됨"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
-msgstr ""
+msgstr "비밀 대화 생성됨"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:41
