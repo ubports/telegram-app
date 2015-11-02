@@ -1,6 +1,7 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.0 as ListItem
+import Ubuntu.Connectivity 1.0
 
 import AsemanTools 1.0
 import TelegramQML 1.0
@@ -289,8 +290,20 @@ Page {
             when: dialogs.messageIdsToForward.length == 0 && !transfer_helper.hasContent
             head: account_page.head
             contents: Label {
-                // TRANSLATORS: Application name.
-                text: i18n.tr("Telegram")
+                text: {
+                    if (NetworkingStatus.online) {
+                        if (telegramObject.connected) {
+                            // TRANSLATORS: Default app header title. Application name.
+                            return i18n.tr("Telegram")
+                        } else {
+                            // TRANSLATORS: App header title when connecting to Telegram.
+                            return i18n.tr("Connecting...")
+                        }
+                    } else {
+                        // TRANSLATORS: Shown in app header when network is unavailable.
+                        return i18n.tr("Waiting for network...")
+                    }
+                }
             }
             backAction: Action {
                 iconName: "navigation-menu"
@@ -304,8 +317,15 @@ Page {
             when: dialogs.messageIdsToForward.length > 0
             head: account_page.head
             contents: Label {
-                // TRANSLATORS: Page title when forwarding messages.
-                text: i18n.tr("Select Chat")
+                text: {
+                    if (NetworkingStatus.online) {
+                        // TRANSLATORS: Page title when forwarding messages.
+                        return i18n.tr("Select Chat")
+                    } else {
+                        // TRANSLATORS: Shown in app header when network is unavailable.
+                        return i18n.tr("Waiting for network...")
+                    }
+                }
             }
             backAction: Action {
                 iconName: "go-previous"
@@ -317,8 +337,15 @@ Page {
             when: transfer_helper.hasContent
             head: account_page.head
             contents: Label {
-                // TRANSLATORS: Page title when sharing files.
-                text: i18n.tr("Select Chat")
+                text: {
+                    if (NetworkingStatus.online) {
+                        // TRANSLATORS: Page title when sharing files.
+                        return i18n.tr("Select Chat")
+                    } else {
+                        // TRANSLATORS: Shown in app header when network is unavailable.
+                        return i18n.tr("Waiting for network...")
+                    }
+                }
             }
             backAction: Action {
                 iconName: "go-previous"

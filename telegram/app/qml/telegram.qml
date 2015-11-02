@@ -15,7 +15,6 @@
  */
 
 import QtQuick 2.4
-//import QtMultimedia 5.0
 
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 0.1 as Popup
