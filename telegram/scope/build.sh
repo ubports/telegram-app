@@ -1,18 +1,23 @@
 #!/bin/bash
 set -e
-ARM_QMAKE=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
-ARM_MAKE=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
+
+if [ -z ${BUILD_DIR_BASENAME+x} ] || [ -z ${TG_DIR+x} ]; then
+    echo "This script is not meant to be run directly. Please run \"./setup.sh -h\"."
+    exit 1
+fi
 
 TG_DIR=$(echo `cd ../..; pwd`)
-#TG_LIBS=$TG_DIR/usr/lib/arm-linux-gnueabihf
-#TG_INCS=$TG_DIR/usr/include/arm-linux-gnueabihf
 
 echo "Building scope..."
 
-mkdir -p build && cd build
+mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
 
-$ARM_QMAKE PREFIX=/ ..
-$ARM_MAKE
-$ARM_MAKE INSTALL_ROOT=$TG_DIR/click install
+$QMAKE_BIN PREFIX=/ .. || exit 1
+$MAKE_BIN || exit 1
+if [ "$BUILD_TYPE" = "desktop" ]; then
+    $MAKE_BIN INSTALL_ROOT=$TG_DIR/$BUILD_DIR_BASENAME install || exit 1
+else
+    $MAKE_BIN INSTALL_ROOT=$TG_DIR/$BUILD_DIR_BASENAME/click install || exit 1
+fi
 
 echo "Done."
