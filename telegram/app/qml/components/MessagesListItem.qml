@@ -8,6 +8,7 @@ import "qrc:/qml"
 import "qrc:/qml/components"
 import "qrc:/qml/components/listitems"
 import "qrc:/qml/js/colors.js" as Colors
+import "../js/ba-linkify.js" as BaLinkify
 
 ListItemWithActions {
     id: message_item
@@ -257,6 +258,23 @@ ListItemWithActions {
 
                     Label {
                         id: message_text
+
+                        // Taken from messaging-app
+                        function parseText(text) {
+                            var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;
+                            // remove html tags
+                            text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
+                            // replace line breaks
+                            text = text.replace(/(\n)+/g, '<br />');
+                            // check for links
+                            var htmlText = BaLinkify.linkify(text);
+                            if (htmlText !== text) {
+                                return htmlText;
+                            }
+                            // linkify phone numbers if no web links were found
+                            return text.replace(phoneExp, '<a href="tel:///$1">$1</a>');
+                        }
+
                         anchors {
                             top: parent.top
                             left: parent.left
@@ -269,7 +287,7 @@ ListItemWithActions {
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: emojis.bodyTextToEmojiText(messageText)
+                        text: messageText // emojis.textToEmojiText(messageText)
 
                         onLinkActivated: {
                             if (link.slice(0,6) == "tag://") {
@@ -284,7 +302,7 @@ ListItemWithActions {
                             if (message_media.isAudioMessage) {
                                 return i18n.tr("Audio attachment not supported yet ;(")
                             } else {
-                                return message.message
+                                return message_text.parseText(message.message)
                             }
                         }
                     }
