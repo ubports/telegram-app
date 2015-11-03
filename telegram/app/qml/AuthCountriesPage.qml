@@ -31,8 +31,9 @@ Page {
         maximumFlickVelocity: 5000
 
         model: CountriesModel {}
-        delegate: ListItem.Standard {
+        delegate: ListItem.SingleValue {
             text: name
+            value: nativeName
             onClicked: {
                 country_list.currentIndex = index;
 
