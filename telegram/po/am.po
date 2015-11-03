@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-10-29 18:48+0100\n"
+"POT-Creation-Date: 2015-11-02 20:03+0100\n"
 "PO-Revision-Date: 2015-10-13 13:45+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -15,8 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2015-10-31 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-11-03 05:46+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
+
+#: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
+msgid "Add to contacts"
+msgstr "ወደ ግንኙነት መጨመሪያ"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
@@ -95,9 +99,10 @@ msgstr "ዝርዝር ያስገቡ"
 msgid "Cancel"
 msgstr "መሰረዣ"
 
+#. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:293
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:297
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:294
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
@@ -292,19 +297,32 @@ msgstr "ስም (ያስፈልጋል)"
 msgid "Last name (optional)"
 msgstr "የ አባት ስም (በ ምርጫ)"
 
+#. TRANSLATORS: App header title when connecting to Telegram.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:300
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
+msgid "Connecting..."
+msgstr "በ መገናኘት ላይ..."
+
+#. TRANSLATORS: Shown in app header when network is unavailable.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:304
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:326
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:346
+msgid "Waiting for network..."
+msgstr ""
+
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:308
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:321
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:323
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:343
 msgid "Select Chat"
 msgstr "ውይይት ይምረጡ"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:157
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:158
 msgid "Type message"
 msgstr "መልእክት ይጻፉ"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:334
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:340
 msgid "Close"
 msgstr "መዝጊያ"
 
@@ -323,7 +341,7 @@ msgstr "ማሰናጃዎች"
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:90
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:632
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:636
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
@@ -349,7 +367,7 @@ msgstr "መልእክቶች"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:397
 msgid "Notifications"
 msgstr "ማስታወቂያዎች"
 
@@ -722,44 +740,44 @@ msgid "Block user"
 msgstr "ተጠቃሚ ማገጃ"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:619
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:623
 msgid "Remove from group"
 msgstr "ከ ቡድኑ ማስወገጃ"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:176
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "ዛሬ የተቀበሉት የ ቴሌግራም መልእክቶች: %1"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:177
 msgid "No Telegram messages received today."
 msgstr "ዛሬ የተቀበሉት የ ቴሌግራም መልእክቶች የሉም"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:184
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "ዛሬ የተላኩ የ ቴሌግራም መልእክቶች: %1"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:185
 msgid "No Telegram messages sent today."
 msgstr "ዛሬ የተላኩ የ ቴሌግራም መልእክቶች የሉም"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
 "እርስዎ የ ቴሌግራም ማስታወቂያዎችን ከ ፈለጉ መተግበሪያውን በማይጠቀሙ ጊዜ: እርስዎ ወደ ኡቡንቱ ዋን መግለጫዎ ይግቡ"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:405
 msgid "Sign in to Ubuntu One"
 msgstr "ወደ ኡቡንቱ ዋን መግቢያ"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:413
 msgid "Remind me later"
 msgstr "በኋላ አስታውሰኝ"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:406
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:421
 msgid "Don't want notifications"
 msgstr "ማስታወቂያዎች አልፈልግም"
 
@@ -867,7 +885,7 @@ msgstr "በ መጻፍ ላይ..."
 msgid "Forwarded from <b>%1</b>"
 msgstr "ወደ ፊት የተላለፈ ከ <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:289
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:285
 msgid "Audio attachment not supported yet ;("
 msgstr "ድምፅ ማያያዣ የተደገፈ አይደለም ;("
 
@@ -875,10 +893,6 @@ msgstr "ድምፅ ማያያዣ የተደገፈ አይደለም ;("
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "ጠፍቷል"
-
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
-msgid "Connecting..."
-msgstr "በ መገናኘት ላይ..."
 
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10

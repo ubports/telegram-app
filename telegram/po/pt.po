@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:48+0100\n"
+"POT-Creation-Date: 2015-11-02 20:03+0100\n"
 "PO-Revision-Date: 2015-10-13 22:33+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
@@ -15,9 +15,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-10-31 05:38+0000\n"
+"X-Launchpad-Export-Date: 2015-11-03 05:47+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
 "Language: pt\n"
+
+#: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
+msgid "Add to contacts"
+msgstr "Adicionar aos contactos"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:76
@@ -96,9 +100,10 @@ msgstr "Introduza os detalhes"
 msgid "Cancel"
 msgstr "Cancelar"
 
+#. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:293
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:297
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:294
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
@@ -293,19 +298,32 @@ msgstr "Primeiro nome (necessário)"
 msgid "Last name (optional)"
 msgstr "Último nome (opcional)"
 
+#. TRANSLATORS: App header title when connecting to Telegram.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:300
+#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
+msgid "Connecting..."
+msgstr "A ligar..."
+
+#. TRANSLATORS: Shown in app header when network is unavailable.
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:304
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:326
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:346
+msgid "Waiting for network..."
+msgstr ""
+
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:308
-#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:321
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:323
+#: /home/karni/src/telegram2/telegram/app/qml/AccountPage.qml:343
 msgid "Select Chat"
 msgstr "Selecionar conversa"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:157
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:158
 msgid "Type message"
 msgstr "Escrever mensagem..."
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:334
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:340
 msgid "Close"
 msgstr "Fechar"
 
@@ -324,7 +342,7 @@ msgstr "Definições"
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:90
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:632
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:636
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
@@ -350,7 +368,7 @@ msgstr "Mensagens"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:382
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:397
 msgid "Notifications"
 msgstr "Notificações"
 
@@ -730,29 +748,29 @@ msgid "Block user"
 msgstr "Bloquear utilizador"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:619
+#: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:623
 msgid "Remove from group"
 msgstr "Eliminar do grupo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:161
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:176
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Mensagens do Telegram recebidas hoje: %1"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:162
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:177
 msgid "No Telegram messages received today."
 msgstr "Sem mensagens do Telegram recebidas hoje"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:169
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:184
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Mensagens do Telegram enviadas hoje: %1"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:170
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:185
 msgid "No Telegram messages sent today."
 msgstr "Sem mensagens do Telegram enviadas hoje"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:383
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -760,15 +778,15 @@ msgstr ""
 "Se quiser notificações do Telegram quando não estiver a usar a app, inicie "
 "sessão na sua conta Ubuntu One."
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:390
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:405
 msgid "Sign in to Ubuntu One"
 msgstr "Inicie sessão em Ubuntu One"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:413
 msgid "Remind me later"
 msgstr "Lembrar-me mais tarde"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:406
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:421
 msgid "Don't want notifications"
 msgstr "Não quero notificações"
 
@@ -876,7 +894,7 @@ msgstr "escrevendo..."
 msgid "Forwarded from <b>%1</b>"
 msgstr "Recebido de <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:289
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:285
 msgid "Audio attachment not supported yet ;("
 msgstr "Anexo de áudio ainda não suportado"
 
@@ -884,10 +902,6 @@ msgstr "Anexo de áudio ainda não suportado"
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Eliminado"
-
-#: /home/karni/src/telegram2/telegram/app/qml/components/TelegramHeader.qml:156
-msgid "Connecting..."
-msgstr "A ligar..."
 
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
