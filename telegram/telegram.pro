@@ -30,7 +30,7 @@ UBUNTU_TRANSLATION_SOURCES+= \
 
 # specifies all translations files and makes sure they are
 # compiled and installed into the right place in the click package
-#UBUNTU_PO_FILES+=$$files(po/*.po)
+UBUNTU_PO_FILES+=$$files(po/*.po)
 
 
 
