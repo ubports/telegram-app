@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 20:03+0100\n"
+"POT-Creation-Date: 2015-11-03 23:50+0100\n"
 "PO-Revision-Date: 2015-10-29 00:16+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -323,7 +323,7 @@ msgstr "گپ رمزی"
 msgid "Type message"
 msgstr "نوشتن پیام"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:340
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:336
 msgid "Close"
 msgstr "بستن"
 
@@ -880,12 +880,12 @@ msgid "typing..."
 msgstr "در حال نوشتن…"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:219
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:222
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "منتقل شده از <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:285
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:305
 msgid "Audio attachment not supported yet ;("
 msgstr "ضمیمهٔ صوتی هنوز پشتیبانی نمی‌شود ؛("
 
@@ -1064,7 +1064,7 @@ msgstr "‫%1 به گروه بازگشت"
 msgid "@ %1"
 msgstr "در %1"
 
-#. TRANSLATORS: This format string tells who has checked in.
+#. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"

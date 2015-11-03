@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 20:03+0100\n"
+"POT-Creation-Date: 2015-11-03 23:50+0100\n"
 "PO-Revision-Date: 2015-10-13 13:33+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -323,7 +323,7 @@ msgstr "Csevegés kiválasztása"
 msgid "Type message"
 msgstr "Üzenet írása"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:340
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:336
 msgid "Close"
 msgstr "Bezárás"
 
@@ -891,12 +891,12 @@ msgid "typing..."
 msgstr "gépel…"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:219
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:222
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Továbbítva tőle: <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:285
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:305
 msgid "Audio attachment not supported yet ;("
 msgstr "A hangcsatolmányok egyelőre nem támogatottak ;("
 
@@ -1075,7 +1075,7 @@ msgstr "%1 visszatért a csoportba"
 msgid "@ %1"
 msgstr "@ %1"
 
-#. TRANSLATORS: This format string tells who has checked in.
+#. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"

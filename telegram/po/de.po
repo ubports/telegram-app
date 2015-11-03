@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-02 20:03+0100\n"
+"POT-Creation-Date: 2015-11-03 23:50+0100\n"
 "PO-Revision-Date: 2015-10-14 18:28+0000\n"
 "Last-Translator: schuko24 <gerdsaenger@t-online.de>\n"
 "Language-Team: German <de@li.org>\n"
@@ -323,7 +323,7 @@ msgstr "Unterhaltung auswählen"
 msgid "Type message"
 msgstr "Eine Nachricht schreiben"
 
-#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:340
+#: /home/karni/src/telegram2/telegram/app/qml/AccountSendMessage.qml:336
 msgid "Close"
 msgstr "Beenden"
 
@@ -889,12 +889,12 @@ msgid "typing..."
 msgstr "schreibt gerade …"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:219
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:222
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Weitergeleitet von <b>%1</b>"
 
-#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:285
+#: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:305
 msgid "Audio attachment not supported yet ;("
 msgstr "Sprachanhänge werden noch nicht unterstützt"
 
@@ -1073,7 +1073,7 @@ msgstr "%1 ist der Gruppe erneut beigetreten."
 msgid "@ %1"
 msgstr "bei %1"
 
-#. TRANSLATORS: This format string tells who has checked in.
+#. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
