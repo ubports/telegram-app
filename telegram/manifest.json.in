@@ -3,7 +3,7 @@
     "description": "Telegram for Ubuntu Phone",
     "framework" : "ubuntu-sdk-15.04.1",
     "architecture": "@CLICK_ARCH@",
-    "title": "Telegram2",
+    "title": "Telegram",
     "hooks": {
         "telegram": {
             "account-application": "telegram.application",
@@ -21,7 +21,7 @@
             "scope": "scope"
         }
     },
-    "version": "2.0.0.6",
+    "version": "2.0.2.0",
     "maintainer": "Ubuntu Telegram team <libqtelegram-team@lists.launchpad.net>"
 }
 
