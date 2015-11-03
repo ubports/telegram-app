@@ -224,7 +224,7 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
 
         // TRANSLATORS: This format string tells location, like: @ McDonals, New York
         summary = QString(N_("@ %1")).arg(args[1].toString());
-        // TRANSLATORS: This format string tells who has checked in.
+        // TRANSLATORS: This format string tells who has checked in (in a geographical location).
         body = QString(N_("%1 has checked-in")).arg(args[0].toString());
 
     } else if (key == "CONTACT_JOINED") { // no-i18n
