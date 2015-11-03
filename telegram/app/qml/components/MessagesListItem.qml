@@ -8,6 +8,7 @@ import "qrc:/qml"
 import "qrc:/qml/components"
 import "qrc:/qml/components/listitems"
 import "qrc:/qml/js/colors.js" as Colors
+import "../js/avatar.js" as Avatar
 import "../js/ba-linkify.js" as BaLinkify
 
 ListItemWithActions {
@@ -201,6 +202,7 @@ ListItemWithActions {
                     font.weight: Font.Normal
                     elide: Text.ElideRight
                     visible: visibleNames && !message.out && !hasMedia
+                    color: Avatar.getColor(message.fromId)
                     text: user.firstName + " " + user.lastName
 
                     Component.onCompleted: {
