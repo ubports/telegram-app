@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-03 23:50+0100\n"
-"PO-Revision-Date: 2015-11-02 23:02+0000\n"
+"PO-Revision-Date: 2015-11-03 22:50+0000\n"
 "Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
-"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2015-11-03 05:46+0000\n"
+"X-Launchpad-Export-Date: 2015-11-04 06:18+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
+"Language: ar\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -498,9 +498,13 @@ msgstr "يتحقق من اسم المستخدم..."
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
+"يمكنك اختيار اسم مستخدم على <b>تلغرام</b>. بعد قيامك بذلك، فإن الأشخاص "
+"الآخرين سيكونون قادرين على العثور عليك من خلال اسم المستخدم هذا دون الحاجة "
+"لمعرفة رقم هاتفك.<br /><br />يمكنك استخدام <b>الحروف</b> و<b>الأرقام</b> "
+"والشرطة السفلية.<br />يجب أن يحتوي اسم المستخدم على <b>5</b> حروف على الأقل."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
@@ -616,7 +620,8 @@ msgid "Fast"
 msgstr "فوري"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr "<b>تلغرام</b> يقوم بتوصيل الرسائل أسرع<br> من أي تطبيق آخر"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -652,7 +657,8 @@ msgid "Cloud-Based"
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr "<b>تلغرام</b> يتيح لك الوصول إلى رسائلك<br> من خلال أجهزة متعددة"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
@@ -821,7 +827,7 @@ msgstr "تم إنشاء دردشة سرّية"
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr ""
+msgstr "تم تجاهل الدردشة السرّية"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:48
@@ -959,31 +965,31 @@ msgstr "dd MMM yy"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
-msgstr ""
+msgstr "أرسل إليك رسالة"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
-msgstr ""
+msgstr "أرسل إليك صورة"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
-msgstr ""
+msgstr "أرسل إليك فيديو"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
-msgstr ""
+msgstr "أرسل إليك مستند"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
-msgstr ""
+msgstr "أرسل إليك رسالة صوتية"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
-msgstr ""
+msgstr "شارك شخص معك"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
-msgstr ""
+msgstr "أرسل إليك خريطة"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:139
 #, qt-format
@@ -1078,65 +1084,65 @@ msgstr ""
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr ""
+msgstr "انضم %1 إلى تلغرام!"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:239
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "ولوج جديد من جهاز غير متعرف عليه"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
-msgstr ""
+msgstr "%1 @ %2"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
-msgstr ""
+msgstr "تم تحديث صورة الملف الشخصي"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:254
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:259
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
-msgstr ""
+msgstr "لديك رسالة جديدة"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/karni/src/telegram2/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr ""
+msgstr "h:mm ddd، dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr ""
+msgstr "فتح التطبيق"
 
 #. TRANSLATORS: call to action: open this chat
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:86
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:120
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr ""
+msgstr "فتح المحادثة"
 
 #: /home/karni/src/telegram2/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "مكالمة"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "فشل في الحصول على بيانات تلغرام"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr ""
+msgstr "انقر هنا لفتح التطبيق"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr ""
+msgstr "النتائج في: الأشخاص والدردشة"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
-msgstr ""
+msgstr "النتائج في: الرسائل"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:291
 msgid "People You Talk To"
@@ -1144,47 +1150,47 @@ msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr ""
+msgstr "الدردشات الأخيرة"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr ""
+msgstr "الصور الأخيرة"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
-msgstr ""
+msgstr "%1 رسائل جديدة"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
-msgstr ""
+msgstr "%1 رسائل جديدة"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr ""
+msgstr "دردشات غير مرئية (%1)"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr ""
+msgstr "رسالة صوتية"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr ""
+msgstr "تم استلام شخص"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:650
 msgid "Document received"
-msgstr ""
+msgstr "تم استلام مستند"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:654
 msgid "Photo received"
-msgstr ""
+msgstr "تم استلام صورة"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:671
 msgid "Video received"
-msgstr ""
+msgstr "تم استلام فيديو"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
@@ -1192,11 +1198,11 @@ msgstr ""
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr ""
+msgstr "ولوج إلى تلغرام"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:792
 msgid "No messages received Today."
-msgstr ""
+msgstr "لا رسائل تم استلامها اليوم."
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
@@ -1204,4 +1210,4 @@ msgstr ""
 
 #: /home/karni/src/telegram2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "ابحث عن دردشة أو رسالة أو شخص ما"

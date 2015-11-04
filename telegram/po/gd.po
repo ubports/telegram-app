@@ -11,14 +11,14 @@ msgstr ""
 "PO-Revision-Date: 2015-09-22 10:48+0000\n"
 "Last-Translator: Michał Karnicki <michal.karnicki@canonical.com>\n"
 "Language-Team: Fòram na Gàidhlig\n"
-"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2015-11-03 05:47+0000\n"
+"X-Launchpad-Export-Date: 2015-11-04 06:18+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
+"Language: gd\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -494,8 +494,8 @@ msgstr ""
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
@@ -612,7 +612,8 @@ msgid "Fast"
 msgstr "Luath"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "Lìbhrigidh <b>Teileagram</b> teachdaireachdan nas luaithe<br>na aplacaid sam "
 "bith eile"
@@ -656,7 +657,8 @@ msgid "Cloud-Based"
 msgstr "Stèidhichte air neul"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "Leigidh <b>Teileagram</b> leat na teachdaireachdan agad<br>inntrigeadh o "
 "iomadh uidheam"
@@ -874,7 +876,8 @@ msgstr "Falamhaich an eachdraidh"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:72
 msgid "Are you sure you want to clear history?"
-msgstr "A bheil thu cinnteach gu bheil thu airson an eachdraidh fhalamhachadh?"
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson an eachdraidh fhalamhachadh?"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
