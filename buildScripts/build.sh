@@ -37,7 +37,7 @@ else
     #FIXME: just a temporary hack --> copy the binary to the root of the build folder so that it is in the same folder as tg-server.pub
     cp $TELEGRAM_BIN_PATH $TG_DIR/$BUILD_DIR_BASENAME || exit 1
     #FIXME: just a temporary hack to make it easier for people to run the desktop binary
-    ln -sr $TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_LIB_PATH/*.so.1 $TG_DIR/$BUILD_DIR_BASENAME/ || exit 1
+    ln -sfr $TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_LIB_PATH/*.so.1 $TG_DIR/$BUILD_DIR_BASENAME/ || exit 1
 fi
 
 cd $TG_DIR/telegram
