@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-03 23:50+0100\n"
+"POT-Creation-Date: 2015-11-09 14:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -362,7 +362,7 @@ msgstr ""
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:397
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:386
 msgid "Notifications"
 msgstr ""
 
@@ -732,39 +732,39 @@ msgstr ""
 msgid "Remove from group"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:176
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:165
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:177
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:166
 msgid "No Telegram messages received today."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:184
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:173
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:185
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:387
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:405
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:394
 msgid "Sign in to Ubuntu One"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:413
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:402
 msgid "Remind me later"
 msgstr ""
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:421
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:410
 msgid "Don't want notifications"
 msgstr ""
 

@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-03 23:50+0100\n"
+"POT-Creation-Date: 2015-11-09 14:41+0100\n"
 "PO-Revision-Date: 2015-11-03 14:33+0000\n"
 "Last-Translator: Marcos Lans <Unknown>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2015-11-04 06:18+0000\n"
 "X-Generator: Launchpad (build 17838)\n"
-"Language: gl\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -370,7 +370,7 @@ msgstr "Mensaxes"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:116
 #: /home/karni/src/telegram2/telegram/app/qml/ProfilePage.qml:479
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:397
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:386
 msgid "Notifications"
 msgstr "Notificacións"
 
@@ -499,13 +499,13 @@ msgstr "Comprobando o nome do usuario..."
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
-"underscores.<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
+"<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "Pode escoller un nome de usuario para o <b>Telegram</b>. Deste xeito, outras "
 "persoas poderán buscalo por ese nome e contactar con vostede sen coñecer o "
-"seu número de teléfono.<br /><br />Permítese unha lonxitude mínima de "
-"<b>5</b> caracteres da <b>a-z</b>, <b>0-9</b> e trazos baixos."
+"seu número de teléfono.<br /><br />Permítese unha lonxitude mínima de <b>5</"
+"b> caracteres da <b>a-z</b>, <b>0-9</b> e trazos baixos."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
@@ -621,8 +621,7 @@ msgid "Fast"
 msgstr "Rápido"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid ""
-"<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> entrega as mensaxes máis axiña<br> que calquera outro "
 "aplicativo"
@@ -664,8 +663,7 @@ msgid "Cloud-Based"
 msgstr "Baseado na nube"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid ""
-"<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> permítelle acceder ás mensaxes<br> desde múltiples "
 "dispositivos"
@@ -756,25 +754,25 @@ msgstr "Bloquear usuario"
 msgid "Remove from group"
 msgstr "Eliminar do grupo"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:176
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:165
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Mensaxes do Telegram recibidas hoxe: %1"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:177
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:166
 msgid "No Telegram messages received today."
 msgstr "Hoxe non recibiu mensaxes do Telegram."
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:184
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:173
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Mensaxes do Telegram enviadas hoxe: %1"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:185
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
 msgstr "Hoxe non enviou mensaxes polo Telegram"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:398
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:387
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -782,15 +780,15 @@ msgstr ""
 "Se desexa ter notificacións do Telegram cando non estea a usar o aplicativo, "
 "acceda á súa conta de Ubuntu One."
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:405
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:394
 msgid "Sign in to Ubuntu One"
 msgstr "Iniciar sesión en Ubuntu One"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:413
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:402
 msgid "Remind me later"
 msgstr "Lembrarmo máis tarde"
 
-#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:421
+#: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:410
 msgid "Don't want notifications"
 msgstr "Non desexo notificacións"
 
