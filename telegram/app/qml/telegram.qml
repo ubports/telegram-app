@@ -51,27 +51,16 @@ MainView {
 
     property var uri: undefined
     property int chatToOpen: 0
-    property var inactiveTime: 0
-    property var inactiveTimeout: 10000 // ms
 
     signal error(int id, string errorCode, string errorText)
     signal pushLoaded()
     signal pushRegister(string token, string version)
     signal pushUnregister(string token)
-    signal reconnect()
+    signal resumed()
     
     onActiveFocusChanged: {
-        var now = new Date();
-        if (inactiveTime == 0) {
-            inactiveTime = now.getTime();
-        }
         if (activeFocus) {
-            if ((now.getTime() - inactiveTime) > inactiveTimeout) {
-                console.log("reconnecting due to inactivity timeout!")
-                mainView.reconnect()
-            }
-        } else {
-            inactiveTime = now.getTime()
+            mainView.resumed()
         }
 
         if (activeFocus) {

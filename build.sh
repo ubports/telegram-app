@@ -20,7 +20,7 @@ echo "Building app..."
 
 cd $TG_DIR/telegram
 mkdir -p build && cd build
-mkdir po
+mkdir -p po
 $ARM_QMAKE LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/qt5/libqtelegram-ae INCLUDEPATH+=$TG_INCS/qt5/telegramqml PREFIX=/ -r ..
 #LIBS+=-lunity-scopes INCLUDEPATH+=/usr/include/unity-scopes-0 -r ..
 $ARM_MAKE

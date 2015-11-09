@@ -47,8 +47,10 @@ Item {
                telegram.accountUnregisterDevice(token);
            }
         }
-        onReconnect: {
-            telegram.reconnect()
+        onResumed: {
+            if (telegram.connected) {
+                telegram.updatesGetDifference()
+            }
         }
     }
 
