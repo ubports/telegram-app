@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-09 14:41+0100\n"
+"POT-Creation-Date: 2015-11-10 12:32+0100\n"
 "PO-Revision-Date: 2015-11-03 12:02+0000\n"
 "Last-Translator: Åka Sikrom <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2015-11-10 05:03+0000\n"
 "X-Generator: Launchpad (build 17843)\n"
-"Language: nb\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -497,13 +497,13 @@ msgstr "Kontrollerer brukernavn …"
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
-"underscores.<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
+"<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "Du kan velge et <b>Telegram</b>-brukernavn. Hvis du gjør det, kan andre "
-"brukere finne og kontakte deg uten å vite hva telefonnummeret ditt er. <br "
-"/><br />Tillatte tegn er <b>a-z</b>, <b>0-9</b> og understrek.<br "
-"/>Brukernavn må bestå av minst <b>5</b> tegn."
+"brukere finne og kontakte deg uten å vite hva telefonnummeret ditt er. <br /"
+"><br />Tillatte tegn er <b>a-z</b>, <b>0-9</b> og understrek.<br /"
+">Brukernavn må bestå av minst <b>5</b> tegn."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
@@ -619,8 +619,7 @@ msgid "Fast"
 msgstr "Raskt"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid ""
-"<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr "<b>Telegram</b> leverer meldinger raskere<br> enn noe annet program"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -659,8 +658,7 @@ msgid "Cloud-Based"
 msgstr "Eksternt basert"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid ""
-"<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> gir deg tilgang til meldingene dine<br> fra flere enheter"
 
