@@ -249,12 +249,12 @@ Item {
             visible: !downloading && !msg_media.isAudioMessage
         }
 
-        Text {
+        Label {
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.margins: 3*Devices.density
-            font.family: AsemanApp.globalFont.family
-            font.pixelSize: Math.floor(9*Devices.fontDensity)
+            font.weight: Font.DemiBold
+            fontSize: "x-small"
             color: "#ffffff"
             text: {
                 if(downloading)
