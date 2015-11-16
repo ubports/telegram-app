@@ -665,7 +665,7 @@ Page {
             for(var i=0; i<participants.count; i++) {
                 var userId = participants.at(i).userId
                 var user = telegram.user(userId)
-                if (user.status.classType == typeUserStatusOnline)
+                if (user.status.classType == userStatusType.typeUserStatusOnline)
                     onlineCount++
             }
         }
