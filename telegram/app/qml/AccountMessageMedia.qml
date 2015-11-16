@@ -64,7 +64,7 @@ Item {
         case FileHandler.TypeTargetUnknown:
         case FileHandler.TypeTargetMediaAudio:
         case FileHandler.TypeTargetMediaDocument:
-            result = isSticker? 220*Devices.density : 168*Devices.density
+            result = isSticker ? units.gu(20) : units.gu(17)
             break;
 
         case FileHandler.TypeTargetMediaGeoPoint:
@@ -101,7 +101,7 @@ Item {
             break;
         case FileHandler.TypeTargetUnknown:
         case FileHandler.TypeTargetMediaDocument:
-            result = isSticker? width*media_img.imageSize.height/media_img.imageSize.width : width
+            result = isSticker ? width*media_img.imageSize.height/media_img.imageSize.width : width
             break;
 
         case FileHandler.TypeTargetMediaGeoPoint:
