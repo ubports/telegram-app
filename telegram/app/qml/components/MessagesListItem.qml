@@ -30,9 +30,8 @@ ListItemWithActions {
     property real minimumHeight: contact_image.visible ? contact_image.height + units.gu(1) : 0
     property real maximumWidth: 7*width/10.0
             - (contact_image.visible ? contact_image.width : 0)
-            - (forward_contact_image.visible ? forward_contact_image.width : 0)
 
-    property real minimumWidth: 0//100*Devices.density
+    property real minimumWidth: 0
     property real textMargins: units.dp(4)
     property real frameMargins: units.dp(3)
 
@@ -103,22 +102,6 @@ ListItemWithActions {
             isChat: false
 
             onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
-        }
-
-        Avatar {
-            id: forward_contact_image
-            anchors {
-                leftMargin: units.dp(4)
-                verticalCenter: contact_image.verticalCenter
-            }
-            height: units.gu(5)
-            visible: message.fwdFromId !== 0 && !message_media.isSticker
-
-            telegram: telegramObject
-            user: message_item.fwdUser
-            isChat: false
-
-            onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(forward_contact_image.user.id, false))
         }
 
         Item {
