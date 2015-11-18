@@ -73,7 +73,11 @@ Page {
         if (dialogId == 0) return;
 
         notify_check.silentChecked = !telegram.userData.isMuted(dialogId);
-        telegram.usersGetFullUser(user.id);
+        if (isChat) {
+            telegram.messagesGetFullChat(chat.id)
+        } else {
+            telegram.usersGetFullUser(user.id)
+        }
     }
 
     Connections {
@@ -128,9 +132,11 @@ Page {
         contentType: ContentType.Pictures
 
         onMediaReceived: {
-            var path = String(mediaUrl).replace('file://', '')
-            if (path.length == 0) return;
-            edit_photo_timer.upload(path);
+            if (urls.length > 0) {
+                var path = String(urls[0]).replace('file://', '')
+                if (path.length == 0) return
+                edit_photo_timer.upload(path)
+            }
         }
     }
 
@@ -659,7 +665,7 @@ Page {
             for(var i=0; i<participants.count; i++) {
                 var userId = participants.at(i).userId
                 var user = telegram.user(userId)
-                if (user.status.classType == typeUserStatusOnline)
+                if (user.status.classType == userStatusType.typeUserStatusOnline)
                     onlineCount++
             }
         }

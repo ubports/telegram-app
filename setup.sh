@@ -7,7 +7,7 @@
 # QMAKE_BIN is the path of the qmake binary that will be used to generate the makefiles
 # MAKE_BIN is the path of the make binary
 # SYSTEM_LIB_PATH is the path to the system libraries (e.g. /usr/lib/<arch>)
-# SYSTEM_QT5_INCLUDE_PATH the path of the Qt5 modules headers, where libqtelegram-ae and TelegramQML libs headers are installed
+# SYSTEM_INCLUDE_PATH the path of the Qt5 modules headers, where libqtelegram-ae and TelegramQML libs headers are installed
 # BUILD_DIR_BASENAME is the name of the directory the build files will be written to
 # TG_DIR is the path of the Telegram app sources
 # TG_LIBS is the path where the auxiliary libraries will be copied to
@@ -22,7 +22,8 @@ function setDesktopBuildEnvVars() {
     export MAKE_BIN=make
     #TODO: we're assuming Qt will be in the default libs path
     export SYSTEM_LIB_PATH=`$QMAKE_BIN -query QT_HOST_LIBS`
-    export SYSTEM_QT5_INCLUDE_PATH=`$QMAKE_BIN -query QT_INSTALL_HEADERS`
+    export SYSTEM_INCLUDE_PATH=/usr/include
+#`$QMAKE_BIN -query QT_INSTALL_HEADERS`
     export BUILD_DIR_BASENAME=build_desktop
 }
 #Env vars for the "mobile" build
@@ -33,14 +34,14 @@ function setMobileBuildEnvVars() {
     export MAKE_BIN=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
     #can't use qmake to get system lib paths here because the SDK qmake-script above  maps dirs to be relative to the chroot dir
     export SYSTEM_LIB_PATH=/usr/lib/arm-linux-gnueabihf
-    export SYSTEM_QT5_INCLUDE_PATH=/usr/include/arm-linux-gnueabihf/qt5
+    export SYSTEM_INCLUDE_PATH=/usr/include/
     export BUILD_DIR_BASENAME=build_mobile
 }
 #Generic env vars
 function setTelegramEnvVars() {
     export TG_DIR=`pwd`
     export TG_LIBS=$TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_LIB_PATH
-    export TG_INCS=$TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_QT5_INCLUDE_PATH
+    export TG_INCS=$TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_INCLUDE_PATH
 
     # new thumbnailer lib paths
     export TH_LIBS=$SYSTEM_LIB_PATH
