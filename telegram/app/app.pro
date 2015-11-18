@@ -69,7 +69,7 @@ SCOPE_DATA += \
 target.path = $${UBUNTU_CLICK_BINARY_PATH}
 
 serverPub.files = tg-server.pub
-serverPub.path = /
+serverPub.path = $${target.path}
 
 configs.files = $${OTHER_FILES}
 configs.path = /

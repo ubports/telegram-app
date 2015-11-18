@@ -5,7 +5,7 @@ ARM_MAKE=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
 
 TG_DIR=`pwd`
 TG_LIBS=$TG_DIR/usr/lib/arm-linux-gnueabihf
-TG_INCS=$TG_DIR/usr/include/arm-linux-gnueabihf
+TG_INCS=$TG_DIR/usr/include/
 
 # new thumbnailer
 TH_LIBS=/usr/lib/arm-linux-gnueabihf
@@ -21,7 +21,7 @@ echo "Building app..."
 cd $TG_DIR/telegram
 mkdir -p build && cd build
 mkdir -p po
-$ARM_QMAKE LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/qt5/libqtelegram-ae INCLUDEPATH+=$TG_INCS/qt5/telegramqml PREFIX=/ -r ..
+$ARM_QMAKE LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/libqtelegram-ae INCLUDEPATH+=$TG_INCS/telegramqml PREFIX=/ -r ..
 #LIBS+=-lunity-scopes INCLUDEPATH+=/usr/include/unity-scopes-0 -r ..
 $ARM_MAKE
 $ARM_MAKE INSTALL_ROOT=$TG_DIR/click install

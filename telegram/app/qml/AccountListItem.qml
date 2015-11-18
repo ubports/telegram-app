@@ -67,7 +67,7 @@ Item {
         downloadPath: "/home/phablet/.cache/com.ubuntu.telegram"
         tempPath: "/home/phablet/.cache/com.ubuntu.telegram"
         configPath: AsemanApp.homePath
-        publicKeyFile: "tg-server.pub"
+        publicKeyFile: AsemanApp.appPath + "/tg-server.pub"
         phoneNumber: accountItem.number
         autoCleanUpMessages: true
         autoAcceptEncrypted: true
