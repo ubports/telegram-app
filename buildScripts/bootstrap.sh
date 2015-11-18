@@ -9,11 +9,11 @@ fi
 cd $TG_DIR/deps
 
 if [ ! -d "libqtelegram-ae" ]; then
-    git clone https://github.com/Aseman-Land/libqtelegram-aseman-edition.git libqtelegram-ae
+    git clone -b fix-lib-paths https://github.com/Aseman-Land/libqtelegram-aseman-edition.git libqtelegram-ae
 fi
 
 if [ ! -d "TelegramQML" ]; then
-    git clone https://github.com/Aseman-Land/TelegramQML.git
+    git clone -b fix-lib-paths https://github.com/Aseman-Land/TelegramQML.git
 fi
 
 echo "Building libqtelegram"

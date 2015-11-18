@@ -120,7 +120,7 @@ while getopts "t:dbceh" opt; do
 done
 
 if [ "$DEPS_STEP" = "n" ] && [ "$APP_STEP" = "n" ] && [ "$CLICK_STEP" = "n" ] && [ "$ERASE_STEP" = "n" ]; then
-    echo "No action specified. Please specify at least one action. See -h for additional help."
+    usage
     exit 1
 fi
 
