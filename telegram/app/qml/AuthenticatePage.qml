@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import UbuntuComponents 1.2
+import UbuntuComponents 1.3
 
 Page {
     id: auth_page

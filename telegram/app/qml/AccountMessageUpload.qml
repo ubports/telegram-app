@@ -1,10 +1,12 @@
 import QtQuick 2.0
+import Ubuntu.Components 1.3
+
 import AsemanTools 1.0
 import TelegramQML 1.0
 
 Item {
-    width: isSticker? 220*Devices.density : height
-    height: 200*Devices.density
+    width: isSticker ? units.gu(20) : height
+    height: units.gu(17)
     visible: uploading
 
     property Telegram telegram
@@ -41,20 +43,19 @@ Item {
         property size imageSize: uploading? Cutegram.imageSize(message.upload.location) : Qt.size(0,0)
     }
 
-    Text {
+    Label {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.margins: 2*Devices.density
-        font.family: AsemanApp.globalFont.family
-        font.pixelSize: Math.floor(9*Devices.fontDensity)
-        color: "#333333"
+        fontSize: "x-small"
+        color: "white"
         text: uploadedSize + "/" + totalSize
 
         property string totalSize: Math.floor(message.upload.totalSize/(1024*10.24))/100 + "MB"
         property string uploadedSize: Math.floor(message.upload.uploaded/(1024*10.24))/100 + "MB"
     }
 
-    Text {
+    Label {
         id: file_txt
         anchors.left: parent.left
         anchors.right: parent.right
@@ -64,9 +65,8 @@ Item {
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         elide: Text.ElideRight
         maximumLineCount: 1
-        font.family: AsemanApp.globalFont.family
-        font.pixelSize: Math.floor(9*Devices.fontDensity)
-        color: "#333333"
+        fontSize: "x-small"
+        color: "white"
         text: Tools.fileName(message.upload.location)
     }
 
@@ -76,7 +76,7 @@ Item {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.margins: 4*Devices.density
-        height: 3*Devices.density
+        height: units.dp(3)
         radius: 0
         percent: 100*message.upload.uploaded/message.upload.totalSize
     }
