@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-17 12:47+0100\n"
-"PO-Revision-Date: 2015-11-17 16:13+0000\n"
+"PO-Revision-Date: 2015-11-18 15:57+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-18 05:37+0000\n"
-"X-Generator: Launchpad (build 17847)\n"
+"X-Launchpad-Export-Date: 2015-11-19 05:38+0000\n"
+"X-Generator: Launchpad (build 17850)\n"
 "Language: pt\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -390,7 +390,7 @@ msgstr "Fazer uma pergunta"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:185
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
-msgstr "Perguntas frequentes do Telegram"
+msgstr "Telegram FAQ"
 
 #. TRANSLATORS: Settings section header.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:191
