@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 15:37+0100\n"
-"PO-Revision-Date: 2015-11-03 14:33+0000\n"
+"PO-Revision-Date: 2015-11-19 17:04+0000\n"
 "Last-Translator: Marcos Lans <Unknown>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
-"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-18 05:37+0000\n"
-"X-Generator: Launchpad (build 17847)\n"
+"X-Launchpad-Export-Date: 2015-11-20 05:35+0000\n"
+"X-Generator: Launchpad (build 17850)\n"
+"Language: gl\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -392,7 +392,7 @@ msgstr "Facer unha pregunta"
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:185
 #: /home/karni/src/telegram2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
-msgstr "Preguntas frecuentes sobre o Telegram"
+msgstr "Preguntas frecuentes"
 
 #. TRANSLATORS: Settings section header.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:191
@@ -499,13 +499,13 @@ msgstr "Comprobando o nome do usuario..."
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "Pode escoller un nome de usuario para o <b>Telegram</b>. Deste xeito, outras "
 "persoas poderán buscalo por ese nome e contactar con vostede sen coñecer o "
-"seu número de teléfono.<br /><br />Permítese unha lonxitude mínima de <b>5</"
-"b> caracteres da <b>a-z</b>, <b>0-9</b> e trazos baixos."
+"seu número de teléfono.<br /><br />Permítese unha lonxitude mínima de "
+"<b>5</b> caracteres da <b>a-z</b>, <b>0-9</b> e trazos baixos."
 
 #: /home/karni/src/telegram2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:84
@@ -621,7 +621,8 @@ msgid "Fast"
 msgstr "Rápido"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> entrega as mensaxes máis axiña<br> que calquera outro "
 "aplicativo"
@@ -663,7 +664,8 @@ msgid "Cloud-Based"
 msgstr "Baseado na nube"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> permítelle acceder ás mensaxes<br> desde múltiples "
 "dispositivos"

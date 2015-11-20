@@ -6,18 +6,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-11-19 15:37+0100\n"
 "PO-Revision-Date: 2015-10-29 00:16+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
-"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-11-18 05:37+0000\n"
-"X-Generator: Launchpad (build 17847)\n"
+"X-Launchpad-Export-Date: 2015-11-20 05:35+0000\n"
+"X-Generator: Launchpad (build 17850)\n"
 
 #: /home/karni/src/telegram2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -497,8 +496,8 @@ msgstr "در حال بررسی نام کاربری…"
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "در <b>تلگرام</b> می‌توانید یک نام کاربری برگزینید. در این صورت، افراد دیگر "
 "می‌توانند بدون دانستن شماره تلفنتان، با این نام کاربری شما را یافته و تماس "
@@ -619,7 +618,8 @@ msgid "Fast"
 msgstr "سریع"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr "<b>تلگرام</b> پیام‌ها را سریع‌تر از<br>هر کارهٔ دیگری می‌رساند"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -638,7 +638,8 @@ msgstr "امن"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr "<b>تلگرام</b> پیام‌هایتان را از حملات<br>نفوذگرها در امان نگه می‌دارد"
+msgstr ""
+"<b>تلگرام</b> پیام‌هایتان را از حملات<br>نفوذگرها در امان نگه می‌دارد"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:37
@@ -655,9 +656,11 @@ msgid "Cloud-Based"
 msgstr "ابری"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
-"<b>تلگرام</b> می‌گذارد از دستگاه‌های مختلفی<br>به پیام‌هایتان دسترسی داشته باشید"
+"<b>تلگرام</b> می‌گذارد از دستگاه‌های مختلفی<br>به پیام‌هایتان دسترسی داشته "
+"باشید"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:47
@@ -767,8 +770,8 @@ msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
-"اگر آگهی‌های تلگرام را هنگامی که از کاره استفاده نمی‌کنید می‌خواهید، وارد حساب "
-"اوبونتووان خود شوید."
+"اگر آگهی‌های تلگرام را هنگامی که از کاره استفاده نمی‌کنید می‌خواهید، وارد "
+"حساب اوبونتووان خود شوید."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:394
 msgid "Sign in to Ubuntu One"
