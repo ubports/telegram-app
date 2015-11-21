@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 15:37+0100\n"
-"PO-Revision-Date: 2015-11-17 15:35+0000\n"
+"PO-Revision-Date: 2015-11-20 12:40+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-11-20 05:35+0000\n"
+"X-Launchpad-Export-Date: 2015-11-21 05:39+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 "Language: hu\n"
 
@@ -611,9 +611,7 @@ msgstr "Csevegés elkezdése"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
-msgstr ""
-"Üdvözöljük a gyors és<br>biztonságos üzenetküldés korában\r\n"
-"Welcome to the era<br>of fast and secure messaging"
+msgstr "Üdvözöljük a gyors és biztonságos<br>üzenetküldés korában"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:22
@@ -624,7 +622,7 @@ msgstr "Gyors"
 msgid ""
 "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
-"A <b>Telegram</b> gyorsabban kézbesíti az üzeneteket,<br>mint bármely más "
+"A <b>Telegram</b> gyorsabban kézbesíti az<br>üzeneteket, mint bármely más "
 "alkalmazás"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
@@ -635,7 +633,7 @@ msgstr "Ingyenes"
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
-"A <b>Telegram</b> mindig ingyenes marad. Nincs reklám.<br> Nincs előfizetési "
+"A <b>Telegram</b> mindig ingyenes marad.<br>Nincs reklám. Nincs előfizetési "
 "díj"
 
 #. TRANSLATORS: Adjective, describing secure application.
@@ -673,7 +671,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Magánjellegű"
+msgstr "Privát"
 
 #: /home/karni/src/telegram2/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
