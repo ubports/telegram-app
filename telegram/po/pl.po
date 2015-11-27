@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-19 15:37+0100\n"
-"PO-Revision-Date: 2015-11-03 11:47+0000\n"
-"Last-Translator: Michał Karnicki <michal.karnicki@canonical.com>\n"
+"PO-Revision-Date: 2015-11-26 16:01+0000\n"
+"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2015-11-20 05:35+0000\n"
+"X-Launchpad-Export-Date: 2015-11-27 05:42+0000\n"
 "X-Generator: Launchpad (build 17850)\n"
 "Language: pl\n"
 
@@ -346,7 +346,7 @@ msgstr "Ustawienia"
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:87
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
-msgstr "Info"
+msgstr "Informacje"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:100
@@ -384,7 +384,7 @@ msgstr "Wsparcie"
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:178
 msgid "Ask a Question"
-msgstr "Zadaj Pytanie"
+msgstr "Zadaj pytanie"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /home/karni/src/telegram2/telegram/app/qml/AccountSettings.qml:185
@@ -592,7 +592,7 @@ msgstr "Kod państwa"
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:21
 #: /home/karni/src/telegram2/telegram/app/qml/AuthNumberPage.qml:62
 msgid "Phone Number"
-msgstr "Number telefonu"
+msgstr "Numer telefonu"
 
 #. TRANSLATORS: Button text right under the phone number text field.
 #: /home/karni/src/telegram2/telegram/app/qml/AuthenticatePage.qml:78
@@ -769,14 +769,14 @@ msgstr "Wysłanych dzisiaj wiadomości z Telegram: %1"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
-msgstr "Nie wysłano dziś żadnych wiadomości z Telegram'a"
+msgstr "Nie wysłano dziś żadnych wiadomości z Telegrama"
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:387
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
-"Jeśli chcesz otrzymywać powiadomienia o wiadomościach kiedy nie używasz "
+"Jeśli chcesz otrzymywać powiadomienia o wiadomościach, gdy nie używasz "
 "aplikacji, zaloguj się na swoje konto Ubuntu One."
 
 #: /home/karni/src/telegram2/telegram/app/qml/telegram.qml:394
@@ -818,7 +818,7 @@ msgstr "Plik"
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr "Oczekiwanie na drugiego uzytkownika..."
+msgstr "Oczekiwanie na drugiego użytkownika..."
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
@@ -869,11 +869,11 @@ msgstr "1 tydzień"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:50
 msgid "Leave chat"
-msgstr "Opóść rozmowę"
+msgstr "Opuść rozmowę"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:56
 msgid "Are you sure you want to leave this chat?"
-msgstr "Jesteś pewny, że chcesz opóścić tą rozmowę?"
+msgstr "Jesteś pewny, że chcesz opuścić tą rozmowę?"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/DialogsListItem.qml:66
 msgid "Clear history"
@@ -898,7 +898,7 @@ msgstr "Przekazano od <b>%1</b>"
 
 #: /home/karni/src/telegram2/telegram/app/qml/components/MessagesListItem.qml:288
 msgid "Audio attachment not supported yet ;("
-msgstr "Załączniki audio jeszcze nie wspierane ;("
+msgstr "Załączniki dźwiękowe jeszcze nie wspierane ;("
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram2/telegram/app/qml/components/TelegramContactsListItem.qml:34
@@ -908,7 +908,7 @@ msgstr "Usunięto"
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/karni/src/telegram2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
-msgstr "Czas auto-destrukcji"
+msgstr "Czas samozniszczenia"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1062,7 +1062,7 @@ msgstr "%1 usunął Cię z grupy"
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
-msgstr "%1 opóścił grupę"
+msgstr "%1 opuścił grupę"
 
 #: /home/karni/src/telegram2/telegram/push/pushhelper.cpp:221
 #, qt-format
@@ -1175,7 +1175,7 @@ msgstr "Nieodczytane rozmowy (%1)"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr "Wiadomośc dźwiękowa"
+msgstr "Wiadomość dźwiękowa"
 
 #: /home/karni/src/telegram2/telegram/scope/query.cpp:646
 msgid "Contact received"
