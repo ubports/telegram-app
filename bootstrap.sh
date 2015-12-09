@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -e
-ARM_QMAKE=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
-ARM_MAKE=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
+ARM_QMAKE=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
+ARM_MAKE=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
 
 TG_DIR=`pwd`
 
