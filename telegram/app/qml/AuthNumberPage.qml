@@ -22,8 +22,12 @@ TelegramPage {
 
     onError: {
         auth_phone_page.isBusy = false;
-        error_label.visible = true;
-        error_label.text = errorText;
+        if (errorText === "PHONE_NUMBER_INVALID") {
+            profiles.remove(fullPhoneNumber);
+        } else {
+            error_label.visible = true;
+            error_label.text = errorText;
+        }
     }
 
     Component.onCompleted: phone_number.forceActiveFocus()
