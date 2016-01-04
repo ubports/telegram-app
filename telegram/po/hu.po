@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2015-11-20 12:40+0000\n"
+"PO-Revision-Date: 2016-01-03 19:25+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
+"X-Launchpad-Export-Date: 2016-01-04 05:37+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 "Language: hu\n"
 
@@ -30,7 +30,7 @@ msgstr "Új csoport"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
-msgstr "Hozzáadás csoporthoz"
+msgstr "Hozzáadás a csoporthoz"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
@@ -123,7 +123,7 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
-"Hozzáadja %1-t ehhez: %2?\n"
+"%1 hozzáadása ehhez: %2\n"
 "\n"
 "Utolsó továbbítandó üzenetek száma:"
 
@@ -1025,7 +1025,7 @@ msgstr "%1 hangüzenetet küldött a csoportnak"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr "%1 egy partner küldött a csoportnak"
+msgstr "%1 egy partnert küldött a csoportnak"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:174
 #, qt-format
