@@ -73,9 +73,7 @@ Item {
         autoAcceptEncrypted: true
 
         onErrorSignal: {
-            if (errorText === "PHONE_NUMBER_INVALID") {
-                profiles.remove(phoneNumber);
-            } else if (errorText === "SESSION_REVOKED") {
+            if (errorText === "SESSION_REVOKED") {
                 telegram.logoutRequest = true;
                 telegram.authLogout();
             } else if (errorText === "AUTH_KEY_UNREGISTERED") {

@@ -255,13 +255,13 @@ Item {
             anchors.margins: 3*Devices.density
             font.weight: Font.DemiBold
             fontSize: "x-small"
-            color: "#ffffff"
+            color: "white"
             text: {
                 if(downloading)
                     return Math.floor(file_handler.progressCurrentByte/(1024*10.24))/100 + "MB/" +
                            Math.floor(size/(1024*10.24))/100 + "MB"
                 else
-                    Math.floor(size/(1024*10.24))/100 + "MB"
+                    file_handler.fileName + "\n" + Math.floor(size/(1024*10.24))/100 + "MB"
             }
 
             property int size: file_handler.fileSize
@@ -273,7 +273,7 @@ Item {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.margins: 4*Devices.density
-        height: 3*Devices.density
+        height: units.dp(3)
         radius: 0
         percent: downloading ? file_handler.progressPercent : 0
         visible: downloading
