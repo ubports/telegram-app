@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2015-11-20 05:04+0000\n"
-"Last-Translator: GunChleoc <Unknown>\n"
+"PO-Revision-Date: 2016-01-29 12:49+0000\n"
+"Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-01-30 05:51+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 "Language: gd\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -1089,7 +1089,7 @@ msgstr "@ %1"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "Rinn %1 seacadh a-stach"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:234
@@ -1137,7 +1137,7 @@ msgstr "Fosgail cabadaich"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "Cuir fòn"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
