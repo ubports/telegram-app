@@ -47,11 +47,6 @@ Item {
                telegram.accountUnregisterDevice(token);
            }
         }
-        onResumed: {
-            if (telegram.connected) {
-                telegram.updatesGetDifference()
-            }
-        }
     }
 
     Telegram {
@@ -143,6 +138,12 @@ Item {
         }
         onMessagesSent: outgoingMessagesMetric.increment(count)
         onMessagesReceived: incomingMessagesMetric.increment(count)
+
+        onConnectedChanged: {
+            if (connected && authLoggedIn) {
+                telegram.updatesGetState();
+            }
+        }
     }
 
     Component {
