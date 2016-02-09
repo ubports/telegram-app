@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2015-11-27 17:22+0000\n"
-"Last-Translator: j3lc <nchatziioakimidis@riseup.net>\n"
+"PO-Revision-Date: 2016-02-08 16:20+0000\n"
+"Last-Translator: Aggelos Arnaoutis <angelosarn@hotmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-02-09 06:14+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -917,7 +917,7 @@ msgstr "Όριο χρόνου αυτοκαταστροφής μηνύματος"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:46
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
-msgstr ""
+msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -925,7 +925,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:35
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:49
 msgid "MMM d"
-msgstr ""
+msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:54
@@ -937,7 +937,7 @@ msgstr "σήμερα στις %1"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
-msgstr "εχτές στις %1"
+msgstr "εχθές στις %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:60
@@ -948,22 +948,22 @@ msgstr "%1 στις %2"
 #. TRANSLATORS: Format string: time.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:251
 msgid "HH:mm"
-msgstr ""
+msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:255
 msgid "ddd HH:mm"
-msgstr ""
+msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:259
 msgid "dd MMM"
-msgstr ""
+msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:262
 msgid "dd MMM yy"
-msgstr ""
+msgstr "dd MMM yy"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
@@ -1112,7 +1112,7 @@ msgstr "Έχετε ένα νέο μήυμα"
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr ""
+msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:62
