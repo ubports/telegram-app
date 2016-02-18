@@ -17,6 +17,9 @@
 
 int main(int argc, char *argv[])
 {
+    // set pattern for loggin messages adding date to message text
+    qSetMessagePattern("[%{time yyyyMMdd h:mm:ss.zzz t} %{if-category}%{category}: %{endif}%{message}");
+
     setlocale(LC_ALL, "");
     textdomain(GETTEXT_DOMAIN.toStdString().c_str());
 
@@ -25,7 +28,7 @@ int main(int argc, char *argv[])
     AsemanApplication app(argc, argv);
     app.setApplicationName("Telegram");
     app.setApplicationDisplayName("Telegram");
-    app.setApplicationVersion("2.0.0");
+    app.setApplicationVersion("2.0.5.0");
     app.setOrganizationDomain("com.ubuntu.telegram");
     app.setOrganizationName("com.ubuntu.telegram");
 //    app.setWindowIcon(QIcon(":/qml/Cutegram/files/icon.png"));
