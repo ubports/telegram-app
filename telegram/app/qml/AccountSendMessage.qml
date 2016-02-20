@@ -184,7 +184,7 @@ Rectangle {
         onDisplayTextChanged: {
             var lastAtPosition = displayText.lastIndexOf("@");
             var lastSpacePosition = displayText.lastIndexOf(" ");
-            if (!privates.suggestionItem && lastAtPosition > lastSpacePosition) {
+            if (!privates.suggestionItem && lastAtPosition == lastSpacePosition + 1) {
                 privates.suggestionItem = username_sgs_component.createObject(send_msg)
                 privates.suggestionItem.y = -privates.suggestionItem.height
 
