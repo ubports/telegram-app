@@ -181,6 +181,33 @@ Rectangle {
             }
             oldLength = length;
         }
+        onDisplayTextChanged: {
+            var lastAtPosition = displayText.lastIndexOf("@");
+            var lastSpacePosition = displayText.lastIndexOf(" ");
+            if (!privates.suggestionItem && lastAtPosition > lastSpacePosition) {
+                if (!privates.suggestionItem) {
+                    privates.suggestionItem = username_sgs_component.createObject(send_msg)
+                    privates.suggestionItem.y = -privates.suggestionItem.height
+
+                    privates.suggestionItem.selected.connect(function() {
+                        var uId = privates.suggestionItem.currentUserId()
+                        var userObj = telegramObject.user(uId)
+                        var userName = userObj.username
+
+                        txt.selectWord()
+                        txt.remove(txt.selectionStart, txt.selectionEnd)
+                        txt.insert(txt.cursorPosition, userName + " ")
+                        txt.deselect()
+
+                        privates.suggestionItem.destroy()
+                    })
+                }
+            } else if (privates.suggestionItem && (lastSpacePosition > lastAtPosition || lastAtPosition == -1)) {
+                privates.suggestionItem.destroy();
+            } else if (privates.suggestionItem) {
+                check_suggestion.restart();
+            }
+        }
     }
 
     MediaImport {
