@@ -7,7 +7,6 @@ _Name=Telegram
 Icon=icons/telegram.png
 X-Ubuntu-Touch=true
 X-Ubuntu-Default-Department-ID=communication
-X-Ubuntu-Supported-Orientations=portrait
 X-Ubuntu-Splash-Show-Header=false
 X-Ubuntu-Splash-Color=White
 _X-Ubuntu-Splash-Title=Telegram

@@ -27,8 +27,8 @@ Item {
     }
 
     function show() {
-        pageStack.clear();
-        dialogsPage = pageStack.push(dialogs_page_component);
+        console.log("calling show");
+        pageStack.primaryPageSource = dialogs_page_component;
     }
 
     QtObject {
@@ -92,7 +92,7 @@ Item {
         }
         onAuthCodeRequested: {
             console.log("authCodeRequested");
-            var page = pageStack.push(account_code_page_component, {
+            pageStack.addPageToCurrentColumn(pageStack.primaryPage, account_code_page_component, {
                     "phoneRegistered": telegram.authPhoneRegistered,
                     "timeOut": sendCallTimeout
                 });
@@ -102,13 +102,7 @@ Item {
 
             if (authLoggedIn) {
                 console.log("authLoggedIn true");
-                if (pageStack.currentPage &&
-                        pageStack.currentPage.objectName === "auth_code_page") {
-                    pageStack.clear();
-                }
-                if (pageStack.depth === 0) {
-                    account_list_item.show();
-                }
+                account_list_item.show();
 
                 if (Cutegram.pushNumber == "") {
                     Cutegram.pushNumber = phoneNumber;

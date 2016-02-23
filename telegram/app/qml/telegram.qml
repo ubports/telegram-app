@@ -37,7 +37,7 @@ MainView {
 
     applicationName: "com.ubuntu.telegram"
     anchorToKeyboard: true
-    automaticOrientation: false
+    automaticOrientation: true
 
     property string appId: "com.ubuntu.telegram_telegram" // no-i18n
 
@@ -87,17 +87,14 @@ MainView {
     }
 
     function showIntro() {
+        pageStack.forceSinglePage = (profiles.count == 0);
         if (profiles.count == 0) {
-            pageStack.clear();
-            pageStack.push(intro_page_component);
+            pageStack.primaryPageSource = intro_page_component;
         }
     }
 
     function backToDialogsPage() {
-        while (pageStack.depth > 0 &&
-                pageStack.currentPage.objectName !== "accountPage") {
-            pageStack.pop();
-        }
+        pageStack.removePages(pageStack.primaryPage);
     }
 
     function openPushDialog() {
@@ -229,15 +226,40 @@ MainView {
         }
     }
 
-    PageStack {
+    AdaptivePageLayout {
         id: pageStack
+
+        property bool forceSinglePage: false
+
+        anchors.fill: parent
+        layouts: [
+            PageColumnsLayout {
+                when: width > units.gu(60) && !pageStack.forceSinglePage
+                PageColumn {
+                    minimumWidth: units.gu(30)
+                    maximumWidth: units.gu(50)
+                    preferredWidth: units.gu(50)
+                }
+                PageColumn {
+                    fillWidth: true
+                }
+            },
+            PageColumnsLayout {
+                when: true
+                PageColumn {
+                    fillWidth: true
+                    minimumWidth: units.gu(30)
+                }
+            }
+        ]
 
         Component {
             id: intro_page_component
 
             IntroPage {
                 onStartMessaging: {
-                    pageStack.push(auth_countries_page_component);
+                    pageStack.forceSinglePage = false;
+                    pageStack.addPageToCurrentColumn(pageStack.primaryPage, auth_countries_page_component);
                 }
             }
         }
@@ -247,7 +269,7 @@ MainView {
 
             AuthCountriesPage {
                 onCountryEntered: {
-                    pageStack.push(auth_number_page_component, {
+                    pageStack.addPageToNextColumn(pageStack.primaryPage, auth_number_page_component, {
                             "countryCode": code
                     });
                 }

@@ -128,7 +128,6 @@ Page {
                 text: i18n.tr("Back")
                 onTriggered: {
                     page.state = "default"
-                    pageStack.pop();
                 }
             }
         }

@@ -38,11 +38,13 @@ Page {
 
     function changeFullName() {
         var properties = { "telegram": telegram, "firstName": user.firstName, "lastName": user.lastName };
+        // TODO push from settings page to next page
         pageStack.push(name_page_component, properties);
     }
 
     function changeUsername() {
         var properties = { "telegram": telegram };
+        // TODO push from settings page to next page
         pageStack.push(username_page_component, properties);
     }
 
