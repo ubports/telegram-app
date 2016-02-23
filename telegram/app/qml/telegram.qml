@@ -237,8 +237,8 @@ MainView {
                 when: width > units.gu(60) && !pageStack.forceSinglePage
                 PageColumn {
                     minimumWidth: units.gu(30)
-                    maximumWidth: units.gu(50)
-                    preferredWidth: units.gu(50)
+                    maximumWidth: units.gu(30)
+                    preferredWidth: units.gu(30)
                 }
                 PageColumn {
                     fillWidth: true
