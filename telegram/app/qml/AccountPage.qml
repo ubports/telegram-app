@@ -15,7 +15,7 @@ Page {
     id: account_page
 
     property int profileCount: 0
-    property AccountDialogPage dialogPage;
+    property var dialogPage;
 
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
@@ -24,7 +24,7 @@ Page {
     signal addParticipantRequest()
 
     onOpenDialog: {
-        pageStack.removePages(pageStack.primaryPage);
+        pageStack.clear();
         account_page.currentDialog = telegramObject.fakeDialogObject(dialogId, false);
     }
 
@@ -85,7 +85,7 @@ Page {
         z: 10
 
         onNewSecretChatClicked: {
-            pageStack.addPageToNextColumn(pageStack.primaryPage, contacts_page_component, {
+            pageStack.addPageToCurrentColumn(pageStack.primaryPage, contacts_page_component, {
                     "telegram": telegramObject,
                     "state": "new-secret-chat"
             });
@@ -175,6 +175,7 @@ Page {
 
         onCurrentDialogChanged: {
             if (currentDialog && currentDialog != telegramObject.nullDialog) {
+                pageStack.clear();
                 var incubator = pageStack.addPageToNextColumn(pageStack.primaryPage, account_dialog_page, {"maxId": 0});
                 if (incubator && incubator.status == Component.Loading) {
                     incubator.onStatusChanged = function(status) {
@@ -240,10 +241,6 @@ Page {
             onForwardRequest: {
                 dialogs.messageIdsToForward = messageIds;
             }
-
-            Component.onDestruction: {
-                dialogs.currentDialog = telegramObject.nullDialog;
-            }
         }
     }
 
@@ -252,13 +249,12 @@ Page {
 
         AccountContactsPage {
             onSelected: {
-                pageStack.removePages(pageStack.primaryPage);
-                // pageStack.pop(); // remove self
+                pageStack.clear();
                 account_page.currentDialog = telegramObject.fakeDialogObject(cid, false);
             }
 
             onAddContactManually: {
-                pageStack.addPageToNextColumn(pageStack.primiaryPage, add_contact_page_component, {
+                pageStack.addPageToNextColumn(pageStack.primaryPage, add_contact_page_component, {
                         "telegram": telegramObject,
                         "addManually": true
                 });

@@ -18,6 +18,7 @@ ListItem {
     property Telegram telegram
     property bool connected: true
 
+    property var dialogPage
     property Dialog dialog
     property int dialogId: isChat ? dialog.peer.chatId : dialog.peer.userId
     property bool isChat: dialog.peer.chatId !== 0
@@ -55,6 +56,7 @@ ListItem {
                         list_item, {
                             text: i18n.tr("Are you sure you want to leave this chat?"),
                             onAccept: function() {
+                                pageStack.clear()
                                 telegram.messagesDeleteHistory(dialogId, true)
                             }
                         }
@@ -86,7 +88,7 @@ ListItem {
                 iconName: "info"
                 text: i18n.tr("Info")
                 onTriggered: {
-                    pageStack.push(profile_page_component, {
+                    pageStack.addPageToNextColumn(account_page, profile_page_component, {
                             telegram: list_item.telegram,
                             dialog: list_item.dialog
                     });

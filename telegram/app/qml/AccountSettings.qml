@@ -11,7 +11,7 @@ import "js/time.js" as Time
 import "js/version.js" as Version
 
 Page {
-    id: page
+    id: settings_page
 
     property Telegram telegram
     property User user: telegram.user(telegram.me)
@@ -38,14 +38,12 @@ Page {
 
     function changeFullName() {
         var properties = { "telegram": telegram, "firstName": user.firstName, "lastName": user.lastName };
-        // TODO push from settings page to next page
-        pageStack.push(name_page_component, properties);
+        pageStack.addPageToNextColumn(settings_page, name_page_component, properties);
     }
 
     function changeUsername() {
         var properties = { "telegram": telegram };
-        // TODO push from settings page to next page
-        pageStack.push(username_page_component, properties);
+        pageStack.addPageToNextColumn(settings_page, username_page_component, properties);
     }
 
     function changeUserPhoto() {
@@ -231,11 +229,11 @@ Page {
         }
         width: units.gu(9)
         height: width
-        telegram: page.telegram
-        user: page.user
+        telegram: settings_page.telegram
+        user: settings_page.user
 
         onClicked: {
-            pageStack.push(preview_page_component, {
+            pageStack.addPageToNextColumn(settings_page, preview_page_component, {
                 "title": details_item.title,
                 "photoPreviewSource": path
             });

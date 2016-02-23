@@ -34,12 +34,12 @@ Page {
         showTitle: false
         onPeerSelected: {
             picker.curTransfer = peer.request();
-            pageStack.pop();
+            pageStack.removePages(picker);
             if (picker.curTransfer.state === ContentTransfer.InProgress)
             picker.__exportItems(picker.url);
         }
         onCancelPressed: {
-            pageStack.pop();
+            pageStack.removePages(picker);
         }
     }
 

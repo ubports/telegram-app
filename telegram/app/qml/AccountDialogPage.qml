@@ -119,8 +119,6 @@ Page {
     Item {
         id: message_box
         anchors {
-            // FIXME message_list sills under Page header! :/
-            topMargin: units.gu(6)
             fill: parent
         }
 
@@ -177,7 +175,6 @@ Page {
     }
 
     function closeChat() {
-        pageStack.pop()
+        pageStack.clear();
     }
 }
-

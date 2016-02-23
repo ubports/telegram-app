@@ -153,6 +153,7 @@ MainView {
         onLoggedOut: {
             pageStack.clear()
             profiles.remove(phone)
+            showIntro();
         }
     }
 
@@ -234,11 +235,13 @@ MainView {
         anchors.fill: parent
         layouts: [
             PageColumnsLayout {
-                when: width > units.gu(60) && !pageStack.forceSinglePage
+                // gu(80) is standard value. Would prefer not to type it in,
+                // but can't have !forceSinglePage as the only value here.
+                when: width > units.gu(80) && !pageStack.forceSinglePage
                 PageColumn {
-                    minimumWidth: units.gu(30)
-                    maximumWidth: units.gu(30)
-                    preferredWidth: units.gu(30)
+                    minimumWidth: units.gu(35)
+                    maximumWidth: units.gu(35)
+                    preferredWidth: units.gu(35)
                 }
                 PageColumn {
                     fillWidth: true
@@ -252,6 +255,10 @@ MainView {
                 }
             }
         ]
+
+        function clear() {
+            pageStack.removePages(pageStack.primaryPage);
+        }
 
         Component {
             id: intro_page_component

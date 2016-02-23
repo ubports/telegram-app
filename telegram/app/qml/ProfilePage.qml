@@ -113,13 +113,13 @@ Page {
     }
 
     function addMember() {
-        var properties = {
+        // TODO this is failing: Ubuntu/Components/1.3/tree.js:53: Only root node has parentNode null.
+        pageStack.addPageToNextColumn(profile_page, contacts_page_component, {
             telegram: telegram,
             state: "add-to-group",
             groupChatId: dialogId,
             groupChatTitle: details_item.text
-        };
-        pageStack.push(contacts_page_component, properties);
+        });
     }
 
     function changeGroupPhoto() {
@@ -190,7 +190,7 @@ Page {
         dialog: profile_page.dialog
 
         onClicked: {
-            pageStack.push(preview_page_component,
+            pageStack.addPageToNextColumn(profile_page, preview_page_component,
                     { "title": details_item.title, "photoPreviewSource": path });
         }
     }
@@ -642,7 +642,7 @@ Page {
                     text: i18n.tr("Info")
                     visible: (user.id != telegram.me)
                     onTriggered: {
-                        pageStack.push(profile_page_component, {
+                        pageStack.addPageToNextColumn(profile_page, profile_page_component, {
                                 telegram: profile_page.telegram,
                                 dialog: telegramObject.fakeDialogObject(user.id, false)
                         });

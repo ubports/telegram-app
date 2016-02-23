@@ -19,7 +19,7 @@ Rectangle {
     color: "white"
 
     property Dialog currentDialog
-    property real minimumHeight: Cutegram.currentTheme.sendFrameHeight*Devices.density
+    // property real minimumHeight: Cutegram.currentTheme.sendFrameHeight*Devices.density
 
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
 
