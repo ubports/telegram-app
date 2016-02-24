@@ -54,8 +54,8 @@ Item {
         if(file_handler.progressType == FileHandler.TypeProgressUpload)
             return 0
         // Prevent empty website image preview.
-        if (fileLocation.length == 0)
-            return 0
+        if (media_img.source == 0)
+            return 0;
 
         switch( file_handler.targetType )
         {
@@ -92,8 +92,8 @@ Item {
         if(file_handler.progressType == FileHandler.TypeProgressUpload)
             return 0
         // Prevent empty website image preview.
-        if (fileLocation.length == 0)
-            return 0
+        if (media_img.source == 0)
+            return 0;
 
         switch( file_handler.targetType )
         {
