@@ -53,7 +53,9 @@ ListItemWithActions {
     property alias maximumMediaWidth: message_media.maximumMediaWidth
 
     property alias isSticker: message_media.isSticker
-    property alias hasMedia: message_media.hasMedia
+    // A link may cause website image preview to show,
+    // but this should not disable showing of message text.
+    property bool hasMedia: message_media.hasMedia && !hasLink
     property alias mediaLocation: message_media.location
 
     signal dialogRequest(variant dialog);
@@ -85,14 +87,13 @@ ListItemWithActions {
         }
         layoutDirection: message.out ? Qt.RightToLeft : Qt.LeftToRight
         visible: !action_item.hasAction
-        spacing: units.dp(4)
+        spacing: units.dp(3)
 
         Avatar {
             id: contact_image
             anchors {
+                top: frame_row.top
                 leftMargin: units.dp(4)
-                bottom: frame_row.bottom
-                // verticalCenter: parent.verticalCenter
             }
             height: units.gu(5)
             visible: message_item.visibleNames && !message.out
@@ -105,8 +106,9 @@ ListItemWithActions {
         }
 
         Item {
-            height: units.gu(1)
-            width: units.gu(1)
+            // Just spacing in a row.
+            height: units.dp(1)
+            width: units.dp(1)
         }
 
         Item {
@@ -124,21 +126,6 @@ ListItemWithActions {
                 Item {
                     anchors.fill: parent
                     anchors.margins: 20*Devices.density
-
-                    Rectangle {
-                        id: pointer_rect
-                        height: units.gu(1)
-                        width: height
-                        anchors.horizontalCenter: message.out ? parent.right : parent.left
-                        // anchors.verticalCenter: parent.verticalCenter
-                        // anchors.verticalCenter: contact_image.verticalCenter
-                        y: contact_image.visible
-                                ? (contact_image.y + contact_image.height / 2)
-                                : back_rect_layer.y + back_rect_layer.height - units.gu(2.6)
-                        color: back_rect_layer.color
-                        transformOrigin: Item.Center
-                        rotation: 45
-                    }
 
                     Rectangle {
                         id: back_rect_layer
@@ -223,6 +210,7 @@ ListItemWithActions {
                     id: message_media
                     message: message_item.message
                     visible: message_media.hasMedia && !uploading
+                    showStatus: !hasLink
 
                     onMediaClicked: message_item.previewRequest(type, path)
                 }

@@ -4,13 +4,16 @@ import TelegramQML 1.0
 import QtGraphicalEffects 1.0
 
 Item {
-    width: 200
-    height: 200
+    id: root
+    width: parent.width
+    height: 3 * 32*Devices.density + back_frame.anchors.topMargin
     visible: fmodel.count != 0
     clip: true
 
     property Telegram telegram
     property alias keyword: fmodel.keyword
+
+    signal selected();
 
     TagFilterModel {
         id: fmodel
@@ -35,10 +38,7 @@ Item {
             id: back_frame
             anchors.fill: parent
             anchors.topMargin: 8*Devices.density
-            anchors.leftMargin: 8*Devices.density
-            anchors.rightMargin: 8*Devices.density
             color: Cutegram.currentTheme.sendFrameColor
-            radius: 4*Devices.density
 
             Rectangle {
                 width: parent.width
@@ -80,6 +80,14 @@ Item {
                 maximumLineCount: 1
                 text: tag
                 color: Cutegram.currentTheme.sendFrameFontColor
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    listv.currentIndex = index;
+                    root.selected();
+                }
             }
         }
     }

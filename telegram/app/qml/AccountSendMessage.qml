@@ -181,6 +181,52 @@ Rectangle {
             }
             oldLength = length;
         }
+        onDisplayTextChanged: {
+            var lastAtPosition = displayText.lastIndexOf("@");
+            var lastHashPosition = displayText.lastIndexOf("#");
+            var lastSpacePosition = displayText.lastIndexOf(" ");
+            if (!privates.suggestionItem && lastAtPosition == lastSpacePosition + 1) {
+                privates.suggestionItem = username_sgs_component.createObject(send_msg)
+                privates.suggestionItem.y = -privates.suggestionItem.height
+                privates.suggestionItem.objectName = "username";
+
+                privates.suggestionItem.selected.connect(function() {
+                    var uId = privates.suggestionItem.currentUserId()
+                    var userObj = telegramObject.user(uId)
+                    var userName = userObj.username
+
+                    txt.selectWord()
+                    txt.remove(txt.selectionStart, txt.selectionEnd)
+                    txt.insert(txt.cursorPosition, userName + " ")
+                    txt.deselect()
+
+                    privates.suggestionItem.destroy()
+                })
+            } else if (!privates.suggestionItem && lastHashPosition == lastSpacePosition + 1) {
+                privates.suggestionItem = tags_sgs_component.createObject(send_msg)
+                privates.suggestionItem.y = -privates.suggestionItem.height
+                privates.suggestionItem.objectName = "tag";
+
+                privates.suggestionItem.selected.connect(function() {
+                    var tag = privates.suggestionItem.currentTag()
+
+                    txt.selectWord()
+                    txt.remove(txt.selectionStart, txt.selectionEnd)
+                    txt.insert(txt.cursorPosition, tag + " ")
+                    txt.deselect()
+
+                    privates.suggestionItem.destroy()
+                })
+
+            } else if (privates.suggestionItem &&
+                       ((privates.suggestionItem.objectName === "username" && (lastSpacePosition > lastAtPosition || lastAtPosition == -1)) ||
+                       (privates.suggestionItem.objectName === "tag" && (lastSpacePosition > lastHashPosition || lastHashPosition == -1)))
+                       ) {
+                privates.suggestionItem.destroy();
+            } else if (privates.suggestionItem) {
+                check_suggestion.restart();
+            }
+        }
     }
 
     MediaImport {
