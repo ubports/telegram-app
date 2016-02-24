@@ -53,7 +53,9 @@ ListItemWithActions {
     property alias maximumMediaWidth: message_media.maximumMediaWidth
 
     property alias isSticker: message_media.isSticker
-    property alias hasMedia: message_media.hasMedia
+    // A link may cause website image preview to show,
+    // but this should not disable showing of message text.
+    property bool hasMedia: message_media.hasMedia && !hasLink
     property alias mediaLocation: message_media.location
 
     signal dialogRequest(variant dialog);
@@ -223,6 +225,7 @@ ListItemWithActions {
                     id: message_media
                     message: message_item.message
                     visible: message_media.hasMedia && !uploading
+                    showStatus: !hasLink
 
                     onMediaClicked: message_item.previewRequest(type, path)
                 }

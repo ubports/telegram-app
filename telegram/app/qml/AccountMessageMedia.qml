@@ -27,6 +27,8 @@ Item {
 
     property alias isSticker: file_handler.isSticker
 
+    property bool showStatus: true
+
     property variant mediaPlayer
     property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     onIsAudioMessageChanged: {
@@ -50,6 +52,9 @@ Item {
         if(mediaPlayer)
             return mediaPlayer.width
         if(file_handler.progressType == FileHandler.TypeProgressUpload)
+            return 0
+        // Prevent empty website image preview.
+        if (fileLocation.length == 0)
             return 0
 
         switch( file_handler.targetType )
@@ -85,6 +90,9 @@ Item {
         if(mediaPlayer)
             return mediaPlayer.height
         if(file_handler.progressType == FileHandler.TypeProgressUpload)
+            return 0
+        // Prevent empty website image preview.
+        if (fileLocation.length == 0)
             return 0
 
         switch( file_handler.targetType )
@@ -300,7 +308,7 @@ Item {
             right: parent.right
             rightMargin: units.dp(4)
         }
-        visible: file_handler.targetType != FileHandler.TypeTargetMediaAudio
+        visible: msg_media.showStatus && file_handler.targetType != FileHandler.TypeTargetMediaAudio
 
         message: msg_media.message
         hasMedia: msg_media.hasMedia
