@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
 import Ubuntu.Components 1.3 as UC
 import Ubuntu.Content 0.1
 import AsemanTools.Controls 1.0 as Controls
@@ -88,6 +89,18 @@ Rectangle {
         }
     }
 
+    Connections {
+        id: sticker_installer
+        target: telegramObject
+        onDocumentStickerRecieved: {
+            if(document != doc)
+                return
+
+            PopupUtils.open(Qt.resolvedUrl("InstallStickerDialog.qml"), acc_msg_list, {telegram: telegramObject, stickerSet: set.shortName})
+        }
+        property Document doc
+    }
+
     // Timer {
     //     id: refresh_timer
     //     repeat: true
@@ -147,6 +160,11 @@ Rectangle {
     Timer {
         id: add_anim_disabler
         interval: 500
+    }
+
+    StickersModel {
+        id: stickers_model
+        telegram: telegramObject
     }
 
     MultipleSelectionListView {
@@ -227,11 +245,21 @@ Rectangle {
                     onTriggered: Clipboard.push(item.message)
                 },
                 Action {
+                    iconName: "info"
+                    text: i18n.tr("Sticker Pack info")
+                    visible: message_item.isSticker && telegramObject.documentStickerId(message_item.media.document) !== 0
+                    onTriggered: {
+                        sticker_installer.doc = message_item.media.document
+                        telegramObject.getStickerSet(sticker_installer.doc)
+                    }
+                },
+                Action {
                     iconName: "next"
                     text: i18n.tr("Forward")
                     visible: enchat == telegramObject.nullEncryptedChat
                     onTriggered: forwardMessages([message.id])
                 }
+
             ]
 
             selected: mlist.isSelected(message_item)

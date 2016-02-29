@@ -15,6 +15,7 @@ class EmoticonsModel : public QAbstractListModel
     Q_PROPERTY(int count READ count NOTIFY countChanged)
     Q_PROPERTY(Emojis* emojis READ emojis WRITE setEmojis NOTIFY emojisChanged)
     Q_PROPERTY(QList<QUrl> stickerSubPaths READ stickerSubPaths WRITE setStickerSubPaths NOTIFY stickerSubPathsChanged)
+    Q_PROPERTY(QList<QUrl> keysIcons READ keysIcons NOTIFY keysIconsChanged)
     Q_PROPERTY(QStringList keys READ keys NOTIFY keysChanged)
     Q_PROPERTY(QString currentKey READ currentKey WRITE setCurrentKey NOTIFY currentKeyChanged)
     Q_PROPERTY(int currentKeyIndex READ currentKeyIndex NOTIFY currentKeyIndexChanged)
@@ -43,6 +44,7 @@ public:
 
     QStringList keys() const;
     QStringList recentKeys() const;
+    QList<QUrl> keysIcons() const;
 
     void setCurrentKey(const QString &key);
     QString currentKey() const;
@@ -69,6 +71,7 @@ signals:
     void currentKeyChanged();
     void currentKeyIndexChanged();
     void recentKeysChanged();
+    void keysIconsChanged();
 
 private:
     void refreshKeys();

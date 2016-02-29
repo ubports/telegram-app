@@ -9,6 +9,7 @@ import AsemanTools.Controls.Styles 1.0 as Styles
 import Ubuntu.Content 1.1
 import AsemanTools 1.0
 import TelegramQML 1.0
+import Cutegram 1.0
 
 import "components"
 
@@ -24,7 +25,6 @@ Rectangle {
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
 
     signal accepted( string text, int inReplyTo )
-    signal emojiRequest(real x, real y)
     signal copyRequest()
 
     function checkForSharedContent() {
@@ -83,6 +83,7 @@ Rectangle {
         property Dialog lastDialog: telegramObject.nullDialog
         property variant suggestionItem
         property variant attachmentItem
+        property variant emojiItem
     }
 
     Timer {
@@ -144,7 +145,7 @@ Rectangle {
 
         anchors {
             left: parent.left
-            right: send_button_box.left
+            right: sticker_button_box.left
             bottom: parent.bottom
             margins: units.gu(1)
             rightMargin: 0
@@ -227,6 +228,11 @@ Rectangle {
                 check_suggestion.restart();
             }
         }
+        onFocusChanged: {
+            if (focus && privates.emojiItem) {
+                privates.emojiItem.destroy();
+            }
+        }
     }
 
     MediaImport {
@@ -240,6 +246,42 @@ Rectangle {
             } else {
                 send_files_timer.send(peerId, urls, true, false)
             }
+        }
+    }
+
+    Item {
+        id: sticker_button_box
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            right: send_button_box.left
+        }
+        width: units.gu(6)
+
+        AbstractButton {
+            anchors.fill: parent
+            activeFocusOnPress: false
+            onClicked: {
+                if (!telegramObject.connected || !NetworkingStatus.online) return
+
+                if (!privates.emojiItem) {
+                    txt.focus = false;
+                    privates.emojiItem = emoticons_component.createObject(send_msg)
+                    privates.emojiItem.y = -privates.emojiItem.height
+                } else {
+                    privates.emojiItem.destroy()
+                }
+            }
+        }
+
+        Image {
+            id: sticker_image
+            anchors.centerIn: parent
+            height: units.dp(22)
+            width: height
+            sourceSize: Qt.size(width, height)
+            fillMode: Image.PreserveAspectFit
+            source: Qt.resolvedUrl("qrc:/qml/files/emojis.svg")
         }
     }
 
@@ -449,6 +491,39 @@ Rectangle {
             onPhotoRequested: requestMedia(ContentType.Pictures)
             onVideoRequested: requestMedia(ContentType.Videos)
             onFileRequested: requestMedia(ContentType.All)
+        }
+    }
+
+    StickerFileManager {
+        id: sticker_file_manager
+        telegram: telegramObject
+    }
+
+    Component {
+        id: emoticons_component
+        Emoticons {
+            id: emoticons
+            telegram: telegramObject
+            onEmojiSelected: {
+                send_msg.insertText(code)
+                emoticons.destroy();
+            }
+            onStickerSelected: {
+                var dId = currentDialog.peer.userId
+                if(!dId)
+                    dId = currentDialog.peer.chatId
+
+                sticker_file_manager.sendSticker(dId, path)
+                emoticons.destroy();
+            }
+            onStickerDocumentSelected: {
+                var dId = currentDialog.peer.userId
+                if(!dId)
+                    dId = currentDialog.peer.chatId
+
+                telegramObject.forwardDocument(dId, document)
+                emoticons.destroy();
+            }
         }
     }
 }
