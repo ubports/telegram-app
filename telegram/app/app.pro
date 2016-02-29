@@ -25,7 +25,8 @@ SOURCES += main.cpp \
     upgradev2.cpp \
     cutegramenums.cpp \
     textemojiwrapper.cpp \
-    emoticonsmodel.cpp
+    emoticonsmodel.cpp \
+    stickerfilemanager.cpp
 
 include(qmake/qtcAddDeployment.pri)
 include(asemantools/asemantools.pri)
@@ -41,7 +42,8 @@ HEADERS += \
     cutegramenums.h \
     themeitem.h \
     textemojiwrapper.h \
-    emoticonsmodel.h
+    emoticonsmodel.h \
+    stickerfilemanager.h
 
 RESOURCES += telegram.qrc
 

@@ -10,11 +10,21 @@
 #include <QSettings>
 #include <QDebug>
 
+// The Emoji Model also holds standard stickers. In Ubuntu we don't really
+// want emojis, because emojis are handled by the on screen keyboard but
+// we do want to have the stickers from this model.
+// We might want to enable standard emojis here for the desktop use case
+// where we don't have an on screen keyboard. Also for compatibility with
+// upstream, the emoji code has been kept but disabled by the following
+// define.
+#define ONLY_STICKERS
+
 class EmoticonsModelPrivate
 {
 public:
     QStringList list;
     QStringList keys;
+    QList<QUrl> keysIcons;
     QHash<QString,QString> keysPath;
 
     QString currentKey;
@@ -73,6 +83,11 @@ QStringList EmoticonsModel::keys() const
 QStringList EmoticonsModel::recentKeys() const
 {
     return AsemanApplication::settings()->value("General/recentEmojis", QVariant::fromValue<QStringList>(p->emojis->keys().mid(0,20))).toStringList();
+}
+
+QList<QUrl> EmoticonsModel::keysIcons() const
+{
+    return p->keysIcons;
 }
 
 void EmoticonsModel::setCurrentKey(const QString &key)
@@ -165,6 +180,7 @@ int EmoticonsModel::count() const
 void EmoticonsModel::refresh()
 {
     QStringList newList;
+#ifndef ONLY_STICKERS
     const int index = currentKeyIndex();
     if(index == 0) // is recent
     {
@@ -183,6 +199,7 @@ void EmoticonsModel::refresh()
         p->type = EmoticonEmoji;
     }
     else // is sticker
+#endif
     {
         const QString key = currentKey();
         const QString &path = p->keysPath.value(key);
@@ -209,9 +226,15 @@ void EmoticonsModel::refreshKeys()
 {
     p->keys.clear();
     p->keysPath.clear();
+    p->keysIcons.clear();
 
+#ifndef ONLY_STICKERS
     p->keys.append("Recent");
     p->keys.append("Emojis");
+
+    p->keysIcons << QUrl("qrc:/qml/files/emoticons-recent.png");
+    p->keysIcons << QUrl("qrc:/qml/files/emoticons-emoji.png");
+#endif
 
     foreach(const QUrl &subPathUrl, p->stickerSubPaths)
     {
@@ -222,13 +245,22 @@ void EmoticonsModel::refreshKeys()
             if(p->keys.contains(sticker))
                 continue;
 
+#ifdef ONLY_STICKERS
+            if (sticker.toLower() == "personal") continue;
+#endif
+
             const QString stickerPath = subPath + "/" + sticker;
             p->keys << sticker;
             p->keysPath[sticker] = stickerPath;
+            if(sticker.toLower() == "personal")
+                p->keysIcons << QUrl("qrc:/qml/files/emoticons-personal.png");
+            else
+                p->keysIcons << QUrl("qrc:/qml/files/emoticons-telegram.png");
         }
     }
 
     emit keysChanged();
+    emit keysIconsChanged();
 }
 
 void EmoticonsModel::changed(const QStringList &list)

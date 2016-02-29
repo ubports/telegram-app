@@ -3,12 +3,9 @@
         <file>database/database.sqlite</file>
         <file>database/profiles.sqlite</file>
         <file>database/userdata.sqlite</file>
-
         <file>images/telegram.png</file>
         <file>images/telegram.svg</file>
-
         <file>qml/telegram.qml</file>
-
         <file>qml/AccountAddContactHeader.qml</file>
         <file>qml/AccountContactsPage.qml</file>
         <file>qml/AccountDialogList.qml</file>
@@ -40,7 +37,6 @@
         <file>qml/MessageReplyItem.qml</file>
         <file>qml/ProfilePage.qml</file>
         <file>qml/TagSuggestionMenu.qml</file>
-
         <file>qml/components/AccountPanel.qml</file>
         <file>qml/components/AccountPanelItem.qml</file>
         <file>qml/components/AttachPanel.qml</file>
@@ -66,17 +62,13 @@
         <file>qml/components/TelegramContactsListItem.qml</file>
         <file>qml/components/TelegramHeader.qml</file>
         <file>qml/components/TelegramPage.qml</file>
-
         <file>qml/components/listitems/ListItemWithActions.qml</file>
         <file>qml/components/listitems/ListItemWithActionsCheckBox.qml</file>
-
         <file>qml/js/avatar.js</file>
         <file>qml/js/ba-linkify.js</file>
         <file>qml/js/colors.js</file>
         <file>qml/js/time.js</file>
         <file>qml/js/version.js</file>
-
-
         <file>qml/files/attach_document.png</file>
         <file>qml/files/attach_gallery.png</file>
         <file>qml/files/attach_location.png</file>
@@ -140,18 +132,22 @@
         <file>qml/files/user_red.png</file>
         <file>qml/files/user_violet.png</file>
         <file>qml/files/user_yellow.png</file>
-
         <file>qml/files/android/attach_camera.png</file>
         <file>qml/files/android/attach_gallery.png</file>
         <file>qml/files/android/attach_video.png</file>
         <file>qml/files/android/attach_file.png</file>
         <file>qml/files/android/attach_hide1.png</file>
         <file>qml/files/android/attach_hide2.png</file>
-
         <file>qml/ui/dialogs/ConfirmationDialog.qml</file>
         <file>qml/PickerPage.qml</file>
         <file>qml/PreviewPage.qml</file>
         <file>qml/UserNameSuggestionMenu.qml</file>
+        <file>qml/Emoticons.qml</file>
+        <file>qml/files/emoticons-emoji.png</file>
+        <file>qml/files/emoticons-personal.png</file>
+        <file>qml/files/emoticons-recent.png</file>
+        <file>qml/files/emoticons-telegram.png</file>
+        <file>qml/files/emojis.svg</file>
+        <file>qml/InstallStickerDialog.qml</file>
     </qresource>
 </RCC>
-

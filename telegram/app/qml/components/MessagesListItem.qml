@@ -56,6 +56,7 @@ ListItemWithActions {
     // A link may cause website image preview to show,
     // but this should not disable showing of message text.
     property bool hasMedia: message_media.hasMedia && !hasLink
+    property alias media: message_media.media
     property alias mediaLocation: message_media.location
 
     signal dialogRequest(variant dialog);
