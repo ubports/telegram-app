@@ -228,48 +228,51 @@ Rectangle {
             visibleNames: isChat
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
 
-            leftSideActions: [
-                Action {
-                    iconName: "delete"
-                    text: i18n.tr("Delete")
-                    onTriggered: telegram.deleteMessages([item.id])
-                }
-            ]
-
-            rightSideActions: [
-                // TODO resend action
-                Action {
-                    iconName: "edit-copy"
-                    text: i18n.tr("Copy")
-                    visible: !message_item.hasMedia
-                    onTriggered: Clipboard.push(item.message)
-                },
-                Action {
-                    iconName: "info"
-                    text: i18n.tr("Sticker Pack info")
-                    visible: message_item.isSticker && telegramObject.documentStickerId(message_item.media.document) !== 0
-                    onTriggered: {
-                        sticker_installer.doc = message_item.media.document
-                        telegramObject.getStickerSet(sticker_installer.doc)
+            leadingActions: ListItemActions {
+                actions: [
+                    Action {
+                        iconName: "delete"
+                        text: i18n.tr("Delete")
+                        onTriggered: telegram.deleteMessages([item.id])
                     }
-                },
-                Action {
-                    iconName: "next"
-                    text: i18n.tr("Forward")
-                    visible: enchat == telegramObject.nullEncryptedChat
-                    onTriggered: forwardMessages([message.id])
-                }
+                ]
+            }
 
-            ]
+            trailingActions: ListItemActions {
+                // TODO resend action
+                actions: [
+                    Action {
+                        iconName: "edit-copy"
+                        text: i18n.tr("Copy")
+                        visible: !message_item.hasMedia
+                        onTriggered: Clipboard.push(item.message)
+                    },
+                    Action {
+                        iconName: "info"
+                        text: i18n.tr("Sticker Pack info")
+                        visible: message_item.isSticker && telegramObject.documentStickerId(message_item.media.document) !== 0
+                        onTriggered: {
+                            sticker_installer.doc = message_item.media.document
+                            telegramObject.getStickerSet(sticker_installer.doc)
+                        }
+                    },
+                    Action {
+                        iconName: "next"
+                        text: i18n.tr("Forward")
+                        visible: enchat == telegramObject.nullEncryptedChat
+                        onTriggered: forwardMessages([message.id])
+                    }
+                ]
+            }
 
             selected: mlist.isSelected(message_item)
-            selectionMode: mlist.isInSelectionMode
+            selectMode: mlist.isInSelectionMode
 
             onDialogRequest: acc_msg_list.dialogRequest(dialog)
             onTagSearchRequest: acc_msg_list.tagSearchRequest(tag)
             onMessageFocusRequest: focusOnMessage(msgId)
 
-            onItemPressAndHold: {
+            onPressAndHold: {
                 mlist.clearSelection();
                 mlist.startSelection();
                 if (mlist.isInSelectionMode) {
@@ -277,7 +280,7 @@ Rectangle {
                 }
             }
 
-            onItemClicked: {
+            onClicked: {
                 console.log("on item clicked");
                 if (mlist.isInSelectionMode) {
                     if (selected) {

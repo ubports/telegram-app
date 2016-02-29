@@ -65,7 +65,7 @@ UCP.Dialog {
 
     UC.Button {
         text: i18n.tr("Install")
-        color: UT.UbuntuColors.blue
+        color: UC.UbuntuColors.blue
         onClicked: {
             telegram.installStickerSet(root.stickerSet)
             PopupUtils.close(root)
@@ -73,7 +73,7 @@ UCP.Dialog {
     }
     UC.Button {
         text: i18n.tr("Close")
-        color: UT.UbuntuColors.orange
+        color: UC.UbuntuColors.orange
         onClicked: PopupUtils.close(root)
     }
 }
