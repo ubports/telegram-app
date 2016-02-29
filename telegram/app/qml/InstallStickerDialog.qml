@@ -1,11 +1,11 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3 as UT
-import Ubuntu.Components.Popups 1.3 as UTP
+import Ubuntu.Components 1.3 as UC
+import Ubuntu.Components.Popups 1.3 as UCP
 import AsemanTools 1.0
 import TelegramQML 1.0
 import Cutegram 1.0
 
-UTP.Dialog {
+UCP.Dialog {
     id: root
     title: stickerSet
 
@@ -63,7 +63,7 @@ UTP.Dialog {
         }
     }
 
-    UT.Button {
+    UC.Button {
         text: i18n.tr("Install")
         color: UT.UbuntuColors.blue
         onClicked: {
@@ -71,7 +71,7 @@ UTP.Dialog {
             PopupUtils.close(root)
         }
     }
-    UT.Button {
+    UC.Button {
         text: i18n.tr("Close")
         color: UT.UbuntuColors.orange
         onClicked: PopupUtils.close(root)

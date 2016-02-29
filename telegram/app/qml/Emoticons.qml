@@ -148,10 +148,7 @@ Item {
                 id: sticker_handler
                 target: model.document
                 telegram: root.telegram
-                Component.onCompleted: {
-                    print("******* have thumb", sticker_handler.thumbPath)
-//                    download()
-                }
+                Component.onCompleted: download()
             }
 
             onClicked: {
