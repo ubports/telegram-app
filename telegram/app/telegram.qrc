@@ -62,8 +62,6 @@
         <file>qml/components/TelegramContactsListItem.qml</file>
         <file>qml/components/TelegramHeader.qml</file>
         <file>qml/components/TelegramPage.qml</file>
-        <file>qml/components/listitems/ListItemWithActions.qml</file>
-        <file>qml/components/listitems/ListItemWithActionsCheckBox.qml</file>
         <file>qml/js/avatar.js</file>
         <file>qml/js/ba-linkify.js</file>
         <file>qml/js/colors.js</file>
