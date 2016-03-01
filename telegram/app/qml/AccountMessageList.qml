@@ -297,7 +297,6 @@ Rectangle {
                     }
                 }
 
-                mouse.accepted = true;
                 message_item.click();
             }
 
