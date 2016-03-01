@@ -15,8 +15,7 @@ ListItem {
     width: 100
     height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
-    divider.colorTo: "transparent"
-    divider.colorFrom: "transparent"
+    divider.visible: false
 
     property real messageFrameX: back_rect.x
     property real messageFrameY: back_rect.y
