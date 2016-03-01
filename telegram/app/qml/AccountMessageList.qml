@@ -248,6 +248,13 @@ Rectangle {
                         onTriggered: Clipboard.push(item.message)
                     },
                     Action {
+                        iconName: "mail-reply"
+                        text: i18n.tr("Reply")
+                        onTriggered: {
+                            acc_msg_list.replyToRequest(message.id);
+                        }
+                    },
+                    Action {
                         iconName: "info"
                         text: i18n.tr("Sticker Pack info")
                         visible: message_item.isSticker && telegramObject.documentStickerId(message_item.media.document) !== 0
