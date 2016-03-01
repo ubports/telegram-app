@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Components 1.3 as UC
 import Ubuntu.Components.Popups 0.1
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import Ubuntu.Connectivity 1.0
@@ -369,8 +370,8 @@ Rectangle {
 //        if(privates.suggestionItem)
 //            privates.suggestionItem.destroy()
 
-        smsg.accepted(msg, 0);//messageReply.replyMessage? messageReply.replyMessage.id : 0)
-//        messageReply.discard()
+        smsg.accepted(msg, messageReply.replyMessage? messageReply.replyMessage.id : 0)
+        messageReply.discard()
         txt.text = ""
     }
 
@@ -403,25 +404,28 @@ Rectangle {
         Rectangle {
             anchors.fill: parent
             color: smsg.color
-            opacity: 0.8
         }
 
         MessageReplyItem {
             id: messageReply
             telegram: telegramObject
+            maximumWidth: parent.width - units.gu(6)
 
             function discard() {
                 messageReply.replyMessage = messageReply.message
             }
         }
 
-        Button {
-            width: height
+        AbstractButton {
+            width: units.gu(4)
+            height: width
             anchors.right: parent.right
-            anchors.rightMargin: 4*Devices.density
+            anchors.rightMargin: units.gu(1)
             anchors.verticalCenter: parent.verticalCenter
-            //iconSource: "files/close.png"
-            text: i18n.tr("Close")
+            Icon {
+                anchors.fill: parent
+                name: "close"
+            }
             onClicked: messageReply.discard()
         }
     }

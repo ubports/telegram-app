@@ -37,7 +37,7 @@ Item {
             id: reply_separator
             width: units.dp(2)
             height: parent.height
-            color: message.out ? Colors.dark_green : Colors.telegram_blue
+            color: !message || message.out ? UbuntuColors.green : UbuntuColors.blue
         }
 
         Column {
@@ -51,7 +51,6 @@ Item {
                 // font.family: AsemanApp.globalFont.family
                 fontSize: "small"
                 font.weight: Font.Normal
-                // opacity: 0.8
                 color: message.out ? Colors.dark_green : Colors.telegram_blue
 //                    if(!replyMessage && (!message || message.out))
 //                        return Cutegram.currentTheme.messageOutgoingNameColor
@@ -172,7 +171,9 @@ Item {
                         return ""
 
                     var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
-                    return emojis.textToEmojiText(replyMsg.message,16,true)
+                    // We use emojis in the font for now, no need to replace them
+                    //return emojis.textToEmojiText(replyMsg.message,16,true)
+                    return replyMsg.message
                 }
 
                 property real htmlWidth: Cutegram.htmlWidth(text)
