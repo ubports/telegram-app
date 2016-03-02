@@ -113,8 +113,7 @@ Page {
     }
 
     function addMember() {
-        // TODO this is failing: Ubuntu/Components/1.3/tree.js:53: Only root node has parentNode null.
-        pageStack.addPageToNextColumn(profile_page, contacts_page_component, {
+        pageStack.addPageToNextColumn(pageStack.primaryPage, contacts_page_component, {
             telegram: telegram,
             state: "add-to-group",
             groupChatId: dialogId,

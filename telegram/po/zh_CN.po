@@ -7,116 +7,116 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-09 12:51+0100\n"
+"POT-Creation-Date: 2016-03-02 18:42+0800\n"
 "PO-Revision-Date: 2015-09-22 10:54+0000\n"
 "Last-Translator: Michał Karnicki <michal.karnicki@canonical.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
-"Language: \n"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "添加到联系人"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:22
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
 msgstr "新建群组"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
 msgstr "添加到群"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:28
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
 msgstr "联系人"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:40
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:92
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:40
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
 msgstr "搜索"
 
 #. TRANSLATORS: As in: add new contact
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:46
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:99
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:46
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
 msgstr "添加"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:57
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:128
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:57
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:128
 msgid "Back"
 msgstr ""
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:74
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:121
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:357
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:385
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:301
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:121
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:357
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:385
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:301
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
 msgstr "确定"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:203
 msgid "Chat title"
 msgstr "聊天标题"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:316
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:30
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:316
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
 msgstr "添加联系人"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:319
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
 msgstr "从电话簿"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:328
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
 msgstr "输入详情"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:336
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:395
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:312
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:336
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:395
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:312
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "取消"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:297
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:298
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:570
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:101
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:370
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:295
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:298
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:17
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:570
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:101
+#: /home/jin/Works/Applications/Telegram/converged/telegram/build/app/telegram.desktop.h:1
+#: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:402
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -128,578 +128,576 @@ msgstr ""
 "转发的最新消息数:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:463
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
 msgstr "联系人已导入"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:466
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
 msgstr "无联系人被导入"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:473
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
 msgstr ""
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:476
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr ""
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:95
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:95
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "转发消息给 %1？"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:107
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
 msgstr "群组信息"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
 msgstr "档案信息"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:41
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
 msgstr "全选"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:225
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:53
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
 msgstr "复制"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:231
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:60
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
 msgstr "转发"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:216
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:67
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
 msgstr "删除"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:57
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:57
 #, qt-format
 msgid "%1 created a secret chat"
 msgstr ""
 
 #. TRANSLATORS: %1 indicates who created the group chat titled %2.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:60
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "%1 created the group \"%2\""
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:67
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
 msgid "%1 added %2 to group"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:76
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:76
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 离开群组"
 
 #. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:79
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:206
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:79
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%1 移除 %2"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:84
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:84
 #, qt-format
 msgid "%1 changed group name to \"%2\""
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who changed the gruop phot.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:89
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:89
 #, qt-format
 msgid "%1 changed group photo."
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who deleted the group photo.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:94
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "%1 deleted group photo"
 msgstr ""
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:129
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:197
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:369
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:381
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:381
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:413
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:413
 msgid "Accept"
 msgstr ""
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:427
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:427
 msgid "Reject"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:18
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:21
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:50
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:18
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:21
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:50
 msgid "Save"
 msgstr "保存"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:23
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:30
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:23
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
 msgstr "编辑名称"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:34
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
 msgstr "需要名字。"
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:52
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:132
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:52
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
 msgstr "名（必须）"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:71
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:148
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:71
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
 msgstr "姓（可选）"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:300
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:298
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
 msgstr "连接中..."
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:304
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:326
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:346
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:302
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:324
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:344
 msgid "Waiting for network..."
 msgstr ""
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:323
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:343
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:321
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:341
 msgid "Select Chat"
 msgstr ""
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:158
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:158
 msgid "Type message"
 msgstr "输入消息"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:336
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:382
 msgid "Close"
 msgstr ""
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:23
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:45
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:23
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
 msgstr "更改照片"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:36
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:102
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:36
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
 msgstr "设置"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:94
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:642
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:87
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:94
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:641
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:89
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "信息"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:100
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:100
 msgid "Phone"
 msgstr ""
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:108
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:61
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:108
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
 msgstr ""
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:115
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:115
 msgid "Messages"
 msgstr "消息"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:120
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:485
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:386
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:120
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:484
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:415
 msgid "Notifications"
 msgstr "通知"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:153
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:153
 msgid "Send by Enter"
 msgstr "按回车发送"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:172
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:172
 msgid "Support"
 msgstr "支持"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:178
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:178
 msgid "Ask a Question"
 msgstr "提问"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:185
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:111
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:185
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
 msgstr "Telegram FAQ"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:191
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:191
 msgid "Account"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:196
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:196
 msgid "Log out"
 msgstr ""
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:208
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:208
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram Ubuntu版 %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:262
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:239
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:67
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:262
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:238
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:67
 msgid "online"
 msgstr "在线"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:265
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:242
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:70
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:265
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:241
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
 msgstr "最后上线 %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:268
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:245
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:73
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:268
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:244
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:271
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:248
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:76
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:271
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:247
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:274
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:251
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:79
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:274
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:250
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
 msgstr ""
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:277
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:254
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:82
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:277
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:253
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:299
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:299
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:35
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr ""
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:38
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr ""
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:46
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr ""
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:100
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:100
 msgid "Your Username"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:108
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:131
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:131
 msgid "Checking username..."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:139
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:139
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
-"underscores.<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
+"<br />Minimum length is <b>5</b> characters."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:35
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:88
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:35
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:88
 msgid "Done"
 msgstr "完成"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:115
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:115
 msgid "Phone number (required)"
 msgstr "电话号码（必须）"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:184
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:184
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:190
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
 msgstr "邀请加入 Telegram"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:236
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:236
 msgid "Could not add contact"
 msgstr "无法添加联系人"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:256
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:256
 msgid "Please include the country code."
 msgstr "请包含国家代码。"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:258
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:258
 msgid "Number is not a valid phone number"
 msgstr "号码不是一个有效的电话号码"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:7
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:22
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:146
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthenticatePage.qml:7
 msgid "Sign In"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:22
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:146
 msgid "Sign Up"
 msgstr ""
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:29
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:29
 msgid "Invalid phone code"
 msgstr ""
 
 #. TRANSLATORS: Error text for missing first name.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:44
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:44
 msgid "First name is required"
 msgstr "需要名字"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:110
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:110
 msgid "Code"
 msgstr "代码"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:126
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:126
 msgid "First Name"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:135
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:135
 msgid "Last Name"
 msgstr ""
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:157
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:157
 msgid "Resend Code"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:173
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:173
 msgid "Request Call"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:175
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:175
 msgid "Calling, please wait..."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCountriesPage.qml:15
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCountriesPage.qml:15
 msgid "Country Code"
 msgstr ""
 
 #. TRANSLATORS: Placeholder for the phone number field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:61
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:21
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:66
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthenticatePage.qml:61
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:21
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:66
 msgid "Phone Number"
 msgstr "电话号码"
 
 #. TRANSLATORS: Button text right under the phone number text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:78
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthenticatePage.qml:78
 msgid "Log in"
 msgstr ""
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:73
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Number correct?"
 msgstr ""
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPage.qml:142
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:201
 msgid "Start Messaging"
 msgstr "开始发送消息"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:18
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr "欢迎来到<br>快速且安全的聊天时代"
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:22
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "快速"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:23
-msgid ""
-"<b>Telegram</b> delivers messages faster<br> than any other application"
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:23
+msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr "<b>Telegram</b> 传递消息更快<br> 胜于任何其他应用"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:27
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "免费"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:28
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr "<b>Telegram</b> 永久免费。无广告。<br> 没有订阅费用"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:32
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "安全"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:33
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr "<b>Telegram</b> 让您的消息安全<br> 免受黑客攻击"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:37
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "强大的"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:38
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr "<b>Telegram</b> 没有限制<br> 您媒体和聊天的大小"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:42
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "基于云计算"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:43
-msgid ""
-"<b>Telegram</b> lets you access your messages<br> from multiple devices"
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:43
+msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr "<b>Telegram</b> 允许您在多个设备间<br> 访问您的消息"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:47
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "私密的"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:48
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:29
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:29
 #, qt-format
 msgid "From: %1"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:56
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
 msgstr "分享"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:16
 msgid "Contact Info"
 msgstr "联系人信息"
 
 #. TRANSLATORS: Action text to add member to group chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:39
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:39
 msgid "Add member"
 msgstr "添加成员"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:228
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:57
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:227
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr ""
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:231
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:60
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:230
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:60
 #, qt-format
 msgid "%1 members"
 msgstr ""
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:272
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:48
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:271
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:48
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -707,489 +705,489 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:275
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:274
 #, qt-format
 msgid "%1 are typing"
 msgstr ""
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:340
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:339
 msgid "Unknown"
 msgstr "未知"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:350
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:349
 msgid "Mobile"
 msgstr ""
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:402
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:401
 #, qt-format
 msgid "@%1"
 msgstr ""
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:562
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:561
 msgid "Block user"
 msgstr "屏蔽用户"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:629
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:628
 msgid "Remove from group"
 msgstr "从群组中移除"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:165
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:163
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "今天收到的 Telegram 消息: %1"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:166
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:164
 msgid "No Telegram messages received today."
 msgstr "今天没有收到过 Telegram 消息。"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:173
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:171
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "今天发送的 Telegram 消息: %1"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:174
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:172
 msgid "No Telegram messages sent today."
 msgstr "今天没有发送过 Telegram 消息。"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:387
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:416
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:394
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:423
 msgid "Sign in to Ubuntu One"
 msgstr "登录到 Ubuntu One"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:402
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:431
 msgid "Remind me later"
 msgstr "稍后提醒我"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:410
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:439
 msgid "Don't want notifications"
 msgstr "不需要通知"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:136
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:163
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
 msgstr ""
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:86
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
 msgstr "照片"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:97
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
 msgstr "视频"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:108
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
 msgstr "文件"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:34
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "等待用户上线..."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:36
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "加密聊天已请求"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:38
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "加密聊天已创建"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:41
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr ""
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:48
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "禁用"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:51
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
 msgstr[0] "%1秒"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:54
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 分"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:57
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 小时"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:60
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 天"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:63
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 周"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:50
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:51
 msgid "Leave chat"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:56
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:57
 msgid "Are you sure you want to leave this chat?"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:66
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Clear history"
 msgstr "清除历史"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:72
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to clear history?"
 msgstr "您确定要清除历史？"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:188
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:51
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:190
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
 msgstr "正在输入..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:205
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:192
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:288
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:276
 msgid "Audio attachment not supported yet ;("
 msgstr ""
 
 #. TRANSLATORS: User status: deleted
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr ""
 
 #. TRANSLATORS: Title of self destruct timer dialog.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
 msgstr "自我销毁定时器"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:11
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:46
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:68
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:11
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:46
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
 msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:14
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:35
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:49
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:14
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:35
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:54
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "今天 %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:57
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "昨天 %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:60
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1 %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:251
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:251
 msgid "HH:mm"
 msgstr ""
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:255
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:255
 msgid "ddd HH:mm"
 msgstr ""
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:259
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:259
 msgid "dd MMM"
 msgstr ""
 
 #. TRANSLATORS: Format string: full date
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:262
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:262
 msgid "dd MMM yy"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:110
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:114
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:118
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:122
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:126
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:130
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:134
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:139
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:144
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:149
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:154
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:159
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:164
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:169
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:174
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:179
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:200
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:179
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:184
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:189
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr ""
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:195
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:211
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:216
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:221
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr ""
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:226
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr ""
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:228
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:234
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:239
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:245
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:239
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr ""
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:244
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:249
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:254
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:259
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:264
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:254
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:259
+#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr ""
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/config.h:24
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr ""
 
 #. TRANSLATORS: call to action: open this application
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:62
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr ""
 
 #. TRANSLATORS: call to action: open this chat
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:86
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:120
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:149
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:86
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:120
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:94
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:58
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:59
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:167
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:184
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:291
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:292
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:293
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr ""
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:301
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:642
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:646
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:650
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:654
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:671
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:681
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:756
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:792
+#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr ""
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr ""
