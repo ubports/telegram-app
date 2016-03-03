@@ -8,6 +8,7 @@ ContactImage {
     height: 62
 
     property FileLocation photoBigLocation: isChat ? chat.photo.photoBig : user.photo.photoBig
+    property FileLocation photoSmallLocation: isChat ? chat.photo.photoSmall : user.photo.photoSmall
 
     signal clicked(string path)
 
@@ -32,6 +33,10 @@ ContactImage {
         cursorShape: Qt.PointingHandCursor
         visible: user.id != telegram.cutegramId
         onClicked: {
+            if (smallFilePath.length == 0) {
+                return;
+            }
+
             if(filePath.length == 0) {
                 loadingPhoto = true
                 telegram.getFile(photoBigLocation)
@@ -42,6 +47,7 @@ ContactImage {
 
         property bool loadingPhoto: false
         property string filePath: photoBigLocation.download.location
+        property string smallFilePath: photoSmallLocation.download.location
 
         onFilePathChanged: {
             if(!loadingPhoto)
