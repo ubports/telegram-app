@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-02 18:42+0800\n"
+"POT-Creation-Date: 2016-03-04 19:40+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -593,7 +593,7 @@ msgid "Number correct?"
 msgstr ""
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:201
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:172
 msgid "Start Messaging"
 msgstr ""
 

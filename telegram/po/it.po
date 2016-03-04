@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-02 18:42+0800\n"
+"POT-Creation-Date: 2016-03-04 19:40+0800\n"
 "PO-Revision-Date: 2015-11-19 09:37+0000\n"
 "Last-Translator: Riccardo <riccardo.dallaglio@outlook.it>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -606,7 +606,7 @@ msgid "Number correct?"
 msgstr "Numero corretto?"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:201
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:172
 msgid "Start Messaging"
 msgstr "Inizia a inviare messaggi"
 

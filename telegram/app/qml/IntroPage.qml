@@ -21,36 +21,6 @@ TelegramPage {
     Layouts {
         id: layouts
         anchors.fill: parent
-        layouts: [
-            ConditionalLayout {
-                name: "wide"
-                when: page.isWide
-                Item {
-                    anchors.fill: parent
-                    ItemLayout {
-                        item: "item_body"
-                        anchors {
-                            top: parent.top
-                            bottom: parent.bottom
-                            left: parent.left
-                            right: parent.horizontalCenter
-                            bottomMargin: 0
-                        }
-                        width: page.width / 2
-                    }
-                    ItemLayout {
-                        item: "item_button"
-                        anchors {
-                            top: parent.top
-                            bottom: parent.bottom
-                            right: parent.right
-                            left: parent.horizontalCenter
-                        }
-                        width: page.width / 2
-                    }
-                }
-            }
-        ]
 
         Item {
             anchors.fill: parent
@@ -61,6 +31,7 @@ TelegramPage {
                     left: parent.left
                     right: parent.right
                     bottom: parent.bottom
+                    bottomMargin: page.isWide ? units.gu(2) : 0
                 }
                 color: Colors.intro_background
 
@@ -183,7 +154,7 @@ TelegramPage {
                     left: parent.left
                     right: parent.right
                     bottom: parent.bottom
-                    bottomMargin: units.gu(4)
+                    bottomMargin: page.isWide ? units.gu(1) : units.gu(4) 
                 }
                 width: page.width
                 height: startMessagingButton.height
