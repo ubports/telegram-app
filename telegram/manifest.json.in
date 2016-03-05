@@ -1,7 +1,7 @@
 {
     "name": "com.ubuntu.telegram",
     "description": "Telegram for Ubuntu Phone",
-    "framework" : "ubuntu-sdk-15.04.1",
+    "framework": "ubuntu-sdk-15.04.3",
     "architecture": "@CLICK_ARCH@",
     "title": "Telegram",
     "hooks": {
@@ -9,7 +9,7 @@
             "account-application": "telegram.application",
             "apparmor": "apparmor-telegram.json",
             "content-hub": "content-hub.json",
-            "desktop":  "telegram.desktop",
+            "desktop": "telegram.desktop",
             "urls": "urls.json"
         },
         "push": {
@@ -24,4 +24,3 @@
     "version": "2.0.8.0",
     "maintainer": "Ubuntu Telegram team <libqtelegram-team@lists.launchpad.net>"
 }
-
