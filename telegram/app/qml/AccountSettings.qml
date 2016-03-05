@@ -2,7 +2,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3 as Popup
 import Ubuntu.Content 1.0
-
+import Ubuntu.Components.ListItems 1.3 as ListItems
 import TelegramQML 1.0
 
 import "components"
@@ -90,15 +90,9 @@ Page {
     VisualItemModel {
         id: model
 
-        ListItem {
-            height: units.gu(4)
-            ListItemLayout {
-                // TRANSLATORS: Settings section header, visible above phone and username fields.
-                title.text: i18n.tr("Info")
-                title.font.weight: Font.DemiBold
-                padding.bottom: units.gu(1)
-                padding.top: units.gu(1)
-            }
+        ListItems.Header {
+            // TRANSLATORS: Settings section header, visible above phone and username fields.
+            text: i18n.tr("Info")
         }
 
         ListItem {
@@ -128,15 +122,9 @@ Page {
             onClicked: changeUsername()
         }
 
-        ListItem {
-            height: units.gu(4)
-            ListItemLayout {
-                // TRANSLATORS: Settings section header.
-                title.text: i18n.tr("Messages")
-                title.font.weight: Font.DemiBold
-                padding.bottom: units.gu(1)
-                padding.top: units.gu(1)
-            }
+        ListItems.Header {
+            // TRANSLATORS: Settings section header.
+            text: i18n.tr("Messages")
         }
 
         ListItem {
@@ -189,15 +177,9 @@ Page {
 
         // TODO Terminate all sessions
 
-        ListItem {
-            height: units.gu(4)
-            ListItemLayout {
-                // TRANSLATORS: Settings section header.
-                title.text: i18n.tr("Support")
-                title.font.weight: Font.DemiBold
-                padding.bottom: units.gu(1)
-                padding.top: units.gu(1)
-            }
+        ListItems.Header {
+            // TRANSLATORS: Settings section header.
+            text: i18n.tr("Support")
         }
 
         ListItem {
@@ -289,13 +271,9 @@ Page {
             right: parent.right
             verticalCenter: profile_image.verticalCenter
         }
-        highlightWhenPressed: false
-        divider.visible: false
 
-        title: user.firstName + " " + user.lastName
-        titleIsBold: true
-        titleMaxLineCount: 2
-        subtitle: {
+        title.text: user.firstName + " " + user.lastName
+        subtitle.text: {
             var result = "";
             switch(user.status.classType)
             {

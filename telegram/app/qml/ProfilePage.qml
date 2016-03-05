@@ -202,10 +202,8 @@ Page {
             right: parent.right
             verticalCenter: profile_image.verticalCenter
         }
-        highlightWhenPressed: false
-        divider.visible: false
 
-        title: {
+        title.text: {
             if (!dialog) return "";
 
             if (isChat)
@@ -214,9 +212,7 @@ Page {
                 return user ? user.firstName + " " + user.lastName : ""//emojis.textToEmojiText(user ? user.firstName + " " + user.lastName : "", 18, true);
         }
 
-        titleIsBold: true
-        titleMaxLineCount: 2
-        subtitle: {
+        subtitle.text: {
             //groupModel.count + " " + i18n.tr("members")
 
             var result = ""
