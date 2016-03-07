@@ -84,6 +84,7 @@ Item {
             }
 
             onCurrentDialogChanged: {
+                currentDialog = telegramObject.nullDialog;
                 currentDialog = dialog;
             }
 
