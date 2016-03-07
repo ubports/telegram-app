@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 17:25+0800\n"
+"POT-Creation-Date: 2016-03-07 19:23+0800\n"
 "PO-Revision-Date: 2015-10-03 17:42+0000\n"
 "Last-Translator: tomoe_musashi <hkg.musashi@gmail.com>\n"
 "Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
@@ -146,13 +146,13 @@ msgid "%1 out of %2 contacts are on Telegram."
 msgstr ""
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:96
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:98
 #, qt-format
 msgid "Forward message to %1?"
 msgstr ""
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:108
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:110
 #, qt-format
 msgid "Send messages to %1?"
 msgstr ""

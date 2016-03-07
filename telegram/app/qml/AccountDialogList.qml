@@ -84,7 +84,9 @@ Item {
             }
 
             onCurrentDialogChanged: {
-                currentDialog = telegramObject.nullDialog;
+                if (list_item.width > units.gu(35)) {
+                    currentDialog = telegramObject.nullDialog;
+                }
                 currentDialog = dialog;
             }
 
