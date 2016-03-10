@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2016-03-07 12:29+0000\n"
+"PO-Revision-Date: 2016-03-09 22:02+0000\n"
 "Last-Translator: Marcos Lans <Unknown>\n"
 "Language-Team: Galician <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-03-08 06:01+0000\n"
+"X-Launchpad-Export-Date: 2016-03-10 06:12+0000\n"
 "X-Generator: Launchpad (build 17936)\n"
 "Language: gl\n"
 
@@ -432,7 +432,7 @@ msgstr "último acceso %1"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
-msgstr "último acceso recentemente"
+msgstr "último acceso hai pouco"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:271
@@ -1043,7 +1043,7 @@ msgstr "%1 convidouno ao grupo"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
-msgstr "%1 cambiou o nome de grupo"
+msgstr "%1 cambiou o nome do grupo"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:189
 #, qt-format
@@ -1197,7 +1197,7 @@ msgstr "Recibiuse un vídeo"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr "Tipo de multimedia non xestionado"
+msgstr "Tipo de multimedia non manexábel"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
