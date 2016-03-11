@@ -27,6 +27,7 @@
 #include "asemantools/asemandevices.h"
 #include "asemantools/asemanapplication.h"
 #include "emoticonsmodel.h"
+#include "stickerfilemanager.h"
 #include "themeitem.h"
 #include "textemojiwrapper.h"
 #include "emojis.h"
@@ -187,6 +188,7 @@ Cutegram::Cutegram(QObject *parent) :
     qmlRegisterType<TextEmojiWrapper>("Cutegram", 1, 0, "TextEmojiWrapper");
     qmlRegisterType<Emojis>("Cutegram", 1, 0, "Emojis");
     qmlRegisterType<EmoticonsModel>("Cutegram", 1, 0, "EmoticonsModel");
+    qmlRegisterType<StickerFileManager>("Cutegram", 1, 0, "StickerFileManager");
 
     init_languages();
 }

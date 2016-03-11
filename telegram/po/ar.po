@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 19:23+0800\n"
+"POT-Creation-Date: 2016-03-11 15:45+0800\n"
 "PO-Revision-Date: 2015-11-03 22:50+0000\n"
 "Last-Translator: Ibrahim Saed <ibraheem5000@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
 "3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-03-08 06:01+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -109,7 +109,7 @@ msgstr "إلغاء"
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:570
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:572
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:101
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/app/telegram.desktop.h:1
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
@@ -175,17 +175,17 @@ msgid "Select all"
 msgstr "اختيار الكل"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:225
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:246
 msgid "Copy"
 msgstr "نسخ"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:231
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:268
 msgid "Forward"
 msgstr "إعادة توجيه"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:216
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:235
 msgid "Delete"
 msgstr "حذف"
 
@@ -240,19 +240,27 @@ msgid "%1 deleted group photo"
 msgstr "قام %1 بحذف صورة المجموعة"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:129
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:142
 msgid "Please select chat"
 msgstr "برجاء اختيار دردشة"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:197
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:215
 msgid "New messages"
 msgstr "رسائل جديدة"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:369
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:252
+msgid "Reply"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:259
+msgid "Sticker Pack info"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:406
 msgid "Secret chat requested."
 msgstr "تم طلب دردشة سرّية."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:381
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:418
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -261,12 +269,12 @@ msgstr ""
 "لاحظ أن أجهزة أندرويد تقبل الدردشة السرّية آليا."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:413
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:450
 msgid "Accept"
 msgstr "قبول"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:427
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:464
 msgid "Reject"
 msgstr "رفض"
 
@@ -320,13 +328,9 @@ msgid "Select Chat"
 msgstr "اختر دردشة"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:158
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:160
 msgid "Type message"
 msgstr "نوع الرسالة"
-
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:382
-msgid "Close"
-msgstr "إغلاق"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -604,6 +608,14 @@ msgstr "ولوج"
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Number correct?"
 msgstr "هل الرقم صحيح؟"
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:67
+msgid "Install"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:75
+msgid "Close"
+msgstr "إغلاق"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:172
@@ -888,12 +900,12 @@ msgid "typing..."
 msgstr "يكتب..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:192
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:191
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "معاد توجيهها من خلال <b>%1</b>"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:276
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:275
 msgid "Audio attachment not supported yet ;("
 msgstr "إرفاق الصوت غير مدعوم بعد ;("
 
@@ -942,22 +954,22 @@ msgid "%1 at %2"
 msgstr "%1 عند %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:251
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:253
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:255
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:257
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:259
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:261
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:262
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:264
 msgid "dd MMM yy"
 msgstr "dd MMM yy"
 

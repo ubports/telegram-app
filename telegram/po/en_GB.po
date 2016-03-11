@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 19:23+0800\n"
-"PO-Revision-Date: 2016-02-22 12:07+0000\n"
+"POT-Creation-Date: 2016-03-11 15:45+0800\n"
+"PO-Revision-Date: 2016-02-24 10:46+0000\n"
 "Last-Translator: Andi Chandler <Unknown>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
 "Language: \n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-02-23 06:11+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-08 06:01+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -108,7 +108,7 @@ msgstr "Cancel"
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:570
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:572
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:101
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/app/telegram.desktop.h:1
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
@@ -174,17 +174,17 @@ msgid "Select all"
 msgstr "Select all"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:225
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:246
 msgid "Copy"
 msgstr "Copy"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:231
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:268
 msgid "Forward"
 msgstr "Forward"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:216
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:235
 msgid "Delete"
 msgstr "Delete"
 
@@ -239,19 +239,27 @@ msgid "%1 deleted group photo"
 msgstr "%1 deleted group photo"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:129
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:142
 msgid "Please select chat"
 msgstr "Please select chat"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:197
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:215
 msgid "New messages"
 msgstr "New messages"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:369
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:252
+msgid "Reply"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:259
+msgid "Sticker Pack info"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:406
 msgid "Secret chat requested."
 msgstr "Secret chat requested."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:381
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:418
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -260,12 +268,12 @@ msgstr ""
 "Note that Android accepts secret chats automatically."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:413
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:450
 msgid "Accept"
 msgstr "Accept"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:427
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:464
 msgid "Reject"
 msgstr "Reject"
 
@@ -319,13 +327,9 @@ msgid "Select Chat"
 msgstr "Select Chat"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:158
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:160
 msgid "Type message"
 msgstr "Type message"
-
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:382
-msgid "Close"
-msgstr "Close"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -604,6 +608,14 @@ msgstr "Log in"
 msgid "Number correct?"
 msgstr "Number correct?"
 
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:67
+msgid "Install"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:75
+msgid "Close"
+msgstr "Close"
+
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:172
 msgid "Start Messaging"
@@ -663,30 +675,30 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr ""
+msgstr "Private"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr ""
+msgstr "<b>Telegram</b> messages are heavily encrypted<br>"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:29
 #, qt-format
 msgid "From: %1"
-msgstr ""
+msgstr "From: %1"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
-msgstr ""
+msgstr "Share"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:16
 msgid "Contact Info"
-msgstr ""
+msgstr "Contact Info"
 
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:39
 msgid "Add member"
-msgstr ""
+msgstr "Add member"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -694,7 +706,7 @@ msgstr ""
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr ""
+msgstr "%1 members, %2 online"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
@@ -702,7 +714,7 @@ msgstr ""
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:60
 #, qt-format
 msgid "%1 members"
-msgstr ""
+msgstr "%1 members"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -711,100 +723,102 @@ msgstr ""
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 is typing"
+msgstr[1] "%1 are typing"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:274
 #, qt-format
 msgid "%1 are typing"
-msgstr ""
+msgstr "%1 are typing"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:339
 msgid "Unknown"
-msgstr ""
+msgstr "Unknown"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:349
 msgid "Mobile"
-msgstr ""
+msgstr "Mobile"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:401
 #, qt-format
 msgid "@%1"
-msgstr ""
+msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:561
 msgid "Block user"
-msgstr ""
+msgstr "Block user"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:628
 msgid "Remove from group"
-msgstr ""
+msgstr "Remove from group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:163
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Telegram messages received today: %1"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:164
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "No Telegram messages received today."
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:171
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Telegram messages sent today: %1"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:172
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "No Telegram messages sent today."
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:416
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
+"If you want Telegram notifications when you're not using the app, sign in to "
+"your Ubuntu One account."
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:423
 msgid "Sign in to Ubuntu One"
-msgstr ""
+msgstr "Sign in to Ubuntu One"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:431
 msgid "Remind me later"
-msgstr ""
+msgstr "Remind me later"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:439
 msgid "Don't want notifications"
-msgstr ""
+msgstr "Don't want notifications"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
-msgstr ""
+msgstr "Accounts"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
-msgstr ""
+msgstr "Add Account"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
-msgstr ""
+msgstr "Photo"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:34
@@ -822,12 +836,12 @@ msgstr "Secret chat created"
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr ""
+msgstr "Secret chat discarded"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr ""
+msgstr "Disabled"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:51
@@ -859,19 +873,19 @@ msgstr "1 week"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:51
 msgid "Leave chat"
-msgstr ""
+msgstr "Leave chat"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:57
 msgid "Are you sure you want to leave this chat?"
-msgstr ""
+msgstr "Are you sure you want to leave this chat?"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Clear history"
-msgstr ""
+msgstr "Clear history"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to clear history?"
-msgstr ""
+msgstr "Are you sure you want to clear history?"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -881,24 +895,24 @@ msgid "typing..."
 msgstr "typing..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:192
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:191
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr ""
+msgstr "Forwarded from <b>%1</b>"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:276
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:275
 msgid "Audio attachment not supported yet ;("
-msgstr ""
+msgstr "Audio attachment not supported yet ;("
 
 #. TRANSLATORS: User status: deleted
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
-msgstr ""
+msgstr "Deleted"
 
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
-msgstr ""
+msgstr "Self-Destruct Timer"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -935,270 +949,270 @@ msgid "%1 at %2"
 msgstr "%1 at %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:251
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:253
 msgid "HH:mm"
-msgstr ""
+msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:255
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:257
 msgid "ddd HH:mm"
-msgstr ""
+msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:259
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:261
 msgid "dd MMM"
-msgstr ""
+msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:262
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:264
 msgid "dd MMM yy"
-msgstr ""
+msgstr "dd MMM yy"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
-msgstr ""
+msgstr "sent you a message"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
-msgstr ""
+msgstr "sent you a photo"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
-msgstr ""
+msgstr "sent you a video"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
-msgstr ""
+msgstr "sent you a document"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
-msgstr ""
+msgstr "sent you a voice message"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
-msgstr ""
+msgstr "shared a contact with you"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
-msgstr ""
+msgstr "sent you a map"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
-msgstr ""
+msgstr "%1: %2"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr ""
+msgstr "%1 sent a message to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr ""
+msgstr "%1 sent a photo to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr ""
+msgstr "%1 sent a video to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr ""
+msgstr "%1 sent a document to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr ""
+msgstr "%1 sent a voice message to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr ""
+msgstr "%1 sent a contact to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr ""
+msgstr "%1 sent a map to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:179
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr ""
+msgstr "%1 invited you to the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
-msgstr ""
+msgstr "%1 changed group name"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
-msgstr ""
+msgstr "%1 changed group photo"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
-msgstr ""
+msgstr "%1 invited %2"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr ""
+msgstr "%1 removed you from the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
-msgstr ""
+msgstr "%1 has left the group"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr ""
+msgstr "%1 has returned to the group"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
-msgstr ""
+msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "%1 has checked-in"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr ""
+msgstr "%1 joined Telegram!"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:239
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "New login from unrecognised device"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
-msgstr ""
+msgstr "%1 @ %2"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
-msgstr ""
+msgstr "updated profile photo"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:254
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:259
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
-msgstr ""
+msgstr "You have a new message"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr ""
+msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr ""
+msgstr "Open app"
 
 #. TRANSLATORS: call to action: open this chat
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:86
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:120
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr ""
+msgstr "Open chat"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "Call"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "Failed to get Telegram data"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr ""
+msgstr "Touch here to open app"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr ""
+msgstr "Results in: Contacts & Chats"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
-msgstr ""
+msgstr "Results in: Messages"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr ""
+msgstr "People You Talk To"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr ""
+msgstr "Recent Chats"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr ""
+msgstr "Recent Photos"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
-msgstr ""
+msgstr "%1 new message"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
-msgstr ""
+msgstr "%1 new messages"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr ""
+msgstr "Unread Chats (%1)"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr ""
+msgstr "Audio message"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr ""
+msgstr "Contact received"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:650
 msgid "Document received"
-msgstr ""
+msgstr "Document received"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:654
 msgid "Photo received"
-msgstr ""
+msgstr "Photo received"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:671
 msgid "Video received"
-msgstr ""
+msgstr "Video received"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr ""
+msgstr "Unhandled media type"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr ""
+msgstr "Login to Telegram"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:792
 msgid "No messages received Today."
-msgstr ""
+msgstr "No messages received Today."
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr ""
+msgstr "This is the Telegram scope"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "Search for a chat, contact or message"

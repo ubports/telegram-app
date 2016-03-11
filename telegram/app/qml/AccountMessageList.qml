@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
 import Ubuntu.Components 1.3 as UC
 import Ubuntu.Content 0.1
 import AsemanTools.Controls 1.0 as Controls
@@ -88,6 +89,18 @@ Rectangle {
         }
     }
 
+    Connections {
+        id: sticker_installer
+        target: telegramObject
+        onDocumentStickerRecieved: {
+            if(document != doc)
+                return
+
+            PopupUtils.open(Qt.resolvedUrl("InstallStickerDialog.qml"), acc_msg_list, {telegram: telegramObject, stickerSet: set.shortName})
+        }
+        property Document doc
+    }
+
     // Timer {
     //     id: refresh_timer
     //     repeat: true
@@ -147,6 +160,11 @@ Rectangle {
     Timer {
         id: add_anim_disabler
         interval: 500
+    }
+
+    StickersModel {
+        id: stickers_model
+        telegram: telegramObject
     }
 
     MultipleSelectionListView {
@@ -210,38 +228,58 @@ Rectangle {
             visibleNames: isChat
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
 
-            leftSideActions: [
-                Action {
-                    iconName: "delete"
-                    text: i18n.tr("Delete")
-                    onTriggered: telegram.deleteMessages([item.id])
-                }
-            ]
+            leadingActions: ListItemActions {
+                actions: [
+                    Action {
+                        iconName: "delete"
+                        text: i18n.tr("Delete")
+                        onTriggered: telegram.deleteMessages([item.id])
+                    }
+                ]
+            }
 
-            rightSideActions: [
+            trailingActions: ListItemActions {
                 // TODO resend action
-                Action {
-                    iconName: "edit-copy"
-                    text: i18n.tr("Copy")
-                    visible: !message_item.hasMedia
-                    onTriggered: Clipboard.push(item.message)
-                },
-                Action {
-                    iconName: "next"
-                    text: i18n.tr("Forward")
-                    visible: enchat == telegramObject.nullEncryptedChat
-                    onTriggered: forwardMessages([message.id])
-                }
-            ]
+                actions: [
+                    Action {
+                        iconName: "edit-copy"
+                        text: i18n.tr("Copy")
+                        visible: !message_item.hasMedia
+                        onTriggered: Clipboard.push(item.message)
+                    },
+                    Action {
+                        iconName: "mail-reply"
+                        text: i18n.tr("Reply")
+                        onTriggered: {
+                            acc_msg_list.replyToRequest(message.id);
+                        }
+                    },
+                    Action {
+                        iconName: "info"
+                        text: i18n.tr("Sticker Pack info")
+                        visible: message_item.isSticker && telegramObject.documentStickerId(message_item.media.document) !== 0
+                        onTriggered: {
+                            sticker_installer.doc = message_item.media.document
+                            telegramObject.getStickerSet(sticker_installer.doc)
+                        }
+                    },
+                    Action {
+                        iconName: "next"
+                        text: i18n.tr("Forward")
+                        visible: enchat == telegramObject.nullEncryptedChat
+                        onTriggered: forwardMessages([message.id])
+                    }
+                ]
+            }
 
             selected: mlist.isSelected(message_item)
-            selectionMode: mlist.isInSelectionMode
+            selectMode: mlist.isInSelectionMode
 
             onDialogRequest: acc_msg_list.dialogRequest(dialog)
             onTagSearchRequest: acc_msg_list.tagSearchRequest(tag)
             onMessageFocusRequest: focusOnMessage(msgId)
 
-            onItemPressAndHold: {
+            onPressAndHold: {
                 mlist.clearSelection();
                 mlist.startSelection();
                 if (mlist.isInSelectionMode) {
@@ -249,7 +287,7 @@ Rectangle {
                 }
             }
 
-            onItemClicked: {
+            onClicked: {
                 console.log("on item clicked");
                 if (mlist.isInSelectionMode) {
                     if (selected) {
@@ -259,7 +297,6 @@ Rectangle {
                     }
                 }
 
-                mouse.accepted = true;
                 message_item.click();
             }
 

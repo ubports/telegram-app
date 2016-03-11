@@ -483,7 +483,7 @@ QString AsemanDevices::resourcePath()
     if(file.exists() && file.isDir())
         return file.filePath();
     else
-        return QCoreApplication::applicationDirPath() + "/";
+        return QCoreApplication::applicationDirPath() + "/../../../";
 #else
     return QCoreApplication::applicationDirPath() + "/../Resources/";
 #endif

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 19:23+0800\n"
+"POT-Creation-Date: 2016-03-11 15:45+0800\n"
 "PO-Revision-Date: 2016-01-29 12:49+0000\n"
 "Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3;\n"
-"X-Launchpad-Export-Date: 2016-01-30 05:51+0000\n"
-"X-Generator: Launchpad (build 17908)\n"
+"X-Launchpad-Export-Date: 2016-03-08 06:01+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -109,7 +109,7 @@ msgstr "Sguir dheth"
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:570
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:572
 #: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:101
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/app/telegram.desktop.h:1
 #: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
@@ -175,17 +175,17 @@ msgid "Select all"
 msgstr "Tagh na h-uile"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:225
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:246
 msgid "Copy"
 msgstr "Dèan lethbhreac"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:231
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:268
 msgid "Forward"
 msgstr "Sìn air adhart"
 
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:216
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:235
 msgid "Delete"
 msgstr "Sguab às"
 
@@ -240,19 +240,27 @@ msgid "%1 deleted group photo"
 msgstr "Sguab %1 dealbh a' bhuidhinn às."
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:129
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:142
 msgid "Please select chat"
 msgstr "Tagh cabadaich"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:197
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:215
 msgid "New messages"
 msgstr "Teachdaireachdan ùra"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:369
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:252
+msgid "Reply"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:259
+msgid "Sticker Pack info"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:406
 msgid "Secret chat requested."
 msgstr "Chaidh cabadaich dhìomhair iarraidh."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:381
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:418
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -261,12 +269,12 @@ msgstr ""
 "Thoir an aire gun gabh Android ri cabadaich dhìomhair gu fèin-obrachail."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:413
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:450
 msgid "Accept"
 msgstr "Gabh ris"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:427
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:464
 msgid "Reject"
 msgstr "Diùlt"
 
@@ -320,13 +328,9 @@ msgid "Select Chat"
 msgstr "Tagh cabadaich"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:158
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:160
 msgid "Type message"
 msgstr "Sgrìobh teachdaireachd"
-
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:382
-msgid "Close"
-msgstr "Dùin"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -606,6 +610,14 @@ msgstr "Clàraich a-steach"
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Number correct?"
 msgstr "A bheil an àireamh ceart?"
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:67
+msgid "Install"
+msgstr ""
+
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:75
+msgid "Close"
+msgstr "Dùin"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:172
@@ -898,12 +910,12 @@ msgid "typing..."
 msgstr "a' sgrìobhadh..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:192
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:191
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Air a shìneadh air adhart o <b>%1</b>"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:276
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:275
 msgid "Audio attachment not supported yet ;("
 msgstr "Cha chuirear taic ri ceanglachain fuaime fhathast ;("
 
@@ -952,22 +964,22 @@ msgid "%1 at %2"
 msgstr "%1 %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:251
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:253
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:255
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:257
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:259
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:261
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:262
+#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:264
 msgid "dd MMM yy"
 msgstr "dd MMM yy"
 

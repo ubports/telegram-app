@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Components 1.3 as UC
 import Ubuntu.Components.Popups 0.1
 import Ubuntu.Components.ListItems 1.0 as ListItem
 import Ubuntu.Connectivity 1.0
@@ -9,6 +10,7 @@ import AsemanTools.Controls.Styles 1.0 as Styles
 import Ubuntu.Content 1.1
 import AsemanTools 1.0
 import TelegramQML 1.0
+import Cutegram 1.0
 
 import "components"
 
@@ -24,7 +26,6 @@ Rectangle {
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
 
     signal accepted( string text, int inReplyTo )
-    signal emojiRequest(real x, real y)
     signal copyRequest()
 
     function checkForSharedContent() {
@@ -83,6 +84,7 @@ Rectangle {
         property Dialog lastDialog: telegramObject.nullDialog
         property variant suggestionItem
         property variant attachmentItem
+        property variant emojiItem
     }
 
     Timer {
@@ -144,7 +146,7 @@ Rectangle {
 
         anchors {
             left: parent.left
-            right: send_button_box.left
+            right: sticker_button_box.left
             bottom: parent.bottom
             margins: units.gu(1)
             rightMargin: 0
@@ -227,6 +229,11 @@ Rectangle {
                 check_suggestion.restart();
             }
         }
+        onFocusChanged: {
+            if (focus && privates.emojiItem) {
+                privates.emojiItem.destroy();
+            }
+        }
     }
 
     MediaImport {
@@ -240,6 +247,42 @@ Rectangle {
             } else {
                 send_files_timer.send(peerId, urls, true, false)
             }
+        }
+    }
+
+    Item {
+        id: sticker_button_box
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            right: send_button_box.left
+        }
+        width: units.gu(6)
+
+        AbstractButton {
+            anchors.fill: parent
+            activeFocusOnPress: false
+            onClicked: {
+                if (!telegramObject.connected || !NetworkingStatus.online) return
+
+                if (!privates.emojiItem) {
+                    txt.focus = false;
+                    privates.emojiItem = emoticons_component.createObject(send_msg)
+                    privates.emojiItem.y = -privates.emojiItem.height
+                } else {
+                    privates.emojiItem.destroy()
+                }
+            }
+        }
+
+        Image {
+            id: sticker_image
+            anchors.centerIn: parent
+            height: units.dp(22)
+            width: height
+            sourceSize: Qt.size(width, height)
+            fillMode: Image.PreserveAspectFit
+            source: Qt.resolvedUrl("qrc:/qml/files/emojis.svg")
         }
     }
 
@@ -327,8 +370,8 @@ Rectangle {
 //        if(privates.suggestionItem)
 //            privates.suggestionItem.destroy()
 
-        smsg.accepted(msg, 0);//messageReply.replyMessage? messageReply.replyMessage.id : 0)
-//        messageReply.discard()
+        smsg.accepted(msg, messageReply.replyMessage? messageReply.replyMessage.id : 0)
+        messageReply.discard()
         txt.text = ""
     }
 
@@ -361,25 +404,28 @@ Rectangle {
         Rectangle {
             anchors.fill: parent
             color: smsg.color
-            opacity: 0.8
         }
 
         MessageReplyItem {
             id: messageReply
             telegram: telegramObject
+            maximumWidth: parent.width - units.gu(6)
 
             function discard() {
                 messageReply.replyMessage = messageReply.message
             }
         }
 
-        Button {
-            width: height
+        AbstractButton {
+            width: units.gu(4)
+            height: width
             anchors.right: parent.right
-            anchors.rightMargin: 4*Devices.density
+            anchors.rightMargin: units.gu(1)
             anchors.verticalCenter: parent.verticalCenter
-            //iconSource: "files/close.png"
-            text: i18n.tr("Close")
+            Icon {
+                anchors.fill: parent
+                name: "close"
+            }
             onClicked: messageReply.discard()
         }
     }
@@ -449,6 +495,39 @@ Rectangle {
             onPhotoRequested: requestMedia(ContentType.Pictures)
             onVideoRequested: requestMedia(ContentType.Videos)
             onFileRequested: requestMedia(ContentType.All)
+        }
+    }
+
+    StickerFileManager {
+        id: sticker_file_manager
+        telegram: telegramObject
+    }
+
+    Component {
+        id: emoticons_component
+        Emoticons {
+            id: emoticons
+            telegram: telegramObject
+            onEmojiSelected: {
+                send_msg.insertText(code)
+                emoticons.destroy();
+            }
+            onStickerSelected: {
+                var dId = currentDialog.peer.userId
+                if(!dId)
+                    dId = currentDialog.peer.chatId
+
+                sticker_file_manager.sendSticker(dId, path)
+                emoticons.destroy();
+            }
+            onStickerDocumentSelected: {
+                var dId = currentDialog.peer.userId
+                if(!dId)
+                    dId = currentDialog.peer.chatId
+
+                telegramObject.forwardDocument(dId, document)
+                emoticons.destroy();
+            }
         }
     }
 }

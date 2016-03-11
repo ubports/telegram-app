@@ -6,19 +6,16 @@ import TelegramQML 1.0
 
 import "qrc:/qml"
 import "qrc:/qml/components"
-import "qrc:/qml/components/listitems"
 import "qrc:/qml/js/colors.js" as Colors
 import "../js/avatar.js" as Avatar
 import "../js/ba-linkify.js" as BaLinkify
 
-ListItemWithActions {
+ListItem {
     id: message_item
     width: 100
     height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
-
-    color: Qt.rgba(0, 0, 0, 0)
-    selectedColor: Qt.rgba(0, 0, 0, 0.2)
+    divider.visible: false
 
     property real messageFrameX: back_rect.x
     property real messageFrameY: back_rect.y
@@ -56,6 +53,7 @@ ListItemWithActions {
     // A link may cause website image preview to show,
     // but this should not disable showing of message text.
     property bool hasMedia: message_media.hasMedia && !hasLink
+    property alias media: message_media.media
     property alias mediaLocation: message_media.location
 
     signal dialogRequest(variant dialog);
@@ -94,6 +92,7 @@ ListItemWithActions {
             anchors {
                 top: frame_row.top
                 leftMargin: units.dp(4)
+                topMargin: units.gu(.5)
             }
             height: units.gu(5)
             visible: message_item.visibleNames && !message.out
