@@ -6,117 +6,116 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 15:45+0800\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-12-09 12:51+0100\n"
 "PO-Revision-Date: 2016-02-08 16:20+0000\n"
 "Last-Translator: Aggelos Arnaoutis <angelosarn@hotmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
-"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-03-08 06:01+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-02-09 06:14+0000\n"
+"X-Generator: Launchpad (build 17908)\n"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "Προσθήκη στις επαφές μου"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:76
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
 msgstr "Νέα ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:24
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
 msgstr "Προσθήκη στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:85
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
 msgstr "Νέα μυστική συνομιλία"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:93
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
 msgstr "Επαφές"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:40
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:92
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:40
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
 msgstr "Αναζήτηση"
 
 #. TRANSLATORS: As in: add new contact
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:46
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:99
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
 msgstr "Προσθήκη"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:57
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:128
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:128
 msgid "Back"
 msgstr "Πίσω"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:74
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
 msgstr "Αναζήτηση στις επαφές..."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:121
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:357
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:385
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:301
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:121
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:357
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:385
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:301
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
 msgstr "Εντάξει"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:203
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
 msgid "Chat title"
 msgstr "Τίτλος συνομιλίας"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:316
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:316
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
 msgstr "Προσθήκη Επαφής"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:319
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
 msgstr "Από βιβλίο διευθύνσεων"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:328
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
 msgstr "Εισαγωγή λεπτομερειών"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:336
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:395
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:312
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:336
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:395
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:312
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Ακύρωση"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:295
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:298
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:572
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:101
-#: /home/jin/Works/Applications/Telegram/converged/telegram/build/app/telegram.desktop.h:1
-#: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:370
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:297
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:298
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:17
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:570
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:101
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:402
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -128,138 +127,130 @@ msgstr ""
 "Αριθμός τελευταίων μηνυμάτων προς προώθηση:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:463
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
 msgstr "Επαφές εισήχθησαν"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:466
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
 msgstr "Καμία επαφή δεν εισήχθησε"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:473
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
 msgstr "Αυτή η επαφή είναι στο Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountContactsPage.qml:476
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "%1 από %2 επαφές είναι στο Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:98
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:95
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "Προώθηση μηνύματος σε %1;"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogList.qml:110
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
 msgstr "Αποστολή μηνυμάτων σε %1;"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:30
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:16
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
 msgstr "Πληροφορίες ομάδας"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
 msgstr "Πληροφορίες προφιλ"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:41
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
 msgstr "Επιλογή όλων"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:246
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:53
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
 msgstr "Αντιγραφή"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:268
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
 msgstr "Προώθηση"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:235
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:67
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
 msgstr "Διαγραφή"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:57
 #, qt-format
 msgid "%1 created a secret chat"
 msgstr "%1 δημιούργησε μυστική συνομιλία"
 
 #. TRANSLATORS: %1 indicates who created the group chat titled %2.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "%1 created the group \"%2\""
 msgstr "%1 δημιούργησε την ομάδα %2\""
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:67
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
 msgid "%1 added %2 to group"
 msgstr "%1 πρόσεθεσε %2 στην ομάδα"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:76
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:76
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 αποχώρησε από την ομάδα"
 
 #. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:79
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:206
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:79
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%1 αφαίρεσε %2"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:84
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:84
 #, qt-format
 msgid "%1 changed group name to \"%2\""
 msgstr "%1 άλλαξε το όνομα ομάδας σε %2\""
 
 #. TRANSLATORS: %1 is the person, who changed the gruop phot.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:89
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:89
 #, qt-format
 msgid "%1 changed group photo."
 msgstr "%1 άλλαγε την φωτογραφία ομάδας."
 
 #. TRANSLATORS: %1 is the person, who deleted the group photo.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageAction.qml:94
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "%1 deleted group photo"
 msgstr "%1 διέγραψε την φωτογραφία ομάδας"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:142
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
 msgstr "Παρακαλώ επιλέξτε συνομιλία"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:215
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
 msgstr "Νέα μηνύματα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:252
-msgid "Reply"
-msgstr ""
-
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:259
-msgid "Sticker Pack info"
-msgstr ""
-
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:406
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."
 msgstr "Αίτηση για μυστική συνομιλία."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:418
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:381
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -268,199 +259,203 @@ msgstr ""
 "Σημειώστε πως  το Android αποδέχεται της μυστικές συνομιλίες αυτόματα."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:450
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:413
 msgid "Accept"
 msgstr "Αποδοχή"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountMessageList.qml:464
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:427
 msgid "Reject"
 msgstr "Απόρριψη"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:18
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:21
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:50
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:18
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:21
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:50
 msgid "Save"
 msgstr "Αποθήκευση"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:23
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:23
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
 msgstr "Επεξεργασία ονόματος"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:34
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
 msgstr "Απαιτείται μικρό όνομα"
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:52
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:132
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:52
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
 msgstr "Μικρό όνομα (απαιτείται)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountNamePage.qml:71
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:148
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:71
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
 msgstr "Επίθετο (προαιρετικό)"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:298
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:300
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
 msgstr "Γίνεται σύνδεση..."
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:302
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:324
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:344
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:304
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:326
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:346
 msgid "Waiting for network..."
 msgstr "Αναμονή σύνδεσης στο διαδύκτιο..."
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:321
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountPage.qml:341
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:323
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:343
 msgid "Select Chat"
 msgstr "Επιλογή συνομιλίας"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSendMessage.qml:160
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:158
 msgid "Type message"
 msgstr "Πληκτρολογήστε μήνυμα"
 
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:336
+msgid "Close"
+msgstr "Κλείσιμο"
+
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:23
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:45
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:23
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
 msgstr "Αλλαγή φωτογραφίας"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:36
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:102
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:36
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:94
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:641
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:89
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:94
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:642
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:87
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Πληροφορίες"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:100
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:100
 msgid "Phone"
 msgstr "Τηλέφωνο"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:108
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:61
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:108
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
 msgstr "Όνομα χρήστη"
 
 #. TRANSLATORS: Settings section header.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:115
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:115
 msgid "Messages"
 msgstr "Μηνύματα"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:120
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:484
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:415
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:120
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:485
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:386
 msgid "Notifications"
 msgstr "Ειδοποιήσεις"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:153
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:153
 msgid "Send by Enter"
 msgstr "Αποστολή μηνύματος πατώντας το Enter"
 
 #. TRANSLATORS: Settings section header.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:172
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:172
 msgid "Support"
 msgstr "Υποστήριξη"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:178
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:178
 msgid "Ask a Question"
 msgstr "Κάντε μια Ερώτηση"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:185
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:111
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:185
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
 msgstr "Telegram συχνές ερωτήσεις"
 
 #. TRANSLATORS: Settings section header.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:191
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:191
 msgid "Account"
 msgstr "Λογαριασμός"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:196
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:196
 msgid "Log out"
 msgstr "Αποσύνδεση"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:208
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:208
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram για Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:262
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:238
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:67
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:262
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:239
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:67
 msgid "online"
 msgstr "συνδεδεμένος"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:265
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:241
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:70
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:265
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:242
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
 msgstr "εμφανίστηκε τελευταία %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:268
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:244
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:73
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:268
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:245
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
 msgstr "εμφανίστηκε τελευταία πρόσφατα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:271
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:247
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:76
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:271
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:248
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
 msgstr "εμφανίστηκε τελευταία μέσα στην εβδομάδα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:274
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:250
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:79
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:274
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:251
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
 msgstr "εμφανίστηκε τελευταία μέσα στο μήνα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:277
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:253
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:82
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:277
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:254
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
 msgstr "εμφανίστηκε τελευταία αρκετό καιρό"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountSettings.qml:299
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:299
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -469,264 +464,259 @@ msgstr ""
 "Τυχόν μυστικές συνομιλίες θα χαθούν."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:35
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr "%1 είναι διαθέσιμος"
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:38
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr "Λυπούμαστε, αυτό το όνομα χρήστη δεν είναι διαθέσιμο."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr "Συγγνώμη, αυτό το όνομα χρήστη είναι μη έγκυρο."
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:100
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:100
 msgid "Your Username"
 msgstr "Το όνομα χρήστη σας"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:108
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
 msgstr "Το όνομα χρήστη πρέπει να έχει τουλάχιστον 5 χαρακτήρες."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:131
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:131
 msgid "Checking username..."
 msgstr "Έλεγχος ονόματος χρήστη..."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AccountUsernamePage.qml:139
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:139
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "Μπορείς να διαλέξεις ένα όνομα χρήστη στο <b>Telegram</b>. Αν το πράξεις οι "
 "υπόλοιποι χρήστες θα μπορούν να σε βρουν με το όνομα χρήστη και να "
 "επικοινωνήσουν μαζί σου χωρίς να γνωρίζουν το τηλέφωνό σου.<br /><br />Για "
-"το όνομα χρήστη μπορείς να χρησιμοποιήσεις λατινικούς χαρακτήρες από <b>a-z</"
-"b>, αριθμούς από <b>0-9</b> ή κάτω παύλα (_).<br />Οι ελάχιστοι χαρακτήρες "
-"είναι <b>5</b>"
+"το όνομα χρήστη μπορείς να χρησιμοποιήσεις λατινικούς χαρακτήρες από <b>a-"
+"z</b>, αριθμούς από <b>0-9</b> ή κάτω παύλα (_).<br />Οι ελάχιστοι "
+"χαρακτήρες είναι <b>5</b>"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:35
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:88
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:35
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:88
 msgid "Done"
 msgstr "Ολοκληρώθηκε"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:115
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:115
 msgid "Phone number (required)"
 msgstr "Νούμερο τηλεφώνου (απαιτείται)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:184
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:184
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr "%1 δεν είναι ακόμα στο Telegram"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:190
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
 msgstr "Προσκαλέστε στο Telegram"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:236
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:236
 msgid "Could not add contact"
 msgstr "Αδυναμία προσθήκης επαφής"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:256
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:256
 msgid "Please include the country code."
 msgstr "Παρακαλώ συμπεριλάβετε τον κωδικό χώρας."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AddContactPage.qml:258
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:258
 msgid "Number is not a valid phone number"
 msgstr "Ο αριθμός δεν είναι έγκυρος αριθμός τηλεφώνου."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:22
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:146
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthenticatePage.qml:7
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:7
 msgid "Sign In"
 msgstr "Είσοδος"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:22
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:146
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
 msgid "Sign Up"
 msgstr "Εγγραφή"
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:29
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:29
 msgid "Invalid phone code"
 msgstr "Μη έγκυρος κωδικός τηλεφώνου"
 
 #. TRANSLATORS: Error text for missing first name.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:44
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:44
 msgid "First name is required"
 msgstr "Απαιτείται μικρό ονόμα"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:110
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:110
 msgid "Code"
 msgstr "Κωδικός"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:126
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:126
 msgid "First Name"
 msgstr "Μικρό όνομα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:135
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:135
 msgid "Last Name"
 msgstr "Επίθετο"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:157
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:157
 msgid "Resend Code"
 msgstr "Επαναποστολή κωδικού"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:173
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:173
 msgid "Request Call"
 msgstr "Αίτηση κλήσης"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCodePage.qml:175
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:175
 msgid "Calling, please wait..."
 msgstr "Γίνεται κλήση, παρακαλώ περιμένετε..."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthCountriesPage.qml:15
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCountriesPage.qml:15
 msgid "Country Code"
 msgstr "Κωδικός χώρας"
 
 #. TRANSLATORS: Placeholder for the phone number field.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthenticatePage.qml:61
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:21
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:66
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:61
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:21
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:66
 msgid "Phone Number"
 msgstr "Αριθμός τηλεφώνου"
 
 #. TRANSLATORS: Button text right under the phone number text field.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthenticatePage.qml:78
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:78
 msgid "Log in"
 msgstr "Σύνδεση"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/AuthNumberPage.qml:73
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Number correct?"
 msgstr "Αριθμός σωστός;"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:67
-msgid "Install"
-msgstr ""
-
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/InstallStickerDialog.qml:75
-msgid "Close"
-msgstr "Κλείσιμο"
-
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPage.qml:172
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPage.qml:142
 msgid "Start Messaging"
 msgstr "Άρχισε να ανταλλάσεις μηνύματα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:18
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr ""
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "Γρήγορο"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:23
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Το Telegram</b> παραδίδει τα μηνύματα ταχύτερα<br> από κάθε άλλη εφαρμογή"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:27
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "Δωρεάν"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:28
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr "<b>Telegram</b>δωρεάν για πάντα. Χωρίς διαφημίσεις.<br>Χωρίς συνδρομή"
+msgstr ""
+"<b>Telegram</b>δωρεάν για πάντα. Χωρίς διαφημίσεις.<br>Χωρίς συνδρομή"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:32
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "Ασφαλής"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:33
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
 "<b>Το Telegram</b> κρατάει τα μηνύματά σας ασφαλή<br> από επιθέσεις χάκερ"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:37
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "Ισχυρό"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:38
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
 "<b>Το Telegram</b> δεν βάζει όρια στο μέγεθος<br> των μέσων σας και των "
 "συνομιλιών σας."
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:42
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "Βασισμένο στο σύννεφο"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:43
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Το Telegram</b> σας επιτρέπει να έχετε πρόσβαση στα μηνύματά σας<br> από "
 "πολλαπλές συσκευές."
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:47
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "Ιδιωτικό"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/IntroPageListModel.qml:48
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr ""
 "Τα μηνύματα του <b>Telegram</b> είναι κρυπτογραφημένο σε μεγάλο βαθμό<br>"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:29
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:29
 #, qt-format
 msgid "From: %1"
 msgstr "Από: %1"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/PreviewPage.qml:56
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
 msgstr "Κοινή χρήση"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:16
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
 msgid "Contact Info"
 msgstr "Πληροφορίες επικοινωνίας"
 
 #. TRANSLATORS: Action text to add member to group chat.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:39
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:39
 msgid "Add member"
 msgstr "Προσθήκη μέλους"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:227
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:228
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr "%1 μέλη, %2 συνδεδεμένα"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:230
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:231
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:60
 #, qt-format
 msgid "%1 members"
 msgstr "%1 μέλη"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:271
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:48
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:272
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:48
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -734,56 +724,56 @@ msgstr[0] "%1 πληκτρογραφεί"
 msgstr[1] "%1 πληκτρογραφούν"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:274
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:275
 #, qt-format
 msgid "%1 are typing"
 msgstr "%1 πληκτρογραφούν"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:339
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:340
 msgid "Unknown"
 msgstr "Άγνωστο"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:349
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:350
 msgid "Mobile"
 msgstr "Κινητό τηλέφωνο"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:401
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:402
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:561
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:562
 msgid "Block user"
 msgstr "Μπλοκάρισμα χρήστη"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ProfilePage.qml:628
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:629
 msgid "Remove from group"
 msgstr "Αφαίρεση από ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:163
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:165
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Μηνύματα του Telegram που παρελήφθησαν σήμερα: %1"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:164
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:166
 msgid "No Telegram messages received today."
 msgstr "Δεν παρελήφθησαν μηνύματα του Telegram σήμερα."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:171
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:173
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Μηνύματα του Telegram που στάλθηκαν σήμερα: %1"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:172
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
 msgstr "Δεν στάλθηκαν μηνύματα του Telegram σήμερα."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:416
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:387
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -791,67 +781,67 @@ msgstr ""
 "Εάν θέλετε ειδοποιήσεις Telegram όταν δεν χρησιμοποιείτε την εφαρμογή, "
 "συνδεθείτε στον λογαριασμό Ubuntu One."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:423
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:394
 msgid "Sign in to Ubuntu One"
 msgstr "Σύνδεση στο Ubuntu One"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:431
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:402
 msgid "Remind me later"
 msgstr "Υπενθύμιση αργότερα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/telegram.qml:439
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:410
 msgid "Don't want notifications"
 msgstr "Δεν θέλετε ειδοποιήσεις"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:136
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
 msgstr "Λογαριασμοί"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AccountPanel.qml:163
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
 msgstr "Προσθήκη λογαριασμού"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:86
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
 msgstr "Φωτογραφία"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:97
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
 msgstr "Βίντεο"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/AttachPanel.qml:108
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
 msgstr "Αρχείο"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:34
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "Αναμονή μέχρι ο χρήστης να συνδεθεί..."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:36
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "Έγινε αίτηση για μυστική συνομιλία"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:38
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "Δημιουργήθηκε μυστική συνομιλία"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:41
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr "Απόρριψη μυστικής συνομιλίας"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:48
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "Απενεργοποιημένο"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:51
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -859,367 +849,367 @@ msgstr[0] "%1 δευτερόλεπτο"
 msgstr[1] "%1 δευτερόλεπτα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:54
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 λεπτό"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 ώρα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 ημέρα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DelegateUtils.qml:63
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 εβδομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:51
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:50
 msgid "Leave chat"
 msgstr "Αποχώρηση από συνομιλία"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:56
 msgid "Are you sure you want to leave this chat?"
 msgstr "Είστε σίγουροι πως θέλετε να αποχωρήσετε από την συνομιλία;"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:68
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:66
 msgid "Clear history"
 msgstr "Εκκαθάριση ιστορικού"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:74
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:72
 msgid "Are you sure you want to clear history?"
 msgstr "Είστε σίγουροι ότι θέλετε να εκκαθαρίσετε το ιστορικό"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/DialogsListItem.qml:190
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramHeader.qml:51
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:188
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
 msgstr "πληκτρολογεί..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:191
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:205
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Προώθηση από <b>%1</b>"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/MessagesListItem.qml:275
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:288
 msgid "Audio attachment not supported yet ;("
 msgstr "Η σύναψη ήχου δεν υποστηρίζεται ακόμα ;("
 
 #. TRANSLATORS: User status: deleted
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Διαγραφή"
 
 #. TRANSLATORS: Title of self destruct timer dialog.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
 msgstr "Όριο χρόνου αυτοκαταστροφής μηνύματος"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:11
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:46
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:68
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:11
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
 msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:14
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:35
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:49
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:14
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:35
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:54
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "σήμερα στις %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "εχθές στις %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/qml/js/time.js:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1 στις %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:253
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:251
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:257
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:255
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:261
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:259
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/jin/Works/Applications/Telegram/converged/telegram/app/telegram.cpp:264
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:262
 msgid "dd MMM yy"
 msgstr "dd MMM yy"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:110
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr "έστειλε σε εσάς ένα μήνυμα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:114
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr "έστειλε σε εσάς μια φωτογραφία"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:118
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr "έστειλε σε εσάς ένα βίντεο"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:122
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr "έστειλε σε εσάς ένα έγγραφο"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:126
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr "έστειλε σε εσάς ένα μήνυμα ήχου"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:130
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr "διαμοίρασε μια επαφή σε εσάς"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:134
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr "έστειλε σε εσάς ένα χάρτη"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:139
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:144
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr "%1 έστειλε ένα μήνυμα στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:149
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr "%1 έστειλε μια φωτογραφία στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:154
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr "%1 έστειλε ένα βίντεο στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:159
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr "%1 έστειλε ένα έγγραφο στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:164
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr "%1 έστειλε ένα μήνυμα ήχου στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:169
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr "%1 έστειλε μια επαφή στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:174
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr "%1 έστειλε ένα χάρτη στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:179
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:200
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:179
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr "%1 σας προσκάλεσε στην ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:184
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr "%1 άλλαξε το όνομα ομάδας"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:189
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr "%1 άλλαξε την φωτογραφία ομάδας"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:195
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr "%1 προσκάλεσε %2"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:211
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr "%1 σας αφαίρεσε από την ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:216
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr "%1 αποχώρησε από την ομάδα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:221
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr "%1 επέστρεψε στην ομάδα"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:226
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:228
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:234
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr "%1 μόλις συνδέθηκε στο Telegram!"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:239
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:245
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:239
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr "Νέα είσοδος από μη αναγνωρισμένη συσκευή"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:244
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr "%1 @ %2"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:249
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr "ενημερωμένη φωτογραφία προφίλ"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:254
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:259
-#: /home/jin/Works/Applications/Telegram/converged/telegram/push/pushhelper.cpp:264
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:254
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:259
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr "Έχετε ένα νέο μήυμα"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/config.h:24
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:62
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr "Άνοιγμα εφαρμογής"
 
 #. TRANSLATORS: call to action: open this chat
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:86
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:120
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:149
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:86
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:120
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr "Άνοιγμα συνομιλίας"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/preview.cpp:94
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr "Κλήση"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:58
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr "Αδυναμία απόκτησης δεδομένων Telegram"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:59
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr "Αγγίξτε εδώ για να ανοίξετε την εφαρμογή"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:167
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Αποτελέσματα σε: Επαφές & Συνομιλίες"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:184
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Αποτελέσματα σε: Μηνύματα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:291
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Άτομα που μιλάτε"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:292
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Πρόσφατες συνομιλίες"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:293
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Πρόσφατες φωτογραφίες"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:298
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 νέο μήνυμα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:298
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 νέα μηνύματα"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:301
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Μη αναγνωσμένες συνομιλίες (%1)"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:642
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Μήνυμα ήχου"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:646
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "Έγινε λήψη επαφής"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:650
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "Έγινε λήψη εγγράφου"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:654
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "Έγινε λήψη τηλεφώνου"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:671
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "Έγινε λήψη βίντεο"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:681
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr ""
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:756
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Είσοδος στο Telegram"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/scope/query.cpp:792
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Κανένα μήνυμα δεν λήφθηκε σήμερα."
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr "Αυτό είναι το επισκόπιο Telegram"
 
-#: /home/jin/Works/Applications/Telegram/converged/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Αναζήτηση για συνομιλία, επαφή ή μήνυμα"
