@@ -237,7 +237,7 @@ Page {
         } else if (importedCount === 1) {
             console.log("contacts: imported 1")
             errorText = "";
-            pageStack.pop();
+            pageStack.removePages(page);
         }
     }
 
@@ -248,7 +248,7 @@ Page {
         message = message.replace("\u000A", " ");
 
         Qt.openUrlExternally("message:///" + phone + "?text=" + message);
-        pageStack.pop();
+        pageStack.clear();
     }
 
     onError: {

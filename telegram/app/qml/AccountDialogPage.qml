@@ -83,7 +83,7 @@ Page {
             if (message_list.inSelectionMode) {
                 message_list.cancelSelection()
             } else {
-                pageStack.pop();
+                pageStack.removePages(pageStack.primaryPage);
             }
         }
     }
@@ -106,7 +106,7 @@ Page {
 
     onHeaderClicked: {
         Qt.inputMethod.hide();
-        pageStack.push(profile_page_component, {
+        pageStack.addPageToNextColumn(dialog_page, profile_page_component, {
                 telegram: dialog_page.telegramObject,
                 dialog: dialog_page.currentDialog
         });
@@ -127,8 +127,6 @@ Page {
     Item {
         id: message_box
         anchors {
-            // FIXME message_list sills under Page header! :/
-            topMargin: units.gu(6)
             fill: parent
         }
 
@@ -185,7 +183,6 @@ Page {
     }
 
     function closeChat() {
-        pageStack.pop()
+        pageStack.clear();
     }
 }
-

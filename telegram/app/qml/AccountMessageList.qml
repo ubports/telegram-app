@@ -318,7 +318,7 @@ Rectangle {
                     break;
                 case FileHandler.TypeTargetMediaDocument:
                     // TODO export document
-                    pageStack.push(picker_page_component, {
+                    pageStack.addPageToCurrentColumn(dialog_page, picker_page_component, {
                             "url": path,
                             "handler": ContentHandler.Destination,
                             "contentType": ContentType.All
@@ -327,7 +327,7 @@ Rectangle {
                 case FileHandler.TypeTargetMediaAudio:
                     return;
                 }
-                pageStack.push(preview_page_component, properties);
+                pageStack.addPageToCurrentColumn(dialog_page, preview_page_component, properties);
             }
         }
 
@@ -357,7 +357,7 @@ Rectangle {
 
     PhysicalScrollBar {
         scrollArea: mlist; height: mlist.height-bottomMargin-topMargin; width: 6*Devices.density
-        anchors.right: mlist.right; anchors.top: mlist.top; color: textColor0
+        anchors.right: mlist.right; anchors.top: mlist.top;
         anchors.topMargin: topMargin; reverse: true
     }
 
@@ -541,7 +541,7 @@ Rectangle {
 
     function forwardMessages(messageIds) {
         forwardRequest(messageIds);
-        pageStack.pop();
+        pageStack.clear();
     }
 
     function sendMessage( txt, inReplyTo ) {

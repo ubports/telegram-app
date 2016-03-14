@@ -65,7 +65,7 @@ ListItem {
                 iconName: "info"
                 text: i18n.tr("Info")
                 onTriggered: {
-                    pageStack.push(profile_page_component, {
+                    pageStack.addPageToNextColumn(dialog_page, profile_page_component, {
                             telegram: contact_item.telegram,
                             dialog: contact_item.telegram.fakeDialogObject(user.id, false)
                     });

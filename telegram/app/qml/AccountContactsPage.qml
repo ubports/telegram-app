@@ -128,7 +128,6 @@ Page {
                 text: i18n.tr("Back")
                 onTriggered: {
                     page.state = "default"
-                    pageStack.pop();
                 }
             }
         }
@@ -265,7 +264,7 @@ Page {
 //                    refreshSubtitle();
                 } else if (newSecretChatMode) {
                     telegramObject.messagesCreateEncryptedChat(model.id);
-                    pageStack.pop();
+                    pageStack.clear();
                 } else if (addToGroupMode) {
                     var dialog = PopupUtils.open(add_contact_to_group_chat_component);
                     dialog.setData(user.id, user.fullName, groupChatTitle);
@@ -280,8 +279,9 @@ Page {
         }
 
         onSelectionCanceled: {
-            groupChatMode = false;
+            list.clear();
             state = "default";
+            pageStack.clear();
         }
 
         onSelectionDone: {
@@ -289,7 +289,7 @@ Page {
             telegram.messagesCreateChat(list.list, groupChatTitle);
             state = "default";
             groupChatTitle = "";
-            pageStack.pop();
+            pageStack.clear();
         }
 
         function refreshSubtitle() {
@@ -490,7 +490,7 @@ Page {
             if (contacts.length === 1) {
                 var singleContact = parseContact(contacts[0]);
                 importedContactCount = 1;
-                pageStack.push(add_contact_page_component, {
+                pageStack.addPageToNextColumn(page, add_contact_page_component, {
                         "telegram": telegram,
                         "addManually": true,
                         "contact": singleContact

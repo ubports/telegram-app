@@ -68,7 +68,7 @@ Page {
 
     function updateUsername() {
         telegram.accountUpdateUsername(username);
-        pageStack.pop();
+        pageStack.removePages(page);
     }
 
     function updateProfile() {

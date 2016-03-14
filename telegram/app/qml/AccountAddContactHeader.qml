@@ -22,7 +22,7 @@ Rectangle {
     property bool isForeign: user == telegramObject.nullUser ? false : user.classType == typeUserForeign
 
     function addContact() {
-        pageStack.push(add_contact_page_component, {
+        pageStack.addPageToNextColumn(page, add_contact_page_component, {
                 "telegram": telegramObject,
                 "user": user
         });

@@ -28,7 +28,7 @@ Page {
         error = "";
         if (firstName.length > 0) {
             telegram.accountUpdateProfile(firstName, lastName);
-            pageStack.pop();
+            pageStack.removePages(page);
         } else {
             // TRANSLATORS: Error message when first name was not provided.
             error = i18n.tr("First name is required.");

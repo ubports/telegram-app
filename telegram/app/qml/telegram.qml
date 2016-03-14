@@ -37,7 +37,7 @@ MainView {
 
     applicationName: "com.ubuntu.telegram"
     anchorToKeyboard: true
-    automaticOrientation: false
+    automaticOrientation: true
 
     property string appId: "com.ubuntu.telegram_telegram" // no-i18n
 
@@ -87,17 +87,14 @@ MainView {
     }
 
     function showIntro() {
+        pageStack.forceSinglePage = (profiles.count == 0);
         if (profiles.count == 0) {
-            pageStack.clear();
-            pageStack.push(intro_page_component);
+            pageStack.primaryPageSource = intro_page_component;
         }
     }
 
     function backToDialogsPage() {
-        while (pageStack.depth > 0 &&
-                pageStack.currentPage.objectName !== "accountPage") {
-            pageStack.pop();
-        }
+        pageStack.removePages(pageStack.primaryPage);
     }
 
     function openPushDialog() {
@@ -156,6 +153,7 @@ MainView {
         onLoggedOut: {
             pageStack.clear()
             profiles.remove(phone)
+            showIntro();
         }
     }
 
@@ -229,15 +227,46 @@ MainView {
         }
     }
 
-    PageStack {
+    AdaptivePageLayout {
         id: pageStack
+
+        property bool forceSinglePage: false
+
+        anchors.fill: parent
+        layouts: [
+            PageColumnsLayout {
+                // gu(80) is standard value. Would prefer not to type it in,
+                // but can't have !forceSinglePage as the only value here.
+                when: width > units.gu(80) && !pageStack.forceSinglePage
+                PageColumn {
+                    minimumWidth: units.gu(35)
+                    maximumWidth: units.gu(35)
+                    preferredWidth: units.gu(35)
+                }
+                PageColumn {
+                    fillWidth: true
+                }
+            },
+            PageColumnsLayout {
+                when: true
+                PageColumn {
+                    fillWidth: true
+                    minimumWidth: units.gu(30)
+                }
+            }
+        ]
+
+        function clear() {
+            pageStack.removePages(pageStack.primaryPage);
+        }
 
         Component {
             id: intro_page_component
 
             IntroPage {
                 onStartMessaging: {
-                    pageStack.push(auth_countries_page_component);
+                    pageStack.forceSinglePage = false;
+                    pageStack.addPageToCurrentColumn(pageStack.primaryPage, auth_countries_page_component);
                 }
             }
         }
@@ -247,7 +276,7 @@ MainView {
 
             AuthCountriesPage {
                 onCountryEntered: {
-                    pageStack.push(auth_number_page_component, {
+                    pageStack.addPageToNextColumn(pageStack.primaryPage, auth_number_page_component, {
                             "countryCode": code
                     });
                 }

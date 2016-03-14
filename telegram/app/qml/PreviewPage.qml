@@ -87,13 +87,13 @@ Page {
         singleMediaViewer.reset();
 
         if (photoPreviewSource !== "") {
-            pageStack.push(picker_page_component, {
+            pageStack.addPageToCurrentColumn(preview_page, picker_page_component, {
                 "url": photoPreviewSource,
                 "handler": ContentHandler.Destination,
                 "contentType": ContentType.Pictures
             });
         } else if (videoPreviewSource !== "") {
-            pageStack.push(picker_page_component, {
+            pageStack.addPageToCurrentColumn(preview_page, picker_page_component, {
                 "url": videoPreviewSource,
                 "handler": ContentHandler.Destination,
                 "contentType": ContentType.Videos
@@ -105,13 +105,13 @@ Page {
         singleMediaViewer.reset();
 
         if (photoPreviewSource !== "") {
-            pageStack.push(picker_page_component, {
+            pageStack.addPageToCurrentColumn(preview_page, picker_page_component, {
                 "url": photoPreviewSource,
                 "handler": ContentHandler.Share,
                 "contentType": ContentType.Pictures
             });
         } else if (videoPreviewSource !== "") {
-            pageStack.push(picker_page_component, {
+            pageStack.addPageToCurrentColumn(preview_page, picker_page_component, {
                 "url": videoPreviewSource,
                 "handler": ContentHandler.Share,
                 "contentType": ContentType.Videos

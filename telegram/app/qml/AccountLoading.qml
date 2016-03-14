@@ -4,7 +4,6 @@ import AsemanTools 1.0
 Rectangle {
     width: 100
     height: 62
-    color: backColor0
     visible: active
 
     property bool active: false
@@ -40,7 +39,6 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             font.family: AsemanApp.globalFont.family
             font.pixelSize: Math.floor(11*Devices.fontDensity)
-            color: textColor0
             text: qsTr("Loading...")
         }
     }
@@ -53,7 +51,6 @@ Rectangle {
         font.family: AsemanApp.globalFont.family
         font.pixelSize: 10*Devices.fontDensity
         font.underline: true
-        color: masterPalette.highlight
         text: qsTr("Login again")
         visible: false
 
