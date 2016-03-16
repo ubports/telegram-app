@@ -7,7 +7,7 @@ import Ubuntu.Connectivity 1.0
 import AsemanTools.Controls 1.0 as Controls
 import AsemanTools.Controls.Styles 1.0 as Styles
 
-import Ubuntu.Content 1.1
+import Ubuntu.Content 1.3
 import AsemanTools 1.0
 import TelegramQML 1.0
 import Cutegram 1.0
