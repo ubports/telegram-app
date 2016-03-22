@@ -281,6 +281,7 @@ Rectangle {
             sourceSize: Qt.size(width, height)
             fillMode: Image.PreserveAspectFit
             source: Qt.resolvedUrl("qrc:/qml/files/emojis.svg")
+            visible: !messagePlaceholder.visible
         }
     }
 
