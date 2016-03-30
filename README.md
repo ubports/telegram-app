@@ -47,8 +47,8 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
     
 ### How to run (DESKTOP VERSION only)
 
-- cd to the build directory (e.g build_desktop)
-- run "LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH ./telegram"
+- cd to the path holding the binary we have just build, e.g. "cd build_desktop/lib/x86_64-linux-gnu/bin/"
+- run "LD_LIBRARY_PATH=../../../:$LD_LIBRARY_PATH ./telegram"
 
 ### How to delete the build files
 
