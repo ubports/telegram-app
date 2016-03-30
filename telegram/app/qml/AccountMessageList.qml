@@ -229,7 +229,7 @@ Rectangle {
                 Action {
                     iconName: "next"
                     text: i18n.tr("Forward")
-                    //visible: !pageIsSecret
+                    visible: enchat == telegramObject.nullEncryptedChat
                     onTriggered: forwardMessages([message.id])
                 }
             ]

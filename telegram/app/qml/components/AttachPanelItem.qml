@@ -37,6 +37,7 @@ Column {
             asynchronous: true
             width: units.gu(7.5)
             height: width
+            fillMode: Image.PreserveAspectFit
             sourceSize: Qt.size(width, height)
 
             Image {
@@ -62,7 +63,7 @@ Column {
     Label {
         id: attach_label
         anchors.horizontalCenter: parent.horizontalCenter
-        font.pixelSize: units.dp(11)
+        fontSize: "x-small"
         font.weight: Font.DemiBold
     }
 }

@@ -64,7 +64,7 @@ Item {
         case FileHandler.TypeTargetUnknown:
         case FileHandler.TypeTargetMediaAudio:
         case FileHandler.TypeTargetMediaDocument:
-            result = isSticker? 220*Devices.density : 168*Devices.density
+            result = isSticker ? units.gu(20) : units.gu(17)
             break;
 
         case FileHandler.TypeTargetMediaGeoPoint:
@@ -101,7 +101,7 @@ Item {
             break;
         case FileHandler.TypeTargetUnknown:
         case FileHandler.TypeTargetMediaDocument:
-            result = isSticker? width*media_img.imageSize.height/media_img.imageSize.width : width
+            result = isSticker ? width*media_img.imageSize.height/media_img.imageSize.width : width
             break;
 
         case FileHandler.TypeTargetMediaGeoPoint:
@@ -249,19 +249,19 @@ Item {
             visible: !downloading && !msg_media.isAudioMessage
         }
 
-        Text {
+        Label {
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.margins: 3*Devices.density
-            font.family: AsemanApp.globalFont.family
-            font.pixelSize: Math.floor(9*Devices.fontDensity)
-            color: "#ffffff"
+            font.weight: Font.DemiBold
+            fontSize: "x-small"
+            color: "white"
             text: {
                 if(downloading)
                     return Math.floor(file_handler.progressCurrentByte/(1024*10.24))/100 + "MB/" +
                            Math.floor(size/(1024*10.24))/100 + "MB"
                 else
-                    Math.floor(size/(1024*10.24))/100 + "MB"
+                    file_handler.fileName + "\n" + Math.floor(size/(1024*10.24))/100 + "MB"
             }
 
             property int size: file_handler.fileSize
@@ -273,7 +273,7 @@ Item {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.margins: 4*Devices.density
-        height: 3*Devices.density
+        height: units.dp(3)
         radius: 0
         percent: downloading ? file_handler.progressPercent : 0
         visible: downloading

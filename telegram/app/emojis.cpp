@@ -188,11 +188,13 @@ QString Emojis::convertSmiliesToEmoji(const QString &txt)
 
 QString Emojis::textToEmojiText(const QString &txt, int size, bool skipLinks)
 {
-    QString res = p->autoEmojis? convertSmiliesToEmoji(txt) : txt;
-    res = res.toHtmlEscaped();
-
-    QRegExp links_rxp("((?:(?:\\w\\S*\\/\\S*|\\/\\S+|\\:\\/)(?:\\/\\S*\\w|\\w|\\/))|(?:\\w+\\.(?:com|org|co|net)))");
+    QString res = p->autoEmojis ? convertSmiliesToEmoji(txt) : txt;
     int pos = 0;
+
+    /*
+    // Handling url's is done better with ba-linkify.js
+    res = res.toHtmlEscaped();
+    QRegExp links_rxp("((?:(?:\\w\\S*\\/\\S*|\\/\\S+|\\:\\/)(?:\\/\\S*\\w|\\w|\\/))|(?:\\w+\\.(?:com|org|co|net)))");
     while (!skipLinks && (pos = links_rxp.indexIn(res, pos)) != -1)
     {
         QString link = links_rxp.cap(1);
@@ -204,6 +206,7 @@ QString Emojis::textToEmojiText(const QString &txt, int size, bool skipLinks)
         res.replace( pos, link.length(), atag );
         pos += atag.size();
     }
+    */
 
     QRegExp tags_rxp("\\#(\\w+)");
     pos = 0;

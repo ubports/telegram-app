@@ -47,8 +47,10 @@ Item {
                telegram.accountUnregisterDevice(token);
            }
         }
-        onReconnect: {
-            telegram.reconnect()
+        onResumed: {
+            if (telegram.connected) {
+                telegram.updatesGetDifference()
+            }
         }
     }
 
@@ -65,15 +67,13 @@ Item {
         downloadPath: "/home/phablet/.cache/com.ubuntu.telegram"
         tempPath: "/home/phablet/.cache/com.ubuntu.telegram"
         configPath: AsemanApp.homePath
-        publicKeyFile: "tg-server.pub"
+        publicKeyFile: AsemanApp.appPath + "/tg-server.pub"
         phoneNumber: accountItem.number
         autoCleanUpMessages: true
         autoAcceptEncrypted: true
 
         onErrorSignal: {
-            if (errorText === "PHONE_NUMBER_INVALID") {
-                profiles.remove(phoneNumber);
-            } else if (errorText === "SESSION_REVOKED") {
+            if (errorText === "SESSION_REVOKED") {
                 telegram.logoutRequest = true;
                 telegram.authLogout();
             } else if (errorText === "AUTH_KEY_UNREGISTERED") {
@@ -81,20 +81,19 @@ Item {
                 telegram.authLogout();
             }
 
-            mainView.error(id, errorCode, errorText);
+            mainView.error(id, errorCode, errorText)
         }
         onErrorChanged: {
-            console.log("auth error: " + error);
+            console.log("auth error: " + error)
         }
         onAuthNeededChanged: {
-            console.log("authNeeded " + authNeeded);
+            console.log("authNeeded " + authNeeded)
         }
         onAuthPhoneCheckedChanged: {
-            console.log("authPhoneChecked " + authPhoneChecked);
+            console.log("authPhoneChecked " + authPhoneChecked)
         }
         onAuthCallRequested: {
-            console.log("authCallRequested");
-            auth_code_page.allowCallButton = false;
+            console.log("authCallRequested")
         }
         onAuthCodeRequested: {
             console.log("authCodeRequested");
@@ -166,6 +165,7 @@ Item {
             Connections {
                 target: telegramObject
                 onAuthSignInErrorChanged: auth_code_page.error(telegramObject.authSignInError)
+                onAuthCallRequested: auth_code_page.allowCall = false
             }
         }
     }

@@ -14,8 +14,8 @@ cd $TG_DIR/telegram/scope
 echo "Building app..."
 
 cd $TG_DIR/telegram
-mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
-$QMAKE_BIN LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/libqtelegram-ae INCLUDEPATH+=$TG_INCS/telegramqml PREFIX=/ -r .. || exit 1
+mkdir -p $BUILD_DIR_BASENAME/po && cd $BUILD_DIR_BASENAME || exit 1
+$QMAKE_BIN LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/libqtelegram-ae INCLUDEPATH+=$TG_INCS/telegramqml PREFIX=/usr -r .. || exit 1
 #LIBS+=-lunity-scopes INCLUDEPATH+=/usr/include/unity-scopes-0 -r ..
 $MAKE_BIN -j4 || exit 1
 
@@ -37,7 +37,7 @@ else
     #FIXME: just a temporary hack --> copy the binary to the root of the build folder so that it is in the same folder as tg-server.pub
     cp $TELEGRAM_BIN_PATH $TG_DIR/$BUILD_DIR_BASENAME || exit 1
     #FIXME: just a temporary hack to make it easier for people to run the desktop binary
-    ln -sr $TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_LIB_PATH/*.so.1 $TG_DIR/$BUILD_DIR_BASENAME/ || exit 1
+    ln -sfr $TG_DIR/$BUILD_DIR_BASENAME$SYSTEM_LIB_PATH/*.so.1 $TG_DIR/$BUILD_DIR_BASENAME/ || exit 1
 fi
 
 cd $TG_DIR/telegram

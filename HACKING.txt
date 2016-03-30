@@ -1,0 +1,272 @@
+# Telegram for Ubuntu - development guide
+
+Last updated: 2015-11-17
+
+The goal of this document is to familiarize you, the developer and/or maintainer,
+with some details which you may find helpful while developing or maintaining
+Telegram for Ubuntu.
+
+Most of the details required for building the app can be found in the README.md
+
+This document provides some more context around the development and the team,
+so that you know where to look for things, who to ask, and where to land.
+
+## History
+
+Telegram for Ubuntu consists of three components/layers (branch names):
+ - the UI (libqtelegram/app)
+ - the QML plugin (libqtelegram/plugin subdir)
+ - the API library (libqtelegram)
+and is packaged with:
+ - a push helper
+ - a scope
+
+Initially the lowest level library was based on telegram-cli project
+(https://github.com/vysheng/tg) but was heavily scrubbed and effectively
+mostly re-written for the needs of better API based on Qt's signal/slots.
+Most of this work has been done by
+ - Roberto Mier Escandon - irc:rmescandon@irc.freenode.net)
+ - Tiago Herrmann - irc:salem_@irc.freenode.net)
+
+A stateful QML plugin, written by Roberto, with little contribution from me,
+wrapped the lower API library and provided a higher level API for managing
+a Telegram instance from QML.
+
+The QML plugin lived under the `plugin` directory in the libqtelegram library.
+
+Those two components where wrapped in a QML UI by yours truly.
+
+A push helper by me as well as a Telegram scope by Victor Palau
+were shipped with the app to the Ubuntu store.
+
+At some point in time, the team advised management of some critical changes
+needed to be done, as the glue code (the QML plugin) was not as reliable
+as we wished and it introduced some performance issues as well. There was
+parallel development undergoing on an open source Cutgram Telegram client
+by the Aseman team (mostly Bardia Daneshvar), which we did not want to
+ignore, and thus we made the call to leverage that instead!
+
+It was a turning point for Telegram for Ubuntu, because:
+ 1. this allowed us to make use of a more reliable Cutegram backend
+ 2. and provided very up to date high layer Telegram API access
+This also meant I effectively had to transplant the UI on top of new code,
+which in practice turned out to cause a major rewrite, but with the latest
+Ubuntu.Components 2.3, it gave the app a completely fresh look.
+
+Feature wise this was a small step backward, as we no longer had secret
+chat self-destruct on messages or a few minor features, but the stability
+and reliability of the back-end itself was very much worth it. This was
+the primary reason to make the switch in the first place.
+
+I should make you aware the QML source is not up to standard. There's still
+some blocks of comments left for adaptation from the old source, and not all
+Cutegram features are yet surfaced in the UI. However, because a lot of
+components map directly to the ones in Cutegram, it should be really easy to
+add the missing subset of features, without having to start them from scratch.
+
+## Present
+
+Currently Telegram for Ubuntu consists of three components/layers:
+ - the UI          lp:telegram-app/v2 - contains whole app, pulls dependencies
+ - the QML plugin  https://github.com/Aseman-Land/TelegramQML
+ - the API library https://github.com/Aseman-Land/libqtelegram-aseman-edition
+and is packaged with:
+ - a push helper
+ - a scope
+
+Bardia Daneshvar (find him on github) is a great developer, he has put
+a significant effort into maintaining libqtelegram (as we now call it short,
+libqtelegram-ae), and adding latest API features. Because of that, we
+abandoned our own master branch of the library, and continued to develop
+libqtelegram-ae with Bardia. He does most of the hard work, and we are
+very greatful for that.
+
+TelegramQML has been authored by Bardia, and this was the component that
+replaced our libqtelegram/plugin implementation. It is a solid work, but
+usually libqtelegram-ae exposes more features than TelegramQML consumes.
+Effectively, this means contributions are welcome, because we already can
+do much more on the lower level, but not all of it is yet exposed to QML apps.
+So, we invite you to contribute!
+
+As mentioned in the previus paragraph, the UI part of Telegram for Ubuntu
+has been mostly rewritten, as well as the Telegram scope. The push helper
+was cleaned-up.
+
+I think it's worth mentioning the core developers, so you know who you
+can reach out to in case you need:
+
+Tiago - was involved early in the project, and it's been a long time,
+    so unless you have some Telepathy or Messaging Framework questions,
+    you probably don't want to bother him with Telegram questions.
+Roberto - was involved even before he joined Canonical, up till ~half a year
+    ago, when he moved to work on the Messaging Framework full time.
+    He still provides his knowledge and expertise on the back-end and how
+    Telegram works. Do note that, he may not be familiar with the new
+    TelegramQML library much, but the old libqtelegram - very much so.
+Michal - (which is myself) was involved over whole length of the project,
+    mosty working on the UI, contributing to the back-end, and managing
+    project priorities, releases and external contributions
+    (we have fantastic community!). Over the last few months I was solely
+    responsible for all of the re-work that went into the major 2.x update.
+
+I am only mentioning 'core' developers here, but I have always been
+appreciative of all contributions we've had from people around the world,
+you are champs and we are greatful to every one of you!
+
+## Technical overview
+
+The project lives under
+ - https://launchpad.net/telegram-app
+It previously lived under
+ - https://launchpad.net/libqtelegram
+which now is an alias to the former one.
+
+Development focus is:
+ - lp:telegram-app/v2
+
+Project was internally tracked in Asana, but has now been archived, and the
+pending tasks have been moved over to more general one.
+
+From the README.md you already know Telegram builds in an
+armhf ubuntu-sdk-15.04 click chroot. Note that click chroot (or schroot,
+that it uses indirectly) is known for having trouble when working on a machine
+with encrypted home directory. Hence, while potentially inconvenient, we advise
+you work on a machine with an un-encrypted home directory to avoid those
+problems. Do note that by the time you read this, this may have been resolved,
+feel free to Google.
+
+Earlier this month we had a contribution from faenil, who prepared desktop
+based build setup, which you can find here:
+ - lp:~libqtelegram-team/telegram-app/telegram2-all-platforms
+I didn't point directly to his branch as I already resolved some minor issues.
+I am very careful about landing this branch, which is the only reason
+I'm taking my time for this. Feel free to give it a go, and run the app on
+a 15.04 based desktop, assuming you're okay to install the vivid phone overlay
+(which is not what we would normally recommend, beyond development purposes).
+
+Regardless which branch you pick, the bootstrap/setup process will pull
+the dependencies for you (libqtelegram-ae, TelegramQML) and build them as well.
+
+The /telegram directory contains three directories (+po for translations):
+ - app - is the core application
+ - push - is the push helper
+ - scope - is the app's scope
+
+### Build
+
+In the build scripts you will notice the scope is build separately, and not
+as part of the qmake subdirs template. This is because of a conflict, caused
+by lack of namespaces in one of the two libraries. If this is fixed, the scope
+could be build as part of the subdirs, which would be much cleaner.
+
+### App
+
+As you'd expect, main.cpp is the entry point to the app.
+
+#### Version
+
+The versioning needs a little work. In v1 we had this nicely done,
+in v2 however there's three places that contain the version string
+currently:
+ - telegram/app/main.cpp (setApplicationVersion))
+ - telegram/app/qml/js/version.js
+ - telegram/manifest.json.in ("version")
+plus bzr tag on release day, so it's something to fix/pay attention to.
+
+We stick to semver, MAJOR.MINOR.PATCH and append .REVISION,
+which does not need to match bzr revision, although it would be a good
+idea if it did. It was the situation with Tg v1, it hasn't been set up
+for Tg v2 yet.
+
+#### Manifest
+
+The app's manifest (located one directory up) contains 3 hooks.
+ - telegram - the hook for the app
+ - push - the hook for the push helper
+ - sctelegram - the hook for the scope (legacy name we can't change)
+
+Let's talk about the telegram hook, the other two are self explanatory.
+
+account-application allows us to show Telegram entry in
+  Settings > Notifications
+
+apparmor entry lists all permissions required by the app.
+
+content-hub tells Telegram can share pictures, videos, links and text.
+
+urls tells the Telegram app can handle the "telegram" protocol,
+which basically means a URI scheme. Interestingly, this is currently
+not in use, but should be for links like joining a group chat
+via a group invite link.
+
+Moving on, telegram.cpp takes most of Cutegram's goodies, it's a QObject
+that exposes a bunch of application properties to QML, as well as a few
+utility methods.
+
+tg-server.pub is the public key required by libqtelegram-ae to
+talk to Telegram servers. It's installed next to the telegram app binary.
+
+upgradev2 is used by users, who used Telegram v1 and launch v2 for the
+first time. It persists user session over the upgrade, as well as 
+the secret chats. Part of the class is overly complex and uses fictional
+values (which doesn't affect users at all, as the attachments have already
+been downloaded and are no longer on the server), because some critical
+metadata relating to media attachments has not been stored by the old
+libqtelegram in the sqlite database. Hence, the upgrade process was
+more challenging thatn I wished :')
+
+TODO karni: explain the QML file relations a bit.
+
+There's a few items currently not used, like unitysystemtray.
+
+### Push
+
+There's not too much to say about the push helper other than basic
+documentation available about push helpers on developer.ubuntu.com.
+It's a simple program that takes the push message payload and outputs
+it in the format that the notifications expect it.
+
+If you end up having to hack on the push helper, I suggest you output
+the raw payload and let it through json_pp so you get the idea of the
+payload format. The format is not optimal (some redundant fields),
+it's a long story. We haven't reviewed this with Telegram push team,
+because it would require some work on their end, but once there's a new
+spec on how we'd like to do it, it would be time to talk to the Telegram
+server team, and also request push messages about read read messages,
+which I believe are the only ones that we are actually not getting.
+
+### Scope
+
+The scope has read access to the applications SQLite database files. See:
+ - /telegram/scope/apparmor-scope.json
+
+This is the reason why it gets red-flagged by click-review. Alan Pope, who
+does our releases to the store, is aware of this, and the app gets a +1
+on manual review.
+
+You will notice the config.h file contains some hardcoded paths, as well as
+enum types. The paths should rather be queried by the scope source, and
+enums should come from the library to avoid duplication. We simply didn't
+have time to do this properly, which I'm very sad about.
+
+The 'Today' and 'Photos' aggregator scopes depend on these two values:
+ - KEYWORD_RECENT
+ - KEYWORD_PHOTOS_TELEGRAM
+So they most probably should never change. If for any reason you do need
+to change them, this should be closely consulted with Kyle Nitsche.
+These same keywords are mentioned in the scope's .ini file under Keywords=
+
+In the context of the scope, it is probably worth mentioning a pending
+bug report filed here:
+ - https://bugs.launchpad.net/ubuntu/+source/unity-scope-mediascanner/+bug/1472755
+The reason is not yet known for the crasher, but it's the most common
+crasher on the phone. The scope's code has been reviewed, and it is not
+even clear whether the scope is actually to blame. But because this affects
+multiple users, I thought it was the right thing to mention it here.
+We do not know whether this only affects Telegram within the aggregator
+(like 'Today') or not, but it was reported that disabling Telegram under
+'Today' scope's settings works around the crasher.
+
+## Foot notes
+
+Authored by: Michał Karnicki - irc:karni@irc.freenode.net | 2015-11-17

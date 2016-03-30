@@ -1,22 +1,22 @@
-# Chinese (Hong Kong) translation for telegram-app
-# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# Sardinian translation for telegram-app
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
 # This file is distributed under the same license as the telegram-app package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2015-10-03 17:42+0000\n"
-"Last-Translator: tomoe_musashi <hkg.musashi@gmail.com>\n"
-"Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
+"PO-Revision-Date: 2016-01-15 16:12+0000\n"
+"Last-Translator: amm <Unknown>\n"
+"Language-Team: Sardinian <sc@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Launchpad-Export-Date: 2015-12-11 06:35+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Launchpad-Export-Date: 2016-01-16 05:53+0000\n"
+"X-Generator: Launchpad (build 17886)\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -25,7 +25,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
-msgstr "新羣組"
+msgstr ""
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
@@ -39,18 +39,18 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
-msgstr ""
+msgstr "Cuntatos"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:40
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
-msgstr "搜尋"
+msgstr "Chirca"
 
 #. TRANSLATORS: As in: add new contact
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:46
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
-msgstr ""
+msgstr "Annanghe"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:57
@@ -61,7 +61,7 @@ msgstr ""
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
-msgstr ""
+msgstr "Chirca cuntatos..."
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:121
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:357
@@ -69,7 +69,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:301
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
-msgstr "確定"
+msgstr "Andat bene"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
@@ -97,7 +97,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
-msgstr "取消"
+msgstr "Annudda"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -112,7 +112,7 @@ msgstr "取消"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
@@ -172,17 +172,17 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:53
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
-msgstr ""
+msgstr "Cópia"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:60
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
-msgstr ""
+msgstr "A dae innantis"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:67
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
-msgstr ""
+msgstr "Burra"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:57
@@ -241,7 +241,7 @@ msgstr ""
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
-msgstr ""
+msgstr "Messàgiu nou"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."

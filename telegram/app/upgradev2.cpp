@@ -11,9 +11,9 @@
 #include <QSqlQuery>
 #include <QTextStream>
 
-#include "types/peer.h"
-#include "types/messageaction.h"
-#include "types/messagemedia.h"
+#include <telegram/types/peer.h>
+#include <telegram/types/messageaction.h>
+#include <telegram/types/messagemedia.h>
 
 UpgradeV2::UpgradeV2(QObject *parent) : QObject(parent) {
     phone = "";

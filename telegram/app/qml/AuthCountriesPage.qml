@@ -31,8 +31,9 @@ Page {
         maximumFlickVelocity: 5000
 
         model: CountriesModel {}
-        delegate: ListItem.Standard {
+        delegate: ListItem.SingleValue {
             text: name
+            value: nativeName
             onClicked: {
                 country_list.currentIndex = index;
 
@@ -51,7 +52,14 @@ Page {
         }
     }
 
-    Scrollbar {
-        flickableItem: country_list
+    PhysicalScrollBar {
+        anchors {
+            top: country_list.top
+            right: country_list.right
+        }
+        width: units.gu(2)
+        height: country_list.height
+        color: Qt.rgba(0, 0, 0, 0.5)
+        scrollArea: country_list
     }
 }

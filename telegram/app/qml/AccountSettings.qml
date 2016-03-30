@@ -56,9 +56,13 @@ Page {
         contentType: ContentType.Pictures
 
         onMediaReceived: {
-            var path = String(mediaUrl).replace('file://', '')
-            if (path.length == 0) return;
-            edit_photo_timer.upload(path);
+            if (urls.length > 0) {
+                var path = String(urls[0]).replace('file://', '')
+                if (path.length == 0) return
+                edit_photo_timer.upload(path)
+            } else {
+                console.log("no photo selected")
+            }
         }
     }
  

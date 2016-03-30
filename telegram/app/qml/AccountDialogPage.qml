@@ -58,7 +58,7 @@ Page {
             id: forwardSelectedAction
             iconName: "next"
             text: i18n.tr("Forward")
-            //visible: !pageIsSecret
+            visible: enchat == telegramObject.nullEncryptedChat
             onTriggered: message_list.forwardSelected()
         },
         Action {
@@ -140,10 +140,21 @@ Page {
 //            onCopyRequest: message_list.copy()
         }
 
+        AccountAddContactHeader {
+            id: add_contact_header
+            anchors {
+                top: parent.top
+                right: parent.right
+                left: parent.left
+            }
+            telegramObject: dialog_page.telegramObject
+            currentDialog: dialog_page.currentDialog
+        }
+
         AccountMessageList {
             id: message_list
             anchors {
-                top: parent.top
+                top: add_contact_header.visible ? add_contact_header.bottom : parent.top
                 right: parent.right
                 bottom: send_msg.top
                 left: parent.left

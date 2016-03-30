@@ -2,6 +2,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 0.1
 import Ubuntu.Components.ListItems 1.0 as ListItem
+import Ubuntu.Connectivity 1.0
 import AsemanTools.Controls 1.0 as Controls
 import AsemanTools.Controls.Styles 1.0 as Styles
 
@@ -151,7 +152,7 @@ Rectangle {
 
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
-        enabled: true // TODO isConnected
+        enabled: NetworkingStatus.online && telegramObject.connected
         visible: !messagePlaceholder.visible
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -215,7 +216,7 @@ Rectangle {
             states: [
                 State {
                     name: "send"
-                    when: txt.text.length > 0
+                    when: txt.inputMethodComposing || txt.text.length > 0
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
@@ -223,7 +224,7 @@ Rectangle {
                 },
                 State {
                     name: "attach"
-                    when: txt.text.length == 0
+                    when: !txt.inputMethodComposing && txt.text.length == 0
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
@@ -232,7 +233,9 @@ Rectangle {
             ]
 
             onClicked: {
-                if (!telegramObject.connected) return;
+                Qt.inputMethod.commit();
+
+                if (!telegramObject.connected || !NetworkingStatus.online) return
 
                 if (state == "attach") {
                     Haptics.play()

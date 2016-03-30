@@ -8,6 +8,8 @@ import "qrc:/qml"
 import "qrc:/qml/components"
 import "qrc:/qml/components/listitems"
 import "qrc:/qml/js/colors.js" as Colors
+import "../js/avatar.js" as Avatar
+import "../js/ba-linkify.js" as BaLinkify
 
 ListItemWithActions {
     id: message_item
@@ -28,9 +30,8 @@ ListItemWithActions {
     property real minimumHeight: contact_image.visible ? contact_image.height + units.gu(1) : 0
     property real maximumWidth: 7*width/10.0
             - (contact_image.visible ? contact_image.width : 0)
-            - (forward_contact_image.visible ? forward_contact_image.width : 0)
 
-    property real minimumWidth: 0//100*Devices.density
+    property real minimumWidth: 0
     property real textMargins: units.dp(4)
     property real frameMargins: units.dp(3)
 
@@ -101,22 +102,6 @@ ListItemWithActions {
             isChat: false
 
             onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
-        }
-
-        Avatar {
-            id: forward_contact_image
-            anchors {
-                leftMargin: units.dp(4)
-                verticalCenter: contact_image.verticalCenter
-            }
-            height: units.gu(5)
-            visible: message.fwdFromId !== 0 && !message_media.isSticker
-
-            telegram: telegramObject
-            user: message_item.fwdUser
-            isChat: false
-
-            onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(forward_contact_image.user.id, false))
         }
 
         Item {
@@ -200,6 +185,7 @@ ListItemWithActions {
                     font.weight: Font.Normal
                     elide: Text.ElideRight
                     visible: visibleNames && !message.out && !hasMedia
+                    color: Avatar.getColor(message.fromId)
                     text: user.firstName + " " + user.lastName
 
                     Component.onCompleted: {
@@ -255,25 +241,38 @@ ListItemWithActions {
                     anchors.left: parent.left
                     visible: !hasMedia || message_media.isAudioMessage
 
-                    TextEdit {
+                    Label {
                         id: message_text
+
+                        // Taken from messaging-app
+                        function parseText(text) {
+                            var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;
+                            // remove html tags
+                            text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
+                            // replace line breaks
+                            text = text.replace(/(\n)+/g, '<br />');
+                            // check for links
+                            var htmlText = BaLinkify.linkify(text);
+                            if (htmlText !== text) {
+                                return htmlText;
+                            }
+                            // linkify phone numbers if no web links were found
+                            return text.replace(phoneExp, '<a href="tel:///$1">$1</a>');
+                        }
+
                         anchors {
                             top: parent.top
                             left: parent.left
-                            leftMargin: units.dp(3)
                         }
-                        width: Math.min(htmlWidth, maximumWidth)
+                        // units.dp is used here, because Label wraps too early as compared to TextEdit.
+                        width: Math.min(units.dp(htmlWidth), maximumWidth)
                         height: contentHeight
-                        font.pixelSize: FontUtils.sizeToPixels(message_item.hasMedia ? "small" : "medium")
+                        fontSize: message_item.hasMedia ? "small" : "medium"
                         font.weight: Font.Normal
                         horizontalAlignment: Text.AlignLeft
-                        persistentSelection: false
-                        activeFocusOnPress: false
-                        selectByMouse: false
-                        readOnly: true
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: emojis.bodyTextToEmojiText(messageText)
+                        text: messageText // emojis.textToEmojiText(messageText)
 
                         onLinkActivated: {
                             if (link.slice(0,6) == "tag://") {
@@ -288,7 +287,7 @@ ListItemWithActions {
                             if (message_media.isAudioMessage) {
                                 return i18n.tr("Audio attachment not supported yet ;(")
                             } else {
-                                return message.message
+                                return message_text.parseText(message.message)
                             }
                         }
                     }
