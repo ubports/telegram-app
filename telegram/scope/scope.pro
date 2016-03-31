@@ -4,12 +4,11 @@ CONFIG += plugin no_plugin_name_prefix
 TEMPLATE = lib
 TARGET = com.ubuntu.telegram_sctelegram
 VERSION = 2.0.0
-INCLUDEPATH += . /usr/include/unity-scopes-3
 
 load(ubuntu-click)
 
 CONFIG += link_pkgconfig c++11
-PKCONFIG += libunity-scopes
+PKGCONFIG += libunity-scopes
 LIBS += -lunity-scopes
 
 MOC_DIR = mocs
