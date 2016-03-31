@@ -18,6 +18,7 @@
 #Env vars for the "desktop" build
 function setDesktopBuildEnvVars() {
     echo "Setting up env for a build for desktop..."
+    export QT_SELECT=qt5
     export QMAKE_BIN=qmake
     export MAKE_BIN=make
     #TODO: we're assuming Qt will be in the default libs path
