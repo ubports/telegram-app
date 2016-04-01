@@ -14,11 +14,12 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
 1)  Install build dependencies
     If you're building for mobile devices:
         If you don't have a 15.04 click chroot yet:
-            click chroot --arch armhf --framework ubuntu-sdk-15.04 create
-        In the above click chroot, install:
-            libthumbnailer-qt-dev:armhf libthumbnailer-qt1.0:armhf thumbnailer-service:armhf
-    Else if you're building for desktop, install:
-        libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev
+            sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 create
+        To install the build dependencies in the chroot:
+            sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 maint
+            apt-get install libthumbnailer-qt-dev:armhf libthumbnailer-qt1.0:armhf thumbnailer-service:armhf
+    Else if you're building for desktop, install the build dependencies using the following command:
+        sudo apt-get install libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev
 
 2)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
     - Run ./setup.sh -t <build_type> -d
