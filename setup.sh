@@ -31,8 +31,8 @@ function setDesktopBuildEnvVars() {
 function setMobileBuildEnvVars() {
     #TODO: get rid of hardcoded paths
     echo "Setting up env for a build for mobile devices..."
-    export QMAKE_BIN=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
-    export MAKE_BIN=~/.config/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
+    export QMAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
+    export MAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
     #can't use qmake to get system lib paths here because the SDK qmake-script above  maps dirs to be relative to the chroot dir
     export SYSTEM_LIB_PATH=/usr/lib/arm-linux-gnueabihf
     export SYSTEM_INCLUDE_PATH=/usr/include/
