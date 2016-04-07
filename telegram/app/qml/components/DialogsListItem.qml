@@ -163,8 +163,7 @@ ListItem {
         text: list_item.title
     }
 
-    Text {
-        id: message_text
+    Row {
         anchors {
             top: parent.verticalCenter
             bottom: parent.bottom
@@ -174,24 +173,40 @@ ListItem {
             margins: units.dp(4)
             topMargin: 0
         }
-        visible: showMessage
-        clip: true
-        elide: Text.ElideRight
-        wrapMode: Text.WrapAnywhere
-        maximumLineCount: 1
-        font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
-        color: Colors.grey
-        text: {
-            if (!visible) return "";
 
-            var list = dialog.typingUsers;
-            if (list.length > 0) {
-                // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
-                return i18n.tr("typing...")
-            } else {
-                // We use emojis in our font currently, so no need to replace them here for now
-                //return emojis.bodyTextToEmojiText(message.message, 16, true);
-                return message.message
+        Text {
+            id: message_author
+            visible: showMessage && (message.out || isChat)
+            maximumLineCount: 1
+            font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
+            color: Colors.telegram_blue
+            text: {
+                if (message.out) return i18n.tr("You: ");
+                if (isChat) return telegramObject.user(message.fromId).firstName + ': ';
+                return '';
+            }
+        }
+        Text {
+            id: message_text
+            visible: showMessage
+            clip: true
+            elide: Text.ElideRight
+            wrapMode: Text.WrapAnywhere
+            maximumLineCount: 1
+            font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
+            color: Colors.grey
+            text: {
+                if (!visible) return "";
+
+                var list = dialog.typingUsers;
+                if (list.length > 0) {
+                    // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
+                    return i18n.tr("typing...")
+                } else {
+                    // We use emojis in our font currently, so no need to replace them here for now
+                    //return emojis.bodyTextToEmojiText(message.message, 16, true);
+                    return message.message
+                }
             }
         }
     }
