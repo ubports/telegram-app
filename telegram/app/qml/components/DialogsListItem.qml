@@ -206,11 +206,12 @@ ListItem {
 
         Text {
             id: message_author
-            visible: showMessage && (message.out || isChat)
+            visible: showMessage && (message.out || isChat) && dialog.typingUsers.length === 0
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.telegram_blue
             text: {
+                if (dialog.typingUsers.length > 0) return '';
                 if (message.out) return i18n.tr("You: ");
                 if (isChat) return telegramObject.user(message.fromId).firstName + ': ';
                 return '';
@@ -229,10 +230,10 @@ ListItem {
             width: parent.width - message_author.width - (unread_rect.visible ? unread_rect.width : 0)
             text: {
                 if (!visible) return "";
+                // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 
                 var list = dialog.typingUsers;
                 if (list.length > 0) {
-                    // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
                     return i18n.tr("typing...")
                 } else {
                     // We use emojis in our font currently, so no need to replace them here for now
