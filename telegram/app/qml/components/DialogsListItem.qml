@@ -154,6 +154,7 @@ ListItem {
         spacing: units.dp(4)
 
         Icon {
+            id: contact_group_icon
             visible: isChat
             name: "contact-group"
             anchors {
@@ -179,6 +180,7 @@ ListItem {
         }
 
         Icon {
+            id: audio_volume_muted_icon
             visible: telegram.userData.isMuted(dialogId);
             name: "audio-volume-muted"
             anchors {
@@ -214,6 +216,7 @@ ListItem {
                 return '';
             }
         }
+
         Text {
             id: message_text
             visible: showMessage
@@ -223,6 +226,7 @@ ListItem {
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.grey
+            width: parent.width - message_author.width - (unread_rect.visible ? unread_rect.width : 0)
             text: {
                 if (!visible) return "";
 
@@ -264,7 +268,7 @@ ListItem {
         width: Math.min(height, units.gu(4))
         height: units.gu(2.8)
         radius: width*0.5
-        color: "#5ec245"
+        color: telegram.userData.isMuted(dialogId) ? Colors.grey : "#5ec245"
         visible: dialog.unreadCount !== 0
 
         Text {

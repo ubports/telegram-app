@@ -64,6 +64,8 @@ Item {
         delegate: DialogsListItem {
             id: list_item
             anchors {
+                left: parent.left
+                right: parent.right
                 topMargin: units.dp(3)
                 leftMargin: units.dp(5)
                 bottomMargin: units.dp(3)
