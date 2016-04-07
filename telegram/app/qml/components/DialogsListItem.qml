@@ -142,8 +142,7 @@ ListItem {
         visible: dialog.encrypted
     }
 
-    Text {
-        id: title_text
+    Row {
         anchors {
             top: parent.top
             left: image.right
@@ -152,15 +151,44 @@ ListItem {
             right: time_text.left
             margins: units.dp(4)
         }
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        clip: true
-        elide: Text.ElideRight
-        wrapMode: Text.WrapAnywhere
-        maximumLineCount: 1
-        font.weight: Font.DemiBold
-        font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
-        text: list_item.title
+        spacing: units.dp(4)
+
+        Icon {
+            visible: isChat
+            name: "contact-group"
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                topMargin: units.dp(4)
+                bottomMargin: units.dp(4)
+            }
+            width: height
+        }
+
+        Text {
+            id: title_text
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+            clip: true
+            elide: Text.ElideRight
+            wrapMode: Text.WrapAnywhere
+            maximumLineCount: 1
+            font.weight: Font.DemiBold
+            font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
+            text: list_item.title
+        }
+
+        Icon {
+            visible: telegram.userData.isMuted(dialogId);
+            name: "audio-volume-muted"
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                topMargin: units.dp(4)
+                bottomMargin: units.dp(4)
+            }
+            width: height
+        }
     }
 
     Row {
