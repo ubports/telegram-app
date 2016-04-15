@@ -32,12 +32,12 @@ enum PeerType {
 };
 
 enum MessageMedia {
-   typeMessageMediaDocument = 0x2fda2204,
-   typeMessageMediaContact = 0x5e7d2f39,
-   typeMessageMediaEmpty = 0x3ded6320,
-   typeMessageMediaVideo = 0xa2d24290,
-   typeMessageMediaUnsupported = 0x29632a36,
-   typeMessageMediaAudio = 0xc6b68300,
-   typeMessageMediaPhoto = 0xc8c45a2a,
-   typeMessageMediaGeo = 0x56e0d474
+    typeMessageMediaEmpty       = 0x3ded6320,
+    typeMessageMediaPhoto       = 0x3d8ce53d,
+    typeMessageMediaVideo       = 0x5bcf1675,
+    typeMessageMediaGeo         = 0x56e0d474,
+    typeMessageMediaContact     = 0x5e7d2f39,
+    typeMessageMediaUnsupported = 0x9f84f49e,
+    typeMessageMediaDocument    = 0x2fda2204,
+    typeMessageMediaAudio       = 0xc6b68300
 };
