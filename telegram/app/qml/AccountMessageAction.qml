@@ -61,7 +61,7 @@ Item {
                         else
                             res = i18n.tr("<b>%1</b> created the group").arg(fromUserName)
                     }
-                    break;
+                    break
 
                 case typeMessageActionChatAddUser:
                     userName = user.firstName + " " + user.lastName
@@ -73,7 +73,7 @@ Item {
                         res = i18n.tr("<b>%1</b> added you").arg(fromUserName)
                     else
                         res = i18n.tr("<b>%1</b> added <b>%2</b>").arg(fromUserName).arg(userName)
-                    break;
+                    break
 
                 case typeMessageActionChatDeleteUser:
                     userName = user.firstName + " " + user.lastName
@@ -90,21 +90,31 @@ Item {
                         else
                             res = i18n.tr("<b>%1</b> removed <b>%2</b>").arg(fromUserName).arg(userName)
                     }
-                    break;
+                    break
 
                 case typeMessageActionChatEditTitle:
+                    var titleText = action.title.replace("\"", "")
                     // TRANSLATORS: %1 is the person, who changed group name to title %2.
-                    res = i18n.tr("%1 changed the group name to %2").arg(fromUserName).arg(action.title)
+                    if (fromUser.id == telegramObject.me)
+                        res = i18n.tr("You changed the group name to %2").arg(fromUserName).arg(titleText)
+                    else    
+                        res = i18n.tr("<b>%1</b> changed the group name to %2").arg(fromUserName).arg(titleText)
                     break
 
                 case typeMessageActionChatEditPhoto:
                     // TRANSLATORS: %1 is the person, who changed the gruop phot.
-                    res = i18n.tr("%1 changed the group photo").arg(fromUserName)
+                    if (fromUser.id == telegramObject.me)
+                        res = i18n.tr("You changed the group photo").arg(fromUserName)
+                    else
+                        res = i18n.tr("<b>%1</b> changed the group photo").arg(fromUserName)
                     break
 
                 case typeMessageActionChatDeletePhoto:
                     // TRANSLATORS: %1 is the person, who deleted the group photo.
-                    res = i18n.tr("%1 removed the group photo").arg(fromUserName)
+                    if (fromUser.id == telegramObject.me)
+                        res = i18n.tr("You removed the group photo").arg(fromUserName)
+                    else
+                        res = i18n.tr("<b>%1</b> removed the group photo").arg(fromUserName)
                     break
 
                 case typeMessageActionEmpty:
