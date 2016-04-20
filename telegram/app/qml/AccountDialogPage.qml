@@ -1,6 +1,7 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
+import QtQuick.Window 2.2
 
 import AsemanTools 1.0
 import TelegramQML 1.0
@@ -100,24 +101,17 @@ Page {
             bottomMargin: units.dp(1)
             rightMargin: units.gu(2)
         }
-        width: height
-
-//        Text {
-//            anchors {
-//                left: imgAvatar.right
-//                bottom: imgAvatar.bottom
-//                topMargin: units.dp(3)
-//                leftMargin: units.dp(2)
-//            }
-//            text: user ? user.firstName + " " + user.lastName : ""
-//            font.pointSize: 11
-//        }
+        width: 60
 
         Text {
             anchors {
+                top: units.gu(2)
+                topMargin: units.gu(5)
                 left: imgAvatar.right
-                topMargin: units.dp(3)
-                leftMargin: units.dp(2)
+                leftMargin: units.gu(1)
+//                bottom: parent.bottom
+                bottomMargin: units.gu(0)
+//                rightMargin: units.gu(2)
             }
             text: {
                 if (!currentDialog) return "";
