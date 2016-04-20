@@ -89,6 +89,81 @@ Page {
     }
 
     flickable: null
+
+    head.contents: Rectangle {
+        anchors {
+            top: parent.top
+            topMargin: units.dp(1)
+            left: parent.left
+            leftMargin: units.gu(1)
+            bottom: parent.bottom
+            bottomMargin: units.dp(1)
+            rightMargin: units.gu(2)
+        }
+        width: height
+
+//        Text {
+//            anchors {
+//                left: imgAvatar.right
+//                bottom: imgAvatar.bottom
+//                topMargin: units.dp(3)
+//                leftMargin: units.dp(2)
+//            }
+//            text: user ? user.firstName + " " + user.lastName : ""
+//            font.pointSize: 11
+//        }
+
+        Text {
+            anchors {
+                left: imgAvatar.right
+                topMargin: units.dp(3)
+                leftMargin: units.dp(2)
+            }
+            text: {
+                if (!currentDialog) return "";
+                if (isChat) {
+                    return chat ? chat.title : "";
+                } else {
+                    return user ? user.firstName + " " + user.lastName : "";
+                }
+            }
+            font.pointSize: 11
+        }
+
+
+        Avatar {
+        id: imgAvatar
+        anchors {
+            top: parent.top
+            topMargin: units.dp(4)
+            left: parent.left
+            leftMargin: units.gu(0.5)
+            bottom: parent.bottom
+            bottomMargin: units.dp(4)
+            rightMargin: units.gu(2)
+        }
+        width: height
+
+        telegram: dialog_page.telegramObject
+        dialog: dialog_page.currentDialog
+
+        }
+
+        Image {
+            anchors {
+                left: imgAvatar.right
+                leftMargin: -width
+                top: imgAvatar.top
+                topMargin: units.dp(2)
+            }
+            width: units.gu(1.4)
+            height: units.gu(2)
+            source: "qrc:/qml/files/lock.png"
+            sourceSize: Qt.size(width, height)
+            visible: currentDialog.encrypted
+        }
+    }
+
     title: {
         if (!currentDialog) return "";
 

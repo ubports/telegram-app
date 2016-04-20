@@ -4,6 +4,7 @@ import "qrc:/qml/js/colors.js" as TelegramColors
 
 import TelegramQML 1.0
 
+
 Item {
     id: header
 
