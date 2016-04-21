@@ -94,25 +94,24 @@ Page {
     head.contents: Rectangle {
         anchors {
             top: parent.top
-            topMargin: units.dp(1)
+            topMargin: units.dp(8)
             left: parent.left
-            leftMargin: units.gu(1)
+            verticalCenter: parent
+            right: parent.right
+            rightMargin: units.gu(5)
             bottom: parent.bottom
             bottomMargin: units.dp(1)
-            rightMargin: units.gu(2)
         }
-        width: 60
 
         Text {
             anchors {
-                top: units.gu(2)
-                topMargin: units.gu(5)
+                top: parent.top
+                topMargin: units.gu(0.2)
                 left: imgAvatar.right
                 leftMargin: units.gu(1)
-//                bottom: parent.bottom
-                bottomMargin: units.gu(0)
-//                rightMargin: units.gu(2)
             }
+            width: parent.width
+
             text: {
                 if (!currentDialog) return "";
                 if (isChat) {
@@ -122,20 +121,14 @@ Page {
                 }
             }
             font.pointSize: 11
+            wrapMode: Text.WordWrap
+            elide: Text.ElideRight
+            maximumLineCount: 1
         }
-
 
         Avatar {
         id: imgAvatar
-        anchors {
-            top: parent.top
-            topMargin: units.dp(4)
-            left: parent.left
-            leftMargin: units.gu(0.5)
-            bottom: parent.bottom
-            bottomMargin: units.dp(4)
-            rightMargin: units.gu(2)
-        }
+
         width: height
 
         telegram: dialog_page.telegramObject
@@ -146,25 +139,15 @@ Page {
         Image {
             anchors {
                 left: imgAvatar.right
-                leftMargin: -width
+                leftMargin: -width-5
                 top: imgAvatar.top
                 topMargin: units.dp(2)
             }
-            width: units.gu(1.4)
-            height: units.gu(2)
+            width: units.gu(1)
+            height: units.gu(1.5)
             source: "qrc:/qml/files/lock.png"
             sourceSize: Qt.size(width, height)
             visible: currentDialog.encrypted
-        }
-    }
-
-    title: {
-        if (!currentDialog) return "";
-
-        if (isChat) {
-            return chat ? chat.title : "";
-        } else {
-            return user ? user.firstName + " " + user.lastName : "";
         }
     }
 
