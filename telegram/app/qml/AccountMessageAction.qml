@@ -39,11 +39,25 @@ Item {
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
         visible: hasAction
-
+//        height: {
+//            if (action.classType == typeMessageActionChatEditTitle) {
+//                console.log("*** PAZ: Chat edit height: " + childrenRect.height);
+//            }
+//            return childrenRect.height;
+//        }
         Label {
+            id: actionText
+            width: parent.width
+            height: {
+                console.log("*** PAZ: Label Count: " + actionText.lineCount);
+                return actionText.lineCount * actionText.lineHeight;
+            }
+
             anchors.horizontalCenter: parent.horizontalCenter
+            horizontalAlignment: Text.AlignHCenter
             fontSize: "small"
             color: "#333333"
+            wrapMode: Text.WordWrap
             text: {
                 var res = ""
                 var userName

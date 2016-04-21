@@ -8,117 +8,117 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-09 12:51+0100\n"
+"POT-Creation-Date: 2016-04-21 15:43+0000\n"
 "PO-Revision-Date: 2015-11-03 11:45+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2016-03-28 05:53+0000\n"
 "X-Generator: Launchpad (build 17967)\n"
-"Language: uk\n"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /home/paz/Development/1530698/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "Додати до контактів"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:22
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
 msgstr "Нова група"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
 msgstr "Додати до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
 msgstr "Нове конфіденційне спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:28
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
 msgstr "Контакти"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:40
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:92
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:40
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
 msgstr "Шукати"
 
 #. TRANSLATORS: As in: add new contact
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:46
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:99
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:46
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
 msgstr "Додати"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:57
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:128
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:57
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:128
 msgid "Back"
 msgstr "Назад"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:74
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
 msgstr "Знайти контакт…"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:121
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:357
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:385
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:301
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:121
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:357
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:385
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:301
+#: /home/paz/Development/1530698/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
 msgstr "Гаразд"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:203
 msgid "Chat title"
 msgstr "Заголовок спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:316
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:30
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:316
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
 msgstr "Додати контакт"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:319
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
 msgstr "З адресної книги"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:328
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
 msgstr "Введення відомостей"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:336
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:395
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:312
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:336
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:395
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:312
+#: /home/paz/Development/1530698/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
+#: /home/paz/Development/1530698/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Скасувати"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:297
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:298
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:570
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:101
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:370
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:295
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:298
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:17
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/paz/Development/1530698/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
+#: /home/paz/Development/1530698/telegram/app/telegram.cpp:572
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:101
+#: /home/paz/Development/1530698/telegram/build_mobile/app/telegram.desktop.h:1
+#: /home/paz/Development/1530698/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:402
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -130,130 +130,171 @@ msgstr ""
 "Кількість останніх повідомлень для переспрямовування:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:463
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
 msgstr "Контакти імпортовано"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:466
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
 msgstr "Контактів не імпортовано"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:473
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
 msgstr "Цей контакт є у Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:476
+#: /home/paz/Development/1530698/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "%1 з %2 контактів є у Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:95
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogList.qml:98
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "Переспрямувати повідомлення до %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:107
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogList.qml:110
 #, qt-format
 msgid "Send messages to %1?"
 msgstr "Надіслати повідомлення %1?"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
 msgstr "Дані групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
 msgstr "Дані профілю"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:41
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
 msgstr "Позначити все"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:53
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:225
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogPage.qml:53
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:246
 msgid "Copy"
 msgstr "Копіювати"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:60
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:231
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogPage.qml:60
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:268
 msgid "Forward"
 msgstr "Переспрямувати"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:67
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:216
+#: /home/paz/Development/1530698/telegram/app/qml/AccountDialogPage.qml:67
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:235
 msgid "Delete"
 msgstr "Вилучити"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:57
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:71
 #, qt-format
 msgid "%1 created a secret chat"
 msgstr "%1 створено у конфіденційному спілкуванні"
 
-#. TRANSLATORS: %1 indicates who created the group chat titled %2.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:60
-#, qt-format
-msgid "%1 created the group \"%2\""
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:74
+#, fuzzy
+msgid "You created the group"
 msgstr "%1 створено групу «%2»"
 
-#. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:67
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:76
+#, fuzzy, qt-format
+msgid "<b>%1</b> created the group"
+msgstr "%1 створено групу «%2»"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:85
+#, fuzzy, qt-format
+msgid "You added <b>%1</b>"
+msgstr "Переспрямовано від <b>%1</b>"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:87
 #, qt-format
-msgid "%1 added %2 to group"
-msgstr "%1 додано %2 до групи"
+msgid "<b>%1</b> added you"
+msgstr ""
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:89
+#, qt-format
+msgid "<b>%1</b> added <b>%2</b>"
+msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:76
-#, qt-format
-msgid "%1 left the group"
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:98
+#, fuzzy, qt-format
+msgid "<b>%1</b> left the group"
 msgstr "%1 полишив(-ла) групу"
 
-#. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
-#. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:79
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:206
-#, qt-format
-msgid "%1 removed %2"
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:101
+#, fuzzy, qt-format
+msgid "You removed <b>%1</b>"
+msgstr "Переспрямовано від <b>%1</b>"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:103
+#, fuzzy, qt-format
+msgid "<b>%1</b> removed you"
 msgstr "%1 вилучено %2"
 
-#. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:84
-#, qt-format
-msgid "%1 changed group name to \"%2\""
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:105
+#, fuzzy, qt-format
+msgid "<b>%1</b> removed <b>%2</b>"
+msgstr "%1 вилучено %2"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:113
+#, fuzzy, qt-format
+msgid "You changed the group name to %1"
 msgstr "%1 змінено назву групи на «%2»"
 
-#. TRANSLATORS: %1 is the person, who changed the gruop phot.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:89
-#, qt-format
-msgid "%1 changed group photo."
-msgstr "%1 змінено фото групи."
+#. TRANSLATORS: %1 is the person, who changed group name to title %2.
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:116
+#, fuzzy, qt-format
+msgid "<b>%1</b> changed the group name to %2"
+msgstr "%1 змінено назву групи на «%2»"
 
-#. TRANSLATORS: %1 is the person, who deleted the group photo.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:94
-#, qt-format
-msgid "%1 deleted group photo"
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:123
+#, fuzzy
+msgid "You changed the group photo"
+msgstr "%1 змінено фотографію групи"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:125
+#, fuzzy, qt-format
+msgid "<b>%1</b> changed the group photo"
+msgstr "%1 змінено фотографію групи"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:131
+#, fuzzy
+msgid "You removed the group photo"
+msgstr "%1 вилучено фото групи"
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:133
+#, fuzzy, qt-format
+msgid "<b>%1</b> removed the group photo"
 msgstr "%1 вилучено фото групи"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:129
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:142
 msgid "Please select chat"
 msgstr "Будь ласка, виберіть спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:197
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:215
 msgid "New messages"
 msgstr "Нові повідомлення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:369
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:252
+msgid "Reply"
+msgstr ""
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:259
+msgid "Sticker Pack info"
+msgstr ""
+
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:406
 msgid "Secret chat requested."
 msgstr "Надійшов запит на конфіденційне спількування."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:381
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:418
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -263,203 +304,199 @@ msgstr ""
 "Зауважте, що Android підтверджує конфіденційне спілкування автоматично."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:413
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:450
 msgid "Accept"
 msgstr "Прийняти"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:427
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageList.qml:464
 msgid "Reject"
 msgstr "Відкинути"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:18
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:21
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:50
+#: /home/paz/Development/1530698/telegram/app/qml/AccountNamePage.qml:18
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:21
+#: /home/paz/Development/1530698/telegram/app/qml/PreviewPage.qml:50
 msgid "Save"
 msgstr "Зберегти"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:23
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:30
+#: /home/paz/Development/1530698/telegram/app/qml/AccountNamePage.qml:23
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
 msgstr "Змінити ім’я"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:34
+#: /home/paz/Development/1530698/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
 msgstr "Слід вказати ім’я."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:52
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:132
+#: /home/paz/Development/1530698/telegram/app/qml/AccountNamePage.qml:52
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
 msgstr "Ім’я (обов’язкове)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:71
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:148
+#: /home/paz/Development/1530698/telegram/app/qml/AccountNamePage.qml:71
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
 msgstr "Прізвище (обов’язкове)"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:300
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:298
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
 msgstr "Встановлення з’єднання…"
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:304
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:326
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:346
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:302
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:324
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:344
 msgid "Waiting for network..."
 msgstr "Очікуємо на зв’язок…"
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:323
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:343
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:321
+#: /home/paz/Development/1530698/telegram/app/qml/AccountPage.qml:341
 msgid "Select Chat"
 msgstr "Виберіть спілкування"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:158
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSendMessage.qml:158
 msgid "Type message"
 msgstr "Введіть повідомлення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:336
-msgid "Close"
-msgstr "Закрити"
-
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:23
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:45
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:23
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
 msgstr "Змінити фотографію"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:36
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:102
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:36
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
 msgstr "Параметри"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:94
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:642
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:87
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:94
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:641
+#: /home/paz/Development/1530698/telegram/app/qml/components/DialogsListItem.qml:89
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Інформація"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:100
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:100
 msgid "Phone"
 msgstr "Телефон"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:108
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:61
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:108
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
 msgstr "Користувач"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:115
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:115
 msgid "Messages"
 msgstr "Повідомлення"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:120
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:485
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:386
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:120
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:484
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:415
 msgid "Notifications"
 msgstr "Сповіщення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:153
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:153
 msgid "Send by Enter"
 msgstr "Надсилання за «Ввести»"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:172
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:172
 msgid "Support"
 msgstr "Підтримка"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:178
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:178
 msgid "Ask a Question"
 msgstr "Задати питання"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:185
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:111
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:185
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
 msgstr "ЧаП з Telegram"
 
 #. TRANSLATORS: Settings section header.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:191
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:191
 msgid "Account"
 msgstr "Обліковий запис"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:196
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:196
 msgid "Log out"
 msgstr "Вийти"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:208
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:208
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram для Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:262
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:239
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:67
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:262
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:238
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:67
 msgid "online"
 msgstr "у мережі"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:265
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:242
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:70
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:265
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:241
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
 msgstr "востаннє бачили %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:268
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:245
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:73
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:268
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:244
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
 msgstr "було помічено нещодавно"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:271
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:248
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:76
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:271
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:247
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
 msgstr "було помічено протягом тижня"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:274
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:251
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:79
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:274
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:250
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
 msgstr "було помічено протягом місяця"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:277
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:254
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:82
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:277
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:253
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
 msgstr "було помічено давно"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:299
+#: /home/paz/Development/1530698/telegram/app/qml/AccountSettings.qml:299
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -468,40 +505,40 @@ msgstr ""
 "Усі конфіденційні спілкування буде припинено."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:35
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr "З %1 можна спілкуватися."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:38
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr "Вибачте, таке ім’я користувача вже кимось використано."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:46
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr "Вибачте, це ім’я користувача є некоректним."
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:100
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:100
 msgid "Your Username"
 msgstr "Ваше ім’я користувача"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:108
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
 msgstr "Ім’я користувача має складатися із принаймні 5 символів."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:131
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:131
 msgid "Checking username..."
 msgstr "Перевіряємо ім’я користувача…"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:139
+#: /home/paz/Development/1530698/telegram/app/qml/AccountUsernamePage.qml:139
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
-"underscores.<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
+"<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "Ви можете вибрати ім’я користувача у системі <b>Telegram</b>. Якщо ви це "
 "зробите, інші користувачі зможуть знайти вас за цим ім’ям і зв’язатися із "
@@ -509,215 +546,220 @@ msgstr ""
 "символи <b>a-z</b>, <b>0-9</b> або символи підкреслювання.<br />Ім’я має "
 "складатися із принаймні <b>5</b> символів."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:35
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:88
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:35
+#: /home/paz/Development/1530698/telegram/app/qml/AuthNumberPage.qml:88
 msgid "Done"
 msgstr "Виконано"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:115
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:115
 msgid "Phone number (required)"
 msgstr "Номер телефону (обов’язковий)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:184
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:184
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr "%1 ще немає у Telegram"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:190
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
 msgstr "Запросити до Telegram"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:236
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:236
 msgid "Could not add contact"
 msgstr "Не вдалося додати контакт"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:256
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:256
 msgid "Please include the country code."
 msgstr "Будь ласка, включіть код країни."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:258
+#: /home/paz/Development/1530698/telegram/app/qml/AddContactPage.qml:258
 msgid "Number is not a valid phone number"
 msgstr "Номер не є коректним номером телефону"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:7
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:22
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:146
+#: /home/paz/Development/1530698/telegram/app/qml/AuthenticatePage.qml:7
 msgid "Sign In"
 msgstr "Увійти"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:22
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:146
 msgid "Sign Up"
 msgstr "Зареєструватися"
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:29
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:29
 msgid "Invalid phone code"
 msgstr "Некоректний телефонний код"
 
 #. TRANSLATORS: Error text for missing first name.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:44
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:44
 msgid "First name is required"
 msgstr "Слід вказати ім’я"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:110
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:110
 msgid "Code"
 msgstr "Код"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:126
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:126
 msgid "First Name"
 msgstr "Ім'я"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:135
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:135
 msgid "Last Name"
 msgstr "Прізвище"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:157
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:157
 msgid "Resend Code"
 msgstr "Повторно надіслати код"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:173
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:173
 msgid "Request Call"
 msgstr "Запит дзвінка"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:175
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCodePage.qml:175
 msgid "Calling, please wait..."
 msgstr "Дзвонимо, зачекайте…"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCountriesPage.qml:15
+#: /home/paz/Development/1530698/telegram/app/qml/AuthCountriesPage.qml:15
 msgid "Country Code"
 msgstr "Код країни"
 
 #. TRANSLATORS: Placeholder for the phone number field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:61
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:21
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:66
+#: /home/paz/Development/1530698/telegram/app/qml/AuthenticatePage.qml:61
+#: /home/paz/Development/1530698/telegram/app/qml/AuthNumberPage.qml:21
+#: /home/paz/Development/1530698/telegram/app/qml/AuthNumberPage.qml:66
 msgid "Phone Number"
 msgstr "Номер телефону"
 
 #. TRANSLATORS: Button text right under the phone number text field.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:78
+#: /home/paz/Development/1530698/telegram/app/qml/AuthenticatePage.qml:78
 msgid "Log in"
 msgstr "Увійти"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:73
+#: /home/paz/Development/1530698/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Number correct?"
 msgstr "Коректний номер?"
 
+#: /home/paz/Development/1530698/telegram/app/qml/InstallStickerDialog.qml:67
+msgid "Install"
+msgstr ""
+
+#: /home/paz/Development/1530698/telegram/app/qml/InstallStickerDialog.qml:75
+msgid "Close"
+msgstr "Закрити"
+
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPage.qml:142
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPage.qml:172
 msgid "Start Messaging"
 msgstr "Почати обмін повідомленнями"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:18
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr "Вітаємо у ері<br>швидкого і безпечного спілкування"
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:22
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "Швидкість"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:23
-msgid ""
-"<b>Telegram</b> delivers messages faster<br> than any other application"
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:23
+msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> надсилає повідомлення швидше<br> за будь-яку іншу програму"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:27
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "Свобода"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:28
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr ""
-"<b>Telegram</b> назавжди безкоштовна. Без реклами.<br> Без передплати"
+msgstr "<b>Telegram</b> назавжди безкоштовна. Без реклами.<br> Без передплати"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:32
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "Безпека"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:33
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr "<b>Telegram</b> убезпечує ваші повідомлення<br> від гакерів"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:37
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "Потужність"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:38
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
 "<b>Telegram</b> не передбачає обмежень на розмір<br> ваших зображень або "
 "спілкувань"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:42
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "Хмарність"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:43
-msgid ""
-"<b>Telegram</b> lets you access your messages<br> from multiple devices"
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:43
+msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> надає вам доступ до ваших<br> повідомлень з декількох "
 "пристроїв"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:47
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "Конфіденційність"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:48
+#: /home/paz/Development/1530698/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr "Повідомлення <b>Telegram</b> зашифровано стійким шифром<br>"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:29
+#: /home/paz/Development/1530698/telegram/app/qml/PreviewPage.qml:29
 #, qt-format
 msgid "From: %1"
 msgstr "Від: %1"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:56
+#: /home/paz/Development/1530698/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
 msgstr "Оприлюднити"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:16
 msgid "Contact Info"
 msgstr "Дані контакту"
 
 #. TRANSLATORS: Action text to add member to group chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:39
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:39
 msgid "Add member"
 msgstr "Додати учасника"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:228
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:57
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:227
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr "%1 учасники, %2 у мережі"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:231
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:60
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:230
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:60
 #, qt-format
 msgid "%1 members"
 msgstr "%1 учасники"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:272
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:48
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:271
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:48
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -726,56 +768,56 @@ msgstr[1] "%1 набирають повідомлення"
 msgstr[2] "%1 набирають повідомлення"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:275
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:274
 #, qt-format
 msgid "%1 are typing"
 msgstr "%1 набирають повідомлення"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:340
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:339
 msgid "Unknown"
 msgstr "Невідомий"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:350
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:349
 msgid "Mobile"
 msgstr "Мобільний"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:402
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:401
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:562
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:561
 msgid "Block user"
 msgstr "Заблокувати користувача"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:629
+#: /home/paz/Development/1530698/telegram/app/qml/ProfilePage.qml:628
 msgid "Remove from group"
 msgstr "Вилучити з групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:165
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:163
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Отриманих сьогодні повідомлень Telegram: %1"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:166
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:164
 msgid "No Telegram messages received today."
 msgstr "Сьогодні не отримано жодного повідомлення Telegram."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:173
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:171
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Надісланих сьогодні повідомлень Telegram: %1"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:174
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:172
 msgid "No Telegram messages sent today."
 msgstr "Сьогодні не було надіслано жодного повідомлення Telegram."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:387
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:416
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -783,67 +825,67 @@ msgstr ""
 "Якщо вам потрібні сповіщення Telegram, коли ви не користуєтеся програмою, "
 "увійдіть до вашого облікового запису Ubuntu One."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:394
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:423
 msgid "Sign in to Ubuntu One"
 msgstr "Увійдіть до Ubuntu One"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:402
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:431
 msgid "Remind me later"
 msgstr "Нагадайте пізніше"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:410
+#: /home/paz/Development/1530698/telegram/app/qml/telegram.qml:439
 msgid "Don't want notifications"
 msgstr "Не потрібно сповіщень"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:136
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
 msgstr "Облікові записи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:163
+#: /home/paz/Development/1530698/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
 msgstr "Додати обліковий запис"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:86
+#: /home/paz/Development/1530698/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
 msgstr "Фото"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:97
+#: /home/paz/Development/1530698/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
 msgstr "Відео"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:108
+#: /home/paz/Development/1530698/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
 msgstr "Файл"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:34
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "Очікуємо, доки користувач з’явиться у мережі…"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:36
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "Надіслано запит щодо конфіденційного спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:38
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "Створено конфіденційне спілкування"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:41
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr "У конфіденційному спілкування відмовлено"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:48
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "Вимкнено"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:51
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -852,367 +894,379 @@ msgstr[1] "%1 секунди"
 msgstr[2] "%1 секунд"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:54
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 хвилина"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:57
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 година"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:60
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 день"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:63
+#: /home/paz/Development/1530698/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 тиждень"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:50
+#: /home/paz/Development/1530698/telegram/app/qml/components/DialogsListItem.qml:51
 msgid "Leave chat"
 msgstr "Припинити спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:56
+#: /home/paz/Development/1530698/telegram/app/qml/components/DialogsListItem.qml:57
 msgid "Are you sure you want to leave this chat?"
 msgstr "Ви справді хочете припинити спілкування?"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:66
+#: /home/paz/Development/1530698/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Clear history"
 msgstr "Спорожнити журнал"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:72
+#: /home/paz/Development/1530698/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to clear history?"
 msgstr "Ви справді хочете спорожнити журнал?"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:188
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:51
+#: /home/paz/Development/1530698/telegram/app/qml/components/DialogsListItem.qml:190
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
 msgstr "введення даних…"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:205
+#: /home/paz/Development/1530698/telegram/app/qml/components/MessagesListItem.qml:191
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Переспрямовано від <b>%1</b>"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:288
+#: /home/paz/Development/1530698/telegram/app/qml/components/MessagesListItem.qml:274
 msgid "Audio attachment not supported yet ;("
 msgstr "Підтримки долучення звукових даних ще не передбачено ;("
 
 #. TRANSLATORS: User status: deleted
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /home/paz/Development/1530698/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Вилучено"
 
 #. TRANSLATORS: Title of self destruct timer dialog.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
+#: /home/paz/Development/1530698/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
 msgstr "Таймер із саморуйнуванням"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:11
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:46
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:68
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:11
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:46
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
 msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:14
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:35
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:49
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:14
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:35
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "d MMM"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:54
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "сьогодні о %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:57
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "вчора о %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:60
+#: /home/paz/Development/1530698/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1 о %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:251
+#: /home/paz/Development/1530698/telegram/app/telegram.cpp:253
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:255
+#: /home/paz/Development/1530698/telegram/app/telegram.cpp:257
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:259
+#: /home/paz/Development/1530698/telegram/app/telegram.cpp:261
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:262
+#: /home/paz/Development/1530698/telegram/app/telegram.cpp:264
 msgid "dd MMM yy"
 msgstr "dd-MMM-yy"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:110
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr "надіслано вам повідомлення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:114
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr "надіслано вам фотографію"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:118
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr "надіслано вам відео"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:122
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr "надіслано вам документ"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:126
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr "надіслано вам голосове повідомлення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:130
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr "надіслано вам контакт"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:134
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr "надіслано вам карту"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:139
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:144
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr "%1 надіслано повідомлення до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:149
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr "%1 надіслано фотографію до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:154
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr "%1 надіслано відео до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:159
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr "%1 надіслано документ до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:164
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr "%1 надіслано голосове повідомлення до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:169
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr "%1 надіслано контакт до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:174
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr "%1 надіслано карту до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:179
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:200
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:179
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr "%1 запрошено вас до групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:184
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr "%1 змінено назву групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:189
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr "%1 змінено фотографію групи"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:195
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr "%1 запрошено %2"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:211
+#. TRANSLATORS: Notification message saying: person A removed person B (from a group)
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:206
+#, qt-format
+msgid "%1 removed %2"
+msgstr "%1 вилучено %2"
+
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr "%1 вилучено вас з групи"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:216
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr "%1 полишено групу"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:221
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr "%1 здійснено повернення до групи"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:226
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:228
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr "%1 пройдено перевірку"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:234
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr "%1 долучився до Telegram!"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:239
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:245
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:239
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr "Новий вхід із невідомого пристрою"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:244
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr "%1 @ %2"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:249
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr "оновлено фотографію з профілю"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:254
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:259
-#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:264
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:254
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:259
+#: /home/paz/Development/1530698/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr "Отримано повідомлення"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/config.h:24
+#: /home/paz/Development/1530698/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr "hh:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:62
+#: /home/paz/Development/1530698/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr "Відкр. програму"
 
 #. TRANSLATORS: call to action: open this chat
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:86
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:120
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:149
+#: /home/paz/Development/1530698/telegram/scope/preview.cpp:86
+#: /home/paz/Development/1530698/telegram/scope/preview.cpp:120
+#: /home/paz/Development/1530698/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr "Почати спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:94
+#: /home/paz/Development/1530698/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr "Дзвінок"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:58
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr "Не вдалося отримати дані Telegram"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:59
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr "Натисніть тут, щоб відкрити програму"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:167
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Результати у «Контакти і спілкування»"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:184
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Результати у «Повідомлення»"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:291
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Люди, з якими ви спілкувалися"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:292
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Нещодавні спілкування"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:293
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Нещодавні фотографії"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 нове повідомлення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 нових повідомлень"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:301
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Непрочитане (%1)"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:642
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Звукове повідомлення"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:646
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "Отримано контакт"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:650
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "Отримано документ"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:654
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "Отримано фотографію"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:671
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "Отримано відео"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:681
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr "Непідтримуваний тип даних"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:756
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Увійти до Telegram"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:792
+#: /home/paz/Development/1530698/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Сьогодні повідомлень не отримано."
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/paz/Development/1530698/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr "Це область Telegram"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/paz/Development/1530698/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Шукати спілкування, контакт чи повідомлення"
+
+#~ msgid "%1 added %2 to group"
+#~ msgstr "%1 додано %2 до групи"
+
+#~ msgid "%1 changed group photo."
+#~ msgstr "%1 змінено фото групи."
