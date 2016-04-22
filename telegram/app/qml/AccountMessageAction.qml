@@ -39,20 +39,19 @@ Item {
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
         visible: hasAction
-//        height: {
-//            if (action.classType == typeMessageActionChatEditTitle) {
-//                console.log("*** PAZ: Chat edit height: " + childrenRect.height);
-//            }
-//            return childrenRect.height;
-//        }
+        height: {
+            // If there is an image then the column height is equal to
+            // the total height of all it's children
+            if (img.imgPath.length != 0) {
+                return childrenRect.height;
+            }
+            // If there is no image then return the action text height
+            return actionText.height;
+        }
         Label {
             id: actionText
-            width: parent.width
-            height: {
-                console.log("*** PAZ: Label Count: " + actionText.lineCount);
-                return actionText.lineCount * actionText.lineHeight;
-            }
-
+            width: parent.width * 0.97 // Factor adds a margin relative to device size
+            height: contentHeight + units.dp(5) // Padding under text
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: Text.AlignHCenter
             fontSize: "small"
