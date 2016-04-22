@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-22 09:51+0000\n"
+"POT-Creation-Date: 2016-04-22 13:09+0000\n"
 "PO-Revision-Date: 2015-12-09 10:55+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -189,84 +189,84 @@ msgid "Delete"
 msgstr "Eliminar"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:70
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:84
 #, qt-format
 msgid "%1 created a secret chat"
 msgstr "%1 ha creado una charla secreta"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:73
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:87
 #, fuzzy
 msgid "You created the group"
 msgstr "%1 ha creado el grupo «%2»"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:75
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:89
 #, fuzzy, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "%1 ha creado el grupo «%2»"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:84
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:98
 #, fuzzy, qt-format
 msgid "You added <b>%1</b>"
 msgstr "Reenviado desde <b>%1</b>"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:86
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:100
 #, qt-format
 msgid "<b>%1</b> added you"
 msgstr ""
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:88
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:97
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:111
 #, fuzzy, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "%1 abandonó el grupo"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:100
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:114
 #, fuzzy, qt-format
 msgid "You removed <b>%1</b>"
 msgstr "Reenviado desde <b>%1</b>"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:102
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:116
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "%1 eliminó %2"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:104
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:118
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "%1 eliminó %2"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:112
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:126
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
 msgstr "%1 cambió el nombre del grupo a «%2»"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:115
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:129
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "%1 cambió el nombre del grupo a «%2»"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:122
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:136
 #, fuzzy
 msgid "You changed the group photo"
 msgstr "%1 cambió la foto del grupo"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:124
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:138
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "%1 cambió la foto del grupo"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:130
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:144
 #, fuzzy
 msgid "You removed the group photo"
 msgstr "%1 borró la foto del grupo"
 
-#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:132
+#: /home/paz/Development/1530698/telegram/app/qml/AccountMessageAction.qml:146
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "%1 borró la foto del grupo"
