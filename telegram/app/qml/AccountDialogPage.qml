@@ -91,7 +91,7 @@ Page {
 
     flickable: null
 
-    head.contents: Rectangle {
+    head.contents: Rectangle { //Adds components to the header
         anchors {
             top: parent.top
             topMargin: units.dp(8)
@@ -103,7 +103,7 @@ Page {
             bottomMargin: units.dp(1)
         }
 
-        Text {
+        Text { //Text adjusts to the parent
             anchors {
                 top: parent.top
                 topMargin: units.gu(0.2)
@@ -115,28 +115,26 @@ Page {
             text: {
                 if (!currentDialog) return "";
                 if (isChat) {
-                    return chat ? chat.title : "";
+                    return chat ? chat.title : ""; //Shown if a group chat
                 } else {
-                    return user ? user.firstName + " " + user.lastName : "";
+                    return user ? user.firstName + " " + user.lastName : ""; //Shown if a scret chat
                 }
             }
             font.pointSize: 11
-            wrapMode: Text.WordWrap
-            elide: Text.ElideRight
-            maximumLineCount: 1
+            wrapMode: Text.WordWrap //Word wraps text when text is too long for wdith
+            elide: Text.ElideRight //Enables the elipse to the end of the text
+            maximumLineCount: 1 //Limits text to
         }
 
-        Avatar {
+        Avatar { //Avatar conponent gets avatar for user as specified from 'dialog' paramterer
         id: imgAvatar
-
         width: height
 
         telegram: dialog_page.telegramObject
         dialog: dialog_page.currentDialog
-
         }
 
-        Image {
+        Image { //'Lock' imae that is overlayed ontop of the Avatar conponent
             anchors {
                 left: imgAvatar.right
                 leftMargin: -width-5
