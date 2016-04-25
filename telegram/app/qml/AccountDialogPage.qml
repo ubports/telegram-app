@@ -75,19 +75,6 @@ Page {
     
     objectName: "dialogPage"
 
-    header: PageHeader {
-        title: {
-            if (!currentDialog) return "";
-        
-            if (isChat) {
-                return chat ? chat.title : "";
-            } else {
-                return user ? user.firstName + " " + user.lastName : "";
-            }
-        }
-        flickable: null
-    }
-
     head.actions: message_list.inSelectionMode ? selectionActions : defaultActions
     head.backAction: Action {
         id: back_action
@@ -100,7 +87,18 @@ Page {
             }
         }
     }
-            
+
+    flickable: null
+    title: {
+        if (!currentDialog) return "";
+
+        if (isChat) {
+            return chat ? chat.title : "";
+        } else {
+            return user ? user.firstName + " " + user.lastName : "";
+        }
+    }
+
     signal forwardRequest(var messageIds);
     signal tagSearchRequest(string tag);
     signal dialogClosed();
