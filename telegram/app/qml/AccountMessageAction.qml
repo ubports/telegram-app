@@ -2,6 +2,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import AsemanTools 1.0
 import TelegramQML 1.0
+import QtQuick.Window 2.0
 
 Item {
     id: message_action
@@ -40,37 +41,14 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         visible: hasAction
 
-        /* PAZ Change start */
-//        height: {
-//            // If there is an image then the column height is equal to
-//            // the total height of all it's children
-//            if (img.imgPath.length != 0) {
-//                return childrenRect.height;
-//            }
-//            // If there is no image then return the action text height
-//            else if (hasAction) {
-//               console.log ("Height: " + actionText.height + ", Text: " + actionText.text);
-//                return actionText.height;
-//            }
-//            return 0;
-//        }
-        height: childrenRect.height
-        /* PAZ Change end */
-
         Label {
-
-            /* PAZ Change start */
-
             id: actionText
-            width: parent.width * 0.97 // Factor adds a margin relative to device size
-            height: contentHeight
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: Screen.width * 0.85
             horizontalAlignment: Text.AlignHCenter
             fontSize: "small"
             color: "#333333"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-
-            /* PAZ Change end */
-
             text: {
                 var res = ""
                 var userName
@@ -161,19 +139,7 @@ Item {
             id: img
             anchors.horizontalCenter: parent.horizontalCenter
             width: 64*Devices.density
-
-            /* PAZ Change start */
-
-//            height: 80*Devices.density
-            height: {
-                if(imgPath.length != 0)
-                    return 80*Devices.density
-                else
-                    return 0;
-            }
-
-            /* PAZ Change end */
-
+            height: 80*Devices.density
             sourceSize: Qt.size(width,width)
             source: {
                 if(imgPath.length==0)
