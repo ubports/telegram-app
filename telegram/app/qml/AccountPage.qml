@@ -176,14 +176,7 @@ Page {
         onCurrentDialogChanged: {
             if (currentDialog && currentDialog != telegramObject.nullDialog) {
                 pageStack.clear();
-                var incubator = pageStack.addPageToNextColumn(pageStack.primaryPage, account_dialog_page, {"maxId": 0});
-                if (incubator && incubator.status == Component.Loading) {
-                    incubator.onStatusChanged = function(status) {
-                        if (status == Component.Ready) {
-                            dialogPage = incubator.object;
-                        }
-                    }
-                }
+                dialogPage = pageStack.addPageToNextColumn(pageStack.primaryPage, account_dialog_page, {"maxId": 0});
 
                 var tag = currentDialog.peer.chatId ? currentDialog.peer.chatId : currentDialog.peer.userId;
                 pushClient.clearPersistent([tag]);
