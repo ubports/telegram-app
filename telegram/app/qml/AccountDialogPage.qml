@@ -100,7 +100,6 @@ Page {
             right: parent.right
             rightMargin: units.gu(5)
             bottom: parent.bottom
-            bottomMargin: units.dp(1)
         }
 
         Text { //Text adjusts to the parent
@@ -123,10 +122,10 @@ Page {
             font.pointSize: 11
             wrapMode: Text.WordWrap //Word wraps text when text is too long for wdith
             elide: Text.ElideRight //Enables the elipse to the end of the text
-            maximumLineCount: 1 //Limits text to
+            maximumLineCount: 1 //Wraps text to 1 line
         }
 
-        Avatar { //Avatar conponent gets avatar for user as specified from 'dialog' paramterer
+        Avatar { //Avatar component gets avatar for user as specified from 'dialog' parameter
         id: imgAvatar
         width: height
 
@@ -134,7 +133,7 @@ Page {
         dialog: dialog_page.currentDialog
         }
 
-        Image { //'Lock' imae that is overlayed ontop of the Avatar conponent
+        Image { //'Lock' image that is overlayed ontop of the Avatar conponent
             anchors {
                 left: imgAvatar.right
                 leftMargin: -width-5
