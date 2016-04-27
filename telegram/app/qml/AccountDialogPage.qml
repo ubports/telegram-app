@@ -1,6 +1,7 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
+import QtQuick.Window 2.2
 
 import AsemanTools 1.0
 import TelegramQML 1.0
@@ -89,13 +90,61 @@ Page {
     }
 
     flickable: null
-    title: {
-        if (!currentDialog) return "";
 
-        if (isChat) {
-            return chat ? chat.title : "";
-        } else {
-            return user ? user.firstName + " " + user.lastName : "";
+    head.contents: Rectangle { //Adds components to the header
+        anchors {
+            top: parent.top
+            topMargin: units.dp(8)
+            left: parent.left
+            verticalCenter: parent
+            right: parent.right
+            rightMargin: units.gu(5)
+            bottom: parent.bottom
+        }
+
+        Text { //Text adjusts to the parent
+            anchors {
+                top: parent.top
+                topMargin: units.gu(0.2)
+                left: imgAvatar.right
+                leftMargin: units.gu(1)
+            }
+            width: parent.width
+
+            text: {
+                if (!currentDialog) return "";
+                if (isChat) {
+                    return chat ? chat.title : ""; //Shown if a group chat
+                } else {
+                    return user ? user.firstName + " " + user.lastName : ""; //Shown if a scret chat
+                }
+            }
+            font.pointSize: 11
+            wrapMode: Text.WordWrap //Word wraps text when text is too long for wdith
+            elide: Text.ElideRight //Enables the elipse to the end of the text
+            maximumLineCount: 1 //Wraps text to 1 line
+        }
+
+        Avatar { //Avatar component gets avatar for user as specified from 'dialog' parameter
+        id: imgAvatar
+        width: height
+
+        telegram: dialog_page.telegramObject
+        dialog: dialog_page.currentDialog
+        }
+
+        Image { //'Lock' image that is overlayed ontop of the Avatar conponent
+            anchors {
+                left: imgAvatar.right
+                leftMargin: -width-5
+                top: imgAvatar.top
+                topMargin: units.dp(2)
+            }
+            width: units.gu(1)
+            height: units.gu(1.5)
+            source: "qrc:/qml/files/lock.png"
+            sourceSize: Qt.size(width, height)
+            visible: currentDialog.encrypted
         }
     }
 
