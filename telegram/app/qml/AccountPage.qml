@@ -13,6 +13,7 @@ import "components"
 
 Page {
     id: account_page
+    objectName: "pageAccounts"
 
     property int profileCount: 0
     property var dialogPage;

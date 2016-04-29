@@ -31,6 +31,7 @@ import "ui"
 
 MainView {
     id: mainView
+    objectName: "appMainView"
     width: units.gu(38)
     height: units.gu(50)
     focus: true

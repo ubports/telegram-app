@@ -5,6 +5,7 @@ import AsemanTools 1.0
 
 Page {
     id: page
+    objectName: "pageCountriesList"
 
     property string code
 
@@ -22,6 +23,7 @@ Page {
 
     ListView {
         id: country_list
+        objectName: "listCountries"
 
         anchors.fill: parent
         currentIndex: -1
@@ -32,6 +34,7 @@ Page {
 
         model: CountriesModel {}
         delegate: ListItem.SingleValue {
+            objectName: getObjectName()
             text: name
             value: nativeName
             onClicked: {
@@ -40,6 +43,10 @@ Page {
                 // Force change in case same number picked again.
                 page.code = "";
                 page.code = callingCode;
+            }
+
+            function getObjectName() {
+                return name.toLowerCase().split(' ').join('_')
             }
         }
 
