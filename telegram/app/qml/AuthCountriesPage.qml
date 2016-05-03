@@ -5,7 +5,7 @@ import AsemanTools 1.0
 
 Page {
     id: page
-    objectName: "pageCountriesList"
+    objectName: "countriesListPage"
 
     property string code
 
@@ -23,7 +23,7 @@ Page {
 
     ListView {
         id: country_list
-        objectName: "listCountries"
+        objectName: "countriesList"
 
         anchors.fill: parent
         currentIndex: -1

@@ -6,7 +6,7 @@ import "components"
 
 TelegramPage {
     id: auth_code_page
-    objectName: "pageCodeVerification"
+    objectName: "codeVerificationPage"
 
     property bool phoneRegistered: true
     property bool allowCall: true
@@ -103,7 +103,7 @@ TelegramPage {
 
         TextField {
             id: code_text
-            objectName: "entryVerificationCode"
+            objectName: "verificationCodeEntry"
             width: column.width
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: TextInput.AlignHCenter
@@ -123,7 +123,7 @@ TelegramPage {
 
         TextField {
             id: fname_text
-            objectName: "entryFirstName"
+            objectName: "firstNameEntry"
             width: column.width
             anchors.horizontalCenter: parent.horizontalCenter
             placeholderText: i18n.tr("First Name")
@@ -133,7 +133,7 @@ TelegramPage {
 
         TextField {
             id: lname_text
-            objectName: "entryLastName"
+            objectName: "lastNameEntry"
             width: column.width
             anchors.horizontalCenter: parent.horizontalCenter
             placeholderText: i18n.tr("Last Name")
@@ -143,7 +143,7 @@ TelegramPage {
 
         TelegramButton {
             id: accept_button
-            objectName: "buttonSignIn"
+            objectName: "signInButton"
             width: column.width
             height: code_text.height
             anchors.horizontalCenter: parent.horizontalCenter
@@ -154,7 +154,7 @@ TelegramPage {
 
         TelegramButton {
             id: resend_button
-            objectName: "buttonResendCode"
+            objectName: "resendCodeButton"
             width: column.width
             height: code_text.height
             anchors.horizontalCenter: parent.horizontalCenter

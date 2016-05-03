@@ -18,7 +18,7 @@ Dialog {
     }
 
     Button {
-        objectName: "buttonAccept"
+        objectName: "acceptButton"
         text: acceptText
         color: UbuntuColors.green
         onClicked: optionSelected(onAccept)
@@ -32,7 +32,7 @@ Dialog {
     }
 
     Button {
-        objectName: "buttonCancel"
+        objectName: "cancelButton"
         text: cancelText
         color: UbuntuColors.lightGrey
         onClicked: optionSelected(onCancel)

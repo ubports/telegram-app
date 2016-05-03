@@ -7,7 +7,7 @@ import "components"
 
 TelegramPage {
     id: auth_phone_page
-    objectName: "pageAuthenticateNumber"
+    objectName: "authenticateNumberPage"
 
     property string countryCode
     property string fullPhoneNumber: "+" + countryCode + phoneNumber
@@ -59,7 +59,7 @@ TelegramPage {
 
         TextField {
             id: phone_number
-            objectName: "entryPhoneNumber"
+            objectName: "phoneNumberEntry"
             width: column.width
             inputMethodHints: Qt.ImhDialableCharactersOnly
             anchors.horizontalCenter: parent.horizontalCenter
@@ -84,7 +84,7 @@ TelegramPage {
         }
 
         TelegramButton {
-            objectName: "buttonDone"
+            objectName: "doneButton"
             width: phone_number.width
             height: phone_number.height
             anchors.horizontalCenter: parent.horizontalCenter
