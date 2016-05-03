@@ -4,6 +4,7 @@ import Ubuntu.Components.Popups 1.0
 
 Dialog {
     id: dialogue
+    objectName: "confirmationDialog"
     title: i18n.tr("Telegram")
     // text is the property to fill for the dialog body
 
@@ -17,6 +18,7 @@ Dialog {
     }
 
     Button {
+        objectName: "acceptButton"
         text: acceptText
         color: UbuntuColors.green
         onClicked: optionSelected(onAccept)
@@ -30,6 +32,7 @@ Dialog {
     }
 
     Button {
+        objectName: "cancelButton"
         text: cancelText
         color: UbuntuColors.lightGrey
         onClicked: optionSelected(onCancel)

@@ -7,6 +7,7 @@ import "js/colors.js" as Colors
 
 TelegramPage {
     id: page
+    objectName: "introPage"
 
     property bool isWide: page.width > units.gu(70)
     property alias startMessagingButton: startMessagingButton
@@ -163,6 +164,7 @@ TelegramPage {
                 // font: Qt.font({family: "Ubuntu", pixelSize: FontUtils.sizeToPixels("medium"), color: "#000000"})
                 TelegramButton {
                     id: startMessagingButton
+                    objectName: "startMessagingButton"
                     z: 2
                     anchors {
                         horizontalCenter: parent.horizontalCenter

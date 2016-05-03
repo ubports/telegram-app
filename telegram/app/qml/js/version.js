@@ -1,1 +1,1 @@
-var version = "2.2.7.0";
+var version = "2.2.8.0";

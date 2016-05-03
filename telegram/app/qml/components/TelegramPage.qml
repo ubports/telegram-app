@@ -28,6 +28,7 @@ Page {
 
             ActivityIndicator {
                 id: activity_indicator
+                objectName: "processingIndicator"
 
                 anchors.centerIn: parent
                 running: isBusy
