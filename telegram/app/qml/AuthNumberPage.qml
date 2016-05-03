@@ -7,7 +7,7 @@ import "components"
 
 TelegramPage {
     id: auth_phone_page
-    objectName: "authenticateNumberPage"
+    objectName: "authPhonePage"
 
     property string countryCode
     property string fullPhoneNumber: "+" + countryCode + phoneNumber

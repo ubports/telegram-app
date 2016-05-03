@@ -6,7 +6,7 @@ import "components"
 
 TelegramPage {
     id: auth_code_page
-    objectName: "codeVerificationPage"
+    objectName: "authCodePage"
 
     property bool phoneRegistered: true
     property bool allowCall: true
@@ -169,7 +169,7 @@ TelegramPage {
 
         TelegramButton {
             id: call_button
-            objectName: "buttonRequestCall"
+            objectName: "requestCallButton"
             width: column.width
             height: code_text.height
             anchors.horizontalCenter: parent.horizontalCenter
