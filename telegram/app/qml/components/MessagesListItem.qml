@@ -230,7 +230,6 @@ ListItem {
 
                     Label {
                         id: message_text
-
                         // Taken from messaging-app
                         function parseText(text) {
                             var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;

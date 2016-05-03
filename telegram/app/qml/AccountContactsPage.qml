@@ -128,6 +128,7 @@ Page {
                 text: i18n.tr("Back")
                 onTriggered: {
                     page.state = "default"
+                    pageStack.clear();
                 }
             }
         }
@@ -281,7 +282,6 @@ Page {
         onSelectionCanceled: {
             list.clear();
             state = "default";
-            pageStack.clear();
         }
 
         onSelectionDone: {
