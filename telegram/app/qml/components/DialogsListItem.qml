@@ -41,9 +41,10 @@ ListItem {
     // in delegate -- selected: currentDialog == dialog
     property bool selected: false
 
-    property real typeMessageActionChatCreate:      0xa6638b9a
-    property real typeMessageActionChatDeleteUser:  0xb2ae9b0c
-    property real typeMessageActionChatAddUser:     0x5e3cfc4b
+    property real typeMessageActionChatCreate:          0xa6638b9a
+    property real typeMessageActionChatAddUser:         0x5e3cfc4b
+    property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
+    property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
 
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
@@ -233,6 +234,13 @@ ListItem {
                                 else
                                     res = i18n.tr("<font color=\"DarkBlue\">%1 removed %2</font>").arg(fromUserName).arg(userName)
                             }
+                            break
+
+                        case typeMessageActionChatJoinedByLink:
+                            if(fromUser.id == telegramObject.me)
+                                res = i18n.tr("<font color=\"DarkBlue\">You joined the group via invite link</font>")
+                            else
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 joined the group via invite link</font>").arg(fromUserName)
                             break
 
                         default:
