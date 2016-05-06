@@ -59,6 +59,7 @@ Item {
             z: 1
             fillMode: Image.PreserveAspectFit
             source: {
+                console.log("Message Sent: " + message.out + " Message Read: " + !message.unread);
                 if (!message.sent) {
                     return Qt.resolvedUrl("qrc:/qml/files/msg_clock.png");
                 } else if (message.out && message.unread) {

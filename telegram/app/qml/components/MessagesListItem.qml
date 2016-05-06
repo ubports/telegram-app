@@ -285,7 +285,7 @@ ListItem {
                             right: parent.right
                         }
 
-                        message: message_item.message
+                        message:  message_item.message;
                         hasMedia: message_item.hasMedia
 
                         property int deltaY: message_wrapper.timeFitsSide ? -units.dp(4) : height
