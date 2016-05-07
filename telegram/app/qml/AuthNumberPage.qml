@@ -35,6 +35,7 @@ TelegramPage {
 
     Label {
         id: country_code
+        objectName: "countryCode"
         anchors {
             top: parent.top
             topMargin: units.gu(4)
