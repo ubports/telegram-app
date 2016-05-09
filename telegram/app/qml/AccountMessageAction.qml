@@ -15,15 +15,16 @@ Item {
     property User fromUser: telegramObject.user(message.fromId)
     property FileLocation imgLocation: action.photo.sizes.first? action.photo.sizes.first.location : telegramObject.nullLocation
 
-    property real typeMessageActionEmpty: 0xb6aef7b0
-    property real typeMessageActionChatDeletePhoto: 0x95e3fbef
-    property real typeMessageActionChatCreate: 0xa6638b9a
-    property real typeMessageActionChatEditTitle: 0xb5a1ce5a
-    property real typeMessageActionChatEditPhoto: 0x7fcb13a8
-    property real typeMessageActionGeoChatCreate: 0x6f038ebc
-    property real typeMessageActionChatDeleteUser: 0xb2ae9b0c
-    property real typeMessageActionChatAddUser: 0x5e3cfc4b
-    property real typeMessageActionGeoChatCheckin: 0xc7d53de
+    property real typeMessageActionEmpty:               0xb6aef7b0
+    property real typeMessageActionChatCreate:          0xa6638b9a
+    property real typeMessageActionChatEditTitle:       0xb5a1ce5a
+    property real typeMessageActionChatEditPhoto:       0x7fcb13a8
+    property real typeMessageActionChatDeletePhoto:     0x95e3fbef
+    property real typeMessageActionChatAddUser:         0x5e3cfc4b
+    property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
+    property real typeMessageActionGeoChatCreate:       0x6f038ebc
+    property real typeMessageActionGeoChatCheckin:      0xc7d53de
+    property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
 
     property bool hasAction: action.classType != typeMessageActionEmpty
 
@@ -122,6 +123,13 @@ Item {
                         res = i18n.tr("You removed the group photo")
                     else
                         res = i18n.tr("<b>%1</b> removed the group photo").arg(fromUserName)
+                    break
+
+                case typeMessageActionChatJoinedByLink:
+                    if (fromUser.id == telegramObject.me)
+                        res = i18n.tr("You joined the group via invite link")
+                    else
+                        res = i18n.tr("<b>%1</b> joined the group via invite link").arg(fromUserName)
                     break
 
                 case typeMessageActionEmpty:

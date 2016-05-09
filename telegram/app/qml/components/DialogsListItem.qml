@@ -41,6 +41,11 @@ ListItem {
     // in delegate -- selected: currentDialog == dialog
     property bool selected: false
 
+    property real typeMessageActionChatCreate:          0xa6638b9a
+    property real typeMessageActionChatAddUser:         0x5e3cfc4b
+    property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
+    property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
+
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
 
@@ -191,6 +196,58 @@ ListItem {
             } else {
                 // We use emojis in our font currently, so no need to replace them here for now
                 //return emojis.bodyTextToEmojiText(message.message, 16, true);
+
+                if (message.message == "") {
+                    var res = ""
+                    var user = telegramObject.user(message.action.userId) 
+                    var fromUser = telegramObject.user(message.fromId)
+                    var userName = user.firstName + " " + user.lastName
+                    var fromUserName = fromUser.firstName + " " + fromUser.lastName
+                    userName = userName.trim()
+                    fromUserName = fromUserName.trim()
+
+                    switch(message.action.classType) {
+                        case typeMessageActionChatCreate:
+                            if (fromUser.id == telegramObject.me)
+                                res = i18n.tr("<font color=\"DarkBlue\">You created the group</font>")
+                            else
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 created the group</font>").arg(fromUserName)
+                            break
+
+                        case typeMessageActionChatAddUser:
+                            if (fromUser.id == telegramObject.me)
+                                res = i18n.tr("<font color=\"DarkBlue\">You added %1</font>").arg(userName)
+                            else if (user.id == telegramObject.me)
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 added you</font>").arg(fromUserName)
+                            else
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 added %2</font>").arg(fromUserName).arg(userName)
+                            break
+
+                        case typeMessageActionChatDeleteUser:
+                            if(user.id == fromUser.id) {
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 left the group</font>").arg(userName)
+                            } else {
+                                if (fromUser.id == telegramObject.me)
+                                    res = i18n.tr("<font color=\"DarkBlue\">You removed %1</font>").arg(userName)
+                                else if (user.id == telegramObject.me)
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 removed you</font>").arg(fromUserName)
+                                else
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 removed %2</font>").arg(fromUserName).arg(userName)
+                            }
+                            break
+
+                        case typeMessageActionChatJoinedByLink:
+                            if(fromUser.id == telegramObject.me)
+                                res = i18n.tr("<font color=\"DarkBlue\">You joined the group via invite link</font>")
+                            else
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 joined the group via invite link</font>").arg(fromUserName)
+                            break
+
+                        default:
+                            break
+                    }
+                    return res
+                }
                 return message.message
             }
         }
