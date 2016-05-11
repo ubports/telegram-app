@@ -68,10 +68,8 @@ Rectangle {
     MessagesModel {
         id: messages_model
         onCountChanged: {
-            console.log("ON COUNT CHANGED " + count + ", isActive: " + isActive);
             if(count>1 && isActive)
-                messages_model.setReaded();
-
+                messages_model.setReaded()
         }
         onRefreshingChanged: {
             if(focus_msg_timer.msgId) {
@@ -103,12 +101,12 @@ Rectangle {
         property Document doc
     }
 
+    //Timer refreshes MessagesModel to check if message(s) have been read or not
     Timer {
         id: refresh_timer
         repeat: true
         interval: 1500
         onTriggered:{
-            console.log("REFRESH")
             messages_model.refresh()
         }
         Component.onCompleted:{
