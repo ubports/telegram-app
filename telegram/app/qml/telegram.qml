@@ -90,7 +90,7 @@ MainView {
     function showIntro() {
         pageStack.forceSinglePage = (profiles.count == 0);
         if (profiles.count == 0) {
-            pageStack.primaryPageSource = intro_page_component;
+            pageStack.primaryPage = introPage;
         }
     }
 
@@ -258,19 +258,19 @@ MainView {
             }
         ]
 
+        function setPrimaryPage() {
+            pageStack.primaryPage = introPage;
+        }
+
         function clear() {
             pageStack.removePages(pageStack.primaryPage);
         }
 
-        Component {
-            id: intro_page_component
-
-            IntroPage {
-                id: introPage
-                onStartMessaging: {
-                    pageStack.forceSinglePage = false;
-                    pageStack.addPageToCurrentColumn(introPage, auth_countries_page_component);
-                }
+        IntroPage {
+            id: introPage
+            onStartMessaging: {
+                pageStack.forceSinglePage = false;
+                pageStack.addPageToCurrentColumn(introPage, auth_countries_page_component);
             }
         }
 
