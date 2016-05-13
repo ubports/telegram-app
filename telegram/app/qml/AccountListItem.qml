@@ -31,6 +31,11 @@ Item {
         pageStack.primaryPageSource = dialogs_page_component;
     }
 
+    function setPrimaryPage() {
+        // Set primary page in AccountListItem with synchronous mode of APL
+        pageStack.primaryPage = introPage;
+    }
+
     QtObject {
         id: privates
     }
@@ -92,6 +97,7 @@ Item {
         }
         onAuthCodeRequested: {
             console.log("authCodeRequested");
+            account_list_item.setPrimaryPage();
             pageStack.addPageToCurrentColumn(pageStack.primaryPage, account_code_page_component, {
                     "phoneRegistered": telegram.authPhoneRegistered,
                     "timeOut": sendCallTimeout
@@ -179,5 +185,9 @@ Item {
             telegramObject: telegram
             profileCount: profiles.count
         }
+    }
+    
+    IntroPage {
+        id: introPage
     }
 }

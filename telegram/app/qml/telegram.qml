@@ -233,6 +233,7 @@ MainView {
 
         property bool forceSinglePage: false
 
+        asynchronous: false
         anchors.fill: parent
         layouts: [
             PageColumnsLayout {
@@ -265,9 +266,10 @@ MainView {
             id: intro_page_component
 
             IntroPage {
+                id: introPage
                 onStartMessaging: {
                     pageStack.forceSinglePage = false;
-                    pageStack.addPageToCurrentColumn(pageStack.primaryPage, auth_countries_page_component);
+                    pageStack.addPageToCurrentColumn(introPage, auth_countries_page_component);
                 }
             }
         }
@@ -276,8 +278,9 @@ MainView {
             id: auth_countries_page_component
 
             AuthCountriesPage {
+                id: authCountriesPage
                 onCountryEntered: {
-                    pageStack.addPageToNextColumn(pageStack.primaryPage, auth_number_page_component, {
+                    pageStack.addPageToNextColumn(authCountriesPage, auth_number_page_component, {
                             "countryCode": code
                     });
                 }

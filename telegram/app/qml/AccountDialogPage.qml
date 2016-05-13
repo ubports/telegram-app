@@ -60,7 +60,10 @@ Page {
             iconName: "next"
             text: i18n.tr("Forward")
             visible: enchat == telegramObject.nullEncryptedChat
-            onTriggered: message_list.forwardSelected()
+            onTriggered: {
+                message_list.forwardSelected()
+                pageStack.removePages(dialog_page)
+            }
         },
         Action {
             id: multiDeleteAction
@@ -84,7 +87,7 @@ Page {
             if (message_list.inSelectionMode) {
                 message_list.cancelSelection()
             } else {
-                pageStack.removePages(pageStack.primaryPage);
+                pageStack.removePages(dialog_page);
             }
         }
     }

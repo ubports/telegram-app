@@ -113,7 +113,7 @@ Page {
     }
 
     function addMember() {
-        pageStack.addPageToNextColumn(pageStack.primaryPage, contacts_page_component, {
+        pageStack.addPageToNextColumn(profile_page, contacts_page_component, {
             telegram: telegram,
             state: "add-to-group",
             groupChatId: dialogId,
