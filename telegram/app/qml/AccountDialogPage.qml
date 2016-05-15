@@ -221,8 +221,11 @@ Page {
             telegramObject: dialog_page.telegramObject
             currentDialog: dialog_page.currentDialog
 
-//            onFocusRequest: send_msg.setFocus()
-            onForwardRequest: dialog_page.forwardRequest(messageIds);
+            //onFocusRequest: send_msg.setFocus()
+            onForwardRequest: {
+                dialog_page.forwardRequest(messageIds);
+                pageStack.removePages(dialog_page);
+            }
             onDialogRequest: account_page.currentDialog = dialogObject
             onTagSearchRequest: msg_box.tagSearchRequest(tag)
             onReplyToRequest: send_msg.replyTo(msgId)
