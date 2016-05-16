@@ -208,10 +208,17 @@ ListItem {
 
                     switch(message.action.classType) {
                         case typeMessageActionChatCreate:
-                            if (fromUser.id == telegramObject.me)
-                                res = i18n.tr("<font color=\"DarkBlue\">You created the group</font>")
-                            else
-                                res = i18n.tr("<font color=\"DarkBlue\">%1 created the group</font>").arg(fromUserName)
+                            if (message.action.title == "Secret Chat") {
+                                if (user.id == telegramObject.me)
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 joined your secret chat.</font>").arg(fromUserName)
+                                else
+                                    res = i18n.tr("<font color=\"DarkBlue\">You joined the secret chat.</font>")
+                            } else {
+                                if (fromUser.id == telegramObject.me)
+                                    res = i18n.tr("<font color=\"DarkBlue\">You created the group</font>")
+                                else
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 created the group</font>").arg(fromUserName)
+                            }
                             break
 
                         case typeMessageActionChatAddUser:
