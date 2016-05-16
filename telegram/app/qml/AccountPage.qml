@@ -15,7 +15,6 @@ Page {
     id: account_page
 
     property int profileCount: 0
-    property var dialogPage;
 
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
@@ -40,7 +39,7 @@ Page {
 //        acc_frame.activeRequest()
 //        Cutegram.active()
 
-        pageStack.addPageToNextColumn(pageStack.primaryPage, account_dialog_page, {
+        pageStack.addPageToNextColumn(account_page, account_dialog_page, {
                 "telegramObject": telegramObject,
                 "currentDialog": currentDialog
         });
@@ -85,27 +84,27 @@ Page {
         z: 10
 
         onNewSecretChatClicked: {
-            pageStack.addPageToCurrentColumn(pageStack.primaryPage, contacts_page_component, {
+            pageStack.addPageToCurrentColumn(account_page, contacts_page_component, {
                     "telegram": telegramObject,
                     "state": "new-secret-chat"
             });
         }
 
         onNewGroupClicked: {
-            pageStack.addPageToCurrentColumn(pageStack.primaryPage, contacts_page_component, {
+            pageStack.addPageToCurrentColumn(account_page, contacts_page_component, {
                     "telegram": telegramObject,
                     "state": "new-group-chat"
             });
         }
 
         onContactsClicked: {
-            pageStack.addPageToCurrentColumn(pageStack.primaryPage, contacts_page_component, {
+            pageStack.addPageToCurrentColumn(account_page, contacts_page_component, {
                     "telegram": telegramObject
             });
         }
 
         onSettingsClicked: {
-            pageStack.addPageToNextColumn(pageStack.primaryPage, settings_page_component, {
+            pageStack.addPageToNextColumn(account_page, settings_page_component, {
                     "telegram": telegramObject
             });
         }
@@ -115,7 +114,7 @@ Page {
         }
 
         onAddAccountClicked: {
-            pageStack.addPageToCurrentColumn(pageStack.primaryPage, auth_countries_page_component);
+            pageStack.addPageToCurrentColumn(account_page, auth_countries_page_component);
         }
 
         onAccountClicked: {
@@ -176,7 +175,7 @@ Page {
         onCurrentDialogChanged: {
             if (currentDialog && currentDialog != telegramObject.nullDialog) {
                 pageStack.clear();
-                dialogPage = pageStack.addPageToNextColumn(pageStack.primaryPage, account_dialog_page, {"maxId": 0});
+                pageStack.addPageToNextColumn(account_page, account_dialog_page, {"maxId": 0});
 
                 var tag = currentDialog.peer.chatId ? currentDialog.peer.chatId : currentDialog.peer.userId;
                 pushClient.clearPersistent([tag]);
@@ -247,7 +246,7 @@ Page {
             }
 
             onAddContactManually: {
-                pageStack.addPageToNextColumn(pageStack.primaryPage, add_contact_page_component, {
+                pageStack.addPageToNextColumn(account_page, add_contact_page_component, {
                         "telegram": telegramObject,
                         "addManually": true
                 });

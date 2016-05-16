@@ -90,7 +90,7 @@ MainView {
     function showIntro() {
         pageStack.forceSinglePage = (profiles.count == 0);
         if (profiles.count == 0) {
-            pageStack.primaryPageSource = intro_page_component;
+            pageStack.primaryPage = introPage;
         }
     }
 
@@ -233,6 +233,7 @@ MainView {
 
         property bool forceSinglePage: false
 
+        asynchronous: false
         anchors.fill: parent
         layouts: [
             PageColumnsLayout {
@@ -257,18 +258,19 @@ MainView {
             }
         ]
 
+        function setPrimaryPage() {
+            pageStack.primaryPage = introPage;
+        }
+
         function clear() {
             pageStack.removePages(pageStack.primaryPage);
         }
 
-        Component {
-            id: intro_page_component
-
-            IntroPage {
-                onStartMessaging: {
-                    pageStack.forceSinglePage = false;
-                    pageStack.addPageToCurrentColumn(pageStack.primaryPage, auth_countries_page_component);
-                }
+        IntroPage {
+            id: introPage
+            onStartMessaging: {
+                pageStack.forceSinglePage = false;
+                pageStack.addPageToCurrentColumn(introPage, auth_countries_page_component);
             }
         }
 
@@ -276,8 +278,9 @@ MainView {
             id: auth_countries_page_component
 
             AuthCountriesPage {
+                id: authCountriesPage
                 onCountryEntered: {
-                    pageStack.addPageToNextColumn(pageStack.primaryPage, auth_number_page_component, {
+                    pageStack.addPageToNextColumn(authCountriesPage, auth_number_page_component, {
                             "countryCode": code
                     });
                 }

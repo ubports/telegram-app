@@ -128,7 +128,7 @@ Page {
                 text: i18n.tr("Back")
                 onTriggered: {
                     page.state = "default"
-                    pageStack.clear();
+                    pageStack.removePages(page);
                 }
             }
         }
@@ -265,7 +265,7 @@ Page {
 //                    refreshSubtitle();
                 } else if (newSecretChatMode) {
                     telegramObject.messagesCreateEncryptedChat(model.id);
-                    pageStack.clear();
+                    pageStack.removePages(page);
                 } else if (addToGroupMode) {
                     var dialog = PopupUtils.open(add_contact_to_group_chat_component);
                     dialog.setData(user.id, user.fullName, groupChatTitle);
@@ -289,7 +289,7 @@ Page {
             telegram.messagesCreateChat(list.list, groupChatTitle);
             state = "default";
             groupChatTitle = "";
-            pageStack.clear();
+            pageStack.removePages(page);
         }
 
         function refreshSubtitle() {

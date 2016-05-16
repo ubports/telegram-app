@@ -92,6 +92,7 @@ Item {
         }
         onAuthCodeRequested: {
             console.log("authCodeRequested");
+            pageStack.setPrimaryPage();
             pageStack.addPageToCurrentColumn(pageStack.primaryPage, account_code_page_component, {
                     "phoneRegistered": telegram.authPhoneRegistered,
                     "timeOut": sendCallTimeout
