@@ -52,15 +52,18 @@ Item {
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             text: {
                 var res = ""
-                var userName
+                var userName = user.firstName + " " + user.lastName
                 var fromUserName = fromUser.firstName + " " + fromUser.lastName
+                userName = userName.trim()
                 fromUserName = fromUserName.trim()
 
                 switch(action.classType) {
                 case typeMessageActionChatCreate:
                     if (action.title == "Secret Chat") {
-                        // TRANSLATORS: %1 indicates who created the secret chat.
-                        res = i18n.tr("%1 created a secret chat").arg(fromUserName);
+                        if (user.id == telegramObject.me)
+                            res = i18n.tr("You have invited %1 to join a secret chat.").arg(fromUserName)
+                        else
+                            res = i18n.tr("%1 invited you to join a secret chat.").arg(fromUserName)
                     } else {
                         if (fromUser.id == telegramObject.me)
                             res = i18n.tr("You created the group")
@@ -70,9 +73,6 @@ Item {
                     break
 
                 case typeMessageActionChatAddUser:
-                    userName = user.firstName + " " + user.lastName
-                    userName = userName.trim()
-
                     if (fromUser.id == telegramObject.me)
                         res = i18n.tr("You added <b>%1</b>").arg(userName)
                     else if (user.id == telegramObject.me)
@@ -82,9 +82,6 @@ Item {
                     break
 
                 case typeMessageActionChatDeleteUser:
-                    userName = user.firstName + " " + user.lastName
-                    userName = userName.trim()
-
                     if (user.id == fromUser.id) {
                         // TRANSLATORS: %1 is the person, who left the group chat.
                         res = i18n.tr("<b>%1</b> left the group").arg(userName)
