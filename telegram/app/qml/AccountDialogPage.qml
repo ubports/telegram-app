@@ -94,7 +94,8 @@ Page {
 
     flickable: null
 
-    head.contents: Rectangle { //Adds components to the header
+    //Adds components to the header
+    head.contents: Rectangle {
         anchors {
             top: parent.top
             topMargin: units.dp(8)
@@ -105,7 +106,8 @@ Page {
             bottom: parent.bottom
         }
 
-        Text { //Text adjusts to the parent
+        //Text adjusts to the parent
+        Text {
             anchors {
                 top: parent.top
                 topMargin: units.gu(0.2)
@@ -122,21 +124,26 @@ Page {
                     return user ? user.firstName + " " + user.lastName : ""; //Shown if a scret chat
                 }
             }
-            font.pointSize: 11
-            wrapMode: Text.WordWrap //Word wraps text when text is too long for wdith
-            elide: Text.ElideRight //Enables the elipse to the end of the text
-            maximumLineCount: 1 //Wraps text to 1 line
+            font.pixelSize: FontUtils.sizeToPixels("large")
+            //Word wraps text when text is too long for width
+            wrapMode: Text.WordWrap
+            //Enables the elipse to the end of the text
+            elide: Text.ElideRight
+            //Wraps text to 1 line
+            maximumLineCount: 1
         }
 
-        Avatar { //Avatar component gets avatar for user as specified from 'dialog' parameter
-        id: imgAvatar
-        width: height
+        //Avatar component gets avatar for user as specified from 'dialog' parameter
+        Avatar {
+            id: imgAvatar
 
-        telegram: dialog_page.telegramObject
-        dialog: dialog_page.currentDialog
+            width: height
+            telegram: dialog_page.telegramObject
+            dialog: dialog_page.currentDialog
         }
 
-        Image { //'Lock' image that is overlayed ontop of the Avatar conponent
+        //'Lock' image that is overlayed ontop of the Avatar conponent
+        Image {
             anchors {
                 left: imgAvatar.right
                 leftMargin: -width-5
