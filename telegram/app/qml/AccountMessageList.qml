@@ -101,13 +101,20 @@ Rectangle {
         property Document doc
     }
 
-    // Timer {
-    //     id: refresh_timer
-    //     repeat: true
-    //     interval: 10000
-    //     onTriggered: messages_model.refresh()
-    //     Component.onCompleted: start()
-    // }
+    //Timer refreshes MessagesModel to check if message(s) have been read or not
+    Timer {
+        id: refresh_timer
+        repeat: true
+        interval: 1500
+        onTriggered: {
+            messages_model.refresh()
+        }
+        Component.onCompleted: {
+            if (!isChat) {
+                start()
+            }
+        }
+    }
 
     Image {
         anchors.fill: parent
@@ -338,7 +345,6 @@ Rectangle {
             maximumFlickVelocity = maximumFlickVelocity * scaleFactor;
             flickDeceleration = flickDeceleration * scaleFactor;
         }
-
     }
 
     MouseArea {
