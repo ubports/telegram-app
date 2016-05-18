@@ -7,11 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-18 13:16+0000\n"
+"POT-Creation-Date: 2015-12-09 12:51+0100\n"
 "PO-Revision-Date: 2016-01-29 12:49+0000\n"
 "Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
-"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,107 +18,106 @@ msgstr ""
 "(n > 2 && n < 20) ? 2 : 3;\n"
 "X-Launchpad-Export-Date: 2016-05-17 06:07+0000\n"
 "X-Generator: Launchpad (build 18025)\n"
+"Language: gd\n"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "Cuir ris an luchd-aithne"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:76
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
 msgstr "Buidheann ùr"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:24
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
 msgstr "Cuir ris a' bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:85
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
 msgstr "Cabadaich dhìomhair ùr"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:28
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:93
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
 msgstr "Luchd-aithne"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:40
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:92
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCountriesPage.qml:29
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:40
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
 msgstr "Lorg"
 
 #. TRANSLATORS: As in: add new contact
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:46
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:99
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
 msgstr "Cuir ris"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:57
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:128
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCountriesPage.qml:43
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:128
 msgid "Back"
 msgstr "Air ais"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:74
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
 msgstr "Lorg san luchd-aithne..."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:121
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:357
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:385
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:301
-#: /home/paz/Development/1450227-New/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:121
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:357
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:385
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:301
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
 msgstr "Ceart ma-thà"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:204
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
 msgid "Chat title"
 msgstr "Tiotal na cabadaich"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:316
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:316
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
 msgstr "Cuir neach-aithne ris"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:319
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
 msgstr "O leabhar nan seòladh"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:328
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
 msgstr "Cuir fiosrachadh a-steach"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:336
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:395
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:312
-#: /home/paz/Development/1450227-New/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
-#: /home/paz/Development/1450227-New/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:336
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:395
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:312
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Sguir dheth"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:370
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:287
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:298
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:157
-#: /home/paz/Development/1450227-New/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
-#: /home/paz/Development/1450227-New/telegram/app/telegram.cpp:572
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:101
-#: /home/paz/Development/1450227-New/telegram/build_mobile/app/telegram.desktop.h:1
-#: /home/paz/Development/1450227-New/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:370
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:297
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:298
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:17
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:7
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:570
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:101
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Teileagram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:402
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -131,184 +129,130 @@ msgstr ""
 "An uiread de theachdaireachdan roimhe rin sìneadh air adhart:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:463
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
 msgstr "Chaidh an luchd-aithne ion-phortadh"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:466
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
 msgstr "Cha deach neach-aithne ion-phortadh"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:473
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
 msgstr "Tha an neach-aithne seo air Teileagram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountContactsPage.qml:476
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "Tha %1 a-mach à %2 neach-aithne air Teileagram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogList.qml:98
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:95
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "A bheil thu airson an teachdaireachd a shìneadh air adhart gu %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogList.qml:110
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
 msgstr "A bheil thu airson teachdaireachdan a chur gu %1?"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogPage.qml:31
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:16
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
 msgstr "Fiosrachadh a' bhuidhinnn"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogPage.qml:31
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
 msgstr "Fiosrachadh na pròifil"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogPage.qml:42
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
 msgstr "Tagh na h-uile"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogPage.qml:54
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:253
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:53
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
 msgstr "Dèan lethbhreac"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogPage.qml:61
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:275
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
 msgstr "Sìn air adhart"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountDialogPage.qml:71
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:242
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:67
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
 msgstr "Sguab às"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:64
+#. TRANSLATORS: %1 indicates who created the secret chat.
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:57
 #, qt-format
-msgid "You have invited %1 to join a secret chat."
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:66
-#, fuzzy, qt-format
-msgid "%1 invited you to join a secret chat."
+msgid "%1 created a secret chat"
 msgstr "Chruthaich %1 cabadaich dhìomhair"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:69
-#, fuzzy
-msgid "You created the group"
+#. TRANSLATORS: %1 indicates who created the group chat titled %2.
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:60
+#, qt-format
+msgid "%1 created the group \"%2\""
 msgstr "Chruthaich %1 am buidheann \"%2\""
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
-msgid "<b>%1</b> created the group"
-msgstr "Chruthaich %1 am buidheann \"%2\""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:77
-#, fuzzy, qt-format
-msgid "You added <b>%1</b>"
-msgstr "Air a shìneadh air adhart o <b>%1</b>"
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:79
+#. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
-msgid "<b>%1</b> added you"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:81
-#, qt-format
-msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgid "%1 added %2 to group"
+msgstr "Chuir %1 %2 ris a' bhuidheann"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:87
-#, fuzzy, qt-format
-msgid "<b>%1</b> left the group"
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:76
+#, qt-format
+msgid "%1 left the group"
 msgstr "Dh'fhàg %1 am buidheann"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy, qt-format
-msgid "You removed <b>%1</b>"
-msgstr "Air a shìneadh air adhart o <b>%1</b>"
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:92
-#, fuzzy, qt-format
-msgid "<b>%1</b> removed you"
+#. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
+#. TRANSLATORS: Notification message saying: person A removed person B (from a group)
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:79
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:206
+#, qt-format
+msgid "%1 removed %2"
 msgstr "Thug %1 %2 air falbh"
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
-msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "Thug %1 %2 air falbh"
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:102
-#, fuzzy, qt-format
-msgid "You changed the group name to %1"
-msgstr "Dh'atharraich %1 ainm a' bhuidhinn gu \"%2\""
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:105
-#, fuzzy, qt-format
-msgid "<b>%1</b> changed the group name to %2"
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:84
+#, qt-format
+msgid "%1 changed group name to \"%2\""
 msgstr "Dh'atharraich %1 ainm a' bhuidhinn gu \"%2\""
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:112
-#, fuzzy
-msgid "You changed the group photo"
-msgstr "Dh'atharraich %1 dealbh a' bhuidhinn"
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy, qt-format
-msgid "<b>%1</b> changed the group photo"
-msgstr "Dh'atharraich %1 dealbh a' bhuidhinn"
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:120
-#, fuzzy
-msgid "You removed the group photo"
-msgstr "Sguab %1 dealbh a' bhuidhinn às."
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:122
-#, fuzzy, qt-format
-msgid "<b>%1</b> removed the group photo"
-msgstr "Sguab %1 dealbh a' bhuidhinn às."
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:127
-msgid "You joined the group via invite link"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageAction.qml:129
+#. TRANSLATORS: %1 is the person, who changed the gruop phot.
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:89
 #, qt-format
-msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgid "%1 changed group photo."
+msgstr "Dh'atharraich %1 dealbh a' bhuidhinn."
+
+#. TRANSLATORS: %1 is the person, who deleted the group photo.
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:94
+#, qt-format
+msgid "%1 deleted group photo"
+msgstr "Sguab %1 dealbh a' bhuidhinn às."
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:149
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
 msgstr "Tagh cabadaich"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:222
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
 msgstr "Teachdaireachdan ùra"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:259
-msgid "Reply"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:266
-msgid "Sticker Pack info"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:412
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."
 msgstr "Chaidh cabadaich dhìomhair iarraidh."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:424
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:381
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -317,199 +261,203 @@ msgstr ""
 "Thoir an aire gun gabh Android ri cabadaich dhìomhair gu fèin-obrachail."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:456
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:413
 msgid "Accept"
 msgstr "Gabh ris"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountMessageList.qml:470
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:427
 msgid "Reject"
 msgstr "Diùlt"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountNamePage.qml:18
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:21
-#: /home/paz/Development/1450227-New/telegram/app/qml/PreviewPage.qml:50
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:18
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:21
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:50
 msgid "Save"
 msgstr "Sàbhail"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountNamePage.qml:23
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:23
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
 msgstr "Deasaich an t-anim"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountNamePage.qml:34
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
 msgstr "Tha feum air ainm."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountNamePage.qml:52
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:132
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:52
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
 msgstr "Ainm (riatanach)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountNamePage.qml:71
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:148
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:71
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
 msgstr "Sloinneadh (roghainneil)"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:290
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:157
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:300
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
 msgstr "'Ga cheangal..."
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:294
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:316
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:336
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:304
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:326
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:346
 msgid "Waiting for network..."
 msgstr "A' feitheamh air an lìonra..."
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:313
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountPage.qml:333
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:323
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:343
 msgid "Select Chat"
 msgstr "Tagh cabadaich"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSendMessage.qml:158
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:158
 msgid "Type message"
 msgstr "Sgrìobh teachdaireachd"
 
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSendMessage.qml:336
+msgid "Close"
+msgstr "Dùin"
+
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:23
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:45
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:23
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:45
 msgid "Change photo"
 msgstr "Atharraich an dealbh"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:36
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:102
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:36
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:102
 msgid "Settings"
 msgstr "Roghainnean"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:94
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:641
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:94
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:94
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:642
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:87
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Fiosrachadh"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:100
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:100
 msgid "Phone"
 msgstr "Cuir fòn"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:108
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:61
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:108
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:61
 msgid "Username"
 msgstr "Ainm-cleachdaiche"
 
 #. TRANSLATORS: Settings section header.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:115
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:115
 msgid "Messages"
 msgstr "Teachdaireachdan"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:120
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:419
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:120
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:485
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:386
 msgid "Notifications"
 msgstr "Brathan"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:153
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:153
 msgid "Send by Enter"
 msgstr "Cuir le Enter"
 
 #. TRANSLATORS: Settings section header.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:172
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:172
 msgid "Support"
 msgstr "Taic"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:178
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:178
 msgid "Ask a Question"
 msgstr "Faighnich ceist"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:185
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:111
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:185
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:111
 msgid "Telegram FAQ"
 msgstr "CÀBHA Teileagraim"
 
 #. TRANSLATORS: Settings section header.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:191
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:191
 msgid "Account"
 msgstr "Cunntas"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:196
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:196
 msgid "Log out"
 msgstr "Clàraich a-mach"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:208
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:208
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Teileagram airson Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:262
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:238
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:68
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:262
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:239
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:67
 msgid "online"
 msgstr "air loidhne"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:265
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:241
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:71
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:265
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:242
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:70
 #, qt-format
 msgid "last seen %1"
 msgstr "air fhaicinn roimhe %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:268
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:244
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:74
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:268
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:245
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:73
 msgid "last seen recently"
 msgstr "air fhaicinn o chionn goirid"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:271
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:247
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:77
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:271
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:248
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "last seen within a week"
 msgstr "air fhaicinn an t-seachdain seo chaidh"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:274
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:250
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:80
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:274
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:251
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:79
 msgid "last seen within a month"
 msgstr "air fhaicinn am mìos seo chaidh"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:277
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:253
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:83
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:277
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:254
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:82
 msgid "last seen a long time ago"
 msgstr "gun fhaicinn o chionn fhada"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountSettings.qml:299
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:299
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -518,277 +466,261 @@ msgstr ""
 "Thèid cabadaich dhìomhair sam bith air a call."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:35
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr "Tha %1 ri fhaighinn."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:38
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr "Duilich ach tha an t-ainm-cleachdaiche seo ann mar-thà."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr "Duilich ach chan eil an t-ainm-cleachdaiche seo dligheach."
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:100
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:100
 msgid "Your Username"
 msgstr "An t-ainm-cleachdaiche agad"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:108
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:108
 msgid "A username must have at least 5 characters."
 msgstr ""
 "Feumaidh 5 caractaran a bhith aig ainm-cleachdaiche air a char as lugha."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:131
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:131
 msgid "Checking username..."
 msgstr "A' dearbhadh an ainm-chleachdaiche..."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AccountUsernamePage.qml:139
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:139
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "'S urrainn dhut ainm-cleachdaiche a thaghadh air <b>Teileagram</b>. Ma "
 "thaghas, lorgaidh daoine eile thu leis an ainm-chleachdaiche seo agus 's "
-"urrainn dhaibh fios a chur thugad mur eil iad eòlach air an àireamh fòn agad."
-"<br /><br />Faodaidh tu <b>a-z</b>, <b>0-9</b> agus fo-loidhnichean a "
+"urrainn dhaibh fios a chur thugad mur eil iad eòlach air an àireamh fòn "
+"agad.<br /><br />Faodaidh tu <b>a-z</b>, <b>0-9</b> agus fo-loidhnichean a "
 "chleachdadh.<br />'S e <b>5</b> caractaran a tha san fhaide as lugha."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:35
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthNumberPage.qml:92
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:35
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:88
 msgid "Done"
 msgstr "Deiseil"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:115
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:115
 msgid "Phone number (required)"
 msgstr "Àireamh fòn riatanach)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:184
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:184
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr "Chan eil %1 air Teileagram fhathast"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:190
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:190
 msgid "Invite to Telegram"
 msgstr "Thoir cuireadh do Theileagraim"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:236
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:236
 msgid "Could not add contact"
 msgstr "Cha b' urrainn dhuinn an neach-aithne a chur ris"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:256
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:256
 msgid "Please include the country code."
 msgstr "Feuch an cuir thu còd do dhùthcha ris."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AddContactPage.qml:258
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:258
 msgid "Number is not a valid phone number"
 msgstr "Chan eil an àireamh 'na àireamh fòn dhligheach"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:23
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:151
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthenticatePage.qml:7
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:7
 msgid "Sign In"
 msgstr "Clàraich a-steach"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:23
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:151
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
 msgid "Sign Up"
 msgstr "Clàraich"
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:30
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:29
 msgid "Invalid phone code"
 msgstr "Còd fòn mì-dhligheach"
 
 #. TRANSLATORS: Error text for missing first name.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:45
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:44
 msgid "First name is required"
 msgstr "Tha feum air ainm"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:112
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:110
 msgid "Code"
 msgstr "Còd"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:129
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:126
 msgid "First Name"
 msgstr "Ainm"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:139
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:135
 msgid "Last Name"
 msgstr "Sloinneadh"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:163
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:157
 msgid "Resend Code"
 msgstr "Cuir thugam an còd a-rithist"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:180
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:173
 msgid "Request Call"
 msgstr "Iarr gairm"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCodePage.qml:182
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:175
 msgid "Calling, please wait..."
 msgstr "A' gairm, fuirich ort..."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCountriesPage.qml:18
-msgid "Choose a country"
-msgstr ""
-
-#. TRANSLATORS: Placeholder for contacts search field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthCountriesPage.qml:60
-#, fuzzy
-msgid "Search countries..."
-msgstr "Lorg san luchd-aithne..."
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCountriesPage.qml:15
+msgid "Country Code"
+msgstr "Còd na dùthcha"
 
 #. TRANSLATORS: Placeholder for the phone number field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthenticatePage.qml:61
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthNumberPage.qml:22
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthNumberPage.qml:69
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:61
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:21
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:66
 msgid "Phone Number"
 msgstr "Àireamh fòn"
 
 #. TRANSLATORS: Button text right under the phone number text field.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthenticatePage.qml:78
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:78
 msgid "Log in"
 msgstr "Clàraich a-steach"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /home/paz/Development/1450227-New/telegram/app/qml/AuthNumberPage.qml:76
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Number correct?"
 msgstr "A bheil an àireamh ceart?"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/InstallStickerDialog.qml:67
-msgid "Install"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/InstallStickerDialog.qml:75
-msgid "Close"
-msgstr "Dùin"
-
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPage.qml:174
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPage.qml:142
 msgid "Start Messaging"
 msgstr "Tòisich air teachdaireachdan"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:18
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr "Fàilte gu linn nan<br>teachdaireachdan luatha is tèarainte"
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "Luath"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:23
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "Lìbhrigidh <b>Teileagram</b> teachdaireachdan nas luaithe<br>na aplacaid sam "
 "bith eile"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:27
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "An-asgaidh"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:28
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
 "Bidh <b>Teileagram</b> an-asgaidh gu buan. Gun sanasachd.<br> Gun chìsean fo-"
 "sgrìobhaidh"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:32
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "Tèarainte"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:33
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
 "Cumaidh <b>Teileagram</b> na teachdaireachdan agad sàbhailte<br> o "
 "ionnsaighean hacker"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:37
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "Cumhachdach"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:38
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
 "Chan eil cuingeachadh aig <b>Teileagram</b> air meud<br>nam meadhanan is na "
 "cabadaich agad"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:42
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "Stèidhichte air neul"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:43
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "Leigidh <b>Teileagram</b> leat na teachdaireachdan agad<br>inntrigeadh o "
 "iomadh uidheam"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:47
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "Prìobhaideach"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/IntroPageListModel.qml:48
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr "Tha crioptachadh làidir air teachdaireachdan <b>Teileagraim</b><br>"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/PickerPage.qml:9
-msgid "Choose"
-msgstr ""
-
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /home/paz/Development/1450227-New/telegram/app/qml/PreviewPage.qml:29
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:29
 #, qt-format
 msgid "From: %1"
 msgstr "O: %1"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/PreviewPage.qml:56
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:56
 msgid "Share"
 msgstr "Co-roinn"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:16
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
 msgid "Contact Info"
 msgstr "Fiosrachadh conaltraidh"
 
 #. TRANSLATORS: Action text to add member to group chat.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:39
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:39
 msgid "Add member"
 msgstr "Cuir ball ris"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:227
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:58
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:228
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:57
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr ""
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:230
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:61
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:231
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:60
 #, qt-format
 msgid "%1 members"
 msgstr ""
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:271
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:49
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:272
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:48
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -798,56 +730,56 @@ msgstr[2] "Tha %1 a' sgrìobhadh"
 msgstr[3] "Tha %1 a' sgrìobhadh"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:274
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:275
 #, qt-format
 msgid "%1 are typing"
 msgstr "Tha %1 a' sgrìobhadh"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:339
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:340
 msgid "Unknown"
 msgstr "Neo-aithnichte"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:349
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:350
 msgid "Mobile"
 msgstr "Fòn-làimhe"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:401
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:402
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:561
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:562
 msgid "Block user"
 msgstr "Bac an cleachdaiche"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ProfilePage.qml:628
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:629
 msgid "Remove from group"
 msgstr "Thoir air falbh on bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:164
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:165
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Teachdaireachdan Teileagraim a fhuair thu an-diugh: %1"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:165
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:166
 msgid "No Telegram messages received today."
 msgstr "ha d' fhuair thu teachdaireachd Teileagraim an-diugh."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:172
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:173
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Teachdaireachdan Teileagraim a chuir thu an-diugh: %1"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:173
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
 msgstr "Cha deach teachdaireachd Teileagraim a chur an-diugh."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:420
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:387
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -855,67 +787,67 @@ msgstr ""
 "Ma tha thu airson brathan Teileagraim fhaighinn nuair nach eil thu a' "
 "chleachdadh na h-aplacaid, clàraich a-steach dhan chunntas Ubuntu One agad."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:427
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:394
 msgid "Sign in to Ubuntu One"
 msgstr "Clàraich a-steach gu Ubuntu One"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:435
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:402
 msgid "Remind me later"
 msgstr "Cuir nam chuimhne an ceann greis"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/telegram.qml:443
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/telegram.qml:410
 msgid "Don't want notifications"
 msgstr "Chan eil mi ag iarraidh brathan"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:136
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:136
 msgid "Accounts"
 msgstr "Cunntasan"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AccountPanel.qml:163
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:163
 msgid "Add Account"
 msgstr "Cuir cunntas ris"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AttachPanel.qml:86
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:86
 msgid "Photo"
 msgstr "Dealbh"
 
 #. TRANSLATORS: Used in attach menu, when sending a video to the conversation.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AttachPanel.qml:97
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:97
 msgid "Video"
 msgstr "Video"
 
 #. TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/AttachPanel.qml:108
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AttachPanel.qml:108
 msgid "File"
 msgstr "Faidhle"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:34
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "A' feitheamh gus an tig an cleachdaiche air loidhne..."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:36
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "Chaidh cabadaich dhìomhair iarraidh"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:38
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "Chaidh cabadaich dhìomhair a chruthachadh"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:41
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr "Chaidh cabadaich dhìomhair a leigeil seachad"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:48
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "À comas"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:51
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -925,449 +857,368 @@ msgstr[2] "%1 diogan"
 msgstr[3] "%1 diog"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:54
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 mhionaid"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 uair a thìde"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 latha"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DelegateUtils.qml:63
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 seachdain"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:56
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:50
 msgid "Leave chat"
 msgstr "Fàg a' chabadaich"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:62
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:56
 msgid "Are you sure you want to leave this chat?"
 msgstr "A bheil thu cinnteach gu bheil thu airson a' chabadaich seo fhàgail?"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:73
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:66
 msgid "Clear history"
 msgstr "Falamhaich an eachdraidh"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:79
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:72
 msgid "Are you sure you want to clear history?"
-msgstr "A bheil thu cinnteach gu bheil thu airson an eachdraidh fhalamhachadh?"
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson an eachdraidh fhalamhachadh?"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:195
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramHeader.qml:52
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:188
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
 msgstr "a' sgrìobhadh..."
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:213
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 joined your secret chat.</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:215
-msgid "<font color=\"DarkBlue\">You joined the secret chat.</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:218
-msgid "<font color=\"DarkBlue\">You created the group</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:220
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 created the group</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:226
-#, qt-format
-msgid "<font color=\"DarkBlue\">You added %1</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:228
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 added you</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:230
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 added %2</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:235
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 left the group</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:238
-#, qt-format
-msgid "<font color=\"DarkBlue\">You removed %1</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:240
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 removed you</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:242
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 removed %2</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:248
-msgid "<font color=\"DarkBlue\">You joined the group via invite link</font>"
-msgstr ""
-
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/DialogsListItem.qml:250
-#, qt-format
-msgid "<font color=\"DarkBlue\">%1 joined the group via invite link</font>"
-msgstr ""
-
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/MessagesListItem.qml:191
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:205
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Air a shìneadh air adhart o <b>%1</b>"
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/MessagesListItem.qml:274
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:288
 msgid "Audio attachment not supported yet ;("
 msgstr "Cha chuirear taic ri ceanglachain fuaime fhathast ;("
 
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/SearchHeadState.qml:38
-#, fuzzy
-msgid "Search music"
-msgstr "Lorg"
-
 #. TRANSLATORS: User status: deleted
-#: /home/paz/Development/1450227-New/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Air a sguabadh às"
 
 #. TRANSLATORS: Title of self destruct timer dialog.
-#: /home/paz/Development/1450227-New/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
 msgstr "Tìmear an fhèin-mhillidh"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:11
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:46
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:68
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:11
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:46
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
 msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:14
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:35
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:49
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:14
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:35
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "d MMM"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:54
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "an-diugh %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:57
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "an-dè %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /home/paz/Development/1450227-New/telegram/app/qml/js/time.js:60
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1 %2"
 
 #. TRANSLATORS: Format string: time.
-#: /home/paz/Development/1450227-New/telegram/app/telegram.cpp:253
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:251
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/paz/Development/1450227-New/telegram/app/telegram.cpp:257
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:255
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/paz/Development/1450227-New/telegram/app/telegram.cpp:261
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:259
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/paz/Development/1450227-New/telegram/app/telegram.cpp:264
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/telegram.cpp:262
 msgid "dd MMM yy"
 msgstr "dd MMM yy"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:110
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:114
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:118
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:122
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:126
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:130
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:134
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:139
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:144
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr "Chuir %1 teachdaireachd dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:149
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr "Chuir %1 dealbh dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:154
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr "Chuir %1 video dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:159
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr "Chuir %1 sgrìobhainn dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:164
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr "Chuir %1 teachdaireachd gutha dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:169
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr "Chuir %1 neach-aithne dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:174
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr "Chuir %1 mapa dhan bhuidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:179
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:200
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:179
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr "Thug %1 cuireadh dhan bhuidheann dhut"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:184
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr "Dh'atharraich %1 ainm a' bhuidhinn"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:189
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr "Dh'atharraich %1 dealbh a' bhuidhinn"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:195
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr "Thug %1 cuireadh dha %2"
 
-#. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:206
-#, qt-format
-msgid "%1 removed %2"
-msgstr "Thug %1 %2 air falbh"
-
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:211
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr "Thug %1 air falbh on bhuidheann thu"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:216
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr "Dh'fhàg %1 am buidheann"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:221
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr "Thill %1 dhan bhuidheann"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:226
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:228
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr "Rinn %1 seacadh a-stach"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:234
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr "Ghabh %1 ballrachd ann an Teileagram!"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:239
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:245
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:239
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr "Clàradh a-steach ùr o uidheam nach aithne dhuinn"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:244
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr "%1 @ %2"
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:249
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr ""
 
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:254
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:259
-#: /home/paz/Development/1450227-New/telegram/push/pushhelper.cpp:264
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:254
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:259
+#: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr "Tha teachdaireachd ùr agad"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/paz/Development/1450227-New/telegram/scope/config.h:24
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
-#: /home/paz/Development/1450227-New/telegram/scope/preview.cpp:62
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr "Fosgail aplacaid"
 
 #. TRANSLATORS: call to action: open this chat
-#: /home/paz/Development/1450227-New/telegram/scope/preview.cpp:86
-#: /home/paz/Development/1450227-New/telegram/scope/preview.cpp:120
-#: /home/paz/Development/1450227-New/telegram/scope/preview.cpp:149
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:86
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:120
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr "Fosgail cabadaich"
 
-#: /home/paz/Development/1450227-New/telegram/scope/preview.cpp:94
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr "Cuir fòn"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:58
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr "Cha deach leinn dàta Teileagraim fhaighinn"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:59
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr "Suath an-seo gus an aplacaid fhosgladh"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:167
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Toraidhean san luchd-aithne ⁊ cabadaich"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:184
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Toraidhean sna teachdaireachdan"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:291
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Daoine a bhruidhneas tu ris"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:292
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Cabadaich o chionn ghoirid"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:293
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Dealbhan o chionn goirid"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:298
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 teachdaireachd ùr"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:298
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 teachdaireachd(an) ùra"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:301
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Cabadaich gun leughadh (%1)"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:642
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Teachdaireachd fuaime"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:646
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "Neach-aithne a fhuair thu"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:650
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "Sgrìobhainn a fhuair thu"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:654
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "Dealbh air fhaighinn"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:671
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "Video air fhaighinn"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:681
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr "Seòrsa meadhain gun làimhseachadh"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:756
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Clàraich a-steach gu Teileagraim"
 
-#: /home/paz/Development/1450227-New/telegram/scope/query.cpp:792
+#: /home/karni/src/telegram/telegram-app/v2/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Cha d' fhuair thu teachdaireachd an-diugh."
 
-#: /home/paz/Development/1450227-New/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr "Seo sgòp Teileagraim"
 
-#: /home/paz/Development/1450227-New/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Lorg cabadaich, neach-aithne no teachdaireachd"
-
-#~ msgid "%1 added %2 to group"
-#~ msgstr "Chuir %1 %2 ris a' bhuidheann"
-
-#~ msgid "%1 changed group photo."
-#~ msgstr "Dh'atharraich %1 dealbh a' bhuidhinn."
-
-#~ msgid "Country Code"
-#~ msgstr "Còd na dùthcha"
