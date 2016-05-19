@@ -19,6 +19,8 @@ Page {
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
 
+    property bool dialogDidGoBack: false
+
     signal openDialog(var dialogId)
     signal addParticipantRequest()
 

@@ -24,6 +24,7 @@ Item {
 
     signal windowRequest(variant dialog)
     signal dialogClosed()
+    signal dialogClosedFromBackButton()
 
     ActivityIndicator {
         id: activity_indicator
@@ -39,12 +40,10 @@ Item {
     }
 
     onDialogClosed: {
-        if(mainView.width > units.gu(160) && mainView.height < units.gu(100)) {
-            //Device is Desktop
-        } else {
-            //Device is Mobile
+        if(mainView.width <= 640 | dialogDidGoBack) {
             dialog_list.currentIndex = -1;
             currentDialog = telegramObject.nullDialog;
+            dialogDidGoBack = false;
         }
     }
 
