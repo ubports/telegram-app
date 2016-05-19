@@ -23,6 +23,7 @@ Item {
     property bool showLastMessage: true // TODO Cutegram.showLastMessage
 
     signal windowRequest(variant dialog)
+    signal dialogClosed()
 
     ActivityIndicator {
         id: activity_indicator
@@ -35,6 +36,16 @@ Item {
 
     DialogsModel {
         id: dialogs_model
+    }
+
+    onDialogClosed: {
+        if(mainView.width > units.gu(160) && mainView.height < units.gu(100)) {
+            //Device is Desktop
+        } else {
+            //Device is Mobile
+            dialog_list.currentIndex = -1;
+            currentDialog = telegramObject.nullDialog;
+        }
     }
 
     ListView {

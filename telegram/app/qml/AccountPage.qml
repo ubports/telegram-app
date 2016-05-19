@@ -230,6 +230,10 @@ Page {
             telegramObject: dialogs.telegramObject
             onTagSearchRequest: search_frame.text = "#" + tag
 
+            onDialogClosed: {
+                dialogs.dialogClosed();
+            }
+
             onForwardRequest: {
                 dialogs.messageIdsToForward = messageIds;
             }
