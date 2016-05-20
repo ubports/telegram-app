@@ -143,27 +143,18 @@ QVariant AsemanCountriesModel::data(const QModelIndex &index, int role) const
 
 QVariantMap AsemanCountriesModel::get( int rowNumber ) const
 {
-
     // Create a map to hold all the role information about the data item in question
-
     // Use the role names as the keys for the map so that the same referances can be
-
     // used in the QML to get the data (i.e. role_display, role_value).
 
     QVariantMap map;
-
     QHash<int,QByteArray> roleName = roleNames();
 
     foreach (int i, roleName.keys())
-
     {
-
         map[roleName.value(i)] = data( index( rowNumber,0 ), i );
-
     }
-
     return map;
-
 }
 
 
