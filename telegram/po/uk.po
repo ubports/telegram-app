@@ -12,14 +12,14 @@ msgstr ""
 "PO-Revision-Date: 2015-11-03 11:45+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2016-05-17 06:07+0000\n"
 "X-Generator: Launchpad (build 18025)\n"
+"Language: uk\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -500,8 +500,8 @@ msgstr "Перевіряємо ім’я користувача…"
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
-"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
-"<br />Minimum length is <b>5</b> characters."
+"phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
+"underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
 "Ви можете вибрати ім’я користувача у системі <b>Telegram</b>. Якщо ви це "
 "зробите, інші користувачі зможуть знайти вас за цим ім’ям і зв’язатися із "
@@ -623,7 +623,8 @@ msgid "Fast"
 msgstr "Швидкість"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:23
-msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
+msgid ""
+"<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> надсилає повідомлення швидше<br> за будь-яку іншу програму"
 
@@ -634,7 +635,8 @@ msgstr "Свобода"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr "<b>Telegram</b> назавжди безкоштовна. Без реклами.<br> Без передплати"
+msgstr ""
+"<b>Telegram</b> назавжди безкоштовна. Без реклами.<br> Без передплати"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:32
@@ -662,7 +664,8 @@ msgid "Cloud-Based"
 msgstr "Хмарність"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:43
-msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
+msgid ""
+"<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> надає вам доступ до ваших<br> повідомлень з декількох "
 "пристроїв"
