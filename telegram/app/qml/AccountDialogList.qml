@@ -40,7 +40,7 @@ Item {
     }
 
     onDialogClosed: {
-        if(mainView.width <= 640 | dialogDidGoBack) {
+        if(mainView.width <= units.gu(80) | dialogDidGoBack) {
             dialog_list.currentIndex = -1;
             currentDialog = telegramObject.nullDialog;
             dialogDidGoBack = false;
