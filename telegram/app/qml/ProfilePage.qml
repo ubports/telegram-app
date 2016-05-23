@@ -39,7 +39,7 @@ Page {
         Action {
             iconName: "contact-new"
             // TRANSLATORS: Action text to add member to group chat.
-            text: i18n.tr("Change Group Title")
+            text: i18n.tr("Add member")
             onTriggered: addMember()
         },
         Action {
@@ -51,7 +51,7 @@ Page {
         Action {
             iconName: "edit"
             // TRANSLATORS: Action text to change group chat title.
-            text: i18n.tr("Edit Title")
+            text: i18n.tr("Change Group Title")
             onTriggered: changeChatTitle()
         }
     ]
