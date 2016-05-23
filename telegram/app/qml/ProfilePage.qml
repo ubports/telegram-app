@@ -155,15 +155,19 @@ Page {
                      rightMargin: units.gu(1)
                  }
                  horizontalAlignment: Text.AlignLeft
+                 //inputMethodHints: Qt.ImhEmailCharactersOnly
                  text: chat.title
+                 placeholderText: "Group Chat Title"
              }
 
              UC.Button {
                  text: i18n.tr("Change Title")
                  color: UbuntuColors.orange
                  onClicked: {
-                     //If telegram is connected; change group chat title
                      telegram.messagesEditChatTitle(dialogId, group_Title_Textfield.text);
+
+                     console.log("Changed title to: " + group_Title_Textfield.text);
+                     console.log("Changed title to dialog: " + dialogId);
 
                      PopupUtils.close(change_Group_Title_Dialog);
                  }
