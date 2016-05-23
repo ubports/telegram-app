@@ -3,8 +3,11 @@ import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Content 1.3
+import Ubuntu.Components.Popups 1.3 as Popups
+import Ubuntu.Components 1.3 as UC
 
 import TelegramQML 1.0
+import AsemanTools 1.0
 
 import "components"
 import "js/avatar.js" as Avatar
@@ -36,7 +39,7 @@ Page {
         Action {
             iconName: "contact-new"
             // TRANSLATORS: Action text to add member to group chat.
-            text: i18n.tr("Add member")
+            text: i18n.tr("Change Group Title")
             onTriggered: addMember()
         },
         Action {
@@ -44,7 +47,13 @@ Page {
             // TRANSLATORS: Action text to change group photo.
             text: i18n.tr("Change photo")
             onTriggered: changeGroupPhoto()
-       }
+       },
+        Action {
+            iconName: "edit"
+            // TRANSLATORS: Action text to change group chat title.
+            text: i18n.tr("Edit Title")
+            onTriggered: changeChatTitle()
+        }
     ]
 
     head.actions: isChat ? groupActions : noActions
@@ -124,6 +133,46 @@ Page {
     function changeGroupPhoto() {
         Qt.inputMethod.hide();
         photo_importer.requestMedia();
+    }
+
+    function changeChatTitle() {
+        PopupUtils.open(change_Group_Title_Component);
+    }
+
+    Component {
+        //Change title component
+        id: change_Group_Title_Component
+         Popups.Dialog {
+             id: change_Group_Title_Dialog
+             title: i18n.tr("Change Group Title")
+
+             TextField {
+                 id: group_Title_Textfield
+                 anchors {
+                     left: parent.left
+                     leftMargin: units.gu(1)
+                     right: parent.right
+                     rightMargin: units.gu(1)
+                 }
+                 horizontalAlignment: Text.AlignLeft
+                 text: chat.title
+             }
+
+             UC.Button {
+                 text: i18n.tr("Change Title")
+                 color: UbuntuColors.orange
+                 onClicked: {
+                     //If telegram is connected; change group chat title
+                     telegram.messagesEditChatTitle(dialogId, group_Title_Textfield.text);
+
+                     PopupUtils.close(change_Group_Title_Dialog);
+                 }
+             }
+             UC.Button {
+                 text: i18n.tr("Cancel")
+                 onClicked: PopupUtils.close(change_Group_Title_Dialog)
+             }
+         }
     }
 
     MediaImport {
