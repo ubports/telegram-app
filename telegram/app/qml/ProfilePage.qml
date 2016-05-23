@@ -165,10 +165,6 @@ Page {
                  color: UbuntuColors.orange
                  onClicked: {
                      telegram.messagesEditChatTitle(dialogId, group_Title_Textfield.text);
-
-                     console.log("Changed title to: " + group_Title_Textfield.text);
-                     console.log("Changed title to dialog: " + dialogId);
-
                      PopupUtils.close(change_Group_Title_Dialog);
                  }
              }
