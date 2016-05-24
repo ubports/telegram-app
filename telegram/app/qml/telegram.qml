@@ -262,6 +262,7 @@ MainView {
             pageStack.primaryPage = introPage;
         }
 
+
         function clear() {
             pageStack.removePages(pageStack.primaryPage);
         }

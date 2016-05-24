@@ -92,11 +92,27 @@ Item {
         }
         onAuthCodeRequested: {
             console.log("authCodeRequested");
-            pageStack.setPrimaryPage();
-            pageStack.addPageToCurrentColumn(pageStack.primaryPage, account_code_page_component, {
-                    "phoneRegistered": telegram.authPhoneRegistered,
-                    "timeOut": sendCallTimeout
-                });
+            console.log("Number of profiles: " + profiles.count);
+
+            if (profiles.count === 1) {
+                pageStack.setPrimaryPage();
+                pageStack.addPageToCurrentColumn(pageStack.primaryPage, account_code_page_component, {
+                        "phoneRegistered": telegram.authPhoneRegistered,
+                        "timeOut": sendCallTimeout
+                    });
+            }
+            else {
+//                pageStack.addPageToNextColumn(auth_countries_page_component, account_code_page_component, {
+//                        "phoneRegistered": telegram.authPhoneRegistered,
+//                        "timeOut": sendCallTimeout
+//                    });
+                pageStack.addPageToCurrentColumn(auth_number_page_component, account_code_page_component, {
+                        "phoneRegistered": telegram.authPhoneRegistered,
+                        "timeOut": sendCallTimeout
+                    });
+
+            }
+
         }
         onAuthLoggedInChanged: {
             readyForPush = authLoggedIn; // required for PushClient
