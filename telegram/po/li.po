@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2016-05-23 05:58+0000\n"
+"PO-Revision-Date: 2016-05-23 06:37+0000\n"
 "Last-Translator: Lars <Unknown>\n"
 "Language-Team: Limburgian <li@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-05-23 06:01+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-05-24 06:34+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -74,22 +74,22 @@ msgstr "Okee"
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
 msgid "Chat title"
-msgstr ""
+msgstr "Gesprekstitel"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:316
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
-msgstr ""
+msgstr "Contact toevoegen"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
-msgstr ""
+msgstr "Van adresboek"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
-msgstr ""
+msgstr "Copy text \t Details invoeren"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:336
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:395
@@ -97,7 +97,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
-msgstr ""
+msgstr "Annulere"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -112,7 +112,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
@@ -122,91 +122,94 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
+"%1 toevoegen aan %2?\n"
+"\n"
+"Aantal recente berichten om door te sturen:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
-msgstr ""
+msgstr "Contacten geïmporteerd"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
-msgstr ""
+msgstr "Geen contacten geïmporteerd"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
-msgstr ""
+msgstr "Dit contact gebruukt  Telegram"
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr ""
+msgstr "%1 van de %2 contacten gebruuke Telegram"
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:95
 #, qt-format
 msgid "Forward message to %1?"
-msgstr ""
+msgstr "Bericht doorsturen naar %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:107
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "Berichten naar %1 versturen?"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ProfilePage.qml:16
 msgid "Group Info"
-msgstr ""
+msgstr "Groepinfo"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:30
 msgid "Profile Info"
-msgstr ""
+msgstr "Profielinfo"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:41
 msgid "Select all"
-msgstr ""
+msgstr "Alles selectere"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:53
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:225
 msgid "Copy"
-msgstr ""
+msgstr "Kopiëre"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:60
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:231
 msgid "Forward"
-msgstr ""
+msgstr "Doorsture"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogPage.qml:67
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:216
 msgid "Delete"
-msgstr ""
+msgstr "Verwijdere"
 
 #. TRANSLATORS: %1 indicates who created the secret chat.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:57
 #, qt-format
 msgid "%1 created a secret chat"
-msgstr ""
+msgstr "%1 heeft een geheime chat aangemaakt"
 
 #. TRANSLATORS: %1 indicates who created the group chat titled %2.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "%1 created the group \"%2\""
-msgstr ""
+msgstr "%1 haet de groep ‘%2’ aangemaakt"
 
 #. TRANSLATORS: %1 is the person, who added person %2 to the group chat.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
 msgid "%1 added %2 to group"
-msgstr ""
+msgstr "%1 haet %2 aan de groep toegevoegd"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:76
 #, qt-format
 msgid "%1 left the group"
-msgstr ""
+msgstr "%1 haet de groep verloate"
 
 #. TRANSLATORS: %1 is the person, who removed person %2 from the group chat.
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
@@ -214,96 +217,99 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
-msgstr ""
+msgstr "%1 heeft %2 verwijderd"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:84
 #, qt-format
 msgid "%1 changed group name to \"%2\""
-msgstr ""
+msgstr "%1 haet de groepsnaam verangerd in ‘%2’"
 
 #. TRANSLATORS: %1 is the person, who changed the gruop phot.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:89
 #, qt-format
 msgid "%1 changed group photo."
-msgstr ""
+msgstr "%1 haet de groepsfoto verangerd."
 
 #. TRANSLATORS: %1 is the person, who deleted the group photo.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "%1 deleted group photo"
-msgstr ""
+msgstr "%1 haet de groepsfoto verwijderd"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:129
 msgid "Please select chat"
-msgstr ""
+msgstr "Gelieve chat te selectere"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:197
 msgid "New messages"
-msgstr ""
+msgstr "Neuje berichten"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:369
 msgid "Secret chat requested."
-msgstr ""
+msgstr "Verzoek om geheime chat."
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:381
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
+"Geheime chat verworpe of afgeweeze van een ander apparaat.\n"
+"\n"
+"Merk op dat Android geheime chats automatisch accepteert."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:413
 msgid "Accept"
-msgstr ""
+msgstr "Acceptere"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountMessageList.qml:427
 msgid "Reject"
-msgstr ""
+msgstr "Afwijze"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:18
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountUsernamePage.qml:21
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/PreviewPage.qml:50
 msgid "Save"
-msgstr ""
+msgstr "Opsjlaon"
 
 #. TRANSLATORS: Edit your profile first and last name.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:23
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:30
 msgid "Edit name"
-msgstr ""
+msgstr "Naam bewerke"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:34
 msgid "First name is required."
-msgstr ""
+msgstr "Voornaam is verplicht."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:52
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:132
 msgid "First name (required)"
-msgstr ""
+msgstr "Voornaam (verplicht)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountNamePage.qml:71
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:148
 msgid "Last name (optional)"
-msgstr ""
+msgstr "Achternaam (optioneel)"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:300
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:156
 msgid "Connecting..."
-msgstr ""
+msgstr "Verbinde..."
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:304
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:326
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountPage.qml:346
 msgid "Waiting for network..."
-msgstr ""
+msgstr "Wachten op het netwerk…"
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
