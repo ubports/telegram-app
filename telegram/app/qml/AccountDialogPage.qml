@@ -87,6 +87,9 @@ Page {
             if (message_list.inSelectionMode) {
                 message_list.cancelSelection()
             } else {
+                if(mainView.width > units.gu(80)) {
+                    dialogDidGoBack = true;
+                }
                 pageStack.removePages(dialog_page);
             }
         }

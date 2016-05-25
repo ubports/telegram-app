@@ -19,6 +19,8 @@ Page {
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
 
+    property bool dialogDidGoBack: false
+
     signal openDialog(var dialogId)
     signal addParticipantRequest()
 
@@ -229,6 +231,10 @@ Page {
             currentDialog: dialogs.currentDialog
             telegramObject: dialogs.telegramObject
             onTagSearchRequest: search_frame.text = "#" + tag
+
+            onDialogClosed: {
+                dialogs.dialogClosed();
+            }
 
             onForwardRequest: {
                 dialogs.messageIdsToForward = messageIds;
