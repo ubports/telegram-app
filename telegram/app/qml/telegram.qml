@@ -25,6 +25,7 @@ import Ubuntu.PushNotifications 0.1
 
 import TelegramQML 1.0
 
+
 import "components"
 import "js/version.js" as Version
 import "ui"
@@ -304,8 +305,57 @@ MainView {
                     target: mainView
                     onError: auth_number_page.error(id, errorCode, errorText)
                 }
+
+                Connections {
+                    target: account_list
+                    onCodeRequested: {
+                        console.log("*** Auth code requested from telegram.qml ***");
+                        console.log("*** Number of profiles: " + profiles.count);
+
+                        if (profiles.count === 1) {
+                            pageStack.setPrimaryPage();
+                            pageStack.addPageToCurrentColumn(pageStack.primaryPage, authCodePage, {
+                                    "phoneRegistered": telegram.authPhoneRegistered,
+                                    "timeOut": sendCallTimeout
+                                });
+                        }
+                        else {
+                            pageStack.addPageToCurrentColumn(auth_number_page, authCodePage, {
+                                    "phoneRegistered": telegram.authPhoneRegistered,
+                                    "timeOut": sendCallTimeout
+                                });
+                        }
+                    }
+                }
             }
         }
+
+
+        Component {
+            id: account_code_page_component
+
+            AuthCodePage {
+                id: auth_code_page
+                objectName: "auth_code_page"
+
+        //        property bool authNeeded: (telegram.authNeeded
+        //                || telegram.authSignInError.length != 0
+        //                || telegram.authSignUpError.length != 0)
+        //                        && telegram.authPhoneChecked
+
+                onSignInRequest: telegram.authSignIn(code)
+                onSignUpRequest: telegram.authSignUp(code, fname, lname)
+                onCodeRequest: telegram.authSendCode()
+                onCallRequest: telegram.authSendCall()
+
+                Connections {
+                    target: telegramObject
+                    onAuthSignInErrorChanged: auth_code_page.error(telegramObject.authSignInError)
+                    onAuthCallRequested: auth_code_page.allowCall = false
+                }
+            }
+        }
+
 
         Component {
             id: preview_page_component

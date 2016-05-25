@@ -21,6 +21,8 @@ Item {
             return result;
     }
 
+    signal codeRequested(variant authCodePage, variant telegram, bool phoneRegistered, int sendCallTimeout)
+
     function showFirstAccount() {
         if (profiles.count == 0) {
             mainView.showIntro();
@@ -67,6 +69,7 @@ Item {
     Component {
         id: account_component
         AccountListItem {
+            onCodeRequested:acc_list_frame.codeRequested(authCodePage,telegram, phoneRegistered, sendCallTimeout)
         }
     }
 

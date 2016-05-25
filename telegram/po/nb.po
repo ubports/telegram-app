@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-24 15:40+0000\n"
+"POT-Creation-Date: 2016-05-25 14:31+0000\n"
 "PO-Revision-Date: 2015-11-03 12:02+0000\n"
 "Last-Translator: Åka Sikrom <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
@@ -420,7 +420,7 @@ msgstr "Meldinger"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/paz/Development/1583929/telegram/app/qml/AccountSettings.qml:120
 #: /home/paz/Development/1583929/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:420
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
 msgid "Notifications"
 msgstr "Varslinger"
 
@@ -818,25 +818,25 @@ msgstr "Blokker bruker"
 msgid "Remove from group"
 msgstr "Fjern fra gruppe"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:164
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:165
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Telegram-meldinger mottatt i dag: %1"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:165
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:166
 msgid "No Telegram messages received today."
 msgstr "Ingen Telegram-meldinger er mottatt i dag."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:172
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:173
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Telegram-meldinger sendt i dag: %1"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:173
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
 msgstr "Ingen Telegram-meldinger er sendt i dag."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:421
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:479
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -844,15 +844,15 @@ msgstr ""
 "Logg på Ubuntu One hvis du vil at Telegram skal varsle deg selv om du ikke "
 "bruker programmet."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:428
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
 msgid "Sign in to Ubuntu One"
 msgstr "Logg på Ubuntu One"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:436
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
 msgid "Remind me later"
 msgstr "Minn meg på det senere"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:444
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:502
 msgid "Don't want notifications"
 msgstr "Ikke varsle"
 

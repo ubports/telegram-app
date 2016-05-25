@@ -21,6 +21,7 @@ Item {
 
     signal activeRequest()
     signal addParticipantRequest()
+    signal codeRequested(variant authCodePage, variant telegram, bool phoneRegistered, int sendCallTimeout)
 
     onIsActiveChanged: {
         telegram.online = isActive;
@@ -91,28 +92,8 @@ Item {
             console.log("authCallRequested")
         }
         onAuthCodeRequested: {
+            account_list_item.codeRequested(account_code_page_component, telegram, phoneRegistered, sendCallTimeout);
             console.log("authCodeRequested");
-            console.log("Number of profiles: " + profiles.count);
-
-            if (profiles.count === 1) {
-                pageStack.setPrimaryPage();
-                pageStack.addPageToCurrentColumn(pageStack.primaryPage, account_code_page_component, {
-                        "phoneRegistered": telegram.authPhoneRegistered,
-                        "timeOut": sendCallTimeout
-                    });
-            }
-            else {
-//                pageStack.addPageToNextColumn(auth_countries_page_component, account_code_page_component, {
-//                        "phoneRegistered": telegram.authPhoneRegistered,
-//                        "timeOut": sendCallTimeout
-//                    });
-                pageStack.addPageToCurrentColumn(auth_number_page_component, account_code_page_component, {
-                        "phoneRegistered": telegram.authPhoneRegistered,
-                        "timeOut": sendCallTimeout
-                    });
-
-            }
-
         }
         onAuthLoggedInChanged: {
             readyForPush = authLoggedIn; // required for PushClient

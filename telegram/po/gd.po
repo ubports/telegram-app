@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-24 15:40+0000\n"
+"POT-Creation-Date: 2016-05-25 14:31+0000\n"
 "PO-Revision-Date: 2016-01-29 12:49+0000\n"
 "Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -421,7 +421,7 @@ msgstr "Teachdaireachdan"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/paz/Development/1583929/telegram/app/qml/AccountSettings.qml:120
 #: /home/paz/Development/1583929/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:420
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
 msgid "Notifications"
 msgstr "Brathan"
 
@@ -829,25 +829,25 @@ msgstr "Bac an cleachdaiche"
 msgid "Remove from group"
 msgstr "Thoir air falbh on bhuidheann"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:164
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:165
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Teachdaireachdan Teileagraim a fhuair thu an-diugh: %1"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:165
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:166
 msgid "No Telegram messages received today."
 msgstr "ha d' fhuair thu teachdaireachd Teileagraim an-diugh."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:172
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:173
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Teachdaireachdan Teileagraim a chuir thu an-diugh: %1"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:173
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:174
 msgid "No Telegram messages sent today."
 msgstr "Cha deach teachdaireachd Teileagraim a chur an-diugh."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:421
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:479
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -855,15 +855,15 @@ msgstr ""
 "Ma tha thu airson brathan Teileagraim fhaighinn nuair nach eil thu a' "
 "chleachdadh na h-aplacaid, clàraich a-steach dhan chunntas Ubuntu One agad."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:428
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
 msgid "Sign in to Ubuntu One"
 msgstr "Clàraich a-steach gu Ubuntu One"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:436
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
 msgid "Remind me later"
 msgstr "Cuir nam chuimhne an ceann greis"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:444
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:502
 msgid "Don't want notifications"
 msgstr "Chan eil mi ag iarraidh brathan"
 
