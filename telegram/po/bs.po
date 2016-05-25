@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 14:31+0000\n"
+"POT-Creation-Date: 2016-05-25 15:19+0000\n"
 "PO-Revision-Date: 2015-11-14 15:48+0000\n"
 "Last-Translator: Kenan Gutić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -421,7 +421,7 @@ msgstr "Poruke"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/paz/Development/1583929/telegram/app/qml/AccountSettings.qml:120
 #: /home/paz/Development/1583929/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:470
 msgid "Notifications"
 msgstr "Notifikacije"
 
@@ -839,7 +839,7 @@ msgstr "Telegram poruka poslanih danas: %1"
 msgid "No Telegram messages sent today."
 msgstr "Nema poslanih Telegram poruka danas."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:479
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:471
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -847,15 +847,15 @@ msgstr ""
 "Ako želite uključiti Telegram notifikacije kada ne koristite aplikaciju, "
 "prijavite se u vaš Ubuntu One račun."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
 msgid "Sign in to Ubuntu One"
 msgstr "Prijava na Ubuntu One"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
 msgid "Remind me later"
 msgstr "Podsjeti me kasnije"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:502
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
 msgid "Don't want notifications"
 msgstr "Ne želim notifikacije"
 

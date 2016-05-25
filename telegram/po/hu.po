@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 14:31+0000\n"
+"POT-Creation-Date: 2016-05-25 15:19+0000\n"
 "PO-Revision-Date: 2016-05-18 07:10+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -420,7 +420,7 @@ msgstr "Üzenetek"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/paz/Development/1583929/telegram/app/qml/AccountSettings.qml:120
 #: /home/paz/Development/1583929/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:470
 msgid "Notifications"
 msgstr "Értesítések"
 
@@ -840,7 +840,7 @@ msgstr "Ma küldött Telegram üzenetek: %1"
 msgid "No Telegram messages sent today."
 msgstr "Nem küldött ma Telegram üzenetet."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:479
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:471
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -848,15 +848,15 @@ msgstr ""
 "Ha szeretne Telegram értesítéseket úgyis, hogy nem fut az alkalmazás, akkor "
 "jelentkezzen be az Ubuntu One fiókjába."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
 msgid "Sign in to Ubuntu One"
 msgstr "Ubuntu One bejelentkezés"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
 msgid "Remind me later"
 msgstr "Emlékeztessen később"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:502
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
 msgid "Don't want notifications"
 msgstr "Nem szeretnék értesítéseket"
 

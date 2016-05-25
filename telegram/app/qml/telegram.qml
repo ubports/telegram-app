@@ -309,8 +309,8 @@ MainView {
                 Connections {
                     target: account_list
                     onCodeRequested: {
-                        console.log("*** Auth code requested from telegram.qml ***");
-                        console.log("*** Number of profiles: " + profiles.count);
+                        auth_number_page.isBusy = false;
+                        console.log("Number of profiles: " + profiles.count);
 
                         if (profiles.count === 1) {
                             pageStack.setPrimaryPage();

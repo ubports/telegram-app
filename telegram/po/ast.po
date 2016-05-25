@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 14:31+0000\n"
+"POT-Creation-Date: 2016-05-25 15:19+0000\n"
 "PO-Revision-Date: 2015-11-03 15:17+0000\n"
 "Last-Translator: enolp <enolp@softastur.org>\n"
 "Language-Team: Asturian <ast@li.org>\n"
@@ -420,7 +420,7 @@ msgstr "Mensaxes"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/paz/Development/1583929/telegram/app/qml/AccountSettings.qml:120
 #: /home/paz/Development/1583929/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:470
 msgid "Notifications"
 msgstr "Notificaciones"
 
@@ -839,7 +839,7 @@ msgstr "Mensaxes de Telegram unviaos güei: %1"
 msgid "No Telegram messages sent today."
 msgstr "Nun s'unvió dal mensaxe de Telegram güei."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:479
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:471
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -847,15 +847,15 @@ msgstr ""
 "Si quies los avisos de Telegram cuando nun teas usando l'aplicación, anicia "
 "sesión cola cuenta d'Ubuntu One."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
 msgid "Sign in to Ubuntu One"
 msgstr "Aniciar sesión n'Ubuntu One"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
 msgid "Remind me later"
 msgstr "Recuérdamelo sero"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:502
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
 msgid "Don't want notifications"
 msgstr "Nun quiero avisos"
 

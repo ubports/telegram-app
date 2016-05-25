@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-25 14:31+0000\n"
+"POT-Creation-Date: 2016-05-25 15:19+0000\n"
 "PO-Revision-Date: 2015-09-27 11:48+0000\n"
 "Last-Translator: Jared Norris <jarednorris@ubuntu.com>\n"
 "Language-Team: English (Australia) <en_AU@li.org>\n"
@@ -420,7 +420,7 @@ msgstr "Messages"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/paz/Development/1583929/telegram/app/qml/AccountSettings.qml:120
 #: /home/paz/Development/1583929/telegram/app/qml/ProfilePage.qml:484
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:470
 msgid "Notifications"
 msgstr "Notifications"
 
@@ -834,7 +834,7 @@ msgstr "Telegram messages sent today: %1"
 msgid "No Telegram messages sent today."
 msgstr "No Telegram messages sent today."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:479
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:471
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -842,15 +842,15 @@ msgstr ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:478
 msgid "Sign in to Ubuntu One"
 msgstr "Sign in to Ubuntu One"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:486
 msgid "Remind me later"
 msgstr "Remind me later"
 
-#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:502
+#: /home/paz/Development/1583929/telegram/app/qml/telegram.qml:494
 msgid "Don't want notifications"
 msgstr "Don't want notifications"
 
