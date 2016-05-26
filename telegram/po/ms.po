@@ -8,61 +8,61 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2015-09-22 10:54+0000\n"
-"Last-Translator: Michał Karnicki <michal.karnicki@gmail.com>\n"
+"PO-Revision-Date: 2016-05-25 14:59+0000\n"
+"Last-Translator: manwgn <manxmensch@gmail.com>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-05-17 06:07+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-05-26 05:53+0000\n"
+"X-Generator: Launchpad (build 18053)\n"
 "Language: ms\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
-msgstr ""
+msgstr "Tambah ke kenalan"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
 msgid "New Group"
-msgstr ""
+msgstr "Kumpulan Baharu"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
 msgid "Add to group"
-msgstr ""
+msgstr "Tambah ke kumpulan"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
 msgid "New Secret Chat"
-msgstr ""
+msgstr "Sembang Rahsia Baharu"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
 msgid "Contacts"
-msgstr ""
+msgstr "Kenalan"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:40
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:92
 msgid "Search"
-msgstr ""
+msgstr "Gelintar"
 
 #. TRANSLATORS: As in: add new contact
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:46
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:99
 msgid "Add"
-msgstr ""
+msgstr "Tambah"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:57
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:128
 msgid "Back"
-msgstr ""
+msgstr "Undur"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:74
 msgid "Search contacts..."
-msgstr ""
+msgstr "Gelintar kenalan..."
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:121
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:357
@@ -70,27 +70,27 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountSettings.qml:301
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:10
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:204
 msgid "Chat title"
-msgstr ""
+msgstr "Tajuk sembang"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:316
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:30
 msgid "Add Contact"
-msgstr ""
+msgstr "Tambah Kenalan"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:319
 msgid "From Address Book"
-msgstr ""
+msgstr "Dari Buku Alamat"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:328
 msgid "Enter Details"
-msgstr ""
+msgstr "Masukkan Perincian"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:336
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:395
@@ -98,7 +98,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:12
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -113,7 +113,7 @@ msgstr ""
 #: /home/karni/src/telegram/telegram-app/v2/telegram/build/app/telegram.desktop.h:1
 #: /home/karni/src/telegram/telegram-app/v2/telegram/build/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:402
@@ -123,27 +123,30 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
+"Tambah %1 ke %2?\n"
+"\n"
+"Bilangan mesej terakhir untuk dimajukan:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:463
 msgid "Contacts imported"
-msgstr ""
+msgstr "Kenalan diimport"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:466
 msgid "No contacts imported"
-msgstr ""
+msgstr "Tiada kenalan diimport"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:473
 msgid "This contact is on Telegram."
-msgstr ""
+msgstr "Kenalan ini ada dalam Telegram"
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:476
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr ""
+msgstr "%1 daripada %2 kenalan ada dalam Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountDialogList.qml:95
