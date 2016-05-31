@@ -21,7 +21,7 @@ Item {
 
     signal activeRequest()
     signal addParticipantRequest()
-    signal codeRequested(variant authCodePage, variant telegram, bool phoneRegistered, int sendCallTimeout)
+    signal codeRequested(variant authCodePage, variant telegram, bool phoneRegistered, int sendCallTimeout, bool resent)
 
     onIsActiveChanged: {
         telegram.online = isActive;
@@ -54,6 +54,8 @@ Item {
         id: telegram
 
         property bool logoutRequest: false
+        property bool codeResent: false
+        property int resendTimerValue: 0
 
         defaultHostAddress: Cutegram.defaultHostAddress
         defaultHostDcId: Cutegram.defaultHostDcId
@@ -92,7 +94,8 @@ Item {
             console.log("authCallRequested")
         }
         onAuthCodeRequested: {
-            account_list_item.codeRequested(account_code_page_component, telegram, phoneRegistered, sendCallTimeout);
+            account_list_item.codeRequested(account_code_page_component, telegram, phoneRegistered, sendCallTimeout, codeResent);
+            resendTimerValue = sendCallTimeout;
             console.log("authCodeRequested");
         }
         onAuthLoggedInChanged: {
@@ -152,7 +155,10 @@ Item {
 
             onSignInRequest: telegram.authSignIn(code)
             onSignUpRequest: telegram.authSignUp(code, fname, lname)
-            onCodeRequest: telegram.authSendCode()
+            onCodeRequest: {
+                telegram.authSendCode();
+                telegram.codeResent = true;
+            }
             onCallRequest: telegram.authSendCall()
 
             Connections {

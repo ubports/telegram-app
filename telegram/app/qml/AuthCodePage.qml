@@ -163,7 +163,9 @@ TelegramPage {
             text: i18n.tr("Resend Code")
             onClicked: {
                 errorText = "";
-                auth_code_page.codeRequest();
+                codeRequest();
+                time_out_timer.countDown = timeOut;
+                time_out_timer.restart();
             }
         }
 

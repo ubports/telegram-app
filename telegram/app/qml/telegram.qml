@@ -319,12 +319,20 @@ MainView {
                                     "timeOut": sendCallTimeout
                                 });
                         }
-                        else {
+
+                        // Only add the authCodePage if the code has not been resent. If the code has
+                        // been resent then authCodePage is already on the stack
+                        else if (!resent){
                             pageStack.addPageToCurrentColumn(auth_number_page, authCodePage, {
                                     "phoneRegistered": telegram.authPhoneRegistered,
                                     "timeOut": sendCallTimeout
                                 });
                         }
+
+//                        else {
+//                            authCodePage.timeOut = sendCallTimeout;
+//                            authCodePage.phoneRegistered = telegram.authPhoneRegistered
+//                        }
                     }
                 }
             }
