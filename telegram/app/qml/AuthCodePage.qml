@@ -7,6 +7,7 @@ import "components"
 TelegramPage {
     id: auth_code_page
     objectName: "authCodePage"
+    focus: true
 
     property bool phoneRegistered: true
     property bool allowCall: true

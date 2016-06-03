@@ -66,7 +66,8 @@ Item {
         tempPath: "/home/phablet/.cache/com.ubuntu.telegram"
         configPath: AsemanApp.homePath
         publicKeyFile: AsemanApp.appPath + "/tg-server.pub"
-        phoneNumber: accountItem.number
+//        phoneNumber: accountItem.number
+        phoneNumber: accountItem != null ? accountItem.number : ""
         autoCleanUpMessages: true
         autoAcceptEncrypted: true
 
@@ -147,6 +148,16 @@ Item {
         AuthCodePage {
             id: auth_code_page
             objectName: "auth_code_page"
+
+            head.backAction: Action {
+                id: back_action
+                iconName: "back"
+                onTriggered: {
+//                    pageStack.removePages(auth_code_page);
+                    profiles.remove(telegram.phoneNumber);
+                    console.log("*** Authentication stopped for: " + telegram.phoneNumber);
+                }
+            }
 
     //        property bool authNeeded: (telegram.authNeeded
     //                || telegram.authSignInError.length != 0

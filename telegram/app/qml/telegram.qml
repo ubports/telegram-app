@@ -339,30 +339,36 @@ MainView {
         }
 
 
-        Component {
-            id: account_code_page_component
+//        Component {
+//            id: account_code_page_component
 
-            AuthCodePage {
-                id: auth_code_page
-                objectName: "auth_code_page"
+//            AuthCodePage {
+//                id: auth_code_page
+//                objectName: "auth_code_page"
 
-        //        property bool authNeeded: (telegram.authNeeded
-        //                || telegram.authSignInError.length != 0
-        //                || telegram.authSignUpError.length != 0)
-        //                        && telegram.authPhoneChecked
+//        //        property bool authNeeded: (telegram.authNeeded
+//        //                || telegram.authSignInError.length != 0
+//        //                || telegram.authSignUpError.length != 0)
+//        //                        && telegram.authPhoneChecked
 
-                onSignInRequest: telegram.authSignIn(code)
-                onSignUpRequest: telegram.authSignUp(code, fname, lname)
-                onCodeRequest: telegram.authSendCode()
-                onCallRequest: telegram.authSendCall()
+//                onSignInRequest: telegram.authSignIn(code)
+//                onSignUpRequest: telegram.authSignUp(code, fname, lname)
+//                onCodeRequest: telegram.authSendCode()
+//                onCallRequest: telegram.authSendCall()
 
-                Connections {
-                    target: telegramObject
-                    onAuthSignInErrorChanged: auth_code_page.error(telegramObject.authSignInError)
-                    onAuthCallRequested: auth_code_page.allowCall = false
-                }
-            }
-        }
+//                Keys.onReleased: {
+//                    if (event.key === Qt.Key_Back) {
+//                        console.log("*** Auth Code not entered");
+//                    }
+//                }
+
+//                Connections {
+//                    target: telegramObject
+//                    onAuthSignInErrorChanged: auth_code_page.error(telegramObject.authSignInError)
+//                    onAuthCallRequested: auth_code_page.allowCall = false
+//                }
+//            }
+//        }
 
 
         Component {
