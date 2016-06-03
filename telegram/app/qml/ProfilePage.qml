@@ -157,14 +157,19 @@ Page {
                  horizontalAlignment: Text.AlignLeft
                  //inputMethodHints: Qt.ImhEmailCharactersOnly
                  text: chat.title
-                 placeholderText: "Group Chat Title"
+                 // TRANSLATORS: Placeholder for new group chat title
+                 placeholderText: i18n.tr("New group chat title")
+                 inputMethodHints: Qt.ImhNoPredictiveText
+                 validator: RegExpValidator {
+                     regExp: /[\w\s]+/
+                 }
              }
 
              UC.Button {
                  text: i18n.tr("Change Title")
                  color: UbuntuColors.orange
                  onClicked: {
-                     telegram.messagesEditChatTitle(dialogId, group_Title_Textfield.text);
+                     telegram.messagesEditChatTitle(dialogId, qsTr(group_Title_Textfield.text));
                      PopupUtils.close(change_Group_Title_Dialog);
                  }
              }
