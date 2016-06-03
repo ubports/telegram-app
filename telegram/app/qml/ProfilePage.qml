@@ -161,7 +161,7 @@ Page {
                  placeholderText: i18n.tr("New group chat title")
                  inputMethodHints: Qt.ImhNoPredictiveText
                  validator: RegExpValidator {
-                     regExp: /[\w\s]+/
+                     regExp: /[\w]+/
                  }
              }
 
@@ -169,6 +169,7 @@ Page {
                  text: i18n.tr("Change Title")
                  color: UbuntuColors.orange
                  onClicked: {
+                     //console.log("CHANGE TITLE qsTr: " + qsTr(group_Title_Textfield.text));
                      telegram.messagesEditChatTitle(dialogId, qsTr(group_Title_Textfield.text));
                      PopupUtils.close(change_Group_Title_Dialog);
                  }
