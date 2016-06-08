@@ -321,7 +321,7 @@ Page {
         repeat: false
 
         onTriggered: {
-            profiles.remove(phone);
+            profiles.remove(telegram.phoneNumber);
             telegram.logoutRequest = true;
             telegram.authLogout();
 
