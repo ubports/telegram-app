@@ -76,11 +76,7 @@ Item {
                 profiles.remove(telegram.phoneNumber);
                 telegram.logoutRequest = true;
                 telegram.authLogout();
-
-                pageStack.forceSinglePage = (profiles.count === 0);
-                if (profiles.count === 0) {
-                    pageStack.primaryPageSource = introPage;
-                }
+                showIntro();
             }
 
             mainView.error(id, errorCode, errorText)
