@@ -84,6 +84,9 @@ Item {
         }
         onErrorChanged: {
             console.log("auth error: " + error)
+            if (error == "PHONE_NUMBER_INVALID") {
+                profiles.remove(telegram.phoneNumber);
+            }
         }
         onAuthNeededChanged: {
             console.log("authNeeded " + authNeeded)

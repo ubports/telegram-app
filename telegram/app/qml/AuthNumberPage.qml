@@ -11,6 +11,7 @@ TelegramPage {
 
     property string countryCode
     property string fullPhoneNumber: "+" + countryCode + phoneNumber
+    property bool accountAlreadyExists: false
 
     property alias phoneNumber: phone_number.text
 
@@ -76,8 +77,25 @@ TelegramPage {
                         title: i18n.tr("Number correct?"),
                         text: i18n.tr(auth_number_page.fullPhoneNumber),
                         onAccept: function() {
+                            error_label.visible = false;
                             auth_number_page.isBusy = true;
-                            entry_delay.restart();
+
+                            //Check current profiles
+                            for (var i = 0; i < profiles.count; i++) {
+                                var key = profiles.keys[i];
+                                entry_delay.restart();
+
+                                //Stop checking profiles if a dupe is found
+                                if (accountAlreadyExists != true) {
+                                    if (auth_number_page.fullPhoneNumber != key) {
+                                        //Not found dupe
+                                        accountAlreadyExists = false;
+                                    } else {
+                                        //Found dupe
+                                        accountAlreadyExists = true;
+                                    }
+                                }
+                            }
                         }
                     }
                 );
@@ -107,6 +125,15 @@ TelegramPage {
         id: entry_delay
         interval: 500
         repeat: false
-        onTriggered: auth_phone_page.phoneEntered("+" + countryCode + phoneNumber)
+        onTriggered:{
+            if(accountAlreadyExists == true) {
+                //If entered number does exist, show error message
+                auth_number_page.isBusy = false;
+                error_label.visible = true;
+                error_label.text = i18n.tr("Number already exists");
+            } else {
+                //If entered number doesn't exist, send auth code
+                auth_phone_page.phoneEntered("+" + countryCode + phoneNumber)}
+            }
     }
 }
