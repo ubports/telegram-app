@@ -212,18 +212,18 @@ ListItem {
                         case typeMessageActionChatChangeTitle:
                             if (fromUserName != "") {
                                 if(fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You changed the group title to %1</font>").arg(message.action.title)
+                                    res = i18n.tr("<font color=\"DarkBlue\">You:</font> Changed the group title to %1").arg(message.action.title)
                                 else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 changed the group title to %2</font>").arg(fromUserName).arg(message.action.title)
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1:</font> Changed the group title to %2").arg(fromUserName).arg(message.action.title)
                             }
                             break
 
                         case typeMessageActionChatSentImage:
                             if (fromUserName != "") {
                                 if(fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You sent an image</font>")
+                                    res = i18n.tr("<font color=\"DarkBlue\">You:</font> Photo/Sticker")
                                 else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 sent an image</font>").arg(fromUserName)
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1:</font> Photo/Sticker").arg(fromUserName)
                             }
                             break
 
