@@ -72,12 +72,15 @@ Item {
         autoAcceptEncrypted: true
 
         onErrorSignal: {
-            if (errorText === "SESSION_REVOKED") {
+            if (errorText === "SESSION_REVOKED" || errorText === "AUTH_KEY_UNREGISTERED") {
+                profiles.remove(telegram.phoneNumber);
                 telegram.logoutRequest = true;
                 telegram.authLogout();
-            } else if (errorText === "AUTH_KEY_UNREGISTERED") {
-                telegram.logoutRequest = true;
-                telegram.authLogout();
+
+                pageStack.forceSinglePage = (profiles.count === 0);
+                if (profiles.count === 0) {
+                    pageStack.primaryPageSource = introPage;
+                }
             }
 
             mainView.error(id, errorCode, errorText)

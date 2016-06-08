@@ -79,7 +79,9 @@ MainView {
     }
 
     Component.onCompleted: {
-        showIntro();
+        if (profiles.count === 0) {
+            showIntro();
+        }
 
         if (profiles.count > 0 && Cutegram.hasArgs() > 0) {
             console.log("push - started from notification");
@@ -90,9 +92,7 @@ MainView {
 
     function showIntro() {
         pageStack.forceSinglePage = (profiles.count == 0);
-        if (profiles.count == 0) {
-            pageStack.primaryPage = introPage;
-        }
+        pageStack.primaryPage = introPage;
     }
 
     function backToDialogsPage() {

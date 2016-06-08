@@ -321,8 +321,15 @@ Page {
         repeat: false
 
         onTriggered: {
+            profiles.remove(phone);
             telegram.logoutRequest = true;
             telegram.authLogout();
+
+            if (profiles.count === 0) {
+                showIntro();
+            } else {
+                pageStack.clear();
+            }
         }
     }
 }
