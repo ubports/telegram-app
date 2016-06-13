@@ -89,8 +89,8 @@ MainView {
     }
 
     function showIntro() {
-        pageStack.forceSinglePage = (profiles.count == 0);
-        if (profiles.count == 0) {
+        pageStack.forceSinglePage = (profiles.count === 0);
+        if (profiles.count === 0) {
             pageStack.primaryPage = introPage;
         }
     }
