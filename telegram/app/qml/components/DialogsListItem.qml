@@ -219,7 +219,9 @@ ListItem {
                             break
 
                         case typeMessageActionChatSentImage:
-                            res = i18n.tr("Photo/Sticker")
+                            if (fromUserName != "") {
+                                res = i18n.tr("Photo/Sticker")
+                            }
                             break
 
                         case typeMessageActionChatCreate:
