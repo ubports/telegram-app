@@ -107,17 +107,19 @@ TelegramPage {
 
     onPhoneNumberChanged:{
         if (phoneNumber.length > 0) {
+            //PhoneNumber contains 1 or more letter
             error_label.visible = false;
             doneButton.enabled = true;
         } else {
+            //PhoneNumber doesn't contain any letters
             doneButton.enabled = false;
         }
     }
 
     function checkForDupe () {
-        //Check current profiles
         accountAlreadyExists = false;
-        //auth_number_page.isBusy = true;
+
+        //Check available profiles
         for (var i = 0; i < profiles.count; i++) {
             var key = profiles.keys[i];
             checkForDupeTimer.restart();
@@ -125,10 +127,10 @@ TelegramPage {
             //Stop checking profiles if a dupe is found
             if (accountAlreadyExists != true) {
                 if (auth_number_page.fullPhoneNumber != key) {
-                    //Not found dupe
+                    //Dupe Not found
                     accountAlreadyExists = false;
                 } else {
-                    //Found dupe
+                    //Dupe found
                     accountAlreadyExists = true;
                 }
             }
@@ -140,15 +142,14 @@ TelegramPage {
         interval: 50
         repeat: false
         onTriggered:{
-            auth_number_page.isBusy = false;
             if (accountAlreadyExists == true) {
-                //Found dupe
+                //Dupe found
                 doneButton.enabled = false;
                 accountAlreadyExists = true;
                 error_label.visible = true;
                 error_label.text = i18n.tr("Phone number already exists.");
             } else {
-                //Not found dupe
+                //Dupe not found
                 doneButton.enabled = true;
                 phone_number.accepted();
             }
