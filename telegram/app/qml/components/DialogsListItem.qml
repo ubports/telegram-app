@@ -45,8 +45,8 @@ ListItem {
     property real typeMessageActionChatAddUser:         0x5e3cfc4b
     property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
     property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
-    property real typeMessageActionChatSentImage:       3064919984
-    property real typeMessageActionChatChangeTitle:     3047280218
+    property real typeMessageActionChatSentImage:       0xB6AEF7B0
+    property real typeMessageActionChatChangeTitle:     0xB5A1CE5A
 
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
@@ -220,7 +220,7 @@ ListItem {
 
                         case typeMessageActionChatSentImage:
                             if (fromUserName != "") {
-                                res = i18n.tr("Photo/Sticker")
+                                res = i18n.tr("<font color=\"DarkBlue\">Photo/Sticker</font>")
                             }
                             break
 
