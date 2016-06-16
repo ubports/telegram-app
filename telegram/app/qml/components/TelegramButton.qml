@@ -8,6 +8,7 @@ Rectangle {
 
     signal clicked
 
+    id:telegramBtn
     width: buttonLabel.width + units.gu(5)
     height: buttonLabel.height + units.gu(2)
     color: enabled ? backgroundColor : TelegramColors.grey
@@ -36,6 +37,14 @@ Rectangle {
         onPressed: parent.onPressed()
         onReleased: parent.onReleased()
         onClicked: parent.clicked()
+    }
+
+    onEnabledChanged:{
+        if (!enabled) {
+            telegramBtn.color = TelegramColors.grey;
+        } else {
+            telegramBtn.color = backgroundColor;
+        }
     }
 
     function onPressed() {

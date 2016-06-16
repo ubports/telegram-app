@@ -77,25 +77,8 @@ TelegramPage {
                         title: i18n.tr("Number correct?"),
                         text: i18n.tr(auth_number_page.fullPhoneNumber),
                         onAccept: function() {
-                            error_label.visible = false;
                             auth_number_page.isBusy = true;
-
-                            //Check current profiles
-                            for (var i = 0; i < profiles.count; i++) {
-                                var key = profiles.keys[i];
-                                entry_delay.restart();
-
-                                //Stop checking profiles if a dupe is found
-                                if (accountAlreadyExists != true) {
-                                    if (auth_number_page.fullPhoneNumber != key) {
-                                        //Not found dupe
-                                        accountAlreadyExists = false;
-                                    } else {
-                                        //Found dupe
-                                        accountAlreadyExists = true;
-                                    }
-                                }
-                            }
+                            entry_delay.restart();
                         }
                     }
                 );
@@ -103,6 +86,7 @@ TelegramPage {
         }
 
         TelegramButton {
+            id:doneButton
             objectName: "doneButton"
             width: phone_number.width
             height: phone_number.height
@@ -110,7 +94,7 @@ TelegramPage {
             text: i18n.tr("Done")
             enabled: isOnline && phoneNumber.length > 0
             focus: true
-            onClicked: phone_number.accepted()
+            onClicked: checkForDupe()
         }
 
         Label {
@@ -121,19 +105,60 @@ TelegramPage {
         }
     }
 
+    onPhoneNumberChanged:{
+        if (phoneNumber.length > 0) {
+            error_label.visible = false;
+            doneButton.enabled = true;
+        } else {
+            doneButton.enabled = false;
+        }
+    }
+
+    function checkForDupe () {
+        //Check current profiles
+        accountAlreadyExists = false;
+        //auth_number_page.isBusy = true;
+        for (var i = 0; i < profiles.count; i++) {
+            var key = profiles.keys[i];
+            checkForDupeTimer.restart();
+
+            //Stop checking profiles if a dupe is found
+            if (accountAlreadyExists != true) {
+                if (auth_number_page.fullPhoneNumber != key) {
+                    //Not found dupe
+                    accountAlreadyExists = false;
+                } else {
+                    //Found dupe
+                    accountAlreadyExists = true;
+                }
+            }
+        }
+    }
+
+    Timer {
+        id:checkForDupeTimer
+        interval: 50
+        repeat: false
+        onTriggered:{
+            auth_number_page.isBusy = false;
+            if (accountAlreadyExists == true) {
+                //Found dupe
+                doneButton.enabled = false;
+                accountAlreadyExists = true;
+                error_label.visible = true;
+                error_label.text = i18n.tr("Phone number already exists.");
+            } else {
+                //Not found dupe
+                doneButton.enabled = true;
+                phone_number.accepted();
+            }
+        }
+    }
+
     Timer {
         id: entry_delay
         interval: 500
         repeat: false
-        onTriggered:{
-            if(accountAlreadyExists == true) {
-                //If entered number does exist, show error message
-                auth_number_page.isBusy = false;
-                error_label.visible = true;
-                error_label.text = i18n.tr("Number already exists");
-            } else {
-                //If entered number doesn't exist, send auth code
-                auth_phone_page.phoneEntered("+" + countryCode + phoneNumber)}
-            }
+        onTriggered: auth_phone_page.phoneEntered("+" + countryCode + phoneNumber)
     }
 }
