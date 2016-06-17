@@ -27,20 +27,26 @@ Page {
     signal error(var id, int ecode, string etext, string fname)
 
     id: page
-    title: i18n.tr("Add Contact")
-
-    head.actions: [
-        Action {
-            iconName: "ok"
-            text: i18n.tr("Done")
-            enabled: (phone.length > 0 || enteredPhone.length > 0) && firstName.length > 0
-            onTriggered: addContact()
-        }
-    ]
+    header: PageHeader {
+        title: i18n.tr("Add Contact")
+        trailingActionBar.actions: [
+            Action {
+                iconName: "ok"
+                text: i18n.tr("Done")
+                enabled: (phone.length > 0 || enteredPhone.length > 0) && firstName.length > 0
+                onTriggered: addContact()
+            }
+        ]
+    }
 
     Item {
-        anchors.fill: parent
-        anchors.margins: units.gu(2)
+        anchors {
+            top: page.header.bottom
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+            margins: units.gu(2)
+        }
 
         Item {
             id: contact_header

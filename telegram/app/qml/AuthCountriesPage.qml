@@ -42,7 +42,9 @@ Page {
         trailingActionBar.actions: choose_header.searchMode ?
                                        [] : searchAction
         leadingActionBar.actions: choose_header.searchMode ?
-                                       backFromSearchAction : []
+                                      backFromSearchAction :
+                                      choose_header.navigationActions
+
 
         TextField {
             id: search_text_field
