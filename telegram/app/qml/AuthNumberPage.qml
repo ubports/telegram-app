@@ -19,7 +19,10 @@ TelegramPage {
 
     focus: true
     flickable: null
-    title: i18n.tr("Phone Number")
+
+    header: PageHeader {
+        title: i18n.tr("Phone Number")
+    }
 
     onError: {
         auth_phone_page.isBusy = false;
@@ -37,7 +40,7 @@ TelegramPage {
         id: country_code
         objectName: "countryCode"
         anchors {
-            top: parent.top
+            top: auth_phone_page.header.bottom
             topMargin: units.gu(4)
             left: parent.left
             leftMargin: units.gu(4)
