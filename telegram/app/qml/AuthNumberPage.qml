@@ -11,7 +11,7 @@ TelegramPage {
 
     property string countryCode
     property string fullPhoneNumber: "+" + countryCode + phoneNumber
-    property bool accountAlreadyExists: false
+    property bool accountAlreadyExists: true
 
     property alias phoneNumber: phone_number.text
 
@@ -70,18 +70,7 @@ TelegramPage {
             placeholderText: i18n.tr("Phone Number")
             validator: RegExpValidator { regExp: /(?!0)\d*/ }
             onAccepted: {
-                Qt.inputMethod.hide();
-                PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                    auth_phone_page, {
-                        // TRANSLATORS: Dialog prompt to ensure provided number is correct.
-                        title: i18n.tr("Number correct?"),
-                        text: i18n.tr(auth_number_page.fullPhoneNumber),
-                        onAccept: function() {
-                            auth_number_page.isBusy = true;
-                            entry_delay.restart();
-                        }
-                    }
-                );
+                checkForDupe();
             }
         }
 
@@ -114,6 +103,21 @@ TelegramPage {
             //PhoneNumber doesn't contain any letters
             doneButton.enabled = false;
         }
+    }
+
+    function showConfirmationMessage() {
+        Qt.inputMethod.hide();
+        PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
+            auth_phone_page, {
+                // TRANSLATORS: Dialog prompt to ensure provided number is correct.
+                title: i18n.tr("Number correct?"),
+                text: i18n.tr(auth_number_page.fullPhoneNumber),
+                onAccept: function() {
+                    auth_number_page.isBusy = true;
+                    entry_delay.restart();
+                }
+            }
+        );
     }
 
     function checkForDupe () {
@@ -151,7 +155,7 @@ TelegramPage {
             } else {
                 //Dupe not found
                 doneButton.enabled = true;
-                phone_number.accepted();
+                showConfirmationMessage();
             }
         }
     }
