@@ -83,7 +83,7 @@ TelegramPage {
             text: i18n.tr("Done")
             enabled: isOnline && phoneNumber.length > 0
             focus: true
-            onClicked: checkForDupe()
+            onClicked: phone_number.accepted()
         }
 
         Label {
