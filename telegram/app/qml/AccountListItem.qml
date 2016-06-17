@@ -139,6 +139,10 @@ Item {
                 telegram.updatesGetState();
             }
         }
+
+        onFatalError: {
+            profiles.remove(telegram.phoneNumber);
+        }
     }
 
     Component {
