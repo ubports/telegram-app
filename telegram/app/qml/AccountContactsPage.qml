@@ -60,7 +60,7 @@ Page {
                 rightMargin: units.gu(2)
                 left: parent ? parent.left : undefined
                 leftMargin: units.gu(2)
-                verticalCenter: parent.verticalCenter
+                verticalCenter: parent ? parent.verticalCenter : undefined
             }
             focus: true
             inputMethodHints: Qt.ImhNoPredictiveText
