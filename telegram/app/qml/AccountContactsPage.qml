@@ -161,7 +161,6 @@ Page {
 
         },
         PageHeadState {
-//            id: new_group_chat_states
             name: "new-group-chat"
             PropertyChanges {
                 target: page
