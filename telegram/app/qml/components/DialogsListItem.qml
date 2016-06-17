@@ -45,6 +45,8 @@ ListItem {
     property real typeMessageActionChatAddUser:         0x5e3cfc4b
     property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
     property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
+    property real typeMessageActionChatSentImage:       0xB6AEF7B0
+    property real typeMessageActionChatChangeTitle:     0xB5A1CE5A
 
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
@@ -207,6 +209,21 @@ ListItem {
                     fromUserName = fromUserName.trim()
 
                     switch(message.action.classType) {
+                        case typeMessageActionChatChangeTitle:
+                            if (fromUserName != "") {
+                                if(fromUser.id == telegramObject.me)
+                                    res = i18n.tr("<font color=\"DarkBlue\">You changed the group title to %1</font>").arg(message.action.title)
+                                else
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 changed the group title to %2</font>").arg(fromUserName).arg(message.action.title)
+                            }
+                            break
+
+                        case typeMessageActionChatSentImage:
+                            if (fromUserName != "") {
+                                res = i18n.tr("<font color=\"DarkBlue\">Photo/Sticker</font>")
+                            }
+                            break
+
                         case typeMessageActionChatCreate:
                             if (message.action.title == "Secret Chat") {
                                 if (user.id == telegramObject.me)
