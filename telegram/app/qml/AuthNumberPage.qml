@@ -124,20 +124,25 @@ TelegramPage {
         accountAlreadyExists = false;
 
         //Check available profiles
-        for (var i = 0; i < profiles.count; i++) {
-            var key = profiles.keys[i];
-            checkForDupeTimer.restart();
+        if (!profiles.count < 1) {
+            for (var i = 0; i < profiles.count; i++) {
+                var key = profiles.keys[i];
+                checkForDupeTimer.restart();
 
-            //Stop checking profiles if a dupe is found
-            if (accountAlreadyExists != true) {
-                if (auth_number_page.fullPhoneNumber != key) {
-                    //Dupe Not found
-                    accountAlreadyExists = false;
-                } else {
-                    //Dupe found
-                    accountAlreadyExists = true;
+                //Stop checking profiles if a dupe is found
+                if (accountAlreadyExists != true) {
+                    if (auth_number_page.fullPhoneNumber != key) {
+                        //Dupe Not found
+                        accountAlreadyExists = false;
+                    } else {
+                        //Dupe found
+                        accountAlreadyExists = true;
+                    }
                 }
             }
+        } else {
+            doneButton.enabled = true;
+            showConfirmationMessage();
         }
     }
 
