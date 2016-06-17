@@ -80,6 +80,7 @@ Page {
         anchors {
             left: parent.left
             top: parent.top
+            topMargin: account_page.header.height
         }
         maxHeight: parent.height - units.gu(7)
         z: 10
@@ -169,7 +170,10 @@ Page {
 
     AccountDialogList {
         id: dialogs
-        anchors.fill: parent
+        anchors{
+            fill: parent
+            topMargin: account_page.header.height
+        }
         clip: true
         //visible: search_frame.text.length == 0
 
@@ -284,6 +288,7 @@ Page {
         visible: profiles.count > 1
     }
 
+    header: default_header
     PageHeader {
         id: default_header
         visible: account_page.header === default_header
