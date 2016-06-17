@@ -56,7 +56,10 @@ Page {
         }
     ]
 
-    head.actions: isChat ? groupActions : noActions
+    header: PageHeader {
+        title: profile_page.title
+        trailingActionBar.actions: isChat ? groupActions : noActions
+    }
 
     signal openDialog(var dialogId)
 
@@ -234,7 +237,7 @@ Page {
         id: profile_image
         anchors {
             top: parent.top
-            topMargin: units.gu(2)
+            topMargin: units.gu(2) + profile_page.header.height
             left: parent.left
             leftMargin: units.gu(2)
         }
