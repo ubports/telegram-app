@@ -63,7 +63,6 @@ Page {
 
     objectName: "accountPage"
     flickable: null
-    head.sections.model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
 
     Component.onCompleted: {
         open_chat_timer.start();
@@ -279,6 +278,12 @@ Page {
 //    }
 //    bottomEdgeTitle: i18n.tr("Contacts")
 
+    Sections {
+        id: sections
+        model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
+        visible: profiles.count > 1
+    }
+
     PageHeader {
         id: default_header
         visible: account_page.header === default_header
@@ -302,6 +307,7 @@ Page {
                 account_panel.opened ? account_panel.close() : account_panel.open()
             }
         }
+        extension: profiles.count > 1 ? sections : null
     }
 
     PageHeader {
@@ -316,11 +322,11 @@ Page {
                     return i18n.tr("Waiting for network...")
                 }
             }
-
         leadingActionBar.actions: Action {
             iconName: "go-previous"
             onTriggered: clearForwardedMessages()
         }
+        extension: profiles.count > 1 ? sections : null
     }
 
     PageHeader {
@@ -341,6 +347,7 @@ Page {
             iconName: "go-previous"
             onTriggered: cancelSharedContent()
         }
+        extension: profiles.count > 1 ? sections : null
     }
 
     state: "default"
