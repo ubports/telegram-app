@@ -12,17 +12,16 @@ Page {
     property alias lastName: last_name_text_field.text
     property alias error: error_text_field.text
 
-    property list<Action> actions: [
-        Action {
-            iconName: "ok"
-            text: i18n.tr("Save")
-            onTriggered: updateProfile();
-        }
-    ]
-
-    title: i18n.tr("Edit name");
-    head.actions: actions
-
+    header: PageHeader {
+        title: i18n.tr("Edit name");
+        trailingActionBar.actions: [
+            Action {
+                iconName: "ok"
+                text: i18n.tr("Save")
+                onTriggered: updateProfile();
+            }
+        ]
+    }
     function updateProfile() {
         Qt.inputMethod.commit();
         error = "";
@@ -38,7 +37,7 @@ Page {
     TextField {
         id: first_name_text_field
         anchors {
-            top: parent.top
+            top: page.header.bottom
             topMargin: units.gu(4)
             left: parent.left
             leftMargin: units.gu(2)
