@@ -279,73 +279,94 @@ Page {
 //    }
 //    bottomEdgeTitle: i18n.tr("Contacts")
 
+    PageHeader {
+        id: default_header
+        visible: account_page.header === default_header
+        title: {
+            if (NetworkingStatus.online) {
+                if (telegramObject.connected) {
+                    // TRANSLATORS: Default app header title. Application name.
+                    return i18n.tr("Telegram")
+                } else {
+                    // TRANSLATORS: App header title when connecting to Telegram.
+                    return i18n.tr("Connecting...")
+                }
+            } else {
+                // TRANSLATORS: Shown in app header when network is unavailable.
+                return i18n.tr("Waiting for network...")
+            }
+        }
+        leadingActionBar.actions: Action {
+            iconName: "navigation-menu"
+            onTriggered: {
+                account_panel.opened ? account_panel.close() : account_panel.open()
+            }
+        }
+    }
+
+    PageHeader {
+        id: forward_header
+        visible: account_page.header === forward_header
+        title: {
+                if (NetworkingStatus.online) {
+                    // TRANSLATORS: Page title when forwarding messages.
+                    return i18n.tr("Select Chat")
+                } else {
+                    // TRANSLATORS: Shown in app header when network is unavailable.
+                    return i18n.tr("Waiting for network...")
+                }
+            }
+
+        leadingActionBar.actions: Action {
+            iconName: "go-previous"
+            onTriggered: clearForwardedMessages()
+        }
+    }
+
+    PageHeader {
+        id: share_header
+        visible: account_page.header === share_header
+        contents: Label {
+            text: {
+                if (NetworkingStatus.online) {
+                    // TRANSLATORS: Page title when sharing files.
+                    return i18n.tr("Select Chat")
+                } else {
+                    // TRANSLATORS: Shown in app header when network is unavailable.
+                    return i18n.tr("Waiting for network...")
+                }
+            }
+        }
+        leadingActionBar.actions: Action {
+            iconName: "go-previous"
+            onTriggered: cancelSharedContent()
+        }
+    }
+
     state: "default"
     states: [
-        PageHeadState {
+        State {
             name: "default"
             when: dialogs.messageIdsToForward.length == 0 && !transfer_helper.hasContent
-            head: account_page.head
-            contents: Label {
-                text: {
-                    if (NetworkingStatus.online) {
-                        if (telegramObject.connected) {
-                            // TRANSLATORS: Default app header title. Application name.
-                            return i18n.tr("Telegram")
-                        } else {
-                            // TRANSLATORS: App header title when connecting to Telegram.
-                            return i18n.tr("Connecting...")
-                        }
-                    } else {
-                        // TRANSLATORS: Shown in app header when network is unavailable.
-                        return i18n.tr("Waiting for network...")
-                    }
-                }
-            }
-            backAction: Action {
-                iconName: "navigation-menu"
-                onTriggered: {
-                    account_panel.opened ? account_panel.close() : account_panel.open()
-                }
+            PropertyChanges {
+                target: account_page
+                header: default_header
             }
         },
-        PageHeadState {
+        State {
             name: "forward"
             when: dialogs.messageIdsToForward.length > 0
-            head: account_page.head
-            contents: Label {
-                text: {
-                    if (NetworkingStatus.online) {
-                        // TRANSLATORS: Page title when forwarding messages.
-                        return i18n.tr("Select Chat")
-                    } else {
-                        // TRANSLATORS: Shown in app header when network is unavailable.
-                        return i18n.tr("Waiting for network...")
-                    }
-                }
-            }
-            backAction: Action {
-                iconName: "go-previous"
-                onTriggered: clearForwardedMessages()
+            PropertyChanges {
+                target: account_page
+                header: forward_header
             }
         },
-        PageHeadState {
+        State {
             name: "share"
             when: transfer_helper.hasContent
-            head: account_page.head
-            contents: Label {
-                text: {
-                    if (NetworkingStatus.online) {
-                        // TRANSLATORS: Page title when sharing files.
-                        return i18n.tr("Select Chat")
-                    } else {
-                        // TRANSLATORS: Shown in app header when network is unavailable.
-                        return i18n.tr("Waiting for network...")
-                    }
-                }
-            }
-            backAction: Action {
-                iconName: "go-previous"
-                onTriggered: cancelSharedContent()
+            PropertyChanges {
+                target: account_page
+                header: share_header
             }
         }
     ]
