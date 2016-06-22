@@ -337,15 +337,13 @@ Page {
     PageHeader {
         id: share_header
         visible: account_page.header === share_header
-        contents: Label {
-            text: {
-                if (NetworkingStatus.online) {
-                    // TRANSLATORS: Page title when sharing files.
-                    return i18n.tr("Select Chat")
-                } else {
-                    // TRANSLATORS: Shown in app header when network is unavailable.
-                    return i18n.tr("Waiting for network...")
-                }
+        title: {
+            if (NetworkingStatus.online) {
+                // TRANSLATORS: Page title when sharing files.
+                return i18n.tr("Select Chat")
+            } else {
+                // TRANSLATORS: Shown in app header when network is unavailable.
+                return i18n.tr("Waiting for network...")
             }
         }
         leadingActionBar.actions: Action {
