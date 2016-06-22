@@ -11,6 +11,7 @@ TelegramPage {
 
     property string countryCode
     property string fullPhoneNumber: "+" + countryCode + phoneNumber
+    property bool accountAlreadyExists: true
 
     property alias phoneNumber: phone_number.text
 
@@ -69,22 +70,12 @@ TelegramPage {
             placeholderText: i18n.tr("Phone Number")
             validator: RegExpValidator { regExp: /(?!0)\d*/ }
             onAccepted: {
-                Qt.inputMethod.hide();
-                PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                    auth_phone_page, {
-                        // TRANSLATORS: Dialog prompt to ensure provided number is correct.
-                        title: i18n.tr("Number correct?"),
-                        text: i18n.tr(auth_number_page.fullPhoneNumber),
-                        onAccept: function() {
-                            auth_number_page.isBusy = true;
-                            entry_delay.restart();
-                        }
-                    }
-                );
+                checkForDupe();
             }
         }
 
         TelegramButton {
+            id:doneButton
             objectName: "doneButton"
             width: phone_number.width
             height: phone_number.height
@@ -100,6 +91,77 @@ TelegramPage {
             width: phone_number.width
             visible: false
             color: "red"
+        }
+    }
+
+    onPhoneNumberChanged:{
+        if (phoneNumber.length > 0) {
+            //PhoneNumber contains 1 or more letter
+            error_label.visible = false;
+            doneButton.enabled = true;
+        } else {
+            //PhoneNumber doesn't contain any letters
+            doneButton.enabled = false;
+        }
+    }
+
+    function showConfirmationMessage() {
+        Qt.inputMethod.hide();
+        PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
+            auth_phone_page, {
+                // TRANSLATORS: Dialog prompt to ensure provided number is correct.
+                title: i18n.tr("Number correct?"),
+                text: i18n.tr(auth_number_page.fullPhoneNumber),
+                onAccept: function() {
+                    auth_number_page.isBusy = true;
+                    entry_delay.restart();
+                }
+            }
+        );
+    }
+
+    function checkForDupe () {
+        accountAlreadyExists = false;
+
+        //Check available profiles
+        if (!profiles.count < 1) {
+            for (var i = 0; i < profiles.count; i++) {
+                var key = profiles.keys[i];
+                checkForDupeTimer.restart();
+
+                //Stop checking profiles if a dupe is found
+                if (accountAlreadyExists != true) {
+                    if (auth_number_page.fullPhoneNumber != key) {
+                        //Dupe Not found
+                        accountAlreadyExists = false;
+                    } else {
+                        //Dupe found
+                        accountAlreadyExists = true;
+                    }
+                }
+            }
+        } else {
+            doneButton.enabled = true;
+            showConfirmationMessage();
+        }
+    }
+
+    Timer {
+        id:checkForDupeTimer
+        interval: 50
+        repeat: false
+        onTriggered:{
+            if (accountAlreadyExists == true) {
+                //Dupe found
+                doneButton.enabled = false;
+                accountAlreadyExists = true;
+                error_label.visible = true;
+                error_label.text = i18n.tr("Phone number already exists.");
+            } else {
+                //Dupe not found
+                doneButton.enabled = true;
+                showConfirmationMessage();
+            }
         }
     }
 
