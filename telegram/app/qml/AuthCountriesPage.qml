@@ -165,7 +165,13 @@ Page {
         id: country_list
         objectName: "countriesList"
 
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+            top: choose_header.bottom
+        }
+
         currentIndex: -1
         clip: true
         cacheBuffer: units.gu(8)*20
