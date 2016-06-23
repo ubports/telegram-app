@@ -151,7 +151,7 @@ Item {
             id: auth_code_page
             objectName: "auth_code_page"
 
-            head.backAction: Action {
+            header.leadingActionBar.actions: Action {
                 id: back_action
                 iconName: "back"
                 onTriggered: {
