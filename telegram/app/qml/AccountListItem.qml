@@ -83,8 +83,15 @@ Item {
         }
         onErrorChanged: {
             console.log("auth error: " + error)
+            console.log("ERROR")
             if (error == "PHONE_NUMBER_INVALID") {
                 profiles.remove(telegram.phoneNumber);
+            } else if (error == "SESSION_REVOKED" || error == "AUTH_KEY_UNREGISTERED") {
+                console.log("ERROR - TRIGGERED: " + error)
+                profiles.remove(telegram.phoneNumber);
+                telegram.logoutRequest = true;
+                telegram.authLogout();
+                showIntro();
             }
         }
         onAuthNeededChanged: {
