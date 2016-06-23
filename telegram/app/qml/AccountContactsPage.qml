@@ -17,119 +17,154 @@ import "js/colors.js" as Colors
 Page {
     id: page
     flickable: null
-    title: {
-        if (page.state == "new-group-chat") {
-            return i18n.tr("New Group");
-        } else if (page.state == "add-to-group") {
-            return i18n.tr("Add to group");
-        } else if (page.state == "new-secret-chat") {
-            return i18n.tr("New Secret Chat");
-        } else {
-            return i18n.tr("Contacts");
+
+    header: default_header
+
+    PageHeader {
+        id: default_header
+        visible: page.header === default_header
+        title: i18n.tr("Contacts")
+        trailingActionBar.actions: [
+            Action {
+                iconName: "search"
+                text: i18n.tr("Search")
+                onTriggered: page.state = "search"
+            },
+            Action {
+                iconName: "contact-new"
+                // TRANSLATORS: As in: add new contact
+                text: i18n.tr("Add")
+                onTriggered: addPressed()
+            }
+        ]
+    }
+
+    PageHeader {
+        id: search_header
+        visible: page.header === search_header
+        title: i18n.tr("Contacts")
+        trailingActionBar.actions: []
+        leadingActionBar.actions: Action {
+            // TRANSLATORS: As in, back out of contacts page.
+            text: i18n.tr("Back")
+            iconName: "back"
+            onTriggered: {
+                search_text_field.text = "";
+                page.state = "default";
+            }
+        }
+        contents: TextField {
+            id: search_text_field
+            anchors {
+                right: parent ? parent.right : undefined
+                rightMargin: units.gu(2)
+                left: parent ? parent.left : undefined
+                leftMargin: units.gu(2)
+                verticalCenter: parent ? parent.verticalCenter : undefined
+            }
+            focus: true
+            inputMethodHints: Qt.ImhNoPredictiveText
+            onTextChanged: searchChanged(text)
+            // TRANSLATORS: Placeholder for contacts search field.
+            placeholderText: i18n.tr("Search contacts...")
+
+            onTriggered: {
+                // TODO No worky.
+                page.state = "default";
+            }
+        }
+    }
+
+    PageHeader {
+        id: new_secret_chat_header
+        visible: page.header === new_secret_chat_header
+        title: i18n.tr("New Secret Chat")
+    }
+
+    PageHeader {
+        id: add_to_group_header
+        visible: page.header === add_to_group_header
+        title: i18n.tr("Add to group")
+        trailingActionBar.actions: [
+            Action {
+                iconName: "search"
+                text: i18n.tr("Search")
+                onTriggered: {
+                    page.state = "search";
+                }
+            },
+            Action {
+                iconName: "contact-new"
+                text: i18n.tr("Add")
+                onTriggered: addPressed()
+            }
+        ]
+    }
+
+    PageHeader {
+        id: new_group_chat_header
+        visible: page.header === new_group_chat_header
+        title: i18n.tr("New Group")
+        leadingActionBar.actions: new_group_chat_header.cancel
+        trailingActionBar.actions: hasGroupCount
+                                   ? new_group_chat_header.confirm
+                                   : new_group_chat_header.none
+
+        property var none: []
+        property list<Action> confirm: [
+            Action {
+                iconName: "ok"
+                text: i18n.tr("OK")
+                enabled: hasGroupTitle
+                onTriggered: createChatPressed()
+            }
+        ]
+        property Action cancel: Action {
+            iconName: "back"
+            text: i18n.tr("Back")
+            onTriggered: {
+                page.state = "default"
+                pageStack.removePages(page);
+            }
         }
     }
 
     state: "default"
     states: [
-        PageHeadState {
+        State {
             name: "default"
-            head: page.head
-            actions: [
-                Action {
-                    iconName: "search"
-                    text: i18n.tr("Search")
-                    onTriggered: page.state = "search"
-                },
-                Action {
-                    iconName: "contact-new"
-                    // TRANSLATORS: As in: add new contact
-                    text: i18n.tr("Add")
-                    onTriggered: addPressed()
-                }
-            ]
+            PropertyChanges {
+                target: page
+                header: default_header
+            }
         },
         PageHeadState {
             name: "search"
-            head: page.head
-            actions: []
-            backAction: Action {
-                // TRANSLATORS: As in, back out of contacts page.
-                text: i18n.tr("Back")
-                iconName: "back"
-                onTriggered: {
-                    search_text_field.text = "";
-                    page.state = "default";
-                }
-            }
-            contents: TextField {
-                id: search_text_field
-                anchors {
-                    right: parent ? parent.right : undefined
-                    rightMargin: units.gu(2)
-                }
-                focus: true
-                inputMethodHints: Qt.ImhNoPredictiveText
-                onTextChanged: searchChanged(text)
-                // TRANSLATORS: Placeholder for contacts search field.
-                placeholderText: i18n.tr("Search contacts...")
-
-                onTriggered: {
-                    // TODO No worky.
-                    page.state = "default";
-                }
+            PropertyChanges {
+                target: page
+                header: search_header
             }
         },
         PageHeadState {
             name: "new-secret-chat"
-            head: page.head
+            PropertyChanges {
+                target: page
+                header: new_secret_chat_header
+            }
         },
         PageHeadState {
             name: "add-to-group"
-            head: page.head
-            actions: [
-                Action {
-                    iconName: "search"
-                    text: i18n.tr("Search")
-                    onTriggered: {
-                        page.state = "search";
-                    }
-                },
-                Action {
-                    iconName: "contact-new"
-                    text: i18n.tr("Add")
-                    onTriggered: addPressed()
-                }
-            ]
-        },
-        PageHeadState {
-            id: new_group_chat_state
-            name: "new-group-chat"
-            head: page.head
-
             PropertyChanges {
-                target: page.head
-                backAction: new_group_chat_state.cancel
-                actions: hasGroupCount
-                        ? new_group_chat_state.confirm
-                        : new_group_chat_state.none
+                target: page
+                header: add_to_group_header
             }
 
-            property var none: []
-            property list<Action> confirm: [
-                Action {
-                    iconName: "ok"
-                    text: i18n.tr("OK")
-                    enabled: hasGroupTitle
-                    onTriggered: createChatPressed()
-                }
-            ]
-            property Action cancel: Action {
-                iconName: "back"
-                text: i18n.tr("Back")
-                onTriggered: {
-                    page.state = "default"
-                    pageStack.removePages(page);
-                }
+        },
+        PageHeadState {
+            name: "new-group-chat"
+            PropertyChanges {
+                target: page
+                header: new_group_chat_header
             }
         }
     ]
@@ -191,7 +226,7 @@ Page {
     TextField {
         id: group_chat_title_text_field
         anchors {
-            top: parent.top
+            top: page.header.bottom
             topMargin: isVisible ? units.gu(1) : 0
             left: parent.left
             leftMargin: units.gu(1)

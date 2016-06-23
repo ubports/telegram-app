@@ -16,25 +16,27 @@ Page {
     property Telegram telegram
     property User user: telegram.user(telegram.me)
 
-    property list<Action> actions: [
-        Action {
-            iconName: "stock_image"
-            // TRANSLATORS: Action text to change profile photo.
-            text: i18n.tr("Change photo")
-            onTriggered: changeUserPhoto()
+    header: PageHeader {
+        title: settings_page.title
+        trailingActionBar.actions: [
+            Action {
+                iconName: "stock_image"
+                // TRANSLATORS: Action text to change profile photo.
+                text: i18n.tr("Change photo")
+                onTriggered: changeUserPhoto()
                 
-        },
-        Action {
-            iconName: "edit"
-            // TRANSLATORS: Edit your profile first and last name.
-            text: i18n.tr("Edit name")
-            onTriggered: changeFullName()
-        }
-    ]
+            },
+            Action {
+                iconName: "edit"
+                // TRANSLATORS: Edit your profile first and last name.
+                text: i18n.tr("Edit name")
+                onTriggered: changeFullName()
+            }
+        ]
+    }
 
     objectName: "settingsPage"
     title: i18n.tr("Settings")
-    head.actions: actions
 
     function changeFullName() {
         var properties = { "telegram": telegram, "firstName": user.firstName, "lastName": user.lastName };
@@ -222,7 +224,7 @@ Page {
     ClickableContactImage {
         id: profile_image
         anchors {
-            top: parent.top
+            top: settings_page.header.bottom
             topMargin: units.gu(2)
             left: parent.left
             leftMargin: units.gu(2)

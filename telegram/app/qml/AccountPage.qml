@@ -63,7 +63,6 @@ Page {
 
     objectName: "accountPage"
     flickable: null
-    head.sections.model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
 
     Component.onCompleted: {
         open_chat_timer.start();
@@ -81,6 +80,7 @@ Page {
         anchors {
             left: parent.left
             top: parent.top
+            topMargin: account_page.header.height
         }
         maxHeight: parent.height - units.gu(7)
         z: 10
@@ -170,7 +170,10 @@ Page {
 
     AccountDialogList {
         id: dialogs
-        anchors.fill: parent
+        anchors{
+            fill: parent
+            topMargin: account_page.header.height
+        }
         clip: true
         //visible: search_frame.text.length == 0
 
@@ -279,73 +282,101 @@ Page {
 //    }
 //    bottomEdgeTitle: i18n.tr("Contacts")
 
+    Sections {
+        id: sections
+        model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
+        visible: profiles.count > 1
+    }
+
+    header: default_header
+    PageHeader {
+        id: default_header
+        visible: account_page.header === default_header
+        title: {
+            if (NetworkingStatus.online) {
+                if (telegramObject.connected) {
+                    // TRANSLATORS: Default app header title. Application name.
+                    return i18n.tr("Telegram")
+                } else {
+                    // TRANSLATORS: App header title when connecting to Telegram.
+                    return i18n.tr("Connecting...")
+                }
+            } else {
+                // TRANSLATORS: Shown in app header when network is unavailable.
+                return i18n.tr("Waiting for network...")
+            }
+        }
+        leadingActionBar.actions: Action {
+            iconName: "navigation-menu"
+            onTriggered: {
+                account_panel.opened ? account_panel.close() : account_panel.open()
+            }
+        }
+        extension: profiles.count > 1 ? sections : null
+    }
+
+    PageHeader {
+        id: forward_header
+        visible: account_page.header === forward_header
+        title: {
+                if (NetworkingStatus.online) {
+                    // TRANSLATORS: Page title when forwarding messages.
+                    return i18n.tr("Select Chat")
+                } else {
+                    // TRANSLATORS: Shown in app header when network is unavailable.
+                    return i18n.tr("Waiting for network...")
+                }
+            }
+        leadingActionBar.actions: Action {
+            iconName: "go-previous"
+            onTriggered: clearForwardedMessages()
+        }
+        extension: profiles.count > 1 ? sections : null
+    }
+
+    PageHeader {
+        id: share_header
+        visible: account_page.header === share_header
+        title: {
+            if (NetworkingStatus.online) {
+                // TRANSLATORS: Page title when sharing files.
+                return i18n.tr("Select Chat")
+            } else {
+                // TRANSLATORS: Shown in app header when network is unavailable.
+                return i18n.tr("Waiting for network...")
+            }
+        }
+        leadingActionBar.actions: Action {
+            iconName: "go-previous"
+            onTriggered: cancelSharedContent()
+        }
+        extension: profiles.count > 1 ? sections : null
+    }
+
     state: "default"
     states: [
-        PageHeadState {
+        State {
             name: "default"
             when: dialogs.messageIdsToForward.length == 0 && !transfer_helper.hasContent
-            head: account_page.head
-            contents: Label {
-                text: {
-                    if (NetworkingStatus.online) {
-                        if (telegramObject.connected) {
-                            // TRANSLATORS: Default app header title. Application name.
-                            return i18n.tr("Telegram")
-                        } else {
-                            // TRANSLATORS: App header title when connecting to Telegram.
-                            return i18n.tr("Connecting...")
-                        }
-                    } else {
-                        // TRANSLATORS: Shown in app header when network is unavailable.
-                        return i18n.tr("Waiting for network...")
-                    }
-                }
-            }
-            backAction: Action {
-                iconName: "navigation-menu"
-                onTriggered: {
-                    account_panel.opened ? account_panel.close() : account_panel.open()
-                }
+            PropertyChanges {
+                target: account_page
+                header: default_header
             }
         },
-        PageHeadState {
+        State {
             name: "forward"
             when: dialogs.messageIdsToForward.length > 0
-            head: account_page.head
-            contents: Label {
-                text: {
-                    if (NetworkingStatus.online) {
-                        // TRANSLATORS: Page title when forwarding messages.
-                        return i18n.tr("Select Chat")
-                    } else {
-                        // TRANSLATORS: Shown in app header when network is unavailable.
-                        return i18n.tr("Waiting for network...")
-                    }
-                }
-            }
-            backAction: Action {
-                iconName: "go-previous"
-                onTriggered: clearForwardedMessages()
+            PropertyChanges {
+                target: account_page
+                header: forward_header
             }
         },
-        PageHeadState {
+        State {
             name: "share"
             when: transfer_helper.hasContent
-            head: account_page.head
-            contents: Label {
-                text: {
-                    if (NetworkingStatus.online) {
-                        // TRANSLATORS: Page title when sharing files.
-                        return i18n.tr("Select Chat")
-                    } else {
-                        // TRANSLATORS: Shown in app header when network is unavailable.
-                        return i18n.tr("Waiting for network...")
-                    }
-                }
-            }
-            backAction: Action {
-                iconName: "go-previous"
-                onTriggered: cancelSharedContent()
+            PropertyChanges {
+                target: account_page
+                header: share_header
             }
         }
     ]

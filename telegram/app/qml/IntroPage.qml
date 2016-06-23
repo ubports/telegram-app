@@ -9,6 +9,9 @@ TelegramPage {
     id: page
     objectName: "introPage"
 
+    // hide the old page header
+    header: Item { }
+
     property bool isWide: page.width > units.gu(70)
     property alias startMessagingButton: startMessagingButton
     property alias currentIndex: slider.currentIndex

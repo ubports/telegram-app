@@ -21,7 +21,9 @@ TelegramPage {
     signal codeRequest()
     signal callRequest()
 
-    title: phoneRegistered ? i18n.tr("Sign In") : i18n.tr("Sign Up")
+    header: PageHeader {
+        title: phoneRegistered ? i18n.tr("Sign In") : i18n.tr("Sign Up")
+    }
 
     onError: {
         console.log("ui: " + errorText + " error");
@@ -76,7 +78,7 @@ TelegramPage {
     Label {
         id: timer
         anchors {
-            top: parent.top
+            top: auth_code_page.header.bottom
             topMargin: units.gu(2)
             left: parent.left
             leftMargin: units.gu(4)

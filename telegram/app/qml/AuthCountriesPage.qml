@@ -15,54 +15,76 @@ Page {
 
     focus: true
     flickable: null
-    title: i18n.tr("Choose a country")
+
+    header: PageHeader {
+        id: choose_header
+        title: i18n.tr("Choose a country")
+        property bool searchMode: false
+        Action {
+            id: searchAction
+            iconName: "search";
+            text: i18n.tr("Search");
+            onTriggered:{
+                page.state = "search";
+                search_text_field.forceActiveFocus();
+            }
+        }
+        Action {
+            id: backFromSearchAction
+            // TRANSLATORS: As in, back out of contacts page.
+            text: i18n.tr("Back")
+            iconName: "back"
+            onTriggered: {
+                search_text_field.text = "";
+                page.state = "default";
+            }
+        }
+        trailingActionBar.actions: choose_header.searchMode ?
+                                       [] : searchAction
+        leadingActionBar.actions: choose_header.searchMode ?
+                                      backFromSearchAction :
+                                      choose_header.navigationActions
+
+
+        TextField {
+            id: search_text_field
+            visible: choose_header.searchMode
+            anchors {
+                right: parent ? parent.right : undefined
+                rightMargin: units.gu(2)
+                left: parent ? parent.left : undefined
+                leftMargin: units.gu(2)
+                verticalCenter: parent ? parent.verticalCenter : undefined
+            }
+            focus: true
+            inputMethodHints: Qt.ImhNoPredictiveText
+            onTextChanged: country_list_delegateModel.searchChanged(text)
+            // TRANSLATORS: Placeholder for contacts search field.
+            placeholderText: i18n.tr("Search countries...")
+
+            onTriggered: {
+                // TODO No worky.
+                page.state = "default";
+            }
+        }
+        contents: choose_header.searchMode ? search_text_field : null
+    }
 
     // Page states
     state: "default"
     states: [
-        PageHeadState {
+        State {
             name: "default"
-            head: page.head
-            actions: [
-                Action {
-                    iconName: "search";
-                    text: i18n.tr("Search");
-                    onTriggered:{
-                        page.state = "search";
-                        search_text_field.forceActiveFocus();
-                    }
-                }
-            ]
-        },
-        PageHeadState {
-            name: "search"
-            head: page.head
-            actions: []
-            backAction: Action {
-                // TRANSLATORS: As in, back out of contacts page.
-                text: i18n.tr("Back")
-                iconName: "back"
-                onTriggered: {
-                    search_text_field.text = "";
-                    page.state = "default";
-                }
+            PropertyChanges {
+                target: choose_header
+                searchMode: false
             }
-            contents: TextField {
-                id: search_text_field
-                anchors {
-                    right: parent ? parent.right : undefined
-                    rightMargin: units.gu(2)
-                }
-                focus: true
-                inputMethodHints: Qt.ImhNoPredictiveText
-                onTextChanged: country_list_delegateModel.searchChanged(text)
-                // TRANSLATORS: Placeholder for contacts search field.
-                placeholderText: i18n.tr("Search countries...")
-
-                onTriggered: {
-                    // TODO No worky.
-                    page.state = "default";
-                }
+        },
+        State {
+            name: "search"
+            PropertyChanges {
+                target: choose_header
+                searchMode: true
             }
         }
     ]
@@ -143,7 +165,13 @@ Page {
         id: country_list
         objectName: "countriesList"
 
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+            top: choose_header.bottom
+        }
+
         currentIndex: -1
         clip: true
         cacheBuffer: units.gu(8)*20

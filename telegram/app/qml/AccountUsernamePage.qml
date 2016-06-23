@@ -58,8 +58,10 @@ Page {
         telegram.accountUsernameChecked.disconnect(page.accountUsernameChecked);
     }
 
-    title: i18n.tr("Username");
-    head.actions: actions
+    header: PageHeader {
+        title: i18n.tr("Username")
+        trailingActionBar.actions: page.actions
+    }
 
     function checkUsername() {
         checking = true;
@@ -81,7 +83,7 @@ Page {
     Column {
         spacing: units.gu(2)
         anchors {
-            top: parent.top
+            top: page.header.bottom
             topMargin: units.gu(4)
             left: parent.left
             leftMargin: units.gu(2)
