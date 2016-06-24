@@ -151,13 +151,16 @@ Item {
             id: auth_code_page
             objectName: "auth_code_page"
 
-            header.leadingActionBar.actions: Action {
-                id: back_action
-                iconName: "back"
-                onTriggered: {
-//                    pageStack.removePages(auth_code_page);
-                    profiles.remove(telegram.phoneNumber);
-                    console.log("*** Authentication stopped for: " + telegram.phoneNumber);
+            header: PageHeader {
+                title: auth_code_page.phoneRegistered ? i18n.tr("Sign In") : i18n.tr("Sign Up")
+                leadingActionBar.actions: Action {
+                    id: back_action
+                    iconName: "back"
+                    onTriggered: {
+                        //                    pageStack.removePages(auth_code_page);
+                        profiles.remove(telegram.phoneNumber);
+                        console.log("*** Authentication stopped for: " + telegram.phoneNumber);
+                    }
                 }
             }
 
