@@ -25,8 +25,6 @@ import "js/colors.js" as Colors
 
 Page {
     id: preview_page
-    // TRANSLATORS: %1 is the person from whom the app is previewing media.
-    title: i18n.tr("From: %1").arg(senderName)
 
     property User user
 //    property string path
@@ -43,27 +41,32 @@ Page {
 //        }
 //    }
 
-    head.actions: [
+    header: PageHeader {
+        // TRANSLATORS: %1 is the person from whom the app is previewing media.
+        title: i18n.tr("From: %1").arg(senderName)
 
-        Action {
-            iconName: "save"
-            text: i18n.tr("Save")
-            onTriggered: save()
-            visible: saveAndShareVisible()
-        },
-        Action {
-            iconName: "share"
-            text: i18n.tr("Share")
-            onTriggered: share()
-            visible: saveAndShareVisible()
-        }
-
-    ]
+        trailingActionBar.actions: [
+            Action {
+                iconName: "save"
+                text: i18n.tr("Save")
+                onTriggered: save()
+                visible: saveAndShareVisible()
+            },
+            Action {
+                iconName: "share"
+                text: i18n.tr("Share")
+                onTriggered: share()
+                visible: saveAndShareVisible()
+            }
+        ]
+    }
 
     Item {
-
         anchors {
-            fill: parent
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
+            top: preview_page.header.bottom
         }
 
         Rectangle {

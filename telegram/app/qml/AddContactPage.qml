@@ -231,7 +231,7 @@ Page {
             console.log("contacts: not on Telegram")
             // Telegram no longer returns 'invited' bool value.
             invite.name = firstName;
-            head.actions = [];
+            page.header.trailingActionBar.actions = [];
             invite.visible = true;
         }
     }
