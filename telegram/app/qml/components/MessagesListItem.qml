@@ -101,7 +101,11 @@ ListItem {
             user: message_item.user
             isChat: false
 
-            onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
+            onClicked:{
+                console.log("ASH - tappedAvatar: userTapBackHome=false");
+                userTapBackHome = false;
+                message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
+            }
         }
 
         Item {
