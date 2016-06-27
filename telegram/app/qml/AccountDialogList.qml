@@ -41,13 +41,10 @@ Item {
 
     onDialogClosed: {
         if(mainView.width <= units.gu(80)) {
-            console.log("ASH - onDialogClosed < gu80");
             if (userTapBackHome == true) {
-                console.log("ASH - onDialogClosed: userTapBackHome=true");
                 dialog_list.currentIndex = -1;
                 currentDialog = telegramObject.nullDialog;
             } else {
-                console.log("ASH - onDialogClosed: userTapBackHome=false THEN back");
                 userTapBackHome = true;
             }
         }
