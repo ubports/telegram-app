@@ -674,6 +674,7 @@ Page {
 
             onClicked: {
                 if (item.userId != telegram.me) {
+                    userTapBackHome = false;
                     profile_page.openDialog(item.userId)
                 }
             }

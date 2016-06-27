@@ -102,7 +102,6 @@ ListItem {
             isChat: false
 
             onClicked:{
-                console.log("ASH - tappedAvatar: userTapBackHome=false");
                 userTapBackHome = false;
                 message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
             }
