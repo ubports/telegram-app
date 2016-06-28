@@ -40,10 +40,13 @@ Item {
     }
 
     onDialogClosed: {
-        if(mainView.width <= units.gu(80) | dialogDidGoBack) {
-            dialog_list.currentIndex = -1;
-            currentDialog = telegramObject.nullDialog;
-            dialogDidGoBack = false;
+        if(mainView.width <= units.gu(80)) {
+            if (userTapBackHome == true) {
+                dialog_list.currentIndex = -1;
+                currentDialog = telegramObject.nullDialog;
+            } else {
+                userTapBackHome = true;
+            }
         }
     }
 

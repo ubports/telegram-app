@@ -101,7 +101,10 @@ ListItem {
             user: message_item.user
             isChat: false
 
-            onClicked: message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
+            onClicked:{
+                userTapBackHome = false;
+                message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
+            }
         }
 
         Item {

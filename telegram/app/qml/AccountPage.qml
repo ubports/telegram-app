@@ -19,7 +19,7 @@ Page {
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
 
-    property bool dialogDidGoBack: false
+    property bool userTapBackHome: true
 
     signal openDialog(var dialogId)
     signal addParticipantRequest()
