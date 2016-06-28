@@ -71,11 +71,14 @@ Item {
         autoCleanUpMessages: true
         autoAcceptEncrypted: true
 
-        onErrorSignal: {
+        onErrorSignal:{
             if (errorText === "SESSION_REVOKED" || errorText === "AUTH_KEY_UNREGISTERED") {
-                profiles.remove(telegram.phoneNumber);
                 telegram.logoutRequest = true;
                 telegram.authLogout();
+
+                profiles.remove(telegram.phoneNumber);
+                if (profiles.count === 0)
+                    pageStack.primaryPageSource = null;
                 showIntro();
             }
 
@@ -83,14 +86,6 @@ Item {
         }
         onErrorChanged: {
             console.log("auth error: " + error)
-            if (error == "PHONE_NUMBER_INVALID") {
-                profiles.remove(telegram.phoneNumber);
-            } else if (error == "SESSION_REVOKED" || error == "AUTH_KEY_UNREGISTERED") {
-                profiles.remove(telegram.phoneNumber);
-                telegram.logoutRequest = true;
-                telegram.authLogout();
-                showIntro();
-            }
         }
         onAuthNeededChanged: {
             console.log("authNeeded " + authNeeded)
