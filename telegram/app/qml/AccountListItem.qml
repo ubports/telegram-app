@@ -79,6 +79,7 @@ Item {
                 profiles.remove(telegram.phoneNumber);
                 if (profiles.count === 0)
                     pageStack.primaryPageSource = null;
+
                 showIntro();
             }
 
