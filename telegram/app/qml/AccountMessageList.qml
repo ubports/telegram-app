@@ -294,18 +294,37 @@ Rectangle {
                 }
             }
 
-            onClicked: {
-                console.log("on item clicked");
+            onSelectedChanged:{
                 if (mlist.isInSelectionMode) {
-                    if (selected) {
+                    if (!selected)
                         mlist.deselectItem(message_item);
-                    } else {
+                    else
                         mlist.selectItem(message_item);
-                    }
                 }
-
                 message_item.click();
             }
+
+            onClicked: {
+                if (mlist.isInSelectionMode) {
+                    if (selected)
+                        selected = false;
+                    else
+                        selected = true;
+                }
+            }
+
+//            onClicked: {
+//                console.log("on item clicked");
+//                if (mlist.isInSelectionMode) {
+//                    if (selected) {
+//                        mlist.deselectItem(message_item)
+//                    } else {
+//                        mlist.selectItem(message_item)
+//                    }
+//                }
+
+//                message_item.click();
+//            }
 
             onPreviewRequest: {
                 console.log("onOpenMedia");
