@@ -71,11 +71,15 @@ Item {
         autoCleanUpMessages: true
         autoAcceptEncrypted: true
 
-        onErrorSignal: {
+        onErrorSignal:{
             if (errorText === "SESSION_REVOKED" || errorText === "AUTH_KEY_UNREGISTERED") {
-                profiles.remove(telegram.phoneNumber);
                 telegram.logoutRequest = true;
                 telegram.authLogout();
+
+                profiles.remove(telegram.phoneNumber);
+                if (profiles.count === 0)
+                    pageStack.primaryPageSource = null;
+
                 showIntro();
             }
 
