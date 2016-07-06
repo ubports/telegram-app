@@ -10,10 +10,16 @@ cd $TG_DIR/deps
 
 if [ ! -d "libqtelegram-ae" ]; then
     git clone https://github.com/Aseman-Land/libqtelegram-aseman-edition.git libqtelegram-ae
+    cd libqtelegram-ae
+    git reset --hard 7bc3c3d54c744d675aa261bd4a0d335291052ee6
+    cd $TG_DIR/deps
 fi
 
 if [ ! -d "TelegramQML" ]; then
     git clone https://github.com/Aseman-Land/TelegramQML.git
+    cd TelegramQML
+    git reset --hard 7d5110a454af7d9be2370da6de217941bb9d1f1b
+    cd $TG_DIR/deps
 fi
 
 echo "Building libqtelegram"
