@@ -56,6 +56,8 @@ ListItem {
     property alias media: message_media.media
     property alias mediaLocation: message_media.location
 
+    property bool isSystemMessage: false
+
     signal dialogRequest(variant dialog);
     signal tagSearchRequest(string tag);
     signal messageFocusRequest(int msgId);
@@ -74,6 +76,19 @@ ListItem {
         anchors.left: parent.left
         anchors.right: parent.right
         message: message_item.message
+        onHasActionChanged:{
+            isSystemMessage = action_item.hasAction;
+
+            if (isSystemMessage) {
+
+                // Highlight colour is the same as BG colour, therefore
+                // effectively removing highlight
+                highlightColor = color;
+
+                leadingActions = null;
+                trailingActions = null;
+            }
+        }
     }
 
     Row {

@@ -121,7 +121,11 @@ Page {
             // TRANSLATORS: Text of notifications switch in settings.
             text: i18n.tr("Notifications")
             height: visible ? implicitHeight : 0
-            visible: (Cutegram.pushNumber == telegram.phoneNumber)
+            visible: {
+                console.log("Cutegram Push Number: " + Cutegram.pushNumber)
+                console.log("Telegram Phone Number: " + telegram.phoneNumber)
+                return (Cutegram.pushNumber === telegram.phoneNumber)
+            }
             showDivider: false
 
             Switch {
