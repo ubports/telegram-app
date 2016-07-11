@@ -102,6 +102,7 @@ ListItem {
             isChat: false
 
             onClicked:{
+                console.log("*** OPEN DIALOG - MessagesListItem")
                 userTapBackHome = false;
                 message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
             }

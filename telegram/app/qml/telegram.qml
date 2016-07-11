@@ -54,6 +54,8 @@ MainView {
     property var uri: undefined
     property int chatToOpen: 0
 
+    property bool userTapBackHome: true
+
     signal error(int id, string errorCode, string errorText)
     signal pushLoaded()
     signal pushRegister(string token, string version)
@@ -66,6 +68,8 @@ MainView {
         }
 
         if (activeFocus) {
+            userTapBackHome = false;
+
             processUri();
             if (!pushClient.registered && Cutegram.pushNotifications) {
                 console.log("push - retrying registration");
@@ -122,10 +126,13 @@ MainView {
                 } else {
                     console.info("Setting chat to open: " + chatId);
                     backToDialogsPage();
-                    mainView.chatToOpen = chatId;
+                    if (userTapBackHome) {
+                        mainView.chatToOpen = chatId;
+                    }
                     mainView.uri = undefined;
                 }
             case "launch": // no-i18n
+                userTapBackHome = true;
                 // Nothing to do.
                 break;
             default: console.warn("Unmanaged URI! " + commands);

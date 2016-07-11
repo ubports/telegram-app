@@ -19,8 +19,6 @@ Page {
     property alias telegramObject: dialogs.telegramObject
     property alias currentDialog: dialogs.currentDialog
 
-    property bool userTapBackHome: true
-
     signal openDialog(var dialogId)
     signal addParticipantRequest()
 
@@ -250,6 +248,7 @@ Page {
 
         AccountContactsPage {
             onSelected: {
+                console.log("*** OPEN DIALOG - AccountContactsPage")
                 pageStack.clear();
                 account_page.currentDialog = telegramObject.fakeDialogObject(cid, false);
             }
