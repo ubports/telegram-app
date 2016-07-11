@@ -248,7 +248,6 @@ Page {
 
         AccountContactsPage {
             onSelected: {
-                console.log("*** OPEN DIALOG - AccountContactsPage")
                 pageStack.clear();
                 account_page.currentDialog = telegramObject.fakeDialogObject(cid, false);
             }
