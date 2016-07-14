@@ -287,10 +287,12 @@ Rectangle {
             onMessageFocusRequest: focusOnMessage(msgId)
 
             onPressAndHold: {
-                mlist.clearSelection();
-                mlist.startSelection();
-                if (mlist.isInSelectionMode) {
-                    mlist.selectItem(message_item);
+                if (!message_item.isSystemMessage) {
+                    mlist.clearSelection();
+                    mlist.startSelection();
+                    if (mlist.isInSelectionMode) {
+                        mlist.selectItem(message_item);
+                    }
                 }
             }
 
@@ -305,12 +307,16 @@ Rectangle {
             }
 
             onClicked: {
-                if (mlist.isInSelectionMode) {
-                    if (selected)
-                        selected = false;
-                    else
-                        selected = true;
+                if (!message_item.isSystemMessage) {
+                    if (mlist.isInSelectionMode) {
+                        if (selected)
+                            selected = false;
+                        else
+                            selected = true;
+                    }
                 }
+                else
+                    message_item.click();
             }
 
 //            onClicked: {
