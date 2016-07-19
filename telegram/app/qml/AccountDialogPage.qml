@@ -241,7 +241,6 @@ Page {
                 dialog_page.forwardRequest(messageIds);
                 pageStack.removePages(dialog_page);
             }
-
             onDialogRequest: account_page.currentDialog = dialogObject
             onTagSearchRequest: msg_box.tagSearchRequest(tag)
             onReplyToRequest: send_msg.replyTo(msgId)

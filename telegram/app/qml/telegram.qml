@@ -56,7 +56,6 @@ MainView {
 
     property bool userTapBackHome: true
     property bool userTappedNotification: false
-    property bool userTappedNotificationBack: false
 
     signal error(int id, string errorCode, string errorText)
     signal pushLoaded()
