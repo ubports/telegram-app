@@ -55,6 +55,8 @@ MainView {
     property int chatToOpen: 0
 
     property bool userTapBackHome: true
+    property bool userTappedNotification: false
+    property bool userTappedNotificationBack: false
 
     signal error(int id, string errorCode, string errorText)
     signal pushLoaded()
@@ -68,8 +70,6 @@ MainView {
         }
 
         if (activeFocus) {
-            userTapBackHome = false;
-
             processUri();
             if (!pushClient.registered && Cutegram.pushNotifications) {
                 console.log("push - retrying registration");
@@ -125,14 +125,13 @@ MainView {
                     // TODO: Temporarily open no chats if secret notification pressed.
                 } else {
                     console.info("Setting chat to open: " + chatId);
+                    userTappedNotification = true;
                     backToDialogsPage();
-                    if (userTapBackHome) {
-                        mainView.chatToOpen = chatId;
-                    }
+                    mainView.chatToOpen = chatId;
                     mainView.uri = undefined;
                 }
             case "launch": // no-i18n
-                userTapBackHome = true;
+                //userTapBackHome = true;
                 // Nothing to do.
                 break;
             default: console.warn("Unmanaged URI! " + commands);

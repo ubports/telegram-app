@@ -41,10 +41,18 @@ Item {
 
     onDialogClosed: {
         if(mainView.width <= units.gu(80)) {
-            if (userTapBackHome == true) {
+            if (userTapBackHome) {
+                console.log("***userTapBackHome == TRUE");
                 dialog_list.currentIndex = -1;
-                currentDialog = telegramObject.nullDialog;
+                if (!userTappedNotification) {
+                    console.log("***userTappedNotification == FALSE");
+                    currentDialog = telegramObject.nullDialog;
+                } else {
+                    console.log("***userTappedNotification == TRUE");
+                    userTappedNotification = false;
+                }
             } else {
+                console.log("***userTapBackHome == FALSE");
                 userTapBackHome = true;
             }
         }
