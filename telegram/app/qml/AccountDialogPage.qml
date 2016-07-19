@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import Ubuntu.Content 1.3
 import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import QtQuick.Window 2.2
@@ -80,88 +81,85 @@ Page {
     objectName: "dialogPage"
 
     header: PageHeader {
-        id: dialog_page_header
-        trailingActionBar.actions: message_list.inSelectionMode ? selectionActions : defaultActions
-        leadingActionBar.actions: Action {
-            id: back_action
-            iconName: message_list.inSelectionMode ? "close" : "back"
-            onTriggered: {
-                if (message_list.inSelectionMode) {
-                    message_list.cancelSelection()
-                } else {
-                    if(mainView.width > units.gu(80)) {
-                        dialogDidGoBack = true;
-                    }
-                    pageStack.removePages(dialog_page);
-                }
-            }
-        }
-        flickable: null
-
-        //Adds components to the header
-        contents: Rectangle {
-            anchors {
-                top: parent.top
-                topMargin: units.dp(8)
-                left: parent.left
-                verticalCenter: parent
-                right: parent.right
-                rightMargin: units.gu(5)
-                bottom: parent.bottom
-            }
-
-            //Text adjusts to the parent
-            Text {
-                anchors {
-                    top: parent.top
-                    topMargin: units.gu(0.2)
-                    left: imgAvatar.right
-                    leftMargin: units.gu(1)
-                }
-                width: parent.width
-
-                text: {
-                    if (!currentDialog) return "";
-                    if (isChat) {
-                        return chat ? chat.title : ""; //Shown if a group chat
-                    } else {
-                        return user ? user.firstName + " " + user.lastName : ""; //Shown if a scret chat
+                id: dialog_page_header
+                trailingActionBar.actions: message_list.inSelectionMode ? selectionActions : defaultActions
+                leadingActionBar.actions: Action {
+                    id: back_action
+                    iconName: message_list.inSelectionMode ? "close" : "back"
+                    onTriggered: {
+                        if (message_list.inSelectionMode) {
+                            message_list.cancelSelection()
+                        } else {
+                            backToChatList();
+                        }
                     }
                 }
-                font.pixelSize: FontUtils.sizeToPixels("large")
-                //Word wraps text when text is too long for width
-                wrapMode: Text.WordWrap
-                //Enables the elipse to the end of the text
-                elide: Text.ElideRight
-                //Wraps text to 1 line
-                maximumLineCount: 1
-            }
+                flickable: null
 
-            //Avatar component gets avatar for user as specified from 'dialog' parameter
-            Avatar {
-                id: imgAvatar
+                //Adds components to the header
+                contents: Rectangle {
+                    anchors {
+                        top: parent.top
+                        topMargin: units.dp(8)
+                        left: parent.left
+                        verticalCenter: parent
+                        right: parent.right
+                        rightMargin: units.gu(5)
+                        bottom: parent.bottom
+                    }
 
-                width: height
-                telegram: dialog_page.telegramObject
-                dialog: dialog_page.currentDialog
-            }
+                    //Text adjusts to the parent
+                    Text {
+                        anchors {
+                            top: parent.top
+                            topMargin: units.gu(0.2)
+                            left: imgAvatar.right
+                            leftMargin: units.gu(1)
+                        }
+                        width: parent.width
 
-            //'Lock' image that is overlayed ontop of the Avatar conponent
-            Image {
-                anchors {
-                    left: imgAvatar.right
-                    leftMargin: -width-5
-                    top: imgAvatar.top
-                    topMargin: units.dp(2)
+                        text: {
+                            if (!currentDialog) return "";
+                            if (isChat) {
+                                return chat ? chat.title : ""; //Shown if a group chat
+                            } else {
+                                return user ? user.firstName + " " + user.lastName : ""; //Shown if a scret chat
+                            }
+                        }
+                        font.pixelSize: FontUtils.sizeToPixels("large")
+                        //Word wraps text when text is too long for width
+                        wrapMode: Text.WordWrap
+                        //Enables the elipse to the end of the text
+                        elide: Text.ElideRight
+                        //Wraps text to 1 line
+                        maximumLineCount: 1
+                    }
+
+                    //Avatar component gets avatar for user as specified from 'dialog' parameter
+                    Avatar {
+                        id: imgAvatar
+
+                        width: height
+                        telegram: dialog_page.telegramObject
+                        dialog: dialog_page.currentDialog
+                    }
+
+                    //'Lock' image that is overlayed ontop of the Avatar conponent
+                    Image {
+                        anchors {
+                            left: imgAvatar.right
+                            leftMargin: -width-5
+                            top: imgAvatar.top
+                            topMargin: units.dp(2)
+                        }
+                        width: units.gu(1)
+                        height: units.gu(1.5)
+                        source: "qrc:/qml/files/lock.png"
+                        sourceSize: Qt.size(width, height)
+                        visible: currentDialog.encrypted
+                    }
                 }
-                width: units.gu(1)
-                height: units.gu(1.5)
-                source: "qrc:/qml/files/lock.png"
-                sourceSize: Qt.size(width, height)
-                visible: currentDialog.encrypted
             }
-        }
-    }
 
     signal forwardRequest(var messageIds);
     signal tagSearchRequest(string tag);
@@ -174,6 +172,18 @@ Page {
                 telegram: dialog_page.telegramObject,
                 dialog: dialog_page.currentDialog
         });
+    }
+
+    function backToChatList() {
+        if(mainView.width > units.gu(80)) {
+            dialogDidGoBack = true;
+        }
+        pageStack.removePages(dialog_page);
+    }
+
+    Connections {
+        target: ContentHub
+        onShareRequested: backToChatList()
     }
 
     Component.onCompleted: {
