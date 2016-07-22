@@ -54,6 +54,9 @@ MainView {
     property var uri: undefined
     property int chatToOpen: 0
 
+    property bool userTapBackHome: true
+    property bool userTappedNotification: false
+
     signal error(int id, string errorCode, string errorText)
     signal pushLoaded()
     signal pushRegister(string token, string version)
@@ -121,11 +124,13 @@ MainView {
                     // TODO: Temporarily open no chats if secret notification pressed.
                 } else {
                     console.info("Setting chat to open: " + chatId);
+                    userTappedNotification = true;
                     backToDialogsPage();
                     mainView.chatToOpen = chatId;
                     mainView.uri = undefined;
                 }
             case "launch": // no-i18n
+                //userTapBackHome = true;
                 // Nothing to do.
                 break;
             default: console.warn("Unmanaged URI! " + commands);
