@@ -6,7 +6,10 @@ import "components"
 
 Page {
     id: picker
-    title: i18n.tr("Choose")
+
+    header: PageHeader {
+        title: i18n.tr("Choose")
+    }
 
     Component {
         id: resultComponent
