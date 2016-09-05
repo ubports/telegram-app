@@ -31,6 +31,12 @@ Page {
     }
 
     ContentPeerPicker {
+        anchors {
+            top: picker.bottom
+            left: parent.left
+            right: parent.right
+            margins: units.gu(6)
+        }
         visible: parent.visible
         contentType: picker.contentType
         handler: picker.handler
