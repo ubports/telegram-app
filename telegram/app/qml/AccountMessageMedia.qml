@@ -1,9 +1,9 @@
-import QtQuick 2.4
-import Ubuntu.Components 1.3
+import QtQuick 2.4 
+import Ubuntu.Components 1.3 
 
-import AsemanTools 1.0
-import TelegramQML 1.0
-import QtGraphicalEffects 1.0
+import AsemanTools 1.0 
+import TelegramQML 1.0 
+import QtGraphicalEffects 1.0 
 
 import "components"
 import "ui"
@@ -211,6 +211,21 @@ Item {
         }
     }
 
+    Label {
+        anchors.top: parent.top
+        anchors.left: parent.left
+        font.weight: Font.DemiBold
+        fontSize: "x-small"
+        color: "black"
+        visible: !download_frame.visible
+        text: {
+                if (!isSticker && !Cutegram.filsIsImage(file_handler.filePath))
+                    return file_handler.fileName;
+                else
+                    return "";
+        }
+    }
+
     FastBlur {
         anchors.fill: media_img
         source: media_img
@@ -267,9 +282,9 @@ Item {
             text: {
                 if(downloading)
                     return Math.floor(file_handler.progressCurrentByte/(1024*10.24))/100 + "MB/" +
-                           Math.floor(size/(1024*10.24))/100 + "MB"
+                           Math.floor(size/(1024*10.24))/100 + "MB";
                 else
-                    file_handler.fileName + "\n" + Math.floor(size/(1024*10.24))/100 + "MB"
+                    return file_handler.fileName + "\n" + Math.floor(size/(1024*10.24))/100 + "MB";
             }
 
             property int size: file_handler.fileSize
