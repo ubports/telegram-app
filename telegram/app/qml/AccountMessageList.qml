@@ -304,7 +304,6 @@ Rectangle {
                     else
                         mlist.selectItem(message_item);
                 }
-                message_item.click();
             }
 
             onClicked: {
@@ -314,6 +313,8 @@ Rectangle {
                             selected = false;
                         else
                             selected = true;
+                    } else {
+                        message_item.click();
                     }
                 }
                 else
