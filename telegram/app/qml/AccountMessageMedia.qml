@@ -32,17 +32,15 @@ Item {
     property variant mediaPlayer
     property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     onIsAudioMessageChanged: {
-        /*
         if(isAudioMessage) {
             if(mediaPlayer)
                 mediaPlayer.destroy()
-            //mediaPlayer = media_player_component.createObject(msg_media)
+            mediaPlayer = media_player_component.createObject(msg_media)
         } else {
             if(mediaPlayer)
                 mediaPlayer.destroy()
             mediaPlayer = 0
         }
-        */
     }
 
     signal mediaClicked(int type, string path);
@@ -269,7 +267,7 @@ Item {
                     return Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
                 }
             }
-            visible: !downloading && !msg_media.isAudioMessage
+            visible: !downloading
         }
 
         Label {
@@ -323,7 +321,7 @@ Item {
             right: parent.right
             rightMargin: units.dp(4)
         }
-        visible: msg_media.showStatus && file_handler.targetType != FileHandler.TypeTargetMediaAudio
+        visible: msg_media.showStatus
 
         message: msg_media.message
         hasMedia: msg_media.hasMedia

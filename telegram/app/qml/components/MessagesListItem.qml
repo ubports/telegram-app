@@ -244,7 +244,7 @@ ListItem {
                     // Math.max(message_status.x + message_status.width - message_text_frame.x)//, column.maxWidthNoMsg)
                     height: childrenRect.height
                     anchors.left: parent.left
-                    visible: !hasMedia || message_media.isAudioMessage
+                    visible: !hasMedia
 
                     Label {
                         id: message_text
@@ -288,11 +288,7 @@ ListItem {
 
                         property real htmlWidth: Cutegram.htmlWidth(text)
                         property string messageText: {
-                            if (message_media.isAudioMessage) {
-                                return i18n.tr("Audio attachment not supported yet ;(")
-                            } else {
-                                return message_text.parseText(message.message)
-                            }
+                            return message_text.parseText(message.message)
                         }
                     }
 
