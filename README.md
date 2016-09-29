@@ -21,7 +21,13 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
     Else if you're building for desktop, install the build dependencies using the following command:
         sudo apt-get install libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev
 
-2)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
+2)  Environment setup
+    Change your directory into below:
+        ~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf
+    then make a symbolic link bewteen qtc_chroot_wrapper and the make:
+        ln -s /usr/share/qtcreator/ubuntu/scripts/qtc_chroot_wrapper.py make
+
+3)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
     - Run ./setup.sh -t <build_type> -d
     
     The help command will show the available values for <build_type>.
@@ -32,7 +38,7 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
     as the path to qmake or make, the path to system libraries, the name of the chroot, etc.
     The env variables are grouped at the beginning of setup.sh, to make the customization easier.
     
-3)  Build Telegram for Ubuntu
+4)  Build Telegram for Ubuntu
     - Run ./setup.sh -t <build_type> -b
     
     This will build the app in the build path defined by setup.sh 
@@ -41,7 +47,7 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
     as the path to qmake or make, the path to system libraries, the name of the chroot, etc.
     The env variables are grouped at the beginning of setup.sh, to make the customization easier.
     
-4)  (Optional) Build the click package and install it using adb (requires an Ubuntu Touch 
+5)  (Optional) Build the click package and install it using adb (requires an Ubuntu Touch 
     mobile device connected via USB with developer mode enabled):
     - Run ./setup.sh -t mobile -c
     
