@@ -7,7 +7,7 @@ OR  "./setup.sh -t desktop -db" for a full desktop build
 ### How to build
 
 This build setup has been tested on:
-- Ubuntu Vivid 15.04 with Overlay PPA enabled
+- Ubuntu Xenial 16.04
 
 The following instructions assume you downloaded Telegram for Ubuntu source and changed ("cd") to the project's root directory.
 
@@ -19,7 +19,7 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
             sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 maint
             apt-get install libthumbnailer-qt-dev:armhf thumbnailer-service:armhf
     Else if you're building for desktop, install the build dependencies using the following command:
-        sudo apt-get install libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev
+        sudo apt-get install libthumbnailer-qt-dev qml-module-ubuntu-connectivity qtdeclarative5-ubuntu-contacts0.1
 
 2)  Environment setup
     Change your directory into below:
