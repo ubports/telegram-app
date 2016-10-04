@@ -83,6 +83,22 @@ Rectangle {
         property variant suggestionItem
         property variant attachmentItem
         property variant emojiItem
+
+        // Voice message sending
+        property var audioItem: 0
+        property bool audioRecorded: audioItem != 0
+        property alias recording: audioRecordingBar.recording
+
+        property int buttonsOpacity: {
+            if (privates.recording) {
+                // we need to fade the buttons in when dragging
+                return dragTarget.dragAmount
+            } else if (privates.audioRecorded) {
+                return 0
+            } else {
+                return 1
+            }
+        }
     }
 
     Timer {
@@ -143,17 +159,21 @@ Rectangle {
         property int oldLength: 0
 
         anchors {
-            left: parent.left
+            left: privates.recording ? anchorPoint.right: parent.left
             right: sticker_button_box.left
             bottom: parent.bottom
             margins: units.gu(1)
             rightMargin: 0
         }
 
+        opacity: privates.buttonsOpacity
+        Behavior on opacity { UbuntuNumberAnimation {} }
+        visible: opacity > 0 && !messagePlaceholder.visible
+
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
         enabled: NetworkingStatus.online && telegramObject.connected
-        visible: !messagePlaceholder.visible
+
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
 
@@ -253,9 +273,13 @@ Rectangle {
         anchors {
             top: parent.top
             bottom: parent.bottom
-            right: send_button_box.left
+            right: attachments_button_box.left
         }
         width: units.gu(6)
+
+        opacity: privates.buttonsOpacity
+        Behavior on opacity { UbuntuNumberAnimation {} }
+        visible: opacity > 0
 
         AbstractButton {
             anchors.fill: parent
@@ -286,6 +310,45 @@ Rectangle {
     }
 
     Item {
+        id: attachments_button_box
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            right: send_button_box.left
+        }
+        width: units.gu(6)
+
+        opacity: privates.buttonsOpacity
+        Behavior on opacity { UbuntuNumberAnimation {} }
+        visible: opacity > 0
+
+        AbstractButton {
+            anchors.fill: parent
+            activeFocusOnPress: false
+            onClicked: {
+                if (!telegramObject.connected || !NetworkingStatus.online) return
+
+                Haptics.play()
+                if (!privates.attachmentItem) {
+                    privates.attachmentItem = attach_panel_component.createObject(smsg)
+                }
+                privates.attachmentItem.isShown = true;
+            }
+        }
+
+        Image {
+            id: attach_image
+            anchors.centerIn: parent
+            height: units.dp(22)
+            width: height
+            sourceSize: Qt.size(width, height)
+            fillMode: Image.PreserveAspectFit
+            source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
+            visible: !messagePlaceholder.visible
+        }
+    }
+
+    Item {
         id: send_button_box
         anchors {
             top: parent.top
@@ -294,6 +357,7 @@ Rectangle {
         }
         width: send_mouse_area.width
         visible: !messagePlaceholder.visible
+        enabled: NetworkingStatus.online && telegramObject.connected
 
         MouseArea {
             id: send_mouse_area
@@ -304,18 +368,18 @@ Rectangle {
             states: [
                 State {
                     name: "send"
-                    when: txt.inputMethodComposing || txt.text.length > 0
+                    when: txt.inputMethodComposing || txt.text.length > 0 || privates.audioRecorded
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
                     }
                 },
                 State {
-                    name: "attach"
-                    when: !txt.inputMethodComposing && txt.text.length == 0
+                    name: "send-audio"
+                    when: !txt.inputMethodComposing && txt.text.length == 0 && !privates.audioRecorded
                     PropertyChanges {
                         target: send_image
-                        source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
+                        source: Qt.resolvedUrl("image://theme/audio-input-microphone-symbolic")
                     }
                 }
             ]
@@ -325,15 +389,23 @@ Rectangle {
 
                 if (!telegramObject.connected || !NetworkingStatus.online) return
 
-                if (state == "attach") {
-                    Haptics.play()
-                    if (!privates.attachmentItem) {
-                        privates.attachmentItem = attach_panel_component.createObject(smsg)
-                    }
-                    privates.attachmentItem.isShown = true;
-                } else if (state == "send" && txt.text.length > 0) {
+                if (state == "send" && txt.text.length > 0) {
                     Haptics.play()
                     smsg.send()
+                }
+                else if (state == "send" && privates.audioRecorded && audioPlaybackBar.visible) {
+                    var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+                    var urls = []
+                    urls.push(privates.audioItem)
+                    console.log("sending audio attachment")
+                    send_files_timer.send(peerId, urls, false, true)
+
+                    privates.audioItem = 0
+                }
+                else if (state == "send-audio" && !privates.audioRecorded) {
+                    // @TODO: if the microphone is not allowed in config show a warning popover
+                    // or hide microphone button (send-audio) 
+                    PopupUtils.open(microphoneWarningPopover, send_button_box)
                 }
             }
 
@@ -344,8 +416,31 @@ Rectangle {
                 width: height
                 fillMode: Image.PreserveAspectFit
                 fadeStyle: "cross"
-                source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
+                source: Qt.resolvedUrl("image://theme/audio-input-microphone-symbolic")
             }
+
+            onPressed: {
+                if (state == "send-audio")
+                    audioRecordingBar.startRecording()
+            }
+
+            onReleased: {
+                if (state == "send-audio") {
+                    audioRecordingBar.stopRecording()
+
+                    // if dragged past the threshold, cancel
+                    if (dragTarget.dragAmount >= 0.5) {
+                        privates.audioItem = 0
+                    }
+                }
+                dragTarget.reset()
+            }
+
+            // drag-to-cancel
+            drag.target: dragTarget
+            drag.axis: Drag.XAxis
+            drag.minimumX: smsg.x
+            drag.maximumX: send_button_box.x
         }
 
     }
@@ -528,5 +623,121 @@ Rectangle {
                 emoticons.destroy();
             }
         }
+    }
+
+    // Voice message sending
+    Component {
+        id: microphoneWarningPopover
+
+        Popover {
+            id: popover
+            Column {
+                id: containerLayout
+                anchors {
+                    left: parent.left
+                    top: parent.top
+                    right: parent.right
+                }
+                ListItem.Standard {
+                    text: i18n.tr("You have to press and hold the record icon")
+                    onClicked: {
+                        PopupUtils.close(popover)
+                    }
+                }
+                Connections {
+                    target: txt
+                    onTextChanged: PopupUtils.close(popover)
+                }
+            }
+        }
+    }
+
+    Item {
+        id: audioPlaybackBar
+
+        anchors {
+            left: parent.left
+            right: send_button_box.left
+            verticalCenter: parent.verticalCenter
+        }
+
+        opacity: privates.audioRecorded ? 1.0 : 0.0
+        Behavior on opacity { UbuntuNumberAnimation {} }
+        visible: opacity > 0
+
+        signal resetRequested()
+        onResetRequested: {
+            privates.audioItem = 0
+        }
+
+        TransparentButton {
+            id: closeButton
+            objectName: "closeButton"
+
+            anchors {
+                left: parent.left
+                leftMargin: units.gu(2)
+                verticalCenter: parent.verticalCenter
+            }
+
+            iconName: "close"
+
+            onClicked: {
+                audioPlaybackBar.resetRequested()
+            }
+        }
+
+        MediaPlayerItem {
+            id: audioPreview
+
+            anchors {
+                left: closeButton.right
+                right: parent.right
+                leftMargin: units.gu(1)
+                rightMargin: units.gu(1)
+                verticalCenter: parent.verticalCenter
+            }
+            height: smsg.height-units.gu(2)
+
+            filePath: privates.audioRecorded ? privates.audioItem : ""
+            isInsideBar: true
+        }
+    }
+
+    AudioRecordingBar {
+        id: audioRecordingBar
+
+        anchors {
+            left: parent.left
+            right: anchorPoint.left
+            verticalCenter: parent.verticalCenter
+        }
+
+        buttonOpacity: privates.recording ? 1 - dragTarget.dragAmount : 0
+
+        onAudioRecorded:  {
+            privates.audioItem = audio
+        }
+    }
+
+    Item {
+        id: dragTarget
+
+        property real recordingX: send_button_box.x
+        property real normalX: sticker_button_box.x
+        property real delta: recordingX - normalX
+        property real dragAmount: 1 - (x - normalX) / (delta > 0 ? delta : 0.0001)
+        x: recordingX
+        width: 0
+
+        function reset() {
+            x = Qt.binding(function(){return recordingX})
+        }
+    }
+
+    Item {
+        id: anchorPoint
+        x: (privates.recording || privates.audioRecorded) ? dragTarget.x : dragTarget.normalX
+        Behavior on x { UbuntuNumberAnimation { } }
     }
 }

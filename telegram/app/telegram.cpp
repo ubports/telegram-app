@@ -216,6 +216,17 @@ bool Cutegram::filsIsImage(const QString &pt)
     return p->mdb.mimeTypeForFile(path).name().toLower().contains("image");
 }
 
+bool Cutegram::filsIsAudio(const QString &pt)
+{
+    QString path = pt;
+    if(path.left(AsemanDevices::localFilesPrePath().length()) == AsemanDevices::localFilesPrePath())
+        path = path.mid(AsemanDevices::localFilesPrePath().length());
+    if(path.isEmpty())
+        return false;
+
+    return p->mdb.mimeTypeForFile(path).name().toLower().contains("audio");
+}
+
 qreal Cutegram::htmlWidth(const QString &txt)
 {
     p->doc->setHtml(txt);
@@ -244,6 +255,21 @@ QString Cutegram::storeMessage(const QString &msg)
     file.close();
 
     return path;
+}
+
+QString Cutegram::createTemporaryAudioFile(const QString &ext)
+{
+    // Create temporary file to store audio recorded
+    QDir dataLocation(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
+    if (!dataLocation.exists()) {
+        dataLocation.mkpath(".");
+    }
+    QTemporaryFile outputFile(dataLocation.absoluteFilePath("audioXXXXXX%1").arg(ext));
+    outputFile.setAutoRemove(false);
+    outputFile.open();
+    outputFile.close();
+
+    return QUrl::fromLocalFile(outputFile.fileName()).toString();
 }
 
 QString Cutegram::getTimeString(const QDateTime &dt)
