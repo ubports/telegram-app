@@ -229,26 +229,11 @@ ListItem {
                         case typeMessageActionChatSentImage:
                             if (fromUserName != "") {
                                 if (isAudioMessage)
-                                {
-                                    if(fromUser.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">You sent a voice message</font>")
-                                    else
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 sent you a voice message</font>").arg(fromUserName)
-                                }
+                                    res = i18n.tr("<font color=\"DarkBlue\">Voice message</font>")
                                 else if (isSticker)
-                                {
-                                    if(fromUser.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">You sent a sticker</font>")
-                                    else
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 sent you a sticker</font>").arg(fromUserName)
-                                }
+                                    res = i18n.tr("<font color=\"DarkBlue\">Sticker</font>")
                                 else
-                                {
-                                    if(fromUser.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">You sent a photo</font>")
-                                    else
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 sent you a photo</font>").arg(fromUserName)
-                                }
+                                    res = i18n.tr("<font color=\"DarkBlue\">Photo</font>")
                             }
                             break
 
