@@ -33,6 +33,8 @@ ListItem {
     property bool showMessage: true
     property Message message: telegram.message(dialog.topMessage)
     property variant messageDate: CalendarConv.fromTime_t(message.date)
+    property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
+    property alias isSticker: file_handler.isSticker
 
     property bool online: isChat ? false : (user.status.classType == image.typeUserStatusOnline)
 
@@ -50,6 +52,12 @@ ListItem {
 
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
+
+    FileHandler {
+        id: file_handler
+        telegram: telegramObject
+        target: message
+    }
 
     leadingActions: ListItemActions {
         actions: [
@@ -220,7 +228,12 @@ ListItem {
 
                         case typeMessageActionChatSentImage:
                             if (fromUserName != "") {
-                                res = i18n.tr("<font color=\"DarkBlue\">Photo/Sticker</font>")
+                                if (isAudioMessage)
+                                    res = i18n.tr("<font color=\"DarkBlue\">Voice message</font>")
+                                else if (isSticker)
+                                    res = i18n.tr("<font color=\"DarkBlue\">Sticker</font>")
+                                else
+                                    res = i18n.tr("<font color=\"DarkBlue\">Photo</font>")
                             }
                             break
 

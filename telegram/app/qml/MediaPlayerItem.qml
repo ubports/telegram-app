@@ -10,6 +10,10 @@ Item {
 
     property alias filePath: player.source
 
+    SystemPalette {
+        id: masterPalette
+    }
+
     DropShadow {
         anchors.fill: play_btn_scene
         radius: 4.0
@@ -101,7 +105,7 @@ Item {
 
         Rectangle {
             anchors.left: parent.left
-            anchors.right: seeker.horizontalCenter
+            anchors.right: (player.status == MediaPlayer.EndOfMedia) ? parent.right : seeker.horizontalCenter
             height: parent.height
             radius: parent.radius
             color: masterPalette.highlight
