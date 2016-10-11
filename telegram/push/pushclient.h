@@ -34,6 +34,7 @@ public:
     void setAppId(const QString &appId);
     QString getToken();
     QString getStatus() { return this->status; }
+    QStringList getNotifications() { return this->notifications; }
     int getCount();
     void setCount(int count);
 
@@ -41,7 +42,7 @@ public:
 
     Q_PROPERTY(QString appId WRITE setAppId READ getAppId NOTIFY appIdChanged);
     Q_PROPERTY(QString token READ getToken NOTIFY tokenChanged);
-    Q_PROPERTY(QStringList notifications NOTIFY notificationsChanged);
+    Q_PROPERTY(QStringList notifications READ getNotifications NOTIFY notificationsChanged);
     Q_PROPERTY(QString status READ getStatus NOTIFY statusChanged);
     Q_PROPERTY(int count READ getCount WRITE setCount NOTIFY countChanged)
 
