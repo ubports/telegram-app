@@ -54,40 +54,40 @@ Item {
         property color keyColorIn: "#ffffff"
         property real threshold: 0.1
 
-        readonly property string mirroredShader: "
-            uniform highp mat4 qt_Matrix;
-            attribute highp vec4 qt_Vertex;
-            attribute highp vec2 qt_MultiTexCoord0;
-            varying highp vec2 qt_TexCoord0;
-            void main() {
-                qt_TexCoord0 = vec2(1.0 - qt_MultiTexCoord0.s, qt_MultiTexCoord0.t);
-                gl_Position = qt_Matrix * qt_Vertex;
+        readonly property string mirroredShader: " \
+            uniform highp mat4 qt_Matrix; \
+            attribute highp vec4 qt_Vertex; \
+            attribute highp vec2 qt_MultiTexCoord0; \
+            varying highp vec2 qt_TexCoord0; \
+            void main() { \
+                qt_TexCoord0 = vec2(1.0 - qt_MultiTexCoord0.s, qt_MultiTexCoord0.t); \
+                gl_Position = qt_Matrix * qt_Vertex; \
             }"
 
-        readonly property string originalShader: "
-            uniform highp mat4 qt_Matrix;
-            attribute highp vec4 qt_Vertex;
-            attribute highp vec2 qt_MultiTexCoord0;
-            varying highp vec2 qt_TexCoord0;
-            void main() {
-                qt_TexCoord0 = qt_MultiTexCoord0;
-                gl_Position = qt_Matrix * qt_Vertex;
+        readonly property string originalShader: " \
+            uniform highp mat4 qt_Matrix; \
+            attribute highp vec4 qt_Vertex; \
+            attribute highp vec2 qt_MultiTexCoord0; \
+            varying highp vec2 qt_TexCoord0; \
+            void main() { \
+                qt_TexCoord0 = qt_MultiTexCoord0; \
+                gl_Position = qt_Matrix * qt_Vertex; \
             }"
 
         vertexShader: root.mirror ? mirroredShader : originalShader
 
-        fragmentShader: "
-            varying highp vec2 qt_TexCoord0;
-            uniform sampler2D source;
-            uniform highp vec4 keyColorOut;
-            uniform highp vec4 keyColorIn;
-            uniform lowp float threshold;
-            uniform lowp float qt_Opacity;
-            void main() {
-                lowp vec4 sourceColor = texture2D(source, qt_TexCoord0);
-                gl_FragColor = mix(vec4(keyColorOut.rgb, 1.0) * sourceColor.a,
-                               sourceColor,
-                               step(threshold, distance(sourceColor.rgb / sourceColor.a, keyColorIn.rgb))) * qt_Opacity;
+        fragmentShader: " \
+            varying highp vec2 qt_TexCoord0; \
+            uniform sampler2D source; \
+            uniform highp vec4 keyColorOut; \
+            uniform highp vec4 keyColorIn; \
+            uniform lowp float threshold; \
+            uniform lowp float qt_Opacity; \
+            void main() { \
+                lowp vec4 sourceColor = texture2D(source, qt_TexCoord0); \
+                gl_FragColor = mix(vec4(keyColorOut.rgb, 1.0) * sourceColor.a, \
+                               sourceColor, \
+                               step(threshold, distance(sourceColor.rgb / sourceColor.a, keyColorIn.rgb))) * qt_Opacity; \
             }"
     }
 }
