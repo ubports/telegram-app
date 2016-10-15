@@ -113,7 +113,7 @@ void UpgradeV2::createConfig() {
     */
 }
 
-inline void UpgradeV2::copySecretPhoto(qint64 peer, bool out, qint64 mediaId, QSqlDatabase &newDb) {
+inline void UpgradeV2::copySecretPhoto(qint64 peer, bool /*out*/, qint64 mediaId, QSqlDatabase &newDb) {
     QSqlQuery photo(db);
     photo.prepare("SELECT caption, date, accessHash, userId FROM mediaPhotos WHERE id = :id");
     photo.bindValue(":id", mediaId);

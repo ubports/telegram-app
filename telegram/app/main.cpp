@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     AsemanApplication app(argc, argv);
     app.setApplicationName("Telegram");
     app.setApplicationDisplayName("Telegram");
-    app.setApplicationVersion("2.2.31.1");
+    app.setApplicationVersion("2.2.33.1");
     app.setOrganizationDomain("com.ubuntu.telegram");
     app.setOrganizationName("com.ubuntu.telegram");
 //    app.setWindowIcon(QIcon(":/qml/Cutegram/files/icon.png"));

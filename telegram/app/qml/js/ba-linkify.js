@@ -98,7 +98,7 @@ default_options = {
   callback: function( text, href ) {
     return href ? '<a href="' + href + '" title="' + href + '">' + text + '</a>' : text;
   },
-  punct_regexp: /(?:[!?.,:;'"]|(?:&|&amp;)(?:lt|gt|quot|apos|raquo|laquo|rsaquo|lsaquo);)$/
+  punct_regexp: new RegExp("(?:[!?.,:;'\"]|(?:&|&amp;)(?:lt|gt|quot|apos|raquo|laquo|rsaquo|lsaquo);)$")
 };
 
 function linkify( txt, options ) {
