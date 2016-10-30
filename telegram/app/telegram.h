@@ -100,8 +100,8 @@ public:
 
     Q_INVOKABLE void deleteFile(const QString &path);
     Q_INVOKABLE QString storeMessage(const QString &msg);
-    Q_INVOKABLE QString createTemporaryAudioFile(const QString &ext);
-
+    Q_INVOKABLE QString createTemporaryFile(const QString &phone, const QString &prefix, const QString &ext);
+    Q_INVOKABLE void deleteTemporaryFiles(const QString &phone, const QString &prefix);
     Q_INVOKABLE QString getTimeString( const QDateTime & dt );
 
     Q_INVOKABLE int showMenu( const QStringList & actions, QPoint point = QPoint() );

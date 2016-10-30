@@ -257,19 +257,27 @@ QString Cutegram::storeMessage(const QString &msg)
     return path;
 }
 
-QString Cutegram::createTemporaryAudioFile(const QString &ext)
+QString Cutegram::createTemporaryFile(const QString &phone, const QString &prefix, const QString &ext)
 {
     // Create temporary file to store audio recorded
-    QDir dataLocation(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation));
+    QDir dataLocation(QDir::homePath() + "/.cache/" + QCoreApplication::organizationDomain() + "/" + phone + "/temp/" + prefix);
     if (!dataLocation.exists()) {
         dataLocation.mkpath(".");
     }
-    QTemporaryFile outputFile(dataLocation.absoluteFilePath("audioXXXXXX%1").arg(ext));
+    QTemporaryFile outputFile(dataLocation.absoluteFilePath("XXXXXX%1").arg(ext));
     outputFile.setAutoRemove(false);
     outputFile.open();
     outputFile.close();
 
     return QUrl::fromLocalFile(outputFile.fileName()).toString();
+}
+
+void Cutegram::deleteTemporaryFiles(const QString &phone, const QString &prefix)
+{
+    // Create temporary file to store audio recorded
+    QDir dir(QDir::homePath() + "/.cache/" + QCoreApplication::organizationDomain() + "/" + phone + "/temp/" + prefix);
+    qDebug() << "deleting" << dir.absolutePath();
+    dir.removeRecursively();
 }
 
 QString Cutegram::getTimeString(const QDateTime &dt)

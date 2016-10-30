@@ -22,6 +22,8 @@ AsemanAudioRecorder::AsemanAudioRecorder(QObject *parent) :
             SIGNAL(stateChanged()));
     connect(p->recorder, SIGNAL(statusChanged(QMediaRecorder::Status)),
             SIGNAL(statusChanged()));
+    connect(p->recorder, SIGNAL(error(QMediaRecorder::Error)),
+            SIGNAL(errorChanged()));
     connect(p->recorder, SIGNAL(availabilityChanged(bool)), SIGNAL(availableChanged()));
     connect(p->recorder, SIGNAL(mutedChanged(bool)), SIGNAL(muteChanged()));
     connect(p->recorder, SIGNAL(volumeChanged(qreal)), SIGNAL(volumeChanged()));
@@ -41,6 +43,9 @@ void AsemanAudioRecorder::setEncoderSettings(AsemanAudioEncoderSettings *setting
 
     p->encoderSettings = settings;
     emit encoderSettingsChanged();
+
+    if (!p->recorder->supportedAudioCodecs().contains(settings->codec()))
+        emit errorChanged();
 }
 
 void AsemanAudioRecorder::setOutput(const QUrl &url)
@@ -110,6 +115,14 @@ bool AsemanAudioRecorder::available() const
 int AsemanAudioRecorder::availability() const
 {
     return p->recorder->availability();
+}
+
+int AsemanAudioRecorder::error() const
+{
+    if (p->encoderSettings &&
+        !p->recorder->supportedAudioCodecs().contains(p->encoderSettings->codec()))
+        return AsemanAudioRecorder::CodecError;
+    return p->recorder->error();
 }
 
 int AsemanAudioRecorder::state() const

@@ -402,10 +402,11 @@ Rectangle {
 
                     privates.audioItem = 0
                 }
-                else if (state == "send-audio" && !privates.audioRecorded) {
-                    // @TODO: if the microphone is not allowed in config show a warning popover
-                    // or hide microphone button (send-audio) 
-                    PopupUtils.open(microphoneWarningPopover, send_button_box)
+                else if (state == "send-audio" &&
+                         !audioRecordingBar.resourceError &&
+                         !audioRecordingBar.codecError &&
+                         !privates.audioRecorded) {
+                    PopupUtils.open(recorderWarningPopover, send_button_box)
                 }
             }
 
@@ -430,6 +431,7 @@ Rectangle {
 
                     // if dragged past the threshold, cancel
                     if (dragTarget.dragAmount >= 0.5) {
+                        Cutegram.deleteFile(privates.audioItem)
                         privates.audioItem = 0
                     }
                 }
@@ -627,7 +629,7 @@ Rectangle {
 
     // Voice message sending
     Component {
-        id: microphoneWarningPopover
+        id: recorderWarningPopover
 
         Popover {
             id: popover
@@ -639,7 +641,12 @@ Rectangle {
                     right: parent.right
                 }
                 ListItem.Standard {
-                    text: i18n.tr("You have to press and hold the record icon")
+                    text: {
+                        if (audioRecordingBar.codecError) // gstreamer opusenc plugin is not installed
+                            return i18n.tr("Audio attachment not supported yet ;(")
+                        else
+                            return i18n.tr("You have to press and hold the record icon")
+                    }
                     onClicked: {
                         PopupUtils.close(popover)
                     }
@@ -683,6 +690,7 @@ Rectangle {
             iconName: "close"
 
             onClicked: {
+                Cutegram.deleteFile(privates.audioItem)
                 audioPlaybackBar.resetRequested()
             }
         }
@@ -707,6 +715,8 @@ Rectangle {
     AudioRecordingBar {
         id: audioRecordingBar
 
+        telegram: telegramObject
+
         anchors {
             left: parent.left
             right: anchorPoint.left
@@ -715,8 +725,27 @@ Rectangle {
 
         buttonOpacity: privates.recording ? 1 - dragTarget.dragAmount : 0
 
-        onAudioRecorded:  {
+        onAudioRecorded: {
             privates.audioItem = audio
+        }
+
+        onCodecErrorChanged: {
+            if (codecError) {
+                PopupUtils.open(recorderWarningPopover, send_button_box)
+            }
+        }
+
+        onResourceErrorChanged: {
+            if (resourceError) {
+                PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
+                    send_button_box, {
+                        text: i18n.tr("Please grant microphone access on System Settings > Security & Privacy."),
+                        onAccept: function() {
+                            Qt.openUrlExternally("settings:///system/security-privacy")
+                        }
+                    }
+                );
+            }
         }
     }
 

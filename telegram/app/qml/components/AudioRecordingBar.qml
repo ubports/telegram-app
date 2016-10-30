@@ -20,6 +20,7 @@ import QtQuick 2.0
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 
+import TelegramQML 1.0
 import AsemanTools 1.0
 
 Item {
@@ -28,7 +29,12 @@ Item {
     Behavior on opacity { UbuntuNumberAnimation {} }
     visible: opacity > 0
 
+    property Telegram telegram
+
     readonly property bool recording: audioRecorder.recording
+    readonly property bool codecError: audioRecorder.codecError
+    readonly property bool resourceError: audioRecorder.resourceError
+
     property real buttonOpacity: 1
 
     signal audioRecorded(var audio)
@@ -52,19 +58,28 @@ Item {
         id: audioRecorder
         readonly property bool ready: status == Loader.Ready && item != null
         readonly property bool recording: ready ? item.recording : false
+        property bool codecError: false
+        property bool resourceError: false
+
         function record() {
             audioRecorder.active = true
-            item.encoderSettings = audioEncoderSettings
-            item.output = Cutegram.createTemporaryAudioFile(".ogg")
-            item.record()
+            item.output = Cutegram.createTemporaryFile(telegram.phoneNumber, "audio", ".ogg")
+            if (!codecError && !resourceError)
+                item.record()
         }
         function stop() {
-            item.stop()
+            if (!codecError && !resourceError)
+                item.stop()
             audioRecorder.active = false
         }
  
         active: false
         sourceComponent: audioRecorderComponent
+        onLoaded: {
+            codecError = false
+            resourceError = false
+            item.encoderSettings = audioEncoderSettings
+        }
     }
 
     Component {
@@ -78,10 +93,22 @@ Item {
 
                     if (!Cutegram.filsIsAudio(filePath)) {
                         //If the recording process is too quick the generated file is not an audio one and should be ignored
+                        Cutegram.deleteFile(filePath)
                         return;
                     }
 
                     recordingBar.audioRecorded(filePath)
+                }
+            }
+            onErrorChanged: {
+                switch(error) {
+                    case AudioRecorder.ResourceError:
+                        audioRecorder.resourceError = true
+                        break
+                    case AudioRecorder.CodecError:
+                        audioRecorder.codecError = true
+                        break
+                    default:
                 }
             }
         }
