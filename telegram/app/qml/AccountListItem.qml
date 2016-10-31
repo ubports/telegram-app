@@ -146,14 +146,6 @@ Item {
                 telegram.updatesGetState();
             }
         }
-
-        onTotalUploadedPercentChanged: {
-            if (telegram.totalUploadedPercent == 100)
-            {
-                console.log("cleaning temporary audio files");
-                Cutegram.deleteTemporaryFiles(telegram.phoneNumber, "audio");
-            }
-        }
     }
 
     Component {

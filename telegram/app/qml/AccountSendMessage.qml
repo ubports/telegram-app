@@ -716,6 +716,7 @@ Rectangle {
         id: audioRecordingBar
 
         telegram: telegramObject
+        signal totalUploadedPercentChanged()
 
         anchors {
             left: parent.left
@@ -745,6 +746,24 @@ Rectangle {
                         }
                     }
                 );
+            }
+        }
+
+        Component.onCompleted: {
+            telegram.totalUploadedPercentChanged.connect(audioRecordingBar.totalUploadedPercentChanged);
+        }
+
+        Component.onDestruction: {
+            telegram.totalUploadedPercentChanged.disconnect(audioRecordingBar.totalUploadedPercentChanged);
+        }
+
+        onTotalUploadedPercentChanged: {
+            if (telegram.totalUploadedPercent == 100 &&
+                !privates.audioRecorded &&
+                !privates.recording)
+            {
+                console.log("cleaning temporary audio files");
+                Cutegram.deleteTemporaryFiles(telegram.phoneNumber, "audio");
             }
         }
     }
