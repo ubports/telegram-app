@@ -177,6 +177,7 @@ Rectangle {
 
     MultipleSelectionListView {
         id: mlist
+        objectName: "messagesListView"
         anchors.fill: parent
         cacheBuffer: units.gu(10) * 20
         clip: true
@@ -229,6 +230,7 @@ Rectangle {
         listModel: messages_model
         listDelegate: MessagesListItem {
             id: message_item
+            objectName: "message%1".arg(index)
             maximumMediaHeight: acc_msg_list.maximumMediaHeight
             maximumMediaWidth: acc_msg_list.maximumMediaWidth
             message: item

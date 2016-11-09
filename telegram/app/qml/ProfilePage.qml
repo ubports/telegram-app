@@ -17,6 +17,7 @@ import "js/colors.js" as Colors
 Page {
     id: profile_page
     title: isChat ? i18n.tr("Group Info") : i18n.tr("Contact Info")
+    objectName: "profilePage"
 
     property Telegram telegram
     property Dialog dialog
@@ -59,6 +60,12 @@ Page {
     header: PageHeader {
         title: profile_page.title
         trailingActionBar.actions: isChat ? groupActions : noActions
+        leadingActionBar.actions: Action {
+            id: back_action
+            objectName: "profileBack"
+            iconName: "back"
+            onTriggered: pageStack.removePages(profile_page);
+        }
     }
 
     signal openDialog(var dialogId)
@@ -186,6 +193,7 @@ Page {
 
     MediaImport {
         id: photo_importer
+        objectName: "profileImageImport"
         contentType: ContentType.Pictures
 
         onMediaReceived: {
@@ -235,6 +243,7 @@ Page {
 
     ClickableContactImage {
         id: profile_image
+        objectName: "profileImage"
         anchors {
             top: parent.top
             topMargin: units.gu(2) + profile_page.header.height
@@ -388,6 +397,7 @@ Page {
                 spacing: units.dp(4)
 
                 Label {
+                    objectName: "profilePhoneNumber"
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "large"
@@ -449,6 +459,7 @@ Page {
                 spacing: units.dp(4)
 
                 Label {
+                    objectName: "profileUserName"
                     id: username_label
                     fontSize: "large"
                     font.family: "Helvetica"
@@ -621,6 +632,7 @@ Page {
 
         Switch {
             id: block_check
+            objectName: "switchBlock"
 
             property bool silentChecked
             property bool override: false
@@ -656,6 +668,7 @@ Page {
 
     ListView {
         id: participants_list
+        objectName: "memberListView"
         anchors {
             top: blocked_row.bottom
             topMargin: units.gu(2)
@@ -669,6 +682,7 @@ Page {
         model: chat_participants_model
         delegate: TelegramContactsListItem {
             id: contact_item
+            objectName: "dialog%1".arg(index)
             telegram: profile_page.telegram
             user: telegram.user(item.userId)
 

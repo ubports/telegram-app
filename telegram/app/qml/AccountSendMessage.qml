@@ -139,6 +139,7 @@ Rectangle {
 
     TextArea {
         id: txt
+        objectName: "sendMessageTextArea"
 
         property int oldLength: 0
 
@@ -153,6 +154,7 @@ Rectangle {
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
         enabled: NetworkingStatus.online && telegramObject.connected
+//        enabled: True
         visible: !messagePlaceholder.visible
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -297,6 +299,7 @@ Rectangle {
 
         MouseArea {
             id: send_mouse_area
+            objectName: "sendMouseArea"
             height: parent.height
             width: units.gu(6)
             enabled: telegramObject.connected
@@ -324,6 +327,7 @@ Rectangle {
                 Qt.inputMethod.commit();
 
                 if (!telegramObject.connected || !NetworkingStatus.online) return
+//                if (!telegramObject.connected) return
 
                 if (state == "attach") {
                     Haptics.play()

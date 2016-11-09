@@ -81,6 +81,7 @@ Item {
             spacing: units.gu(2.8)
 
             AttachPanelItem {
+                objectName: "panelPhoto"
                 id: attach_photo_item
                 // TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
                 text: i18n.tr("Photo")
@@ -94,6 +95,7 @@ Item {
 
             AttachPanelItem {
                 // TRANSLATORS: Used in attach menu, when sending a video to the conversation.
+                objectName: "panelVideo"
                 text: i18n.tr("Video")
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_video.png")
                 onClicked: {
@@ -105,6 +107,7 @@ Item {
 
             AttachPanelItem {
                 // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
+                objectName: "panelFile"
                 text: i18n.tr("File")
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_file.png")
                 onClicked: {
@@ -115,6 +118,7 @@ Item {
             }
 
             AttachPanelItem {
+                objectName: "panelClose"
                 height: attach_photo_item.height
                 // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
                 image: Qt.resolvedUrl("qrc:/qml/files/android/attach_hide1.png")

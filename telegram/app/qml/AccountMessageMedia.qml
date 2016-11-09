@@ -315,6 +315,7 @@ Item {
 
     MessageStatus {
         id: message_status
+        objectName: "mediaMessageStatus"
         anchors {
             bottom: parent.bottom
             bottomMargin: units.dp(4)

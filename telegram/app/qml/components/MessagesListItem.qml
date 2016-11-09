@@ -225,6 +225,7 @@ ListItem {
                 
                 AccountMessageMedia {
                     id: message_media
+                    objectName: "accountMessageMedia"
                     message: message_item.message
                     visible: message_media.hasMedia && !uploading
                     showStatus: !hasLink
@@ -248,6 +249,7 @@ ListItem {
 
                     Label {
                         id: message_text
+                        objectName: "messageText"
                         // Taken from messaging-app
                         function parseText(text) {
                             var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;
@@ -294,6 +296,7 @@ ListItem {
 
                     MessageStatus {
                         id: message_status
+                        objectName: "messageStatus"
                         anchors {
                             top: message_text.bottom
                             right: parent.right

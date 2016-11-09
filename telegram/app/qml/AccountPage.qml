@@ -75,6 +75,7 @@ Page {
 
     AccountPanel {
         id: account_panel
+        objectName:"accountPanel"
         anchors {
             left: parent.left
             top: parent.top
@@ -168,6 +169,7 @@ Page {
 
     AccountDialogList {
         id: dialogs
+        objectName: "accountDialogList"
         anchors{
             fill: parent
             topMargin: account_page.header.height
@@ -289,6 +291,7 @@ Page {
     header: default_header
     PageHeader {
         id: default_header
+        objectName: "defaultHeader"
         visible: account_page.header === default_header
         title: {
             if (NetworkingStatus.online) {
@@ -305,6 +308,7 @@ Page {
             }
         }
         leadingActionBar.actions: Action {
+            objectName: "navigationMenu"
             iconName: "navigation-menu"
             onTriggered: {
                 account_panel.opened ? account_panel.close() : account_panel.open()

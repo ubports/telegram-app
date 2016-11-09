@@ -85,6 +85,7 @@ TelegramPage {
             anchors.horizontalCenter: parent.horizontalCenter
             text: i18n.tr("Done")
             enabled: isOnline && phoneNumber.length > 0
+//            enabled: phoneNumber.length > 0
             focus: true
             onClicked: phone_number.accepted()
         }

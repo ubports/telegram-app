@@ -52,6 +52,7 @@ Item {
 
         Image {
             id: status_image
+            objectName: "statusImage"
             anchors.verticalCenter: parent.verticalCenter
             width: units.gu(2)
             height: width

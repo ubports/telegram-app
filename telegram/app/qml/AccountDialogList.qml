@@ -57,6 +57,7 @@ Item {
 
     ListView {
         id: dialog_list
+        objectName: "dialogListView"
         anchors {
             top: parent.top
             left: parent.left
@@ -81,6 +82,7 @@ Item {
 
         delegate: DialogsListItem {
             id: list_item
+            objectName: "dialog%1".arg(index)
             anchors {
                 topMargin: units.dp(3)
                 leftMargin: units.dp(5)
