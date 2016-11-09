@@ -250,21 +250,6 @@ ListItem {
                     Label {
                         id: message_text
                         objectName: "messageText"
-                        // Taken from messaging-app
-                        function parseText(text) {
-                            var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;
-                            // remove html tags
-                            text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
-                            // replace line breaks
-                            text = text.replace(/(\n)+/g, '<br />');
-                            // check for links
-                            var htmlText = BaLinkify.linkify(text);
-                            if (htmlText !== text) {
-                                return htmlText;
-                            }
-                            // linkify phone numbers if no web links were found
-                            return text.replace(phoneExp, '<a href="tel:///$1">$1</a>');
-                        }
 
                         anchors {
                             top: parent.top
