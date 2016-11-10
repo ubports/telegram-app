@@ -36,14 +36,14 @@ ListItem {
 
     property Message message
     property string messageText: message.message
+    property string messageHtmlText: parseText(message.message)
     property User user: telegramObject.user(message.fromId)
     property User fwdUser: telegramObject.user(message.fwdFromId)
 
     property bool sent: message.sent
     property bool uploading: message.upload.fileId !== 0
 
-    property variant messageLinks: Tools.stringLinks(message.message)
-    property bool hasLink: messageLinks.length !== 0
+    property bool hasLink: htmlHasLinks(messageHtmlText)
     property bool allowLoadLinks: telegram.userData.isLoadLink(user.id)
 
     property alias maximumMediaHeight: message_media.maximumMediaHeight
@@ -62,6 +62,26 @@ ListItem {
     signal tagSearchRequest(string tag);
     signal messageFocusRequest(int msgId);
     signal previewRequest(int type, string path)
+
+    // Taken from messaging-app
+    function parseText(text) {
+        var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;
+        // remove html tags
+        text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
+        // replace line breaks
+        text = text.replace(/(\n)+/g, '<br />');
+        // check for links
+        var htmlText = BaLinkify.linkify(text);
+        if (htmlText !== text) {
+            return htmlText;
+        }
+        // linkify phone numbers if no web links were found
+        return text.replace(phoneExp, '<a href="tel:///$1">$1</a>');
+    }
+
+    function htmlHasLinks(html) {
+        return html.indexOf('<a href="') !== -1;
+    }
 
 //    Connections {
 //        target: telegram.userData
@@ -263,7 +283,7 @@ ListItem {
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: messageText // emojis.textToEmojiText(messageText)
+                        text: message_item.messageHtmlText // emojis.textToEmojiText(message_item.messageHtmlText)
 
                         onLinkActivated: {
                             if (link.slice(0,6) == "tag://") {
@@ -274,9 +294,6 @@ ListItem {
                         }
 
                         property real htmlWidth: Cutegram.htmlWidth(text)
-                        property string messageText: {
-                            return message_text.parseText(message.message)
-                        }
                     }
 
                     MessageStatus {
