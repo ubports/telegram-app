@@ -54,7 +54,6 @@ Rectangle {
     onIsActiveChanged: {
         if( isActive )
             messages_model.setReaded()
-        userTappedNotification = false;
     }
 
     onCurrentDialogChanged: {
