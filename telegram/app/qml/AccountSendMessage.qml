@@ -153,8 +153,10 @@ Rectangle {
 
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
+
+        // To work on desktop change the following line to:
+        // enabled: True
         enabled: NetworkingStatus.online && telegramObject.connected
-//        enabled: True
         visible: !messagePlaceholder.visible
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -326,8 +328,9 @@ Rectangle {
             onClicked: {
                 Qt.inputMethod.commit();
 
+                // To work on desktop change the following line to:
+                // if (!telegramObject.connected) return
                 if (!telegramObject.connected || !NetworkingStatus.online) return
-//                if (!telegramObject.connected) return
 
                 if (state == "attach") {
                     Haptics.play()
