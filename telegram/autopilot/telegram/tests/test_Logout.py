@@ -21,6 +21,10 @@ class BaseTelegramTestCase(TelegramAppTestCase):
 	def setUp(self):
 		super(BaseTelegramTestCase, self).setUp()
 
+"""
+# DISABLED
+# FIXME(rmescandon): This test is commented out until knowing how 
+# to execute it the last one
 
 class Logout(BaseTelegramTestCase):
 
@@ -50,3 +54,5 @@ class Logout(BaseTelegramTestCase):
 
 		# Checks that the Intro Page is now active
 		introPage = apl.intro_page
+
+""" #end DISABLED
