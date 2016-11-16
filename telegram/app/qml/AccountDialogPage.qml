@@ -28,6 +28,7 @@ Page {
 
     property list<Action> defaultActions: [
         Action {
+            objectName: "groupInfo"
             iconName: "stock_contact"
             text: isChat ? i18n.tr("Group Info") : i18n.tr("Profile Info")
             onTriggered: {
@@ -85,6 +86,7 @@ Page {
                 trailingActionBar.actions: message_list.inSelectionMode ? selectionActions : defaultActions
                 leadingActionBar.actions: Action {
                     id: back_action
+                    objectName: "dialogBack"
                     iconName: message_list.inSelectionMode ? "close" : "back"
                     onTriggered: {
                         if (message_list.inSelectionMode) {
@@ -213,6 +215,7 @@ Page {
 
         AccountSendMessage {
             id: send_msg
+            objectName: "accountSendMessageArea"
             anchors {
                 right: parent.right
                 bottom: parent.bottom
@@ -236,6 +239,7 @@ Page {
 
         AccountMessageList {
             id: message_list
+            objectName: "accountMessageList"
             anchors {
                 top: add_contact_header.visible ? add_contact_header.bottom : parent.top
                 right: parent.right

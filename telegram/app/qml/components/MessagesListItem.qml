@@ -245,6 +245,7 @@ ListItem {
                 
                 AccountMessageMedia {
                     id: message_media
+                    objectName: "accountMessageMedia"
                     message: message_item.message
                     visible: message_media.hasMedia && !uploading
                     showStatus: !hasLink
@@ -268,6 +269,7 @@ ListItem {
 
                     Label {
                         id: message_text
+                        objectName: "messageText"
 
                         anchors {
                             top: parent.top
@@ -296,6 +298,7 @@ ListItem {
 
                     MessageStatus {
                         id: message_status
+                        objectName: "messageStatus"
                         anchors {
                             top: message_text.bottom
                             right: parent.right

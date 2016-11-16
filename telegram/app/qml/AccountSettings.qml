@@ -194,6 +194,7 @@ Page {
         }
 
         ListItem.Standard {
+            objectName: "listItem_logout"
             showDivider: true
             text: i18n.tr("Log out") + " | " + telegram.phoneNumber
             onClicked: PopupUtils.open(logout_dialog_component)
@@ -282,6 +283,7 @@ Page {
     }
 
     ListView {
+        objectName: "settingsList"
         anchors {
             topMargin: units.gu(2)
             top: profile_image.bottom
@@ -297,9 +299,11 @@ Page {
         id: logout_dialog_component
         Popup.Dialog {
             id: logout_dialog
+            objectName: "logoutDialog"
             title: i18n.tr("Telegram")
             text: i18n.tr("Are you sure you want to log out?\nAny secret chats will be lost.")
             Button {
+                objectName: "logoutConfirm"
                 text: i18n.tr("OK")
                 color: UbuntuColors.orange
                 onClicked: {

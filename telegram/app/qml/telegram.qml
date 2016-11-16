@@ -235,6 +235,7 @@ MainView {
     }
 
     AdaptivePageLayout {
+        objectName: "APL"
         id: pageStack
 
         property bool forceSinglePage: false

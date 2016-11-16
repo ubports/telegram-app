@@ -40,6 +40,7 @@ Item {
 
         Popups.PopupBase {
             id: dialogue
+            objectName: "mediaImportPopup"
 
             property alias activeTransfer: signalConnections.target
             focus: true
@@ -49,6 +50,7 @@ Item {
 
                 ContentHub.ContentPeerPicker {
                     id: peerPicker
+                    objectName: "contentPeerPicker"
 
                     anchors.fill: parent
                     contentType: root.contentType
