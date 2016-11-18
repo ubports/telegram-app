@@ -31,16 +31,13 @@ Page {
     }
 
     ContentPeerPicker {
-        anchors {
-            top: picker.bottom
-            left: parent.left
-            right: parent.right
-            margins: units.gu(6)
-        }
+        anchors.fill: parent
+        anchors.topMargin: page.header.height
+
         visible: parent.visible
         contentType: picker.contentType
         handler: picker.handler
-        showTitle: false
+        showTitle: true
         onPeerSelected: {
             picker.curTransfer = peer.request();
             pageStack.removePages(picker);
