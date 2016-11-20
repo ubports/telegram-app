@@ -41,6 +41,8 @@ class Cutegram : public QObject
     Q_PROPERTY(QStringList args READ getArgs WRITE setArgs NOTIFY argsChanged)
 
     Q_PROPERTY(QStringList languages READ languages NOTIFY fakeSignal)
+    Q_PROPERTY(QString cacheDirectory READ cacheDirectory NOTIFY fakeSignal)
+    Q_PROPERTY(QString configDirectory READ configDirectory NOTIFY fakeSignal)
     Q_PROPERTY(QString personalStickerDirectory READ personalStickerDirectory NOTIFY fakeSignal)
     Q_PROPERTY(QColor highlightColor READ highlightColor WRITE setHighlightColor NOTIFY highlightColorChanged)
 
@@ -199,6 +201,8 @@ public:
     void setSearchEngine(const QString &se);
     QString searchEngine() const;
 
+    QString cacheDirectory() const;
+    QString configDirectory() const;
     QString personalStickerDirectory() const;
 
     Q_INVOKABLE bool isLoggedIn(const QString &phone) const;

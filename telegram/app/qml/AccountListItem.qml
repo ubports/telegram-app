@@ -62,9 +62,9 @@ Item {
         defaultHostPort: Cutegram.defaultHostPort
         appId: Cutegram.appId
         appHash: Cutegram.appHash
-        downloadPath: "/home/phablet/.cache/com.ubuntu.telegram"
-        tempPath: "/home/phablet/.cache/com.ubuntu.telegram"
-        configPath: AsemanApp.homePath
+        downloadPath: Cutegram.cacheDirectory
+        tempPath: Cutegram.cacheDirectory
+        configPath: Cutegram.configDirectory
         publicKeyFile: AsemanApp.appPath + "/tg-server.pub"
 //        phoneNumber: accountItem.number
         phoneNumber: accountItem != null ? accountItem.number : ""
