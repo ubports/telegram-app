@@ -27,7 +27,7 @@ To install the build dependencies in the chroot:
    
    Install the build dependencies using the following command:
 
-    $ sudo apt-get install libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev
+    $ sudo apt-get install libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev libunity-scopes-dev intltool qtcreator-plugin-ubuntu
 
 2)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
 
@@ -58,7 +58,15 @@ You can use same command to re-build, if you have changed them, too.
     
 ### How to run (DESKTOP VERSION only)
 
-cd to the path holding the binary we have just build, e.g. `$ cd build_desktop/lib/x86_64-linux-gnu/bin/`
+1) Install Ubuntu.Contacts component
+
+    $ sudo apt-get install qtdeclarative5-ubuntu-contacts0.1
+
+2) (Optionally) to be able to send messages, run indicator-network-service
+   e.g. `$ /usr/lib/x86_64-linux-gnu/indicator-network/indicator-network-service &`
+   or edit AccountSendMessage.qml as suggested in this README
+
+3) cd to the path holding the binary we have just build, e.g. `$ cd build_desktop/lib/x86_64-linux-gnu/bin/`
 
     $ LD_LIBRARY_PATH=../../../:$LD_LIBRARY_PATH ./telegram
 
