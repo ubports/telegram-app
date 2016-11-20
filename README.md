@@ -210,9 +210,9 @@ To get messaging working correctly you need to make some code changes in
 AccountSendMessage.qml:
 
 > 1. Enable TextArea - #155 - Change to `enabled: true`.
-> 2. Enable Sticker button (if required) - #264 - Remove `connected || !NetworkingStatus` IF statement so you only have `if
+> 2. Enable Sticker button (if required) - #264 - Remove `connected || !Connectivity` IF statement so you only have `if
 > (!privates.emojiItem) {...}` in `onClicked:`.
-> 3. Enable Send button - #326 - Remove `connected || !NetworkingStatus` IF statement so you only have `if (state == “attach”) {...}` in
+> 3. Enable Send button - #326 - Remove `connected || !Connectivity` IF statement so you only have `if (state == “attach”) {...}` in
 > `onClicked:`.
 
 ## **References & Tutorials**
