@@ -37,6 +37,12 @@ Page {
                 onTriggered: addContact()
             }
         ]
+        leadingActionBar.actions: Action {
+            id: back_action
+            objectName: "backAction"
+            iconName: "back"
+            onTriggered: pageStack.removePages(page);
+        }
     }
 
     Item {
