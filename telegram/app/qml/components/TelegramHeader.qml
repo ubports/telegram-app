@@ -193,7 +193,7 @@ PageHeader {
                     PropertyChanges {
                         target: titleText
                         height: titleText.implicitHeight
-                        anchors.topMargin: units.gu(0.8)
+                        anchors.topMargin: units.gu(0.7)
                     }
                 },
                 State {
@@ -201,7 +201,7 @@ PageHeader {
                     PropertyChanges {
                         target: titleText
                         height: titleText.parent.height / 2
-                        anchors.topMargin: units.gu(0.6)
+                        anchors.topMargin: units.gu(0.35)
                     }
                 }
             ]
@@ -221,7 +221,7 @@ PageHeader {
                 left: headerImage.right
                 leftMargin: units.gu(1)
                 bottom: parent.bottom
-                bottomMargin: units.gu(0.4)
+                bottomMargin: units.gu(0.15)
             }
             verticalAlignment: Text.AlignVCenter
             height: parent.height / 2
