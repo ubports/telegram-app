@@ -1,9 +1,9 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
 
-import "../js/avatar.js" as Avatar
-import "../js/time.js" as Time
-import "../js/colors.js" as Colors
+import "qrc:/qml/js/avatar.js" as Avatar
+import "qrc:/qml/js/time.js" as Time
+import "qrc:/qml/js/colors.js" as Colors
 
 import TelegramQML 1.0
 
@@ -109,7 +109,7 @@ PageHeader {
 
     signal clicked()
 
-    contents: Rectangle {
+    contents: Item {
         anchors {
             top: parent.top
             left: parent.left
