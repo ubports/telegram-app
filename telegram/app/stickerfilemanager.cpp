@@ -2,7 +2,12 @@
 #include "asemantools/asemandevices.h"
 
 #include <telegramqml.h>
+
+#ifdef SNAP_MODE
+#include <libqtelegram-ae/telegram.h>
+#else
 #include "../../deps/libqtelegram-ae/telegram.h"
+#endif
 
 #include <QList>
 #include <QHash>
