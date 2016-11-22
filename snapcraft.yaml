@@ -58,6 +58,8 @@ parts:
     build-packages:
       - intltool
       - qtdeclarative5-dev
+      - qt5-default
+      - qtbase5-dev
     after: [libqtelegram-ae]
 
   telegram-app:
