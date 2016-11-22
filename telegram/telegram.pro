@@ -1,7 +1,6 @@
 TEMPLATE = subdirs
 
 CONFIG += c++11
-DEFINES += CLICK_MODE
 
 # value matching manifest name field
 UBUNTU_TRANSLATION_DOMAIN="com.ubuntu.telegram"
