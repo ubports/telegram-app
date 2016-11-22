@@ -67,7 +67,7 @@ function setTelegramEnvVars() {
 function askForLXD() {
     #ask using cli for the lxd alias to use, as that name can be selected by the user when downloaded the image
     if [ -z "$LXD_IMAGE_ALIAS" ]; then
-        LXD_IMAGE_ALIAS=builder-armhf
+        LXD_IMAGE_ALIAS=ubuntu-sdk-15.04-armhf
     fi
     read -p "LXD image to use [$LXD_IMAGE_ALIAS]: " RESPONSE
     RESPONSE="${RESPONSE:-$LXD_IMAGE_ALIAS}"
