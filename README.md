@@ -1,81 +1,87 @@
 # **Telegram for Ubuntu**
 
-### TLDR;
-    "./setup.sh -t mobile -dbc"  for a full mobile build
-OR  "./setup.sh -t desktop -db" for a full desktop build
-
-### How to build
+## **TL;DR**
+    "./setup.sh -t mobile -dbc" for a full mobile build
+    "./setup.sh -t desktop -db" for a full desktop build
 
 This build setup has been tested on:
-- Ubuntu Vivid 15.04 with Overlay PPA enabled
+    - Ubuntu Vivid   15.04 with Overlay PPA enabled
+    - Ubuntu Wily    15.10
+    - Ubuntu Xenial  16.04
+    - Ubuntu Yakkety 16.10
+
 
 The following instructions assume you downloaded Telegram for Ubuntu source and changed ("cd") to the project's root directory.
 
-##  **Install build dependencies**
-### Device
- If you don't have a 15.04 click chroot yet:
+##  **How to build**
+1)  Install build dependencies.
+### case Device:
+    If you don't have a 15.04 click chroot yet:
     
-    $ sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 create
+        $ sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 create
 
-To install the build dependencies in the chroot:
+    To install the build dependencies in the chroot:
 
-    $ sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 maint
-
-    $ apt-get install libthumbnailer-qt-dev:armhf libthumbnailer-qt1.0:armhf thumbnailer-service:armhf
+        $ sudo click chroot --arch armhf --framework ubuntu-sdk-15.04 maint
+        $ apt-get install libthumbnailer-qt-dev:armhf
             
-### Desktop
-   
-   Install the build dependencies using the following command:
+### case Desktop:
+    Install the build dependencies using the following command:
 
-    $ sudo apt-get install libthumbnailer-qt-dev libthumbnailer-qt1.0 thumbnailer-service libqt5xmlpatterns5-dev qtdeclarative5-dev qtmultimedia5-dev libssl-dev libunity-scopes-dev intltool qtcreator-plugin-ubuntu
+        $ sudo apt-get install intltool ubuntu-sdk-ide ubuntu-sdk-libs ubuntu-sdk-qmake-extras
+        qtcreator-plugin-ubuntu
+        $ sudo apt-get install libthumbnailer-qt-dev libunity-scopes-dev qtdeclarative5-dev qtmultimedia5-dev 
+        $ sudo apt-get install qml-module-ubuntu-connectivity qtdeclarative5-ubuntu-contacts0.1
 
-2)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
+2)  Environment setup
+    Change your directory into below:
 
-    $ ./setup.sh -t <build_type> -d
+        $ cd ~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf
 
-The help command will show the available values for <build_type>.
+    then make a symbolic link bewteen qtc_chroot_wrapper and the make:
+
+        $ ln -s /usr/share/qtcreator/ubuntu/scripts/qtc_chroot_wrapper.py make
+
+3)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
+
+        $ ./setup.sh -t <build_type> -d
+
+    The help command will show the available values for <build_type>.
     It'll git clone both projects to the deps directory and build them (inside the click chroot, if the build type chosen was "mobile").
-You can use same command to re-build, if you have changed them, too.
+    You can use same command to re-build, if you have changed them, too.
     
-   NOTE: it may be required to modify some environment variables that drive the build process, such
+    NOTE: it may be required to modify some environment variables that drive the build process, such
     as the path to qmake or make, the path to system libraries, the name of the chroot, etc.
     The env variables are grouped at the beginning of setup.sh, to make the customization easier.
     
-3)  Build Telegram for Ubuntu
+4)  Build Telegram for Ubuntu
 
-    $ ./setup.sh -t <build_type> -b
+        $ ./setup.sh -t <build_type> -b
     
-   This will build the app in the build path defined by setup.sh 
+    This will build the app in the build path defined by setup.sh 
     and prepare everything in a directory named click in the project's root directory.
     NOTE: it may be required to modify some environment variables that drive the build process, such
     as the path to qmake or make, the path to system libraries, the name of the chroot, etc.
     The env variables are grouped at the beginning of setup.sh, to make the customization easier.
     
-4)  (Optional) Build the click package and install it using adb (requires an Ubuntu Touch 
+5)  (Optional) Build the click package and install it using adb (requires an Ubuntu Touch 
     mobile device connected via USB with developer mode enabled):
     
-    $ ./setup.sh -t mobile -c
+        $ ./setup.sh -t mobile -c
     
-### How to run (DESKTOP VERSION only)
+## **How to run (DESKTOP VERSION only)**
 
-1) Install Ubuntu.Contacts component
-
-    $ sudo apt-get install qtdeclarative5-ubuntu-contacts0.1
-
-2) (Optionally) to be able to send messages, run indicator-network-service
-   e.g. `$ /usr/lib/x86_64-linux-gnu/indicator-network/indicator-network-service &`
-   or edit AccountSendMessage.qml as suggested in this README
-
-3) cd to the path holding the binary we have just build, e.g. `$ cd build_desktop/lib/x86_64-linux-gnu/bin/`
-
+    $ cd build_desktop/lib/x86_64-linux-gnu/bin/
     $ LD_LIBRARY_PATH=../../../:$LD_LIBRARY_PATH ./telegram
 
+    (Optional for Unity7) To be able to send messages, run indicator-network-service
+    or edit AccountSendMessage.qml as suggested in this README
 
-### How to delete the build files
+## **How to delete the build files**
 
     $ ./setup -t <build_type> -e
 
-### How to get help
+## **How to get help**
 
     $ ./setup -h
 
@@ -218,9 +224,9 @@ To get messaging working correctly you need to make some code changes in
 AccountSendMessage.qml:
 
 > 1. Enable TextArea - #155 - Change to `enabled: true`.
-> 2. Enable Sticker button (if required) - #264 - Remove `connected || !Connectivity` IF statement so you only have `if
+> 2. Enable Sticker button (if required) - #264 - Remove `connected || !NetworkingStatus` IF statement so you only have `if
 > (!privates.emojiItem) {...}` in `onClicked:`.
-> 3. Enable Send button - #326 - Remove `connected || !Connectivity` IF statement so you only have `if (state == “attach”) {...}` in
+> 3. Enable Send button - #326 - Remove `connected || !NetworkingStatus` IF statement so you only have `if (state == “attach”) {...}` in
 > `onClicked:`.
 
 ## **References & Tutorials**

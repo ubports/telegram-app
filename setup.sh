@@ -1,5 +1,6 @@
 #!/bin/bash
-# Author: Andrea Bernabei <andrea.bernabei@canonical.com>
+# Authors: Andrea Bernabei <andrea.bernabei@canonical.com>
+#	       Roberto Mier Escandón <roberto.escandon@canonical.com>
 
 ##################CUSTOMIZABLE SECTION#########################
 # Modify the env variables inside the functions if needed.
@@ -31,8 +32,9 @@ function setDesktopBuildEnvVars() {
 function setMobileBuildEnvVars() {
     #TODO: get rid of hardcoded paths
     echo "Setting up env for a build for mobile devices..."
-    export QMAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
-    export MAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
+    export LXD_IMAGE_ALIAS=$(askForLXD)
+    export QMAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/$LXD_IMAGE_ALIAS/qt5-qmake-arm-linux-gnueabihf
+    export MAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/$LXD_IMAGE_ALIAS/make
     #can't use qmake to get system lib paths here because the SDK qmake-script above  maps dirs to be relative to the chroot dir
     export SYSTEM_LIB_PATH=/usr/lib/arm-linux-gnueabihf
     export SYSTEM_INCLUDE_PATH=/usr/include/
@@ -61,6 +63,16 @@ function setTelegramEnvVars() {
 
 
 ##################DO NOT TOUCH FROM THIS POINT ON##############
+
+function askForLXD() {
+    #ask using cli for the lxd alias to use, as that name can be selected by the user when downloaded the image
+    if [ -z "$LXD_IMAGE_ALIAS" ]; then
+        LXD_IMAGE_ALIAS=builder-armhf
+    fi
+    read -p "LXD image to use [$LXD_IMAGE_ALIAS]: " RESPONSE
+    RESPONSE="${RESPONSE:-$LXD_IMAGE_ALIAS}"
+    echo "$RESPONSE"
+}
 
 export BUILD_TYPE=mobile
 
