@@ -104,9 +104,8 @@ Item {
             }
 
             onCurrentDialogChanged: {
-                if (list_item.width > units.gu(35)) {
-                    currentDialog = telegramObject.nullDialog;
-                }
+                // FIXME: keep below assignment to make forwarding workable of bug#1642637 for now
+                currentDialog = telegramObject.nullDialog;
                 currentDialog = dialog;
             }
 
