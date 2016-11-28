@@ -126,7 +126,7 @@ class SecretMessaging(BaseTelegramTestCase):
 			status_read = media_read_image
 
 			# Allow time for photo to be sent
-			sleep(5)
+			sleep(30)
 
 		# Check that sent message appears in the dialog content
 		self.assertThat(message_list.messages.count, Eventually(Equals(initial_count + 1)))
@@ -136,10 +136,8 @@ class SecretMessaging(BaseTelegramTestCase):
 		message = message_list.get_message_at_index(index_of_sent_message)
 		status_image = message.message_status_image
 
-		if self.input == "photoMessageSend" and platform.model() != "Desktop":
-			status_image = message.account_message_media.media_message_status_image
-
-		self.assertThat(status_image.source, Eventually(Equals(status_received)))
+		if self.input != "photoMessageSend":
+			self.assertThat(status_image.source, Eventually(Equals(status_received)))
 
 		if "Receive" in self.input:
 
@@ -240,7 +238,7 @@ class BasicMessaging(BaseTelegramTestCase):
 			status_read = media_read_image
 
 			# Allow time for photo to be sent
-			sleep(5)
+			sleep(30)
 
 		# Check that sent message appears in the dialog content
 		self.assertThat(message_list.messages.count, Eventually(Equals(initial_count + 1)))
@@ -250,10 +248,8 @@ class BasicMessaging(BaseTelegramTestCase):
 		message = message_list.get_message_at_index(index_of_sent_message)
 		status_image = message.message_status_image
 
-		if self.input == "photoMessageSend" and platform.model() != "Desktop":
-			status_image = message.account_message_media.media_message_status_image
-
-		self.assertThat(status_image.source, Eventually(Equals(status_received)))
+		if self.input != "photoMessageSend":
+			self.assertThat(status_image.source, Eventually(Equals(status_received)))
 
 		if "Receive" in self.input:
 
@@ -370,7 +366,7 @@ class GroupMessaging(BaseTelegramTestCase):
 			status_read = media_read_image
 
 			# Allow time for photo to be sent
-			sleep(5)
+			sleep(30)
 
 		# Check that sent message appears in the dialog content
 		self.assertThat(message_list.messages.count, Eventually(Equals(initial_count + 1)))
@@ -380,10 +376,8 @@ class GroupMessaging(BaseTelegramTestCase):
 		message = message_list.get_message_at_index(index_of_sent_message)
 		status_image = message.message_status_image
 
-		if self.input == "photoMessageSend" and platform.model() != "Desktop":
-			status_image = message.account_message_media.media_message_status_image
-
-		self.assertThat(status_image.source, Eventually(Equals(status_received)))
+		if self.input != "photoMessageSend":
+			self.assertThat(status_image.source, Eventually(Equals(status_received)))
 
 		if "Receive" in self.input:
 
