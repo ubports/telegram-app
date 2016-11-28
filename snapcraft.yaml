@@ -1,0 +1,91 @@
+name: telegram-app
+version: 2.3.37.2
+summary: Ubuntu Telegram Applicaiton
+description: The Ubuntu Telegram for all Ubuntu devices
+grade: devel
+confinement: devmode 
+
+apps:
+  telegram-app:
+    command: desktop-launch $SNAP/bin/telegram-app.wrapper --desktop_file_hint=unity8 "$@"
+    plugs: [unity7, opengl, network, home, platform, camera, pulseaudio]
+
+plugs:
+  platform:
+    interface: content
+    content: ubuntu-app-platform1
+    target: ubuntu-app-platform
+    default-provider: ubuntu-app-platform
+
+parts:
+  libqtelegram-ae:
+    source: https://github.com/Aseman-Land/libqtelegram-aseman-edition.git
+    source-type: git
+    source-commit: 7bc3c3d54c744d675aa261bd4a0d335291052ee6
+    plugin: qmake
+    qt-version: qt5
+    options:
+      - PREFIX=/usr
+      - -r
+      # FIXME: workaround for skip gcc 6 build issue with stdlib.h
+      - QMAKE_CFLAGS_ISYSTEM=
+    build-packages:
+      - build-essential
+      - libssl-dev
+      - qtmultimedia5-dev
+    stage-packages:
+      - libthumbnailer-qt-dev
+      - qml-module-ubuntu-connectivity
+      - qtdeclarative5-ubuntu-contacts0.1
+
+  telegramqml:
+    source: https://github.com/Aseman-Land/TelegramQML.git
+    source-type: git
+    source-commit: 7d5110a454af7d9be2370da6de217941bb9d1f1b
+    plugin: qmake
+    qt-version: qt5
+    options:
+      - INCLUDEPATH+=$SNAPCRAFT_STAGE/usr/include/libqtelegram-ae
+      - INCLUDEPATH+=$SNAPCRAFT_STAGE/usr/include/thumbnailer-qt-1.0/unity/thumbnailer/qt
+      - LIBS+=-Lqtelegram-ae
+      - LIBS+=-Lthumbnailer-qt
+      - PREFIX=/usr
+      - -r
+      - BUILD_MODE+=lib
+      - DEFINES+=UBUNTU_PHONE
+      # FIXME: workaround for skip gcc 6 build issue with stdlib.h
+      - QMAKE_CFLAGS_ISYSTEM=
+    build-packages:
+      - intltool
+      - qtdeclarative5-dev
+      - qt5-default
+      - qtbase5-dev
+    after: [libqtelegram-ae]
+
+  telegram-app:
+    source: telegram
+    source-subdir: app
+    plugin: qmake
+    qt-version: qt5
+    options:
+      - INCLUDEPATH+=$SNAPCRAFT_STAGE/usr/include/libqtelegram-ae
+      - INCLUDEPATH+=$SNAPCRAFT_STAGE/usr/include/telegramqml
+      - PREFIX=/usr
+      - DEFINES+=SNAP_MODE
+      - -r
+    snap:
+      - -database
+      - -emojis
+      - -icons
+      - -scope
+      - -stickers
+    after: [telegramqml, desktop-ubuntu-app-platform]
+
+  wrapper:
+    source: snap
+    plugin: dump
+    organize:
+      telegram-app.wrapper: bin/telegram-app.wrapper
+
+
+

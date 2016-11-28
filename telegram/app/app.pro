@@ -13,7 +13,7 @@ UBUNTU_TRANSLATION_DOMAIN="com.ubuntu.telegram"
 
 isEmpty(OPENSSL_INCLUDE_PATH): OPENSSL_INCLUDE_PATH = /usr/include/openssl /usr/local/include/openssl
 
-LIBS += -lssl -lcrypto -lz -lqtelegram-ae -ltelegramqml
+LIBS += -lssl -lcrypto -lz -lqtelegram-ae -ltelegramqml -lthumbnailer-qt
 
 INCLUDEPATH += $${OPENSSL_INCLUDE_PATH} 
 
