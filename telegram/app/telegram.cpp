@@ -260,7 +260,7 @@ QString Cutegram::storeMessage(const QString &msg)
 QString Cutegram::createTemporaryFile(const QString &phone, const QString &prefix, const QString &ext)
 {
     // Create temporary file, e.g. recorded audio
-    QDir dataLocation(QDir::homePath() + "/.cache/" + QCoreApplication::organizationDomain() + "/" + phone + "/temp/" + prefix);
+    QDir dataLocation(cacheDirectory() + "/" + phone + "/temp/" + prefix);
     if (!dataLocation.exists()) {
         dataLocation.mkpath(".");
     }
@@ -275,7 +275,7 @@ QString Cutegram::createTemporaryFile(const QString &phone, const QString &prefi
 void Cutegram::deleteTemporaryFiles(const QString &phone, const QString &prefix)
 {
     // Delete temporary file
-    QDir dir(QDir::homePath() + "/.cache/" + QCoreApplication::organizationDomain() + "/" + phone + "/temp/" + prefix);
+    QDir dir(cacheDirectory() + "/" + phone + "/temp/" + prefix);
     qDebug() << "deleting" << dir.absolutePath();
     dir.removeRecursively();
 }
