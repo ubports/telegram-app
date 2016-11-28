@@ -436,7 +436,6 @@ void Cutegram::start(bool forceVisible)
 
 void Cutegram::logout(const QString &phone)
 {
-    const QString &home = AsemanApplication::homePath();
     QDir cache = QDir(QDir::homePath() + "/.cache/" + QCoreApplication::organizationDomain() + "/" + phone);
     QDir config = QDir(QDir::homePath() + "/.config/" + QCoreApplication::organizationDomain() + "/" + phone);
 
@@ -1017,15 +1016,24 @@ QString Cutegram::searchEngine() const
     return p->searchEngine;
 }
 
+QString Cutegram::cacheDirectory() const
+{
+    return QDir::homePath() + "/.cache/" + QCoreApplication::organizationDomain();
+}
+
+QString Cutegram::configDirectory() const
+{
+    return QDir::homePath() + "/.config/" + QCoreApplication::organizationDomain();
+}
+
 QString Cutegram::personalStickerDirectory() const
 {
-    return AsemanApplication::homePath() + "/stickers/Personal";
+    return configDirectory() + "/stickers/Personal";
 }
 
 bool Cutegram::isLoggedIn(const QString &phone) const
 {
-    const QString &home = AsemanApplication::homePath();
-    const QString &ppath = home + "/" + phone;
+    const QString &ppath = configDirectory() + "/" + phone;
     return QFile::exists(ppath + "/auth");
 }
 

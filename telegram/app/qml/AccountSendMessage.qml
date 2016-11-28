@@ -176,7 +176,7 @@ Rectangle {
 
         // To work on desktop change the following line to:
         // enabled: True
-        enabled: NetworkingStatus.online && telegramObject.connected
+        enabled: Connectivity.online && telegramObject.connected
 
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -289,7 +289,7 @@ Rectangle {
             anchors.fill: parent
             activeFocusOnPress: false
             onClicked: {
-                if (!telegramObject.connected || !NetworkingStatus.online) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
                     txt.focus = false;
@@ -330,7 +330,7 @@ Rectangle {
             anchors.fill: parent
             activeFocusOnPress: false
             onClicked: {
-                if (!telegramObject.connected || !NetworkingStatus.online) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 Haptics.play()
                 if (!privates.attachmentItem) {
@@ -361,7 +361,7 @@ Rectangle {
         }
         width: send_mouse_area.width
         visible: !messagePlaceholder.visible
-        enabled: NetworkingStatus.online && telegramObject.connected
+        enabled: Connectivity.online && telegramObject.connected
 
         MouseArea {
             id: send_mouse_area
@@ -394,7 +394,7 @@ Rectangle {
 
                 // To work on desktop change the following line to:
                 // if (!telegramObject.connected) return
-                if (!telegramObject.connected || !NetworkingStatus.online) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (state == "send" && txt.text.length > 0) {
                     Haptics.play()
