@@ -294,7 +294,7 @@ Page {
         objectName: "defaultHeader"
         visible: account_page.header === default_header
         title: {
-            if (NetworkingStatus.online) {
+            if (Connectivity.online) {
                 if (telegramObject.connected) {
                     // TRANSLATORS: Default app header title. Application name.
                     return i18n.tr("Telegram")
@@ -321,7 +321,7 @@ Page {
         id: forward_header
         visible: account_page.header === forward_header
         title: {
-                if (NetworkingStatus.online) {
+                if (Connectivity.online) {
                     // TRANSLATORS: Page title when forwarding messages.
                     return i18n.tr("Select Chat")
                 } else {
@@ -340,7 +340,7 @@ Page {
         id: share_header
         visible: account_page.header === share_header
         title: {
-            if (NetworkingStatus.online) {
+            if (Connectivity.online) {
                 // TRANSLATORS: Page title when sharing files.
                 return i18n.tr("Select Chat")
             } else {

@@ -156,7 +156,7 @@ Rectangle {
 
         // To work on desktop change the following line to:
         // enabled: True
-        enabled: NetworkingStatus.online && telegramObject.connected
+        enabled: Connectivity.online && telegramObject.connected
         visible: !messagePlaceholder.visible
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -265,7 +265,7 @@ Rectangle {
             anchors.fill: parent
             activeFocusOnPress: false
             onClicked: {
-                if (!telegramObject.connected || !NetworkingStatus.online) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
                     txt.focus = false;
@@ -330,7 +330,7 @@ Rectangle {
 
                 // To work on desktop change the following line to:
                 // if (!telegramObject.connected) return
-                if (!telegramObject.connected || !NetworkingStatus.online) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (state == "attach") {
                     Haptics.play()

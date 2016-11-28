@@ -30,7 +30,7 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
 
         $ sudo apt-get install intltool ubuntu-sdk-ide ubuntu-sdk-libs ubuntu-sdk-qmake-extras
         $ sudo apt-get install libthumbnailer-qt-dev libunity-scopes-dev qtdeclarative5-dev qtmultimedia5-dev 
-        $ sudo apt-get install qml-module-ubuntu-connectivity qtdeclarative5-ubuntu-contacts0.1
+        $ sudo apt-get install qml-module-ubuntu-connectivity qtcreator-plugin-ubuntu qtdeclarative5-ubuntu-contacts0.1
 
 2)  Environment setup
     Change your directory into below:
@@ -72,6 +72,9 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
 
     $ cd build_desktop/lib/x86_64-linux-gnu/bin/
     $ LD_LIBRARY_PATH=../../../:$LD_LIBRARY_PATH ./telegram
+
+(Optional for Unity7) To be able to send messages, run indicator-network-service,
+or edit AccountSendMessage.qml as suggested in this README.
 
 ## **How to delete the build files**
 

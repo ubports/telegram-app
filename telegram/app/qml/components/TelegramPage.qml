@@ -5,7 +5,7 @@ import Ubuntu.Connectivity 1.0
 Page {
     id: page
 
-    property bool isOnline: NetworkingStatus.online
+    property bool isOnline: Connectivity.online
     property bool isBusy: false
 
     Loader {
