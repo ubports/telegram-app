@@ -51,8 +51,11 @@ Item {
                     id: peerPicker
 
                     anchors.fill: parent
+                    anchors.topMargin: page.header.height
+
                     contentType: root.contentType
                     handler: ContentHub.ContentHandler.Source
+                    showTitle: true
 
                     onPeerSelected: {
                         peer.selectionType = ContentHub.ContentTransfer.Single

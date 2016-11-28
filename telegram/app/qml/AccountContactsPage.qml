@@ -17,7 +17,7 @@ import "js/colors.js" as Colors
 Page {
     id: page
     flickable: null
-
+    objectName: "accountContactsPage"
     header: default_header
 
     PageHeader {
@@ -113,6 +113,7 @@ Page {
         property var none: []
         property list<Action> confirm: [
             Action {
+                objectName: "createGroupChatOK"
                 iconName: "ok"
                 text: i18n.tr("OK")
                 enabled: hasGroupTitle
@@ -225,6 +226,7 @@ Page {
 
     TextField {
         id: group_chat_title_text_field
+        objectName: "groupChatTextField"
         anchors {
             top: page.header.bottom
             topMargin: isVisible ? units.gu(1) : 0
@@ -253,6 +255,7 @@ Page {
     }
 
     MultipleSelectionListView {
+        objectName: "contactList"
         id: contact_list
         anchors {
             top: group_chat_title_text_field.visible ? group_chat_title_text_field.bottom : parent.top
@@ -278,6 +281,7 @@ Page {
 
         listModel: searchTerm == "" ? contacts_model : contacts_filter_model
         listDelegate: TelegramContactsListItem {
+            objectName: "contact%1".arg(index)
             id: delegate
             telegram: page.telegram
             user: model.user

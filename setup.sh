@@ -1,5 +1,6 @@
 #!/bin/bash
-# Author: Andrea Bernabei <andrea.bernabei@canonical.com>
+# Authors: Andrea Bernabei <andrea.bernabei@canonical.com>
+#	       Roberto Mier Escandón <roberto.escandon@canonical.com>
 
 ##################CUSTOMIZABLE SECTION#########################
 # Modify the env variables inside the functions if needed.
@@ -31,12 +32,17 @@ function setDesktopBuildEnvVars() {
 function setMobileBuildEnvVars() {
     #TODO: get rid of hardcoded paths
     echo "Setting up env for a build for mobile devices..."
-    export QMAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/qt5-qmake-arm-linux-gnueabihf
-    export MAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf/make
+    export LXD_IMAGE_ALIAS=$(askForLXD)
+    export QMAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/$LXD_IMAGE_ALIAS/qt5-qmake-arm-linux-gnueabihf
+    export MAKE_BIN=~/.config/QtProject/qtcreator/ubuntu-sdk/$LXD_IMAGE_ALIAS/make
     #can't use qmake to get system lib paths here because the SDK qmake-script above  maps dirs to be relative to the chroot dir
     export SYSTEM_LIB_PATH=/usr/lib/arm-linux-gnueabihf
     export SYSTEM_INCLUDE_PATH=/usr/include/
     export BUILD_DIR_BASENAME=build_mobile
+    export AUTOPILOT_DIR=autopilot
+    export AUTOPILOT_APP_DIR=/telegram
+    export AUTOPILOT_DIR_BASENAME=$AUTOPILOT_DIR/$AUTOPILOT_APP_DIR
+    export AUTOPILOT_PATH=telegram/$AUTOPILOT_DIR_BASENAME
 }
 #Generic env vars
 function setTelegramEnvVars() {
@@ -58,6 +64,16 @@ function setTelegramEnvVars() {
 
 ##################DO NOT TOUCH FROM THIS POINT ON##############
 
+function askForLXD() {
+    #ask using cli for the lxd alias to use, as that name can be selected by the user when downloaded the image
+    if [ -z "$LXD_IMAGE_ALIAS" ]; then
+        LXD_IMAGE_ALIAS=builder-armhf
+    fi
+    read -p "LXD image to use [$LXD_IMAGE_ALIAS]: " RESPONSE
+    RESPONSE="${RESPONSE:-$LXD_IMAGE_ALIAS}"
+    echo "$RESPONSE"
+}
+
 export BUILD_TYPE=mobile
 
 #The build system is separated in 3 steps which can be enabled or disabled as needed
@@ -65,6 +81,7 @@ DEPS_STEP=n
 APP_STEP=n
 CLICK_STEP=n
 ERASE_STEP=n
+export TEST_STEP=n
 RESET_ENV_VARS=n
 
 function usage() {
@@ -75,9 +92,10 @@ function usage() {
     echo "-b        To build the telegram app."
     echo "-c        To create and install the click package (only valid if mobile build type has been selected)"
     echo "-e        To erase all build files relative to the specified build type."
+    echo "-u        To include all autopilot unit test cases in the click package (only valid if -c has been selected)."
 }
 
-while getopts "t:dbceh" opt; do
+while getopts "t:dbceuh" opt; do
     case $opt in
     t)
         case $OPTARG in
@@ -106,6 +124,9 @@ while getopts "t:dbceh" opt; do
     e)
         ERASE_STEP=y
         ;;
+    u)
+        TEST_STEP=y
+        ;;
     v)
         RESET_ENV_VARS=y
         ;;
@@ -121,6 +142,12 @@ while getopts "t:dbceh" opt; do
 done
 
 if [ "$DEPS_STEP" = "n" ] && [ "$APP_STEP" = "n" ] && [ "$CLICK_STEP" = "n" ] && [ "$ERASE_STEP" = "n" ]; then
+    usage
+    exit 1
+fi
+
+if [ "$CLICK_STEP" = "n" ] && [ "$TEST_STEP" = "y" ]; then
+    echo "The inclusion of autopilot test cases requires the -c flag."
     usage
     exit 1
 fi
@@ -167,3 +194,4 @@ fi
 if [ "$ERASE_STEP" = "y" ]; then
     source ./buildScripts/clean.sh || exit 1
 fi
+

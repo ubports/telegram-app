@@ -72,6 +72,7 @@ Panel {
             }
 
             AccountPanelItem {
+                objectName:"groupChatItem"
                 icon: "../files/menu_newgroup.png"
                 text: i18n.tr("New Group")
                 showDivider: false
@@ -81,6 +82,7 @@ Panel {
                 }
             }
             AccountPanelItem {
+                objectName:"secretChatItem"
                 icon: "../files/menu_secret.png"
                 text: i18n.tr("New Secret Chat")
                 onClicked: {
@@ -89,6 +91,7 @@ Panel {
                 }
             }
             AccountPanelItem {
+                objectName:"panelContacts"
                 icon: "../files/menu_contacts.png"
                 text: i18n.tr("Contacts")
                 showDivider: false
@@ -98,6 +101,7 @@ Panel {
                 }
             }
             AccountPanelItem {
+                objectName:"panelSettings"
                 icon: "../files/menu_settings.png"
                 text: i18n.tr("Settings")
                 showDivider: false

@@ -86,10 +86,7 @@ Item {
             mainView.error(id, errorCode, errorText)
         }
         onErrorChanged: {
-            console.log("auth error: " + error)
-            if (error == "PHONE_NUMBER_INVALID") {
-                profiles.remove(telegram.phoneNumber);
-            }
+            console.log("telegram error: " + error)
         }
         onAuthNeededChanged: {
             console.log("authNeeded " + authNeeded)

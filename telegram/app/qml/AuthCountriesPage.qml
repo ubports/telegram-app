@@ -22,6 +22,7 @@ Page {
         property bool searchMode: false
         Action {
             id: searchAction
+            objectName: "searchIcon"
             iconName: "search";
             text: i18n.tr("Search");
             onTriggered:{
@@ -48,6 +49,7 @@ Page {
 
         TextField {
             id: search_text_field
+            objectName: "countryField"
             visible: choose_header.searchMode
             anchors {
                 right: parent ? parent.right : undefined

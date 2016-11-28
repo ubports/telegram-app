@@ -155,6 +155,7 @@ Rectangle {
 
     TextArea {
         id: txt
+        objectName: "sendMessageTextArea"
 
         property int oldLength: 0
 
@@ -172,6 +173,9 @@ Rectangle {
 
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
+
+        // To work on desktop change the following line to:
+        // enabled: True
         enabled: NetworkingStatus.online && telegramObject.connected
 
         // TRANSLATORS: Placeholder for the message input text area.
@@ -361,6 +365,7 @@ Rectangle {
 
         MouseArea {
             id: send_mouse_area
+            objectName: "sendMouseArea"
             height: parent.height
             width: units.gu(6)
             enabled: telegramObject.connected
@@ -387,6 +392,8 @@ Rectangle {
             onClicked: {
                 Qt.inputMethod.commit();
 
+                // To work on desktop change the following line to:
+                // if (!telegramObject.connected) return
                 if (!telegramObject.connected || !NetworkingStatus.online) return
 
                 if (state == "send" && txt.text.length > 0) {
