@@ -142,6 +142,11 @@ The following are prerequisites to executing the autopilot test cases:
 > - The device must be on the screen displaying the apps
 > - The user must have 2 Telegram contacts defined, one of which must be the phone number used to set up the Telegram CLI 
 > - The Telegram CLI must be online
+> - The status of the first contact must be online during all the tests execution
+> - There shouldn't be a conversation with the first contact or, in case there is, that should be empty
+> - Ideally, there shouldn't be any conversation (conversations list empty). If that's not possible, it would be nice having the less possible
+> - Device where testing must be in English
+> - Camera app must be allowed to be used from Telegram app before starting the tests.
 
 ## **Execution**
 
