@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-12-09 12:51+0100\n"
-"PO-Revision-Date: 2016-10-08 22:50+0000\n"
+"PO-Revision-Date: 2016-12-10 14:44+0000\n"
 "Last-Translator: Waqar Ahmed <waqar.17a@gmail.com>\n"
 "Language-Team: Urdu <ur@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2016-11-30 05:45+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2016-12-11 05:27+0000\n"
+"X-Generator: Launchpad (build 18292)\n"
 "Language: ur\n"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -500,6 +500,11 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and "
 "underscores.<br />Minimum length is <b>5</b> characters."
 msgstr ""
+"آپ <b>ٹیلی گرام</b> پر اپنا اسم صارف منتخب کر سکتے ہیں۔ اگر آپ ایسا کریں گے، "
+"تو باقی لوگ آپ کو اس اسم صارف سے ڈھونڈ سکتے ہیں اور آپ سے رابطہ کر سکتے ہیں "
+"آپکے فون نمبر کو جانے بغیر۔<br /><br /> آپ اسم صارف بنانے کے لیے استعمال کر "
+"سکتے ہیں <b>a-z</b>، اور ہندسے  <b>0-9</b>، اور انڈر سکور۔<br /> کم از کم "
+"<b>5</b>  حروف ہونے ضروری ہیں۔"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AddContactPage.qml:35
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthNumberPage.qml:88
@@ -607,7 +612,7 @@ msgstr "پیغام رسانی شروع کریں"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
-msgstr ""
+msgstr "تیز اور محفوظ پیغام رسانی<br> کے دور میں خوش آمدید"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:22
@@ -618,6 +623,8 @@ msgstr "تیز"
 msgid ""
 "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
+"<b>ٹیلی گرام</b> کسی بھی ایپلی کیشن کے مقابلے میں<br> پیغامات بہت جلدی "
+"پہنچاتا ہے"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:27
@@ -627,6 +634,8 @@ msgstr "مفت"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
+"<b>ٹیلی گرام</b> ہمیشہ مفت رہے گا۔ اشتہارات کے بغیر۔<br> کوئی سب سکرپش فیس "
+"نہیں"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:32
@@ -635,7 +644,7 @@ msgstr "محفوظ"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr ""
+msgstr "<b>ٹیلی گرام</b> آپکے پیغامات ہیکرز<br> سے محفوظ رکھتا ہے"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:37
@@ -645,6 +654,7 @@ msgstr "طاقتور"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
+"<b>ٹیلی گرام</b> میں آپکی چیٹ یا میڈیا کے لیے<br> کوئی سائز کی حدود نہیں ہیں"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:42
@@ -655,6 +665,7 @@ msgstr "کلاؤڈ پر مبنی"
 msgid ""
 "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
+"<b>ٹیلی گرام</b> کے ذریعے آپ متعدد ڈیوائسز سے<br>اپنے پیغامات دیکھ سکتے ہیں"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:47
