@@ -36,10 +36,7 @@ Page {
     }
 
     objectName: "settingsPage"
-    header: PageHeader {
-        title: i18n.tr("Settings")
-        trailingActionBar.actions: actions
-    }
+    title: i18n.tr("Settings")
 
     function changeFullName() {
         var properties = { "telegram": telegram, "firstName": user.firstName, "lastName": user.lastName };
