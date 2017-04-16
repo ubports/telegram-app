@@ -1,6 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Ubuntu.Components.ListItems 1.3 as ListItems
 import Ubuntu.Components.Popups 1.3 as Popup
 import Ubuntu.Content 1.3
 
@@ -36,7 +36,10 @@ Page {
     }
 
     objectName: "settingsPage"
-    title: i18n.tr("Settings")
+    header: PageHeader {
+        title: i18n.tr("Settings")
+        trailingActionBar.actions: actions
+    }
 
     function changeFullName() {
         var properties = { "telegram": telegram, "firstName": user.firstName, "lastName": user.lastName };
@@ -91,120 +94,143 @@ Page {
     VisualItemModel {
         id: model
 
-        ListItem.Header {
+        ListItems.Header {
             // TRANSLATORS: Settings section header, visible above phone and username fields.
             text: i18n.tr("Info")
         }
 
-        ListItem.Subtitled {
-            text: telegram.phoneNumber
-            // TRANSLATORS: Visible right under phone number in settings page.
-            subText: i18n.tr("Phone")
-            showDivider: false
-            highlightWhenPressed: false
+        ListItem {
+            divider.visible: false
+            height: units.gu(6)
+            ListItemLayout {
+                id: phoneNumberLayout
+                title.text: telegram.phoneNumber
+                // TRANSLATORS: Visible right under phone number in settings page.
+                subtitle.text: i18n.tr("Phone")
+                padding.bottom: units.gu(1)
+                padding.top: units.gu(1)
+            }
         }
 
-        ListItem.Subtitled {
-            text: user.username
-            // TRANSLATORS: Visible right under username in settings page.
-            subText: i18n.tr("Username")
-            showDivider: false
+        ListItem {
+            divider.visible: false
+            height: units.gu(6)
+            ListItemLayout {
+                id: usernameLayout
+                title.text: user.username
+                // TRANSLATORS: Visible right under username in settings page.
+                subtitle.text: i18n.tr("Username")
+                padding.bottom: units.gu(1)
+                padding.top: units.gu(1)
+            }
             onClicked: changeUsername()
         }
 
-        ListItem.Header {
+        ListItems.Header {
             // TRANSLATORS: Settings section header.
             text: i18n.tr("Messages")
         }
 
-        ListItem.Standard {
-            // TRANSLATORS: Text of notifications switch in settings.
-            text: i18n.tr("Notifications")
-            height: visible ? implicitHeight : 0
-            visible: Cutegram.pushNumber === telegram.phoneNumber
-            showDivider: false
+        ListItem {
+            divider.visible: false
+            height: visible ? units.gu(6) : 0
+            visible: (Cutegram.pushNumber === telegram.phoneNumber)
 
-            Switch {
-                checked: Cutegram.pushNotifications
-                anchors {
-                    right: parent.right
-                    rightMargin: units.gu(2)
-                    verticalCenter: parent.verticalCenter
-                }
+            ListItemLayout {
+                id: notificationLayout
+                // TRANSLATORS: Text of notifications switch in settings.
+                title.text: i18n.tr("Notifications")
 
-                onCheckedChanged: {
-                    Cutegram.pushNotifications = checked;
+                Switch {
+                    checked: Cutegram.pushNotifications
+                    SlotsLayout.position: SlotsLayout.Last
 
-                    if (pushClient.token == "") {
-                        if (checked) {
-                            Cutegram.pushNotifications = false;
-                            mainView.openPushDialog();
-                        }
-                    } else {
-                        if (checked) {
-                            pushClient.registerForPush();
+                    onCheckedChanged: {
+                        Cutegram.pushNotifications = checked;
+
+                        if (pushClient.token == "") {
+                            if (checked) {
+                                Cutegram.pushNotifications = false;
+                                mainView.openPushDialog();
+                            }
                         } else {
-                            pushClient.unregisterFromPush();
+                            if (checked) {
+                                pushClient.registerForPush();
+                            } else {
+                                pushClient.unregisterFromPush();
+                            }
                         }
                     }
                 }
             }
         }
 
-        ListItem.Standard {
-            text: i18n.tr("Send by Enter")
-            showDivider: false
+        ListItem {
+            divider.visible: false
+            height: units.gu(6)
+            ListItemLayout {
+                title.text: i18n.tr("Send by Enter")
 
-            Switch {
-                checked: Cutegram.sendWithEnter
-                anchors {
-                    right: parent.right
-                    rightMargin: units.gu(2)
-                    verticalCenter: parent.verticalCenter
+                Switch {
+                    checked: Cutegram.sendWithEnter
+                    SlotsLayout.position: SlotsLayout.Last
+                    onCheckedChanged: Cutegram.sendWithEnter = checked
                 }
-
-                onCheckedChanged: Cutegram.sendWithEnter = checked
             }
         }
 
         // TODO Terminate all sessions
 
-        ListItem.Header {
+        ListItems.Header {
             // TRANSLATORS: Settings section header.
             text: i18n.tr("Support")
         }
 
-        ListItem.Standard {
-            showDivider: false
-            // TRANSLATORS: Text of settings item visible in the Support section.
-            text: i18n.tr("Ask a Question")
+        ListItem {
+            height: units.gu(6)
+            divider.visible: false
+            ListItemLayout {
+                // TRANSLATORS: Text of settings item visible in the Support section.
+                title.text: i18n.tr("Ask a Question")
+            }
             onClicked: Qt.openUrlExternally("http://askubuntu.com/search?q=telegram")
         }
 
-        ListItem.Standard {
-            showDivider: false
-            // TRANSLATORS: Text of settings item visible in the Support section
-            text: i18n.tr("Telegram FAQ")
+        ListItem {
+            height: units.gu(6)
+            divider.visible: false
+            ListItemLayout {
+                // TRANSLATORS: Text of settings item visible in the Support section
+                title.text: i18n.tr("Telegram FAQ")
+            }
             onClicked: Qt.openUrlExternally("https://telegram.org/faq")
         }
 
-        ListItem.Header {
-            // TRANSLATORS: Settings section header.
-            text: i18n.tr("Account")
+        ListItem {
+            height: units.gu(4)
+            ListItemLayout {
+                // TRANSLATORS: Settings section header.
+                title.text: i18n.tr("Account")
+                title.font.weight: Font.DemiBold
+                padding.bottom: units.gu(1)
+                padding.top: units.gu(1)
+            }
         }
 
-        ListItem.Standard {
+        ListItem {
             objectName: "listItem_logout"
-            showDivider: true
-            text: i18n.tr("Log out") + " | " + telegram.phoneNumber
+            height: units.gu(6)
+            ListItemLayout {
+                title.text: i18n.tr("Log out") + " | " + telegram.phoneNumber
+            }
             onClicked: PopupUtils.open(logout_dialog_component)
         }
 
-        ListItem.SingleControl {
-            showDivider: false
-            control: Label {
+        ListItem {
+            divider.visible: false
+            Label {
                 width: parent.width
-                height: units.gu(5)
+                height: units.gu(6)
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 // TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
@@ -250,13 +276,9 @@ Page {
             right: parent.right
             verticalCenter: profile_image.verticalCenter
         }
-        highlightWhenPressed: false
-        divider.visible: false
 
-        title: user.firstName + " " + user.lastName
-        titleIsBold: true
-        titleMaxLineCount: 2
-        subtitle: {
+        title.text: user.firstName + " " + user.lastName
+        subtitle.text: {
             var result = "";
             switch(user.status.classType)
             {
