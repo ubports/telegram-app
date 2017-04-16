@@ -157,8 +157,7 @@ ListItem {
         visible: dialog.encrypted
     }
 
-    Text {
-        id: title_text
+    Row {
         anchors {
             top: parent.top
             left: image.right
@@ -167,19 +166,49 @@ ListItem {
             right: time_text.left
             margins: units.dp(4)
         }
-        horizontalAlignment: Text.AlignLeft
-        verticalAlignment: Text.AlignVCenter
-        clip: true
-        elide: Text.ElideRight
-        wrapMode: Text.WrapAnywhere
-        maximumLineCount: 1
-        font.weight: Font.DemiBold
-        font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
-        text: list_item.title
+        spacing: units.dp(4)
+
+        Icon {
+            id: contact_group_icon
+            visible: isChat
+            name: "contact-group"
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                topMargin: units.dp(4)
+                bottomMargin: units.dp(4)
+            }
+            width: height
+        }
+
+        Text {
+            id: title_text
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+            clip: true
+            elide: Text.ElideRight
+            wrapMode: Text.WrapAnywhere
+            maximumLineCount: 1
+            font.weight: Font.DemiBold
+            font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
+            text: list_item.title
+        }
+
+        Icon {
+            id: audio_volume_muted_icon
+            visible: telegram.userData.isMuted(dialogId);
+            name: "audio-volume-muted"
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                topMargin: units.dp(4)
+                bottomMargin: units.dp(4)
+            }
+            width: height
+        }
     }
 
-    Text {
-        id: message_text
+    Row {
         anchors {
             top: parent.verticalCenter
             bottom: parent.bottom
@@ -189,103 +218,122 @@ ListItem {
             margins: units.dp(4)
             topMargin: 0
         }
-        visible: showMessage
-        clip: true
-        elide: Text.ElideRight
-        wrapMode: Text.WrapAnywhere
-        maximumLineCount: 1
-        font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
-        color: Colors.grey
-        text: {
-            if (!visible) return "";
 
-            var list = dialog.typingUsers;
-            if (list.length > 0) {
-                // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
-                return i18n.tr("typing...")
-            } else {
-                // We use emojis in our font currently, so no need to replace them here for now
-                //return emojis.bodyTextToEmojiText(message.message, 16, true);
+        Text {
+            id: message_author
+            visible: showMessage && (message.out || isChat) && dialog.typingUsers.length === 0
+            maximumLineCount: 1
+            font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
+            color: Colors.telegram_blue
+            text: {
+                if (dialog.typingUsers.length > 0) return '';
+                if (message.out) return i18n.tr("You: ");
+                if (isChat) return telegramObject.user(message.fromId).firstName + ': ';
+                return '';
+            }
+        }
 
-                if (message.message == "") {
-                    var res = ""
-                    var user = telegramObject.user(message.action.userId) 
-                    var fromUser = telegramObject.user(message.fromId)
-                    var userName = user.firstName + " " + user.lastName
-                    var fromUserName = fromUser.firstName + " " + fromUser.lastName
-                    userName = userName.trim()
-                    fromUserName = fromUserName.trim()
+        Text {
+            id: message_text
+            visible: showMessage
+            clip: true
+            elide: Text.ElideRight
+            wrapMode: Text.WrapAnywhere
+            maximumLineCount: 1
+            font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
+            color: Colors.grey
+            width: parent.width - message_author.width - (unread_rect.visible ? unread_rect.width : 0)
+            text: {
+                if (!visible) return "";
 
-                    switch(message.action.classType) {
-                        case typeMessageActionChatChangeTitle:
-                            if (fromUserName != "") {
-                                if(fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You changed the group title to %1</font>").arg(message.action.title)
-                                else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 changed the group title to %2</font>").arg(fromUserName).arg(message.action.title)
-                            }
-                            break
+                var list = dialog.typingUsers;
+                if (list.length > 0) {
+                    // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
+                    return i18n.tr("typing...")
+                } else {
+                    // We use emojis in our font currently, so no need to replace them here for now
+                    //return emojis.bodyTextToEmojiText(message.message, 16, true);
 
-                        case typeMessageActionChatSentImage:
-                            if (fromUserName != "") {
-                                if (isAudioMessage)
-                                    res = i18n.tr("<font color=\"DarkBlue\">Voice message</font>")
-                                else if (isSticker)
-                                    res = i18n.tr("<font color=\"DarkBlue\">Sticker</font>")
-                                else
-                                    res = i18n.tr("<font color=\"DarkBlue\">Photo</font>")
-                            }
-                            break
+                    if (message.message == "") {
+                        var res = ""
+                        var user = telegramObject.user(message.action.userId) 
+                        var fromUser = telegramObject.user(message.fromId)
+                        var userName = user.firstName + " " + user.lastName
+                        var fromUserName = fromUser.firstName + " " + fromUser.lastName
+                        userName = userName.trim()
+                        fromUserName = fromUserName.trim()
 
-                        case typeMessageActionChatCreate:
-                            if (message.action.title == "Secret Chat") {
-                                if (user.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 joined your secret chat.</font>").arg(fromUserName)
-                                else
-                                    res = i18n.tr("<font color=\"DarkBlue\">You joined the secret chat.</font>")
-                            } else {
+                        switch(message.action.classType) {
+                            case typeMessageActionChatChangeTitle:
+                                if (fromUserName != "") {
+                                    if(fromUser.id == telegramObject.me)
+                                        res = i18n.tr("<font color=\"DarkBlue\">You changed the group title to %1</font>").arg(message.action.title)
+                                    else
+                                        res = i18n.tr("<font color=\"DarkBlue\">%1 changed the group title to %2</font>").arg(fromUserName).arg(message.action.title)
+                                }
+                                break
+
+                            case typeMessageActionChatSentImage:
+                                if (fromUserName != "") {
+                                    if (isAudioMessage)
+                                        res = i18n.tr("<font color=\"DarkBlue\">Voice message</font>")
+                                    else if (isSticker)
+                                        res = i18n.tr("<font color=\"DarkBlue\">Sticker</font>")
+                                    else
+                                        res = i18n.tr("<font color=\"DarkBlue\">Photo</font>")
+                                }
+                                break
+
+                            case typeMessageActionChatCreate:
+                                if (message.action.title == "Secret Chat") {
+                                    if (user.id == telegramObject.me)
+                                        res = i18n.tr("<font color=\"DarkBlue\">%1 joined your secret chat.</font>").arg(fromUserName)
+                                    else
+                                        res = i18n.tr("<font color=\"DarkBlue\">You joined the secret chat.</font>")
+                                } else {
+                                    if (fromUser.id == telegramObject.me)
+                                        res = i18n.tr("<font color=\"DarkBlue\">You created the group</font>")
+                                    else
+                                        res = i18n.tr("<font color=\"DarkBlue\">%1 created the group</font>").arg(fromUserName)
+                                }
+                                break
+
+                            case typeMessageActionChatAddUser:
                                 if (fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You created the group</font>")
-                                else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 created the group</font>").arg(fromUserName)
-                            }
-                            break
-
-                        case typeMessageActionChatAddUser:
-                            if (fromUser.id == telegramObject.me)
-                                res = i18n.tr("<font color=\"DarkBlue\">You added %1</font>").arg(userName)
-                            else if (user.id == telegramObject.me)
-                                res = i18n.tr("<font color=\"DarkBlue\">%1 added you</font>").arg(fromUserName)
-                            else
-                                res = i18n.tr("<font color=\"DarkBlue\">%1 added %2</font>").arg(fromUserName).arg(userName)
-                            break
-
-                        case typeMessageActionChatDeleteUser:
-                            if(user.id == fromUser.id) {
-                                res = i18n.tr("<font color=\"DarkBlue\">%1 left the group</font>").arg(userName)
-                            } else {
-                                if (fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You removed %1</font>").arg(userName)
+                                    res = i18n.tr("<font color=\"DarkBlue\">You added %1</font>").arg(userName)
                                 else if (user.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 removed you</font>").arg(fromUserName)
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 added you</font>").arg(fromUserName)
                                 else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 removed %2</font>").arg(fromUserName).arg(userName)
-                            }
-                            break
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 added %2</font>").arg(fromUserName).arg(userName)
+                                break
 
-                        case typeMessageActionChatJoinedByLink:
-                            if(fromUser.id == telegramObject.me)
-                                res = i18n.tr("<font color=\"DarkBlue\">You joined the group via invite link</font>")
-                            else
-                                res = i18n.tr("<font color=\"DarkBlue\">%1 joined the group via invite link</font>").arg(fromUserName)
-                            break
+                            case typeMessageActionChatDeleteUser:
+                                if(user.id == fromUser.id) {
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 left the group</font>").arg(userName)
+                                } else {
+                                    if (fromUser.id == telegramObject.me)
+                                        res = i18n.tr("<font color=\"DarkBlue\">You removed %1</font>").arg(userName)
+                                    else if (user.id == telegramObject.me)
+                                        res = i18n.tr("<font color=\"DarkBlue\">%1 removed you</font>").arg(fromUserName)
+                                    else
+                                        res = i18n.tr("<font color=\"DarkBlue\">%1 removed %2</font>").arg(fromUserName).arg(userName)
+                                }
+                                break
 
-                        default:
-                            break
+                            case typeMessageActionChatJoinedByLink:
+                                if(fromUser.id == telegramObject.me)
+                                    res = i18n.tr("<font color=\"DarkBlue\">You joined the group via invite link</font>")
+                                else
+                                    res = i18n.tr("<font color=\"DarkBlue\">%1 joined the group via invite link</font>").arg(fromUserName)
+                                break
+
+                            default:
+                                break
+                        }
+                        return res
                     }
-                    return res
+                    return message.message
                 }
-                return message.message
             }
         }
     }
@@ -315,7 +363,7 @@ ListItem {
         width: Math.min(height, units.gu(4))
         height: units.gu(2.8)
         radius: width*0.5
-        color: "#5ec245"
+        color: telegram.userData.isMuted(dialogId) ? Colors.grey : "#5ec245"
         visible: dialog.unreadCount !== 0
 
         Text {

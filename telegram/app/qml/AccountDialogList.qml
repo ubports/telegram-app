@@ -84,6 +84,8 @@ Item {
             id: list_item
             objectName: "dialog%1".arg(index)
             anchors {
+                left: parent.left
+                right: parent.right
                 topMargin: units.dp(3)
                 leftMargin: units.dp(5)
                 bottomMargin: units.dp(3)
