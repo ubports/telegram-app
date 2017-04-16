@@ -9,6 +9,7 @@ Item {
     height: 62*Devices.density
 
     property alias filePath: player.source
+    property bool isInsideBar: false
 
     SystemPalette {
         id: masterPalette
@@ -20,6 +21,7 @@ Item {
         samples: 16
         color: play_marea.containsMouse? masterPalette.highlight : "#80000000"
         source: play_btn_scene
+        visible: !play_btn_scene.isInsideBar
     }
 
     MediaPlayer {
@@ -33,6 +35,7 @@ Item {
         anchors.top: parent.top
         anchors.bottom: parent.bottom
         width: height
+        readonly property bool isInsideBar: parent.isInsideBar
 
         Rectangle {
             id: play_btn
@@ -40,6 +43,7 @@ Item {
             anchors.margins: 3*Devices.density
             radius: width/2
             color: "#ffffff"
+            visible: !parent.isInsideBar
         }
 
         MouseArea {

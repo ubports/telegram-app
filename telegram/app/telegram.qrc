@@ -41,6 +41,7 @@
         <file>qml/components/AccountPanelItem.qml</file>
         <file>qml/components/AttachPanel.qml</file>
         <file>qml/components/AttachPanelItem.qml</file>
+        <file>qml/components/AudioRecordingBar.qml</file>
         <file>qml/components/Avatar.qml</file>
         <file>qml/components/ContactImport.qml</file>
         <file>qml/components/ColoredImage.qml</file>
@@ -62,6 +63,7 @@
         <file>qml/components/TelegramContactsListItem.qml</file>
         <file>qml/components/TelegramHeader.qml</file>
         <file>qml/components/TelegramPage.qml</file>
+        <file>qml/components/TransparentButton.qml</file>
         <file>qml/js/avatar.js</file>
         <file>qml/js/ba-linkify.js</file>
         <file>qml/js/colors.js</file>

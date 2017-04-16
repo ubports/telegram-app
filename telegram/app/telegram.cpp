@@ -216,6 +216,17 @@ bool Cutegram::filsIsImage(const QString &pt)
     return p->mdb.mimeTypeForFile(path).name().toLower().contains("image");
 }
 
+bool Cutegram::filsIsAudio(const QString &pt)
+{
+    QString path = pt;
+    if(path.left(AsemanDevices::localFilesPrePath().length()) == AsemanDevices::localFilesPrePath())
+        path = path.mid(AsemanDevices::localFilesPrePath().length());
+    if(path.isEmpty())
+        return false;
+
+    return p->mdb.mimeTypeForFile(path).name().toLower().contains("audio");
+}
+
 qreal Cutegram::htmlWidth(const QString &txt)
 {
     p->doc->setHtml(txt);
@@ -244,6 +255,29 @@ QString Cutegram::storeMessage(const QString &msg)
     file.close();
 
     return path;
+}
+
+QString Cutegram::createTemporaryFile(const QString &phone, const QString &prefix, const QString &ext)
+{
+    // Create temporary file, e.g. recorded audio
+    QDir dataLocation(cacheDirectory() + "/" + phone + "/temp/" + prefix);
+    if (!dataLocation.exists()) {
+        dataLocation.mkpath(".");
+    }
+    QTemporaryFile outputFile(dataLocation.absoluteFilePath("XXXXXX%1").arg(ext));
+    outputFile.setAutoRemove(false);
+    outputFile.open();
+    outputFile.close();
+
+    return QUrl::fromLocalFile(outputFile.fileName()).toString();
+}
+
+void Cutegram::deleteTemporaryFiles(const QString &phone, const QString &prefix)
+{
+    // Delete temporary file
+    QDir dir(cacheDirectory() + "/" + phone + "/temp/" + prefix);
+    qDebug() << "deleting" << dir.absolutePath();
+    dir.removeRecursively();
 }
 
 QString Cutegram::getTimeString(const QDateTime &dt)

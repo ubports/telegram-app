@@ -3,6 +3,7 @@
         "accounts",
         "audio",
         "video",
+        "microphone",
         "networking",
         "connectivity",
         "content_exchange",

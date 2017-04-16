@@ -13,6 +13,7 @@ class AsemanAudioRecorder : public QObject
     Q_OBJECT
     Q_ENUMS(State)
     Q_ENUMS(Status)
+    Q_ENUMS(Error)
 
     Q_PROPERTY(AsemanAudioEncoderSettings* encoderSettings READ encoderSettings WRITE setEncoderSettings NOTIFY encoderSettingsChanged)
     Q_PROPERTY(QUrl output READ output WRITE setOutput NOTIFY outputChanged)
@@ -21,6 +22,7 @@ class AsemanAudioRecorder : public QObject
     Q_PROPERTY(int availability READ availability NOTIFY availabilityChanged)
     Q_PROPERTY(int state READ state NOTIFY stateChanged)
     Q_PROPERTY(int status READ status NOTIFY statusChanged)
+    Q_PROPERTY(int error READ error NOTIFY errorChanged)
     Q_PROPERTY(qreal volume READ volume WRITE setVolume NOTIFY volumeChanged)
     Q_PROPERTY(QString audioInput READ audioInput WRITE setAudioInput NOTIFY audioInputChanged)
     Q_PROPERTY(QStringList audioInputs READ audioInputs NOTIFY audioInputsChanged)
@@ -31,6 +33,15 @@ public:
         StoppedState = QMediaRecorder::StoppedState,
         RecordingState = QMediaRecorder::RecordingState,
         PausedState = QMediaRecorder::PausedState
+    };
+
+    enum Error
+    {
+        NoError = QMediaRecorder::NoError, // 0
+        ResourceError = QMediaRecorder::ResourceError, // 1
+        FormatError = QMediaRecorder::FormatError, // 2
+        OutOfSpaceError = QMediaRecorder::OutOfSpaceError, // 3
+        CodecError = 4
     };
 
     enum Status {
@@ -67,6 +78,7 @@ public:
     int availability() const;
     int state() const;
     int status() const;
+    int error() const;
 
 public slots:
     void stop();
@@ -82,6 +94,7 @@ signals:
     void availabilityChanged();
     void stateChanged();
     void statusChanged();
+    void errorChanged();
     void audioInputChanged();
     void audioInputsChanged();
 
