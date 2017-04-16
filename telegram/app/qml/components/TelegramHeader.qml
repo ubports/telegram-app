@@ -1,31 +1,51 @@
-import QtQuick 2.0
-import Ubuntu.Components 1.0
-import "qrc:/qml/js/colors.js" as TelegramColors
+import QtQuick 2.4
+import Ubuntu.Components 1.3
+
+import "qrc:/qml/js/avatar.js" as Avatar
+import "qrc:/qml/js/time.js" as Time
+import "qrc:/qml/js/colors.js" as Colors
 
 import TelegramQML 1.0
 
-
-Item {
+PageHeader {
     id: header
 
     property Telegram telegram
     property Dialog dialog
 
-    property bool isChat: dialog.peer.chatId != 0
-    property User user: telegram.user(dialog.peer.userId)
+    property bool isChat: dialog ? dialog.peer.chatId != 0 : false
+    property User user: telegram.user(dialog.encrypted ? enChatUid : dialog.peer.userId)
     property Chat chat: telegram.chat(dialog.peer.chatId)
+    property int dialogId: isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
 
-    property var dialogId: isChat ? dialog.peer.chatId : dialog.peer.userId
-    property int onlineCount: 0
-    property bool isOnline: user.status.classType == typeUserStatusOnline
-    property bool isSecretChat: false
-    property bool isConnecting: false
+    property EncryptedChat enchat: telegram.encryptedChat(dialog.peer.userId)
+    property int enChatUid: enchat.adminId==telegram.me ? enchat.participantId : enchat.adminId
+
+    property bool isOnline: !isChat && user.status.classType == userStatusType.typeUserStatusOnline
+    property bool isSecretChat: dialog.encrypted
+    property bool isConnecting: !telegram.connected
+    property int onlineCount: {
+        var result = 0;
+        if (isChat) {
+            var chatFull = telegram.chatFull(chat.id);
+            var participants = chatFull.participants.participants;
+            for(var i=0; i<participants.count; i++) {
+                var userId = participants.at(i).userId;
+                var tmpUser = telegram.user(userId);
+                if (tmpUser.status.classType == userStatusType.typeUserStatusOnline)
+                    result++;
+            }
+        }
+        return result;
+    }
+
+    flickable: null
 
     property string title: {
         if (isChat) {
             return chat.title;
         } else {
-            return user.firstName + " " + userLastName;
+            return user.firstName + " " + user.lastName;
         }
     }
 
@@ -36,8 +56,8 @@ Item {
             if (isChat) {
                 for (var i = 0; i < list.length; i++) {
                     var userId = list[i];
-                    var user = telegram.user(userId);
-                    var name = user.firstName + " " + user.lastName
+                    var tmpUser = telegram.user(userId);
+                    var name = tmpUser.firstName + " " + tmpUser.lastName
                     result += name.trim();
 
                     if (i < list.length - 1) {
@@ -84,155 +104,167 @@ Item {
                 }
             }
         }
+        return result;
     }
 
     signal clicked()
 
-    // set this component height to page header contents height by default
-    // otherwise we might encounter weird resizing behaviors
-    height: units.gu(7)
-
-    Avatar {
-        id: headerImage
-        width: height
-        height: parent.height * 4 / 5.0
-        anchors {
-            left: parent.left
-            verticalCenter: parent.verticalCenter
-        }
-
-        telegram: header.telegram
-        dialog: header.dialog
-
-        RotationAnimation {
-            id: connectingAnimation
-            target: headerImage
-            direction: RotationAnimation.Clockwise
-            from: 0
-            to: 359
-            loops: Animation.Infinite
-            duration: 5000
-            alwaysRunToEnd: false
-            running: isConnecting && headerImage.isLogo
-            properties: "rotation"
-
-            onRunningChanged: {
-                if (!running) {
-                    connectingAnimation.stop();
-                    headerImage.rotation = 0;
-                }
-            }
-        }
-    }
-
-    Image {
-        id: secretChatImage
-        source: Qt.resolvedUrl("../images/ic_lock_green.png");
-        sourceSize.width: units.gu(1)
-        anchors {
-            left: headerImage.right
-            leftMargin: visible ? units.gu(1) : 0
-            verticalCenter: subtitleText.visible ? titleText.verticalCenter : parent.verticalCenter
-        }
-        fillMode: Image.PreserveAspectFit
-        visible: isSecretChat
-        height: isSecretChat ? units.gu(1.8) : 0
-    }
-
-    Label {
-        id: titleText
-        // We need fixed width. Otherwise, we overflow action icons.
-        width: Math.min(implicitWidth, parent.width - headerImage.width - secretChatImage.width - anchors.leftMargin)
+    contents: Item {
         anchors {
             top: parent.top
-            topMargin: units.gu(1)
-            left: secretChatImage.right
-            leftMargin: units.gu(1)
+            left: parent.left
+            right: parent.right
+            rightMargin: units.gu(5)
+            bottom: parent.bottom
         }
-        verticalAlignment: Text.AlignVCenter
 
-        font.pixelSize: FontUtils.sizeToPixels("large")
-        elide: Text.ElideRight
-        color: TelegramColors.grey
-        text: isConnecting ? i18n.tr("Connecting...") : title.length === 0 ? i18n.tr("Telegram") : title
+        Avatar {
+            id: headerImage
+            width: height
+            anchors {
+                left: parent.left
+                verticalCenter: parent.verticalCenter
+            }
 
-        state: header.subtitle.length > 0 ? "subtitle" : "default"
-        states: [
-            State {
-                name: "default"
-                AnchorChanges {
-                    target: titleText
-                    anchors.verticalCenter: titleText.parent.verticalCenter
-                }
-                PropertyChanges {
-                    target: titleText
-                    height: titleText.implicitHeight
-                }
-            },
-            State {
-                name: "subtitle"
-                PropertyChanges {
-                    target: titleText
-                    height: titleText.parent.height / 2
+            telegram: header.telegram
+            dialog: header.dialog
+
+            RotationAnimation {
+                id: connectingAnimation
+                target: headerImage
+                direction: RotationAnimation.Clockwise
+                from: 0
+                to: 359
+                loops: Animation.Infinite
+                duration: 5000
+                alwaysRunToEnd: false
+                running: isConnecting && headerImage.isLogo
+                properties: "rotation"
+
+                onRunningChanged: {
+                    if (!running) {
+                        connectingAnimation.stop();
+                        headerImage.rotation = 0;
+                    }
                 }
             }
-        ]
+        }
 
-        transitions: [
-            Transition {
-                AnchorAnimation {
+        //'Lock' image that is overlayed ontop of the Avatar conponent
+        Image {
+            id: secretChatImage
+            anchors {
+                left: headerImage.right
+                leftMargin: -width-5
+                top: headerImage.top
+                topMargin: units.dp(2)
+            }
+            width: units.gu(1)
+            height: units.gu(1.5)
+            source: "qrc:/qml/files/lock.png"
+            sourceSize: Qt.size(width, height)
+            visible: header.isSecretChat
+        }
+
+        Label {
+            id: titleText
+            anchors {
+                top: parent.top
+                left: headerImage.right
+                leftMargin: units.gu(1)
+            }
+            verticalAlignment: Text.AlignVCenter
+            width: parent.width
+
+            font.pixelSize: FontUtils.sizeToPixels("large")
+            elide: Text.ElideRight
+            wrapMode: Text.WordWrap
+            maximumLineCount: 1
+            text: isConnecting ? i18n.tr("Connecting...") : header.title.length === 0 ? i18n.tr("Telegram") : header.title
+
+            state: header.subtitle.length > 0 ? "subtitle" : "default"
+            states: [
+                State {
+                    name: "default"
+                    AnchorChanges {
+                        target: titleText
+                        anchors.verticalCenter: titleText.parent.verticalCenter
+                    }
+                    PropertyChanges {
+                        target: titleText
+                        height: titleText.implicitHeight
+                        anchors.topMargin: units.gu(0.7)
+                    }
+                },
+                State {
+                    name: "subtitle"
+                    PropertyChanges {
+                        target: titleText
+                        height: titleText.parent.height / 2
+                        anchors.topMargin: units.gu(0.35)
+                    }
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    AnchorAnimation {
+                        duration: UbuntuAnimation.FastDuration
+                    }
+                }
+            ]
+        }
+
+        Label {
+            id: subtitleText
+            anchors {
+                left: headerImage.right
+                leftMargin: units.gu(1)
+                bottom: parent.bottom
+                bottomMargin: units.gu(0.15)
+            }
+            verticalAlignment: Text.AlignVCenter
+            height: parent.height / 2
+            width: parent.width
+
+            fontSize: "small"
+            elide: Text.ElideRight
+            wrapMode: Text.WordWrap
+            maximumLineCount: 1
+            text: header.subtitle
+            color: header.isOnline ? Colors.dark_blue : Colors.grey
+
+            Connections {
+                target: header
+                onSubtitleChanged: {
+                    subtitleText.opacity = 0;
+                    subtitleText.text = "";
+                    subtitleTextTimer.start();
+                }
+            }
+
+            Timer {
+                id: subtitleTextTimer
+                interval: UbuntuAnimation.FastDuration
+                onTriggered: {
+                    subtitleText.text = header.subtitle;
+                    subtitleText.opacity = 1;
+                }
+            }
+
+            Behavior on opacity {
+                NumberAnimation {
                     duration: UbuntuAnimation.FastDuration
                 }
             }
-        ]
-    }
-
-    Label {
-        id: subtitleText
-        width: Math.min(implicitWidth, parent.width - headerImage.width - anchors.leftMargin)
-        anchors {
-            left: headerImage.right
-            leftMargin: units.gu(1)
-            bottom: parent.bottom
-            bottomMargin: units.gu(0.5)
         }
-        verticalAlignment: Text.AlignVCenter
-        height: parent.height / 2
 
-        color: TelegramColors.blue
-        fontSize: "small"
-        elide: Text.ElideRight
-        text: subtitle
-
-        Connections {
-            target: header
-            onSubtitleChanged: {
-                subtitleText.opacity = 0;
-                subtitleTextTimer.start();
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                mouse.accepted = true;
+                header.clicked();
             }
-        }
-
-        Timer {
-            id: subtitleTextTimer
-            interval: UbuntuAnimation.FastDuration
-            onTriggered: {
-                subtitleText.text = header.subtitle;
-                subtitleText.opacity = 1;
-            }
-        }
-
-        Behavior on opacity {
-            NumberAnimation {
-                duration: UbuntuAnimation.FastDuration
-            }
-        }
-    }
-
-    MouseArea {
-        anchors.fill: parent
-        onClicked: {
-            mouse.accepted = true;
-            header.clicked();
         }
     }
 }
