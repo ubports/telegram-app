@@ -1,0 +1,12 @@
+diff -Nurp libqtelegram-ae.orig/telegram.cpp libqtelegram-ae/telegram.cpp
+--- libqtelegram-ae.orig/telegram.cpp	2017-04-16 17:07:39.735088000 +0200
++++ libqtelegram-ae/telegram.cpp	2017-04-16 17:08:57.711316810 +0200
+@@ -428,6 +428,8 @@ qint64 Telegram::messagesCreateEncrypted
+     qCDebug(TG_LIB_SECRET) << "creating new encrypted chat";
+     // generate a new object where store all the needed secret chat data
+     SecretChat *secretChat = new SecretChat(prv->mSettings);
++    secretChat->setAdminId(prv->mSettings->ourId());
++    secretChat->setParticipantId(user.userId());
+     secretChat->setRequestedUser(user);
+     return generateGAorB(secretChat);
+ }

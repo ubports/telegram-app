@@ -12,15 +12,21 @@ if [ ! -d "libqtelegram-ae" ]; then
     git clone https://github.com/Aseman-Land/libqtelegram-aseman-edition.git libqtelegram-ae
     cd libqtelegram-ae
     git reset --hard 7bc3c3d54c744d675aa261bd4a0d335291052ee6
-    cd $TG_DIR/deps
+else
+    cd libqtelegram-ae
 fi
+for patch in $TG_DIR/buildScripts/upstream-patches/libqtelegram/*.patch; do patch -p1 -N -r - < "$patch" || true; done
+cd $TG_DIR/deps
 
 if [ ! -d "TelegramQML" ]; then
     git clone https://github.com/Aseman-Land/TelegramQML.git
     cd TelegramQML
     git reset --hard 7d5110a454af7d9be2370da6de217941bb9d1f1b
-    cd $TG_DIR/deps
+else
+    cd TelegramQML
 fi
+for patch in $TG_DIR/buildScripts/upstream-patches/TelegramQML/*.patch; do patch -p1 -N -r - < "$patch" || true; done
+cd $TG_DIR/deps
 
 echo "Building libqtelegram"
 
