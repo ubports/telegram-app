@@ -43,6 +43,7 @@ ListItem {
     // in delegate -- selected: currentDialog == dialog
     property bool selected: false
 
+    property real typeMessageActionEmpty:               0xb6aef7b0
     property real typeMessageActionChatCreate:          0xa6638b9a
     property real typeMessageActionChatAddUser:         0x5e3cfc4b
     property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
@@ -326,6 +327,10 @@ ListItem {
                                 else
                                     res = i18n.tr("<font color=\"DarkBlue\">%1 joined the group via invite link</font>").arg(fromUserName)
                                 break
+
+                            case typeMessageActionEmpty:
+                                res = i18n.tr("<font color=\"DarkBlue\">%1 is currently offline</font>").arg(title);
+                                break;
 
                             default:
                                 break
