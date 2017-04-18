@@ -268,74 +268,74 @@ ListItem {
                             case typeMessageActionChatChangeTitle:
                                 if (fromUserName != "") {
                                     if(fromUser.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">You changed the group title to %1</font>").arg(message.action.title)
+                                        res = i18n.tr("You changed the group title to %1").arg(message.action.title)
                                     else
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 changed the group title to %2</font>").arg(fromUserName).arg(message.action.title)
+                                        res = i18n.tr("%1 changed the group title to %2").arg(fromUserName).arg(message.action.title)
                                 }
                                 break
 
                             case typeMessageActionChatSentImage:
                                 if (fromUserName != "") {
                                     if (isAudioMessage)
-                                        res = i18n.tr("<font color=\"DarkBlue\">Voice message</font>")
+                                        res = i18n.tr("Voice message")
                                     else if (isSticker)
-                                        res = i18n.tr("<font color=\"DarkBlue\">Sticker</font>")
+                                        res = i18n.tr("Sticker")
                                     else
-                                        res = i18n.tr("<font color=\"DarkBlue\">Photo</font>")
+                                        res = i18n.tr("Photo")
                                 }
                                 break
 
                             case typeMessageActionChatCreate:
                                 if (message.action.title == "Secret Chat") {
                                     if (user.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 joined your secret chat.</font>").arg(fromUserName)
+                                        res = i18n.tr("%1 joined your secret chat.").arg(fromUserName)
                                     else
-                                        res = i18n.tr("<font color=\"DarkBlue\">You joined the secret chat.</font>")
+                                        res = i18n.tr("You joined the secret chat.")
                                 } else {
                                     if (fromUser.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">You created the group</font>")
+                                        res = i18n.tr("You created the group")
                                     else
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 created the group</font>").arg(fromUserName)
+                                        res = i18n.tr("%1 created the group").arg(fromUserName)
                                 }
                                 break
 
                             case typeMessageActionChatAddUser:
                                 if (fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You added %1</font>").arg(userName)
+                                    res = i18n.tr("You added %1").arg(userName)
                                 else if (user.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 added you</font>").arg(fromUserName)
+                                    res = i18n.tr("%1 added you").arg(fromUserName)
                                 else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 added %2</font>").arg(fromUserName).arg(userName)
+                                    res = i18n.tr("%1 added %2").arg(fromUserName).arg(userName)
                                 break
 
                             case typeMessageActionChatDeleteUser:
                                 if(user.id == fromUser.id) {
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 left the group</font>").arg(userName)
+                                    res = i18n.tr("%1 left the group").arg(userName)
                                 } else {
                                     if (fromUser.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">You removed %1</font>").arg(userName)
+                                        res = i18n.tr("You removed %1").arg(userName)
                                     else if (user.id == telegramObject.me)
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 removed you</font>").arg(fromUserName)
+                                        res = i18n.tr("%1 removed you").arg(fromUserName)
                                     else
-                                        res = i18n.tr("<font color=\"DarkBlue\">%1 removed %2</font>").arg(fromUserName).arg(userName)
+                                        res = i18n.tr("%1 removed %2").arg(fromUserName).arg(userName)
                                 }
                                 break
 
                             case typeMessageActionChatJoinedByLink:
                                 if(fromUser.id == telegramObject.me)
-                                    res = i18n.tr("<font color=\"DarkBlue\">You joined the group via invite link</font>")
+                                    res = i18n.tr("You joined the group via invite link")
                                 else
-                                    res = i18n.tr("<font color=\"DarkBlue\">%1 joined the group via invite link</font>").arg(fromUserName)
+                                    res = i18n.tr("%1 joined the group via invite link").arg(fromUserName)
                                 break
 
                             case typeMessageActionEmpty:
-                                res = i18n.tr("<font color=\"DarkBlue\">%1 is currently offline</font>").arg(title);
+                                res = i18n.tr("%1 is currently offline").arg(title);
                                 break;
 
                             default:
                                 break
                         }
-                        return res
+                        return "<font color=\"DarkBlue\">" + res + "</font>"
                     }
                     return message.message
                 }
