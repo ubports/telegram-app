@@ -17,7 +17,7 @@ Page {
     property User user: telegram.user(telegram.me)
 
     header: PageHeader {
-        title: settings_page.title
+        title: i18n.tr("Settings")
         trailingActionBar.actions: [
             Action {
                 iconName: "stock_image"
@@ -36,7 +36,6 @@ Page {
     }
 
     objectName: "settingsPage"
-    title: i18n.tr("Settings")
 
     function changeFullName() {
         var properties = { "telegram": telegram, "firstName": user.firstName, "lastName": user.lastName };
