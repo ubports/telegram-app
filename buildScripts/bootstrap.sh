@@ -10,6 +10,8 @@ cd $TG_DIR/deps
 
 if [ ! -d "libqtelegram-ae" ]; then
     git clone -b ubuntu-touch-2.x https://github.com/yunit-io/libqtelegram-aseman-edition.git libqtelegram-ae
+else
+    git -C libqtelegram-ae pull 
 fi
 cd libqtelegram-ae
 for patch in $TG_DIR/buildScripts/upstream-patches/libqtelegram/*.patch; do patch -p1 -N -r - < "$patch" || true; done
@@ -17,6 +19,8 @@ cd $TG_DIR/deps
 
 if [ ! -d "TelegramQML" ]; then
     git clone -b ubuntu-touch-2.x https://github.com/yunit-io/TelegramQML.git TelegramQML
+else
+    git -C TelegramQML pull
 fi
 cd TelegramQML
 for patch in $TG_DIR/buildScripts/upstream-patches/TelegramQML/*.patch; do patch -p1 -N -r - < "$patch" || true; done
