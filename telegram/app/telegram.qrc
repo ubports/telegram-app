@@ -149,7 +149,5 @@
         <file>qml/files/emoticons-telegram.png</file>
         <file>qml/files/emojis.svg</file>
         <file>qml/InstallStickerDialog.qml</file>
-        <file>qml/components/SearchableHeadState.qml</file>
-        <file>qml/components/SearchHeadState.qml</file>
     </qresource>
 </RCC>
