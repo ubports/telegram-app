@@ -388,4 +388,17 @@ ListItem {
     }
 
     onSelectedChanged: if (selected) currentIndexChanged(index)
+
+    function onMuteChanged(id) {
+        if (id == list_item.dialogId)
+            list_item.isMuted = list_item.telegram.userData.isMuted(list_item.dialogId);
+    }
+
+    Component.onCompleted: {
+        telegram.userData.muteChanged.connect(list_item.onMuteChanged)
+    }
+
+    Component.onDestruction: {
+        telegram.userData.muteChanged.disconnect(list_item.onMuteChanged);
+    }
 }
