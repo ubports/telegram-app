@@ -886,17 +886,17 @@ msgstr "Quer mesmo limpar o histórico?"
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/DialogsListItem.qml:188
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramHeader.qml:51
 msgid "typing..."
-msgstr "escrevendo..."
+msgstr "a escever..."
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:205
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr "Recebido de <b>%1</b>"
+msgstr "Encaminhado de <b>%1</b>"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:288
 msgid "Audio attachment not supported yet ;("
-msgstr "Anexo de áudio ainda não suportado"
+msgstr "Mensagens de áudio ainda não suportadas"
 
 #. TRANSLATORS: User status: deleted
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/TelegramContactsListItem.qml:34
@@ -906,7 +906,7 @@ msgstr "Eliminado"
 #. TRANSLATORS: Title of self destruct timer dialog.
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
 msgid "Self-Destruct Timer"
-msgstr "Temporizador auto-destrutor"
+msgstr "Temporizador de auto-destruição"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -968,7 +968,7 @@ msgstr "enviou-lhe uma mensagem"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
-msgstr "enviou-lhe uma foto"
+msgstr "enviou-lhe uma fotografia"
 
 #: /home/karni/src/telegram/telegram-app/v2/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
