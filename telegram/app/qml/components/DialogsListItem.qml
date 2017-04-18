@@ -22,6 +22,7 @@ ListItem {
     property Dialog dialog
     property int dialogId: isChat ? dialog.peer.chatId : dialog.peer.userId
     property bool isChat: dialog.peer.chatId !== 0
+    property bool isMuted: telegram.userData.isMuted(dialogId)
     property bool isEncrypted: dialog.encrypted
     property User user: telegram.user(dialog.encrypted ? encryptedChatUid : dialog.peer.userId)
     property Chat chat: telegram.chat(dialog.peer.chatId)
@@ -197,7 +198,7 @@ ListItem {
 
         Icon {
             id: audio_volume_muted_icon
-            visible: telegram.userData.isMuted(dialogId);
+            visible: isMuted
             name: "audio-volume-muted"
             anchors {
                 top: parent.top
@@ -222,7 +223,7 @@ ListItem {
 
         Text {
             id: message_author
-            visible: showMessage && (message.out || isChat) && dialog.typingUsers.length === 0
+            visible: showMessage && (message.out || isChat) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.telegram_blue
@@ -368,7 +369,7 @@ ListItem {
         width: Math.min(height, units.gu(4))
         height: units.gu(2.8)
         radius: width*0.5
-        color: telegram.userData.isMuted(dialogId) ? Colors.grey : "#5ec245"
+        color: isMuted ? Colors.grey : "#5ec245"
         visible: dialog.unreadCount !== 0
 
         Text {
