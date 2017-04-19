@@ -1,18 +1,18 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+
+# Spanish translation for libqtelegram
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the libqtelegram package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 # Jujuyeh <paul.98.zgz@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 19:51+0200\n"
-"PO-Revision-Date: 2017-04-18 18:41+0200\n"
+"POT-Creation-Date: 2015-12-09 12:51+0100\n"
+"PO-Revision-Date: 2017-04-17 14:43+0200\n"
 "Last-Translator: Jujuyeh <paul.98.zgz@gmail.com>\n"
 "Language-Team: Español; Castellano <paul.98.zgz@gmail.com>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,9 +23,23 @@ msgstr ""
 msgid "Add to contacts"
 msgstr "Añadir a los contactos"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:26
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
+msgid "New Group"
+msgstr "Grupo nuevo"
+
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
+msgid "Add to group"
+msgstr "Añadir a un grupo"
+
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
+msgid "New Secret Chat"
+msgstr "Crear chat secreto"
+
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
+
 msgid "Contacts"
 msgstr "Contactos"
 
@@ -319,7 +333,7 @@ msgstr "Información de paquete de Stickers"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
-msgstr "Se solicitó un chat secreto"
+msgstr "Se solicitó un chat secreto."
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
@@ -616,6 +630,17 @@ msgstr "Incluya el código de país."
 msgid "Number is not a valid phone number"
 msgstr "Este no es un número de teléfono válido"
 
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthenticatePage.qml:7
+msgid "Sign In"
+msgstr "Iniciar sesión"
+
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:22
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AuthCodePage.qml:146
+msgid "Sign Up"
+msgstr "Registrarse"
+
 #. TRANSLATORS: Error text for an invalid phone code.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:33
 msgid "Invalid phone code"
@@ -704,7 +729,7 @@ msgstr "Bienvenido/a a la era<br>de la mensajería rápida y segura"
 msgid "Fast"
 msgstr "Rápida"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> entrega los mensajes más rápido<br>que el resto de "
@@ -743,7 +768,7 @@ msgstr ""
 msgid "Cloud-Based"
 msgstr "En la nube"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> le permite acceder a sus mensajes<br>desde múltiples "
@@ -1084,6 +1109,10 @@ msgstr ""
 msgid "Forwarded from <b>%1</b>"
 msgstr "Reenviado desde <b>%1</b>"
 
+#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/MessagesListItem.qml:288
+msgid "Audio attachment not supported yet ;("
+msgstr "Las notas de audio aún no están soportadas ;("
+
 #. TRANSLATORS: User status: deleted
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
@@ -1397,5 +1426,3 @@ msgstr "Este es el scope de Telegram"
 msgid "Search for a chat, contact or message"
 msgstr "Buscar un chat, contacto o mensaje"
 
-#~ msgid "Search music"
-#~ msgstr "Buscar música"
