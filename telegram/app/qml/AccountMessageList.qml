@@ -58,7 +58,7 @@ Rectangle {
 
     onCurrentDialogChanged: {
         selected_list.clear()
-        add_anim_disabler.restart()
+        //add_anim_disabler.restart()
     }
 
     ListObject {
@@ -164,10 +164,10 @@ Rectangle {
         property string filePath
     }
 
-    Timer {
+    /*Timer {
         id: add_anim_disabler
         interval: 500
-    }
+    }*/
 
     StickersModel {
         id: stickers_model
@@ -194,12 +194,13 @@ Rectangle {
         onAtYBeginningChanged: if( atYBeginning && contentHeight>height &&
                                    currentDialog != telegramObject.nullDialog ) messages_model.loadMore()
 
-        displaced: Transition {
+        // These transitions don't work very well when an item content takes too much time to load.
+        /*displaced: Transition {
             NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: 300 }
         }
         add: Transition {
             NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: add_anim_disabler.running? 0 : 300 }
-        }
+        }*/
 
         section.property: "unreaded"
         section.criteria: ViewSection.FullString

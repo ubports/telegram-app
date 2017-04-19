@@ -1,9 +1,0 @@
-deps/*
-usr
-click
-click/*
-*.click
-telegram/build
-telegram/scope/build
-telegram/manifest.json
-telegram/telegram.pro.user
