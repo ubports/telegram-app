@@ -33,6 +33,7 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
         $ sudo apt-get install qml-module-ubuntu-connectivity qtcreator-plugin-ubuntu qtdeclarative5-ubuntu-contacts0.1
 
 2)  Environment setup
+### case Device:
     Change your directory into below:
 
         $ cd ~/.config/QtProject/qtcreator/ubuntu-sdk/ubuntu-sdk-15.04-armhf
@@ -40,6 +41,10 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
     then make a symbolic link bewteen qtc_chroot_wrapper and the make:
 
         $ ln -s /usr/share/qtcreator/ubuntu/scripts/qtc_chroot_wrapper.py make
+
+    then make a symbolic link bewteen qtc_chroot_wrapper and qmake:
+
+        $ ln -s /usr/share/qtcreator/ubuntu/scripts/qtc_chroot_wrapper.py qt5-qmake-arm-linux-gnueabihf
 
 3)  Download and build the source of libqtelegram-aseman-edition library and TelegramQML plugin:
 
