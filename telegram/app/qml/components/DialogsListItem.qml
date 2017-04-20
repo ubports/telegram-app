@@ -33,7 +33,7 @@ ListItem {
 
     property bool showMessage: true
     property Message message: telegram.message(dialog.topMessage)
-    property variant messageDate: CalendarConv.fromTime_t(message.date)
+    property variant messageDate: CalendarConv.fromTime_t(message ? message.date : 0)
     property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     property alias isSticker: file_handler.isSticker
 
@@ -223,12 +223,12 @@ ListItem {
 
         Text {
             id: message_author
-            visible: showMessage && (message.out || isChat) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
+            visible: showMessage && message && (message.out || isChat) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.telegram_blue
             text: {
-                if (dialog.typingUsers.length > 0) return '';
+                if (!message || dialog.typingUsers.length > 0) return '';
                 if (message.out) return i18n.tr("You: ");
                 if (isChat) return telegramObject.user(message.fromId).firstName + ': ';
                 return '';
@@ -253,6 +253,8 @@ ListItem {
                     // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
                     return i18n.tr("typing...")
                 } else {
+                    if (!message) return "";
+
                     // We use emojis in our font currently, so no need to replace them here for now
                     //return emojis.bodyTextToEmojiText(message.message, 16, true);
 
