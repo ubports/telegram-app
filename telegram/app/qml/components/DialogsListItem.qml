@@ -283,8 +283,11 @@ ListItem {
                                         res = i18n.tr("Voice message")
                                     else if (isSticker)
                                         res = i18n.tr("Sticker")
-                                    else
-                                        res = i18n.tr("Photo")
+                                    else {
+                                        res = file_handler.fileName
+                                        if (res == "")
+                                            res = i18n.tr("Photo")
+                                    }
                                 }
                                 break
 
