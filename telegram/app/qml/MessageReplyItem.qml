@@ -51,7 +51,7 @@ Item {
                 // font.family: AsemanApp.globalFont.family
                 fontSize: "small"
                 font.weight: Font.Normal
-                color: message.out ? Colors.dark_green : Colors.telegram_blue
+                color: !message || message.out ? Colors.dark_green : Colors.telegram_blue
 //                    if(!replyMessage && (!message || message.out))
 //                        return Cutegram.currentTheme.messageOutgoingNameColor
 //                    else
@@ -184,7 +184,7 @@ Item {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            if(!replyMessage && message.replyToMsgId == 0)
+            if(!replyMessage && (!message || message.replyToMsgId == 0))
                 return
 
             var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
