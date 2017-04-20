@@ -23,20 +23,6 @@ msgstr ""
 msgid "Add to contacts"
 msgstr "Añadir a los contactos"
 
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:22
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:76
-msgid "New Group"
-msgstr "Grupo nuevo"
-
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:24
-msgid "Add to group"
-msgstr "Añadir a un grupo"
-
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:85
-msgid "New Secret Chat"
-msgstr "Crear chat secreto"
-
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/AccountContactsPage.qml:28
 #: /home/karni/src/telegram/telegram-app/v2/telegram/app/qml/components/AccountPanel.qml:93
 
@@ -205,19 +191,6 @@ msgstr "Reenviar"
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
 msgstr "Eliminar"
-
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:7
-msgid "Sign In"
-msgstr "Iniciar sesión"
-
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-msgid "Sign Up"
-msgstr "Registrarse"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -406,10 +379,6 @@ msgstr "Seleccionar chat"
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
 msgid "Type message"
 msgstr "Escriba el mensaje"
-
-#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
-msgid "Audio attachment not supported yet ;("
-msgstr "Las notas de audio aún no están soportadas ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"

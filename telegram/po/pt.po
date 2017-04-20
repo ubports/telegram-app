@@ -265,7 +265,7 @@ msgstr "<b>%1</b> removeu <b>%2</b>"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
-msgstr "Você alterou o nome do grupo para %1""
+msgstr "Você alterou o nome do grupo para %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
@@ -1007,7 +1007,7 @@ msgstr "a escever..."
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:271
 #, fuzzy, qt-format
 msgid "You changed the group title to %1"
-msgstr "Você alterou o nome do grupo para %1""
+msgstr "Você alterou o nome do grupo para %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:273
 #, fuzzy, qt-format
@@ -1036,7 +1036,7 @@ msgstr "Você juntou-se à conversa secreta"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:298
 #, fuzzy, qt-format
 msgid "%1 created the group"
-msgstr "%1 criou o grupo""
+msgstr "%1 criou o grupo"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
