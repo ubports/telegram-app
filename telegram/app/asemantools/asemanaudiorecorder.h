@@ -23,6 +23,7 @@ class AsemanAudioRecorder : public QObject
     Q_PROPERTY(int state READ state NOTIFY stateChanged)
     Q_PROPERTY(int status READ status NOTIFY statusChanged)
     Q_PROPERTY(int error READ error NOTIFY errorChanged)
+    Q_PROPERTY(qint64 duration READ duration NOTIFY durationChanged)
     Q_PROPERTY(qreal volume READ volume WRITE setVolume NOTIFY volumeChanged)
     Q_PROPERTY(QString audioInput READ audioInput WRITE setAudioInput NOTIFY audioInputChanged)
     Q_PROPERTY(QStringList audioInputs READ audioInputs NOTIFY audioInputsChanged)
@@ -79,6 +80,7 @@ public:
     int state() const;
     int status() const;
     int error() const;
+    qint64 duration() const;
 
 public slots:
     void stop();
@@ -97,6 +99,7 @@ signals:
     void errorChanged();
     void audioInputChanged();
     void audioInputsChanged();
+    void durationChanged();
 
 private:
     AsemanAudioRecorderPrivate *p;

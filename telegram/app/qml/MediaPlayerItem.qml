@@ -3,6 +3,8 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import QtGraphicalEffects 1.0
 import QtMultimedia 5.0
+import "components"
+import "js/time.js" as Time
 
 Item {
     width: 100
@@ -46,6 +48,30 @@ Item {
             visible: !parent.isInsideBar
         }
 
+        TransparentButton {
+            id: play_btn_bar
+
+            anchors {
+                top: parent.top
+                right: parent.right
+                topMargin: units.gu(0.5)
+                rightMargin: units.gu(0.5)
+            }
+            visible: parent.isInsideBar
+
+            iconColor: "#777777"//"grey"
+            iconName: (player.playbackState == MediaPlayer.PlayingState) ? "media-playback-pause" : "media-playback-start"
+
+            textSize: FontUtils.sizeToPixels("x-small")
+            text: {
+                if (player.playbackState == MediaPlayer.PlayingState ||
+                    player.playbackState == AudioRecorder.StoppedState) {
+                    return Time.formatTimeOnly(i18n, player.position/ 1000)
+                }
+                return Time.formatTimeOnly(i18n, player.duration / 1000)
+            }
+        }
+
         MouseArea {
             id: play_marea
             anchors.fill: parent
@@ -66,7 +92,7 @@ Item {
         anchors.centerIn: play_btn_scene
         width: height
         height: play_btn_scene.height*0.35
-        visible: player.playbackState != MediaPlayer.PlayingState
+        visible: !play_btn_scene.isInsideBar && player.playbackState != MediaPlayer.PlayingState
         onPaint: {
             var ctx = getContext("2d");
             ctx.save();
@@ -90,7 +116,7 @@ Item {
         anchors.centerIn: play_btn_scene
         width: height
         height: play_btn_scene.height*0.35
-        visible: player.playbackState == MediaPlayer.PlayingState
+        visible: !play_btn_scene.isInsideBar && player.playbackState == MediaPlayer.PlayingState
         spacing: width/4
 
         Rectangle {height: parent.height; width: parent.width/2.7; color: masterPalette.highlight}

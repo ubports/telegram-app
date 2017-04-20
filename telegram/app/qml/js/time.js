@@ -62,12 +62,17 @@ function formatLastSeen(i18n, time) {
 }
 
 function formatTimeOnly(i18n, time) {
-    var date = new Date(time);
+    var d = new Date(0, 0, 0, 0, 0, time)
     // TRANSLATORS: localized time string, see available formats at
     // http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-    var timeFormatted = Qt.formatTime(date, i18n.tr("hh:mm"));
+    var timeFormatted = d.getHours() == 0 ? Qt.formatTime(d, i18n.tr("mm:ss")) : Qt.formatTime(d, i18n.tr("h:mm:ss"))
 
     return timeFormatted;
+}
+
+function formattedTime(time) {
+    var d = new Date(0, 0, 0, 0, 0, time)
+    return d.getHours() == 0 ? Qt.formatTime(d, "mm:ss") : Qt.formatTime(d, "h:mm:ss")
 }
 
 function areSameDay(date1, date2) {

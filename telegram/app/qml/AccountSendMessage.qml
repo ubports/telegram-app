@@ -709,7 +709,6 @@ Rectangle {
                 left: closeButton.right
                 right: parent.right
                 leftMargin: units.gu(1)
-                rightMargin: units.gu(1)
                 verticalCenter: parent.verticalCenter
             }
             height: smsg.height-units.gu(2)

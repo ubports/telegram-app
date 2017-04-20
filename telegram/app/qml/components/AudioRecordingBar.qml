@@ -23,6 +23,8 @@ import Ubuntu.Components.Popups 1.3
 import TelegramQML 1.0
 import AsemanTools 1.0
 
+import "../js/time.js" as Time
+
 Item {
     id: recordingBar
     opacity: audioRecorder.recording ? 1.0 : 0.0
@@ -58,12 +60,12 @@ Item {
         id: audioRecorder
         readonly property bool ready: status == Loader.Ready && item != null
         readonly property bool recording: ready ? item.recording : false
+        readonly property int duration: ready ? item.duration : 0
         property bool codecError: false
         property bool resourceError: false
 
         function record() {
             audioRecorder.active = true
-            item.output = Cutegram.createTemporaryFile(telegram.phoneNumber, "audio", ".ogg")
             if (!codecError && !resourceError)
                 item.record()
         }
@@ -98,6 +100,9 @@ Item {
                     }
 
                     recordingBar.audioRecorded(filePath)
+
+                    //Preload new temporary file
+                    item.output = Cutegram.createTemporaryFile(telegram.phoneNumber, "audio", ".ogg")
                 }
             }
             onErrorChanged: {
@@ -111,13 +116,21 @@ Item {
                     default:
                 }
             }
+            Component.onCompleted: {
+                //Preload new temporary file
+                output = Cutegram.createTemporaryFile(telegram.phoneNumber, "audio", ".ogg")
+            }
+            Component.onDestruction: {
+                //Delete temporary file
+                Cutegram.deleteFile(output.toString())
+            }
         }
     }
 
     TransparentButton {
         id: recordingIcon
         objectName: "recordingIcon"
-        iconPulsate: recordingBar.recording
+        iconPulsate: audioRecorder.recording
         sideBySide: true
         spacing: units.gu(1)
         opacity: buttonOpacity
@@ -132,6 +145,14 @@ Item {
 
         iconColor: "red"
         iconName: "audio-input-microphone-symbolic"
+
+        textSize: FontUtils.sizeToPixels("small")
+        text: {
+            if (audioRecorder.recording) {
+                return Time.formatTimeOnly(i18n, audioRecorder.duration / 1000)
+            }
+            return Time.formatTimeOnly(i18n, 0)
+        }
     }
 
     Label {

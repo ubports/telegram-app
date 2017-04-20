@@ -24,6 +24,7 @@ AsemanAudioRecorder::AsemanAudioRecorder(QObject *parent) :
             SIGNAL(statusChanged()));
     connect(p->recorder, SIGNAL(error(QMediaRecorder::Error)),
             SIGNAL(errorChanged()));
+    connect(p->recorder, SIGNAL(durationChanged(qint64)), SIGNAL(durationChanged()));
     connect(p->recorder, SIGNAL(availabilityChanged(bool)), SIGNAL(availableChanged()));
     connect(p->recorder, SIGNAL(mutedChanged(bool)), SIGNAL(muteChanged()));
     connect(p->recorder, SIGNAL(volumeChanged(qreal)), SIGNAL(volumeChanged()));
@@ -133,6 +134,11 @@ int AsemanAudioRecorder::state() const
 int AsemanAudioRecorder::status() const
 {
     return p->recorder->status();
+}
+
+qint64 AsemanAudioRecorder::duration() const
+{
+    return p->recorder->duration();
 }
 
 void AsemanAudioRecorder::stop()
