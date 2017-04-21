@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-18 19:51+0200\n"
-"PO-Revision-Date: 2017-04-18 22:12+0200\n"
+"PO-Revision-Date: 2017-04-21 20:05+0200\n"
 "Last-Translator: schuko24 <gerdsaenger@t-online.de>\n"
 "Language-Team: German <de@li.org>\n"
 "Language: de\n"
@@ -51,7 +51,7 @@ msgstr "Zurück"
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
-msgstr "Kontakte suchen …"
+msgstr "Kontakte suchen…"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
@@ -372,7 +372,7 @@ msgstr "Nachname (optional)"
 #: /telegram-app/telegram/app/qml/AccountPage.qml:303
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
 msgid "Connecting..."
-msgstr "Verbindungsaufbau …"
+msgstr "Verbindungsaufbau…"
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:307
@@ -395,7 +395,7 @@ msgstr "Eine Nachricht schreiben"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
-msgstr "Sprachanhänge werden noch nicht unterstützt"
+msgstr "Sprachanhänge werden noch nicht unterstützt :("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
@@ -991,7 +991,7 @@ msgstr "Sind Sie sicher, dass Sie den Verlauf leeren möchten?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:231
 msgid "You: "
-msgstr "Sie:"
+msgstr "Sie: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -1275,7 +1275,7 @@ msgstr "%1 nutzt jetzt Telegram!"
 #: /telegram-app/telegram/push/pushhelper.cpp:239
 #: /telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr "Neue Anmeldung von einem bisher unerkannten Gerät"
+msgstr "Neue Anmeldung von unbekanntem Gerät"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /telegram-app/telegram/push/pushhelper.cpp:244
@@ -1384,7 +1384,7 @@ msgstr "Medientyp nicht darstellbar"
 
 #: /telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr "In Telegram anmelden"
+msgstr "Bei Telegram anmelden"
 
 #: /telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
