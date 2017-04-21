@@ -283,7 +283,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0
+        visible: opacity > 0 && !messagePlaceholder.visible
 
         AbstractButton {
             anchors.fill: parent
@@ -324,7 +324,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0
+        visible: opacity > 0 && !messagePlaceholder.visible
 
         AbstractButton {
             anchors.fill: parent
