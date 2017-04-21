@@ -341,7 +341,7 @@ ListItem {
                             default:
                                 break
                         }
-                        return "<font color=\"DarkBlue\">" + res + "</font>"
+                        return "<font color=\"" + Colors.telegram_blue + "\">" + res + "</font>"
                     }
                     return message.message
                 }
