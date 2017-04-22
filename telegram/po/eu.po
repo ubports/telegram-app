@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-21 20:06+0200\n"
-"PO-Revision-Date: 2017-04-22 16:06+0200\n"
+"PO-Revision-Date: 2017-04-22 20:09+0200\n"
 "Language-Team: Euskara, Basque <aitzol76@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1231,169 +1231,169 @@ msgstr "%1-(e)k taldearen izena aldatu du"
 #: /telegram-app/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
-msgstr ""
+msgstr "%1-(e)k taldearen argazkia aldatu du"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /telegram-app/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
-msgstr ""
+msgstr "%1-(e)k %2 gonbidatu du"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr ""
+msgstr "%1-(e)k taldetik ezabatu zaitu"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
-msgstr ""
+msgstr "%1-(e)k taldea utzi du"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr ""
+msgstr "%1 taldera itzuli da"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /telegram-app/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
-msgstr ""
+msgstr "%1-(e)n"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /telegram-app/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "%1-(e)k kokapena egiaztatu du"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr ""
+msgstr "%1 Telegram-era elkartu da"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:239
 #: /telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "Saio hasiera berria gailu ezezagunetik"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /telegram-app/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
-msgstr ""
+msgstr "%1 %2-(e)n"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
-msgstr ""
+msgstr "profileko argazkia eguneratua"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:254
 #: /telegram-app/telegram/push/pushhelper.cpp:259
 #: /telegram-app/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
-msgstr ""
+msgstr "Mezu berri bat daukazu"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /telegram-app/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr ""
+msgstr "h:mm ddd, dd/MM/yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /telegram-app/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr ""
+msgstr "Aplikazioa ireki"
 
 #. TRANSLATORS: call to action: open this chat
 #: /telegram-app/telegram/scope/preview.cpp:86
 #: /telegram-app/telegram/scope/preview.cpp:120
 #: /telegram-app/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr ""
+msgstr "Txata ireki"
 
 #: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "Deitu"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "Telegram-eko datu jasotzeak huts egin du"
 
 #: /telegram-app/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr ""
+msgstr "Ukitu hemen aplikazioa irekitzeko"
 
 #: /telegram-app/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr ""
+msgstr "Emaitzak: Kontaktu eta Txatetan"
 
 #: /telegram-app/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
-msgstr ""
+msgstr "Emaitzak: Mezuetan"
 
 #: /telegram-app/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr ""
+msgstr "Hitz egiten duzun jendea"
 
 #: /telegram-app/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr ""
+msgstr "Azkenaldiko Txatak"
 
 #: /telegram-app/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr ""
+msgstr "Azkenaldiko Argazkiak"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
-msgstr ""
+msgstr "mezu berri %1"
 
 #: /telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
-msgstr ""
+msgstr "%1 mezu berri"
 
 #: /telegram-app/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr ""
+msgstr "Irakurri gabeko Txatak (%1)"
 
 #: /telegram-app/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr ""
+msgstr "Audio mezua"
 
 #: /telegram-app/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr ""
+msgstr "Jasotako kontaktua"
 
 #: /telegram-app/telegram/scope/query.cpp:650
 msgid "Document received"
-msgstr ""
+msgstr "Jasotako dokumentua"
 
 #: /telegram-app/telegram/scope/query.cpp:654
 msgid "Photo received"
-msgstr ""
+msgstr "Jasotako argazkia"
 
 #: /telegram-app/telegram/scope/query.cpp:671
 msgid "Video received"
-msgstr ""
+msgstr "Jasotako bideoa"
 
 #: /telegram-app/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr ""
+msgstr "Landu gabeko euskarri mota"
 
 #: /telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr ""
+msgstr "Saioa hasi Telegram-en"
 
 #: /telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
-msgstr ""
+msgstr "Gaur ez da mezurik jaso."
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr ""
+msgstr "Hau Telegram eremua da"
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "Txat, kontaktu edo mezu bat bilatu"
