@@ -991,7 +991,7 @@ msgstr "Sind Sie sicher, dass Sie den Verlauf leeren möchten?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:231
 msgid "You: "
-msgstr "Ich:"
+msgstr "Ich: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
