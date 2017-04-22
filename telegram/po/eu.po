@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-21 20:06+0200\n"
-"PO-Revision-Date: 2017-04-22 16:03+0200\n"
+"PO-Revision-Date: 2017-04-22 16:06+0200\n"
 "Language-Team: Euskara, Basque <aitzol76@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -404,7 +404,7 @@ msgstr "Grabaketa ikonoa sakaturik mantendu behar duzu"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Mesedez baimendu mikrofono sarbidea Sistemaren Ezarpenak > Segurtasuna eta "
-"Pribatasuna -n"
+"Pribatasuna atalean"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
