@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-22 21:04+0200\n"
-"PO-Revision-Date: 2015-12-22 07:31+0000\n"
-"Last-Translator: Hannie Dumoleyn <Unknown>\n"
+"POT-Creation-Date: 2017-04-18 19:51+0200\n"
+"PO-Revision-Date: 2017-04-24 22:15+0200\n"
+"Last-Translator: Zuzanna Stamburska <stambur@wp.pl>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -144,13 +144,13 @@ msgstr "Geen contacten geïmporteerd"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr "Dit contact gebruikt Telegram"
+msgstr "Dit contact gebruikt Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr "%1 van de %2 contacten gebruiken Telegram"
+msgstr "%1 van de %2 contacten gebruiken Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
 #: /telegram-app/telegram/app/qml/AccountDialogList.qml:117
@@ -208,100 +208,98 @@ msgstr "Aanmelden"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr ""
+msgstr "U hebt %1 uitgenodigd om zich aan een geheime chat aan te sluiten."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 heeft een geheime chat aangemaakt"
+msgstr "%1 heeft U uitgenodigd om zich aan een geheime chat aan te sluiten."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
 #, fuzzy
 msgid "You created the group"
-msgstr "%1 heeft de groep ‘%2’ aangemaakt"
+msgstr "U hebt de groep aangemaakt"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> created the group"
-msgstr "%1 heeft de groep ‘%2’ aangemaakt"
+msgstr "<b>%1</b> heeft de groep aangemaakt"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:77
-#, fuzzy, qt-format
+#, qt-format
 msgid "You added <b>%1</b>"
-msgstr "Doorgestuurd van <b>%1</b>"
+msgstr "U hebt <b>%1</b> toegevoegd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr ""
+msgstr "<b>%1</b> heeft U toegevoegd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> heeft <b>%2</b> toegevoegd"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> left the group"
-msgstr "%1 heeft de groep verlaten"
+msgstr "<b>%1</b> heeft de groep verlaten"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed <b>%1</b>"
-msgstr "Doorgestuurd van <b>%1</b>"
+msgstr "U hebt <b>%1</b> verwijderd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed you"
-msgstr "%1 heeft %2 verwijderd"
+msgstr "<b>%1</b> heeft U verwijderd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "%1 heeft %2 verwijderd"
+msgstr "<b>%1</b> heeft <b>%2</> verwijderd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group name to %1"
-msgstr "%1 heeft de groepsnaam veranderd in ‘%2’"
+msgstr "U hebt de groepsnaam veranderd in %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr "%1 heeft de groepsnaam veranderd in ‘%2’"
+msgstr "<b>%1</b> heeft de groepsnaam veranderd in <b>%2</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
-#, fuzzy
 msgid "You changed the group photo"
-msgstr "%1 heeft de groepsfoto gewijzigd"
+msgstr "U hebt de groepsfoto gewijzigd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr "%1 heeft de groepsfoto gewijzigd"
+msgstr "<b>%1</b> heeft de groepsfoto gewijzigd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
-#, fuzzy
 msgid "You removed the group photo"
-msgstr "%1 heeft de groepsfoto verwijderd"
+msgstr "U hebt de groepsfoto verwijderd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr "%1 heeft de groepsfoto verwijderd"
+msgstr "<b>%1</b> heeft de groepsfoto verwijderd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 msgid "You joined the group via invite link"
-msgstr ""
+msgstr "U hebt zich tot de groep aangesloten via de uitnodiging link"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> heeft zich tot de groep aangesloten via de uitnodiging link"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
@@ -314,11 +312,11 @@ msgstr "Nieuwe berichten"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
-msgstr ""
+msgstr "Beantwoorden"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Sticker Pack info"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
@@ -402,11 +400,12 @@ msgstr "Audiobijlage wordt nog niet ondersteund ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Houd de record icon ingedrukt"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
+"Verleen toegang tot de microfoon in Instellingen > Veiligheid en Privacy."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -656,13 +655,12 @@ msgstr "Aan het bellen, even geduld a.u.b.…"
 
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Kies een land"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
-#, fuzzy
 msgid "Search countries..."
-msgstr "Contacten doorzoeken…"
+msgstr "Landen doorzoeken…"
 
 #. TRANSLATORS: Placeholder for the phone number field.
 #: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
@@ -682,13 +680,12 @@ msgid "Number correct?"
 msgstr "Nummer in orde?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
-#, fuzzy
 msgid "Phone number already exists."
-msgstr "Telefoonnummer (verplicht)"
+msgstr "Deze telefoonnummer bestaat al."
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Installeer"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
@@ -767,7 +764,7 @@ msgstr "<b>Telegram</b>-berichten zijn zwaar versleuteld<br>"
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Kies"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
@@ -791,20 +788,17 @@ msgstr "Deelnemer toevoegen"
 #. TRANSLATORS: Action text to change group chat title.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:55
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:157
-#, fuzzy
 msgid "Change Group Title"
-msgstr "%1 heeft de groepsnaam gewijzigd"
+msgstr "Wijzig de groepsnaam "
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
-#, fuzzy
 msgid "New group chat title"
-msgstr "Gesprekstitel"
+msgstr "Nieuwe groepsgesprektitel"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:179
-#, fuzzy
 msgid "Change Title"
-msgstr "Gesprekstitel"
+msgstr "Wijzig gesprekstitel"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -927,7 +921,7 @@ msgstr "Bestand"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Swipe om te annuleren"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -998,7 +992,7 @@ msgstr "Geschiedenis echt wissen?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr ""
+msgstr "U:"
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -1010,51 +1004,51 @@ msgstr "aan het typen..."
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
 msgid "You changed the group title to %1"
-msgstr "%1 heeft de groepsnaam veranderd in ‘%2’"
+msgstr "U hebt de groepsnaam veranderd in %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 #, fuzzy, qt-format
 msgid "%1 changed the group title to %2"
-msgstr "%1 heeft de groepsnaam veranderd in ‘%2’"
+msgstr "%1 heeft de groepsnaam veranderd in %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
 #, fuzzy
 msgid "Voice message"
-msgstr "Bericht typen"
+msgstr "Voicebericht"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr ""
+msgstr "Sticker"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, fuzzy, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 heeft een geheime chat aangemaakt"
+msgstr "%1 heeft zich tot uw geheime chat aangesloten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 #, fuzzy
 msgid "You joined the secret chat."
-msgstr "%1 heeft een geheime chat aangemaakt"
+msgstr "U hebt zich aan de geheime chat aangesloten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, fuzzy, qt-format
 msgid "%1 created the group"
-msgstr "%1 heeft de groep ‘%2’ aangemaakt"
+msgstr "%1 heeft de groep aangemaakt"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "U hebt %1 toegevoegd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
 #, fuzzy, qt-format
 msgid "%1 added you"
-msgstr "%1 heeft %2 aan de groep toegevoegd"
+msgstr "%1 heeft U toegevoegd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
 #, fuzzy, qt-format
 msgid "%1 added %2"
-msgstr "%1 om %2"
+msgstr "%1 heeft %2 toegevoegd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1064,12 +1058,12 @@ msgstr "%1 heeft de groep verlaten"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
 #, fuzzy, qt-format
 msgid "You removed %1"
-msgstr "%1 heeft %2 verwijderd"
+msgstr "U hebt %1 verwijderd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
 #, fuzzy, qt-format
 msgid "%1 removed you"
-msgstr "%1 heeft %2 verwijderd"
+msgstr "%1 heeft U verwijderd"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
@@ -1081,12 +1075,12 @@ msgstr "%1 heeft %2 verwijderd"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "%1 heeft zich aan de groep aangesloten via de uitnodiging link"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
-msgstr ""
+msgstr "%1 is nu offline"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
