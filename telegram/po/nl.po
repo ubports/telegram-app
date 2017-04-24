@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-18 19:51+0200\n"
-"PO-Revision-Date: 2017-04-22 22:44+0200\n"
-"Last-Translator: Hannie Dumoleyn <Unknown>\n"
+"PO-Revision-Date: 2017-04-24 22:15+0200\n"
+"Last-Translator: Zuzanna Stamburska <stambur@wp.pl>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -208,12 +208,12 @@ msgstr "Aanmelden"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr "U hebt %1 uitgenodigd om aan geheime chat zich te aansluiten."
+msgstr "U hebt %1 uitgenodigd om zich aan een geheime chat aan te sluiten."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 heeft U uitgenodigd om zich aan een geheime chat te aansluiten."
+msgstr "%1 heeft U uitgenodigd om zich aan een geheime chat aan te sluiten."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:296
@@ -293,12 +293,12 @@ msgstr "<b>%1</b> heeft de groepsfoto verwijderd"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
 msgid "You joined the group via invite link"
-msgstr "U hebt zich tot groep aangesloten via uitnodiging link"
+msgstr "U hebt zich tot de groep aangesloten via de uitnodiging link"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr "<b>%1</b> heeft zich to groep aangesloten via uitnodiging link"
+msgstr "<b>%1</b> heeft zich tot de groep aangesloten via de uitnodiging link"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
@@ -311,7 +311,7 @@ msgstr "Nieuwe berichten"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
-msgstr "Antwoorden"
+msgstr "Beantwoorden"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
@@ -399,11 +399,12 @@ msgstr "Audiobijlage wordt nog niet ondersteund ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr "Druk en houd de record icon"
+msgstr "Houd de record icon ingedrukt"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:750
 msgid "Please grant microphone access on System Settings > Security & Privacy."
-msgstr "Verleen toegang tot microfoon in Instellingen > Veiligheid en Privacy."
+msgstr ""
+"Verleen toegang tot de microfoon in Instellingen > Veiligheid en Privacy."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -683,7 +684,7 @@ msgstr "Deze telefoonnummer bestaat al."
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Installeer"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
@@ -792,7 +793,7 @@ msgstr "Wijzig de groepsnaam "
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
 msgid "New group chat title"
-msgstr "Nieuwe gesprekstitel"
+msgstr "Nieuwe groepsgesprektitel"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:179
 msgid "Change Title"
@@ -1011,7 +1012,7 @@ msgstr "%1 heeft de groepsnaam veranderd in %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:280
 msgid "Voice message"
-msgstr "Spraakbericht"
+msgstr "Voicebericht"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:282
 msgid "Sticker"
@@ -1020,7 +1021,7 @@ msgstr "Sticker"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:291
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 heeft aan uw geheime chat zich aangesloten."
+msgstr "%1 heeft zich tot uw geheime chat aangesloten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:293
 msgid "You joined the secret chat."
@@ -1071,12 +1072,12 @@ msgstr "%1 heeft %2 verwijderd"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:328
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr "%1 heeft zich aan de groep aangesloten via uitnodiging link"
+msgstr "%1 heeft zich aan de groep aangesloten via de uitnodiging link"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 #, qt-format
 msgid "%1 is currently offline"
-msgstr "%1 is nu offline(?)"
+msgstr "%1 is nu offline"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
