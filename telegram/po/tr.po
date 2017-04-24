@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 19:51+0200\n"
+"POT-Creation-Date: 2017-04-22 21:04+0200\n"
 "PO-Revision-Date: 2016-06-18 12:22+0000\n"
 "Last-Translator: yusuf75 <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
@@ -213,7 +213,7 @@ msgid "%1 invited you to join a secret chat."
 msgstr "%1 gizli sohbet oluşturdu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:296
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
 #, fuzzy
 msgid "You created the group"
 msgstr "%1 Grup %2 oluşturdu"
@@ -291,7 +291,7 @@ msgid "<b>%1</b> removed the group photo"
 msgstr "%1 grupun resmini sildi"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 msgid "You joined the group via invite link"
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr "Ses eki henüz desteklenmiyor; ("
 msgid "You have to press and hold the record icon"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:750
+#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 
@@ -420,8 +420,8 @@ msgstr "Fotoğrafı değiştir"
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:95
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:710
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:105
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:712
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Bilgiler"
@@ -445,7 +445,7 @@ msgstr "Mesajlar"
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:549
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:551
 #: /telegram-app/telegram/app/qml/telegram.qml:490
 msgid "Notifications"
 msgstr "Bildirimler"
@@ -834,28 +834,28 @@ msgid "%1 are typing"
 msgstr "%1 yazıyor"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:403
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:404
 msgid "Unknown"
 msgstr "Bilinmeyen"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:413
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:414
 msgid "Mobile"
 msgstr "Cep Telefonu"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:466
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:468
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:626
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:628
 msgid "Block user"
 msgstr "Kullanıcıyı engelle"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:697
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:699
 msgid "Remove from group"
 msgstr "Gruptan kaldır"
 
@@ -908,7 +908,7 @@ msgstr "Hesap Ekle"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /telegram-app/telegram/app/qml/components/AttachPanel.qml:87
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:284
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
 msgid "Photo"
 msgstr "Fotoğraf"
 
@@ -920,7 +920,7 @@ msgstr "Video"
 msgid "File"
 msgstr "Klasör"
 
-#: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:150
+#: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
 msgstr ""
 
@@ -975,110 +975,110 @@ msgstr "1 gün"
 msgid "1 week"
 msgstr "1 hafta"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:67
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Leave chat"
 msgstr "Sohbeten ayrıl"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:73
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to leave this chat?"
 msgstr "Bu sohbeti terk etmek istediğinizden emin misiniz?"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:84
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Clear history"
 msgstr "Geçmiş kayıtları sil"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:90
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:91
 msgid "Are you sure you want to clear history?"
 msgstr "Geçmiş kayıtların silinmesini istediğinizden emin misiniz?"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:231
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
 msgstr ""
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:253
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:254
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:72
 msgid "typing..."
 msgstr "yazıyor..."
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:271
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
 msgid "You changed the group title to %1"
 msgstr "%1 grupun ismini %2 değiştirdi"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:273
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 #, fuzzy, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 grupun ismini %2 değiştirdi"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:280
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
 #, fuzzy
 msgid "Voice message"
 msgstr "Mesaj yaz"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:282
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:291
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, fuzzy, qt-format
 msgid "%1 joined your secret chat."
 msgstr "%1 gizli sohbet oluşturdu"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:293
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 #, fuzzy
 msgid "You joined the secret chat."
 msgstr "%1 gizli sohbet oluşturdu"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:298
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, fuzzy, qt-format
 msgid "%1 created the group"
 msgstr "%1 Grup %2 oluşturdu"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:306
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
 #, fuzzy, qt-format
 msgid "%1 added you"
 msgstr "%1 %2'i grupa ekledi"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:308
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
 #, fuzzy, qt-format
 msgid "%1 added %2"
 msgstr "%2 %1"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:313
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 grupdan ayrıldı"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:316
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
 #, fuzzy, qt-format
 msgid "You removed %1"
 msgstr "%1 %2'i çıkardı"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:318
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
 #, fuzzy, qt-format
 msgid "%1 removed you"
 msgstr "%1 %2'i çıkardı"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:320
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
 #: /telegram-app/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%1 %2'i çıkardı"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:328
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
 #, qt-format
 msgid "%1 joined the group via invite link"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
 msgstr ""
@@ -1103,7 +1103,6 @@ msgstr "Kendini imha saati"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:11
 #: /telegram-app/telegram/app/qml/js/time.js:46
-#: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "hh:mm"
 msgstr "ss:dd"
 
@@ -1132,6 +1131,17 @@ msgstr "dün %1"
 #, qt-format
 msgid "%1 at %2"
 msgstr "%2 %1"
+
+#. TRANSLATORS: localized time string, see available formats at
+#. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
+#: /telegram-app/telegram/app/qml/js/time.js:68
+msgid "mm:ss"
+msgstr ""
+
+#: /telegram-app/telegram/app/qml/js/time.js:68
+#, fuzzy
+msgid "h:mm:ss"
+msgstr "ss:dd"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
