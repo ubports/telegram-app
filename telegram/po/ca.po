@@ -208,12 +208,12 @@ msgstr "Registreu-vos"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr ""
+msgstr "Heu convidat a  %1 al xat secret."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, fuzzy, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 ha creat un xat secret"
+msgstr "%1 us ha convidat al xat secret."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
@@ -234,12 +234,12 @@ msgstr "Reenviat des de <b>%1</b>"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr ""
+msgstr "<b>%1</b> us ha afegit"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> ha afegit <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
@@ -296,12 +296,12 @@ msgstr "%1 ha suprimit la foto del grup"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 msgid "You joined the group via invite link"
-msgstr ""
+msgstr "Us heu afegit al grup mitjançant l'enllaç d'invitació"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> s'ha afegit al grup mitjançant l'enllaç d'invitació"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
@@ -314,11 +314,11 @@ msgstr "Missatges nous"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
-msgstr ""
+msgstr "Contesta"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Informació del paquet d'adhesius"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
@@ -402,11 +402,11 @@ msgstr "Els àudios adjunts encara no estan suportats ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Polseu i aguanteu la icona de gravació"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
-msgstr ""
+msgstr "Doneu accés al micròfon a Configuració del sistema > Seguretat i privadesa."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -655,7 +655,7 @@ msgstr "S'està trucant, espereu..."
 
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Escolliu un país"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
@@ -687,7 +687,7 @@ msgstr "Número de telèfon (requerit)"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Instal·la"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
@@ -768,7 +768,7 @@ msgstr "Els missatges del <b>Telegram</b> són encriptats fortament<br>"
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Tria"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
@@ -928,7 +928,7 @@ msgstr "Fitxer"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Lliqueu per cancel·lar"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -999,7 +999,7 @@ msgstr "Segur que voleu esborrar l'historial?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr ""
+msgstr "Jo: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -1011,7 +1011,7 @@ msgstr "escrivint..."
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
 msgid "You changed the group title to %1"
-msgstr "%1 ha canviat el nom del grup a «%2»"
+msgstr "Heu canviat el nom del grup a «%1»"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 #, fuzzy, qt-format
@@ -1025,7 +1025,7 @@ msgstr "Escriviu un missatge"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr ""
+msgstr "Adhesiu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, fuzzy, qt-format
@@ -1045,17 +1045,17 @@ msgstr "%1 ha creat el grup «%2»"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "Heu afegit %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
 #, fuzzy, qt-format
 msgid "%1 added you"
-msgstr "%1 ha afegit %2 al grup"
+msgstr "%1 us ha afegit al grup"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
 #, fuzzy, qt-format
 msgid "%1 added %2"
-msgstr "%1 a les %2"
+msgstr "%1 ha afegit %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1065,7 +1065,7 @@ msgstr "%1 ha abandonat el grup"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
 #, fuzzy, qt-format
 msgid "You removed %1"
-msgstr "%1 ha eliminat %2"
+msgstr "Heu eliminat %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
 #, fuzzy, qt-format
@@ -1082,12 +1082,12 @@ msgstr "%1 ha eliminat %2"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "%1 s'ha unit al grup mitjançant l'enllaç d'invitació"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
-msgstr ""
+msgstr "%1 no és en línia"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
@@ -1142,7 +1142,7 @@ msgstr "%1 a les %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
 #, fuzzy
@@ -1284,7 +1284,7 @@ msgstr "a %1"
 #: /telegram-app/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "%1 ha arribat"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /telegram-app/telegram/push/pushhelper.cpp:234
@@ -1332,7 +1332,7 @@ msgstr "Conversa-hi"
 
 #: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr "Truca-li"
+msgstr "Telefona-li"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
