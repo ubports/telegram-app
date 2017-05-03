@@ -359,6 +359,7 @@ Page {
                 right: parent.right
             }
             showDivider: false
+            highlightWhenPressed: (user && user.phone) ? true : false
 
             AbstractButton {
                 id: call_button
@@ -415,7 +416,8 @@ Page {
             }
 
             onClicked: {
-                Qt.openUrlExternally("tel:///+" + (user ? user.phone : ""))
+                if (user && user.phone)
+                    Qt.openUrlExternally("tel:///+" + user.phone)
             }
         }
 
