@@ -927,7 +927,7 @@ msgstr "File"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Swipe per cancellare"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -1005,7 +1005,7 @@ msgstr "Tu: "
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:254
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:72
 msgid "typing..."
-msgstr "scrivendo..."
+msgstr "Sta scrivendo..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
@@ -1020,7 +1020,7 @@ msgstr "%1 ha cambiato il nome del gruppo in %2"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
 #, fuzzy
 msgid "Voice message"
-msgstr "Scrivi messaggio"
+msgstr "Messaggio vocale"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
@@ -1086,7 +1086,7 @@ msgstr "%1 è entrato nel gruppo tramite il link di invito"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
-msgstr "%1 é offline"
+msgstr "%1 al momento é offline"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
