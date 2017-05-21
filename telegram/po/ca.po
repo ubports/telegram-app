@@ -928,7 +928,7 @@ msgstr "Fitxer"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr "<<< Lliqueu per cancel·lar"
+msgstr "<<< Llisqueu per cancel·lar"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
