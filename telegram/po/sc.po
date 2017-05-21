@@ -1,23 +1,22 @@
-# Sardinian translation for telegram-app
-# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
-# This file is distributed under the same license as the telegram-app package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
-# usuari <adriamartinmor@gmail.com>, 2016.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Sardware, 2017.
+# Sardware <www.sardware.tradumatica.net>, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: telegram-app\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-22 21:04+0200\n"
-"PO-Revision-Date: 2016-09-21 11:12+0000\n"
-"Last-Translator: amm <Unknown>\n"
+"PO-Revision-Date: 2017-05-20 11:21+0200\n"
+"Last-Translator: Sardware <www.sardware.tradumatica.net>\n"
 "Language-Team: Sardware\n"
 "Language: sc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -126,8 +125,7 @@ msgid ""
 "Add %1 to %2?\n"
 "\n"
 "Number of last messages to forward:"
-msgstr ""
-"Cheres agiùnghere %1 a %2?\n"
+msgstr "Cheres agiùnghere %1 a %2?\n"
 "\n"
 "Nùmeru de ùrtimos messàgios pro torrare a imbiare:"
 
@@ -208,100 +206,97 @@ msgstr "Iscrie·ti"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr ""
+msgstr "As invitadu a %1 a aderire a sa tzarrada segreta."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 at creadu una tzarrada segreta"
+msgstr "%1 t'at invitadu a una tzarrada segreta"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
-#, fuzzy
 msgid "You created the group"
-msgstr "%1 at creadu su grupu \"%2\""
+msgstr "As creadu su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> created the group"
-msgstr "%1 at creadu su grupu \"%2\""
+msgstr "<b>%1</b> at creadu su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:77
-#, fuzzy, qt-format
+#, qt-format
 msgid "You added <b>%1</b>"
-msgstr "Torradu a imbiare dae <b>%1</b>"
+msgstr "As agiuntu a <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr ""
+msgstr "<b>%1</b> t'at agiuntu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> at agiuntu a <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> left the group"
-msgstr "%1 at lassadu su grupu"
+msgstr "<b>%1</b> at lassadu su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed <b>%1</b>"
-msgstr "Torradu a imbiare dae <b>%1</b>"
+msgstr "Nch'as bogadu <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed you"
-msgstr "%1 nch'at bogadu a %2"
+msgstr "<b>%1</b> t'at bogadu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "%1 nch'at bogadu a %2"
+msgstr "<b>%1</b> nch'at bogadu a <b>%2</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group name to %1"
-msgstr "%1 at mudadu su nùmene de su grupu a \"%2\""
+msgstr "As mudadu su nùmene de su grupu a %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr "%1 at mudadu su nùmene de su grupu a \"%2\""
+msgstr "<b>%1</b> at mudadu su nùmene de su grupu a %2"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
-#, fuzzy
 msgid "You changed the group photo"
-msgstr "%1 at mudadu sa fotografia de su grupu"
+msgstr "As mudadu sa fotografia de su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr "%1 at mudadu sa fotografia de su grupu"
+msgstr "<b>%1</b> at mudadu sa fotografia de su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
-#, fuzzy
 msgid "You removed the group photo"
-msgstr "%1 at cantzelladu sa fotografia de su grupu"
+msgstr "As cantzelladu sa fotografia de su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr "%1 at cantzelladu sa fotografia de su grupu"
+msgstr "<b>%1</b> at cantzelladu sa fotografia de su grupu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 msgid "You joined the group via invite link"
-msgstr ""
+msgstr "As aderidu a su grupu tràmite unu ligàmene de invitu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> at aderidu a su grupu tràmite unu ligàmene de invitu"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
@@ -314,11 +309,11 @@ msgstr "Messàgios noos"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
-msgstr ""
+msgstr "Risponde"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Informatziones de sos adesivos"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
@@ -328,8 +323,7 @@ msgstr "Est rechesta una tzarrada segreta."
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
-msgstr ""
-"Tzarrada segreta refudada o atzetada dae un'àteru dispositivu.\n"
+msgstr "Tzarrada segreta refudada o atzetada dae un'àteru dispositivu.\n"
 "Ammenta chi Android atzetat sas tzarradas segretas in automàticu."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
@@ -402,11 +396,11 @@ msgstr "Su cuntenutu àudio no est suportadu ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Incarca e mantene incarcada s'icona de registratzione"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
-msgstr ""
+msgstr "Cunfigura s'atzessu a su micròfonu in Cunfiguratziones de sistema > Seguridade e riservadesa."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -541,8 +535,7 @@ msgstr "bidu dae ora meda"
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
-msgstr ""
-"Ses seguru chi nche cheres essire?\n"
+msgstr "Ses seguru chi nche cheres essire?\n"
 "Totu sas tzarradas segretas ant a èssere cantzelladas."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
@@ -584,7 +577,7 @@ msgstr ""
 "In <b>Telegram</b> podes seberare unu nùmene utente. Si lu faghes, àteras "
 "persones t'ant a pòdere agatare e t'ant a pòdere cuntatare sena connòschere "
 "su nùmeru de telèfonu.<br /><br />Podes impreare <b>a-z</b>,<b>0-9</b> e "
-"linieddas bassas.<br>Sa longària mìnima est <b>5</b> caràteres."
+"linieddas bassas.<br />Sa longària mìnima est <b>5</b> caràteres."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
@@ -655,13 +648,12 @@ msgstr "Ti semus mutende, iseta..."
 
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Sèbera un'istadu"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
-#, fuzzy
 msgid "Search countries..."
-msgstr "Chirca cuntatos..."
+msgstr "Chirca istados..."
 
 #. TRANSLATORS: Placeholder for the phone number field.
 #: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
@@ -681,13 +673,12 @@ msgid "Number correct?"
 msgstr "Su nùmeru est curretu?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
-#, fuzzy
 msgid "Phone number already exists."
-msgstr "Nùmeru de telèfonu (obligatòriu)"
+msgstr "Custu nùmeru esistet giai"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Installa"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
@@ -709,9 +700,7 @@ msgstr "Lestru"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
-msgstr ""
-"<b>Telegram</b> imbiat e retzit messàgios a sa lestra<br> prus de cale si "
-"siat àtera aplicatzione"
+msgstr "<b>Telegram</b> imbiat e retzit messàgios a sa lestra<br> prus de cale si siat àtera aplicatzione"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
@@ -720,9 +709,7 @@ msgstr "De badas"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr ""
-"<b>Telegram</b> est de badas pro semper. Peruna publitzidade.<br> Perunu "
-"annùntziu"
+msgstr "<b>Telegram</b> est de badas pro semper. Peruna publitzidade.<br> Perunu annùntziu"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
@@ -740,9 +727,7 @@ msgstr "Potente"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
-msgstr ""
-"<b>Telegram</b> non tenet lìmites in sa mannària<br> de sos cuntenutos "
-"multimediales e de sas tzarradas"
+msgstr "<b>Telegram</b> non tenet lìmites in sa mannària<br> de sos cuntenutos multimediales e de sas tzarradas"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
@@ -751,9 +736,7 @@ msgstr "Archiviatzione Web"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
-msgstr ""
-"<b>Telegram</b> permitet de nch'intrare a sos messàgios<br> dae prus "
-"dispositivos"
+msgstr "<b>Telegram</b> permitit de nch'intrare a sos messàgios<br> dae prus dispositivos"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
@@ -766,7 +749,7 @@ msgstr "<b>Telegram</b> tenet sos messàgios critografados<br>"
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Sèbera"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
@@ -790,20 +773,17 @@ msgstr "Agiunghe membru"
 #. TRANSLATORS: Action text to change group chat title.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:55
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:157
-#, fuzzy
 msgid "Change Group Title"
-msgstr "%1 at mudadu su nùmene de su grupu"
+msgstr "Muda su nùmene de su grupu"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
-#, fuzzy
 msgid "New group chat title"
-msgstr "Tìtulu de sa tzarrada"
+msgstr "Tìtulu de su grupu nou"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:179
-#, fuzzy
 msgid "Change Title"
-msgstr "Tìtulu de sa tzarrada"
+msgstr "Muda su nùmene"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -885,9 +865,7 @@ msgstr "Oe no as imbiadu perunu messàgiu de Telegram."
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
-msgstr ""
-"Si cheres notìficas de Telegram cando no ses impreende s'aplicatzione "
-"mòbile, identifica·ti cun su contu tuo de Ubuntu One."
+msgstr "Si cheres notìficas de Telegram cando no ses impreende s'aplicatzione mòbile, identifica·ti cun su contu tuo de Ubuntu One."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:498
 msgid "Sign in to Ubuntu One"
@@ -926,7 +904,7 @@ msgstr "Archìviu"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Iscurre pro annullare"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -997,7 +975,7 @@ msgstr "Ses seguru chi nche cheres cantzellare sa cronologia?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr ""
+msgstr "Tue: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -1007,53 +985,51 @@ msgid "typing..."
 msgstr "iscriende..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group title to %1"
-msgstr "%1 at mudadu su nùmene de su grupu a \"%2\""
+msgstr "As mudadu su nùmene de su grupu a %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed the group title to %2"
-msgstr "%1 at mudadu su nùmene de su grupu a \"%2\""
+msgstr "%1 at mudadu su nùmene de su grupu a %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
-#, fuzzy
 msgid "Voice message"
-msgstr "Iscrie messàgiu"
+msgstr "Messàgiu vocale"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr ""
+msgstr "Adesivos"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 at creadu una tzarrada segreta"
+msgstr "%1 at aderidu a sa tzarrada segreta tua."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
-#, fuzzy
 msgid "You joined the secret chat."
-msgstr "%1 at creadu una tzarrada segreta"
+msgstr "As aderidu a sa tzarrada segreta"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group"
-msgstr "%1 at creadu su grupu \"%2\""
+msgstr "%1 at creadu su grupu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "As agiuntu %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added you"
-msgstr "%1 nch'at agiuntu a %2 a su grupu"
+msgstr "%1 t'at agiuntu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
-msgstr "%1 a sas %2"
+msgstr "%1 at agiuntu a %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1061,14 +1037,14 @@ msgid "%1 left the group"
 msgstr "%1 at lassadu su grupu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed %1"
-msgstr "%1 nch'at bogadu a %2"
+msgstr "Nch'at bogadu a %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 removed you"
-msgstr "%1 nch'at bogadu a %2"
+msgstr "%1 t'at bogadu"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
@@ -1080,12 +1056,12 @@ msgstr "%1 nch'at bogadu a %2"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "%1 at aderidu a su grupu tràmite unu ligàmene de invitu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
-msgstr ""
+msgstr "%1 como no est in lìnia"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
@@ -1140,10 +1116,9 @@ msgstr "%1 a sas %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
 msgstr "hh:mm"
 
@@ -1415,9 +1390,3 @@ msgstr "Custu est s'àmbitu de Telegram"
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Chirca tzarradas, cuntatos o messàgios"
-
-#~ msgid "%1 changed group photo."
-#~ msgstr "%1 at mudadu sa fotografia de su grupu"
-
-#~ msgid "Country Code"
-#~ msgstr "Còdighe de istadu"
