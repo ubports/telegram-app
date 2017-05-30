@@ -88,6 +88,10 @@ Item {
         }
         onErrorChanged: {
             console.log("telegram error: " + error)
+            if (error == "AUTH_RESTART") {
+                profiles.remove(telegram.phoneNumber);
+                console.log("*** Authentication stopped for: " + telegram.phoneNumber);
+            }
         }
         onAuthNeededChanged: {
             console.log("authNeeded " + authNeeded)
