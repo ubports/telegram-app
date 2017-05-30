@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-22 21:04+0200\n"
+"POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2017-05-20 11:21+0200\n"
 "Last-Translator: Sardware <www.sardware.tradumatica.net>\n"
 "Language-Team: Sardware\n"
@@ -99,7 +99,6 @@ msgstr "Inserta·nche sos detàllios"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:336
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -125,7 +124,8 @@ msgid ""
 "Add %1 to %2?\n"
 "\n"
 "Number of last messages to forward:"
-msgstr "Cheres agiùnghere %1 a %2?\n"
+msgstr ""
+"Cheres agiùnghere %1 a %2?\n"
 "\n"
 "Nùmeru de ùrtimos messàgios pro torrare a imbiare:"
 
@@ -190,18 +190,23 @@ msgstr "Torra a imbiare"
 msgid "Delete"
 msgstr "Cantzella"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:7
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Identìfica·ti"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Iscrie·ti"
+
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
+#, fuzzy
+msgid "Invalid password"
+msgstr "Su còdighe de telèfonu no est vàlidu"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -323,7 +328,8 @@ msgstr "Est rechesta una tzarrada segreta."
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
-msgstr "Tzarrada segreta refudada o atzetada dae un'àteru dispositivu.\n"
+msgstr ""
+"Tzarrada segreta refudada o atzetada dae un'àteru dispositivu.\n"
 "Ammenta chi Android atzetat sas tzarradas segretas in automàticu."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
@@ -400,7 +406,9 @@ msgstr "Incarca e mantene incarcada s'icona de registratzione"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
-msgstr "Cunfigura s'atzessu a su micròfonu in Cunfiguratziones de sistema > Seguridade e riservadesa."
+msgstr ""
+"Cunfigura s'atzessu a su micròfonu in Cunfiguratziones de sistema > "
+"Seguridade e riservadesa."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -443,7 +451,7 @@ msgstr "Messàgios"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
-#: /telegram-app/telegram/app/qml/telegram.qml:490
+#: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
 msgstr "Notìficas"
 
@@ -535,7 +543,8 @@ msgstr "bidu dae ora meda"
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
-msgstr "Ses seguru chi nche cheres essire?\n"
+msgstr ""
+"Ses seguru chi nche cheres essire?\n"
 "Totu sas tzarradas segretas ant a èssere cantzelladas."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
@@ -655,17 +664,10 @@ msgstr "Sèbera un'istadu"
 msgid "Search countries..."
 msgstr "Chirca istados..."
 
-#. TRANSLATORS: Placeholder for the phone number field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Nùmero de telèfonu"
-
-#. TRANSLATORS: Button text right under the phone number text field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:78
-msgid "Log in"
-msgstr "Intra"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
@@ -675,6 +677,14 @@ msgstr "Su nùmeru est curretu?"
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
 msgstr "Custu nùmeru esistet giai"
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+msgid "Enter Password"
+msgstr ""
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+msgid "Password"
+msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -700,7 +710,9 @@ msgstr "Lestru"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
-msgstr "<b>Telegram</b> imbiat e retzit messàgios a sa lestra<br> prus de cale si siat àtera aplicatzione"
+msgstr ""
+"<b>Telegram</b> imbiat e retzit messàgios a sa lestra<br> prus de cale si "
+"siat àtera aplicatzione"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
@@ -709,7 +721,9 @@ msgstr "De badas"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr "<b>Telegram</b> est de badas pro semper. Peruna publitzidade.<br> Perunu annùntziu"
+msgstr ""
+"<b>Telegram</b> est de badas pro semper. Peruna publitzidade.<br> Perunu "
+"annùntziu"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
@@ -727,7 +741,9 @@ msgstr "Potente"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
-msgstr "<b>Telegram</b> non tenet lìmites in sa mannària<br> de sos cuntenutos multimediales e de sas tzarradas"
+msgstr ""
+"<b>Telegram</b> non tenet lìmites in sa mannària<br> de sos cuntenutos "
+"multimediales e de sas tzarradas"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
@@ -736,7 +752,9 @@ msgstr "Archiviatzione Web"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
-msgstr "<b>Telegram</b> permitit de nch'intrare a sos messàgios<br> dae prus dispositivos"
+msgstr ""
+"<b>Telegram</b> permitit de nch'intrare a sos messàgios<br> dae prus "
+"dispositivos"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
@@ -861,21 +879,23 @@ msgstr "Messàgios de Telegram imbiados oe: %1"
 msgid "No Telegram messages sent today."
 msgstr "Oe no as imbiadu perunu messàgiu de Telegram."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:491
+#: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
-msgstr "Si cheres notìficas de Telegram cando no ses impreende s'aplicatzione mòbile, identifica·ti cun su contu tuo de Ubuntu One."
+msgstr ""
+"Si cheres notìficas de Telegram cando no ses impreende s'aplicatzione "
+"mòbile, identifica·ti cun su contu tuo de Ubuntu One."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:498
+#: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
 msgstr "Identìfica·ti in Ubuntu One"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:506
+#: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
 msgstr "Ammenta·mi·lu luego"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:514
+#: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
 msgstr "Non chèrgio notìficas"
 
@@ -1073,11 +1093,6 @@ msgstr "Torradu a imbiare dae <b>%1</b>"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Cantzelladu"
-
-#. TRANSLATORS: Title of self destruct timer dialog.
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
-msgid "Self-Destruct Timer"
-msgstr "Tempus de àuto-distrutzione"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1390,3 +1405,9 @@ msgstr "Custu est s'àmbitu de Telegram"
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Chirca tzarradas, cuntatos o messàgios"
+
+#~ msgid "Log in"
+#~ msgstr "Intra"
+
+#~ msgid "Self-Destruct Timer"
+#~ msgstr "Tempus de àuto-distrutzione"

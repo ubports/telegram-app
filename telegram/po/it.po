@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-22 21:04+0200\n"
+"POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2017-04-24 09:37+0000\n"
 "Last-Translator: Emanuele Antonio Faraone <emanueleant03@gmail.com>\n"
 "Language-Team: Italian\n"
@@ -100,7 +100,6 @@ msgstr "Inserisci dettagli"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:336
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -192,18 +191,23 @@ msgstr "Inoltra"
 msgid "Delete"
 msgstr "Elimina"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:7
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Accedi"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Iscriviti"
+
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
+#, fuzzy
+msgid "Invalid password"
+msgstr "Codice non valido"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -406,7 +410,9 @@ msgstr "Devi tenere premuto l'icona del microfono"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
-msgstr "Per favore concedi l'accesso al microfono nelle impostazioni > Sicurezza & Privacy"
+msgstr ""
+"Per favore concedi l'accesso al microfono nelle impostazioni > Sicurezza & "
+"Privacy"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -449,7 +455,7 @@ msgstr "Messaggi"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
-#: /telegram-app/telegram/app/qml/telegram.qml:490
+#: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
 msgstr "Notifiche"
 
@@ -664,17 +670,10 @@ msgstr "Scegli un paese"
 msgid "Search countries..."
 msgstr "Cerca contatti..."
 
-#. TRANSLATORS: Placeholder for the phone number field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Numero di telefono"
-
-#. TRANSLATORS: Button text right under the phone number text field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:78
-msgid "Log in"
-msgstr "Accedi"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
@@ -685,6 +684,14 @@ msgstr "Numero corretto?"
 #, fuzzy
 msgid "Phone number already exists."
 msgstr "Numero di telefono esiste già"
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+msgid "Enter Password"
+msgstr ""
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+msgid "Password"
+msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -882,7 +889,7 @@ msgstr "Messaggi di Telegram inviati oggi: %1"
 msgid "No Telegram messages sent today."
 msgstr "Nessun messaggio di Telegram inviato oggi."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:491
+#: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -890,15 +897,15 @@ msgstr ""
 "Se vuoi ricevere le notifiche di Telegram quando non usi l'app, accedi al "
 "tuo account Ubuntu One."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:498
+#: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
 msgstr "Accedi a Ubuntu One"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:506
+#: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
 msgstr "Ricorda più tardi"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:514
+#: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
 msgstr "Nessuna notifica"
 
@@ -1098,11 +1105,6 @@ msgstr "Inoltrato da <b>%1</b>"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Eliminato"
-
-#. TRANSLATORS: Title of self destruct timer dialog.
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
-msgid "Self-Destruct Timer"
-msgstr "Timer di autodistruzione"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1416,6 +1418,12 @@ msgstr "Questo è lo scope di Telegram"
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Cerca una chat, un contatto o un messaggio"
+
+#~ msgid "Log in"
+#~ msgstr "Accedi"
+
+#~ msgid "Self-Destruct Timer"
+#~ msgstr "Timer di autodistruzione"
 
 #~ msgid "%1 changed group photo."
 #~ msgstr "%1 ha cambiato la foto del gruppo."

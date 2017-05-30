@@ -22,6 +22,7 @@ Item {
     signal activeRequest()
     signal addParticipantRequest()
     signal codeRequested(variant authCodePage, variant telegram, bool phoneRegistered, int sendCallTimeout, bool resent)
+    signal authPasswordNeeded(variant authPasswordPage)
 
     onIsActiveChanged: {
         telegram.online = isActive;
@@ -87,6 +88,10 @@ Item {
         }
         onErrorChanged: {
             console.log("telegram error: " + error)
+            if (error == "AUTH_RESTART") {
+                profiles.remove(telegram.phoneNumber);
+                console.log("*** Authentication stopped for: " + telegram.phoneNumber);
+            }
         }
         onAuthNeededChanged: {
             console.log("authNeeded " + authNeeded)
@@ -147,6 +152,11 @@ Item {
         onFatalError: {
             profiles.remove(telegram.phoneNumber);
         }
+
+        onAuthPasswordNeeded: {
+            console.log("authPasswordNeeded")
+            account_list_item.authPasswordNeeded(auth_password_page_component);
+        }
     }
 
     Component {
@@ -186,6 +196,24 @@ Item {
                 target: telegramObject
                 onAuthSignInErrorChanged: auth_code_page.error(telegramObject.authSignInError)
                 onAuthCallRequested: auth_code_page.allowCall = false
+            }
+        }
+    }
+
+    Component {
+        id: auth_password_page_component
+
+        AuthPasswordPage {
+            id: auth_password_page
+
+            onPasswordAccepted: telegramObject.authCheckPassword(password)
+
+            Connections {
+                target: telegramObject
+                onErrorChanged: {
+                    if (telegramObject.error == "PASSWORD_HASH_INVALID")
+                        auth_password_page.errorText = i18n.tr("Invalid password");
+                }
             }
         }
     }

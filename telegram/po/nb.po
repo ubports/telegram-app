@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-22 21:04+0200\n"
+"POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2015-11-03 12:02+0000\n"
 "Last-Translator: Åka Sikrom <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
@@ -100,7 +100,6 @@ msgstr "Skriv inn detaljer"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:336
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -192,18 +191,23 @@ msgstr "Framover"
 msgid "Delete"
 msgstr "Slett"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:7
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Logg Inn"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Registrer deg"
+
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
+#, fuzzy
+msgid "Invalid password"
+msgstr "Ugyldig telefonkode"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -449,7 +453,7 @@ msgstr "Meldinger"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
-#: /telegram-app/telegram/app/qml/telegram.qml:490
+#: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
 msgstr "Varslinger"
 
@@ -663,17 +667,10 @@ msgstr ""
 msgid "Search countries..."
 msgstr "Søk etter kontakter …"
 
-#. TRANSLATORS: Placeholder for the phone number field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Telefonnummer"
-
-#. TRANSLATORS: Button text right under the phone number text field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:78
-msgid "Log in"
-msgstr "Logg inn"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
@@ -684,6 +681,14 @@ msgstr "Er nummeret riktig?"
 #, fuzzy
 msgid "Phone number already exists."
 msgstr "Telefonnummer (påkrevd)"
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+msgid "Enter Password"
+msgstr ""
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+msgid "Password"
+msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -877,7 +882,7 @@ msgstr "Telegram-meldinger sendt i dag: %1"
 msgid "No Telegram messages sent today."
 msgstr "Ingen Telegram-meldinger er sendt i dag."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:491
+#: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -885,15 +890,15 @@ msgstr ""
 "Logg på Ubuntu One hvis du vil at Telegram skal varsle deg selv om du ikke "
 "bruker programmet."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:498
+#: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
 msgstr "Logg på Ubuntu One"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:506
+#: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
 msgstr "Minn meg på det senere"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:514
+#: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
 msgstr "Ikke varsle"
 
@@ -1093,11 +1098,6 @@ msgstr "Videresendt fra <b>%1</b>"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Slettet"
-
-#. TRANSLATORS: Title of self destruct timer dialog.
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
-msgid "Self-Destruct Timer"
-msgstr "Tid for selvdestruering"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1411,6 +1411,12 @@ msgstr "Dette er Telegram-virkefeltet"
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Søk etter en samtale, kontakt eller melding"
+
+#~ msgid "Log in"
+#~ msgstr "Logg inn"
+
+#~ msgid "Self-Destruct Timer"
+#~ msgstr "Tid for selvdestruering"
 
 #~ msgid "%1 changed group photo."
 #~ msgstr "%1 endret gruppebilde"

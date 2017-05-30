@@ -340,10 +340,13 @@ MainView {
 //                            authCodePage.phoneRegistered = telegram.authPhoneRegistered
 //                        }
                     }
+                    onAuthPasswordNeeded: {
+                        pageStack.setPrimaryPage();
+                        pageStack.addPageToCurrentColumn(pageStack.primaryPage, authPasswordPage);
+                    }
                 }
             }
         }
-
 
 //        Component {
 //            id: account_code_page_component

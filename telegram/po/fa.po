@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-22 21:04+0200\n"
+"POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2016-04-05 07:57+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@gmail.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -100,7 +100,6 @@ msgstr "ورود جزییات"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:336
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "لغو"
 
@@ -192,18 +191,23 @@ msgstr "انتقال"
 msgid "Delete"
 msgstr "حذف"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:7
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "وارد شدن"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "ثبت‌نام"
+
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
+#, fuzzy
+msgid "Invalid password"
+msgstr "کد تلفن نامعتبر"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -449,7 +453,7 @@ msgstr "پیام‌ها"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
-#: /telegram-app/telegram/app/qml/telegram.qml:490
+#: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
 msgstr "آگهی‌ها"
 
@@ -663,17 +667,10 @@ msgstr ""
 msgid "Search countries..."
 msgstr "جست‌وجوی مخاطبین…"
 
-#. TRANSLATORS: Placeholder for the phone number field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "شمارهٔ تلفن"
-
-#. TRANSLATORS: Button text right under the phone number text field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:78
-msgid "Log in"
-msgstr "ورود"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
@@ -684,6 +681,14 @@ msgstr "شماره درست است؟"
 #, fuzzy
 msgid "Phone number already exists."
 msgstr "شماره تلفن (مورد نیاز)"
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+msgid "Enter Password"
+msgstr ""
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+msgid "Password"
+msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -873,7 +878,7 @@ msgstr "پیام‌های تلگرام ارسال شده در امروز: %1"
 msgid "No Telegram messages sent today."
 msgstr "امروز هیچ پیام تلگرامی ارسال نشد."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:491
+#: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -881,15 +886,15 @@ msgstr ""
 "اگر آگهی‌های تلگرام را هنگامی که از کاره استفاده نمی‌کنید می‌خواهید، وارد حساب "
 "اوبونتووان خود شوید."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:498
+#: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
 msgstr "ورود به اوبونتو وان"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:506
+#: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
 msgstr "بعداُ یادآوری کن"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:514
+#: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
 msgstr "آگهی‌ها را نمی‌خواهم"
 
@@ -1088,11 +1093,6 @@ msgstr "منتقل شده از <b>%1</b>"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "حذف شده"
-
-#. TRANSLATORS: Title of self destruct timer dialog.
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
-msgid "Self-Destruct Timer"
-msgstr "زمان‌سنج خودنابودگر"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1406,6 +1406,12 @@ msgstr "این حوزهٔ تلگرام است"
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "برای یک گپ، مخاطب یا پیام جست‌وجو کنید"
+
+#~ msgid "Log in"
+#~ msgstr "ورود"
+
+#~ msgid "Self-Destruct Timer"
+#~ msgstr "زمان‌سنج خودنابودگر"
 
 #~ msgid "%1 changed group photo."
 #~ msgstr "‫%1 عکس گروه را عوض کرد."

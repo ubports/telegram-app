@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-22 21:04+0200\n"
+"POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2015-11-14 15:48+0000\n"
 "Last-Translator: Kenan Gutić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -101,7 +101,6 @@ msgstr "Unesi detalje"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:336
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:46
 msgid "Cancel"
 msgstr "Odustani"
 
@@ -193,18 +192,23 @@ msgstr "Proslijedi"
 msgid "Delete"
 msgstr "Izbriši"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:7
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Prijava"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:160
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Registrirajte se"
+
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
+#, fuzzy
+msgid "Invalid password"
+msgstr "Pogrešan telefonski kod"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -450,7 +454,7 @@ msgstr "Poruke"
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
-#: /telegram-app/telegram/app/qml/telegram.qml:490
+#: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
 msgstr "Notifikacije"
 
@@ -664,17 +668,10 @@ msgstr ""
 msgid "Search countries..."
 msgstr "Traži kontakte..."
 
-#. TRANSLATORS: Placeholder for the phone number field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:61
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Telefonski broj"
-
-#. TRANSLATORS: Button text right under the phone number text field.
-#: /telegram-app/telegram/app/qml/AuthenticatePage.qml:78
-msgid "Log in"
-msgstr "Prijava"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
@@ -685,6 +682,14 @@ msgstr "Da li je broj tačan?"
 #, fuzzy
 msgid "Phone number already exists."
 msgstr "Telefonski broj (obavezno)"
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+msgid "Enter Password"
+msgstr ""
+
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+msgid "Password"
+msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -880,7 +885,7 @@ msgstr "Telegram poruka poslanih danas: %1"
 msgid "No Telegram messages sent today."
 msgstr "Nema poslanih Telegram poruka danas."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:491
+#: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -888,15 +893,15 @@ msgstr ""
 "Ako želite uključiti Telegram notifikacije kada ne koristite aplikaciju, "
 "prijavite se u vaš Ubuntu One račun."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:498
+#: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
 msgstr "Prijava na Ubuntu One"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:506
+#: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
 msgstr "Podsjeti me kasnije"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:514
+#: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
 msgstr "Ne želim notifikacije"
 
@@ -1097,11 +1102,6 @@ msgstr "Proslijeđeno od <b>%1</b>"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Obrisano"
-
-#. TRANSLATORS: Title of self destruct timer dialog.
-#: /telegram-app/telegram/app/qml/ui/dialogs/SelfDestructDialog.qml:10
-msgid "Self-Destruct Timer"
-msgstr "Tajmer samouništenja"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1415,6 +1415,12 @@ msgstr "Ovo je Telegram polje"
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Tražite razgovor, kontakt ili poruku"
+
+#~ msgid "Log in"
+#~ msgstr "Prijava"
+
+#~ msgid "Self-Destruct Timer"
+#~ msgstr "Tajmer samouništenja"
 
 #~ msgid "%1 changed group photo."
 #~ msgstr "%1 je promjenio fotografiju grupe."

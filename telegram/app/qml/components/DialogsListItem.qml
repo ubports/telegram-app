@@ -1,6 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.0
+import Ubuntu.Components.Popups 1.3
 //import AsemanTools.Controls 1.0
 
 import AsemanTools 1.0
@@ -70,7 +70,7 @@ ListItem {
 
                 onTriggered: {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                        list_item, {
+                        null, {
                             text: i18n.tr("Are you sure you want to leave this chat?"),
                             onAccept: function() {
                                 pageStack.clear()
@@ -87,7 +87,7 @@ ListItem {
 
                 onTriggered: {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                        list_item, {
+                        null, {
                             text: i18n.tr("Are you sure you want to clear history?"),
                             onAccept: function() {
                                 telegram.messagesDeleteHistory(dialogId, false)
