@@ -54,7 +54,6 @@
         <file>qml/components/MultipleSelectionListView.qml</file>
         <file>qml/components/MultipleSelectionVisualModel.qml</file>
         <file>qml/components/PageHeaderHint.qml</file>
-        <file>qml/components/PageWithBottomEdge.qml</file>
         <file>qml/components/SecretChatEdges.qml</file>
         <file>qml/components/SingleMediaViewer.qml</file>
         <file>qml/components/SubtitledListItem.qml</file>
