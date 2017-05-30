@@ -171,7 +171,7 @@ Page {
                  placeholderText: i18n.tr("New group chat title")
                  inputMethodHints: Qt.ImhNoPredictiveText
                  validator: RegExpValidator {
-                     regExp: /w/
+                     regExp: /[\w\s]+/
                  }
              }
 
