@@ -26,6 +26,7 @@
         <file>qml/AddContactPage.qml</file>
         <file>qml/AuthCodePage.qml</file>
         <file>qml/AuthCountriesPage.qml</file>
+        <file>qml/AuthPasswordPage.qml</file>
         <file>qml/AuthNumberPage.qml</file>
         <file>qml/ClickableContactImage.qml</file>
         <file>qml/ContactImage.qml</file>

@@ -22,6 +22,7 @@ Item {
     }
 
     signal codeRequested(variant authCodePage, variant telegram, bool phoneRegistered, int sendCallTimeout, bool resent)
+    signal authPasswordNeeded(variant authPasswordPage)
 
     function showFirstAccount() {
         if (profiles.count == 0) {
@@ -70,6 +71,7 @@ Item {
         id: account_component
         AccountListItem {
             onCodeRequested:acc_list_frame.codeRequested(authCodePage,telegram, phoneRegistered, sendCallTimeout, resent)
+            onAuthPasswordNeeded:acc_list_frame.authPasswordNeeded(authPasswordPage)
         }
     }
 
