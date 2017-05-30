@@ -745,7 +745,7 @@ Rectangle {
         onResourceErrorChanged: {
             if (resourceError) {
                 PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                    send_button_box, {
+                    null, {
                         text: i18n.tr("Please grant microphone access on System Settings > Security & Privacy."),
                         onAccept: function() {
                             Qt.openUrlExternally("settings:///system/security-privacy")

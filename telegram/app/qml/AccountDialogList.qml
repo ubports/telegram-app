@@ -1,6 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.0
+import Ubuntu.Components.Popups 1.3
 
 import AsemanTools 1.0
 import TelegramQML 1.0
@@ -112,7 +112,7 @@ Item {
             onClicked: {
                 if (messageIdsToForward.length > 0) {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                        list_item, {
+                        null, {
                             // TRANSLATORS: %1 represents person to whom we are forwarding messages to.
                             text: i18n.tr("Forward message to %1?".arg(title)),
                             onAccept: function() {
@@ -124,7 +124,7 @@ Item {
                     );
                 } else if (transfer_helper.hasContent) {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
-                        list_item, {
+                        null, {
                             // TRANSLATORS: %1 represents person to whom we are sending files to.
                             text: i18n.tr("Send messages to %1?".arg(title)),
                             onAccept: function() {
