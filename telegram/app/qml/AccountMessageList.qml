@@ -96,7 +96,7 @@ Rectangle {
             if(document != doc)
                 return
 
-            PopupUtils.open(Qt.resolvedUrl("InstallStickerDialog.qml"), acc_msg_list, {telegram: telegramObject, stickerSet: set.shortName})
+            PopupUtils.open(Qt.resolvedUrl("InstallStickerDialog.qml"), null, {telegram: telegramObject, stickerSet: set.shortName})
         }
         property Document doc
     }

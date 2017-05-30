@@ -16,7 +16,7 @@
 
 import QtQuick 2.2
 import QtMultimedia 5.0
-import Ubuntu.Components 1.0
+import Ubuntu.Components 1.3
 
 Item {
     id: viewer
