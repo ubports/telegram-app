@@ -60,7 +60,7 @@ msgstr "Nova conversa secreta"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
-msgstr "Adicionar a grupo"
+msgstr "Adicionar ao grupo"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:107
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:77
@@ -238,7 +238,7 @@ msgstr "Você adicionou <b>%1</b>"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr "<b>%1</b> adicounou-o"
+msgstr "<b>%1</b> adiconou-o"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
@@ -686,11 +686,11 @@ msgstr "Número de telefone já existente"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Introduza a palavra-passe"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Palavra-passe"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
