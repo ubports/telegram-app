@@ -154,27 +154,16 @@ ListItem {
             height: column.height + 2*textMargins
             anchors.verticalCenter: parent.verticalCenter
 
-            Item {
+            Rectangle {
                 id: msg_frame_box
                 anchors.fill: parent
-                anchors.margins: -20*Devices.density
                 visible: !message_media.isSticker && !upload_item.isSticker
-
-                Item {
-                    anchors.fill: parent
-                    anchors.margins: 20*Devices.density
-
-                    Rectangle {
-                        id: back_rect_layer
-                        anchors.fill: parent
-                        radius: 6*Devices.density
-                        color: {
-                            // if(message_media.mediaPlayer)
-                            //     return "white"
-                            // else
-                                return message.out ? Colors.outgoing : Colors.incoming
-                        }
-                    }
+                radius: 6*Devices.density
+                color: {
+                    // if(message_media.mediaPlayer)
+                    //     return "white"
+                    // else
+                        return message.out ? Colors.outgoing : Colors.incoming
                 }
             }
 
@@ -187,6 +176,7 @@ ListItem {
                 verticalOffset: 2*Devices.density
                 visible: !message_media.isSticker && !upload_item.isSticker
                 color: Qt.rgba(0,0,0,0.2)
+                transparentBorder: true
             }
 
             Column {
