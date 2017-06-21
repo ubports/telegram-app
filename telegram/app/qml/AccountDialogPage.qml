@@ -188,7 +188,7 @@ Page {
             telegramObject: dialog_page.telegramObject
             currentDialog: dialog_page.currentDialog
 
-            //onFocusRequest: send_msg.setFocus()
+            onFocusRequest: send_msg.focusOut();
             onForwardRequest: {
                 dialog_page.forwardRequest(messageIds);
                 pageStack.removePages(dialog_page);

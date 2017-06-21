@@ -26,6 +26,13 @@ Rectangle {
     signal accepted( string text, int inReplyTo )
     signal copyRequest()
 
+    function focusOut() {
+        Qt.inputMethod.hide();
+        txt.focus = false;
+        if (privates.emojiItem)
+            privates.emojiItem.destroy();
+    }
+
     function checkForSharedContent() {
         if (transfer_helper.hasContent) {
             var url = String(transfer_helper.transfer.items[0].url)
@@ -161,7 +168,7 @@ Rectangle {
 
         anchors {
             left: privates.recording ? anchorPoint.right: parent.left
-            right: sticker_button_box.left
+            right: focus ? send_button_box.left : sticker_button_box.left
             bottom: parent.bottom
             margins: units.gu(1)
             rightMargin: 0
@@ -283,7 +290,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible
+        visible: opacity > 0 && !messagePlaceholder.visible && !txt.focus
 
         AbstractButton {
             anchors.fill: parent
@@ -292,7 +299,6 @@ Rectangle {
                 if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
-                    txt.focus = false;
                     privates.emojiItem = emoticons_component.createObject(send_msg)
                     privates.emojiItem.y = -privates.emojiItem.height
                 } else {
@@ -324,7 +330,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible
+        visible: opacity > 0 && !messagePlaceholder.visible && !txt.focus
 
         AbstractButton {
             anchors.fill: parent
@@ -373,7 +379,7 @@ Rectangle {
             states: [
                 State {
                     name: "send"
-                    when: txt.inputMethodComposing || txt.text.length > 0 || privates.audioRecorded
+                    when: txt.focus || txt.text.length > 0 || privates.audioRecorded
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
@@ -381,7 +387,7 @@ Rectangle {
                 },
                 State {
                     name: "send-audio"
-                    when: !txt.inputMethodComposing && txt.text.length == 0 && !privates.audioRecorded
+                    when: !txt.focus && txt.text.length == 0 && !privates.audioRecorded
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl("image://theme/audio-input-microphone-symbolic")
@@ -483,7 +489,6 @@ Rectangle {
     }
 
     function requestMedia(mediaType) {
-        Qt.inputMethod.hide();
         mediaImporter.contentType = mediaType;
         mediaImporter.requestMedia();
     }
