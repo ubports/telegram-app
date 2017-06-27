@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 09:47+0000\n"
-"Last-Translator: Martin Kozub <zubozrout@gmail.com>\n"
+"PO-Revision-Date: 2017-06-27 17:50+0000\n"
+"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/cs/>\n"
 "Language: cs\n"
@@ -521,7 +521,7 @@ msgstr "naposledy viděn před chvílí"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:97
 msgid "last seen within a week"
-msgstr ""
+msgstr "naposledy shlédnuto tento týden"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:295
@@ -529,7 +529,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:100
 msgid "last seen within a month"
-msgstr ""
+msgstr "naposledy shlédnuto tento týden"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:298
