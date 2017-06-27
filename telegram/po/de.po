@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-04-18 22:12+0200\n"
-"Last-Translator: schuko24 <gerdsaenger@t-online.de>\n"
-"Language-Team: German <de@li.org>\n"
+"PO-Revision-Date: 2017-06-27 09:12+0000\n"
+"Last-Translator: Weblate Admin <flori-weblate@bin.org.in>\n"
+"Language-Team: German <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Poedit 1.8.7.1\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -205,9 +206,8 @@ msgid "Sign Up"
 msgstr "Registrieren"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
-#, fuzzy
 msgid "Invalid password"
-msgstr "Ungültiger Telefoncode"
+msgstr "Ungültiges Passwort"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -683,11 +683,11 @@ msgstr "Telefonnummer existiert bereits"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Passwort eingeben"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -1132,12 +1132,11 @@ msgstr "%1 um %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
-msgstr "hh:mm"
+msgstr "h:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
