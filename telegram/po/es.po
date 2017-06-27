@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 09:15+0000\n"
+"PO-Revision-Date: 2017-06-27 09:18+0000\n"
 "Last-Translator: Francisco Molinero <paco@byasl.com>\n"
 "Language-Team: Spanish <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/es/>\n"
@@ -144,7 +144,7 @@ msgstr "No se importó ningún contacto"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr "Este contacto está en Telegram"
+msgstr "Este contacto está en Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
@@ -263,7 +263,7 @@ msgstr "<b>%1</b> le eliminó"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "b>%1</b> eleminó a <b>%2</b>"
+msgstr "<b>%1</b> eliminó a <b>%2</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -408,8 +408,8 @@ msgstr "Presione y mantenga el icono de grabación"
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
-"Por favor, permita el acceso al micrófono en Configuración de Sistema > "
-"Seguridad y Privacidad"
+"Permita el acceso al micrófono en Configuración de Sistema > Seguridad y "
+"Privacidad."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -895,7 +895,7 @@ msgstr "Recordarme más tarde"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
-msgstr "No deseo notificaciones."
+msgstr "No quiero notificaciones"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:140
@@ -993,7 +993,7 @@ msgstr "¿Está seguro de que quiere borrar el historial?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr "Tú:"
+msgstr "Tú: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -1276,7 +1276,7 @@ msgstr "%1 ha registrado su llegada"
 #: /telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 se unió a Telegram"
+msgstr "¡%1 se unió a Telegram!"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:239
 #: /telegram-app/telegram/push/pushhelper.cpp:245
