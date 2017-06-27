@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 09:49+0000\n"
+"PO-Revision-Date: 2017-06-27 22:14+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ca/>\n"
@@ -661,9 +661,8 @@ msgstr "Escolliu un país"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
-#, fuzzy
 msgid "Search countries..."
-msgstr "Cerca contactes..."
+msgstr "Cerqueu el país..."
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
@@ -1008,38 +1007,36 @@ msgid "typing..."
 msgstr "escrivint..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group title to %1"
 msgstr "Heu canviat el nom del grup a «%1»"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 ha canviat el nom del grup a «%2»"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
-#, fuzzy
 msgid "Voice message"
-msgstr "Escriviu un missatge"
+msgstr "Missatge de veu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
 msgstr "Adhesiu"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 ha creat un xat secret"
+msgstr "%1 s'ha afegit al vostre xat secret."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
-#, fuzzy
 msgid "You joined the secret chat."
-msgstr "%1 ha creat un xat secret"
+msgstr "Us heu afegit al xat secret."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group"
-msgstr "%1 ha creat el grup «%2»"
+msgstr "%1 ha creat el grup"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
@@ -1047,12 +1044,12 @@ msgid "You added %1"
 msgstr "Heu afegit %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added you"
-msgstr "%1 us ha afegit al grup"
+msgstr "%1 us ha afegit"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
 msgstr "%1 ha afegit %2"
 
@@ -1062,12 +1059,12 @@ msgid "%1 left the group"
 msgstr "%1 ha abandonat el grup"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed %1"
 msgstr "Heu eliminat %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 removed you"
 msgstr "%1 ha eliminat %2"
 
@@ -1139,7 +1136,6 @@ msgid "mm:ss"
 msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
 msgstr "H.mm"
 
