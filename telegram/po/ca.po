@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 22:14+0000\n"
+"PO-Revision-Date: 2017-06-27 22:16+0000\n"
 "Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
 "Language-Team: Catalan <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ca/>\n"
@@ -144,7 +144,7 @@ msgstr "No s'ha importat cap contacte"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr "Aquest contacte és al Telegram"
+msgstr "Aquest contacte és al Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
@@ -330,8 +330,8 @@ msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
-"S'ha rebutjat o acceptat el xat secret des d'un altre dispositiu\n"
-"Teniu present que l'Android accepta els xats secrets de forma automàtica"
+"S'ha rebutjat o acceptat el xat secret des d'un altre dispositiu.\n"
+"Teniu present que l'Android accepta els xats secrets de forma automàtica."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
@@ -586,7 +586,7 @@ msgstr ""
 "Podeu triar un nom d'usuari al <b>Telegram</b>. Si ho feu, altres usuaris us "
 "podran trobar per aquest nom i contactar-vos sense que coneguin el vostre "
 "número.<br /><br />Podeu usar <b>a–z</b>, <b>0–9</b> i caràcters de "
-"subratllat.<br />Mínim 5 caràcters."
+"subratllat.<br />Mínim <b>5</b> caràcters."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
@@ -870,7 +870,7 @@ msgstr "Missatges del Telegram rebuts avui: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:171
 msgid "No Telegram messages received today."
-msgstr "Avui no s'ha rebut cap missatge del Telegram"
+msgstr "Avui no s'ha rebut cap missatge del Telegram."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:178
 #, qt-format
@@ -879,7 +879,7 @@ msgstr "Missatges del Telegram enviats avui: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:179
 msgid "No Telegram messages sent today."
-msgstr "No heu enviat cap missatge del Telegram avui"
+msgstr "No heu enviat cap missatge del Telegram avui."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
