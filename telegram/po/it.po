@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 17:53+0000\n"
+"PO-Revision-Date: 2017-06-27 17:56+0000\n"
 "Last-Translator: Emanuele Sorce <emanuele.sorce@hotmail.com>\n"
 "Language-Team: Italian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/it/>\n"
@@ -256,45 +256,43 @@ msgid "You removed <b>%1</b>"
 msgstr "Hai rimosso <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed you"
-msgstr "%1 ha rimosso %2"
+msgstr "<b>%1</b> ti ha rimosso"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "%1 ha rimosso %2"
+msgstr "<b>%1</b> ha rimosso <b>%2</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group name to %1"
-msgstr "%1 ha cambiato il nome del gruppo in \"%2\""
+msgstr "Hai cambiato il nome del gruppo in %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr "%1 ha cambiato il nome del gruppo in \"%2\""
+msgstr "<b>%1</b> ha cambiato il nome del gruppo in %2"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
-#, fuzzy
 msgid "You changed the group photo"
-msgstr "%1 ha cambiato la foto del gruppo"
+msgstr "Tu hai cambiato la foto del gruppo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr "%1 ha cambiato la foto del gruppo"
+msgstr "<b>%1</b> ha cambiato la foto del gruppo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
-#, fuzzy
 msgid "You removed the group photo"
-msgstr "%1 ha eliminato la foto del gruppo"
+msgstr "Tu hai rimosso la foto del gruppo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr "%1 ha eliminato la foto del gruppo"
+msgstr "<b>%1</b> ha rimosso la foto del gruppo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
