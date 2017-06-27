@@ -8,82 +8,95 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2015-09-22 11:10+0000\n"
-"Last-Translator: Yaron <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <he@li.org>\n"
+"PO-Revision-Date: 2017-06-27 09:48+0000\n"
+"Last-Translator: Eran <etherpulse@gmail.com>\n"
+"Language-Team: Hebrew <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
+#, fuzzy
 msgid "Add to contacts"
-msgstr ""
+msgstr "הוספה לאנשי קשר"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:26
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
+#, fuzzy
 msgid "Contacts"
-msgstr ""
+msgstr "אנשי קשר"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
+#, fuzzy
 msgid "Search"
-msgstr ""
+msgstr "חיפוש"
 
 #. TRANSLATORS: As in: add new contact
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
+#, fuzzy
 msgid "Add"
-msgstr ""
+msgstr "הוספה"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
+#, fuzzy
 msgid "Back"
-msgstr ""
+msgstr "אחורה"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
+#, fuzzy
 msgid "Search contacts..."
-msgstr ""
+msgstr "חיפוש באנשי קשר…"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
+#, fuzzy
 msgid "New Secret Chat"
-msgstr ""
+msgstr "שיחה סודית חדשה"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
+#, fuzzy
 msgid "Add to group"
-msgstr ""
+msgstr "הוספה לקבוצה"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:107
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:77
+#, fuzzy
 msgid "New Group"
-msgstr ""
+msgstr "קבוצה חדשה"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:118
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:396
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:424
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:325
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
+#, fuzzy
 msgid "OK"
-msgstr ""
+msgstr "אישור"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
+#, fuzzy
 msgid "Chat title"
-msgstr ""
+msgstr "כותרת שיחה"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:31
+#, fuzzy
 msgid "Add Contact"
-msgstr ""
+msgstr "הוספת איש קשר"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:358
