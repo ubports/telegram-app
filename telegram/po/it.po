@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 17:56+0000\n"
+"PO-Revision-Date: 2017-06-27 19:01+0000\n"
 "Last-Translator: Emanuele Sorce <emanuele.sorce@hotmail.com>\n"
 "Language-Team: Italian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/it/>\n"
@@ -306,8 +306,9 @@ msgstr "<b>%1</b> é entrato nel gruppo tramite il link d'invito"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
+#, fuzzy
 msgid "Please select chat"
-msgstr "Selezionare una chat"
+msgstr "Prego, seleziona una chat"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:224
 msgid "New messages"
@@ -319,7 +320,7 @@ msgstr "Rispondi"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
-msgstr "Info pacchetto di Sticker"
+msgstr "Info sul pacchetto di Sticker"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
@@ -331,7 +332,7 @@ msgid ""
 "Note that Android accepts secret chats automatically."
 msgstr ""
 "Chat segreta respinta o accettata da un altro dispositivo.\n"
-"Ricorda che Android accetta le chat segrete automaticamente."
+"Nota che Android accetta le chat segrete automaticamente."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
@@ -399,16 +400,16 @@ msgstr "Scrivi messaggio"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
-msgstr "Allegati audio non ancora supportati"
+msgstr "Allegati audio non ancora supportati ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr "Devi tenere premuto l'icona del microfono"
+msgstr "Devi tenere premuta l'icona del microfono"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
-"Per favore concedi l'accesso al microfono nelle impostazioni > Sicurezza & "
+"Per favore concedi l'accesso al microfono in Impostazioni > Sicurezza & "
 "Privacy"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
@@ -506,7 +507,7 @@ msgstr "online"
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:91
 #, qt-format
 msgid "last seen %1"
-msgstr "ultimo accesso %1"
+msgstr "Visto l'ultima volta %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:289
@@ -514,7 +515,7 @@ msgstr "ultimo accesso %1"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:94
 msgid "last seen recently"
-msgstr "ultimo accesso di recente"
+msgstr "Visto per l'ultima volta recentemente"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:292
@@ -522,7 +523,7 @@ msgstr "ultimo accesso di recente"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:97
 msgid "last seen within a week"
-msgstr "ultimo accesso entro una settimana"
+msgstr "Visto l'ultima volta da qui a una settimana fa"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:295
@@ -530,7 +531,7 @@ msgstr "ultimo accesso entro una settimana"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:100
 msgid "last seen within a month"
-msgstr "ultimo accesso entro un mese"
+msgstr "Visto l'ultima volta da qui a un mese fa"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:298
@@ -538,7 +539,7 @@ msgstr "ultimo accesso entro un mese"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:103
 msgid "last seen a long time ago"
-msgstr "ultimo accesso molto tempo fa"
+msgstr "Visto l'ultima volta tanto tempo fa"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
@@ -584,11 +585,10 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
-"È possibile scegliere un username su <b>Telegram</b>. Questo potrà essere "
-"usato da altre persone per trovare e contattare l'utente senza conoscerne il "
-"numero di telefono<br /><br />\r\n"
-" È possibile usare i caratteri <b>a-z</b>, <b>0-9</b> e trattino basso.<br /"
-">La lunghezza minima è di <b>5</b> caratteri."
+"Puoi scegliete un username su <b>Telegram</b>. Se lo fai, le altre persone "
+"potranno trovarti usando il tuo username e contattarti senza sapere il tuo "
+"numero di telefono. <br /><br/>Puoi usare <b>a-z</b>,<b>0-9</b>e trattini "
+"bassi.<br/>La lunghezza minima è di <b>5</b> caratteri."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
@@ -615,11 +615,11 @@ msgstr "Impossibile aggiungere il contatto"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Inserire il prefisso nazionale"
+msgstr "Includere il prefisso nazionale, per piacere"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
-msgstr "Il numero di telefono non è valido"
+msgstr "Numero non è un numero di telefono valido"
 
 #. TRANSLATORS: Error text for an invalid phone code.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:33
@@ -655,7 +655,7 @@ msgstr "Richiedi chiamata"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
-msgstr "Chiamata in corso, attendere..."
+msgstr "Si sta chiamando, attendere..."
 
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
@@ -663,9 +663,8 @@ msgstr "Scegli un paese"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
-#, fuzzy
 msgid "Search countries..."
-msgstr "Cerca contatti..."
+msgstr "Cerca nazioni..."
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
@@ -678,17 +677,16 @@ msgid "Number correct?"
 msgstr "Numero corretto?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
-#, fuzzy
 msgid "Phone number already exists."
 msgstr "Numero di telefono esiste già"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Inserisci Password"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -701,11 +699,11 @@ msgstr "Chiudi"
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
-msgstr "Inizia a inviare messaggi"
+msgstr "Inizia a massaggiare"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
-msgstr "Benvenuti nell'era<br>dei messaggi veloci e sicuri"
+msgstr "Benvenuti nell'era<br>del veloce e sicuro messaggiar"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:22
@@ -720,7 +718,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr "Gratuito"
+msgstr "Gratis"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
@@ -736,7 +734,8 @@ msgstr "Sicuro"
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
-"<b>Telegram</b> protegge i tuoi messaggi<br> dagli attacchi degli hacker"
+"<b>Telegram</b> tiene i tuoi messaggi al sicuro<br> dagli attacchi degli "
+"hacker"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
@@ -746,8 +745,8 @@ msgstr "Potente"
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
-"<b>Telegram</b> non ha limiti di dimensioni<br> per le chat e i file "
-"multimediali"
+"<b>Telegram</b> non ha limiti sulle dimensioni<br> dei tuoi file "
+"multimediali e delle tue conversazioni"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
@@ -785,7 +784,7 @@ msgstr "Condividi"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
-msgstr "Info contatto"
+msgstr "Info sul contatto"
 
 #. TRANSLATORS: Action text to add member to group chat.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:43
@@ -795,20 +794,17 @@ msgstr "Aggiungi membro"
 #. TRANSLATORS: Action text to change group chat title.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:55
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:157
-#, fuzzy
 msgid "Change Group Title"
-msgstr "%1 ha cambiato il nome del gruppo"
+msgstr "Cambia il nome del gruppo"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
-#, fuzzy
 msgid "New group chat title"
-msgstr "Titolo chat"
+msgstr "Nuovo titolo chat"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:179
-#, fuzzy
 msgid "Change Title"
-msgstr "Titolo chat"
+msgstr "Cambia Titolo"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
