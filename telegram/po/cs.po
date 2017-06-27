@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 17:54+0000\n"
+"PO-Revision-Date: 2017-06-27 19:01+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/cs/>\n"
@@ -544,35 +544,37 @@ msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
+"Jste si jistý, že se chcete odhlásit?\n"
+"Veškeré zabezpečené rozhovory budou ztraceny."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr ""
+msgstr "%1 je dostupné."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr ""
+msgstr "Omlouváme se, toto uživatelské jméno se již používá."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr ""
+msgstr "Omlouváme se, toto uživatelské jméno se již používá."
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
-msgstr ""
+msgstr "Vaše uživatelské jméno"
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr ""
+msgstr "Uživatelské jméno musí mít alespoň 5 znaků."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr ""
+msgstr "Kontrola uživatelského jména..."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
@@ -581,193 +583,201 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
+"Uživatelské jméno si můžete zvolit na <b>Telegram</b> V tom okamžiku Vás "
+"ostatní lidé budou moci vyhledat a kontaktovat i bez  toho, aby museli znát "
+"Vaše telefonní číslo.<br /><br />Můžete použít<b>a-z</b>, <b>0-9</b> a "
+"podtržítka.<br />Minimální délka je <b>5</b> znaků."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr ""
+msgstr "Hotovo"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
-msgstr ""
+msgstr "Telefonní číslo (povinné)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:196
 #, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr ""
+msgstr "%1 ještě nepoužívá Telegram"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:202
 msgid "Invite to Telegram"
-msgstr ""
+msgstr "Pozvat na Telegram"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:248
 msgid "Could not add contact"
-msgstr ""
+msgstr "Kontakt se nepodařilo přidat"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr ""
+msgstr "Prosím uveďte předvolbu země."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
-msgstr ""
+msgstr "Číslo není platné telefonní číslo"
 
 #. TRANSLATORS: Error text for an invalid phone code.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:33
 msgid "Invalid phone code"
-msgstr ""
+msgstr "Neplatné telefonní číslo"
 
 #. TRANSLATORS: Error text for missing first name.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:48
 msgid "First name is required"
-msgstr ""
+msgstr "Jméno je povinné"
 
 #. TRANSLATORS: One time code entered during sign in process.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:115
 msgid "Code"
-msgstr ""
+msgstr "Kód"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
-msgstr ""
+msgstr "Jméno"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
-msgstr ""
+msgstr "Příjmení"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:166
 msgid "Resend Code"
-msgstr ""
+msgstr "Znovu poslat kód"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
-msgstr ""
+msgstr "Vyžádat telefonát"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
-msgstr ""
+msgstr "Volám, čekejte..."
 
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Zvolte stát"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
 msgid "Search countries..."
-msgstr ""
+msgstr "Hledat státy..."
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
-msgstr ""
+msgstr "Telefonní číslo"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
 msgid "Number correct?"
-msgstr ""
+msgstr "Je číslo správné?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr ""
+msgstr "Telefonní číslo již existuje."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Vložte heslo"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Heslo"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Instalovat"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
-msgstr ""
+msgstr "Zahájit konverzaci"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
-msgstr ""
+msgstr "Vítejte v době <br>rychlé a bezpečné komunikace"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr ""
+msgstr "Rychle"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
-msgstr ""
+msgstr "<b>Telegram</b> doručuje zprávy rychleji<br>než jakákoliv jiná aplikace"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr ""
+msgstr "Zdarma"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
+"<b>Telegram</b> je zadarmo navždy. Bez reklam.<br> Žádné členské příspěvky"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
-msgstr ""
+msgstr "Bezpečný"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
+"<b>Telegram</b> udržuje vaše zprávy v bezpečí<br>před internetovými útočníky"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
-msgstr ""
+msgstr "Výkonný"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
-msgstr ""
+msgstr "<b>Telegram</b> neomezuje velikost<br> Vašich médií a rozhovorů"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
-msgstr ""
+msgstr "Založený na \"Cloudu\""
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
+"<b>Telegram</b> Vám umožňuje přistupovat k Vašim zprávam<br> z vícero "
+"zařízení"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr ""
+msgstr "Diskrétní"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr ""
+msgstr "<b>Telegram</b> zprávy jsou silně šifrované<br>"
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Zvolit"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
-msgstr ""
+msgstr "Z: %1"
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr ""
+msgstr "Sdílet"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
-msgstr ""
+msgstr "Údaje o kontaktu"
 
 #. TRANSLATORS: Action text to add member to group chat.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:43
