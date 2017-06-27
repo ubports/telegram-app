@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 22:27+0000\n"
+"PO-Revision-Date: 2017-06-27 22:30+0000\n"
 "Last-Translator: Gabriele <gabrielemartelli@tiscali.it>\n"
 "Language-Team: Italian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/it/>\n"
@@ -614,7 +614,7 @@ msgstr "Impossibile aggiungere il contatto"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Includere il prefisso nazionale, per piacere"
+msgstr "Per favore, includere il prefisso nazionale"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
@@ -677,7 +677,7 @@ msgstr "Numero corretto?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr "Numero di telefono esiste già"
+msgstr "Numero di telefono già esistente"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
@@ -1031,7 +1031,7 @@ msgstr "%1 si è unito alla tua chat segreta"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr "Tu sei entrato nella chat segreta"
+msgstr "Ti sei unito alla chat segreta"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
