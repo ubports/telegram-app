@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 17:50+0000\n"
+"PO-Revision-Date: 2017-06-27 17:53+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/cs/>\n"
@@ -537,7 +537,7 @@ msgstr "naposledy shlédnuto tento týden"
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:103
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "poslední kontrola před několika týdny"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
