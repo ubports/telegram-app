@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 19:01+0000\n"
+"PO-Revision-Date: 2017-06-27 19:20+0000\n"
 "Last-Translator: Emanuele Sorce <emanuele.sorce@hotmail.com>\n"
 "Language-Team: Italian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/it/>\n"
@@ -896,11 +896,11 @@ msgstr "Accedi a Ubuntu One"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
-msgstr "Ricorda più tardi"
+msgstr "Ricordamelo dopo"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
-msgstr "Nessuna notifica"
+msgstr "Non voglio notifiche"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:140
@@ -927,7 +927,7 @@ msgstr "File"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr "<<< Swipe per cancellare"
+msgstr "<<< scorri per cancellare"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -986,7 +986,7 @@ msgstr "Lascia la chat"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to leave this chat?"
-msgstr "Lasciare veramente questa chat?"
+msgstr "Sei sicuro di voler lasciare questa chat?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Clear history"
@@ -994,7 +994,7 @@ msgstr "Cancella cronologia"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:91
 msgid "Are you sure you want to clear history?"
-msgstr "Eliminare veramente la cronologia della chat?"
+msgstr "Sei sicuro di voler eliminare la cronologia?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
@@ -1005,7 +1005,7 @@ msgstr "Tu: "
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:254
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:72
 msgid "typing..."
-msgstr "Sta scrivendo..."
+msgstr "sta scrivendo..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
@@ -1027,19 +1027,18 @@ msgid "Sticker"
 msgstr "Sticker"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 ha creato una chat segreta"
+msgstr "%1 si è unito alla tua chat segreta"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
-#, fuzzy
 msgid "You joined the secret chat."
-msgstr "%1 ha creato una chat segreta"
+msgstr "Tu sei entrato nella chat segreta"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group"
-msgstr "%1 ha creato il gruppo \"%2\""
+msgstr "%1 ha creato il gruppo"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
@@ -1047,14 +1046,14 @@ msgid "You added %1"
 msgstr "Hai aggiunto %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added you"
-msgstr "%1 ha aggiunto %2 al gruppo"
+msgstr "%1 ti ha aggiunto"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
-msgstr "%1 alle %2"
+msgstr "%1 ha aggiunto %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1086,7 +1085,7 @@ msgstr "%1 è entrato nel gruppo tramite il link di invito"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
-msgstr "%1 al momento é offline"
+msgstr "%1 al momento non è in linea"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
@@ -1177,7 +1176,7 @@ msgstr "ti ha inviato un video"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
-msgstr "ti ha inviato un file"
+msgstr "ti ha inviato un documento"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
@@ -1189,7 +1188,7 @@ msgstr "ha condiviso un contatto con te"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
-msgstr "ti ha inviato una posizione"
+msgstr "ti ha inviato una mappa"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:139
 #, qt-format
@@ -1214,7 +1213,7 @@ msgstr "%1 ha inviato un video al gruppo"
 #: /telegram-app/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr "%1 ha inviato un file al gruppo"
+msgstr "%1 ha inviato un documento al gruppo"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:164
 #, qt-format
@@ -1229,7 +1228,7 @@ msgstr "%1 ha inviato un contatto al gruppo"
 #: /telegram-app/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr "%1 ha inviato una posizione al gruppo"
+msgstr "%1 ha inviato una mappa al gruppo"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:179
 #: /telegram-app/telegram/push/pushhelper.cpp:200
@@ -1284,12 +1283,12 @@ msgstr "%1 ha fatto il check in"
 #: /telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 si è unito a Telegram"
+msgstr "%1 si è unito a Telegram!"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:239
 #: /telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr "Nuovo accesso da dispositivo sconosciuto"
+msgstr "Nuovo accesso da un dispositivo non riconosciuto"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /telegram-app/telegram/push/pushhelper.cpp:244
@@ -1330,7 +1329,7 @@ msgstr "Chiama"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr "Impossibile ottenere i dati da Telegram"
+msgstr "Impossibile ottenere i dati di Telegram"
 
 #: /telegram-app/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
@@ -1338,7 +1337,7 @@ msgstr "Tocca qui per aprire l'app"
 
 #: /telegram-app/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr "Risultati in: Contatti e Chat"
+msgstr "Risultati in: Contatti & Chat"
 
 #: /telegram-app/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
@@ -1346,15 +1345,15 @@ msgstr "Risultati in: Messaggi"
 
 #: /telegram-app/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr "Persone con cui parli"
+msgstr "Persone Con Cui Conversi"
 
 #: /telegram-app/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr "Chat recenti"
+msgstr "Chat Recenti"
 
 #: /telegram-app/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr "Foto recenti"
+msgstr "Foto Recenti"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /telegram-app/telegram/scope/query.cpp:298
@@ -1374,7 +1373,7 @@ msgstr "Chat non lette (%1)"
 
 #: /telegram-app/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr "Messaggio audio"
+msgstr "Messaggio Audio"
 
 #: /telegram-app/telegram/scope/query.cpp:646
 msgid "Contact received"
@@ -1382,7 +1381,7 @@ msgstr "Contatto ricevuto"
 
 #: /telegram-app/telegram/scope/query.cpp:650
 msgid "Document received"
-msgstr "File ricevuto"
+msgstr "Documento ricevuto"
 
 #: /telegram-app/telegram/scope/query.cpp:654
 msgid "Photo received"
@@ -1394,7 +1393,7 @@ msgstr "Video ricevuto"
 
 #: /telegram-app/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr "Tipo di media non gestito"
+msgstr "Tipo di media non gestibile"
 
 #: /telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
@@ -1402,7 +1401,7 @@ msgstr "Accedi a Telegram"
 
 #: /telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
-msgstr "Nessun messaggio ricevuto oggi."
+msgstr "Nessun messaggio ricevuto Oggi."
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
