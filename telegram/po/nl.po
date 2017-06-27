@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-04-24 22:15+0200\n"
-"Last-Translator: Zuzanna Stamburska <stambur@wp.pl>\n"
-"Language-Team: Dutch <nl@li.org>\n"
+"PO-Revision-Date: 2017-06-27 20:16+0000\n"
+"Last-Translator: Weblate Admin <flori-weblate@bin.org.in>\n"
+"Language-Team: Dutch <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Poedit 1.8.7.1\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -264,7 +265,7 @@ msgstr "<b>%1</b> heeft U verwijderd"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "<b>%1</b> heeft <b>%2</> verwijderd"
+msgstr "<b>%1</b> heeft <b>%2</b> verwijderd"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -275,7 +276,7 @@ msgstr "U hebt de groepsnaam veranderd in %1"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr "<b>%1</b> heeft de groepsnaam veranderd in <b>%2</b>"
+msgstr "<b>%1</b> heeft de groepsnaam veranderd in %2"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
 msgid "You changed the group photo"
@@ -794,7 +795,7 @@ msgstr "Deelnemer toevoegen"
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:55
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:157
 msgid "Change Group Title"
-msgstr "Wijzig de groepsnaam "
+msgstr "Wijzig de groepsnaam"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
@@ -997,7 +998,7 @@ msgstr "Geschiedenis echt wissen?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr "U:"
+msgstr "U: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
