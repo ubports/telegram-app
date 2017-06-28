@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 22:30+0000\n"
-"Last-Translator: Gabriele <gabrielemartelli@tiscali.it>\n"
+"PO-Revision-Date: 2017-06-28 09:47+0000\n"
+"Last-Translator: Stefano Verzegnassi <verzegnassi.stefano@gmail.com>\n"
 "Language-Team: Italian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/it/>\n"
 "Language: it\n"
@@ -144,7 +144,7 @@ msgstr "Nessun contatto importato"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr "Questo contatto è su Telegram"
+msgstr "Questo contatto è su Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
@@ -409,7 +409,7 @@ msgstr "Devi tenere premuta l'icona del microfono"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Per favore concedi l'accesso al microfono in Impostazioni > Sicurezza & "
-"Privacy"
+"Privacy."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -557,7 +557,7 @@ msgstr "%1 è disponibile."
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr "Spiacenti, questo username è già stato preso"
+msgstr "Spiacenti, questo username è già stato preso."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
@@ -614,7 +614,7 @@ msgstr "Impossibile aggiungere il contatto"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Per favore, includere il prefisso nazionale"
+msgstr "Per favore, includere il prefisso nazionale."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
@@ -677,7 +677,7 @@ msgstr "Numero corretto?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr "Numero di telefono già esistente"
+msgstr "Numero di telefono già esistente."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
@@ -1027,11 +1027,11 @@ msgstr "Sticker"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 si è unito alla tua chat segreta"
+msgstr "%1 si è unito alla tua chat segreta."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr "Ti sei unito alla chat segreta"
+msgstr "Ti sei unito alla chat segreta."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
