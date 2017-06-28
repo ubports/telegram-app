@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-28 14:16+0000\n"
+"PO-Revision-Date: 2017-06-28 14:17+0000\n"
 "Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/sc/>\n"
@@ -216,7 +216,7 @@ msgstr "As invitadu a %1 a aderire a sa tzarrada segreta."
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 t'at invitadu a una tzarrada segreta"
+msgstr "%1 t'at invitadu a una tzarrada segreta."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
@@ -676,7 +676,7 @@ msgstr "Su nùmeru est curretu?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr "Custu nùmeru esistet giai"
+msgstr "Custu nùmeru esistet giai."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
@@ -1029,7 +1029,7 @@ msgstr "%1 at aderidu a sa tzarrada segreta tua."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr "As aderidu a sa tzarrada segreta"
+msgstr "As aderidu a sa tzarrada segreta."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
