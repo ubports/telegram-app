@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 09:18+0000\n"
+"PO-Revision-Date: 2017-06-30 08:09+0000\n"
 "Last-Translator: Francisco Molinero <paco@byasl.com>\n"
 "Language-Team: Spanish <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/es/>\n"
@@ -414,7 +414,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Configuración"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
