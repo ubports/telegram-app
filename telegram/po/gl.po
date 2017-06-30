@@ -9,16 +9,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2016-03-09 22:02+0000\n"
-"Last-Translator: Marcos Lans <Unknown>\n"
-"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2017-06-30 17:51+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Language-Team: Galician <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -886,7 +887,7 @@ msgstr "Mensaxes do Telegram enviadas hoxe: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:179
 msgid "No Telegram messages sent today."
-msgstr "Hoxe non enviou mensaxes polo Telegram"
+msgstr "Hoxe non enviou mensaxes polo Telegram."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
