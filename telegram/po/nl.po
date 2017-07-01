@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 20:16+0000\n"
-"Last-Translator: Weblate Admin <flori-weblate@bin.org.in>\n"
+"PO-Revision-Date: 2017-07-01 17:41+0000\n"
+"Last-Translator: Sander <sander.k1007@kpnmail.nl>\n"
 "Language-Team: Dutch <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -206,9 +206,8 @@ msgid "Sign Up"
 msgstr "Aanmelden"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
-#, fuzzy
 msgid "Invalid password"
-msgstr "Ongeldige toestelcode"
+msgstr "Fout wachtwoord"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -222,9 +221,8 @@ msgstr "%1 heeft U uitgenodigd om zich aan een geheime chat aan te sluiten."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
-#, fuzzy
 msgid "You created the group"
-msgstr "U hebt de groep aangemaakt"
+msgstr "U heeft de groep aangemaakt"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
 #, qt-format
@@ -683,11 +681,11 @@ msgstr "Deze telefoonnummer bestaat al."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Voer wachtwoord in"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Wachtwoord"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -1008,36 +1006,34 @@ msgid "typing..."
 msgstr "aan het typen..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group title to %1"
-msgstr "U hebt de groepsnaam veranderd in %1"
+msgstr "U heeft de groepsnaam veranderd in %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 heeft de groepsnaam veranderd in %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
-#, fuzzy
 msgid "Voice message"
-msgstr "Voicebericht"
+msgstr "Spraakbericht"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
 msgstr "Sticker"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 heeft zich tot uw geheime chat aangesloten."
+msgstr "%1 heeft zich bij uw geheime chat aangesloten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
-#, fuzzy
 msgid "You joined the secret chat."
-msgstr "U hebt zich aan de geheime chat aangesloten."
+msgstr "U heeft zich bij de geheime chat aangesloten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group"
 msgstr "%1 heeft de groep aangemaakt"
 
@@ -1047,12 +1043,12 @@ msgid "You added %1"
 msgstr "U hebt %1 toegevoegd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added you"
 msgstr "%1 heeft U toegevoegd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
 msgstr "%1 heeft %2 toegevoegd"
 
@@ -1062,12 +1058,12 @@ msgid "%1 left the group"
 msgstr "%1 heeft de groep verlaten"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed %1"
-msgstr "U hebt %1 verwijderd"
+msgstr "U heeft %1 verwijderd"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 removed you"
 msgstr "%1 heeft U verwijderd"
 
@@ -1136,10 +1132,9 @@ msgstr "%1 om %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
 msgstr "hh:mm"
 
