@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 19:01+0000\n"
+"PO-Revision-Date: 2017-07-01 18:24+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
 "Language-Team: Romanian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ro/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -190,7 +190,7 @@ msgstr "Redirecţionează"
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr "Şterge"
+msgstr "Ştergeţi"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
@@ -315,109 +315,114 @@ msgstr "Mesaje noi"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
-msgstr ""
+msgstr "Răspunde"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Informații despre pachetul de stickere"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
-msgstr ""
+msgstr "Cerere de conversaţie privată."
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
+"Conversaţie privată acceptată sau nu de pe un  alt dispozitiv.\n"
+"Trebuie să ştii că Android acceptă conversaţiile private în mod automat."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
 msgid "Accept"
-msgstr ""
+msgstr "Acceptă"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:499
 msgid "Reject"
-msgstr ""
+msgstr "Respinge"
 
 #. TRANSLATORS: Edit your profile first and last name.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:16
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:32
 msgid "Edit name"
-msgstr ""
+msgstr "Modifică nume"
 
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:20
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
-msgstr ""
+msgstr "Salvează"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
 msgid "First name is required."
-msgstr ""
+msgstr "Prenumele este obligatoriu."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:51
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:144
 msgid "First name (required)"
-msgstr ""
+msgstr "Prenume (obligatoriu)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:70
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:160
 msgid "Last name (optional)"
-msgstr ""
+msgstr "Nume (opţional)"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:303
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
 msgid "Connecting..."
-msgstr ""
+msgstr "Se conectează..."
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:307
 #: /telegram-app/telegram/app/qml/AccountPage.qml:329
 #: /telegram-app/telegram/app/qml/AccountPage.qml:348
 msgid "Waiting for network..."
-msgstr ""
+msgstr "Se aşteaptă după reţea..."
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:326
 #: /telegram-app/telegram/app/qml/AccountPage.qml:345
 msgid "Select Chat"
-msgstr ""
+msgstr "Alege conversaţia"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
 msgid "Type message"
-msgstr ""
+msgstr "Tastează mesajul"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
-msgstr ""
+msgstr "Trimiterea de fişiere audio nu a fost încă implementată :("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Va trebui să apeşi şi să menţii icoana de înregistrare"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
+#, fuzzy
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
+"Trebuie să acorzi acces la microfon din  Configurări de sistem >  Securitate "
+"şi confidenţialitate   >  App permissions > Microphone"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
 msgid "Settings"
-msgstr ""
+msgstr "Configurări"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:25
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:49
 msgid "Change photo"
-msgstr ""
+msgstr "Schimbă imaginea"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
@@ -426,23 +431,23 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
-msgstr ""
+msgstr "Informaţii"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:105
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #. TRANSLATORS: Visible right under username in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:118
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
-msgstr ""
+msgstr "Utilizator"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:127
 msgid "Messages"
-msgstr ""
+msgstr "Mesaje"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
@@ -450,42 +455,42 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
 #: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
-msgstr ""
+msgstr "Notificări"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
-msgstr ""
+msgstr "Trimite mesajele apăsând tasta Enter"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
-msgstr ""
+msgstr "Suport"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:190
 msgid "Ask a Question"
-msgstr ""
+msgstr "Pune o întrebare"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:200
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:115
 msgid "Telegram FAQ"
-msgstr ""
+msgstr "Întrebări frecvente despre Telegram"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:209
 msgid "Account"
-msgstr ""
+msgstr "Cont"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
-msgstr ""
+msgstr "Deconectare"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:233
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "Aplicaţia Telegram pentru Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:283
@@ -493,16 +498,16 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:88
 msgid "online"
-msgstr ""
+msgstr "activ"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:286
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:304
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:91
-#, qt-format
+#, fuzzy, qt-format
 msgid "last seen %1"
-msgstr ""
+msgstr "Văzut ultima dată %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:289
@@ -510,7 +515,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:94
 msgid "last seen recently"
-msgstr ""
+msgstr "văzut recent"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:292
@@ -518,7 +523,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:97
 msgid "last seen within a week"
-msgstr ""
+msgstr "văzut în ultima săptămână"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:295
@@ -526,7 +531,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:100
 msgid "last seen within a month"
-msgstr ""
+msgstr "văzut în ultima lună"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:298
@@ -534,42 +539,44 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:103
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "văzut în urmă cu mult timp"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
+"Eşti sigur că vrei să te deconectezi?\n"
+"Toate conversaţiile secrete vor fi pierdute."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr ""
+msgstr "%1 este disponibil."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr ""
+msgstr "Scuze, dar acest nume de utilizator este deja folosit."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr ""
+msgstr "Scuze dar acest nume de utilizator nu este corect."
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
-msgstr ""
+msgstr "Utilizatorul tău"
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr ""
+msgstr "Un utilizator trebuie să fie de cel puțin 5 caractere lungime."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr ""
+msgstr "Se verifică numele de utilizator..."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
@@ -582,122 +589,122 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr ""
+msgstr "Gata"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
-msgstr ""
+msgstr "Numărul de telefon (obligatoriu)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:196
 #, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr ""
+msgstr "%1 nu are cont pe Telegram"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:202
 msgid "Invite to Telegram"
-msgstr ""
+msgstr "Invită să folosească Telegram"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:248
 msgid "Could not add contact"
-msgstr ""
+msgstr "Nu am putut adăuga acest contact"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr ""
+msgstr "Te rugăm să scrii și codul de țară."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
-msgstr ""
+msgstr "Acest număr nu este un număr de telefon valid"
 
 #. TRANSLATORS: Error text for an invalid phone code.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:33
 msgid "Invalid phone code"
-msgstr ""
+msgstr "Acest cod de telefon nu este valid"
 
 #. TRANSLATORS: Error text for missing first name.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:48
 msgid "First name is required"
-msgstr ""
+msgstr "Prenumele este obligatoriu"
 
 #. TRANSLATORS: One time code entered during sign in process.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:115
 msgid "Code"
-msgstr ""
+msgstr "Cod"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
-msgstr ""
+msgstr "Prenume"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
-msgstr ""
+msgstr "Nume"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:166
 msgid "Resend Code"
-msgstr ""
+msgstr "Trimite codul din nou"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
-msgstr ""
+msgstr "Cere apel"
 
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
-msgstr ""
+msgstr "Aşteptaţi, se apelează..."
 
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Alege o ţară"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
 msgid "Search countries..."
-msgstr ""
+msgstr "Caută ţări..."
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
-msgstr ""
+msgstr "Număr de telefon"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
 msgid "Number correct?"
-msgstr ""
+msgstr "Este corect numărul?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr ""
+msgstr "Acest număr de telefon este deja folosit."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Introduceţi parola"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Parola"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Instalează"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr ""
+msgstr "Închide"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
-msgstr ""
+msgstr "Începe să comunici"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
-msgstr ""
+msgstr "Bine ai venit în era <br>comunicării securizate şi rapidă"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr ""
+msgstr "Rapidă"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
@@ -706,85 +713,90 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr ""
+msgstr "Gratuit"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
+"<b>Telegram</b> o să fie tot timpul gratis. Fără reclame.<br> Fără abonamente"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
-msgstr ""
+msgstr "Securizată"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr ""
+msgstr "<b>Telegram</b> îţi protejează mesajele<br> de atacurile cibernetice"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
-msgstr ""
+msgstr "Puternică"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
+"<b>Telegram</b> nu are limite de dimensiune<br> pentru mesaje sau fişiere "
+"media"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
-msgstr ""
+msgstr "Sincronizare în cloud"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
+"<b>Telegram</b> îţi permite să îţi accesezi mesajele<br> folosind oricâte "
+"dispozitive"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr ""
+msgstr "Secretă"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr ""
+msgstr "Mesajele din <b>Telegram</b> sunt bine criptate<br>"
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Alege"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
-msgstr ""
+msgstr "Din: %1"
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr ""
+msgstr "Partajare"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
-msgstr ""
+msgstr "Informaţii contact"
 
 #. TRANSLATORS: Action text to add member to group chat.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:43
 msgid "Add member"
-msgstr ""
+msgstr "Adăugați membru"
 
 #. TRANSLATORS: Action text to change group chat title.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:55
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:157
 msgid "Change Group Title"
-msgstr ""
+msgstr "Schimbă titlul grupului"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
 msgid "New group chat title"
-msgstr ""
+msgstr "Titlu grup"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:179
 msgid "Change Title"
-msgstr ""
+msgstr "Schimbă titlu"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -792,7 +804,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:78
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr ""
+msgstr "%1 membrii, %2 activi"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is gropu chat member count.
@@ -800,7 +812,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:81
 #, qt-format
 msgid "%1 members"
-msgstr ""
+msgstr "%1 membrii"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -809,262 +821,264 @@ msgstr ""
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 tastează"
+msgstr[1] "%1 tastează"
+msgstr[2] "%1 tastează"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:337
 #, qt-format
 msgid "%1 are typing"
-msgstr ""
+msgstr "%1 tastează"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:404
 msgid "Unknown"
-msgstr ""
+msgstr "Necunoscut"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:414
 msgid "Mobile"
-msgstr ""
+msgstr "Mobil"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:468
 #, qt-format
 msgid "@%1"
-msgstr ""
+msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:628
 msgid "Block user"
-msgstr ""
+msgstr "Blochează utilizatorul"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:699
 msgid "Remove from group"
-msgstr ""
+msgstr "Îndepărteză din grup"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:170
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Mesaje primite pe Telegram astăzi: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:171
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "Nu ai primit nici un mesaj prin Telegram astăzi."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:178
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Mesaje trimise prin Telegram astăzi: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:179
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "Astăzi nu ai trimis nici un mesaj folosind Telegram."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
+"Dacă vrei să primeşti notificări de la Telegram atunci când nu foloseşti "
+"aplicaţia trebuie să te autentifici în contul de Ubuntu One."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
-msgstr ""
+msgstr "Autentificare în Ubuntu One"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
-msgstr ""
+msgstr "Aminteşte-mi mai târziu"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
-msgstr ""
+msgstr "Nu vreau notificări"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:140
 msgid "Accounts"
-msgstr ""
+msgstr "Conturi"
 
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:167
 msgid "Add Account"
-msgstr ""
+msgstr "Adaugă cont"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /telegram-app/telegram/app/qml/components/AttachPanel.qml:87
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
 msgid "Photo"
-msgstr ""
+msgstr "Imagine"
 
 #: /telegram-app/telegram/app/qml/components/AttachPanel.qml:99
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: /telegram-app/telegram/app/qml/components/AttachPanel.qml:111
 msgid "File"
-msgstr ""
+msgstr "Fişier"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Glisați pentru a anula"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr ""
+msgstr "Se aşteaptă ca utilizatorul să devină disponibil ..."
 
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr ""
+msgstr "Cerere convorbire secretă"
 
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
-msgstr ""
+msgstr "Convorbire secretă creată"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr ""
+msgstr "Convorbire secretă ştearsă"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr ""
+msgstr "Distrus"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1 secundă"
+msgstr[1] "%1 secunde"
+msgstr[2] "%1 secunde"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
-msgstr ""
+msgstr "1 minut"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
-msgstr ""
+msgstr "o oră"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
-msgstr ""
+msgstr "o zi"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
-msgstr ""
+msgstr "o săptămână"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Leave chat"
-msgstr ""
+msgstr "Părăseşte discuţia"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to leave this chat?"
-msgstr ""
+msgstr "Eşti sigur că doreşti să părăseşti această discuţie?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Clear history"
-msgstr ""
+msgstr "Şterge istoricul"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:91
 msgid "Are you sure you want to clear history?"
-msgstr ""
+msgstr "Eşti sigur că vrei să ştergi istoricul?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr ""
+msgstr "Tu: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:254
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:72
 msgid "typing..."
-msgstr ""
+msgstr "tastează..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, qt-format
 msgid "You changed the group title to %1"
-msgstr ""
+msgstr "Ai schimbat numele grupului în %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 #, qt-format
 msgid "%1 changed the group title to %2"
-msgstr ""
+msgstr "%1 a schimbat numele grupului în %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
 msgid "Voice message"
-msgstr ""
+msgstr "Mesaj vocal"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr ""
+msgstr "Sticker"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr ""
+msgstr "%1 sa alăturat discuţiei secrete creată de tine."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr ""
+msgstr "Te-ai alăturat discuţiei secrete."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
 msgid "%1 created the group"
-msgstr ""
+msgstr "%1 a creat grupul"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "L-ai adăugat pe %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
 #, qt-format
 msgid "%1 added you"
-msgstr ""
+msgstr "%1 te-a adăugat"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
 #, qt-format
 msgid "%1 added %2"
-msgstr ""
+msgstr "%1 l-a adăugat %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
 msgid "%1 left the group"
-msgstr ""
+msgstr "%1 a părăsit grupul"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
 #, qt-format
 msgid "You removed %1"
-msgstr ""
+msgstr "Aţi îndepărtat pe %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
 #, qt-format
 msgid "%1 removed you"
-msgstr ""
+msgstr "%1 te-a îndepărtat"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
 #: /telegram-app/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
-msgstr ""
+msgstr "%1 l-a îndepărtat pe %2"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "%1 sa alăturat grupului prin legătura de invitaţie"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
 #, qt-format
 msgid "%1 is currently offline"
-msgstr ""
+msgstr "%1 este în acest moment indisponibil"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
@@ -1075,14 +1089,14 @@ msgstr ""
 #. TRANSLATORS: User status: deleted
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
-msgstr ""
+msgstr "Şters"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:11
 #: /telegram-app/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
-msgstr ""
+msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1090,129 +1104,129 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/js/time.js:35
 #: /telegram-app/telegram/app/qml/js/time.js:49
 msgid "MMM d"
-msgstr ""
+msgstr "dd MMMM"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /telegram-app/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
-msgstr ""
+msgstr "astăzi la %1"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /telegram-app/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
-msgstr ""
+msgstr "ieri la %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
 #: /telegram-app/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
-msgstr ""
+msgstr "%1 la %2"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "h:mm:ss"
-msgstr ""
+msgstr "hh:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
 msgid "HH:mm"
-msgstr ""
+msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /telegram-app/telegram/app/telegram.cpp:291
 msgid "ddd HH:mm"
-msgstr ""
+msgstr "dddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /telegram-app/telegram/app/telegram.cpp:295
 msgid "dd MMM"
-msgstr ""
+msgstr "dd MMMM"
 
 #. TRANSLATORS: Format string: full date
 #: /telegram-app/telegram/app/telegram.cpp:298
 msgid "dd MMM yy"
-msgstr ""
+msgstr "dd MMMM  yyyy"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
-msgstr ""
+msgstr "ţi-a trimis un mesaj"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
-msgstr ""
+msgstr "ţi-a trimis o imagine"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
-msgstr ""
+msgstr "ţi-a trimis un video"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
-msgstr ""
+msgstr "ţi-a trimis un document"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
-msgstr ""
+msgstr "ţi-a trimis un mesaj vocal"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
-msgstr ""
+msgstr "a partajat un contact cu tine"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
-msgstr ""
+msgstr "ţi-a trimis o hartă"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
-msgstr ""
+msgstr "%1:%2"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr ""
+msgstr "%1 a trimis un mesaj către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr ""
+msgstr "%1 a trimis o imagine către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr ""
+msgstr "%1 a trimis un video către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr ""
+msgstr "%1 a trimis un document către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr ""
+msgstr "%1 a trimis un mesaj vocal către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr ""
+msgstr "%1 a trimis un contact către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr ""
+msgstr "%1 a trimis o hartă către grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:179
 #: /telegram-app/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr ""
+msgstr "%1 te-a invitat în grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
