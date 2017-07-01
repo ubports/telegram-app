@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-01 18:24+0000\n"
+"PO-Revision-Date: 2017-07-01 19:45+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
 "Language-Team: Romanian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ro/>\n"
@@ -772,7 +772,7 @@ msgstr "Din: %1"
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr "Partajare"
+msgstr "Partajează"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
@@ -1231,39 +1231,39 @@ msgstr "%1 te-a invitat în grup"
 #: /telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
-msgstr ""
+msgstr "%1 a schimbat numele grupului"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
-msgstr ""
+msgstr "%1 a schimbat imaginea grupului"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /telegram-app/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
-msgstr ""
+msgstr "%1 l-a invitat pe %2"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr ""
+msgstr "%1 te-a scos din grup"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
-msgstr ""
+msgstr "%1 a părăsit grupul"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr ""
+msgstr "%1 sa întors în grup"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /telegram-app/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
-msgstr ""
+msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /telegram-app/telegram/push/pushhelper.cpp:228
