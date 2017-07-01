@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-01 19:45+0000\n"
+"PO-Revision-Date: 2017-07-01 21:27+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
 "Language-Team: Romanian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ro/>\n"
@@ -406,11 +406,10 @@ msgid "You have to press and hold the record icon"
 msgstr "Va trebui să apeşi şi să menţii icoana de înregistrare"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
-#, fuzzy
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Trebuie să acorzi acces la microfon din  Configurări de sistem >  Securitate "
-"şi confidenţialitate   >  App permissions > Microphone"
+"şi confidenţialitate   >  App permissions > Microphone."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -505,9 +504,9 @@ msgstr "activ"
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:304
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:91
-#, fuzzy, qt-format
+#, qt-format
 msgid "last seen %1"
-msgstr "Văzut ultima dată %1"
+msgstr "Ultima dată văzut: %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:289
@@ -585,6 +584,11 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
+"Poţi să alegi un utilizator pentru <b>Telegram</b>. Dacă faci asta alţi "
+"oameni o să poată să te caute după utilizator şi să te contacteze fără să "
+"îţi cunoască numărul de telefon.<br /><br />Poţi să foloseşti <b>a-z</b>, "
+"<b>0-9</b> şi underscore.<br /> Lungimea minimă a şirului de caractere "
+"pentru utilizator este de <b>5</b> caractere."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
@@ -709,6 +713,7 @@ msgstr "Rapidă"
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
+"<b>Telegram</b> livrează mesajele mai rapid<br> decât orice altă aplicaţie"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
@@ -1084,7 +1089,7 @@ msgstr "%1 este în acest moment indisponibil"
 #: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr ""
+msgstr "Redirecţionat de la <b>%1</b>"
 
 #. TRANSLATORS: User status: deleted
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
@@ -1269,136 +1274,136 @@ msgstr "@ %1"
 #: /telegram-app/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "%1 sa înregistrat"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr ""
+msgstr "%1 a început să folosească Telegram!"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:239
 #: /telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "Autentificare de pe un dispozitiv nou"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /telegram-app/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
-msgstr ""
+msgstr "%1 @ %2"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
-msgstr ""
+msgstr "imaginea de profil a fost actualizată"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:254
 #: /telegram-app/telegram/push/pushhelper.cpp:259
 #: /telegram-app/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
-msgstr ""
+msgstr "Ai un mesaj nou"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /telegram-app/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr ""
+msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /telegram-app/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr ""
+msgstr "Deschide aplicaţia"
 
 #. TRANSLATORS: call to action: open this chat
 #: /telegram-app/telegram/scope/preview.cpp:86
 #: /telegram-app/telegram/scope/preview.cpp:120
 #: /telegram-app/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr ""
+msgstr "Deschide conversaţia"
 
 #: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "Apelează"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "Primirea de informaţii de la Telegram a eşuat"
 
 #: /telegram-app/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr ""
+msgstr "Apasă aici pentru a deschide aplicaţia"
 
 #: /telegram-app/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr ""
+msgstr "Rezultate în: Contacte şi Conversaţii"
 
 #: /telegram-app/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
-msgstr ""
+msgstr "Rezultate în: Mesaje"
 
 #: /telegram-app/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr ""
+msgstr "Oameni pe care i-ai contactat"
 
 #: /telegram-app/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr ""
+msgstr "Conversaţii recente"
 
 #: /telegram-app/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr ""
+msgstr "Imagini recente"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
-msgstr ""
+msgstr "%1 mesaj nou"
 
 #: /telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
-msgstr ""
+msgstr "%1 mesaje noi"
 
 #: /telegram-app/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr ""
+msgstr "Conversaţii necitite (%1)"
 
 #: /telegram-app/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr ""
+msgstr "Mesaj audio"
 
 #: /telegram-app/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr ""
+msgstr "Contact primit"
 
 #: /telegram-app/telegram/scope/query.cpp:650
 msgid "Document received"
-msgstr ""
+msgstr "Document primit"
 
 #: /telegram-app/telegram/scope/query.cpp:654
 msgid "Photo received"
-msgstr ""
+msgstr "Imagine primită"
 
 #: /telegram-app/telegram/scope/query.cpp:671
 msgid "Video received"
-msgstr ""
+msgstr "Fişier video primit"
 
 #: /telegram-app/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr ""
+msgstr "Tip fişier media necunoscut"
 
 #: /telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr ""
+msgstr "Autentificare în Telegram"
 
 #: /telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
-msgstr ""
+msgstr "Nu ai primit nici un mesaj astăzi."
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr ""
+msgstr "Acesta este Telegram scope"
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "Caută după o conversaţie, contact sau mesaj"
