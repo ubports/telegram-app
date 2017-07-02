@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-04-18 22:12+0200\n"
-"Last-Translator: schuko24 <gerdsaenger@t-online.de>\n"
-"Language-Team: German <de@li.org>\n"
+"PO-Revision-Date: 2017-06-27 09:15+0000\n"
+"Last-Translator: Weblate Admin <flori-weblate@bin.org.in>\n"
+"Language-Team: German <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Poedit 1.8.7.1\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -205,19 +206,18 @@ msgid "Sign Up"
 msgstr "Registrieren"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
-#, fuzzy
 msgid "Invalid password"
-msgstr "Ungültiger Telefoncode"
+msgstr "Ungültiges Passwort"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr "Sie haben %1 zu einem geheimen Chat eingeladen"
+msgstr "Sie haben %1 zu einem geheimen Chat eingeladen."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 hat Sie zu einem geheimen Chat eingeladen"
+msgstr "%1 hat Sie zu einem geheimen Chat eingeladen."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
@@ -278,12 +278,12 @@ msgstr "<b>%1</b> hat den Gruppennamen zu »%2« geändert"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
 msgid "You changed the group photo"
-msgstr "Sie haben das Gruppenbild geändert."
+msgstr "Sie haben das Gruppenbild geändert"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
 #, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr "<b>%1</b> hat das Gruppenbild geändert."
+msgstr "<b>%1</b> hat das Gruppenbild geändert"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
 msgid "You removed the group photo"
@@ -679,15 +679,15 @@ msgstr "Stimmt die Nummer wirklich?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr "Telefonnummer existiert bereits"
+msgstr "Telefonnummer existiert bereits."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Passwort eingeben"
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -764,7 +764,7 @@ msgstr "Vertraulich"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr "<b>Telegram</b>-Nachrichten sind stark verschlüsselt."
+msgstr "<b>Telegram</b>-Nachrichten sind stark verschlüsselt<br>"
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
@@ -827,14 +827,14 @@ msgstr "%1 Mitglieder"
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] "%1 schreibt gerade …"
-msgstr[1] "%1 schreiben gerade …"
+msgstr[0] "%1 schreibt gerade"
+msgstr[1] "%1 schreiben gerade"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:337
 #, qt-format
 msgid "%1 are typing"
-msgstr "%1 schreiben gerade …"
+msgstr "%1 schreiben gerade"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:404
@@ -1026,11 +1026,11 @@ msgstr "Sticker"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 hat den geheimen Chat betreten"
+msgstr "%1 hat den geheimen Chat betreten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr "Sie haben den geheimen Chat betreten"
+msgstr "Sie haben den geheimen Chat betreten."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
@@ -1132,12 +1132,11 @@ msgstr "%1 um %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
-msgstr "hh:mm"
+msgstr "h:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
@@ -1161,31 +1160,31 @@ msgstr "dd.MMM.yyyy"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
-msgstr "hat Ihnen eine Nachricht geschickt."
+msgstr "hat Ihnen eine Nachricht geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
-msgstr "hat Ihnen ein Foto geschickt."
+msgstr "hat Ihnen ein Foto geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
-msgstr "hat Ihnen ein Video geschickt."
+msgstr "hat Ihnen ein Video geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
-msgstr "hat Ihnen ein Dokument geschickt."
+msgstr "hat Ihnen ein Dokument geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
-msgstr "hat Ihnen eine Sprachnachricht geschickt."
+msgstr "hat Ihnen eine Sprachnachricht geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
-msgstr "hat einen Kontakt mit Ihnen geteilt."
+msgstr "hat einen Kontakt mit Ihnen geteilt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
-msgstr "hat Ihnen eine Landkarte geschickt."
+msgstr "hat Ihnen eine Landkarte geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:139
 #, qt-format
@@ -1195,74 +1194,74 @@ msgstr "%1: %2"
 #: /telegram-app/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr "%1 hat eine Nachricht an die Gruppe geschickt."
+msgstr "%1 hat eine Nachricht an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr "%1 hat ein Foto an die Gruppe geschickt."
+msgstr "%1 hat ein Foto an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr "%1 hat ein Video an die Gruppe geschickt."
+msgstr "%1 hat ein Video an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr "%1 hat ein Dokument an die Gruppe geschickt."
+msgstr "%1 hat ein Dokument an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr "%1 hat eine Sprachnachricht an die Gruppe geschickt."
+msgstr "%1 hat eine Sprachnachricht an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr "%1 hat einen Kontakt an die Gruppe geschickt."
+msgstr "%1 hat einen Kontakt an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr "%1 hat eine Landkarte an die Gruppe geschickt."
+msgstr "%1 hat eine Landkarte an die Gruppe geschickt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:179
 #: /telegram-app/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr "%1 hat Sie in die Gruppe eingeladen."
+msgstr "%1 hat Sie in die Gruppe eingeladen"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
-msgstr "%1 hat den Gruppennamen geändert."
+msgstr "%1 hat den Gruppennamen geändert"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
-msgstr "%1 hat das Gruppenbild geändert."
+msgstr "%1 hat das Gruppenbild geändert"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /telegram-app/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
-msgstr "%1 hat %2 in die Gruppe eingeladen."
+msgstr "%1 hat %2 eingeladen"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr "%1 hat Sie aus der Gruppe entfernt."
+msgstr "%1 hat Sie aus der Gruppe entfernt"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
-msgstr "%1 hat die Gruppe verlassen."
+msgstr "%1 hat die Gruppe verlassen"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr "%1 ist der Gruppe erneut beigetreten."
+msgstr "%1 ist der Gruppe erneut beigetreten"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /telegram-app/telegram/push/pushhelper.cpp:226

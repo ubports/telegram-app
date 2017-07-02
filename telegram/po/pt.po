@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-04-19 13:42+0000\n"
-"Last-Translator: Ivo Xavier <ivoxavier.8@gmail.com>\n"
-"Language-Team: Portuguese <pt@li.org>\n"
+"PO-Revision-Date: 2017-06-29 10:17+0000\n"
+"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
+"Language-Team: Portuguese <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.14.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -205,7 +206,6 @@ msgid "Sign Up"
 msgstr "Registar"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
-#, fuzzy
 msgid "Invalid password"
 msgstr "Código de telefone inválido"
 
@@ -215,30 +215,29 @@ msgid "You have invited %1 to join a secret chat."
 msgstr "Você convidou %1 para se juntar a uma conversa secreta."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 convidou-o para uma conversa secreta"
+msgstr "%1 convidou-o para uma conversa secreta."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
-#, fuzzy
 msgid "You created the group"
 msgstr "Você criou o grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> criou o grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:77
-#, fuzzy, qt-format
+#, qt-format
 msgid "You added <b>%1</b>"
 msgstr "Você adicionou <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr "<b>%1</b> adiconou-o"
+msgstr "<b>%1</b> adicionou-o"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
@@ -247,53 +246,51 @@ msgstr "<b>%1</b> adicionou <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "<b>%1</b> deixou o grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed <b>%1</b>"
 msgstr "Você removeu <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "<b>%1</b> removeu-o"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "<b>%1</b> removeu <b>%2</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group name to %1"
 msgstr "Você alterou o nome do grupo para %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "<b>%1</b> alterou o nome do grupo para \"%2\""
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
-#, fuzzy
 msgid "You changed the group photo"
 msgstr "Você alterou a fotografia do grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "<b>%1</b> alterou a fotografia do grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
-#, fuzzy
 msgid "You removed the group photo"
 msgstr "Você eliminou a fotografia de grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "<b>%1</b> eliminou a fotografia de grupo"
 
@@ -398,7 +395,7 @@ msgstr "Selecionar conversa"
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
 msgid "Type message"
-msgstr "Escrever mensagem..."
+msgstr "Escrever mensagem"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
@@ -412,7 +409,7 @@ msgstr "Você tem de pressionar e segurar no ícone de gravação"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Por favor, garanta acesso ao microfone através das Definições > Segurança e "
-"privacidade"
+"privacidade."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -560,7 +557,7 @@ msgstr "%1 está disponível."
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr "Desculpe, este nome de utilizador já se encontra registado"
+msgstr "Desculpe, este nome de utilizador já se encontra registado."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
@@ -574,7 +571,7 @@ msgstr "O seu nome de utilizador"
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr "O nome de utilizador deve ter no mínimo 5 caracteres"
+msgstr "O nome de utilizador deve ter no mínimo 5 caracteres."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
@@ -617,7 +614,7 @@ msgstr "Não foi possível adicionar contacto"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Por favor, inclua o indicativo do país"
+msgstr "Por favor, inclua o indicativo do país."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
@@ -665,7 +662,6 @@ msgstr "Escolha um país"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
-#, fuzzy
 msgid "Search countries..."
 msgstr "Procurar contactos..."
 
@@ -680,9 +676,8 @@ msgid "Number correct?"
 msgstr "Número correto?"
 
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
-#, fuzzy
 msgid "Phone number already exists."
-msgstr "Número de telefone já existente"
+msgstr "Número de telefone já existente."
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
@@ -795,20 +790,17 @@ msgstr "Adicionar membro"
 #. TRANSLATORS: Action text to change group chat title.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:55
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:157
-#, fuzzy
 msgid "Change Group Title"
 msgstr "Alterar título do grupo"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:171
-#, fuzzy
 msgid "New group chat title"
 msgstr "Título da conversa"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:179
-#, fuzzy
 msgid "Change Title"
-msgstr "Título da conversa"
+msgstr "Mudar título"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -875,7 +867,7 @@ msgstr "Mensagens do Telegram recebidas hoje: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:171
 msgid "No Telegram messages received today."
-msgstr "Sem mensagens do Telegram recebidas hoje"
+msgstr "Sem mensagens do Telegram recebidas hoje."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:178
 #, qt-format
@@ -884,7 +876,7 @@ msgstr "Mensagens do Telegram enviadas hoje: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:179
 msgid "No Telegram messages sent today."
-msgstr "Sem mensagens do Telegram enviadas hoje"
+msgstr "Sem mensagens do Telegram enviadas hoje."
 
 #: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
@@ -1012,17 +1004,16 @@ msgid "typing..."
 msgstr "a escever..."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group title to %1"
 msgstr "Você alterou o nome do grupo para %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 alterou o nome do grupo para \"%2\""
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
-#, fuzzy
 msgid "Voice message"
 msgstr "Mensagem de voz"
 
@@ -1031,17 +1022,16 @@ msgid "Sticker"
 msgstr "Sticker"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 juntou-se à sua conversa secreta"
+msgstr "%1 juntou-se à sua conversa secreta."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
-#, fuzzy
 msgid "You joined the secret chat."
-msgstr "Você juntou-se à conversa secreta"
+msgstr "Você juntou-se à conversa secreta."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group"
 msgstr "%1 criou o grupo"
 
@@ -1051,12 +1041,12 @@ msgid "You added %1"
 msgstr "Você adicionou %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added you"
 msgstr "%1 adicionou-o"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
 msgstr "%1 adicionou %2"
 
@@ -1066,12 +1056,12 @@ msgid "%1 left the group"
 msgstr "%1 saiu o grupo"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed %1"
 msgstr "Você removeu %1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 removed you"
 msgstr "%1 removeu-o"
 
@@ -1140,12 +1130,11 @@ msgstr "%1 às %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
-msgstr "hh:mm"
+msgstr "h:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
