@@ -167,18 +167,6 @@ ListItem {
                 }
             }
 
-            DropShadow {
-                anchors.fill: source
-                source: msg_frame_box
-                radius: 6*Devices.density
-                samples: 16
-                horizontalOffset: 1*Devices.density
-                verticalOffset: 2*Devices.density
-                visible: !message_media.isSticker && !upload_item.isSticker
-                color: Qt.rgba(0,0,0,0.2)
-                transparentBorder: true
-            }
-
             Column {
                 id: column
 
