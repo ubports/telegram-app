@@ -168,7 +168,7 @@ Rectangle {
 
         anchors {
             left: privates.recording ? anchorPoint.right: parent.left
-            right: focus ? send_button_box.left : sticker_button_box.left
+            right: focus && (text.length > 0 || txt.inputMethodComposing) ? send_button_box.left : sticker_button_box.left
             bottom: parent.bottom
             margins: units.gu(1)
             rightMargin: 0
@@ -290,7 +290,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible && !txt.focus
+        visible: opacity > 0 && !messagePlaceholder.visible && (!txt.focus || (txt.text.length == 0 && !txt.inputMethodComposing))
 
         AbstractButton {
             anchors.fill: parent
@@ -330,7 +330,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible && !txt.focus
+        visible: opacity > 0 && !messagePlaceholder.visible && (!txt.focus || (txt.text.length == 0 && !txt.inputMethodComposing))
 
         AbstractButton {
             anchors.fill: parent
