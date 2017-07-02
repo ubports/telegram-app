@@ -59,6 +59,10 @@ Item {
         Rectangle {
             anchors.fill: parent
             color: "#aaffffff"
+
+            MouseArea {
+                anchors.fill: parent
+            }
         }
 
         InverseMouseArea {

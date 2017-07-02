@@ -31,6 +31,9 @@ Rectangle {
         txt.focus = false;
         if (privates.emojiItem)
             privates.emojiItem.destroy();
+        if (privates.attachmentItem &&
+            privates.attachmentItem.isShown)
+            privates.attachmentItem.isShown = false;
     }
 
     function checkForSharedContent() {
@@ -299,6 +302,7 @@ Rectangle {
                 if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
+                    smsg.focusOut();
                     privates.emojiItem = emoticons_component.createObject(send_msg)
                     privates.emojiItem.y = -privates.emojiItem.height
                 } else {
@@ -340,7 +344,9 @@ Rectangle {
 
                 Haptics.play()
                 if (!privates.attachmentItem) {
-                    privates.attachmentItem = attach_panel_component.createObject(smsg)
+                    var txtWasFocused = txt.focus;
+                    smsg.focusOut();
+                    privates.attachmentItem = attach_panel_component.createObject(smsg, { isShown: txtWasFocused })
                 }
                 privates.attachmentItem.isShown = true;
             }
