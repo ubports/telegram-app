@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-01 21:47+0000\n"
+"PO-Revision-Date: 2017-07-03 19:19+0000\n"
 "Last-Translator: Eran <etherpulse@gmail.com>\n"
 "Language-Team: Hebrew <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/he/>\n"
@@ -420,7 +420,7 @@ msgstr "בחירת שיחה"
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
 msgid "Type message"
-msgstr ""
+msgstr "הקלידו הודעה"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
@@ -1107,7 +1107,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/js/time.js:11
 #: /telegram-app/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
-msgstr ""
+msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
