@@ -183,19 +183,6 @@ ListItem {
             width: height
         }
 
-        Text {
-            id: title_text
-            horizontalAlignment: Text.AlignLeft
-            verticalAlignment: Text.AlignVCenter
-            clip: true
-            elide: Text.ElideRight
-            wrapMode: Text.WrapAnywhere
-            maximumLineCount: 1
-            font.weight: Font.DemiBold
-            font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
-            text: list_item.title
-        }
-
         Icon {
             id: audio_volume_muted_icon
             visible: isMuted
@@ -207,6 +194,19 @@ ListItem {
                 bottomMargin: units.dp(4)
             }
             width: height
+        }
+
+        Text {
+            id: title_text
+            horizontalAlignment: Text.AlignLeft
+            verticalAlignment: Text.AlignVCenter
+            elide: Text.ElideRight
+            wrapMode: Text.WrapAnywhere
+            maximumLineCount: 1
+            font.weight: Font.DemiBold
+            font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
+            text: list_item.title
+            width: parent.width - (contact_group_icon.visible? contact_group_icon.width : 0.0) - (audio_volume_muted_icon.visible? audio_volume_muted_icon.width : 0.0)
         }
     }
 

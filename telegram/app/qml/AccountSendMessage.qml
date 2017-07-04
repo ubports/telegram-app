@@ -474,16 +474,9 @@ Rectangle {
     }
 
     function send() {
-//        if( currentDialog == telegramObject.nullDialog )
-//            return
         var msg = txt.text.trim()
         if( msg == "" )
             return
-
-//        if(Cutegram.autoEmojis)
-//            msg = emojis.convertSmiliesToEmoji(msg)
-//        if(privates.suggestionItem)
-//            privates.suggestionItem.destroy()
 
         smsg.accepted(msg, messageReply.replyMessage? messageReply.replyMessage.id : 0)
         messageReply.discard()
