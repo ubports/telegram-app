@@ -385,7 +385,7 @@ Rectangle {
             states: [
                 State {
                     name: "send"
-                    when: txt.focus || txt.text.length > 0 || privates.audioRecorded
+                    when: txt.inputMethodComposing || txt.text.length > 0 || privates.audioRecorded
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
@@ -393,7 +393,7 @@ Rectangle {
                 },
                 State {
                     name: "send-audio"
-                    when: !txt.focus && txt.text.length == 0 && !privates.audioRecorded
+                    when: !txt.inputMethodComposing && txt.text.length == 0 && !privates.audioRecorded
                     PropertyChanges {
                         target: send_image
                         source: Qt.resolvedUrl("image://theme/audio-input-microphone-symbolic")
