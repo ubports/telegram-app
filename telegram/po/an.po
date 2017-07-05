@@ -8,53 +8,55 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-07-05 06:42+0000\n"
+"Last-Translator: Luis Fortanet <luis.fortanet@openmailbox.org>\n"
+"Language-Team: Aragonese <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/an/>\n"
 "Language: an\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
-msgstr ""
+msgstr "Adhibir a contactos"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:26
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
 msgid "Contacts"
-msgstr ""
+msgstr "Contactos"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #. TRANSLATORS: As in: add new contact
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
-msgstr ""
+msgstr "Adhibir"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr ""
+msgstr "Tornar"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
-msgstr ""
+msgstr "Buscar contactos..."
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
 msgid "New Secret Chat"
-msgstr ""
+msgstr "Nuevo Chat Secreto"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
