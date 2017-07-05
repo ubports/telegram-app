@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 08:37+0000\n"
+"PO-Revision-Date: 2017-07-05 15:39+0000\n"
 "Last-Translator: Aitzol Berasategi <aitzol76@gmail.com>\n"
 "Language-Team: Basque <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/eu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -408,7 +408,7 @@ msgstr "Grabaketa ikonoa sakaturik mantendu behar duzu"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Mesedez baimendu mikrofono sarbidea Sistemaren Ezarpenak > Segurtasuna eta "
-"Pribatasuna atalean"
+"Pribatasuna atalean."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -778,7 +778,7 @@ msgstr "%1"
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr "Elkarbanatu"
+msgstr "Partekatu"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
@@ -1279,7 +1279,7 @@ msgstr "%1-(e)k kokapena egiaztatu du"
 #: /telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 Telegram-era elkartu da"
+msgstr "%1 Telegram-era elkartu da!"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:239
 #: /telegram-app/telegram/push/pushhelper.cpp:245
