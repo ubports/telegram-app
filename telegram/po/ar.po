@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-08 18:57+0000\n"
+"PO-Revision-Date: 2017-07-08 19:01+0000\n"
 "Last-Translator: Ahmed Suliman <ahmedselaman@gmail.com>\n"
 "Language-Team: Arabic <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ar/>\n"
@@ -145,7 +145,7 @@ msgstr "لا أشخاص تم استيرادهم"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr "هذا الشخص على تلغرام"
+msgstr "هذا الشخص على تيليجرام."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
