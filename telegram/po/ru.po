@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-27 08:59+0000\n"
-"Last-Translator: Maksim <makc@nxt.ru>\n"
+"PO-Revision-Date: 2017-07-10 06:11+0000\n"
+"Last-Translator: Maxim <maxvanceffer@gmail.com>\n"
 "Language-Team: Russian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -216,15 +216,14 @@ msgid "You have invited %1 to join a secret chat."
 msgstr "Вы приглашены %1 в секретную беседу."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 создал секретную беседу"
+msgstr "%1 пригласил(а) в секретный чат."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
-#, fuzzy
 msgid "You created the group"
-msgstr "%1 создал группу «%2»"
+msgstr "Вы создали группу"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
 #, qt-format
