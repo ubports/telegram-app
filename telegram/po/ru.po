@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-22 18:39+0000\n"
+"PO-Revision-Date: 2017-07-22 18:40+0000\n"
 "Last-Translator: dimitra <dimitra86@list.ru>\n"
 "Language-Team: Russian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/ru/>\n"
@@ -269,7 +269,7 @@ msgstr "<b>%1</b> удалил <b>%2</b>"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
-msgstr "%1 сменил название группы на «%2»"
+msgstr "Вы изменили название группы на %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
