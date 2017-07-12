@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-12 11:40+0000\n"
-"Last-Translator: Anneonyme017 <anneonyme017@openmailbox.org>\n"
+"PO-Revision-Date: 2017-07-12 13:10+0000\n"
+"Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/fr/>\n"
 "Language: fr\n"
@@ -57,7 +57,7 @@ msgstr "Rechercher parmi les contacts..."
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
 msgid "New Secret Chat"
-msgstr "Nouvelle conversation secrète"
+msgstr "Nouvelle discussion secrète"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
@@ -212,12 +212,12 @@ msgstr "Code d'activation non valide"
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr "Vous avez invité %1 à rejoindre une conversation secrète."
+msgstr "Vous avez invité %1 à rejoindre une discussion secrète."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 vous a invité à rejoindre une conversation secrète."
+msgstr "%1 vous a invité à rejoindre une discussion secrète."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
@@ -307,7 +307,7 @@ msgstr "<b>%1</b> a rejoint le groupe par le lien d'invitation"
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
 msgid "Please select chat"
-msgstr "Veuillez sélectionner une conversation"
+msgstr "Veuillez sélectionner une discussion"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:224
 msgid "New messages"
@@ -323,15 +323,15 @@ msgstr "Information du paquet de stiker"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
-msgstr "Une conversation secrète est demandée."
+msgstr "Une discussion secrète est demandée."
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
-"Conversation secrète acceptée ou rejetée depuis un périphérique tiers.\n"
-"Sachez qu'Android accepte automatiquement les conversations secrètes."
+"Discussion secrète acceptée ou rejetée à partir d'un autre appareil.\n"
+"Sachez qu'Android accepte automatiquement les discussions secrètes."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
@@ -743,7 +743,9 @@ msgstr "Puissant"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
-msgstr "<b>Telegram</b> n'a pas de taille limite<br> pour vos pièces-jointes et discussions"
+msgstr ""
+"<b>Telegram</b> n'a pas de taille limite<br> pour vos pièces-jointes et vos "
+"discussions"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
@@ -1023,11 +1025,11 @@ msgstr "Sticker"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 a rejoint votre conversation secrète."
+msgstr "%1 a rejoint votre discussion secrète."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr "Vous avez rejoint une conversation secrète."
+msgstr "Vous avez rejoint une discussion secrète."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, qt-format
@@ -1398,7 +1400,7 @@ msgstr "Aucun message reçu aujourd'hui."
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr "Voici le moteur de recherche de Telegram"
+msgstr "Ceci est le moteur de recherche de Telegram"
 
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
