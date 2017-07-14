@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-14 14:32+0000\n"
+"PO-Revision-Date: 2017-07-14 14:39+0000\n"
 "Last-Translator: Andrzej Stamburski <stambur@wp.pl>\n"
 "Language-Team: Polish <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/pl/>\n"
@@ -323,7 +323,7 @@ msgstr "Informacja o Zbiorze Ikonek"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
-msgstr "Odrzucono tajny czat"
+msgstr "Prośba o tajny czat."
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
@@ -552,7 +552,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr "%1 jest dostępna"
+msgstr "%1 jest dostępna."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
@@ -614,7 +614,7 @@ msgstr "Nie można było dodać kontaktu"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Proszę uwzględnić kod kraju"
+msgstr "Włącznie z numerem kierunkowym kraju."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
@@ -876,7 +876,7 @@ msgstr "Wysłanych dzisiaj wiadomości z Telegram: %1"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:179
 msgid "No Telegram messages sent today."
-msgstr "Nie wysłano dziś żadnych wiadomości z Telegrama"
+msgstr "Nie wysłano dziś żadnych wiadomości z Telegramu"
 
 #: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
@@ -995,7 +995,7 @@ msgstr "Czy na pewno wyczyścić historię?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
-msgstr "Ty:"
+msgstr "Ty: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
