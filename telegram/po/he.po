@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-13 13:16+0000\n"
+"PO-Revision-Date: 2017-07-17 08:58+0000\n"
 "Last-Translator: Eran <etherpulse@gmail.com>\n"
 "Language-Team: Hebrew <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/he/>\n"
@@ -613,7 +613,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
 #: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr ""
+msgstr "סיום"
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
@@ -720,38 +720,44 @@ msgstr "סגירה"
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
-msgstr ""
+msgstr "התחילו לשוחח"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:18
+#, fuzzy
 msgid "Welcome to the era<br>of fast and secure messaging"
-msgstr ""
+msgstr "ברוכים הבאים לעידן<br>ההודעות הבטוחות והמהירות"
 
 #. TRANSLATORS: Adjective, describing fast application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr ""
+msgstr "מהיר"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
+#, fuzzy
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
-msgstr ""
+msgstr "<b>טלגרם</b> מעביר הודעות מהר יותר<br> מכול אפליקציה אחרת"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr ""
+msgstr "חינם"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
+#, fuzzy
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr ""
+msgstr "<b>טלגרם</b> חופשי לתמיד. ללא פרסומות.<br> ללא דמי רישום"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
-msgstr ""
+msgstr "מאובטח"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
+#, fuzzy
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
+"<b>טלגרם</b> ישמור על הודעותיך בטוחות<br>\n"
+"מהתקפות האקרים."
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
@@ -764,8 +770,9 @@ msgstr ""
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
+#, fuzzy
 msgid "Cloud-Based"
-msgstr ""
+msgstr "מבוסס ענן"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
@@ -774,7 +781,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr ""
+msgstr "פרטי"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -782,7 +789,7 @@ msgstr ""
 
 #: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "בחרו"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
