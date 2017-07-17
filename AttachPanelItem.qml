@@ -28,34 +28,28 @@ Column {
     signal clicked(var mouse)
 
     Item {
-        width: attach_image.width
-        height: attach_image.height //+ shadow.verticalOffset
+        width: units.gu(7.5)
+        height: width
 
         Button {
-            width: units.gu(7.5)
+            width: parent.width
             height: width
+            color: image==="stock_image" ? "#a47ad9" : image==="stock_video" ? "#f65b63" : image==="stock_document" ? "#34a0f4" : "default"
 
             Icon {
                 id: attach_image
                 objectName: "attach_gallery"
-                asynchronous: true
                 anchors.centerIn: parent
-                //fillMode: Image.PreserveAspectFit
-                //sourceSize: Qt.size(width, height)
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: attach_item.clicked(mouse)
-                }
+                color: "white"
+                anchors.fill: parent
+                anchors.margins: units.gu(1)
             }
 
+            MouseArea {
+                anchors.fill: parent
+                onClicked: attach_item.clicked(mouse)
+            }
         }
-        /*EdgeShadow {
-            id: shadow
-            source: attach_image
-            horizontalOffset: 0
-            cached: true
-        }*/
     }
 
     Label {

@@ -126,7 +126,7 @@ Item {
                 height: attach_photo_item.height
                 // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
                 image: "go-down"    //Qt.resolvedUrl("qrc:/qml/files/android/attach_hide1.png")
-                showTick: true
+                //showTick: true
                 onClicked: {
                     Haptics.play()
                     attach_panel.close()
