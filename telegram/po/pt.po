@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-29 10:17+0000\n"
+"PO-Revision-Date: 2017-07-19 14:16+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -353,7 +353,7 @@ msgstr "Editar nome"
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
-msgstr "Gravar"
+msgstr "Guardar"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
