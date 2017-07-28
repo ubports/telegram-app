@@ -138,7 +138,7 @@ PageHeader {
                 loops: Animation.Infinite
                 duration: 5000
                 alwaysRunToEnd: false
-                running: isConnecting && headerImage.isLogo
+                running: isConnecting
                 properties: "rotation"
 
                 onRunningChanged: {
@@ -172,13 +172,13 @@ PageHeader {
                 top: parent.top
                 left: headerImage.right
                 leftMargin: units.gu(1)
+		right: parent.right
             }
             verticalAlignment: Text.AlignVCenter
-            width: parent.width
 
             font.pixelSize: FontUtils.sizeToPixels("large")
             elide: Text.ElideRight
-            wrapMode: Text.WordWrap
+            wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
             text: isConnecting ? i18n.tr("Connecting...") : header.title.length === 0 ? i18n.tr("Telegram") : header.title
 

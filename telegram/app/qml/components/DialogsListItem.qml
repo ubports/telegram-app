@@ -204,7 +204,7 @@ ListItem {
             wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
             font.weight: Font.DemiBold
-            font.pixelSize: units.dp(17)//FontUtils.sizeToPixels("large")
+            font.pixelSize: units.dp(17)
             text: list_item.title
             width: parent.width - (contact_group_icon.visible? contact_group_icon.width : 0.0) - (audio_volume_muted_icon.visible? audio_volume_muted_icon.width : 0.0)
         }
@@ -216,7 +216,7 @@ ListItem {
             bottom: parent.bottom
             left: image.right
             leftMargin: units.dp(8)
-            right: unread_rect.left
+            right: parent.right
             margins: units.dp(4)
             topMargin: 0
         }
@@ -238,13 +238,12 @@ ListItem {
         Text {
             id: message_text
             visible: showMessage
-            clip: true
             elide: Text.ElideRight
             wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
-            font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
+            font.pixelSize: units.dp(15)
             color: Colors.grey
-            width: parent.width - message_author.width - (unread_rect.visible ? unread_rect.width : 0)
+            width: parent.width - (message_author.visible? message_author.width : 0.0) - (unread_rect.visible ? unread_rect.width : 0.0)
             text: {
                 if (!visible) return "";
 
