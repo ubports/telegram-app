@@ -82,6 +82,7 @@ MainView {
     }
 
     Component.onCompleted: {
+        //i18n.language = "sc";
         showIntro();
 
         if (profiles.count > 0 && Cutegram.hasArgs() > 0) {
