@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2017-08-02 20:12+0000\n"
 "Last-Translator: Hans <hans1977se@gmail.com>\n"
-"Language-Team: Thai <https://ubpweblate.tnvcomp.com/projects/ubports"
-"/telegram-app/th/>\n"
+"Language-Team: Thai <https://ubpweblate.tnvcomp.com/projects/ubports/"
+"telegram-app/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,8 +166,13 @@ msgstr "ต้องการส่งต่อข้อความไปยั
 msgid "Send messages to %1?"
 msgstr "ต้องการส่งข้อความไปยัง %1 หรือไม่?"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
+msgid "Channel Info"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
 #, fuzzy
 msgid "Group Info"
 msgstr "ข้อมูลของกลุ่ม"
@@ -245,6 +250,12 @@ msgid "<b>%1</b> added you"
 msgstr ""
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:70
+#, fuzzy, qt-format
+msgid "<b>%1</b> joined the group"
+msgstr "<b>%1</b> ออกจากกลุ่ม"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr "<b>%1</b> เพิ่ม <b>%2</b>"
@@ -1041,6 +1052,12 @@ msgid "%1 added you"
 msgstr ""
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:301
+#, fuzzy, qt-format
+msgid "%1 joined the group"
+msgstr "<b>%1</b> ออกจากกลุ่ม"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
 msgid "%1 added %2"
 msgstr ""
