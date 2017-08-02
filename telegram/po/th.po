@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-25 18:18+0000\n"
+"PO-Revision-Date: 2017-08-02 20:12+0000\n"
 "Last-Translator: Hans <hans1977se@gmail.com>\n"
 "Language-Team: Thai <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/th/>\n"
@@ -291,13 +291,14 @@ msgid "<b>%1</b> changed the group photo"
 msgstr "<b>%1</b> เปลี่ยนรูปกลุ่ม"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
+#, fuzzy
 msgid "You removed the group photo"
-msgstr ""
+msgstr "คุณได้ลบรูปของกลุ่มแล้ว"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
-#, qt-format
+#, fuzzy, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr ""
+msgstr "คุณ <b> %1 </b> ได้ลบรูปของกลุ่มแล้ว"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
@@ -430,41 +431,48 @@ msgstr "เปลี่ยนรูปภาพ"
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:712
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#, fuzzy
 msgid "Info"
-msgstr ""
+msgstr "ข้อมูล"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:105
+#, fuzzy
 msgid "Phone"
-msgstr ""
+msgstr "เบอร์โทร"
 
 #. TRANSLATORS: Visible right under username in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:118
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
+#, fuzzy
 msgid "Username"
-msgstr ""
+msgstr "ชื่อล็อกอิน"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:127
+#, fuzzy
 msgid "Messages"
-msgstr ""
+msgstr "ข้อความ"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:138
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
 #: /telegram-app/telegram/app/qml/telegram.qml:493
+#, fuzzy
 msgid "Notifications"
-msgstr ""
+msgstr "การแจ้งประกาศ"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:168
+#, fuzzy
 msgid "Send by Enter"
-msgstr ""
+msgstr "กดเอ็นเทอร์เพื่อส่ง"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:182
+#, fuzzy
 msgid "Support"
-msgstr ""
+msgstr "ฝ่ายการช่วยเหลือ"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:190
@@ -479,12 +487,14 @@ msgstr ""
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:209
+#, fuzzy
 msgid "Account"
-msgstr ""
+msgstr "บัญชี"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:220
+#, fuzzy
 msgid "Log out"
-msgstr ""
+msgstr "ออกจากระบบ"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:233
