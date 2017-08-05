@@ -314,7 +314,7 @@ Rectangle {
         Image {
             id: sticker_image
             anchors.centerIn: parent
-            height: units.dp(22)
+            height: units.gu(2.5)
             width: height
             sourceSize: Qt.size(width, height)
             fillMode: Image.PreserveAspectFit

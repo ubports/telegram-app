@@ -34,7 +34,7 @@ Column {
         Button {
             width: parent.width
             height: width
-            color: image==="stock_image" ? "#a47ad9" : image==="stock_video" ? "#f65b63" : image==="stock_document" ? "#34a0f4" : "default"
+            color: image==="stock_image" ? UbuntuColors.purple : image==="stock_video" ? UbuntuColors.red : image==="stock_document" ? UbuntuColors.blue : UbuntuColors.silk
 
             Icon {
                 id: attach_image
