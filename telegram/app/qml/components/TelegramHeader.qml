@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Connectivity 1.0
 
 import "qrc:/qml/js/avatar.js" as Avatar
 import "qrc:/qml/js/time.js" as Time
@@ -129,25 +130,6 @@ PageHeader {
             telegram: header.telegram
             dialog: header.dialog
 
-            RotationAnimation {
-                id: connectingAnimation
-                target: headerImage
-                direction: RotationAnimation.Clockwise
-                from: 0
-                to: 359
-                loops: Animation.Infinite
-                duration: 5000
-                alwaysRunToEnd: false
-                running: isConnecting
-                properties: "rotation"
-
-                onRunningChanged: {
-                    if (!running) {
-                        connectingAnimation.stop();
-                        headerImage.rotation = 0;
-                    }
-                }
-            }
         }
 
         //'Lock' image that is overlayed ontop of the Avatar conponent
@@ -166,6 +148,44 @@ PageHeader {
             visible: header.isSecretChat
         }
 
+	Rectangle {
+	    id: connectingIndicator
+            anchors.fill: headerImage
+	    visible: isConnecting
+	    color: "white"
+	    Icon {
+	        anchors.fill: parent
+		name: "sync-updating"
+		opacity: parent
+		visible: parent
+            }
+	    SequentialAnimation {
+	        running: isConnecting
+	        loops: Animation.Infinite
+	        PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 1000 }
+	        PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 1000 }
+	    }
+	}
+
+	Rectangle {
+	    id: onlineIndicator
+	    anchors.fill: headerImage
+	    visible: !Connectivity.online
+	    color: "white"
+	    Icon {
+	        anchors.fill: parent
+		name: "sync-paused"
+		opacity: parent
+		visible: parent
+	    }
+            SequentialAnimation {
+		running: !Connectivity.online
+		loops: Animation.Infinite
+		PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 1; duration: 1000 }
+		PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 0.0; duration: 1000 }
+	    }
+	}
+
         Label {
             id: titleText
             anchors {
@@ -180,7 +200,7 @@ PageHeader {
             elide: Text.ElideRight
             wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
-            text: isConnecting ? i18n.tr("Connecting...") : header.title.length === 0 ? i18n.tr("Telegram") : header.title
+            text: header.title.length === 0 ? i18n.tr("Telegram") : header.title
 
             state: header.subtitle.length > 0 ? "subtitle" : "default"
             states: [
