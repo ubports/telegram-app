@@ -20,43 +20,35 @@ import Ubuntu.Components 1.3
 Column {
     id: attach_item
 
-    property bool showTick: false
+    //property bool showTick: false
 
     property alias text: attach_label.text
-    property alias image: attach_image.source
+    property alias image: attach_image.name
 
     signal clicked(var mouse)
 
     Item {
-        width: attach_image.width
-        height: attach_image.height + shadow.verticalOffset
+        width: units.gu(7.5)
+        height: width
 
-        Image {
-            id: attach_image
-            objectName: "attach_gallery"
-            asynchronous: true
-            width: units.gu(7.5)
+        Button {
+            width: parent.width
             height: width
-            fillMode: Image.PreserveAspectFit
-            sourceSize: Qt.size(width, height)
+            color: image==="stock_image" ? "#a47ad9" : image==="stock_video" ? "#f65b63" : image==="stock_document" ? "#34a0f4" : "default"
 
-            Image {
+            Icon {
+                id: attach_image
+                objectName: "attach_gallery"
                 anchors.centerIn: parent
-                source: attach_item.showTick ? Qt.resolvedUrl("../files/android/attach_hide2.png") : ""
-                visible: attach_item.showTick
+                color: "white"
+                anchors.fill: parent
+                anchors.margins: units.gu(1)
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: attach_item.clicked(mouse)
             }
-        }
-
-        EdgeShadow {
-            id: shadow
-            source: attach_image
-            horizontalOffset: 0
-            cached: true
         }
     }
 

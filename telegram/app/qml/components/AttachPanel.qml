@@ -89,7 +89,7 @@ Item {
                 id: attach_photo_item
                 // TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
                 text: i18n.tr("Photo")
-                image: Qt.resolvedUrl("qrc:/qml/files/android/attach_gallery.png")
+                image: "stock_image"  //Qt.resolvedUrl("qrc:/qml/files/android/attach_gallery.png")
                 onClicked: {
                     Haptics.play()
                     attach_panel.photoRequested()
@@ -101,7 +101,7 @@ Item {
                 // TRANSLATORS: Used in attach menu, when sending a video to the conversation.
                 objectName: "panelVideo"
                 text: i18n.tr("Video")
-                image: Qt.resolvedUrl("qrc:/qml/files/android/attach_video.png")
+                image: "stock_video"  //Qt.resolvedUrl("qrc:/qml/files/android/attach_video.png")
                 onClicked: {
                     Haptics.play()
                     attach_panel.videoRequested()
@@ -113,7 +113,7 @@ Item {
                 // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
                 objectName: "panelFile"
                 text: i18n.tr("File")
-                image: Qt.resolvedUrl("qrc:/qml/files/android/attach_file.png")
+                image: "stock_document"  //Qt.resolvedUrl("qrc:/qml/files/android/attach_file.png")
                 onClicked: {
                     Haptics.play()
                     attach_panel.fileRequested()
@@ -125,8 +125,8 @@ Item {
                 objectName: "panelClose"
                 height: attach_photo_item.height
                 // TRANSLATORS: Used in attach menu, when sending a file to the conversation.
-                image: Qt.resolvedUrl("qrc:/qml/files/android/attach_hide1.png")
-                showTick: true
+                image: "go-down"    //Qt.resolvedUrl("qrc:/qml/files/android/attach_hide1.png")
+                //showTick: true
                 onClicked: {
                     Haptics.play()
                     attach_panel.close()
