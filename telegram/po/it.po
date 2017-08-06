@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-10 06:31+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2017-08-06 23:59+0000\n"
+"Last-Translator: alexisme <alexanderc.spa@openmailbox.org>\n"
 "Language-Team: Italian <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/it/>\n"
 "Language: it\n"
@@ -78,9 +78,8 @@ msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
-#, fuzzy
 msgid "Chat title"
-msgstr "Titolo chat"
+msgstr "Nome del chat"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:31
@@ -1272,9 +1271,9 @@ msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /telegram-app/telegram/push/pushhelper.cpp:228
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 has checked-in"
-msgstr "%1 ha fatto il check in"
+msgstr "%1 si è iscritto"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /telegram-app/telegram/push/pushhelper.cpp:234
