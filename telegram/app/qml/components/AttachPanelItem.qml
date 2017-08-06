@@ -28,7 +28,7 @@ Column {
     signal clicked(var mouse)
 
     Item {
-        width: units.gu(7.5)
+        width: units.gu(4.5)
         height: width
 
         Button {
