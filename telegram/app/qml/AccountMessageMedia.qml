@@ -213,8 +213,8 @@ Item {
         anchors.top: parent.top
         anchors.left: parent.left
         font.weight: Font.DemiBold
-        fontSize: "x-small"
-        color: "black"
+        fontSize: "small"
+        color: UbuntuColors.orange
         visible: !download_frame.visible
         text: {
                 if (!isSticker && !Cutegram.filsIsImage(file_handler.filePath))
@@ -222,6 +222,8 @@ Item {
                 else
                     return "";
         }
+        style: Text.Outline
+        styleColor: "black"
     }
 
     FastBlur {
@@ -275,17 +277,20 @@ Item {
             anchors.left: parent.left
             anchors.margins: 3*Devices.density
             font.weight: Font.DemiBold
-            fontSize: "x-small"
-            color: "white"
+            fontSize: "small"
+            color: UbuntuColors.orange
+            style: Text.Outline
+            styleColor: "black"
             text: {
                 if(downloading)
-                    return Math.floor(file_handler.progressCurrentByte/(1024*10.24))/100 + "MB/" +
-                           Math.floor(size/(1024*10.24))/100 + "MB";
+                    return uploadedSize + " / " + totalSize;
                 else
-                    return file_handler.fileName + "\n" + Math.floor(size/(1024*10.24))/100 + "MB";
+                    return file_handler.fileName + "\n" + totalSize;
             }
 
-            property int size: file_handler.fileSize
+            property string totalSize: Math.floor(file_handler.fileSize/(1024*10.24))/100 + "MB"
+            property string uploadedSize: Math.floor(file_handler.progressCurrentByte/(1024*10.24))/100 + "MB"
+
         }
     }
 

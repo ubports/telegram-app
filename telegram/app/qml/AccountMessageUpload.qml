@@ -47,8 +47,10 @@ Item {
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.margins: 2*Devices.density
-        fontSize: "x-small"
-        color: "white"
+        fontSize: "small"
+        color: UbuntuColors.orange
+        style: Text.Outline
+        styleColor: "black"
         text: uploadedSize + "/" + totalSize
 
         property string totalSize: Math.floor(message.upload.totalSize/(1024*10.24))/100 + "MB"
