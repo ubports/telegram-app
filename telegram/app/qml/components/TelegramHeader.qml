@@ -115,7 +115,6 @@ PageHeader {
             top: parent.top
             left: parent.left
             right: parent.right
-            rightMargin: units.gu(5)
             bottom: parent.bottom
         }
 

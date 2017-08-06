@@ -10,8 +10,6 @@ import Cutegram 1.0
 
 import "components"
 
-// Cutegram: AccountMessageBox.qml
-
 Page {
     id: dialog_page
 
@@ -54,7 +52,6 @@ Page {
             id: copySelectedAction
             iconName: "edit-copy"
             text: i18n.tr("Copy")
-            //visible: !pageIsSecret
             onTriggered: message_list.copySelected()
         },
         Action {
@@ -161,7 +158,6 @@ Page {
             }
             currentDialog: dialog_page.currentDialog
             onAccepted: message_list.sendMessage(text, inReplyTo)
-//            onCopyRequest: message_list.copy()
         }
 
         AccountAddContactHeader {
