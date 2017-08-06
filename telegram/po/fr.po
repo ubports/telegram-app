@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-17 19:26+0000\n"
-"Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
+"PO-Revision-Date: 2017-08-06 23:53+0000\n"
+"Last-Translator: alexisme <alexanderc.spa@openmailbox.org>\n"
 "Language-Team: French <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/fr/>\n"
 "Language: fr\n"
@@ -826,14 +826,14 @@ msgstr "%1 membres"
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] "%1 écrit..."
-msgstr[1] "%1 écrivent..."
+msgstr[0] "%1 écrit"
+msgstr[1] "%1 écrivent"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:337
 #, qt-format
 msgid "%1 are typing"
-msgstr "%1 écrivent..."
+msgstr "%1 écrivent"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:404
