@@ -113,6 +113,16 @@ ListItem {
         ]
     }
 
+    Rectangle {
+	anchors {
+	    fill: parent;
+	    margins: units.dp(4)
+	}
+	color: UbuntuColors.green
+	opacity: 0.45
+	visible: dialog.encrypted
+    }
+
     Avatar {
         id: image
         anchors {
@@ -130,34 +140,6 @@ ListItem {
         dialog: list_item.dialog
     }
 
-    Image {
-        anchors {
-            bottom: image.bottom
-            bottomMargin: -height
-            right: image.right
-            rightMargin: -width
-        }
-        source: "qrc:/qml/files/online.png"
-        sourceSize: Qt.size(width, height)
-        width: height
-        height: units.gu(2)
-        visible: online
-    }
-
-    Image {
-        anchors {
-            left: image.right
-            leftMargin: -width
-            top: image.top
-            topMargin: units.dp(2)
-        }
-        width: units.gu(1.4)
-        height: units.gu(2)
-        source: "qrc:/qml/files/lock.png"
-        sourceSize: Qt.size(width, height)
-        visible: dialog.encrypted
-    }
-
     Row {
         anchors {
             top: parent.top
@@ -168,6 +150,19 @@ ListItem {
             margins: units.dp(4)
         }
         spacing: units.dp(4)
+
+        Icon {
+            id: secret_chat_icon
+            visible: dialog.encrypted
+            name: "network-secure"
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                topMargin: units.dp(4)
+                bottomMargin: units.dp(4)
+            }
+            width: height
+        }
 
         Icon {
             id: contact_group_icon
@@ -205,7 +200,7 @@ ListItem {
             font.weight: Font.DemiBold
             font.pixelSize: units.dp(17)
             text: list_item.title
-            width: parent.width - (contact_group_icon.visible? contact_group_icon.width : 0.0) - (audio_volume_muted_icon.visible? audio_volume_muted_icon.width : 0.0)
+            width: parent.width - (secret_chat_icon.visible? secret_chat_icon.width : 0.0) - (contact_group_icon.visible? contact_group_icon.width : 0.0) - (audio_volume_muted_icon.visible? audio_volume_muted_icon.width : 0.0)
         }
     }
 
@@ -386,7 +381,7 @@ ListItem {
             font.weight: Font.DemiBold
             font.pixelSize: FontUtils.sizeToPixels("small")
             color: "white"
-            text: dialog.unreadCount < 300 ? dialog.unreadCount : ":D"; // no-i18n
+            text: dialog.unreadCount < 999 ? dialog.unreadCount : ":D"; // no-i18n
         }
     }
 

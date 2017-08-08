@@ -96,6 +96,13 @@ Page {
 
         telegram: telegramObject
         dialog: currentDialog
+        Rectangle {
+	    anchors.fill: parent
+            anchors.margins: units.dp(4)
+            color: UbuntuColors.green 
+            opacity: 0.45
+	    visible: currentDialog.encrypted 
+        }
     }
 
     signal forwardRequest(var messageIds);
