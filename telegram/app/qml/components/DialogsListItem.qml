@@ -114,13 +114,12 @@ ListItem {
     }
 
     Rectangle {
-	anchors {
-	    fill: parent;
-	    margins: units.dp(4)
-	}
-	color: UbuntuColors.green
-	opacity: 0.45
-	visible: dialog.encrypted
+        anchors {
+            fill: parent;
+            margins: units.dp(4)
+        }
+        color: "#a8dcaf"
+        visible: dialog.encrypted
     }
 
     Avatar {

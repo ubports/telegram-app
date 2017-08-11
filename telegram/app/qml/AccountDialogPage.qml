@@ -10,6 +10,7 @@ import Cutegram 1.0
 
 import "components"
 
+
 Page {
     id: dialog_page
 
@@ -79,6 +80,10 @@ Page {
     objectName: "dialogPage"
 
     header: TelegramHeader {
+        StyleHints {
+            backgroundColor: currentDialog.encrypted ? "#a8dcaf" : "white"
+            dividerColor: Qt.darker(backgroundColor, 1.1)
+        }
         id: dialog_page_header
         trailingActionBar.actions: message_list.inSelectionMode ? selectionActions : defaultActions
         leadingActionBar.actions: Action {
@@ -93,18 +98,10 @@ Page {
                 }
             }
         }
-
         telegram: telegramObject
         dialog: currentDialog
-        Rectangle {
-	    anchors.fill: parent
-            anchors.margins: units.dp(4)
-            color: UbuntuColors.green 
-            opacity: 0.45
-	    visible: currentDialog.encrypted 
-        }
     }
-
+    
     signal forwardRequest(var messageIds);
     signal tagSearchRequest(string tag);
     signal dialogClosed();
