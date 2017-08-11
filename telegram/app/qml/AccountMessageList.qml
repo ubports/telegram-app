@@ -506,11 +506,6 @@ Rectangle {
         }
     }
 
-    // Could use wrapping in a Loader { active: currentDialog.encrypted }
-    SecretChatEdges {
-        visible: currentDialog.encrypted
-    }
-
     Timer {
         id: focus_msg_timer
         interval: 300
