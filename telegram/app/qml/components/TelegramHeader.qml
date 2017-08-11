@@ -111,88 +111,82 @@ PageHeader {
     signal clicked()
 
     contents: Item {
-        anchors {
-            top: parent.top
-            left: parent.left
-            right: parent.right
-            rightMargin: units.gu(5)
-            bottom: parent.bottom
-        }
+        anchors.fill: parent
 
         Avatar {
             id: headerImage
             width: height
             anchors {
+                top: parent.top
+                topMargin: units.dp(3)
                 left: parent.left
-                verticalCenter: parent.verticalCenter
+                bottom: parent.bottom
+                bottomMargin: units.dp(3)
+                rightMargin: units.gu(1)
             }
-
             telegram: header.telegram
             dialog: header.dialog
-
         }
 
-        //'Lock' image that is overlayed ontop of the Avatar conponent
-        Image {
-            id: secretChatImage
-            anchors {
-                left: headerImage.right
-                leftMargin: -width-5
-                top: headerImage.top
-                topMargin: units.dp(2)
-            }
-            width: units.gu(1)
-            height: units.gu(1.5)
-            source: "qrc:/qml/files/lock.png"
-            sourceSize: Qt.size(width, height)
-            visible: header.isSecretChat
-        }
-
-	Rectangle {
-	    id: connectingIndicator
+        Rectangle {
+            id: connectingIndicator
             anchors.fill: headerImage
-	    visible: isConnecting
-	    color: "white"
-	    Icon {
-	        anchors.fill: parent
-		name: "sync-updating"
-		opacity: parent
-		visible: parent
-            }
-	    SequentialAnimation {
-	        running: isConnecting
-	        loops: Animation.Infinite
-	        PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 1000 }
-	        PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 1000 }
-	    }
-	}
-
-	Rectangle {
-	    id: onlineIndicator
-	    anchors.fill: headerImage
-	    visible: !Connectivity.online
-	    color: "white"
-	    Icon {
-	        anchors.fill: parent
-		name: "sync-paused"
-		opacity: parent
-		visible: parent
-	    }
+            visible: isConnecting
+            color: "white"
+            Icon {
+                anchors.fill: parent
+                name: "sync-updating"
+                opacity: parent.opacity
+                visible: parent.visible
+                }
             SequentialAnimation {
-		running: !Connectivity.online
-		loops: Animation.Infinite
-		PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 1; duration: 1000 }
-		PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 0.0; duration: 1000 }
-	    }
-	}
+                running: isConnecting
+                loops: Animation.Infinite
+                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 1000 }
+                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 1000 }
+            }
+        }
+
+        Rectangle {
+            id: onlineIndicator
+            anchors.fill: headerImage
+            visible: !Connectivity.online
+            color: "white"
+            Icon {
+                anchors.fill: parent
+                name: "sync-paused"
+                opacity: parent.opacity
+                visible: parent.visible
+            }
+            SequentialAnimation {
+                running: !Connectivity.online
+                loops: Animation.Infinite
+                PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 1; duration: 1000 }
+                PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 0.0; duration: 1000 }
+            }
+        }
+
+        Icon {
+            id: secret_chat_icon
+            visible: header.isSecretChat
+            name: "network-secure"
+            anchors {
+                top: parent.top
+                left: headerImage.right
+                topMargin: units.dp(5)
+                bottomMargin: units.dp(5)
+                bottom: titleText.bottom
+            }
+            width: height
+        }
 
         Label {
             id: titleText
             anchors {
                 top: parent.top
-                left: headerImage.right
+                left: secret_chat_icon.visible? secret_chat_icon.right : headerImage.right
                 leftMargin: units.gu(1)
-		right: parent.right
+                right: parent.right
             }
             verticalAlignment: Text.AlignVCenter
 

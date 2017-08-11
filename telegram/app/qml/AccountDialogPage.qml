@@ -10,7 +10,6 @@ import Cutegram 1.0
 
 import "components"
 
-// Cutegram: AccountMessageBox.qml
 
 Page {
     id: dialog_page
@@ -54,7 +53,6 @@ Page {
             id: copySelectedAction
             iconName: "edit-copy"
             text: i18n.tr("Copy")
-            //visible: !pageIsSecret
             onTriggered: message_list.copySelected()
         },
         Action {
@@ -82,6 +80,10 @@ Page {
     objectName: "dialogPage"
 
     header: TelegramHeader {
+        StyleHints {
+            backgroundColor: currentDialog.encrypted ? "#a8dcaf" : "white"
+            dividerColor: Qt.darker(backgroundColor, 1.1)
+        }
         id: dialog_page_header
         trailingActionBar.actions: message_list.inSelectionMode ? selectionActions : defaultActions
         leadingActionBar.actions: Action {
@@ -96,11 +98,10 @@ Page {
                 }
             }
         }
-
         telegram: telegramObject
         dialog: currentDialog
     }
-
+    
     signal forwardRequest(var messageIds);
     signal tagSearchRequest(string tag);
     signal dialogClosed();
@@ -161,7 +162,6 @@ Page {
             }
             currentDialog: dialog_page.currentDialog
             onAccepted: message_list.sendMessage(text, inReplyTo)
-//            onCopyRequest: message_list.copy()
         }
 
         AccountAddContactHeader {

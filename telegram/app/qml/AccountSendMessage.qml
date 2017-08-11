@@ -314,7 +314,7 @@ Rectangle {
         Image {
             id: sticker_image
             anchors.centerIn: parent
-            height: units.dp(22)
+            height: units.gu(2.5)
             width: height
             sourceSize: Qt.size(width, height)
             fillMode: Image.PreserveAspectFit
@@ -352,14 +352,15 @@ Rectangle {
             }
         }
 
-        Image {
+        Icon {
             id: attach_image
             anchors.centerIn: parent
             height: units.dp(22)
             width: height
-            sourceSize: Qt.size(width, height)
-            fillMode: Image.PreserveAspectFit
-            source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
+            //sourceSize: Qt.size(width, height)
+            //fillMode: Image.PreserveAspectFit
+            //source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
+            name: "attachment"
             visible: !messagePlaceholder.visible
         }
     }

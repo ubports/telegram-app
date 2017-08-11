@@ -43,16 +43,44 @@ Item {
         property size imageSize: uploading? Cutegram.imageSize(message.upload.location) : Qt.size(0,0)
     }
 
+
+    Rectangle {
+        anchors {
+            leftMargin: units.dp(-4)
+            rightMargin: units.dp(-5)
+            topMargin: units.dp(-1)
+            bottomMargin: units.dp(-1)
+            fill: filesize_lbl
+        }
+        color: Qt.rgba(0, 0, 0, 0.3)
+        radius: units.dp(2)
+    }
+
     Label {
+        id: filesize_lbl
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.margins: 2*Devices.density
-        fontSize: "x-small"
+        font.weight: Font.DemiBold
+        fontSize: "small"
         color: "white"
         text: uploadedSize + "/" + totalSize
 
         property string totalSize: Math.floor(message.upload.totalSize/(1024*10.24))/100 + "MB"
         property string uploadedSize: Math.floor(message.upload.uploaded/(1024*10.24))/100 + "MB"
+    }
+
+
+    Rectangle {
+        anchors {
+            leftMargin: units.dp(-4)
+            rightMargin: units.dp(-5)
+            topMargin: units.dp(-1)
+            bottomMargin: units.dp(-1)
+            fill: file_txt
+        }
+        color: Qt.rgba(0, 0, 0, 0.3)
+        radius: units.dp(2)
     }
 
     Label {
@@ -65,7 +93,8 @@ Item {
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         elide: Text.ElideRight
         maximumLineCount: 1
-        fontSize: "x-small"
+        font.weight: Font.DemiBold
+        fontSize: "small"
         color: "white"
         text: Tools.fileName(message.upload.location)
     }

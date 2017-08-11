@@ -95,10 +95,6 @@ Item {
             selected: currentDialog == dialog
             showMessage: showLastMessage
 
-            // TODO benchmark if useful, speed hack from ureadit
-            //opacity: ((y + height) >= dialog_list.contentY) &&
-            //          (y <= (dialog_list.contentY + dialog_list.height)) ? 1 :0
-
             onCurrentIndexChanged: {
                 dialog_list.currentIndex = index;
             }

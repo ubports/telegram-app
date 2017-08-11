@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     app.setApplicationVersion("2.4.41.1");
     app.setOrganizationDomain("com.ubuntu.telegram");
     app.setOrganizationName("com.ubuntu.telegram");
-//    app.setWindowIcon(QIcon(":/qml/Cutegram/files/icon.png"));
+    app.setWindowIcon(QIcon(":/qml/icons/telegram.png"));
     app.setQuitOnLastWindowClosed(false);
 
     QDir appPath = QDir(QCoreApplication::applicationDirPath());

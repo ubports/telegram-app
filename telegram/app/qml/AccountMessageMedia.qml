@@ -209,12 +209,26 @@ Item {
         }
     }
 
+
+    Rectangle {
+        anchors {
+            leftMargin: units.dp(-4)
+            rightMargin: units.dp(-5)
+            topMargin: units.dp(-1)
+            bottomMargin: units.dp(-1)
+            fill: filename_lbl
+        }
+        color: Qt.rgba(0, 0, 0, 0.3)
+        radius: units.dp(2)
+    }
+
     Label {
+        id: filename_lbl
         anchors.top: parent.top
         anchors.left: parent.left
         font.weight: Font.DemiBold
-        fontSize: "x-small"
-        color: "black"
+        fontSize: "small"
+        color: "white"
         visible: !download_frame.visible
         text: {
                 if (!isSticker && !Cutegram.filsIsImage(file_handler.filePath))
@@ -270,22 +284,36 @@ Item {
             visible: !downloading
         }
 
+        Rectangle {
+            anchors {
+                leftMargin: units.dp(-4)
+                rightMargin: units.dp(-5)
+                topMargin: units.dp(-1)
+                bottomMargin: units.dp(-1)
+                fill: filesize_lbl
+            }
+            color: Qt.rgba(0, 0, 0, 0.3)
+            radius: units.dp(2)
+        }
+
         Label {
+            id:filesize_lbl
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.margins: 3*Devices.density
             font.weight: Font.DemiBold
-            fontSize: "x-small"
+            fontSize: "small"
             color: "white"
             text: {
                 if(downloading)
-                    return Math.floor(file_handler.progressCurrentByte/(1024*10.24))/100 + "MB/" +
-                           Math.floor(size/(1024*10.24))/100 + "MB";
+                    return uploadedSize + " / " + totalSize;
                 else
-                    return file_handler.fileName + "\n" + Math.floor(size/(1024*10.24))/100 + "MB";
+                    return file_handler.filename == "" ? totalSize : file_handler.fileName + "\n" + totalSize;
             }
 
-            property int size: file_handler.fileSize
+            property string totalSize: Math.floor(file_handler.fileSize/(10485.76))/100 + "MB"
+            property string uploadedSize: Math.floor(file_handler.progressCurrentByte/(10485.76))/100 + "MB"
+
         }
     }
 
