@@ -117,8 +117,12 @@ PageHeader {
             id: headerImage
             width: height
             anchors {
+                top: parent.top
+                topMargin: units.dp(3)
                 left: parent.left
-                verticalCenter: parent.verticalCenter
+                bottom: parent.bottom
+                bottomMargin: units.dp(3)
+                rightMargin: units.gu(1)
             }
             telegram: header.telegram
             dialog: header.dialog

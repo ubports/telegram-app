@@ -39,7 +39,7 @@ Item {
     Rectangle {
         id: attach_box
         width: parent.width
-        height: units.gu(9)+units.gu(3)
+        height: units.gu(9.5)+units.gu(3)
         y: attach_panel.isShown ? -height+units.gu(3) : shadow.height
 
         Behavior on y {
