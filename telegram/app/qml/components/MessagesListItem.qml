@@ -83,14 +83,6 @@ ListItem {
         return html.indexOf('<a href="') !== -1;
     }
 
-//    Connections {
-//        target: telegram.userData
-//        onLoadLinkChanged: {
-//            if (id !== user.id) return;
-//            allowLoadLinks = telegram.userData.isLoadLink(user.id);
-//        }
-//    }
-
     AccountMessageAction {
         id: action_item
         anchors.left: parent.left
@@ -155,15 +147,24 @@ ListItem {
             anchors.verticalCenter: parent.verticalCenter
 
             Rectangle {
+                id: msg_frame_shadow
+                width: msg_frame_box.width
+                height: msg_frame_box.height
+                radius: msg_frame_box.radius
+
+                y: units.dp(1)
+                x: units.dp(1)
+                color: "#cdcdcd"    // theme.palette.normal.base (i.e. #CDCDCD) with opacity: 0.5
+                visible: msg_frame_box.visible
+            }
+
+            Rectangle {
                 id: msg_frame_box
                 anchors.fill: parent
-                visible: !message_media.isSticker && !upload_item.isSticker
-                radius: 6*Devices.density
+                visible: (message_item.message != "" || forward_user_name.visible)
+                radius: 5.5*Devices.density
                 color: {
-                    // if(message_media.mediaPlayer)
-                    //     return "white"
-                    // else
-                        return message.out ? Colors.outgoing : Colors.incoming
+                    return message.out ? Colors.outgoing : Colors.incoming
                 }
             }
 
@@ -257,12 +258,12 @@ ListItem {
                         width: Math.min(units.dp(htmlWidth), maximumWidth)
                         height: contentHeight
                         fontSize: message_item.hasMedia ? "small" : "medium"
-                        font.weight: Font.Normal
+                        font.weight: Font.Light
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: message_item.messageHtmlText // emojis.textToEmojiText(message_item.messageHtmlText)
-
+                        text: message_item.messageHtmlText
+                        color: message.out? "aliceblue" : "black"
                         onLinkActivated: {
                             if (link.slice(0,6) == "tag://") {
                                 console.log("tag links not supported yet");

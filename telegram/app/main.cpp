@@ -11,7 +11,6 @@
 
 #include "asemantools/asemanapplication.h"
 #include "telegram.h"
-#include "compabilitytools.h"
 #include "i18n.h"
 #include "telegramqmlinitializer.h"
 
@@ -97,9 +96,6 @@ int main(int argc, char *argv[])
         return 0;
     }
 #endif
-
-    CompabilityTools::version1();
-    CompabilityTools::version2();
 
     Cutegram cutegram;
     if (parser.isSet(dcIdOption))

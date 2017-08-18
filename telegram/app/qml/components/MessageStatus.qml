@@ -43,7 +43,7 @@ Item {
                 if (hasMedia) {
                     return Colors.white;
                 }
-                return message.out ? Colors.time_out : Colors.time_in;//Colors.dark_green : Colors.grey;
+                return message.out ? "aliceblue" : Colors.time_in;//Colors.dark_green : Colors.grey;
             }
             text: Cutegram.getTimeString(messageDate)
 
@@ -63,9 +63,9 @@ Item {
                 if (!message.sent) {
                     return Qt.resolvedUrl("qrc:/qml/files/msg_clock.png");
                 } else if (message.out && message.unread) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_single_" + (status_item.hasMedia ? "white.png" : "green.png"));
+                    return Qt.resolvedUrl("qrc:/qml/files/check_single_white.png");
                 } else if (message.out) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_double_" + (status_item.hasMedia ? "white.png" : "green.png"));
+                    return Qt.resolvedUrl("qrc:/qml/files/check_double_white.png");
                 } else {
                     return "";
                 }
