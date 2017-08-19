@@ -131,38 +131,18 @@ PageHeader {
         Rectangle {
             id: connectingIndicator
             anchors.fill: headerImage
-            visible: isConnecting
+            visible: isConnecting || !Connectivity.online
             color: "white"
             Icon {
+                name: isConnecting? "sync-updating" : "sync-paused"
                 anchors.fill: parent
-                name: "sync-updating"
-                opacity: parent.opacity
-                visible: parent.visible
-                }
+                opacity: parent
+            }
             SequentialAnimation {
-                running: isConnecting
+                running: visible
                 loops: Animation.Infinite
-                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 1000 }
+                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 500 }
                 PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 1000 }
-            }
-        }
-
-        Rectangle {
-            id: onlineIndicator
-            anchors.fill: headerImage
-            visible: !Connectivity.online
-            color: "white"
-            Icon {
-                anchors.fill: parent
-                name: "sync-paused"
-                opacity: parent.opacity
-                visible: parent.visible
-            }
-            SequentialAnimation {
-                running: !Connectivity.online
-                loops: Animation.Infinite
-                PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 1; duration: 1000 }
-                PropertyAnimation { target: onlineIndicator; property: "opacity"; to: 0.0; duration: 1000 }
             }
         }
 
