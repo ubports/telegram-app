@@ -81,7 +81,7 @@ Page {
 
     header: TelegramHeader {
         StyleHints {
-            backgroundColor: currentDialog.encrypted ? "#a8dcaf" : "white"
+            backgroundColor: currentDialog.encrypted ? Colors.secret_green : "white"
             dividerColor: Qt.darker(backgroundColor, 1.1)
         }
         id: dialog_page_header
