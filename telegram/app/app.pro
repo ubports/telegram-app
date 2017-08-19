@@ -21,8 +21,6 @@ SOURCES += main.cpp \
     telegram.cpp \
     emojis.cpp \
     unitysystemtray.cpp \
-    compabilitytools.cpp \
-    upgradev2.cpp \
     cutegramenums.cpp \
     textemojiwrapper.cpp \
     emoticonsmodel.cpp \
@@ -37,8 +35,6 @@ HEADERS += \
     cutegram_macros.h \
     emojis.h \
     unitysystemtray.h \
-    compabilitytools.h \
-    upgradev2.h \
     cutegramenums.h \
     themeitem.h \
     textemojiwrapper.h \

@@ -36,8 +36,6 @@ Page {
             dId = dialog.peer.userId
 
         currentDialog = dialog
-//        acc_frame.activeRequest()
-//        Cutegram.active()
 
         pageStack.addPageToNextColumn(account_page, account_dialog_page, {
                 "telegramObject": telegramObject,
@@ -139,32 +137,6 @@ Page {
                 mainView.chatToOpen = 0;
             }
         }
-    }
-
-    Emojis {
-        id: emojis
-        currentTheme: "twitter"
-        userData: telegramObject.userData
-        autoEmojis: Cutegram.autoEmojis
-        replacements: {":)"   : "😌",
-                       ":("   : "😞",
-                       ":d"   : "😁",
-                       ":*"   : "😘",
-                       ":s"   : "😖",
-                       "^_^"  : "😊",
-                       ":/"   : "😕",
-                       "B)"   : "😎",
-                       ":p"   : "😋",
-                       ":o"   : "😯",
-                       ":x"   : "😍",
-                       ";)"   : "😉",
-                       ">:)"  : "😈",
-                       "o:)"  : "😇",
-                       ":(("  : "😢",
-                       ":(((" : "😭",
-                       ":))"  : "😄",
-                       ":)))" : "😆",
-                       ":))))": "😂"}
     }
 
     AccountDialogList {
@@ -271,17 +243,6 @@ Page {
         }
     }
 
-    // Not quite happy how bottom edge is working, commenting out for now.
-
-//    bottomEdgePageComponent: AccountContactsPage {
-//        anchors.fill: parent
-//        telegram: telegramObject
-//        onSelected: {
-//            account_page.currentDialog = telegramObject.fakeDialogObject(cid, false);
-//        }
-//    }
-//    bottomEdgeTitle: i18n.tr("Contacts")
-
     Sections {
         id: sections
         model: profiles.count > 1 ? [ telegramObject.phoneNumber ] : []
@@ -293,20 +254,9 @@ Page {
         id: default_header
         objectName: "defaultHeader"
         visible: account_page.header === default_header
-        title: {
-            if (Connectivity.online) {
-                if (telegramObject.connected) {
-                    // TRANSLATORS: Default app header title. Application name.
-                    return i18n.tr("Telegram")
-                } else {
-                    // TRANSLATORS: App header title when connecting to Telegram.
-                    return i18n.tr("Connecting...")
-                }
-            } else {
-                // TRANSLATORS: Shown in app header when network is unavailable.
-                return i18n.tr("Waiting for network...")
-            }
-        }
+        title:
+            // TRANSLATORS: Default app header title. Application name.
+            i18n.tr("Telegram")
         leadingActionBar.actions: Action {
             objectName: "navigationMenu"
             iconName: "navigation-menu"
@@ -320,15 +270,10 @@ Page {
     PageHeader {
         id: forward_header
         visible: account_page.header === forward_header
-        title: {
-                if (Connectivity.online) {
-                    // TRANSLATORS: Page title when forwarding messages.
-                    return i18n.tr("Select Chat")
-                } else {
-                    // TRANSLATORS: Shown in app header when network is unavailable.
-                    return i18n.tr("Waiting for network...")
-                }
-            }
+        title:
+            // TRANSLATORS: Page title when forwarding messages.
+            i18n.tr("Select Chat")
+
         leadingActionBar.actions: Action {
             iconName: "go-previous"
             onTriggered: clearForwardedMessages()
@@ -339,15 +284,10 @@ Page {
     PageHeader {
         id: share_header
         visible: account_page.header === share_header
-        title: {
-            if (Connectivity.online) {
-                // TRANSLATORS: Page title when sharing files.
-                return i18n.tr("Select Chat")
-            } else {
-                // TRANSLATORS: Shown in app header when network is unavailable.
-                return i18n.tr("Waiting for network...")
-            }
-        }
+        title:
+            // TRANSLATORS: Page title when sharing files.
+            i18n.tr("Select Chat")
+
         leadingActionBar.actions: Action {
             iconName: "go-previous"
             onTriggered: cancelSharedContent()
