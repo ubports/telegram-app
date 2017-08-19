@@ -220,6 +220,7 @@ Item {
         }
         color: Qt.rgba(0, 0, 0, 0.3)
         radius: units.dp(2)
+        visible: filename_lbl.text !== ""
     }
 
     Label {

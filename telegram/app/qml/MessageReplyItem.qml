@@ -37,7 +37,7 @@ Item {
             id: reply_separator
             width: units.dp(2)
             height: parent.height
-            color: !message || message.out ? UbuntuColors.green : UbuntuColors.blue
+            color:  Colors.telegram_blue
         }
 
         Column {
@@ -51,12 +51,7 @@ Item {
                 // font.family: AsemanApp.globalFont.family
                 fontSize: "small"
                 font.weight: Font.Normal
-                color: !message || message.out ? Colors.dark_green : Colors.telegram_blue
-//                    if(!replyMessage && (!message || message.out))
-//                        return Cutegram.currentTheme.messageOutgoingNameColor
-//                    else
-//                        return Cutegram.currentTheme.messageIncomingNameColor
-//                }
+                color: Colors.telegram_blue
                 text: {
                     if(!replyMessage && (!message || message.replyToMsgId == 0))
                         return ""
