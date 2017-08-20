@@ -118,7 +118,7 @@ ListItem {
             fill: parent;
             margins: units.dp(4)
         }
-        color: "#a8dcaf"
+        color: Colors.secret_green
         visible: dialog.encrypted
     }
 

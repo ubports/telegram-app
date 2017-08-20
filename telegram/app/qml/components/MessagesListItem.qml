@@ -161,7 +161,7 @@ ListItem {
             Rectangle {
                 id: msg_frame_box
                 anchors.fill: parent
-                visible: (message_item.message != "" || forward_user_name.visible)
+                visible: (message_item.message != "" || forward_user_name.visible) && !message_media.isSticker
                 radius: 5.5*Devices.density
                 color: {
                     return message.out ? Colors.outgoing : Colors.incoming
@@ -202,7 +202,7 @@ ListItem {
                     id: forward_user_name
                     fontSize: "smaller"
                     font.weight: Font.Normal
-                    color: message.out ? Colors.dark_green : Colors.blue
+                    color:  Colors.telegram_blue
                     visible: message.fwdFromId !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
                     text: visible ? i18n.tr("Forwarded from <b>%1</b>").arg(fwdUser.firstName + " " + fwdUser.lastName) : ""
