@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-06-29 07:38+0000\n"
-"Last-Translator: Sami Törmänen <tormanen.sami@gmail.com>\n"
+"PO-Revision-Date: 2017-08-24 18:05+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/fi/>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14.1\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -408,6 +408,8 @@ msgstr "Sinun täytyy painaa ja pitää pohjassa äänitä kuvaketta"
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
+"Myönnä mikrofonin käyttöoikeus kohdassa Järjestelmän asetukset > "
+"Turvallisuus ja yksityisyys."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
@@ -1128,12 +1130,11 @@ msgstr "%1 %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
-msgstr "hh:mm"
+msgstr "h:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
