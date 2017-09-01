@@ -21,6 +21,6 @@
             "scope": "scope"
         }
     },
-    "version": "2.4.41.1",
-    "maintainer": "Ubuntu Telegram team <libqtelegram-team@lists.launchpad.net>"
+    "version": "2.4.42.0",
+    "maintainer": "UBports Telegram Team <florian@ubports.com>"
 }
