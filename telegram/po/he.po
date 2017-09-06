@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-28 20:01+0000\n"
-"Last-Translator: ido roi engel <idoroiengel@hotmail.com>\n"
+"PO-Revision-Date: 2017-09-06 08:52+0000\n"
+"Last-Translator: Eran <etherpulse@gmail.com>\n"
 "Language-Team: Hebrew <https://ubpweblate.tnvcomp.com/projects/ubports"
 "/telegram-app/he/>\n"
 "Language: he\n"
@@ -995,7 +995,7 @@ msgstr ""
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
-msgstr ""
+msgstr "שבוע"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Leave chat"
