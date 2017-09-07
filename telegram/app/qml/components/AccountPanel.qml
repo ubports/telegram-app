@@ -73,7 +73,7 @@ Panel {
 
             AccountPanelItem {
                 objectName:"groupChatItem"
-                icon: "../files/menu_newgroup.png"
+                icon: "contact-group" //"../files/menu_newgroup.png"
                 text: i18n.tr("New Group")
                 showDivider: false
                 onClicked: {
@@ -83,7 +83,7 @@ Panel {
             }
             AccountPanelItem {
                 objectName:"secretChatItem"
-                icon: "../files/menu_secret.png"
+                icon: "lock" //"../files/menu_secret.png"
                 text: i18n.tr("New Secret Chat")
                 onClicked: {
                     panel.close();
@@ -92,7 +92,7 @@ Panel {
             }
             AccountPanelItem {
                 objectName:"panelContacts"
-                icon: "../files/menu_contacts.png"
+                icon: "address-book-app-symbolic" //"../files/menu_contacts.png"
                 text: i18n.tr("Contacts")
                 showDivider: false
                 onClicked: {
@@ -102,7 +102,7 @@ Panel {
             }
             AccountPanelItem {
                 objectName:"panelSettings"
-                icon: "../files/menu_settings.png"
+                icon: "settings" //"../files/menu_settings.png"
                 text: i18n.tr("Settings")
                 showDivider: false
                 onClicked: {
@@ -111,7 +111,7 @@ Panel {
                 }
             }
             AccountPanelItem {
-                icon: "../files/menu_help.png"
+                icon: "help" //"../files/menu_help.png"
                 text: i18n.tr("Telegram FAQ")
                 showDivider: false
                 onClicked: {
@@ -163,7 +163,7 @@ Panel {
             }
 
             AccountPanelItem {
-                icon: "../files/menu_invite.png"
+                icon: "contact-new" //"../files/menu_invite.png"
                 text: i18n.tr("Add Account")
                 showDivider: false
                 onClicked: {

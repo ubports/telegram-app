@@ -318,7 +318,7 @@ Rectangle {
             width: height
             sourceSize: Qt.size(width, height)
             fillMode: Image.PreserveAspectFit
-            source: Qt.resolvedUrl("qrc:/qml/files/emojis.svg")
+            source: Qt.resolvedUrl("qrc:/qml/files/msg_panel_stickers.png")
             visible: !messagePlaceholder.visible
         }
     }

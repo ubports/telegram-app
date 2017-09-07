@@ -151,6 +151,7 @@
         <file>qml/files/emoticons-recent.png</file>
         <file>qml/files/emoticons-telegram.png</file>
         <file>qml/files/emojis.svg</file>
+        <file>qml/files/msg_panel_stickers.png</file>
         <file>qml/InstallStickerDialog.qml</file>
     </qresource>
 </RCC>
