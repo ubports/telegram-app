@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-06 01:02+0000\n"
+"PO-Revision-Date: 2017-09-07 21:36+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
-"Language-Team: Czech <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Czech <https://translate.ubports.com/projects/ubports"
 "/telegram-app/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -190,7 +190,7 @@ msgstr "Přeposlat"
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr "Odstranit"
+msgstr "Smazat"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
