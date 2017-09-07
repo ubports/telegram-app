@@ -349,6 +349,7 @@ QString PushHelper::getAvatar(qint64 peerId) {
 
         QDir profilesDir(PROFILE_DIR_FMT.arg(phone).arg(peerId));
         profilesDir.setNameFilters(nameFilters);
+        profilesDir.setSorting( QDir::Time );
 
         QStringList fileNames = profilesDir.entryList();
         if (fileNames.length() > 0) {
