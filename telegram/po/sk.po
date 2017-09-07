@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-20 21:54+0200\n"
-"PO-Revision-Date: 2017-07-16 06:52+0000\n"
+"PO-Revision-Date: 2017-09-07 19:12+0000\n"
 "Last-Translator: t-h-e-p-e-t-e-r <peter.valachovic@gmail.com>\n"
-"Language-Team: Slovak <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Slovak <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgstr "Pridať"
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr "Naspäť"
+msgstr "Späť"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
