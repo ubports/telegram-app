@@ -8,62 +8,64 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-09-07 06:48+0000\n"
+"Last-Translator: Jeff <jeffi27@live.at>\n"
+"Language-Team: Albanian <https://ubpweblate.tnvcomp.com/projects/ubports"
+"/telegram-app/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
-msgstr ""
+msgstr "Fut të Kontaktet"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:26
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
 msgid "Contacts"
-msgstr ""
+msgstr "Kontaktet"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
-msgstr ""
+msgstr "Kërko"
 
 #. TRANSLATORS: As in: add new contact
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
-msgstr ""
+msgstr "Shto"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr ""
+msgstr "Mbrapa"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
-msgstr ""
+msgstr "Kërko Kontaktet…"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
 msgid "New Secret Chat"
-msgstr ""
+msgstr "Chat sekret i ri"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
-msgstr ""
+msgstr "Fut tëk Grupa"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:107
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:77
 msgid "New Group"
-msgstr ""
+msgstr "Grupë e re"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:118
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:396
@@ -71,27 +73,27 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:325
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
-msgstr ""
+msgstr "Tema r chatit"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
-msgstr ""
+msgstr "Shto Kontakt"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
-msgstr ""
+msgstr "Nga Libri i adreses"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
-msgstr ""
+msgstr "Shkruaj detajet"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:375
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:434
@@ -99,7 +101,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -114,7 +116,7 @@ msgstr ""
 #: /telegram-app/telegram/build_mobile/app/telegram.desktop.h:1
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegrami"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:441
@@ -124,294 +126,301 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
+"Fut %1 tëk %2 \n"
+"\n"
+"Numri i mesazheve të fundit për përcjellje:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:502
 msgid "Contacts imported"
-msgstr ""
+msgstr "Importo kontaktet"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:505
 msgid "No contacts imported"
-msgstr ""
+msgstr "Asnjë kontakt nuk u importua"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr ""
+msgstr "Ky kontakt gjindët në Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr ""
+msgstr "%1 prej %2 Kontakteve përdorin Telegramin."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
 #: /telegram-app/telegram/app/qml/AccountDialogList.qml:117
 #, qt-format
 msgid "Forward message to %1?"
-msgstr ""
+msgstr "Përcjell mesazhin tëk %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
 #: /telegram-app/telegram/app/qml/AccountDialogList.qml:129
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "Dërgo mesazhin tëk %1?"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Group Info"
-msgstr ""
+msgstr "Info e Grupit"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 msgid "Profile Info"
-msgstr ""
+msgstr "Info e Profilit"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:44
 msgid "Select all"
-msgstr ""
+msgstr "Zgjidhë të gjithë"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:56
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:256
 msgid "Copy"
-msgstr ""
+msgstr "Kopjo"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:63
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:278
 msgid "Forward"
-msgstr ""
+msgstr "Përcjell"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr ""
+msgstr "Fshijë"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
-msgstr ""
+msgstr "Kyqu"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
-msgstr ""
+msgstr "Regjistrohu"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
 msgid "Invalid password"
-msgstr ""
+msgstr "Fjalëkalim invalid"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr ""
+msgstr "Ju keni ftuar %1 të bashkohet chatit sekret."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr ""
+msgstr "%1 ju ka ftuar ti bashkohni chatit sekret."
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
 msgid "You created the group"
-msgstr ""
+msgstr "Ju krijuat një Grupë"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
 #, qt-format
 msgid "<b>%1</b> created the group"
-msgstr ""
+msgstr "<b>%1</b> ka krijuar Grupin"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:77
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr ""
+msgstr "Ju kein futur <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr ""
+msgstr "<b>%1</b> ju ka futur"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> ku futur <b>%1</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
 #, qt-format
 msgid "<b>%1</b> left the group"
-msgstr ""
+msgstr "<b>%1</b> braktisi Grupin"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:90
 #, qt-format
 msgid "You removed <b>%1</b>"
-msgstr ""
+msgstr "Ju e hoqët <b>%1</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
 msgid "<b>%1</b> removed you"
-msgstr ""
+msgstr "<b>%1</b> ju hoqi juve"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> hoqi <b>%2</b>"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
 msgid "You changed the group name to %1"
-msgstr ""
+msgstr "Ju ndryshuat emrin e Grupit në »%1«"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr ""
+msgstr "<b>%1</b> ndryshoj emrin e Grupit në »%2«"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
 msgid "You changed the group photo"
-msgstr ""
+msgstr "Ju ndryshuat imazhin e Grupit"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
 #, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr ""
+msgstr "<b>%1</b> ndryshoj imazhin e Grupit"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
 msgid "You removed the group photo"
-msgstr ""
+msgstr "Ju fshitë imazhin e Grupit"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
 #, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr ""
+msgstr "<b>%1</b> fshiu imazhin e Grupit"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 msgid "You joined the group via invite link"
-msgstr ""
+msgstr "Ju u bashkuat Grupit përmes linkut të ftesës"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> iu bashkua Grupit përmes linkut të ftesës"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
 msgid "Please select chat"
-msgstr ""
+msgstr "Ju lutemi zgjidhni chatin"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:224
 msgid "New messages"
-msgstr ""
+msgstr "Mesazh i ri"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
-msgstr ""
+msgstr "Përgjigju"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Info e Pakos të figurave"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
-msgstr ""
+msgstr "Kërkesa për chat sekret."
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
+"U refuzua apo pranua një Chat sekret nga një paisje tjetër.\n"
+"Kini kujdes që Androidi pranon chatin sekret automatikisht."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
 msgid "Accept"
-msgstr ""
+msgstr "Prano"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:499
 msgid "Reject"
-msgstr ""
+msgstr "Refuzo"
 
 #. TRANSLATORS: Edit your profile first and last name.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:16
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:32
 msgid "Edit name"
-msgstr ""
+msgstr "Ndrysho emrin"
 
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:20
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
-msgstr ""
+msgstr "Ruaj"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
 msgid "First name is required."
-msgstr ""
+msgstr "Emri është i detyrueshëm."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:51
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:144
 msgid "First name (required)"
-msgstr ""
+msgstr "Emri (kërkohet)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:70
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:160
 msgid "Last name (optional)"
-msgstr ""
+msgstr "Mbiemri (opcional)"
 
 #. TRANSLATORS: App header title when connecting to Telegram.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:303
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
 msgid "Connecting..."
-msgstr ""
+msgstr "Duke u lidhur…"
 
 #. TRANSLATORS: Shown in app header when network is unavailable.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:307
 #: /telegram-app/telegram/app/qml/AccountPage.qml:329
 #: /telegram-app/telegram/app/qml/AccountPage.qml:348
 msgid "Waiting for network..."
-msgstr ""
+msgstr "Duke pritur përgjigjëje nga rrjeti…"
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
 #: /telegram-app/telegram/app/qml/AccountPage.qml:326
 #: /telegram-app/telegram/app/qml/AccountPage.qml:345
 msgid "Select Chat"
-msgstr ""
+msgstr "Zhgjidh bisedën"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
 msgid "Type message"
-msgstr ""
+msgstr "Shkruaj një mesazh"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
-msgstr ""
+msgstr "Ngjitjet më të folur nuk mbështeten për moment ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Ju duhet ta shtypni dhe mbani butonin e ingjizimit"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
+"Ju lutemi lejoni qasje në Mikrofon përmes Cilësitë e Sistemit > Siguria & "
+"Intimiteti."
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
 msgid "Settings"
-msgstr ""
+msgstr "Konfigurimi"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:25
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:49
 msgid "Change photo"
-msgstr ""
+msgstr "Ndrysho imazhin"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
@@ -420,23 +429,23 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
-msgstr ""
+msgstr "Informacioni"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:105
 msgid "Phone"
-msgstr ""
+msgstr "Telefoni"
 
 #. TRANSLATORS: Visible right under username in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:118
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
-msgstr ""
+msgstr "Emri i përdoruesit"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:127
 msgid "Messages"
-msgstr ""
+msgstr "Mesazhet"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
@@ -444,42 +453,42 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:551
 #: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
-msgstr ""
+msgstr "Njoftimet"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
-msgstr ""
+msgstr "Dërgo më Enter"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
-msgstr ""
+msgstr "Shërbimi i klientëve"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:190
 msgid "Ask a Question"
-msgstr ""
+msgstr "Shtro një pyetje"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:200
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:115
 msgid "Telegram FAQ"
-msgstr ""
+msgstr "Telegram P&P"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:209
 msgid "Account"
-msgstr ""
+msgstr "Llogaria"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
-msgstr ""
+msgstr "Qkyqu"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:233
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "Telegraf për Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:283
@@ -487,7 +496,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:88
 msgid "online"
-msgstr ""
+msgstr "Lidhur"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:286
@@ -496,7 +505,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:91
 #, qt-format
 msgid "last seen %1"
-msgstr ""
+msgstr "Të shiquara së fundi %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:289
@@ -504,7 +513,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:94
 msgid "last seen recently"
-msgstr ""
+msgstr "Para pak se fundi të shiquara"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:292
@@ -512,7 +521,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:97
 msgid "last seen within a week"
-msgstr ""
+msgstr "Të shiquara brenda javës se fundit"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:295
@@ -520,7 +529,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:100
 msgid "last seen within a month"
-msgstr ""
+msgstr "Të shiquara brenda muajit të fundit"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:298
@@ -528,42 +537,44 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:103
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "Ka kohë qe nuk ka qënë ne linjë"
 
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
+"Jeni i sigurtë që dëshironi të qkyqeni?\n"
+"Të gjitha chatet sekrete do fshihen."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr ""
+msgstr "Emri i përdoruesit %1 është i disponueshëm."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr ""
+msgstr "Ky emer i përdoruesit është i zëmë."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr ""
+msgstr "Ky emer i përdoruesit është i pavlefshëm."
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
-msgstr ""
+msgstr "Emri përdoruesit i juaj"
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr ""
+msgstr "Një emer i përdoruesit duhet te ketë së paku 5 shifta."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr ""
+msgstr "Emri i përdoruesit po verifikohet…"
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
