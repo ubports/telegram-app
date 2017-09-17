@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-05 06:42+0000\n"
+"PO-Revision-Date: 2017-09-11 17:15+0000\n"
 "Last-Translator: Luis Fortanet <luis.fortanet@openmailbox.org>\n"
-"Language-Team: Aragonese <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Aragonese <https://translate.ubports.com/projects/ubports"
 "/telegram-app/an/>\n"
 "Language: an\n"
 "MIME-Version: 1.0\n"
@@ -60,12 +60,12 @@ msgstr "Nuevo Chat Secreto"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
-msgstr ""
+msgstr "Adhibir a o grupo"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:107
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:77
 msgid "New Group"
-msgstr ""
+msgstr "Nuevo Grupo"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:118
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:396
@@ -73,27 +73,27 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:325
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
-msgstr ""
+msgstr "Titol chat"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
-msgstr ""
+msgstr "Adhibir Contacto"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
-msgstr ""
+msgstr "Dende Libreta d'adrezas"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
-msgstr ""
+msgstr "Introduzca Detalles"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:375
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:434
@@ -101,7 +101,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -116,7 +116,7 @@ msgstr ""
 #: /telegram-app/telegram/build_mobile/app/telegram.desktop.h:1
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:441
@@ -130,17 +130,17 @@ msgstr ""
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:502
 msgid "Contacts imported"
-msgstr ""
+msgstr "Contactos importaus"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:505
 msgid "No contacts imported"
-msgstr ""
+msgstr "No contactos importaus"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr ""
+msgstr "Iste contacto ye en Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
@@ -158,52 +158,52 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountDialogList.qml:129
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "Ninvia mensaches a %1?"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Group Info"
-msgstr ""
+msgstr "Info de Grupo"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 msgid "Profile Info"
-msgstr ""
+msgstr "Info de Perfil"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:44
 msgid "Select all"
-msgstr ""
+msgstr "Seleccionar tot"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:56
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:256
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:63
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:278
 msgid "Forward"
-msgstr ""
+msgstr "Abance"
 
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr ""
+msgstr "Borrar"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
-msgstr ""
+msgstr "Rechistrar-se"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
-msgstr ""
+msgstr "Rechístra-te"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
 msgid "Invalid password"
-msgstr ""
+msgstr "Clau invalida"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
@@ -218,7 +218,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
 msgid "You created the group"
-msgstr ""
+msgstr "Tú creyés o grupo"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
 #, qt-format
