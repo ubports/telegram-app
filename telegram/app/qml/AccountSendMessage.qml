@@ -318,7 +318,7 @@ Rectangle {
             width: height
             sourceSize: Qt.size(width, height)
             fillMode: Image.PreserveAspectFit
-            source: Qt.resolvedUrl("qrc:/qml/files/msg_panel_stickers.png")
+            source: Qt.resolvedUrl("qrc:/qml/files/msg_panel_stickers.svg")
             visible: !messagePlaceholder.visible
         }
     }

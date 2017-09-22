@@ -69,21 +69,11 @@
         <file>qml/js/colors.js</file>
         <file>qml/js/time.js</file>
         <file>qml/js/version.js</file>
-        <file>qml/files/attach_document.png</file>
-        <file>qml/files/attach_gallery.png</file>
-        <file>qml/files/attach_location.png</file>
         <file>qml/files/attachment_cancel.png</file>
         <file>qml/files/attachment_download.png</file>
         <file>qml/files/attachment_play.png</file>
-        <file>qml/files/attach_photo.png</file>
-        <file>qml/files/attach.png</file>
-        <file>qml/files/attach_video.png</file>
         <file>qml/files/background_hd.jpg</file>
         <file>qml/files/call.png</file>
-        <file>qml/files/check_double_green.png</file>
-        <file>qml/files/check_single_green.png</file>
-        <file>qml/files/check_double_white.png</file>
-        <file>qml/files/check_single_white.png</file>
         <file>qml/files/tick_double_white2.svg</file>
         <file>qml/files/tick_single_white.svg</file>
         <file>qml/files/conversation_bubble_arrow.png</file>
@@ -108,15 +98,8 @@
         <file>qml/files/intro6.png</file>
         <file>qml/files/intro7.png</file>
         <file>qml/files/lock.png</file>
-        <file>qml/files/msg_clock.png</file>
         <file>qml/files/clock_white.svg</file>
         <file>qml/files/menu_broadcast.png</file>
-        <file>qml/files/menu_contacts.png</file>
-        <file>qml/files/menu_help.png</file>
-        <file>qml/files/menu_invite.png</file>
-        <file>qml/files/menu_newgroup.png</file>
-        <file>qml/files/menu_secret.png</file>
-        <file>qml/files/menu_settings.png</file>
         <file>qml/files/online.png</file>
         <file>qml/files/phone_grey.png</file>
         <file>qml/files/profile_list.png</file>
@@ -135,12 +118,6 @@
         <file>qml/files/user_red.png</file>
         <file>qml/files/user_violet.png</file>
         <file>qml/files/user_yellow.png</file>
-        <file>qml/files/android/attach_camera.png</file>
-        <file>qml/files/android/attach_gallery.png</file>
-        <file>qml/files/android/attach_video.png</file>
-        <file>qml/files/android/attach_file.png</file>
-        <file>qml/files/android/attach_hide1.png</file>
-        <file>qml/files/android/attach_hide2.png</file>
         <file>qml/ui/dialogs/ConfirmationDialog.qml</file>
         <file>qml/PickerPage.qml</file>
         <file>qml/PreviewPage.qml</file>
@@ -151,7 +128,7 @@
         <file>qml/files/emoticons-recent.png</file>
         <file>qml/files/emoticons-telegram.png</file>
         <file>qml/files/emojis.svg</file>
-        <file>qml/files/msg_panel_stickers.png</file>
+        <file>qml/files/msg_panel_stickers.svg</file>
         <file>qml/InstallStickerDialog.qml</file>
     </qresource>
 </RCC>

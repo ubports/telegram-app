@@ -527,7 +527,7 @@ Page {
                 width: units.gu(3)
                 height: width
                 anchors.centerIn: parent
-                source: Qt.resolvedUrl("qrc:/qml/files/profile_list.png")
+				name: "notification"
             }
         }
 
