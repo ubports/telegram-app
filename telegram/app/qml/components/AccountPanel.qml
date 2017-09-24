@@ -149,7 +149,7 @@ Panel {
                 id: aclist
                 model: profiles
                 delegate: AccountPanelItem {
-                    icon: ""
+                    icon: "account"
                     text: number
                     showDivider: false
                     showProgression: profiles.count > 1
