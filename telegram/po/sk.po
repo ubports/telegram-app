@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-20 21:54+0200\n"
-"PO-Revision-Date: 2017-09-21 15:27+0000\n"
+"PO-Revision-Date: 2017-09-29 22:15+0000\n"
 "Last-Translator: Peter Valachovič <peter.valachovic@gmail.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sk/>\n"
@@ -33,7 +33,7 @@ msgstr "Kontakty"
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
-msgstr "Hladať"
+msgstr "Hľadať"
 
 #. TRANSLATORS: As in: add new contact
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
@@ -692,7 +692,7 @@ msgstr "Inštalovať"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr "Zatvoriť"
+msgstr "Zavrieť"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
@@ -757,7 +757,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Diskrétny"
+msgstr "Súkromné"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -826,7 +826,7 @@ msgid "%1 is typing"
 msgid_plural "%1 are typing"
 msgstr[0] "%1 píše"
 msgstr[1] "%1 píšu"
-msgstr[2] "%1 píší"
+msgstr[2] "%1 píše"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:337
@@ -923,7 +923,7 @@ msgstr "Súbor"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr "<<< Zrušiť potiahnutím"
+msgstr "<<< Potiahnuť pre zrušenie"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -1092,7 +1092,7 @@ msgstr "Preposlané od <b>%1</b>"
 #. TRANSLATORS: User status: deleted
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
-msgstr "Zmazané"
+msgstr "Vymazané"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1320,7 +1320,7 @@ msgstr "Otvoriť rozhovor"
 
 #: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr "Volať"
+msgstr "Volanie"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
