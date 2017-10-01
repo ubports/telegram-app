@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-28 08:31+0000\n"
-"Last-Translator: Philipp Leibelt <dickerwels@gmail.com>\n"
+"PO-Revision-Date: 2017-10-01 07:50+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports"
 "/telegram-app/de/>\n"
 "Language: de\n"
@@ -694,9 +694,8 @@ msgid "Install"
 msgstr "Installieren"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
-#, fuzzy
 msgid "Close"
-msgstr "Shließen"
+msgstr "Schließen"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
