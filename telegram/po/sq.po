@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-13 21:04+0000\n"
+"PO-Revision-Date: 2017-09-29 07:33+0000\n"
 "Last-Translator: Jeff <jeffi27@live.at>\n"
 "Language-Team: Albanian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sq/>\n"
@@ -39,7 +39,7 @@ msgstr "Kërko"
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
-msgstr "Fut"
+msgstr "Shto"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
@@ -429,7 +429,7 @@ msgstr "Ndrysho imazhin"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
-msgstr "Informacioni"
+msgstr "Info"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:105
@@ -759,7 +759,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "I besueshëm"
+msgstr "Private"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"

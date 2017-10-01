@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-06 08:52+0000\n"
+"PO-Revision-Date: 2017-09-18 11:47+0000\n"
 "Last-Translator: Eran <etherpulse@gmail.com>\n"
-"Language-Team: Hebrew <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Hebrew <https://translate.ubports.com/projects/ubports"
 "/telegram-app/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -985,17 +985,17 @@ msgstr ""
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
-msgstr ""
+msgstr "שעה 1"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
-msgstr ""
+msgstr "יום 1"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
-msgstr "שבוע"
+msgstr "שבוע 1"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Leave chat"
