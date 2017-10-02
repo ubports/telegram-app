@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2017-10-02 18:37+0000\n"
 "Last-Translator: Paweł Cieniek <cieniek@wp.pl>\n"
-"Language-Team: Polish <https://translate.ubports.com/projects/ubports"
-"/telegram-app/pl/>\n"
+"Language-Team: Polish <https://translate.ubports.com/projects/ubports/"
+"telegram-app/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -164,8 +164,13 @@ msgstr "Przekazać wiadomość do %1?"
 msgid "Send messages to %1?"
 msgstr "Wysłać do %1?"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
+msgid "Channel Info"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
 msgstr "Profil grupy"
 
@@ -240,6 +245,12 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> dodał Ciebie"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:70
+#, fuzzy, qt-format
+msgid "<b>%1</b> joined the group"
+msgstr "<b>%1</b> opuścił grupę"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr "<b>%1</b> dodał <b>%2</b>"
@@ -1047,6 +1058,12 @@ msgid "%1 added you"
 msgstr "%1 dodał Ciebie"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:301
+#, fuzzy, qt-format
+msgid "%1 joined the group"
+msgstr "%1 opuścił(a) grupę"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
 msgid "%1 added %2"
 msgstr "%1 dodał %2"
