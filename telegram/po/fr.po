@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2017-10-05 08:45+0000\n"
 "Last-Translator: RedXXIII <adered7@gmail.com>\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports"
-"/telegram-app/fr/>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports/"
+"telegram-app/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -164,8 +164,13 @@ msgstr "Transférer le message à %1 ?"
 msgid "Send messages to %1?"
 msgstr "Envoyer des messages à %1 ?"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
+msgid "Channel Info"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
 msgstr "Informations sur le groupe"
 
@@ -240,6 +245,12 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> vous a ajouté"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:70
+#, fuzzy, qt-format
+msgid "<b>%1</b> joined the group"
+msgstr "<b>%1</b> a quitté le groupe"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr "<b>%1</b> a ajouté <b>%2</b>"
@@ -734,7 +745,8 @@ msgstr "Sécurisé"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr "<b>Telegram</b> garde vos messages à l'abri<br> des attaques de pirates"
+msgstr ""
+"<b>Telegram</b> garde vos messages à l'abri<br> des attaques de pirates"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
@@ -754,7 +766,9 @@ msgstr "Basé sur le nuage"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
-msgstr "<b>Telegram</b> vous permet d'accéder à vos messages<br> depuis plusieurs périphériques"
+msgstr ""
+"<b>Telegram</b> vous permet d'accéder à vos messages<br> depuis plusieurs "
+"périphériques"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
@@ -1047,6 +1061,12 @@ msgid "%1 added you"
 msgstr "%1 vous a ajouté"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:301
+#, fuzzy, qt-format
+msgid "%1 joined the group"
+msgstr "%1 a quitté le groupe"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
 msgid "%1 added %2"
 msgstr "%1 a ajouté %2"
