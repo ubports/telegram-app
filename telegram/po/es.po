@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-06 06:48+0000\n"
+"PO-Revision-Date: 2017-09-30 08:36+0000\n"
 "Last-Translator: Francisco Molinero <paco@byasl.com>\n"
-"Language-Team: Spanish <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports"
 "/telegram-app/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -757,7 +757,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Privada"
+msgstr "Privado"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -1090,7 +1090,7 @@ msgstr "Reenviado desde <b>%1</b>"
 #. TRANSLATORS: User status: deleted
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
-msgstr "Borrado"
+msgstr "Eliminado"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1318,7 +1318,7 @@ msgstr "Abrir chat"
 
 #: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr "Llamada"
+msgstr "Llamar"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-18 19:27+0000\n"
+"PO-Revision-Date: 2017-10-02 07:51+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/ubports"
 "/telegram-app/cs/>\n"
@@ -403,7 +403,7 @@ msgstr "Zvuková příloha zatím není podporována ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr "Tlačítko nahrávání musíte zmáčknout a držet"
+msgstr "Přitlačte a podržte ovládání nahrávání"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
@@ -545,7 +545,7 @@ msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
-"Jste si jistý, že se chcete odhlásit?\n"
+"Opravdu se chcete odhlásit?\n"
 "Veškeré zabezpečené rozhovory budou ztraceny."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
@@ -584,9 +584,9 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
-"Uživatelské jméno si můžete zvolit na <b>Telegram</b> V tom okamžiku Vás "
+"Uživatelské jméno si můžete zvolit na <b>Telegram</b> V tom okamžiku vás "
 "ostatní lidé budou moci vyhledat a kontaktovat i bez  toho, aby museli znát "
-"Vaše telefonní číslo.<br /><br />Můžete použít<b>a-z</b>, <b>0-9</b> a "
+"vaše telefonní číslo.<br /><br />Můžete použít<b>a-z</b>, <b>0-9</b> a "
 "podtržítka.<br />Minimální délka je <b>5</b> znaků."
 
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:35
@@ -740,7 +740,7 @@ msgstr "Výkonný"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
-msgstr "<b>Telegram</b> neomezuje velikost<br> Vašich médií a rozhovorů"
+msgstr "<b>Telegram</b> neomezuje velikost<br> vašich médií a rozhovorů"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
@@ -756,7 +756,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Diskrétní"
+msgstr "Soukromé"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -836,7 +836,7 @@ msgstr "%1 píší"
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:404
 msgid "Unknown"
-msgstr "Neznámý"
+msgstr "Neznámé"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:414
@@ -982,15 +982,15 @@ msgstr "Opustit rozhovor"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to leave this chat?"
-msgstr "Jste si jistý, že chcete opustit rozhovor?"
+msgstr "Opravdu chcete opustit rozhovor?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Clear history"
-msgstr "Vymazat historii"
+msgstr "Smazat historii"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:91
 msgid "Are you sure you want to clear history?"
-msgstr "Jste si jistý, že chcete vymazat historii?"
+msgstr "Opravdu chcete smazat historii?"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
@@ -1024,7 +1024,7 @@ msgstr "Nálepka"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 se připojil k Vašemu zabezpečenému rozhovoru."
+msgstr "%1 se připojil k vašemu zabezpečenému rozhovoru."
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
@@ -1043,7 +1043,7 @@ msgstr "Přidali jste %1"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
 #, qt-format
 msgid "%1 added you"
-msgstr "%1 Vás přidal"
+msgstr "%1 vás přidal"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
 #, qt-format
@@ -1063,7 +1063,7 @@ msgstr "Odstranili jste %1"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
 #, qt-format
 msgid "%1 removed you"
-msgstr "%1 Vás odstranil"
+msgstr "%1 vás odstranil"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
@@ -1228,7 +1228,7 @@ msgstr "%1 poslal mapu do skupiny"
 #: /telegram-app/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr "%1 Vás pozval do skupiny"
+msgstr "%1 vás pozval do skupiny"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
@@ -1249,7 +1249,7 @@ msgstr "%1 pozval %2"
 #: /telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr "%1 Vás odstranil ze skupiny"
+msgstr "%1 vás odstranil ze skupiny"
 
 #: /telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
@@ -1319,7 +1319,7 @@ msgstr "Zahájit rozhovor"
 
 #: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr "Hovor"
+msgstr "Volat"
 
 #: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"

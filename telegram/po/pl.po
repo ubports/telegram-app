@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-27 22:21+0000\n"
-"Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
+"PO-Revision-Date: 2017-10-02 18:37+0000\n"
+"Last-Translator: Paweł Cieniek <cieniek@wp.pl>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports"
 "/telegram-app/pl/>\n"
 "Language: pl\n"
@@ -403,7 +403,7 @@ msgstr "Załączniki dźwiękowe jeszcze nie wspierane ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr "Naciśnij i przytrzymaj ikonę nagrywania"
+msgstr "Musisz kliknąć i przytrzymać ikonę nagrywania"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
@@ -923,7 +923,7 @@ msgstr "Plik"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr "<<<Przesuń aby anulować"
+msgstr "<<< Przesuń, aby anulować"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
