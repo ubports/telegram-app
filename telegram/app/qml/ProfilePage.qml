@@ -375,7 +375,7 @@ Page {
                     width: units.gu(3)
                     height: width
                     anchors.centerIn: parent
-                    source: Qt.resolvedUrl("qrc:/qml/files/phone_grey.png")
+                    name: "add-to-call"
                 }
                 onClicked: event.accepted = false
             }
@@ -398,7 +398,6 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "large"
-                    font.family: "Helvetica"
                     color: Colors.black
                     // TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
                     text: user.phone ? "+" + user.phone : i18n.tr("Unknown")
@@ -408,7 +407,6 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "small"
-                    font.family: "Helvetica"
                     color: Colors.grey
                     // TRANSLATORS: The subtitle for the user's phone field in user profile.
                     text: i18n.tr("Mobile")
@@ -460,7 +458,6 @@ Page {
                     objectName: "profileUserName"
                     id: username_label
                     fontSize: "large"
-                    font.family: "Helvetica"
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     color: Colors.black
@@ -472,7 +469,6 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "small"
-                    font.family: "Helvetica"
                     color: Colors.grey
                     // TRANSLATORS: The subtitle for the user's username field in user profile.
                     text: "Username"
@@ -527,7 +523,7 @@ Page {
                 width: units.gu(3)
                 height: width
                 anchors.centerIn: parent
-                source: Qt.resolvedUrl("qrc:/qml/files/profile_list.png")
+                name: "notification"
             }
         }
 
@@ -545,7 +541,6 @@ Page {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             fontSize: "large"
-            font.family: "Helvetica"
             color: Colors.black
             // TRANSLATORS: Text of the notifications switch label in user profile page.
             text: i18n.tr("Notifications")
@@ -622,7 +617,6 @@ Page {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             fontSize: "large"
-            font.family: "Helvetica"
             color: Colors.black
             // TRANSLATORS: Text of the block user switch label in user profile page.
             text: i18n.tr("Block user")

@@ -61,11 +61,11 @@ Item {
             fillMode: Image.PreserveAspectFit
             source: {
                 if (!message.sent) {
-                    return Qt.resolvedUrl("qrc:/qml/files/msg_clock.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/clock_white.svg");
                 } else if (message.out && message.unread) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_single_white.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/tick_single_white.svg");
                 } else if (message.out) {
-                    return Qt.resolvedUrl("qrc:/qml/files/check_double_white.png");
+                    return Qt.resolvedUrl("qrc:/qml/files/tick_double_white2.svg");
                 } else {
                     return "";
                 }
