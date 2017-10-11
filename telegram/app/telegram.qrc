@@ -75,7 +75,7 @@
         <file>qml/files/background_hd.jpg</file>
         <file>qml/files/call.png</file>
         <file>qml/files/tick_double_white2.svg</file>
-        <file>qml/files/tick_double_white.svg</file>
+        <file>qml/files/tick_single_white.svg</file>
         <file>qml/files/contact-stop.svg</file>
         <file>qml/files/conversation_bubble_arrow.png</file>
         <file>qml/files/delete.png</file>
