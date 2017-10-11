@@ -255,7 +255,6 @@ Item {
         Icon {
             width: units.gu(6)
             height: width
-            //sourceSize: Qt.size(width,height)
             name: video_frame.visible ? "media-playback-start" : "" //don't know where to test it
             anchors.centerIn: parent
         }
