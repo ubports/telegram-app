@@ -128,7 +128,7 @@ Item {
         id: file_handler
         telegram: telegramObject
         target: message
-        defaultThumbnail: "qrc:/qml/files/document.png"
+        defaultThumbnail: "qrc:/qml/files/document.png" 
         onTargetTypeChanged: {
             switch(targetType)
             {
@@ -252,11 +252,11 @@ Item {
         visible: file_handler.targetType == FileHandler.TypeTargetMediaVideo && fileLocation.length != 0
         anchors.fill: media_img
 
-        Image {
+        Icon {
             width: units.gu(6)
             height: width
-            sourceSize: Qt.size(width,height)
-            source: video_frame.visible ? "qrc:/qml/files/attachment_play.png" : ""
+            //sourceSize: Qt.size(width,height)
+            name: video_frame.visible ? "media-playback-start" : "" //don't know where to test it
             anchors.centerIn: parent
         }
     }
@@ -270,16 +270,17 @@ Item {
                 && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
         radius: 3*Devices.density
 
-        Image {
-            width: units.gu(6)
-            height: width
+        Icon {
+            height: units.gu(4)
+            width: height
             anchors.centerIn: parent
-            sourceSize: Qt.size(width,height)
-            source: {
+            color: "white"
+            //sourceSize: Qt.size(width,height)
+            name: {
                 if (file_handler.targetType == FileHandler.TypeTargetUnknown) {
-                    return Qt.resolvedUrl("qrc:/qml/files/attachment_cancel.png"); // indicating error
+                    return "cancel" // indicating error
                 } else {
-                    return Qt.resolvedUrl("qrc:/qml/files/attachment_download.png");
+                    return "save"
                 }
             }
             visible: !downloading
@@ -357,12 +358,13 @@ Item {
         hasMedia: msg_media.hasMedia
     }
 
-    Image {
+    Icon {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
-        height: units.gu(6)
-        width: units.gu(6)
-        source: "qrc:/qml/files/attachment_cancel.png"
+        height: units.gu(4)
+        width: height
+        color: "white"
+        name: "cancel"
         visible: downloading && file_handler.targetType != FileHandler.TypeTargetMediaPhoto && !isSticker
 
         MouseArea {
