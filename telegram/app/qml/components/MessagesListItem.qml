@@ -203,7 +203,7 @@ ListItem {
                     fontSize: "smaller"
                     font.weight: Font.Normal
                     color:  Colors.telegram_blue
-                    visible: message.fwdFromId !== 0 && !message_media.isSticker
+                    visible: message.fwdFromId.classType !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
                     text: visible ? i18n.tr("Forwarded from <b>%1</b>").arg(fwdUser.firstName + " " + fwdUser.lastName) : ""
                 }
