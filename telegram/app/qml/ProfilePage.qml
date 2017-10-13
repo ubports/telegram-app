@@ -375,7 +375,7 @@ Page {
                     width: units.gu(3)
                     height: width
                     anchors.centerIn: parent
-                    name: "add-to-call"
+                    name: "phone-uncategorized-symbolic"
                 }
                 onClicked: event.accepted = false
             }
