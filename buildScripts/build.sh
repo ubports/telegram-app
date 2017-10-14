@@ -15,7 +15,7 @@ echo "Building app..."
 
 cd $TG_DIR/telegram
 mkdir -p $BUILD_DIR_BASENAME/po && cd $BUILD_DIR_BASENAME || exit 1
-$QMAKE_BIN LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/libqtelegram-ae INCLUDEPATH+=$TG_INCS/telegramqml PREFIX=/usr -r .. || exit 1
+$QMAKE_BIN LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/libqtelegram-ae INCLUDEPATH+=$TG_INCS/telegramqml PREFIX=/usr -r .. CONFIG+=debug || exit 1
 #LIBS+=-lunity-scopes INCLUDEPATH+=/usr/include/unity-scopes-0 -r ..
 $MAKE_BIN -j4 || exit 1
 
