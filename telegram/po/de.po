@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-05 16:53+0000\n"
-"Last-Translator: Gerd Sänger <gerdsaenger@t-online.de>\n"
-"Language-Team: German <https://ubpweblate.tnvcomp.com/projects/ubports"
+"PO-Revision-Date: 2017-10-05 19:54+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"Language-Team: German <https://translate.ubports.com/projects/ubports"
 "/telegram-app/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -575,7 +575,7 @@ msgstr "Ein Benutzername muss mindestens 5 Zeichen lang sein."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr "Benutzername wird überprüft …"
+msgstr "Benutzername wird überprüft..."
 
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
@@ -695,7 +695,7 @@ msgstr "Installieren"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr "Beenden"
+msgstr "Schließen"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
@@ -760,7 +760,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Vertraulich"
+msgstr "Privat"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"

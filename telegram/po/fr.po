@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-06 14:44+0000\n"
-"Last-Translator: Reda <adered7@gmail.com>\n"
-"Language-Team: French <https://ubpweblate.tnvcomp.com/projects/ubports"
+"PO-Revision-Date: 2017-10-05 08:45+0000\n"
+"Last-Translator: RedXXIII <adered7@gmail.com>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports"
 "/telegram-app/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -403,7 +403,7 @@ msgstr "Pièce jointe audio non encore prise en charge ;("
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr "Vous devez maintenir appuyé sur l'icone"
+msgstr "Vous devez maintenir appuyée l'icône d'enregistrement"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
@@ -843,7 +843,7 @@ msgstr "Inconnu"
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:414
 msgid "Mobile"
-msgstr "Téléphone portable"
+msgstr "Mobile"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:468
@@ -924,7 +924,7 @@ msgstr "Fichier"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr "<<< Glisser pour effacer"
+msgstr "<<< Glisser pour annuler"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34

@@ -22,7 +22,7 @@ ListItem {
 
     property bool showDivider: true
 
-    property alias icon: image.source
+    property alias icon: image.name
     property alias text: label.text
     property alias showIcon: image.visible
     property alias showProgression: progression.visible
@@ -30,7 +30,7 @@ ListItem {
     height: units.gu(6)
     divider.visible: showDivider
 
-    Image {
+    Icon {
         id: image
         anchors {
             left: parent.left
@@ -38,7 +38,6 @@ ListItem {
             verticalCenter: parent.verticalCenter
         }
         width: visible ? units.gu(3) : 0
-        fillMode: Image.PreserveAspectFit
     }
 
     Label {
