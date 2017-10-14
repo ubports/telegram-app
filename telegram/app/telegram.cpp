@@ -190,7 +190,6 @@ Cutegram::Cutegram(QObject *parent) :
     qmlRegisterType<EmoticonsModel>("Cutegram", 1, 0, "EmoticonsModel");
     qmlRegisterType<StickerFileManager>("Cutegram", 1, 0, "StickerFileManager");
 
-    init_languages();
 }
 
 QSize Cutegram::imageSize(const QString &pt)
@@ -1043,36 +1042,6 @@ QString Cutegram::normalizeText(const QString &text) const
         return text;
 
     return text[0].toUpper() + text.mid(1);
-}
-
-void Cutegram::init_languages()
-{
-    // We're using .po 
-
-    /*
-    QDir dir(p->translationsPath);
-    QStringList languages = dir.entryList( QDir::Files );
-    if( !languages.contains("lang-en.qm") )
-        languages.prepend("lang-en.qm");
-
-    for( int i=0 ; i<languages.size() ; i++ )
-    {
-        QString locale_str = languages[i];
-        locale_str.truncate( locale_str.lastIndexOf('.') );
-        locale_str.remove( 0, locale_str.indexOf('-') + 1 );
-
-        QLocale locale(locale_str);
-
-        QString  lang = QString("%1 (%2)").arg(QLocale::languageToString(locale.language()), QLocale::countryToString(locale.country()));
-        QVariant data = p->translationsPath + "/" + languages[i];
-
-        p->languages.insert( lang, data );
-        p->locales.insert( lang , locale );
-
-        if( lang == AsemanApplication::settings()->value("General/Language","English (UnitedStates)").toString() )
-            setLanguage( lang );
-    }
-    */
 }
 
 void Cutegram::init_theme()
