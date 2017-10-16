@@ -19,12 +19,13 @@ ListItem {
 
     property var dialogPage
     property Dialog dialog
-    property int dialogId: isChat ? dialog.peer.chatId : dialog.peer.userId
+    property int dialogId: isChannel ? dialog.peer.channelId : isChat ? dialog.peer.chatId : dialog.peer.userId
     property bool isChat: dialog.peer.chatId !== 0
+    property bool isChannel: dialog.peer.channelId !== 0
     property bool isMuted: telegram.userData.isMuted(dialogId)
     property bool isEncrypted: dialog.encrypted
     property User user: telegram.user(dialog.encrypted ? encryptedChatUid : dialog.peer.userId)
-    property Chat chat: telegram.chat(dialog.peer.chatId)
+    property Chat chat: telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId)
 
     property EncryptedChat encryptedChat: telegramObject.encryptedChat(dialog.peer.userId)
     property int encryptedChatUid: encryptedChat.adminId === telegram.me
@@ -36,9 +37,9 @@ ListItem {
     property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     property alias isSticker: file_handler.isSticker
 
-    property bool online: isChat ? false : (user.status.classType == image.typeUserStatusOnline)
+    property bool online: isChat || isChannel ? false : (user.status.classType == image.typeUserStatusOnline)
 
-    property string title: isChat ? chat.title : user.firstName + " " + user.lastName
+    property string title: isChat || isChannel ? chat.title : user.firstName + " " + user.lastName
 
     // in delegate -- selected: currentDialog == dialog
     property bool selected: false
@@ -165,7 +166,7 @@ ListItem {
 
         Icon {
             id: contact_group_icon
-            visible: isChat
+            visible: isChat || isChannel
             name: "contact-group"
             anchors {
                 top: parent.top
@@ -216,14 +217,14 @@ ListItem {
 
         Text {
             id: message_author
-            visible: showMessage && message && (message.out || isChat) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
+            visible: showMessage && message && (message.out || isChat || isChannel) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.telegram_blue
             text: {
                 if (!message || dialog.typingUsers.length > 0) return '';
                 if (message.out) return i18n.tr("You: ");
-                if (isChat) return telegramObject.user(message.fromId).firstName + ': ';
+                if (isChat || isChannel) return telegramObject.user(message.fromId).firstName + ': ';
                 return '';
             }
         }

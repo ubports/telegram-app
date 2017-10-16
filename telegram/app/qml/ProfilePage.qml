@@ -23,9 +23,10 @@ Page {
     property Dialog dialog
 
     property bool isChat: dialog.peer.chatId != 0
+    property bool isChannel: dialog.peer.channelId != 0
     property User user: telegram.user(dialog.encrypted ? enChatUid : dialog.peer.userId)
     property Chat chat: telegram.chat(dialog.peer.chatId)
-    property variant dialogId: isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
+    property variant dialogId: isChannel ? dialog.peer.channelId : isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
 
     property EncryptedChat enchat: telegram.encryptedChat(dialog.peer.userId)
     property int enChatUid: enchat.adminId==telegram.me ? enchat.participantId : enchat.adminId
@@ -59,7 +60,7 @@ Page {
 
     header: PageHeader {
         title: profile_page.title
-        trailingActionBar.actions: isChat ? groupActions : noActions
+        trailingActionBar.actions: isChat || isChannel ? groupActions : noActions
         leadingActionBar.actions: Action {
             id: back_action
             objectName: "profileBack"
@@ -72,6 +73,14 @@ Page {
 
     onIsChatChanged: {
         if (isChat) {
+            online_count_refresher.restart()
+        } else {
+            online_count_refresher.stop()
+        }
+    }
+
+    onIsChannelChanged: {
+        if (isChannel) {
             online_count_refresher.restart()
         } else {
             online_count_refresher.stop()
@@ -92,7 +101,7 @@ Page {
         if (dialogId == 0) return;
 
         notify_check.silentChecked = !telegram.userData.isMuted(dialogId);
-        if (isChat) {
+        if (isChat || isChannel) {
             telegram.messagesGetFullChat(chat.id)
         } else {
             telegram.usersGetFullUser(user.id)
@@ -272,7 +281,7 @@ Page {
         title.text: {
             if (!dialog) return "";
 
-            if (isChat)
+            if (isChat || isChannel)
                 return chat ? chat.title : "" // emojis.textToEmojiText(chat ? chat.title : "", 18, true);
             else
                 return user ? user.firstName + " " + user.lastName : ""//emojis.textToEmojiText(user ? user.firstName + " " + user.lastName : "", 18, true);
@@ -284,7 +293,7 @@ Page {
             var result = ""
             var list = dialog.typingUsers
             if (list.length == 0) {
-                if( isChat ) {
+                if( isChat || isChannel ) {
                     if (onlineCount > 0) {
                         // TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
                         return i18n.tr("%1 members, %2 online").arg(chat.participantsCount).arg(onlineCount)
@@ -348,7 +357,7 @@ Page {
             left: parent.left
             right: parent.right
         }
-        visible: !isChat
+        visible: !isChat && !isChannel
         height: visible ? implicitHeight : 0
 
         ListItem.Empty {
@@ -586,7 +595,7 @@ Page {
             right: parent.right
         }
         showDivider: false
-        visible: !isChat
+        visible: !isChat && !isChannel
 
         onClicked: {
             block_check.checked = !block_check.checked;
@@ -720,7 +729,7 @@ Page {
         id: online_count_refresher
         interval: 2000
         repeat: true
-        triggeredOnStart: isChat
+        triggeredOnStart: isChat || isChannel
         onTriggered: {
             onlineCount = 0
             var chatFull = telegram.chatFull(chat.id)

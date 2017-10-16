@@ -30,8 +30,9 @@ Item {
     property Dialog dialog
 
     property bool isChat: dialog.peer.chatId != 0
+    property bool isChannel: dialog.peer.channelId != 0
     property User user: dialog? telegram.user(dialog.encrypted?enChatUid:dialog.peer.userId) : telegram.nullUser
-    property Chat chat: dialog? telegram.chat(dialog.peer.chatId) : telegram.nullChat
+    property Chat chat: dialog? telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId) : telegram.nullChat
 
     property EncryptedChat enchat: telegram.encryptedChat(dialog?dialog.peer.userId:0)
     property int enChatUid: enchat.adminId==telegram.me? enchat.participantId : enchat.adminId
@@ -44,12 +45,12 @@ Item {
 
     FileHandler {
         id: file_handler
-        target: isChat? chat : user
+        target: isChat || isChannel? chat : user
         telegram: contact_image.telegram
         defaultThumbnail: {
             if(user.id == telegram.cutegramId)
                 return "files/icon-normal.png"
-            if(isChat)
+            if(isChat || isChannel)
                 return "files/group.png"
             else
                 return "files/user.png"
