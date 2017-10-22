@@ -15,19 +15,20 @@ PageHeader {
     property Dialog dialog
 
     property bool isChat: dialog ? dialog.peer.chatId != 0 : false
+    property bool isChannel: dialog ? dialog.peer.channelId != 0 : false
     property User user: telegram.user(dialog.encrypted ? enChatUid : dialog.peer.userId)
-    property Chat chat: telegram.chat(dialog.peer.chatId)
-    property int dialogId: isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
+    property Chat chat: telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId)
+    property int dialogId: isChannel ? dialog.peer.channelId : isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
 
     property EncryptedChat enchat: telegram.encryptedChat(dialog.peer.userId)
     property int enChatUid: enchat.adminId==telegram.me ? enchat.participantId : enchat.adminId
 
-    property bool isOnline: !isChat && user.status.classType == userStatusType.typeUserStatusOnline
+    property bool isOnline: !isChat && !isChannel && user.status.classType == userStatusType.typeUserStatusOnline
     property bool isSecretChat: dialog.encrypted
     property bool isConnecting: !telegram.connected
     property int onlineCount: {
         var result = 0;
-        if (isChat) {
+        if (isChat || isChannel) {
             var chatFull = telegram.chatFull(chat.id);
             var participants = chatFull.participants.participants;
             for(var i=0; i<participants.count; i++) {
@@ -43,7 +44,7 @@ PageHeader {
     flickable: null
 
     property string title: {
-        if (isChat) {
+        if (isChat || isChannel) {
             return chat.title;
         } else {
             return user.firstName + " " + user.lastName;
@@ -54,7 +55,7 @@ PageHeader {
         var result = "";
         var list = dialog.typingUsers;
         if (list.length > 0) {
-            if (isChat) {
+            if (isChat || isChannel) {
                 for (var i = 0; i < list.length; i++) {
                     var userId = list[i];
                     var tmpUser = telegram.user(userId);
@@ -73,7 +74,7 @@ PageHeader {
                 return i18n.tr("typing...");
             }
         } else {
-            if (isChat) {
+            if (isChat || isChannel) {
                 if (onlineCount > 0) {
                     // TRANSLATORS: %1 is group chat member count, %2 is online member count.
                     result += i18n.tr("%1 members, %2 online").arg(chat.participantsCount).arg(onlineCount)

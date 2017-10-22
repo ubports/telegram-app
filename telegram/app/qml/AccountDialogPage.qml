@@ -18,9 +18,10 @@ Page {
     property Dialog currentDialog: telegramObject.nullDialog
 
     property bool isChat: currentDialog ? currentDialog.peer.chatId != 0 : false
+    property bool isChannel: currentDialog ? currentDialog.peer.channelId != 0 : false
     property User user: telegramObject.user(currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
-    property Chat chat: telegramObject.chat(currentDialog.peer.chatId)
-    property int dialogId: isChat ? currentDialog.peer.chatId : (currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
+    property Chat chat: telegramObject.chat(isChannel ? currentDialog.peer.channelId : currentDialog.peer.chatId)
+    property int dialogId: isChannel ? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : (currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
 
     property EncryptedChat enchat: telegramObject.encryptedChat(currentDialog.peer.userId)
     property int enChatUid: enchat.adminId==telegramObject.me ? enchat.participantId : enchat.adminId
@@ -29,7 +30,7 @@ Page {
         Action {
             objectName: "groupInfo"
             iconName: "stock_contact"
-            text: isChat ? i18n.tr("Group Info") : i18n.tr("Profile Info")
+            text: isChannel ? i18n.tr("Channel Info") : isChat ? i18n.tr("Group Info") : i18n.tr("Profile Info")
             onTriggered: {
                 Qt.inputMethod.hide();
                 headerClicked();
@@ -130,7 +131,7 @@ Page {
     Component.onCompleted: {
         // This is needed to have the username list ready for @ completion
         // CuteGram upstream calls this implicitly because of the items in the top bar.
-        if (isChat) {
+        if (isChat || isChannel) {
             telegram.messagesGetFullChat(chat.id)
         }
     }

@@ -33,6 +33,8 @@ Page {
 
         var dId = dialog.peer.chatId
         if(dId == 0)
+            dId = dialog.peer.channelId
+        if(dId == 0)
             dId = dialog.peer.userId
 
         currentDialog = dialog
@@ -154,7 +156,7 @@ Page {
                 pageStack.clear();
                 pageStack.addPageToNextColumn(account_page, account_dialog_page, {"maxId": 0});
 
-                var tag = currentDialog.peer.chatId ? currentDialog.peer.chatId : currentDialog.peer.userId;
+                var tag = currentDialog.peer.channelId ? currentDialog.peer.channelId : currentDialog.peer.chatId ? currentDialog.peer.chatId : currentDialog.peer.userId;
                 pushClient.clearPersistent([tag]);
             }
         }

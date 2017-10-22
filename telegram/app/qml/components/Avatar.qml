@@ -15,18 +15,19 @@ Item {
     property Dialog dialog
 
     property bool isChat: dialog.peer.chatId !== 0
+    property bool isChannel: dialog.peer.channelId !== 0
     property User user: dialog
             ? telegram.user(dialog.encrypted ? enChatUid : dialog.peer.userId)
             : telegram.nullUser
     property Chat chat: dialog
-            ? telegram.chat(dialog.peer.chatId)
+            ? telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId)
             : telegram.nullChat
     property int avatarId: user ? user.id : (chat ? chat.id : 0)
 
     property EncryptedChat enchat: telegram.encryptedChat(dialog ? dialog.peer.userId : 0)
     property int enChatUid: enchat.adminId === telegram.me ? enchat.participantId : enchat.adminId
 
-    property string title: isChat ? chat.title : user.firstName + " " + user.lastName
+    property string title: isChat || isChannel ? chat.title : user.firstName + " " + user.lastName
     property bool hasThumb: file_handler.thumbPath != ""
     property bool ubuntuShape: true
 
@@ -34,13 +35,13 @@ Item {
 
     FileHandler {
         id: file_handler
-        target: isChat ? chat : user
+        target: isChat || isChannel ? chat : user
         telegram: avatar.telegram
         defaultThumbnail: {
             if (user.id === telegram.cutegramId) {
                 return ""// TODO return Telegram for Ubuntu icon
             }
-            return ""; //isChat ? "files/group.png" : "files/user.png";
+            return ""; //isChat || isChannel ? "files/group.png" : "files/user.png";
         }
     }
 

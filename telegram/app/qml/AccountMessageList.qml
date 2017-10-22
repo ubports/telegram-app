@@ -38,6 +38,7 @@ Rectangle {
     property alias maxId: messages_model.maxId
 
     property bool isChat: currentDialog ? currentDialog.peer.chatId != 0 : false
+    property bool isChannel: currentDialog ? currentDialog.peer.channelId != 0 : false
 
     property EncryptedChat enchat: telegramObject.encryptedChat(currentDialog.peer.userId)
     property int enChatUid: enchat.adminId==telegramObject.me? enchat.participantId : enchat.adminId
@@ -110,7 +111,7 @@ Rectangle {
             messages_model.refresh()
         }
         Component.onCompleted: {
-            if (!isChat) {
+            if (!isChat && !isChannel) {
                 start()
             }
         }
@@ -227,7 +228,7 @@ Rectangle {
             maximumMediaWidth: acc_msg_list.maximumMediaWidth
             message: item
             width: mlist.width
-            visibleNames: isChat
+            visibleNames: isChat || isChannel
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
 
             leadingActions: ListItemActions {
