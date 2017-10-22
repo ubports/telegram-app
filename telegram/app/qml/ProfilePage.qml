@@ -101,8 +101,10 @@ Page {
         if (dialogId == 0) return;
 
         notify_check.silentChecked = !telegram.userData.isMuted(dialogId);
-        if (isChat || isChannel) {
+        if (isChat) {
             telegram.messagesGetFullChat(chat.id)
+        } else if (isChannel){
+            telegram.channelsGetFullChannel(chat.id, chat.accessHash)
         } else {
             telegram.usersGetFullUser(user.id)
         }

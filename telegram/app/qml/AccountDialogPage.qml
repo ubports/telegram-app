@@ -131,9 +131,14 @@ Page {
     Component.onCompleted: {
         // This is needed to have the username list ready for @ completion
         // CuteGram upstream calls this implicitly because of the items in the top bar.
-        if (isChat || isChannel) {
+        if (isChat)
+        {
             telegram.messagesGetFullChat(chat.id)
+        } else if (isChannel)
+        {
+            telegram.channelsGetFullChannel(chat.id, chat.accessHash)
         }
+
     }
 
     Component.onDestruction: {

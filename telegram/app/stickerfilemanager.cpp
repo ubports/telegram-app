@@ -82,8 +82,10 @@ void StickerFileManager::recheck()
 
     connect(p->telegram->telegram(), SIGNAL(messagesSendMediaAnswer(qint64,UpdatesType)),
             this, SLOT(messagesSendDocumentAnswer(qint64,UpdatesType)));
-    connect(p->telegram->telegram(), SIGNAL(messagesSendDocumentAnswer(qint64,UpdatesType)),
-            this, SLOT(messagesSendDocumentAnswer(qint64,UpdatesType)));
+
+    ////TODO: Find out what to do now since this API method is no longer available!
+    //connect(p->telegram->telegram(), SIGNAL(messagesSendDocumentAnswer(qint64,UpdatesType)),
+    //        this, SLOT(messagesSendDocumentAnswer(qint64,UpdatesType)));
 }
 
 void StickerFileManager::messagesSendDocumentAnswer(qint64 id, const UpdatesType &updates)
