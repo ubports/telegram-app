@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-28 13:27+0000\n"
+"PO-Revision-Date: 2017-10-18 12:17+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.ubports.com/projects/ubports"
 "/telegram-app/pt/>\n"
@@ -403,7 +403,7 @@ msgstr "Mensagens de áudio ainda não suportadas"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
-msgstr "Você tem de pressionar e segurar no ícone de gravação"
+msgstr "Pressione e segure o ícone de gravação"
 
 #: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
@@ -842,7 +842,7 @@ msgstr "Desconhecido"
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:414
 msgid "Mobile"
-msgstr "Telemóvel"
+msgstr "Telefone"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:468
@@ -1019,7 +1019,7 @@ msgstr "Mensagem de voz"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr "Sticker"
+msgstr "Autocolante"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
