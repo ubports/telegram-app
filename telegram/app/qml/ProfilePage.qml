@@ -15,9 +15,6 @@ import "js/time.js" as Time
 import "js/colors.js" as Colors
 
 Page {
-    id: profile_page
-    title: isChat ? i18n.tr("Group Info") : i18n.tr("Contact Info")
-    objectName: "profilePage"
 
     property Telegram telegram
     property Dialog dialog
@@ -25,7 +22,7 @@ Page {
     property bool isChat: dialog.peer.chatId != 0
     property bool isChannel: dialog.peer.channelId != 0
     property User user: telegram.user(dialog.encrypted ? enChatUid : dialog.peer.userId)
-    property Chat chat: telegram.chat(dialog.peer.chatId)
+    property Chat chat: telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId)
     property variant dialogId: isChannel ? dialog.peer.channelId : isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
 
     property EncryptedChat enchat: telegram.encryptedChat(dialog.peer.userId)
@@ -57,6 +54,10 @@ Page {
             onTriggered: changeChatTitle()
         }
     ]
+
+    id: profile_page
+    objectName: "profilePage"
+    title: isChannel ? i18n.tr("Channel Info") : isChat ? i18n.tr("Group Info") : i18n.tr("Contact Info")
 
     header: PageHeader {
         title: profile_page.title
@@ -104,7 +105,7 @@ Page {
         if (isChat) {
             telegram.messagesGetFullChat(chat.id)
         } else if (isChannel){
-            telegram.channelsGetFullChannel(chat.id, chat.accessHash)
+            telegram.channelsGetFullChannel(chat.id)
         } else {
             telegram.usersGetFullUser(user.id)
         }

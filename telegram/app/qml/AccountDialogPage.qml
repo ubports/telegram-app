@@ -136,7 +136,7 @@ Page {
             telegram.messagesGetFullChat(chat.id)
         } else if (isChannel)
         {
-            telegram.channelsGetFullChannel(chat.id, chat.accessHash)
+            telegram.channelsGetFullChannel(chat.id)
         }
 
     }
