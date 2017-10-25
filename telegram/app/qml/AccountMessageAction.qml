@@ -15,18 +15,7 @@ Item {
     property User fromUser: telegramObject.user(message.fromId)
     property FileLocation imgLocation: action.photo.sizes.first? action.photo.sizes.first.location : telegramObject.nullLocation
 
-    property real typeMessageActionEmpty:               0xb6aef7b0
-    property real typeMessageActionChatCreate:          0xa6638b9a
-    property real typeMessageActionChatEditTitle:       0xb5a1ce5a
-    property real typeMessageActionChatEditPhoto:       0x7fcb13a8
-    property real typeMessageActionChatDeletePhoto:     0x95e3fbef
-    property real typeMessageActionChatAddUser:         0x5e3cfc4b
-    property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
-    property real typeMessageActionGeoChatCreate:       0x6f038ebc
-    property real typeMessageActionGeoChatCheckin:      0xc7d53de
-    property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
-
-    property bool hasAction: action.classType != typeMessageActionEmpty
+    property bool hasAction: action.messageActionEnum != MessageAction.Empty
 
     onImgLocationChanged: {
         if(imgLocation == telegramObject.nullLocation)
@@ -57,8 +46,8 @@ Item {
                 userName = userName.trim()
                 fromUserName = fromUserName.trim()
 
-                switch(action.classType) {
-                case typeMessageActionChatCreate:
+                switch(action.messageActionEnum) {
+                case MessageAction.ChatCreate:
                     if (action.title == "Secret Chat") {
                         if (user.id == telegramObject.me)
                             res = i18n.tr("You have invited %1 to join a secret chat.").arg(fromUserName)
@@ -72,7 +61,7 @@ Item {
                     }
                     break
 
-                case typeMessageActionChatAddUser:
+                case MessageAction.ChatAddUser:
                     if (fromUser.id == telegramObject.me)
                         res = i18n.tr("You added <b>%1</b>").arg(userName)
                     else if (user.id == telegramObject.me)
@@ -81,7 +70,7 @@ Item {
                         res = i18n.tr("<b>%1</b> added <b>%2</b>").arg(fromUserName).arg(userName)
                     break
 
-                case typeMessageActionChatDeleteUser:
+                case MessageAction.ChatDeleteUser:
                     if (user.id == fromUser.id) {
                         // TRANSLATORS: %1 is the person, who left the group chat.
                         res = i18n.tr("<b>%1</b> left the group").arg(userName)
@@ -95,7 +84,7 @@ Item {
                     }
                     break
 
-                case typeMessageActionChatEditTitle:
+                case MessageAction.ChatEditTitle:
                     var titleText = action.title.replace("\"", "")
 
                     if (fromUser.id == telegramObject.me)
@@ -106,7 +95,7 @@ Item {
                     }
                     break
 
-                case typeMessageActionChatEditPhoto:
+                case MessageAction.ChatEditPhoto:
                     // TRANSLATORS: %1 is the person, who changed the group photo.
                     if (fromUser.id == telegramObject.me)
                         res = i18n.tr("You changed the group photo")
@@ -114,7 +103,7 @@ Item {
                         res = i18n.tr("<b>%1</b> changed the group photo").arg(fromUserName)
                     break
 
-                case typeMessageActionChatDeletePhoto:
+                case MessageAction.ChatDeletePhoto:
                     // TRANSLATORS: %1 is the person, who deleted the group photo.
                     if (fromUser.id == telegramObject.me)
                         res = i18n.tr("You removed the group photo")
@@ -122,14 +111,14 @@ Item {
                         res = i18n.tr("<b>%1</b> removed the group photo").arg(fromUserName)
                     break
 
-                case typeMessageActionChatJoinedByLink:
+                case MessageAction.ChatJoinedByLink:
                     if (fromUser.id == telegramObject.me)
                         res = i18n.tr("You joined the group via invite link")
                     else
                         res = i18n.tr("<b>%1</b> joined the group via invite link").arg(fromUserName)
                     break
 
-                case typeMessageActionEmpty:
+                case MessageAction.Empty:
                     break;
 
                 default:

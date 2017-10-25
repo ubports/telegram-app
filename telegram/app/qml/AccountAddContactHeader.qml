@@ -6,7 +6,6 @@ Rectangle {
     id: add_contact_header
 
     property real typeUserForeign: 0x75cf7a8
-    property real typeUserRequest: 0xd9ccc4ef
 
     property Telegram telegramObject
     property Dialog currentDialog: telegramObject.nullDialog
