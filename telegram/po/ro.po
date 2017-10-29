@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-01 21:27+0000\n"
+"PO-Revision-Date: 2017-10-29 12:24+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
-"Language-Team: Romanian <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Romanian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -190,7 +190,7 @@ msgstr "Redirecţionează"
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr "Ştergeţi"
+msgstr "Șterge"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
