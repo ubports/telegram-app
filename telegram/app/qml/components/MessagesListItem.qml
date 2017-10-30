@@ -37,6 +37,7 @@ ListItem {
     property Message message
     property string messageText: message.message
     property string messageHtmlText: parseText(message.message)
+    property int messageId: message.id
     property User user: telegramObject.user(message.fromId)
     property User fwdUser: telegramObject.user(message.fwdFromId ? message.fwdFromId.userId : 0)
 
@@ -262,7 +263,7 @@ ListItem {
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: message_item.messageHtmlText
+                        text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
                         color: message.out? "aliceblue" : "black"
                         onLinkActivated: {
                             if (link.slice(0,6) == "tag://") {

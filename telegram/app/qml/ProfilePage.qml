@@ -121,10 +121,7 @@ Page {
             if (id != dialogId) return;
             notify_check.silentChecked = !telegram.userData.isMuted(id);
         }
-        // onValueChanged: {
-        //     if (key != "love") return;
-        //     love_check.checked = (telegram.userData.value("love") == dialogId);
-        // }
+
     }
 
     Connections {
@@ -285,13 +282,12 @@ Page {
             if (!dialog) return "";
 
             if (isChat || isChannel)
-                return chat ? chat.title : "" // emojis.textToEmojiText(chat ? chat.title : "", 18, true);
+                return chat ? chat.title : ""
             else
-                return user ? user.firstName + " " + user.lastName : ""//emojis.textToEmojiText(user ? user.firstName + " " + user.lastName : "", 18, true);
+                return user ? user.firstName + " " + user.lastName : ""
         }
 
         subtitle.text: {
-            //groupModel.count + " " + i18n.tr("members")
 
             var result = ""
             var list = dialog.typingUsers

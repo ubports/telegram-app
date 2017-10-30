@@ -38,10 +38,7 @@ Item {
         target: isChat || isChannel ? chat : user
         telegram: avatar.telegram
         defaultThumbnail: {
-            if (user.id === telegram.cutegramId) {
-                return ""// TODO return Telegram for Ubuntu icon
-            }
-            return ""; //isChat || isChannel ? "files/group.png" : "files/user.png";
+            return "";
         }
     }
 

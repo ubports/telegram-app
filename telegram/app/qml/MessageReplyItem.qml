@@ -47,8 +47,6 @@ Item {
 
             Label {
                 id: name_text
-                // font.pixelSize: Math.floor(11*Devices.fontDensity)
-                // font.family: AsemanApp.globalFont.family
                 fontSize: "small"
                 font.weight: Font.Normal
                 color: Colors.telegram_blue
@@ -58,7 +56,7 @@ Item {
 
                     var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
                     var replyUser = telegram.user(replyMsg.fromId)
-                    return replyUser.firstName + " " + replyUser.lastName
+                    return "ID: " + message.replyToMsgId + ": " + replyUser.firstName + " " + replyUser.lastName
                 }
             }
 

@@ -48,8 +48,6 @@ Item {
         target: isChat || isChannel? chat : user
         telegram: contact_image.telegram
         defaultThumbnail: {
-            if(user.id == telegram.cutegramId)
-                return "files/icon-normal.png"
             if(isChat || isChannel)
                 return "files/group.png"
             else
