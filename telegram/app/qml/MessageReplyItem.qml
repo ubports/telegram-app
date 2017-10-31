@@ -56,7 +56,8 @@ Item {
 
                     var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
                     var replyUser = telegram.user(replyMsg.fromId)
-                    return "ID: " + message.replyToMsgId + ": " + replyUser.firstName + " " + replyUser.lastName
+                    return replyUser.firstName + " " + replyUser.lastName
+                    // return "ID: " + message.replyToMsgId + ": " + replyUser.firstName + " " + replyUser.lastName
                 }
             }
 
