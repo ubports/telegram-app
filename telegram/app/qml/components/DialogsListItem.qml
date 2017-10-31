@@ -33,6 +33,8 @@ ListItem {
 
     property bool showMessage: true
     property Message message: telegram.message(dialog.topMessage)
+    property MessageAction action: message.action
+    property bool hasAction: action.messageActionEnum != MessageAction.Empty
     property variant messageDate: CalendarConv.fromTime_t(message ? message.date : 0)
     property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     property alias isSticker: file_handler.isSticker
@@ -43,14 +45,6 @@ ListItem {
 
     // in delegate -- selected: currentDialog == dialog
     property bool selected: false
-
-    property real typeMessageActionEmpty:               0xb6aef7b0
-    property real typeMessageActionChatCreate:          0xa6638b9a
-    property real typeMessageActionChatAddUser:         0x5e3cfc4b
-    property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
-    property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
-    property real typeMessageActionChatSentImage:       0xB6AEF7B0
-    property real typeMessageActionChatChangeTitle:     0xB5A1CE5A
 
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
@@ -217,7 +211,7 @@ ListItem {
 
         Text {
             id: message_author
-            visible: showMessage && message && (message.out || isChat || isChannel) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
+            visible: showMessage && message && (message.out || isChat || isChannel) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == MessageAction.Empty)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.telegram_blue
@@ -246,13 +240,13 @@ ListItem {
                     // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
                     return i18n.tr("typing...")
                 } else {
-                    if (!message) return "";
+                    if (!message) return "(invalid_message id) " + message.unifiedId;
 
                     // We use emojis in our font currently, so no need to replace them here for now
                     //return emojis.bodyTextToEmojiText(message.message, 16, true);
 
                     if (message.message == "") {
-                        var res = ""
+                        var res = "(" + message.unifiedId + ")";
                         var user = telegramObject.user(message.action.userId) 
                         var fromUser = telegramObject.user(message.fromId)
                         var userName = user.firstName + " " + user.lastName
@@ -260,8 +254,8 @@ ListItem {
                         userName = userName.trim()
                         fromUserName = fromUserName.trim()
 
-                        switch(message.action.classType) {
-                            case typeMessageActionChatChangeTitle:
+                        switch(message.action.messageActionEnum) {
+                            case MessageAction.ChatEditTitle:
                                 if (fromUserName != "") {
                                     if(fromUser.id == telegramObject.me)
                                         res = i18n.tr("You changed the group title to %1").arg(message.action.title)
@@ -270,7 +264,7 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatSentImage:
+                            case MessageAction.Empty:
                                 if (fromUserName != "") {
                                     if (isAudioMessage)
                                         res = i18n.tr("Voice message")
@@ -284,7 +278,7 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatCreate:
+                            case MessageAction.ChatCreate:
                                 if (message.action.title == "Secret Chat") {
                                     if (user.id == telegramObject.me)
                                         res = i18n.tr("%1 joined your secret chat.").arg(fromUserName)
@@ -298,7 +292,7 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatAddUser:
+                            case MessageAction.ChatAddUser:
                                 if (fromUser.id == telegramObject.me)
                                     res = i18n.tr("You added %1").arg(userName)
                                 else if (user.id == telegramObject.me)
@@ -307,7 +301,7 @@ ListItem {
                                     res = i18n.tr("%1 added %2").arg(fromUserName).arg(userName)
                                 break
 
-                            case typeMessageActionChatDeleteUser:
+                            case MessageAction.ChatDeleteUser:
                                 if(user.id == fromUser.id) {
                                     res = i18n.tr("%1 left the group").arg(userName)
                                 } else {
@@ -320,16 +314,12 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatJoinedByLink:
+                            case MessageAction.ChatJoinedByLink:
                                 if(fromUser.id == telegramObject.me)
                                     res = i18n.tr("You joined the group via invite link")
                                 else
                                     res = i18n.tr("%1 joined the group via invite link").arg(fromUserName)
                                 break
-
-                            case typeMessageActionEmpty:
-                                res = i18n.tr("%1 is currently offline").arg(title);
-                                break;
 
                             default:
                                 break
