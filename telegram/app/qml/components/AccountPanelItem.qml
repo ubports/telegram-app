@@ -21,11 +21,13 @@ ListItem {
     id: item
 
     property bool showDivider: true
+    property bool showProportionalShape: false
 
     property alias icon: image.name
     property alias text: label.text
     property alias showIcon: image.visible
     property alias showProgression: progression.visible
+    property alias userImage: proportionalShape.source
 
     height: units.gu(6)
     divider.visible: showDivider
@@ -38,12 +40,25 @@ ListItem {
             verticalCenter: parent.verticalCenter
         }
         width: visible ? units.gu(3) : 0
+        visible: !showProportionalShape
+    }
+
+    ProportionalShape {
+        id: proportionalShape
+        anchors {
+            left: parent.left
+            leftMargin: units.gu(2)
+            verticalCenter: parent.verticalCenter
+        }
+        width: visible ? units.gu(5) : 0
+        visible: showProportionalShape
+        aspect: UbuntuShape.Flat
     }
 
     Label {
         id: label
         anchors {
-            left: image.right
+            left: image.visible ? image.right : proportionalShape.right
             leftMargin: units.gu(3)
             verticalCenter: parent.verticalCenter
         }

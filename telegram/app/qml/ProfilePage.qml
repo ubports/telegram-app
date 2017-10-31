@@ -375,7 +375,7 @@ Page {
                     width: units.gu(3)
                     height: width
                     anchors.centerIn: parent
-                    name: "add-to-call"
+                    name: "phone-uncategorized-symbolic"
                 }
                 onClicked: event.accepted = false
             }
@@ -430,7 +430,8 @@ Page {
             highlightWhenPressed: false
             visible: username_label.text != ""
 
-            Item {
+
+            AbstractButton {
                 id: username_spacer
                 width: parent.height
                 height: width
@@ -438,6 +439,12 @@ Page {
                     top: parent.top
                     left: parent.left
                     bottom: parent.bottom
+                }
+                Icon {
+                    width: units.gu(3)
+                    height: width
+                    anchors.centerIn: parent
+                    name: "tag"
                 }
             }
 
@@ -591,8 +598,8 @@ Page {
         onClicked: {
             block_check.checked = !block_check.checked;
         }
-
-        Item {
+       
+        AbstractButton {
             id: blocked_spacer
             width: parent.height
             height: width
@@ -600,6 +607,12 @@ Page {
                 top: parent.top
                 left: parent.left
                 bottom: parent.bottom
+            }
+            Image {
+                width: units.gu(3)
+                height: width
+                anchors.centerIn: parent
+                source: "qrc:/qml/files/contact-stop.svg"
             }
         }
 
