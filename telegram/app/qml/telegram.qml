@@ -228,6 +228,8 @@ MainView {
         id: account_list
 
         onUnreadCountChanged: {
+            if (!pushClient)
+                return;
             pushClient.count = unreadCount;
             if (unreadCount == 0) {
                 pushClient.clearPersistent([]);
