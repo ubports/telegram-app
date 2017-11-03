@@ -14,10 +14,11 @@ Item {
     property Telegram telegram
     property Message message
     property Message replyMessage
+    property Dialog dialog
 
     property real maximumWidth: 100
 
-    signal messageFocusRequest(int msgId)
+    signal messageFocusRequest(int msgId, int channelId)
 
     Row {
         id: row
@@ -44,10 +45,9 @@ Item {
                 text: {
                     if(!replyMessage && (!message || message.replyToMsgId == 0))
                         return ""
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
+                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
                     var replyUser = telegram.user(replyMsg.fromId)
                     return replyUser.firstName + " " + replyUser.lastName
-                    // return "ID: " + message.replyToMsgId + ": " + replyUser.firstName + " " + replyUser.lastName
                 }
             }
 
@@ -67,7 +67,7 @@ Item {
                     if(!replyMessage && (!message || message.replyToMsgId == 0))
                         return 0
 
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
+                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
                     return replyMsg.media
                 }
 
@@ -145,7 +145,7 @@ Item {
                     if(!replyMessage && (!message || message.replyToMsgId == 0))
                         return ""
 
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
+                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
                     return replyMsg.message
                 }
 
@@ -160,8 +160,8 @@ Item {
             if(!replyMessage && (!message || message.replyToMsgId == 0))
                 return
 
-            var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
-            msg_reply.messageFocusRequest(replyMsg.id)
+            var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
+            msg_reply.messageFocusRequest(replyMsg.id, dialog.peer.channelId)
         }
     }
 }

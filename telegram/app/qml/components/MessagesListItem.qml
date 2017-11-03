@@ -35,9 +35,9 @@ ListItem {
     property bool visibleNames: false
 
     property Message message
+    property Dialog dialog
     property string messageText: message.message
     property string messageHtmlText: parseText(message.message)
-    // property int messageId: message.id
     property User user: telegramObject.user(message.fromId)
     property User fwdUser: telegramObject.user(message.fwdFromId ? message.fwdFromId.userId : 0)
 
@@ -61,7 +61,7 @@ ListItem {
 
     signal dialogRequest(variant dialog);
     signal tagSearchRequest(string tag);
-    signal messageFocusRequest(int msgId);
+    signal messageFocusRequest(int msgId, int channelId);
     signal previewRequest(int type, string path)
 
     // Taken from messaging-app
@@ -213,8 +213,9 @@ ListItem {
                     id: message_reply
                     telegram: telegramObject
                     message: message_item.message
+                    dialog: message_item.dialog
                     maximumWidth: message_item.maximumWidth
-                    onMessageFocusRequest: message_item.messageFocusRequest(msgId)
+                    onMessageFocusRequest: message_item.messageFocusRequest(msgId, message_item.dialog.peer.channelId)
                 }
 
                 AccountMessageUpload {

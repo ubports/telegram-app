@@ -49,7 +49,7 @@ Rectangle {
     signal focusRequest()
     signal dialogRequest(variant dialogObject)
     signal tagSearchRequest(string tag)
-    signal replyToRequest(int msgId)
+    signal replyToRequest(int msgId, int channelId)
     signal rejectSecretRequest()
 
     onIsActiveChanged: {
@@ -227,6 +227,7 @@ Rectangle {
             maximumMediaHeight: acc_msg_list.maximumMediaHeight
             maximumMediaWidth: acc_msg_list.maximumMediaWidth
             message: item
+            dialog: currentDialog
             width: mlist.width
             visibleNames: isChat || isChannel
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
@@ -254,7 +255,7 @@ Rectangle {
                         iconName: "mail-reply"
                         text: i18n.tr("Reply")
                         onTriggered: {
-                            acc_msg_list.replyToRequest(message.id);
+                            acc_msg_list.replyToRequest(message.id, currentDialog.peer.channelId);
                         }
                     },
                     Action {
@@ -280,7 +281,7 @@ Rectangle {
 
             onDialogRequest: acc_msg_list.dialogRequest(dialog)
             onTagSearchRequest: acc_msg_list.tagSearchRequest(tag)
-            onMessageFocusRequest: focusOnMessage(msgId)
+            onMessageFocusRequest: focusOnMessage(msgId, dialog.peer.channelId)
 
             onPressAndHold: {
                 if (!message_item.isSystemMessage) {
@@ -575,8 +576,8 @@ Rectangle {
         focus_msg_timer.msgId = msgId
     }
 
-    function focusOnMessage(msgId) {
-        var idx = messages_model.indexOf(msgId)
+    function focusOnMessage(msgId, channelId) {
+        var idx = messages_model.indexOf(msgId, channelId)
         mlist.positionViewAtIndex(idx, ListView.Center)
     }
 

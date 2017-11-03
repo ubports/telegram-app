@@ -32,7 +32,7 @@ ListItem {
             ? encryptedChat.participantId : encryptedChat.adminId
 
     property bool showMessage: true
-    property Message message: telegram.message(dialog.topMessage)
+    property Message message: telegram.message(dialog.topMessage, dialog.peer.channelId)
     property MessageAction action: message.action
     property bool hasAction: action.messageActionEnum != MessageAction.Empty
     property variant messageDate: CalendarConv.fromTime_t(message ? message.date : 0)
@@ -240,13 +240,13 @@ ListItem {
                     // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
                     return i18n.tr("typing...")
                 } else {
-                    if (!message) return "(invalid_message id) " + message.unifiedId;
+                    if (!message) return "";
 
                     // We use emojis in our font currently, so no need to replace them here for now
                     //return emojis.bodyTextToEmojiText(message.message, 16, true);
 
                     if (message.message == "") {
-                        var res = "(" + message.unifiedId + ")";
+                        var res = "";
                         var user = telegramObject.user(message.action.userId) 
                         var fromUser = telegramObject.user(message.fromId)
                         var userName = user.firstName + " " + user.lastName
