@@ -76,6 +76,7 @@ Page {
     AccountPanel {
         id: account_panel
         objectName:"accountPanel"
+        telegram: telegramObject
         anchors {
             left: parent.left
             top: parent.top
@@ -83,6 +84,10 @@ Page {
         }
         maxHeight: parent.height - units.gu(7)
         z: 10
+
+        onYourSelfChatClicked: {
+            //pageStack.addPageToNextColumn(account_page, account_dialog_page, )
+        }
 
         onNewSecretChatClicked: {
             pageStack.addPageToCurrentColumn(account_page, contacts_page_component, {
