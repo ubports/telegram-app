@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-10-18 12:17+0000\n"
+"PO-Revision-Date: 2017-11-03 13:55+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.ubports.com/projects/ubports"
 "/telegram-app/pt/>\n"
@@ -474,7 +474,7 @@ msgstr "Fazer uma pergunta"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:200
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:115
 msgid "Telegram FAQ"
-msgstr "Telegram FAQ"
+msgstr "Perguntas frequentes"
 
 #. TRANSLATORS: Settings section header.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:209

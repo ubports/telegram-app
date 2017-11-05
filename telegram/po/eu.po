@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-05 15:39+0000\n"
+"PO-Revision-Date: 2017-10-29 17:12+0000\n"
 "Last-Translator: Aitzol Berasategi <aitzol76@gmail.com>\n"
-"Language-Team: Basque <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Basque <https://translate.ubports.com/projects/ubports"
 "/telegram-app/eu/>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -925,7 +925,7 @@ msgstr "Fitxategia"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr "<<<Irristatu ezeztatzeko"
+msgstr "<<< Irristatu ezeztatzeko"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
@@ -1021,7 +1021,7 @@ msgstr "Ahots mezua"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr ""
+msgstr "Eranskina"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
