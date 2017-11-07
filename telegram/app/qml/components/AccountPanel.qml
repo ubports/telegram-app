@@ -19,12 +19,15 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import QtGraphicalEffects 1.0
 
+import TelegramQML 1.0
+
 Panel {
     id: panel
 
     // This property must be set to desired max height value.
     property int maxHeight: units.gu(16)
 
+    signal yourSelfChatClicked()
     signal newGroupClicked()
     signal newSecretChatClicked()
     signal contactsClicked()
@@ -39,6 +42,10 @@ Panel {
     animate: true
     align: Qt.AlignLeading
     visible: opened || animating
+
+    property Telegram telegram
+    property User user: telegram.myUser
+
 
     Rectangle {
         id: background
@@ -65,15 +72,35 @@ Panel {
         Column {
             id: column
 
+            FileHandler {
+                id: panel_file_handler
+                telegram: panel.telegram
+                target: panel.user
+            }
+
             anchors {
                 top: parent.top
                 right: parent.right
                 left: parent.left
             }
 
+            /*AccountPanelItem {
+                objectName: "meChatItem"
+                userImage: Image {
+                    source: panel_file_handler.thumbPath
+                }
+                text: panel.user ? panel.user.firstName : ""
+                showDivider: true
+                showProportionalShape: true
+                onClicked: {
+                    panel.close();
+                    panel.yourSelfChatClicked();
+                }
+            }*/
+
             AccountPanelItem {
                 objectName:"groupChatItem"
-                icon: "../files/menu_newgroup.png"
+                icon: "contact-group"
                 text: i18n.tr("New Group")
                 showDivider: false
                 onClicked: {
@@ -83,7 +110,7 @@ Panel {
             }
             AccountPanelItem {
                 objectName:"secretChatItem"
-                icon: "../files/menu_secret.png"
+                icon: "lock"
                 text: i18n.tr("New Secret Chat")
                 onClicked: {
                     panel.close();
@@ -92,7 +119,7 @@ Panel {
             }
             AccountPanelItem {
                 objectName:"panelContacts"
-                icon: "../files/menu_contacts.png"
+                icon: "address-book-app-symbolic"
                 text: i18n.tr("Contacts")
                 showDivider: false
                 onClicked: {
@@ -102,7 +129,7 @@ Panel {
             }
             AccountPanelItem {
                 objectName:"panelSettings"
-                icon: "../files/menu_settings.png"
+                icon: "settings"
                 text: i18n.tr("Settings")
                 showDivider: false
                 onClicked: {
@@ -111,7 +138,7 @@ Panel {
                 }
             }
             AccountPanelItem {
-                icon: "../files/menu_help.png"
+                icon: "help"
                 text: i18n.tr("Telegram FAQ")
                 showDivider: false
                 onClicked: {
@@ -149,7 +176,7 @@ Panel {
                 id: aclist
                 model: profiles
                 delegate: AccountPanelItem {
-                    icon: ""
+                    icon: "account"
                     text: number
                     showDivider: false
                     showProgression: profiles.count > 1
@@ -163,7 +190,7 @@ Panel {
             }
 
             AccountPanelItem {
-                icon: "../files/menu_invite.png"
+                icon: "contact-new"
                 text: i18n.tr("Add Account")
                 showDivider: false
                 onClicked: {

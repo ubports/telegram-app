@@ -299,6 +299,9 @@ Rectangle {
             anchors.fill: parent
             activeFocusOnPress: false
             onClicked: {
+
+                // To work on desktop change the following line to:
+                // if (!telegramObject.connected) return
                 if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
@@ -318,7 +321,7 @@ Rectangle {
             width: height
             sourceSize: Qt.size(width, height)
             fillMode: Image.PreserveAspectFit
-            source: Qt.resolvedUrl("qrc:/qml/files/emojis.svg")
+            source: Qt.resolvedUrl("qrc:/qml/files/msg_panel_stickers.svg")
             visible: !messagePlaceholder.visible
         }
     }
@@ -340,6 +343,9 @@ Rectangle {
             anchors.fill: parent
             activeFocusOnPress: false
             onClicked: {
+
+                // To work on desktop change the following line to:
+                // if (!telegramObject.connected) return
                 if (!telegramObject.connected || !Connectivity.online) return
 
                 Haptics.play()
@@ -357,9 +363,6 @@ Rectangle {
             anchors.centerIn: parent
             height: units.dp(22)
             width: height
-            //sourceSize: Qt.size(width, height)
-            //fillMode: Image.PreserveAspectFit
-            //source: Qt.resolvedUrl("qrc:/qml/files/attach.png")
             name: "attachment"
             visible: !messagePlaceholder.visible
         }
@@ -374,6 +377,9 @@ Rectangle {
         }
         width: send_mouse_area.width
         visible: !messagePlaceholder.visible
+
+        // To work on desktop change the following line to:
+        // enabled: True
         enabled: Connectivity.online && telegramObject.connected
 
         MouseArea {
@@ -389,7 +395,8 @@ Rectangle {
                     when: txt.inputMethodComposing || txt.text.length > 0 || privates.audioRecorded
                     PropertyChanges {
                         target: send_image
-                        source: Qt.resolvedUrl(send_mouse_area.enabled ? "qrc:/qml/files/send.png" : "qrc:/qml/files/send_disabled.png")
+                        name: "send"
+                        color: send_mouse_area.enabled ? UC.UbuntuColors.blue : UC.UbuntuColors.silk
                     }
                 },
                 State {
@@ -397,7 +404,7 @@ Rectangle {
                     when: !txt.inputMethodComposing && txt.text.length == 0 && !privates.audioRecorded
                     PropertyChanges {
                         target: send_image
-                        source: Qt.resolvedUrl("image://theme/audio-input-microphone-symbolic")
+                        name: "audio-input-microphone-symbolic"
                     }
                 }
             ]
@@ -430,14 +437,12 @@ Rectangle {
                 }
             }
 
-            CrossFadeImage {
+            Icon {
                 id: send_image
                 anchors.centerIn: parent
                 height: units.dp(22)
                 width: height
-                fillMode: Image.PreserveAspectFit
-                fadeStyle: "cross"
-                source: Qt.resolvedUrl("image://theme/audio-input-microphone-symbolic")
+                name: "audio-input-microphone-symbolic"
             }
 
             onPressed: {

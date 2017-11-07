@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-08 17:25+0000\n"
+"PO-Revision-Date: 2017-09-29 07:33+0000\n"
 "Last-Translator: Jeff <jeffi27@live.at>\n"
 "Language-Team: Albanian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sq/>\n"
@@ -78,7 +78,7 @@ msgstr "Ok"
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
-msgstr "Tema r chatit"
+msgstr "Tema e chatit"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
 #: /telegram-app/telegram/app/qml/AddContactPage.qml:31
@@ -429,7 +429,7 @@ msgstr "Ndrysho imazhin"
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
 #: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
-msgstr "Informacioni"
+msgstr "Info"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:105
@@ -759,7 +759,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "I besueshëm"
+msgstr "Private"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -965,17 +965,17 @@ msgstr "1 Minutë"
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
-msgstr "1 Orë"
+msgstr "1 orë"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
-msgstr "1 Ditë"
+msgstr "1 ditë"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
-msgstr "1 Javë"
+msgstr "1 javë"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Leave chat"

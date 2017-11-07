@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-09-03 11:35+0000\n"
+"PO-Revision-Date: 2017-10-15 10:12+0000\n"
 "Last-Translator: Ivan Semkin <ivan@semkin.ru>\n"
-"Language-Team: Russian <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -775,7 +775,7 @@ msgstr "От: %1"
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr "Опубликовать"
+msgstr "Поделиться"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
@@ -1131,11 +1131,11 @@ msgstr "%1 в %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr "мм:сс"
+msgstr "mm:ss"
 
 #: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "h:mm:ss"
-msgstr "ч:мм:сс"
+msgstr "h:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /telegram-app/telegram/app/telegram.cpp:287
@@ -1145,7 +1145,7 @@ msgstr "HH:mm"
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /telegram-app/telegram/app/telegram.cpp:291
 msgid "ddd HH:mm"
-msgstr "ддд ЧЧ:мм"
+msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /telegram-app/telegram/app/telegram.cpp:295
@@ -1304,7 +1304,7 @@ msgstr "У вас новое сообщение"
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /telegram-app/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr "ч:мм ддд, дд-ММ-гг"
+msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /telegram-app/telegram/scope/preview.cpp:62

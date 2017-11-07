@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-08-29 09:21+0000\n"
-"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
-"Language-Team: Sardinian <https://ubpweblate.tnvcomp.com/projects/ubports"
+"PO-Revision-Date: 2017-09-16 17:06+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
 "MIME-Version: 1.0\n"
@@ -206,7 +206,7 @@ msgstr "Iscrie·ti"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:215
 msgid "Invalid password"
-msgstr "Sa crae no est curreta"
+msgstr "Sa crae no est vàlida"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format

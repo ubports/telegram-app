@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-01 21:27+0000\n"
+"PO-Revision-Date: 2017-10-30 21:36+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
-"Language-Team: Romanian <https://ubpweblate.tnvcomp.com/projects/ubports"
+"Language-Team: Romanian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr "Grup nou"
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:325
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr "OK"
+msgstr "Ok"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
@@ -117,7 +117,7 @@ msgstr "Anulează"
 #: /telegram-app/telegram/build_mobile/app/telegram.desktop.h:1
 #: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr "Telegram"
+msgstr "Aplicația Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:441
@@ -190,7 +190,7 @@ msgstr "Redirecţionează"
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr "Ştergeţi"
+msgstr "Șterge"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
@@ -414,7 +414,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
 msgid "Settings"
-msgstr "Configurări"
+msgstr "Setări"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -948,7 +948,7 @@ msgstr "Convorbire secretă ştearsă"
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr "Distrus"
+msgstr "Dezactivat"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
@@ -957,7 +957,7 @@ msgid "%1 second"
 msgid_plural "%1 seconds"
 msgstr[0] "%1 secundă"
 msgstr[1] "%1 secunde"
-msgstr[2] "%1 secunde"
+msgstr[2] "%1 de secunde"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:54

@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2015-09-22 10:45+0000\n"
-"Last-Translator: Aputsiaĸ Niels Janussen <aj@isit.gl>\n"
-"Language-Team: Danish <da@li.org>\n"
+"PO-Revision-Date: 2017-10-02 15:10+0000\n"
+"Last-Translator: Henrik Holm <hbir@post10.tele.dk>\n"
+"Language-Team: Danish <https://translate.ubports.com/projects/ubports"
+"/telegram-app/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -27,7 +28,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakter"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
@@ -39,14 +40,14 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
-msgstr ""
+msgstr "Tilføj"
 
 #. TRANSLATORS: As in, back out of contacts page.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
 #: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr ""
+msgstr "Tilbage"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
@@ -73,7 +74,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:325
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
@@ -101,7 +102,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:188
 #: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
-msgstr ""
+msgstr "Annullér"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -186,7 +187,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
-msgstr ""
+msgstr "Slet"
 
 #: /telegram-app/telegram/app/qml/AccountListItem.qml:170
 #: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
@@ -347,7 +348,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
-msgstr ""
+msgstr "Gem"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
@@ -406,7 +407,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountSettings.qml:20
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
 msgid "Settings"
-msgstr ""
+msgstr "Indstillinger"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -675,11 +676,11 @@ msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Installér"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr ""
+msgstr "Luk"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
@@ -756,7 +757,7 @@ msgstr ""
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr ""
+msgstr "Del"
 
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Contact Info"
@@ -817,7 +818,7 @@ msgstr ""
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:404
 msgid "Unknown"
-msgstr ""
+msgstr "Ukendt"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:414

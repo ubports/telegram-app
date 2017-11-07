@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-07-20 13:30+0000\n"
-"Last-Translator: wangyou <1078360711@qq.com>\n"
+"PO-Revision-Date: 2017-10-21 05:24+0000\n"
+"Last-Translator: Mutse Young <yyhoo2.young@gmail.com>\n"
 "Language-Team: Chinese (Simplified) "
-"<https://ubpweblate.tnvcomp.com/projects/ubports/telegram-app/zh_Hans/>\n"
+"<https://translate.ubports.com/projects/ubports/telegram-app/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -675,7 +675,7 @@ msgstr ""
 
 #: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "密码"
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -683,7 +683,7 @@ msgstr ""
 
 #: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /telegram-app/telegram/app/qml/IntroPage.qml:177
