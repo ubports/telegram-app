@@ -19,12 +19,15 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import QtGraphicalEffects 1.0
 
+import TelegramQML 1.0
+
 Panel {
     id: panel
 
     // This property must be set to desired max height value.
     property int maxHeight: units.gu(16)
 
+    signal yourSelfChatClicked()
     signal newGroupClicked()
     signal newSecretChatClicked()
     signal contactsClicked()
@@ -39,6 +42,10 @@ Panel {
     animate: true
     align: Qt.AlignLeading
     visible: opened || animating
+
+    property Telegram telegram
+    property User user: telegram.myUser
+
 
     Rectangle {
         id: background
@@ -65,11 +72,31 @@ Panel {
         Column {
             id: column
 
+            FileHandler {
+                id: panel_file_handler
+                telegram: panel.telegram
+                target: panel.user
+            }
+
             anchors {
                 top: parent.top
                 right: parent.right
                 left: parent.left
             }
+
+            /*AccountPanelItem {
+                objectName: "meChatItem"
+                userImage: Image {
+                    source: panel_file_handler.thumbPath
+                }
+                text: panel.user ? panel.user.firstName : ""
+                showDivider: true
+                showProportionalShape: true
+                onClicked: {
+                    panel.close();
+                    panel.yourSelfChatClicked();
+                }
+            }*/
 
             AccountPanelItem {
                 objectName:"groupChatItem"
