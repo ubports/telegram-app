@@ -43,7 +43,7 @@ Item {
                 font.weight: Font.Normal
                 color: Colors.telegram_blue
                 text: {
-                    if(!replyMessage && (!message || message.replyToMsgId == 0))
+                    if(!msg_reply.visible)
                         return ""
                     var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
                     var replyUser = telegram.user(replyMsg.fromId)
@@ -64,7 +64,7 @@ Item {
 
                 property size imageSize: Cutegram.imageSize(source)
                 property variant media: {
-                    if(!replyMessage && (!message || message.replyToMsgId == 0))
+                    if(!msg_reply.visible)
                         return 0
 
                     var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
@@ -142,7 +142,7 @@ Item {
                 elide: Text.ElideRight
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: {
-                    if(!replyMessage && (!message || message.replyToMsgId == 0))
+                    if(!msg_reply.visible)
                         return ""
 
                     var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
@@ -157,9 +157,8 @@ Item {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            if(!replyMessage && (!message || message.replyToMsgId == 0))
+            if(!msg_reply.visible)
                 return
-
             var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
             msg_reply.messageFocusRequest(replyMsg.id, dialog.peer.channelId)
         }

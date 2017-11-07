@@ -199,9 +199,9 @@ Page {
                 dialog_page.forwardRequest(messageIds);
                 pageStack.removePages(dialog_page);
             }
-            onDialogRequest: account_page.currentDialog = dialogObject
+            onDialogRequest: account_page.currentDialog = currentDialog
             onTagSearchRequest: msg_box.tagSearchRequest(tag)
-            onReplyToRequest: send_msg.replyTo(msgId)
+            onReplyToRequest: send_msg.replyTo(msgId, currentDialog.peer.channelId)
             onRejectSecretRequest: dialog_page.closeChat()
         }
     }

@@ -255,7 +255,7 @@ Rectangle {
                         iconName: "mail-reply"
                         text: i18n.tr("Reply")
                         onTriggered: {
-                            acc_msg_list.replyToRequest(message.id, currentDialog.peer.channelId);
+                            acc_msg_list.replyToRequest(message_item.message.id, currentDialog.peer.channelId);
                         }
                     },
                     Action {
@@ -316,19 +316,6 @@ Rectangle {
                 else
                     message_item.click();
             }
-
-//            onClicked: {
-//                console.log("on item clicked");
-//                if (mlist.isInSelectionMode) {
-//                    if (selected) {
-//                        mlist.deselectItem(message_item)
-//                    } else {
-//                        mlist.selectItem(message_item)
-//                    }
-//                }
-
-//                message_item.click();
-//            }
 
             onPreviewRequest: {
                 console.log("onOpenMedia");
