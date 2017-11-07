@@ -9,12 +9,14 @@ Item {
     id: msg_reply
     width: row.width + 12*Devices.density
     height: row.height + 4*Devices.density
-    visible: replyMessage || (message && message.replyToMsgId != 0)
+    visible: realMessage
 
     property Telegram telegram
     property Message message
     property Message replyMessage
     property Dialog dialog
+
+    property Message realMessage: (message && message.replyToMsgId != 0) ? telegram.message(message.replyToMsgId, dialog.peer.channelId) : replyMessage
 
     property real maximumWidth: 100
 
@@ -43,10 +45,9 @@ Item {
                 font.weight: Font.Normal
                 color: Colors.telegram_blue
                 text: {
-                    if(!msg_reply.visible)
+                    if (!realMessage)
                         return ""
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
-                    var replyUser = telegram.user(replyMsg.fromId)
+                    var replyUser = telegram.user(realMessage.fromId)
                     return replyUser.firstName + " " + replyUser.lastName
                 }
             }
@@ -63,13 +64,7 @@ Item {
                 source: path
 
                 property size imageSize: Cutegram.imageSize(source)
-                property variant media: {
-                    if(!msg_reply.visible)
-                        return 0
-
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
-                    return replyMsg.media
-                }
+                property variant media: realMessage ? realMessage.media : 0
 
                 property bool hasMedia: media? media.messageMediaEnum != MessageMedia.Empty : false
                 onHasMediaChanged: {
@@ -133,7 +128,7 @@ Item {
 
             Label {
                 id: txt
-                width: Math.min(htmlWidth, maximumWidth)
+                width: maximumWidth
                 fontSize: "small"
                 font.weight: Font.Normal
                 horizontalAlignment: Text.AlignLeft
@@ -141,15 +136,7 @@ Item {
                 maximumLineCount: 1
                 elide: Text.ElideRight
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: {
-                    if(!msg_reply.visible)
-                        return ""
-
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
-                    return replyMsg.message
-                }
-
-                property real htmlWidth: Cutegram.htmlWidth(text)
+                text: realMessage ? realMessage.message : ""
             }
         }
     }
@@ -157,10 +144,8 @@ Item {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            if(!msg_reply.visible)
-                return
-            var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId, dialog.peer.channelId)
-            msg_reply.messageFocusRequest(replyMsg.id, dialog.peer.channelId)
+            if (realMessage)
+                msg_reply.messageFocusRequest(realMessage.id, dialog.peer.channelId)
         }
     }
 }
