@@ -45,7 +45,7 @@ Rectangle {
 
     property int filterId: -1
 
-    signal forwardRequest(variant messageIds)
+    signal forwardRequest(variant messageIds, Peer peer)
     signal focusRequest()
     signal dialogRequest(variant dialogObject)
     signal tagSearchRequest(string tag)
@@ -551,7 +551,7 @@ Rectangle {
     }
 
     function forwardMessages(messageIds) {
-        forwardRequest(messageIds);
+        forwardRequest(messageIds, currentDialog.peer);
         pageStack.clear();
     }
 
