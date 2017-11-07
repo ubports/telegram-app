@@ -60,8 +60,8 @@ Item {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
             result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        maximumMediaHeight*file_handler.imageSize.width/file_handler.imageSize.height
-                      : maximumMediaWidth
+                        Math.min(file_handler.imageSize.height, maximumMediaHeight)*file_handler.imageSize.width/file_handler.imageSize.height
+                      : Math.min(file_handler.imageSize.width, maximumMediaWidth)
             break;
 
         case FileHandler.TypeTargetUnknown:
@@ -98,8 +98,8 @@ Item {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
             result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        maximumMediaHeight
-                      : maximumMediaWidth*file_handler.imageSize.height/file_handler.imageSize.width
+                        Math.min(file_handler.imageSize.height, maximumMediaHeight)
+                      : Math.min(file_handler.imageSize.width, maximumMediaWidth)*file_handler.imageSize.height/file_handler.imageSize.width
             break;
 
         case FileHandler.TypeTargetMediaAudio:
