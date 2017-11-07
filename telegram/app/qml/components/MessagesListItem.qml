@@ -71,6 +71,8 @@ ListItem {
         text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
         // replace line breaks
         text = text.replace(/(\n)+/g, '<br />');
+        // Check for Usernames
+        // TODO: Find a way to highlight usernames starting with @ (probably needs lookup if this is a valid username
         // check for links
         var htmlText = BaLinkify.linkify(text);
         if (htmlText !== text) {

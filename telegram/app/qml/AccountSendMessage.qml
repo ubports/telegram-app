@@ -491,8 +491,8 @@ Rectangle {
         txt.text = ""
     }
 
-    function replyTo(msgId) {
-        messageReply.replyMessage = telegramObject.message(msgId)
+    function replyTo(msgId, channelId) {
+        messageReply.replyMessage = telegramObject.message(msgId, channelId)
     }
 
     function requestMedia(mediaType) {

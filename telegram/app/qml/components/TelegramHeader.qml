@@ -26,6 +26,13 @@ PageHeader {
     property bool isOnline: !isChat && !isChannel && user.status.classType == userStatusType.typeUserStatusOnline
     property bool isSecretChat: dialog.encrypted
     property bool isConnecting: !telegram.connected
+    property int participantsCount: {
+        if (isChannel)
+            return chatFull.participants.participants.count;
+        else if (isChat)
+            return chat.participantsCount;
+    }
+
     property int onlineCount: {
         var result = 0;
         if (isChat || isChannel) {
@@ -77,10 +84,10 @@ PageHeader {
             if (isChat || isChannel) {
                 if (onlineCount > 0) {
                     // TRANSLATORS: %1 is group chat member count, %2 is online member count.
-                    result += i18n.tr("%1 members, %2 online").arg(chat.participantsCount).arg(onlineCount)
+                    result += i18n.tr("%1 members, %2 online").arg(participantsCount).arg(onlineCount)
                 } else {
-                    // TRANSLATORS: %1 is gropu chat member count.
-                    result += i18n.tr("%1 members").arg(chat.participantsCount)
+                    // TRANSLATORS: %1 is group chat member count.
+                    result += i18n.tr("%1 members").arg(participantsCount)
                 }
             } else {
                 switch(user.status.classType)
