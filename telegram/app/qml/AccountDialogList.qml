@@ -19,7 +19,7 @@ Item {
     property Dialog currentDialog: telegram.dialog(0)
 
     property var messageIdsToForward: []
-
+    property Peer forwardFromPeer: null
     property bool showLastMessage: true // TODO Cutegram.showLastMessage
 
     signal windowRequest(variant dialog)
@@ -112,7 +112,7 @@ Item {
                             // TRANSLATORS: %1 represents person to whom we are forwarding messages to.
                             text: i18n.tr("Forward message to %1?".arg(title)),
                             onAccept: function() {
-                                telegramObject.forwardMessages(messageIdsToForward, dialogId)
+                                telegramObject.forwardMessages(messageIdsToForward, dialogId, forwardFromPeer)
                                 clearForwardedMessages()
                                 currentDialogChanged(dialog)
                             }

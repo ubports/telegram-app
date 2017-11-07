@@ -220,6 +220,7 @@ Page {
 
             onForwardRequest: {
                 dialogs.messageIdsToForward = messageIds;
+                dialogs.forwardFromPeer = peer;
             }
         }
     }

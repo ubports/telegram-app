@@ -103,7 +103,7 @@ Page {
         dialog: currentDialog
     }
     
-    signal forwardRequest(var messageIds);
+    signal forwardRequest(var messageIds, Peer peer);
     signal tagSearchRequest(string tag);
     signal dialogClosed();
     signal headerClicked();
@@ -196,7 +196,7 @@ Page {
 
             onFocusRequest: send_msg.focusOut();
             onForwardRequest: {
-                dialog_page.forwardRequest(messageIds);
+                dialog_page.forwardRequest(messageIds, peer);
                 pageStack.removePages(dialog_page);
             }
             onDialogRequest: account_page.currentDialog = currentDialog
