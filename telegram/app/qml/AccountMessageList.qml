@@ -237,7 +237,10 @@ Rectangle {
                     Action {
                         iconName: "delete"
                         text: i18n.tr("Delete")
-                        onTriggered: telegram.deleteMessages([item.id])
+                        onTriggered:
+                        {
+                            telegram.deleteMessages([item.id], currentDialog.peer);
+                        }
                     }
                 ]
             }
@@ -541,7 +544,7 @@ Rectangle {
     function deleteSelected() {
         var messageIds = getSelectedMessageIds();
         mlist.endSelection();
-        telegram.deleteMessages(messageIds);
+        telegram.deleteMessages(messageIds, currentDialog.peer);
     }
 
     function forwardSelected() {
