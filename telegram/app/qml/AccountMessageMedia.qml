@@ -128,7 +128,7 @@ Item {
         id: file_handler
         telegram: telegramObject
         target: message
-        defaultThumbnail: "qrc:/qml/files/document.png" 
+        defaultThumbnail: "image://theme/stock_document" 
         onTargetTypeChanged: {
             switch(targetType)
             {
