@@ -162,7 +162,7 @@ ListItem {
                 id: msg_frame_box
                 anchors.fill: parent
                 visible: (message_item.message != "" || forward_user_name.visible) && !message_media.isSticker
-                radius: 5.5*Devices.density
+                radius: units.gu(0.7)
                 color: {
                     return message.out ? Colors.outgoing : Colors.incoming
                 }
