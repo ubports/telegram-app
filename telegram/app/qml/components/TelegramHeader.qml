@@ -28,9 +28,14 @@ PageHeader {
     property bool isConnecting: !telegram.connected
     property int participantsCount: {
         if (isChannel)
+        {
+            var chatFull = telegram.chatFull(chat.id)
             return chatFull.participants.participants.count;
+        }
         else if (isChat)
             return chat.participantsCount;
+        else
+            return 0;
     }
 
     property int onlineCount: {
@@ -144,7 +149,6 @@ PageHeader {
             Icon {
                 name: isConnecting? "sync-updating" : "sync-paused"
                 anchors.fill: parent
-                opacity: parent
             }
             SequentialAnimation {
                 running: visible
