@@ -102,27 +102,13 @@ Rectangle {
         property Document doc
     }
 
-    //Timer refreshes MessagesModel to check if message(s) have been read or not
-    Timer {
-        id: refresh_timer
-        repeat: true
-        interval: 1500
-        onTriggered: {
-            messages_model.refresh()
-        }
-        Component.onCompleted: {
-            if (!isChat && !isChannel) {
-                start()
-            }
-        }
-    }
-
     Image {
+        id: background_img
         anchors.fill: parent
         fillMode: Cutegram.background.length==0? Image.Tile : Image.PreserveAspectCrop
         horizontalAlignment: Image.AlignLeft
         verticalAlignment: Image.AlignTop
-        sourceSize: Cutegram.background.length==0? Cutegram.imageSize("qrc:/qml/files/telegram_background.png") : Qt.size(width,height)
+        sourceSize: Qt.size(width,height)
         source: {
             return "qrc:/qml/files/telegram_background.png"
 //            if(backgroundManager.background == "")
