@@ -297,6 +297,8 @@ ListItem {
                                     res = i18n.tr("You added %1").arg(userName)
                                 else if (user.id == telegramObject.me)
                                     res = i18n.tr("%1 added you").arg(fromUserName)
+                                else if (isChannel)
+                                    res = i18n.tr("%1 joined the group").arg(fromUserName)
                                 else
                                     res = i18n.tr("%1 added %2").arg(fromUserName).arg(userName)
                                 break
