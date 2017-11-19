@@ -200,11 +200,12 @@ QSize Cutegram::imageSize(const QString &pt)
     if(path.isEmpty())
         return QSize();
 
-    QImageReader img(path);
+    QImage img(path);
+    qWarning() << "Image " << path << ", image size: " << img.size().width() << "x" << img.size().height();
     return img.size();
 }
 
-bool Cutegram::filsIsImage(const QString &pt)
+bool Cutegram::fileIsImage(const QString &pt)
 {
     QString path = pt;
     if(path.left(AsemanDevices::localFilesPrePath().length()) == AsemanDevices::localFilesPrePath())
@@ -215,7 +216,7 @@ bool Cutegram::filsIsImage(const QString &pt)
     return p->mdb.mimeTypeForFile(path).name().toLower().contains("image");
 }
 
-bool Cutegram::filsIsAudio(const QString &pt)
+bool Cutegram::fileIsAudio(const QString &pt)
 {
     QString path = pt;
     if(path.left(AsemanDevices::localFilesPrePath().length()) == AsemanDevices::localFilesPrePath())

@@ -36,7 +36,7 @@ ListItem {
     property MessageAction action: message.action
     property bool hasAction: action.messageActionEnum != MessageAction.Empty
     property variant messageDate: CalendarConv.fromTime_t(message ? message.date : 0)
-    property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
+    property bool isAudio: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     property alias isSticker: file_handler.isSticker
 
     property bool online: isChat || isChannel ? false : (user.status.classType == image.typeUserStatusOnline)
@@ -266,7 +266,7 @@ ListItem {
 
                             case MessageAction.Empty:
                                 if (fromUserName != "") {
-                                    if (isAudioMessage)
+                                    if (isAudio)
                                         res = i18n.tr("Voice message")
                                     else if (isSticker)
                                         res = i18n.tr("Sticker")
