@@ -43,11 +43,36 @@ Item {
                 if (hasMedia) {
                     return Colors.white;
                 }
-                return message.out ? "aliceblue" : Colors.time_in;//Colors.dark_green : Colors.grey;
+                return message.out ? "aliceblue" : Colors.time_in;
             }
             text: Cutegram.getTimeString(messageDate)
-
             property variant messageDate: CalendarConv.fromTime_t(message.date)
+        }
+
+        Row {
+            id: channel_views
+            visible: message.views > 0
+            anchors.verticalCenter: parent.verticalCenter
+            Image {
+                anchors.verticalCenter: parent.verticalCenter
+                width: units.gu(2)
+                height: width
+                fillMode: Image.PreserveAspectFit
+                source: message.out? Qt.resolvedUrl("qrc:/qml/files/eyeWhite.svg") : Qt.resolvedUrl("qrc:/qml/files/eye.svg")
+            }
+            Label {
+            anchors.verticalCenter: parent.verticalCenter
+            text: message.views
+                font.weight: Font.DemiBold
+                fontSize: "x-small"
+                color: {
+                    if (hasMedia) {
+                        return Colors.white;
+                    }
+                    return message.out ? "aliceblue" : Colors.time_in;
+                }
+            }
+
         }
 
         Image {
