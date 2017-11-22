@@ -10,14 +10,14 @@ msgstr ""
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2017-11-22 23:40+0000\n"
 "Last-Translator: Alexey Balmashnov <a.balmashnov@gmail.com>\n"
-"Language-Team: Russian <https://translate.ubports.com/projects/ubports"
-"/telegram-app/ru/>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports/"
+"telegram-app/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
@@ -165,8 +165,13 @@ msgstr "Переслать сообщение для %1?"
 msgid "Send messages to %1?"
 msgstr "Отправить сообщения %1?"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
+msgid "Channel Info"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
 msgstr "Информация о группе"
 
@@ -241,6 +246,12 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> добавил Вас"
 
 #: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:70
+#, fuzzy, qt-format
+msgid "<b>%1</b> joined the group"
+msgstr "<b>%1</b> покинул группу"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr "<b>%1</b> добавил <b>%2</b>"
@@ -1047,6 +1058,12 @@ msgid "%1 added you"
 msgstr "%1 добавил Вас"
 
 #: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:301
+#, fuzzy, qt-format
+msgid "%1 joined the group"
+msgstr "%1 покинул группу"
+
+#: /home/florian/UT-Apps/telegram-app/launchpad/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
 msgid "%1 added %2"
 msgstr "%1 добавил %2"
