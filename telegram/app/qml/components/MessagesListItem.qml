@@ -270,6 +270,11 @@ ListItem {
                         //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
                         color: message.out? "aliceblue" : "black"
                         onLinkActivated: {
+                            if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
+                            {
+                                telegram.channelsJoinChannel(link);
+                            }
+                            else
                             if (link.slice(0,6) == "tag://") {
                                 console.log("tag links not supported yet");
                             } else {
