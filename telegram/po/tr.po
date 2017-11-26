@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-05-30 20:31+0200\n"
-"PO-Revision-Date: 2017-11-26 00:01+0000\n"
+"PO-Revision-Date: 2017-11-26 00:08+0000\n"
 "Last-Translator: Arda Canbolat <oardacn@gmail.com>\n"
 "Language-Team: Turkish <https://translate.ubports.com/projects/ubports"
 "/telegram-app/tr/>\n"
@@ -28,7 +28,7 @@ msgstr "Kişileri ekle"
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
 msgid "Contacts"
-msgstr "Kontaklar"
+msgstr "Kişiler"
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
@@ -52,7 +52,7 @@ msgstr "Geri"
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
-msgstr "Kontaklarda ara"
+msgstr "Kişilerde ara..."
 
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
 #: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
@@ -126,7 +126,10 @@ msgid ""
 "Add %1 to %2?\n"
 "\n"
 "Number of last messages to forward:"
-msgstr "%1,%2 ekle?"
+msgstr ""
+"%1 %2 'ye eklensin mi?\n"
+"\n"
+"İletilecek son mesaj sayısı:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:502
@@ -141,7 +144,7 @@ msgstr "Kontaklar ithal edilmedi"
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr "Bu Kişi Telegram'da"
+msgstr "Bu Kişi Telegram'da."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
@@ -320,7 +323,7 @@ msgstr "Sticker Paketi bilgisi"
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
-msgstr "Gizli sohbet istendi"
+msgstr "Gizli sohbet istendi."
 
 #: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
@@ -355,7 +358,7 @@ msgstr "Kaydet"
 #. TRANSLATORS: Error message when first name was not provided.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
 msgid "First name is required."
-msgstr "İlk adı gerekli"
+msgstr "İlk ad gerekli."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
 #: /telegram-app/telegram/app/qml/AccountNamePage.qml:51
@@ -380,7 +383,7 @@ msgstr "Bağlanıyor..."
 #: /telegram-app/telegram/app/qml/AccountPage.qml:329
 #: /telegram-app/telegram/app/qml/AccountPage.qml:348
 msgid "Waiting for network..."
-msgstr "Ağ Bağlantısı bekleniyor"
+msgstr "Ağ Bağlantısı bekleniyor..."
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
@@ -549,7 +552,7 @@ msgstr ""
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr "%1 müsait"
+msgstr "%1 mevcut'tur."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
@@ -739,8 +742,7 @@ msgstr "Güçlü"
 
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
-msgstr ""
-"<B> Telegram </ b> medya ve sohbetler boyutunda <br> hiçbir sınırı yoktur."
+msgstr "<b>Telegram</b> mesaj yada medya'da <br> herhangi bir limiti yoktur"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
@@ -770,7 +772,7 @@ msgstr "Seç"
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
-msgstr "%1 üzerinden:"
+msgstr "%1 'den"
 
 #: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
@@ -824,7 +826,7 @@ msgstr "%1 üye"
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
 msgstr[0] "%1 yazıyor"
-msgstr[1] "%1 yazıyor"
+msgstr[1] "%1 yazıyorlar"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /telegram-app/telegram/app/qml/ProfilePage.qml:337
@@ -917,7 +919,7 @@ msgstr "Video"
 
 #: /telegram-app/telegram/app/qml/components/AttachPanel.qml:111
 msgid "File"
-msgstr "Klasör"
+msgstr "Dosya"
 
 #: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
@@ -944,7 +946,7 @@ msgstr "Gizli sohbet terk edildi"
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr "Etkin Değil"
+msgstr "Devre dışı"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
@@ -952,7 +954,7 @@ msgstr "Etkin Değil"
 msgid "%1 second"
 msgid_plural "%1 seconds"
 msgstr[0] "%1 saniye"
-msgstr[1] "%1 saniye"
+msgstr[1] "%1 saniyeler"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
