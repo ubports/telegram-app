@@ -93,7 +93,7 @@ Item {
                 if (state == AudioRecorder.StoppedState && output.toString() != "") {
                     var filePath = output.toString()
 
-                    if (!Cutegram.filsIsAudio(filePath)) {
+                    if (!Cutegram.fileIsAudio(filePath)) {
                         //If the recording process is too quick the generated file is not an audio one and should be ignored
                         Cutegram.deleteFile(filePath)
                         return;

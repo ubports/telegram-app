@@ -35,10 +35,11 @@ ListItem {
     property bool visibleNames: false
 
     property Message message
+    property Dialog dialog
     property string messageText: message.message
     property string messageHtmlText: parseText(message.message)
     property User user: telegramObject.user(message.fromId)
-    property User fwdUser: telegramObject.user(message.fwdFromId)
+    property User fwdUser: telegramObject.user(message.fwdFromId ? message.fwdFromId.userId : 0)
 
     property bool sent: message.sent
     property bool uploading: message.upload.fileId !== 0
@@ -60,7 +61,7 @@ ListItem {
 
     signal dialogRequest(variant dialog);
     signal tagSearchRequest(string tag);
-    signal messageFocusRequest(int msgId);
+    signal messageFocusRequest(int msgId, int channelId);
     signal previewRequest(int type, string path)
 
     // Taken from messaging-app
@@ -70,6 +71,8 @@ ListItem {
         text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
         // replace line breaks
         text = text.replace(/(\n)+/g, '<br />');
+        // Check for Usernames
+        // TODO: Find a way to highlight usernames starting with @ (probably needs lookup if this is a valid username
         // check for links
         var htmlText = BaLinkify.linkify(text);
         if (htmlText !== text) {
@@ -203,7 +206,7 @@ ListItem {
                     fontSize: "smaller"
                     font.weight: Font.Normal
                     color:  Colors.telegram_blue
-                    visible: message.fwdFromId !== 0 && !message_media.isSticker
+                    visible: message.fwdFromId !== 0 && message.fwdFromId.userId !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
                     text: visible ? i18n.tr("Forwarded from <b>%1</b>").arg(fwdUser.firstName + " " + fwdUser.lastName) : ""
                 }
@@ -212,8 +215,9 @@ ListItem {
                     id: message_reply
                     telegram: telegramObject
                     message: message_item.message
+                    dialog: message_item.dialog
                     maximumWidth: message_item.maximumWidth
-                    onMessageFocusRequest: message_item.messageFocusRequest(msgId)
+                    onMessageFocusRequest: message_item.messageFocusRequest(msgId, message_item.dialog.peer.channelId)
                 }
 
                 AccountMessageUpload {
@@ -263,8 +267,14 @@ ListItem {
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
                         text: message_item.messageHtmlText
+                        //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
                         color: message.out? "aliceblue" : "black"
                         onLinkActivated: {
+                            if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
+                            {
+                                telegram.channelsJoinChannel(link);
+                            }
+                            else
                             if (link.slice(0,6) == "tag://") {
                                 console.log("tag links not supported yet");
                             } else {

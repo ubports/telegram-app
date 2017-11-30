@@ -9,13 +9,13 @@ fi
 cd $TG_DIR/deps
 
 if [ ! -d "libqtelegram-ae" ]; then
-    git clone -b ubuntu-touch-2.x https://github.com/ubports/libqtelegram-aseman-edition.git libqtelegram-ae
+    git clone -b ubports-API41 https://github.com/ubports/libqtelegram-aseman-edition.git libqtelegram-ae
 else
     git -C libqtelegram-ae pull 
 fi
 
 if [ ! -d "TelegramQML" ]; then
-    git clone -b ubuntu-touch-2.x https://github.com/ubports/TelegramQML.git TelegramQML
+    git clone -b ubports-API41 https://github.com/ubports/TelegramQML.git TelegramQML
 else
     git -C TelegramQML pull
 fi
@@ -27,6 +27,7 @@ mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
 # FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
 # QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
 $QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
+# $QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
 $MAKE_BIN -j4 || exit 1
 $MAKE_BIN INSTALL_ROOT=$TG_DIR/$BUILD_DIR_BASENAME install || exit 1
 cd $TG_DIR/deps
@@ -44,6 +45,7 @@ $QMAKE_BIN \
     INCLUDEPATH+=$TH_INCS \
     TELEGRAMQML_INCLUDE_PATH=$TG_INCS/telegramqml \
     PREFIX=/usr BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
+#    PREFIX=/usr BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
 $MAKE_BIN -j4 || exit 1
 $MAKE_BIN INSTALL_ROOT=$TG_DIR/$BUILD_DIR_BASENAME install || exit 1
 cd $TG_DIR

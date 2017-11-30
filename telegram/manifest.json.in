@@ -1,7 +1,7 @@
 {
     "name": "com.ubuntu.telegram",
     "description": "Telegram for Ubuntu Phone",
-    "framework": "ubuntu-sdk-15.04.3",
+    "framework": "ubuntu-sdk-15.04.6",
     "architecture": "@CLICK_ARCH@",
     "title": "Telegram",
     "hooks": {
@@ -21,6 +21,6 @@
             "scope": "scope"
         }
     },
-    "version": "2.4.42.0",
+    "version": "2.5.1.0",
     "maintainer": "UBports Telegram Team <florian@ubports.com>"
 }

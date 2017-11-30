@@ -22,6 +22,7 @@ Rectangle {
 
     property Dialog currentDialog
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
+    property bool isChannel: currentDialog != telegramObject.nullDialog ? currentDialog.peer.channelId != 0 : false
 
     signal accepted( string text, int inReplyTo )
     signal copyRequest()
@@ -42,7 +43,7 @@ Rectangle {
             var isFile = url.indexOf("file://") == 0
 
             if (isFile) {
-                var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+                var peerId = isChannel ? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
                 var i = 0
                 var paths = []
                 for ( ; i < transfer_helper.count; i++) {
@@ -79,6 +80,7 @@ Rectangle {
         // For some reason, smsg.isChat binding is failing. This is required to make
         // sharing from gallery with group chats work..
         isChat = currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
+        isChannel = currentDialog != telegramObject.nullDialog ? currentDialog.peer.channelId != 0 : false
 
         checkForSharedContent()
     }
@@ -117,7 +119,7 @@ Rectangle {
         onTriggered: finishTyping()
 
         function finishTyping() {
-            var peerId = isChat? currentDialog.peer.chatId : currentDialog.peer.userId
+            var peerId = isChannel? currentDialog.peer.channelId : isChat? currentDialog.peer.chatId : currentDialog.peer.userId
             if(peerId != 0)
                 telegramObject.messagesSetTyping(peerId, false)
             typing_update_timer.stop()
@@ -129,7 +131,7 @@ Rectangle {
         interval: 3000
         triggeredOnStart: true
         onTriggered: {
-            var peerId = isChat? currentDialog.peer.chatId : currentDialog.peer.userId
+            var peerId = isChannel? currentDialog.peer.channelId : isChat? currentDialog.peer.chatId : currentDialog.peer.userId
             if(peerId != 0)
                 telegramObject.messagesSetTyping(peerId, true)
         }
@@ -272,7 +274,7 @@ Rectangle {
         id: mediaImporter
 
         onMediaReceived: {
-            var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+            var peerId = isChannel? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
             if (contentType === ContentType.Pictures ||
                 contentType === ContentType.Videos) {
                 send_files_timer.send(peerId, urls, false, false)
@@ -421,7 +423,7 @@ Rectangle {
                     smsg.send()
                 }
                 else if (state == "send" && privates.audioRecorded && audioPlaybackBar.visible) {
-                    var peerId = isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+                    var peerId = isChannel? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
                     var urls = []
                     urls.push(privates.audioItem)
                     console.log("sending audio attachment")
@@ -489,8 +491,8 @@ Rectangle {
         txt.text = ""
     }
 
-    function replyTo(msgId) {
-        messageReply.replyMessage = telegramObject.message(msgId)
+    function replyTo(msgId, channelId) {
+        messageReply.replyMessage = telegramObject.message(msgId, channelId)
     }
 
     function requestMedia(mediaType) {
@@ -629,6 +631,8 @@ Rectangle {
                 var dId = currentDialog.peer.userId
                 if(!dId)
                     dId = currentDialog.peer.chatId
+                if(!dId)
+                    dId = currentDialog.peer.channelId
 
                 sticker_file_manager.sendSticker(dId, path)
                 emoticons.destroy();
@@ -637,6 +641,8 @@ Rectangle {
                 var dId = currentDialog.peer.userId
                 if(!dId)
                     dId = currentDialog.peer.chatId
+                if(!dId)
+                    dId = currentDialog.peer.channelId
 
                 telegramObject.forwardDocument(dId, document)
                 emoticons.destroy();

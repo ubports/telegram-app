@@ -146,14 +146,4 @@ ListItem {
         }
         visible: showDivider
     }
-
-    // property real typeUserStatusEmpty: 0x9d05049
-    // property real typeUserStatusOnline: 0xedb93949
-    // property real typeUserStatusOffline: 0x8c703f
-    // property real typeUserStatusRecently: 0xe26f42f1
-    // property real typeUserStatusLastWeek: 0x7bf09fc
-    // property real typeUserStatusLastMonth: 0x77ebc742
-
-    // property real typeUserEmpty: 0x200250ba
-    // property real typeUserDeleted: 0xd6016d7a
 }

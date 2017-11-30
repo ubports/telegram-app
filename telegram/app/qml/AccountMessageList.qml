@@ -38,17 +38,18 @@ Rectangle {
     property alias maxId: messages_model.maxId
 
     property bool isChat: currentDialog ? currentDialog.peer.chatId != 0 : false
+    property bool isChannel: currentDialog ? currentDialog.peer.channelId != 0 : false
 
     property EncryptedChat enchat: telegramObject.encryptedChat(currentDialog.peer.userId)
     property int enChatUid: enchat.adminId==telegramObject.me? enchat.participantId : enchat.adminId
 
     property int filterId: -1
 
-    signal forwardRequest(variant messageIds)
+    signal forwardRequest(variant messageIds, Peer peer)
     signal focusRequest()
     signal dialogRequest(variant dialogObject)
     signal tagSearchRequest(string tag)
-    signal replyToRequest(int msgId)
+    signal replyToRequest(int msgId, int channelId)
     signal rejectSecretRequest()
 
     onIsActiveChanged: {
@@ -101,27 +102,13 @@ Rectangle {
         property Document doc
     }
 
-    //Timer refreshes MessagesModel to check if message(s) have been read or not
-    Timer {
-        id: refresh_timer
-        repeat: true
-        interval: 1500
-        onTriggered: {
-            messages_model.refresh()
-        }
-        Component.onCompleted: {
-            if (!isChat) {
-                start()
-            }
-        }
-    }
-
     Image {
+        id: background_img
         anchors.fill: parent
         fillMode: Cutegram.background.length==0? Image.Tile : Image.PreserveAspectCrop
         horizontalAlignment: Image.AlignLeft
         verticalAlignment: Image.AlignTop
-        sourceSize: Cutegram.background.length==0? Cutegram.imageSize("qrc:/qml/files/telegram_background.png") : Qt.size(width,height)
+        sourceSize: Qt.size(width,height)
         source: {
             return "qrc:/qml/files/telegram_background.png"
 //            if(backgroundManager.background == "")
@@ -226,8 +213,9 @@ Rectangle {
             maximumMediaHeight: acc_msg_list.maximumMediaHeight
             maximumMediaWidth: acc_msg_list.maximumMediaWidth
             message: item
+            dialog: currentDialog
             width: mlist.width
-            visibleNames: isChat
+            visibleNames: isChat || isChannel
             opacity: filterId == user.id || filterId == -1 ? 1 : 0.1
 
             leadingActions: ListItemActions {
@@ -235,7 +223,10 @@ Rectangle {
                     Action {
                         iconName: "delete"
                         text: i18n.tr("Delete")
-                        onTriggered: telegram.deleteMessages([item.id])
+                        onTriggered:
+                        {
+                            telegram.deleteMessages([item.id], currentDialog.peer);
+                        }
                     }
                 ]
             }
@@ -253,7 +244,7 @@ Rectangle {
                         iconName: "mail-reply"
                         text: i18n.tr("Reply")
                         onTriggered: {
-                            acc_msg_list.replyToRequest(message.id);
+                            acc_msg_list.replyToRequest(message_item.message.id, currentDialog.peer.channelId);
                         }
                     },
                     Action {
@@ -279,7 +270,7 @@ Rectangle {
 
             onDialogRequest: acc_msg_list.dialogRequest(dialog)
             onTagSearchRequest: acc_msg_list.tagSearchRequest(tag)
-            onMessageFocusRequest: focusOnMessage(msgId)
+            onMessageFocusRequest: focusOnMessage(msgId, dialog.peer.channelId)
 
             onPressAndHold: {
                 if (!message_item.isSystemMessage) {
@@ -314,19 +305,6 @@ Rectangle {
                 else
                     message_item.click();
             }
-
-//            onClicked: {
-//                console.log("on item clicked");
-//                if (mlist.isInSelectionMode) {
-//                    if (selected) {
-//                        mlist.deselectItem(message_item)
-//                    } else {
-//                        mlist.selectItem(message_item)
-//                    }
-//                }
-
-//                message_item.click();
-//            }
 
             onPreviewRequest: {
                 console.log("onOpenMedia");
@@ -552,7 +530,7 @@ Rectangle {
     function deleteSelected() {
         var messageIds = getSelectedMessageIds();
         mlist.endSelection();
-        telegram.deleteMessages(messageIds);
+        telegram.deleteMessages(messageIds, currentDialog.peer);
     }
 
     function forwardSelected() {
@@ -562,7 +540,7 @@ Rectangle {
     }
 
     function forwardMessages(messageIds) {
-        forwardRequest(messageIds);
+        forwardRequest(messageIds, currentDialog.peer);
         pageStack.clear();
     }
 
@@ -574,8 +552,8 @@ Rectangle {
         focus_msg_timer.msgId = msgId
     }
 
-    function focusOnMessage(msgId) {
-        var idx = messages_model.indexOf(msgId)
+    function focusOnMessage(msgId, channelId) {
+        var idx = messages_model.indexOf(msgId, channelId)
         mlist.positionViewAtIndex(idx, ListView.Center)
     }
 
