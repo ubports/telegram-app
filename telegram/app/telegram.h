@@ -96,8 +96,8 @@ public:
     Q_INVOKABLE static QList<qint32> variantListToIntList(const QVariantList &list);
 
     Q_INVOKABLE QSize imageSize( const QString & path );
-    Q_INVOKABLE bool filsIsImage(const QString & path);
-    Q_INVOKABLE bool filsIsAudio(const QString & path);
+    Q_INVOKABLE bool fileIsImage(const QString & path);
+    Q_INVOKABLE bool fileIsAudio(const QString & path);
     Q_INVOKABLE qreal htmlWidth( const QString & txt );
 
     Q_INVOKABLE void deleteFile(const QString &path);

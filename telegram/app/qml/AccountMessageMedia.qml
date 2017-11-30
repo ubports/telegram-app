@@ -13,9 +13,9 @@ Item {
 
     property Message message
     property MessageMedia media: message.media
-    property bool hasMedia: file_handler.targetType != FileHandler.TypeTargetUnknown &&
+    property int mediaType: file_handler.targetType
+    property bool hasMedia: mediaType != FileHandler.TypeTargetUnknown &&
                             file_handler.progressType != FileHandler.TypeProgressUpload
-    property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
 
     property real maximumMediaHeight: 256*Devices.density
@@ -26,16 +26,20 @@ Item {
     property alias location: file_handler.filePath
 
     property alias isSticker: file_handler.isSticker
+    property bool isImage: mediaType == FileHandler.TypeTargetMediaPhoto || mediaType == FileHandler.TypeTargetMediaDocument && media.document.mimeType.indexOf("image") != -1
+    property bool isVideo: mediaType == FileHandler.TypeTargetMediaVideo || mediaType == FileHandler.TypeTargetMediaDocument && media.document.mimeType.indexOf("video") != -1
+    property bool isAudio: mediaType == FileHandler.TypeTargetMediaAudio || mediaType == FileHandler.TypeTargetMediaDocument && media.document.mimeType.indexOf("audio") != -1
 
     property bool showStatus: true
 
     property variant mediaPlayer
-    property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
-    onIsAudioMessageChanged: {
-        if(isAudioMessage) {
+
+    onIsAudioChanged: {
+        if(isAudio) {
             if(mediaPlayer)
                 mediaPlayer.destroy()
             mediaPlayer = media_player_component.createObject(msg_media)
+            console.log("Created audio player")
         } else {
             if(mediaPlayer)
                 mediaPlayer.destroy()
@@ -55,13 +59,13 @@ Item {
         if (media_img.source == 0)
             return 0;
 
-        switch( file_handler.targetType )
+        switch( mediaType )
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
             result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        maximumMediaHeight*file_handler.imageSize.width/file_handler.imageSize.height
-                      : maximumMediaWidth
+                        Math.min(file_handler.imageSize.height, maximumMediaHeight)*file_handler.imageSize.width/file_handler.imageSize.height
+                      : Math.min(file_handler.imageSize.width, maximumMediaWidth)
             break;
 
         case FileHandler.TypeTargetUnknown:
@@ -83,7 +87,6 @@ Item {
     }
 
     height: {
-        // return units.gu(26);
         var result
         if(mediaPlayer)
             return mediaPlayer.height
@@ -93,13 +96,13 @@ Item {
         if (media_img.source == 0)
             return 0;
 
-        switch( file_handler.targetType )
+        switch( mediaType )
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
             result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        maximumMediaHeight
-                      : maximumMediaWidth*file_handler.imageSize.height/file_handler.imageSize.width
+                        Math.min(file_handler.imageSize.height, maximumMediaHeight)
+                      : Math.min(file_handler.imageSize.width, maximumMediaWidth)*file_handler.imageSize.height/file_handler.imageSize.width
             break;
 
         case FileHandler.TypeTargetMediaAudio:
@@ -122,28 +125,20 @@ Item {
         return result
     }
 
-    property string fileLocation: file_handler.filePath
-
     FileHandler {
         id: file_handler
         telegram: telegramObject
         target: message
-        defaultThumbnail: "image://theme/stock_document" 
+        defaultThumbnail: "image://theme/stock_document"
         onTargetTypeChanged: {
-            switch(targetType)
+            if((isSticker || targetType == FileHandler.TypeTargetMediaPhoto || targetType == FileHandler.TypeTargetMediaDocument && message.media.document.mimeType.indexOf("image")) && (filePath == ""))
             {
-            case FileHandler.TypeTargetMediaDocument:
-                if(isSticker)
-                    download()
-                break;
-
-            case FileHandler.TypeTargetMediaPhoto:
+                console.log("Immediate download of sticker or foto")
                 download()
-                break;
-
-            case FileHandler.TypeTargetMediaGeoPoint:
-                mapDownloader.addToQueue(Qt.point(message.media.geo.lat, message.media.geo.longitude), media_img.setImage )
             }
+
+            else if(targetType == FileHandler.TypeTargetMediaGeoPoint)
+                mapDownloader.addToQueue(Qt.point(message.media.geo.lat, message.media.geo.longitude), media_img.setImage )
         }
     }
 
@@ -153,7 +148,7 @@ Item {
         fillMode: isSticker? Image.PreserveAspectFit : Image.PreserveAspectCrop
         asynchronous: true
         smooth: true
-        visible: file_handler.targetType != FileHandler.TypeTargetMediaVideo || fileLocation.length != 0
+        visible: mediaType != FileHandler.TypeTargetMediaVideo || location.length != 0
 
         property size imageSize: Cutegram.imageSize(source)
         property string customImage
@@ -168,30 +163,37 @@ Item {
 
         source: {
             var result = ""
-            switch( file_handler.targetType )
+            switch( mediaType )
             {
             case FileHandler.TypeTargetMediaPhoto:
+                console.log("AccountMessageMedia: media type photo detected")
                 result = file_handler.filePath
                 break;
 
             case FileHandler.TypeTargetMediaVideo:
-                // console.log("thumb is " + file_handler.thumbPath)
+                console.log("AccountMessageMedia: media type video detected")
                 result = file_handler.thumbPath
                 break;
 
             case FileHandler.TypeTargetUnknown:
+                break;
             case FileHandler.TypeTargetMediaAudio:
+                console.log("AccountMessageMedia: media type audio detected")
                 break;
 
             case FileHandler.TypeTargetMediaDocument:
+                if (isSticker)
+                    console.log("AccountMessageMedia: media type sticker detected")
+                else
+                    console.log("AccountMessageMedia: media type document detected")
                 if(isSticker) {
-                    result = fileLocation
+                    result = location
                     if(result.length==0)
                         result = file_handler.thumbPath
                 }
                 else
-                if(Cutegram.filsIsImage(file_handler.filePath))
-                    result = fileLocation
+                if(Cutegram.fileIsImage(file_handler.filePath))
+                    result = location
                 else
                     result = file_handler.thumbPath
                 break;
@@ -232,7 +234,7 @@ Item {
         color: "white"
         visible: !download_frame.visible
         text: {
-                if (!isSticker && !Cutegram.filsIsImage(file_handler.filePath))
+                if (!isSticker && !Cutegram.fileIsImage(file_handler.filePath))
                     return file_handler.fileName;
                 else
                     return "";
@@ -249,7 +251,7 @@ Item {
     Rectangle {
         id: video_frame
         color: "#44000000"
-        visible: file_handler.targetType == FileHandler.TypeTargetMediaVideo && fileLocation.length != 0
+        visible: mediaType == FileHandler.TypeTargetMediaVideo && location.length != 0
         anchors.fill: media_img
 
         Icon {
@@ -264,9 +266,9 @@ Item {
         id: download_frame
         anchors.fill: parent
         color: "#88000000"
-        visible: fileLocation.length == 0 && !isSticker
-                && file_handler.targetType != FileHandler.TypeTargetMediaPhoto
-                && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
+        visible: location.length == 0 && !isSticker
+                && mediaType != FileHandler.TypeTargetMediaPhoto
+                && mediaType != FileHandler.TypeTargetMediaGeoPoint
         radius: 3*Devices.density
 
         Icon {
@@ -276,7 +278,7 @@ Item {
             color: "white"
             //sourceSize: Qt.size(width,height)
             name: {
-                if (file_handler.targetType == FileHandler.TypeTargetUnknown) {
+                if (mediaType == FileHandler.TypeTargetUnknown) {
                     return "cancel" // indicating error
                 } else {
                     return "save"
@@ -332,12 +334,12 @@ Item {
     Image {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.verticalCenter
-        source: file_handler.targetType == FileHandler.TypeTargetMediaOther? "files/map-pin.png" : ""
+        source: mediaType == FileHandler.TypeTargetMediaOther? "files/map-pin.png" : ""
         sourceSize: Qt.size(width,height)
         fillMode: Image.PreserveAspectFit
         width: 92*Devices.density
         height: 92*Devices.density
-        visible: file_handler.targetType == FileHandler.TypeTargetMediaOther
+        visible: mediaType == FileHandler.TypeTargetMediaOther
         asynchronous: true
         smooth: true
     }
@@ -364,7 +366,7 @@ Item {
         width: height
         color: "white"
         name: "cancel"
-        visible: downloading && file_handler.targetType != FileHandler.TypeTargetMediaPhoto && !isSticker
+        visible: downloading && mediaType != FileHandler.TypeTargetMediaPhoto && !isSticker
 
         MouseArea {
             anchors.fill: parent
@@ -373,14 +375,15 @@ Item {
     }
 
     function click() {
-        console.log("AccountMessageMedia click()");
-        if (fileLocation.length != 0) {
-            console.log("opening! " + fileLocation);
-            msg_media.mediaClicked(mediaType, fileLocation);
+        if (isSticker)
+            return false
+        if (location.length != 0) {
+            console.log("opening! " + location);
+            msg_media.mediaClicked(mediaType, location);
         }
         else
         {
-            switch( file_handler.targetType )
+            switch( mediaType )
             {
             case FileHandler.TypeTargetMediaVideo:
             case FileHandler.TypeTargetMediaPhoto:
@@ -394,10 +397,8 @@ Item {
                 //Qt.openUrlExternally( mapDownloader.webLinkOf(Qt.point(media.geo.lat, media.geo.longitude)) )
                 break;
 
-            case FileHandler.TypeTargetUnknown:
             default:
                 return false
-                break;
             }
         }
 
@@ -410,12 +411,12 @@ Item {
             width: 180*Devices.density
             height: 40*Devices.density
             anchors.verticalCenter: parent.verticalCenter
-            filePath: fileLocation
-            z: fileLocation.length == 0? -1 : 0
+            filePath: location
+            z: location.length == 0? -1 : 0
 
             MouseArea {
                 anchors.fill: parent
-                visible: fileLocation.length == 0
+                visible: location.length == 0
                 onClicked: msg_media.click()
             }
         }

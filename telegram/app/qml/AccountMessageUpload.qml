@@ -25,7 +25,7 @@ Item {
             if(!uploading)
                 return ""
 
-            var isImage = Cutegram.filsIsImage(message.upload.location)
+            var isImage = Cutegram.fileIsImage(message.upload.location)
             if(isImage)
                 return Devices.localFilesPrePath + message.upload.location
             else

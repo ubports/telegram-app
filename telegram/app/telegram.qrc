@@ -131,5 +131,7 @@
         <file>qml/files/emojis.svg</file>
         <file>qml/files/msg_panel_stickers.svg</file>
         <file>qml/InstallStickerDialog.qml</file>
+        <file>qml/files/eyeWhite.svg</file>
+        <file>qml/files/eye.svg</file>
     </qresource>
 </RCC>

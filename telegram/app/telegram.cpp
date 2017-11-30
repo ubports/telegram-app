@@ -190,7 +190,6 @@ Cutegram::Cutegram(QObject *parent) :
     qmlRegisterType<EmoticonsModel>("Cutegram", 1, 0, "EmoticonsModel");
     qmlRegisterType<StickerFileManager>("Cutegram", 1, 0, "StickerFileManager");
 
-    init_languages();
 }
 
 QSize Cutegram::imageSize(const QString &pt)
@@ -201,11 +200,12 @@ QSize Cutegram::imageSize(const QString &pt)
     if(path.isEmpty())
         return QSize();
 
-    QImageReader img(path);
+    QImage img(path);
+    qWarning() << "Image " << path << ", image size: " << img.size().width() << "x" << img.size().height();
     return img.size();
 }
 
-bool Cutegram::filsIsImage(const QString &pt)
+bool Cutegram::fileIsImage(const QString &pt)
 {
     QString path = pt;
     if(path.left(AsemanDevices::localFilesPrePath().length()) == AsemanDevices::localFilesPrePath())
@@ -216,7 +216,7 @@ bool Cutegram::filsIsImage(const QString &pt)
     return p->mdb.mimeTypeForFile(path).name().toLower().contains("image");
 }
 
-bool Cutegram::filsIsAudio(const QString &pt)
+bool Cutegram::fileIsAudio(const QString &pt)
 {
     QString path = pt;
     if(path.left(AsemanDevices::localFilesPrePath().length()) == AsemanDevices::localFilesPrePath())
@@ -1043,36 +1043,6 @@ QString Cutegram::normalizeText(const QString &text) const
         return text;
 
     return text[0].toUpper() + text.mid(1);
-}
-
-void Cutegram::init_languages()
-{
-    // We're using .po 
-
-    /*
-    QDir dir(p->translationsPath);
-    QStringList languages = dir.entryList( QDir::Files );
-    if( !languages.contains("lang-en.qm") )
-        languages.prepend("lang-en.qm");
-
-    for( int i=0 ; i<languages.size() ; i++ )
-    {
-        QString locale_str = languages[i];
-        locale_str.truncate( locale_str.lastIndexOf('.') );
-        locale_str.remove( 0, locale_str.indexOf('-') + 1 );
-
-        QLocale locale(locale_str);
-
-        QString  lang = QString("%1 (%2)").arg(QLocale::languageToString(locale.language()), QLocale::countryToString(locale.country()));
-        QVariant data = p->translationsPath + "/" + languages[i];
-
-        p->languages.insert( lang, data );
-        p->locales.insert( lang , locale );
-
-        if( lang == AsemanApplication::settings()->value("General/Language","English (UnitedStates)").toString() )
-            setLanguage( lang );
-    }
-    */
 }
 
 void Cutegram::init_theme()

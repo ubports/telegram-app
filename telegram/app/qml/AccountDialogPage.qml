@@ -18,9 +18,10 @@ Page {
     property Dialog currentDialog: telegramObject.nullDialog
 
     property bool isChat: currentDialog ? currentDialog.peer.chatId != 0 : false
+    property bool isChannel: currentDialog ? currentDialog.peer.channelId != 0 : false
     property User user: telegramObject.user(currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
-    property Chat chat: telegramObject.chat(currentDialog.peer.chatId)
-    property int dialogId: isChat ? currentDialog.peer.chatId : (currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
+    property Chat chat: telegramObject.chat(isChannel ? currentDialog.peer.channelId : currentDialog.peer.chatId)
+    property int dialogId: isChannel ? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : (currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
 
     property EncryptedChat enchat: telegramObject.encryptedChat(currentDialog.peer.userId)
     property int enChatUid: enchat.adminId==telegramObject.me ? enchat.participantId : enchat.adminId
@@ -29,7 +30,7 @@ Page {
         Action {
             objectName: "groupInfo"
             iconName: "stock_contact"
-            text: isChat ? i18n.tr("Group Info") : i18n.tr("Profile Info")
+            text: isChannel ? i18n.tr("Channel Info") : isChat ? i18n.tr("Group Info") : i18n.tr("Profile Info")
             onTriggered: {
                 Qt.inputMethod.hide();
                 headerClicked();
@@ -102,7 +103,7 @@ Page {
         dialog: currentDialog
     }
     
-    signal forwardRequest(var messageIds);
+    signal forwardRequest(var messageIds, Peer peer);
     signal tagSearchRequest(string tag);
     signal dialogClosed();
     signal headerClicked();
@@ -130,9 +131,14 @@ Page {
     Component.onCompleted: {
         // This is needed to have the username list ready for @ completion
         // CuteGram upstream calls this implicitly because of the items in the top bar.
-        if (isChat) {
+        if (isChat)
+        {
             telegram.messagesGetFullChat(chat.id)
+        } else if (isChannel)
+        {
+            telegram.channelsGetFullChannel(chat.id)
         }
+
     }
 
     Component.onDestruction: {
@@ -190,12 +196,12 @@ Page {
 
             onFocusRequest: send_msg.focusOut();
             onForwardRequest: {
-                dialog_page.forwardRequest(messageIds);
+                dialog_page.forwardRequest(messageIds, peer);
                 pageStack.removePages(dialog_page);
             }
-            onDialogRequest: account_page.currentDialog = dialogObject
+            onDialogRequest: account_page.currentDialog = currentDialog
             onTagSearchRequest: msg_box.tagSearchRequest(tag)
-            onReplyToRequest: send_msg.replyTo(msgId)
+            onReplyToRequest: send_msg.replyTo(msgId, currentDialog.peer.channelId)
             onRejectSecretRequest: dialog_page.closeChat()
         }
     }

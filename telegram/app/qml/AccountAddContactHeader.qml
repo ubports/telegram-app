@@ -6,14 +6,14 @@ Rectangle {
     id: add_contact_header
 
     property real typeUserForeign: 0x75cf7a8
-    property real typeUserRequest: 0xd9ccc4ef
 
     property Telegram telegramObject
     property Dialog currentDialog: telegramObject.nullDialog
 
     property bool isChat: currentDialog ? currentDialog.peer.chatId != 0 : false
+    property bool isChannel: currentDialog ? currentDialog.peer.channelId != 0 : false
     property User user: telegramObject.user(currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
-    property int dialogId: isChat ? currentDialog.peer.chatId : (currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
+    property int dialogId: isChannel ? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : (currentDialog.encrypted ? enChatUid : currentDialog.peer.userId)
 
     property EncryptedChat enchat: telegramObject.encryptedChat(currentDialog.peer.userId)
     property int enChatUid: enchat.adminId==telegramObject.me ? enchat.participantId : enchat.adminId
@@ -32,7 +32,7 @@ Rectangle {
     height: units.gu(5)
     color: mouse_area.pressed ? Qt.rgba(0, 0, 0, 0.1) : "white"
     z: 1
-    visible: !isChat && hasPhone && isForeign
+    visible: !isChat && !isChannel && hasPhone && isForeign
 
     Label {
         anchors.centerIn: parent

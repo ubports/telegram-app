@@ -19,37 +19,32 @@ ListItem {
 
     property var dialogPage
     property Dialog dialog
-    property int dialogId: isChat ? dialog.peer.chatId : dialog.peer.userId
+    property int dialogId: isChannel ? dialog.peer.channelId : isChat ? dialog.peer.chatId : dialog.peer.userId
     property bool isChat: dialog.peer.chatId !== 0
+    property bool isChannel: dialog.peer.channelId !== 0
     property bool isMuted: telegram.userData.isMuted(dialogId)
     property bool isEncrypted: dialog.encrypted
     property User user: telegram.user(dialog.encrypted ? encryptedChatUid : dialog.peer.userId)
-    property Chat chat: telegram.chat(dialog.peer.chatId)
+    property Chat chat: telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId)
 
     property EncryptedChat encryptedChat: telegramObject.encryptedChat(dialog.peer.userId)
     property int encryptedChatUid: encryptedChat.adminId === telegram.me
             ? encryptedChat.participantId : encryptedChat.adminId
 
     property bool showMessage: true
-    property Message message: telegram.message(dialog.topMessage)
+    property Message message: telegram.message(dialog.topMessage, dialog.peer.channelId)
+    property MessageAction action: message.action
+    property bool hasAction: action.messageActionEnum != MessageAction.Empty
     property variant messageDate: CalendarConv.fromTime_t(message ? message.date : 0)
-    property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
+    property bool isAudio: file_handler.targetType == FileHandler.TypeTargetMediaAudio
     property alias isSticker: file_handler.isSticker
 
-    property bool online: isChat ? false : (user.status.classType == image.typeUserStatusOnline)
+    property bool online: isChat || isChannel ? false : (user.status.classType == image.typeUserStatusOnline)
 
-    property string title: isChat ? chat.title : user.firstName + " " + user.lastName
+    property string title: isChat || isChannel ? chat.title : user.firstName + " " + user.lastName
 
     // in delegate -- selected: currentDialog == dialog
     property bool selected: false
-
-    property real typeMessageActionEmpty:               0xb6aef7b0
-    property real typeMessageActionChatCreate:          0xa6638b9a
-    property real typeMessageActionChatAddUser:         0x5e3cfc4b
-    property real typeMessageActionChatDeleteUser:      0xb2ae9b0c
-    property real typeMessageActionChatJoinedByLink:    0xf89cf5e8
-    property real typeMessageActionChatSentImage:       0xB6AEF7B0
-    property real typeMessageActionChatChangeTitle:     0xB5A1CE5A
 
     signal currentIndexChanged(int index);
     signal currentDialogChanged(Dialog dialog);
@@ -165,7 +160,7 @@ ListItem {
 
         Icon {
             id: contact_group_icon
-            visible: isChat
+            visible: isChat || isChannel
             name: "contact-group"
             anchors {
                 top: parent.top
@@ -216,14 +211,14 @@ ListItem {
 
         Text {
             id: message_author
-            visible: showMessage && message && (message.out || isChat) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == typeMessageActionChatSentImage)
+            visible: showMessage && message && (message.out || isChat || isChannel) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == MessageAction.Empty)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
             color: Colors.telegram_blue
             text: {
                 if (!message || dialog.typingUsers.length > 0) return '';
                 if (message.out) return i18n.tr("You: ");
-                if (isChat) return telegramObject.user(message.fromId).firstName + ': ';
+                if (isChat || isChannel) return telegramObject.user(message.fromId).firstName + ': ';
                 return '';
             }
         }
@@ -251,7 +246,7 @@ ListItem {
                     //return emojis.bodyTextToEmojiText(message.message, 16, true);
 
                     if (message.message == "") {
-                        var res = ""
+                        var res = "";
                         var user = telegramObject.user(message.action.userId) 
                         var fromUser = telegramObject.user(message.fromId)
                         var userName = user.firstName + " " + user.lastName
@@ -259,8 +254,8 @@ ListItem {
                         userName = userName.trim()
                         fromUserName = fromUserName.trim()
 
-                        switch(message.action.classType) {
-                            case typeMessageActionChatChangeTitle:
+                        switch(message.action.messageActionEnum) {
+                            case MessageAction.ChatEditTitle:
                                 if (fromUserName != "") {
                                     if(fromUser.id == telegramObject.me)
                                         res = i18n.tr("You changed the group title to %1").arg(message.action.title)
@@ -269,9 +264,9 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatSentImage:
+                            case MessageAction.Empty:
                                 if (fromUserName != "") {
-                                    if (isAudioMessage)
+                                    if (isAudio)
                                         res = i18n.tr("Voice message")
                                     else if (isSticker)
                                         res = i18n.tr("Sticker")
@@ -283,7 +278,7 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatCreate:
+                            case MessageAction.ChatCreate:
                                 if (message.action.title == "Secret Chat") {
                                     if (user.id == telegramObject.me)
                                         res = i18n.tr("%1 joined your secret chat.").arg(fromUserName)
@@ -297,16 +292,18 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatAddUser:
+                            case MessageAction.ChatAddUser:
                                 if (fromUser.id == telegramObject.me)
                                     res = i18n.tr("You added %1").arg(userName)
                                 else if (user.id == telegramObject.me)
                                     res = i18n.tr("%1 added you").arg(fromUserName)
+                                else if (isChannel)
+                                    res = i18n.tr("%1 joined the group").arg(fromUserName)
                                 else
                                     res = i18n.tr("%1 added %2").arg(fromUserName).arg(userName)
                                 break
 
-                            case typeMessageActionChatDeleteUser:
+                            case MessageAction.ChatDeleteUser:
                                 if(user.id == fromUser.id) {
                                     res = i18n.tr("%1 left the group").arg(userName)
                                 } else {
@@ -319,16 +316,12 @@ ListItem {
                                 }
                                 break
 
-                            case typeMessageActionChatJoinedByLink:
+                            case MessageAction.ChatJoinedByLink:
                                 if(fromUser.id == telegramObject.me)
                                     res = i18n.tr("You joined the group via invite link")
                                 else
                                     res = i18n.tr("%1 joined the group via invite link").arg(fromUserName)
                                 break
-
-                            case typeMessageActionEmpty:
-                                res = i18n.tr("%1 is currently offline").arg(title);
-                                break;
 
                             default:
                                 break

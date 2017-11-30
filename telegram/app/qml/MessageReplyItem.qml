@@ -9,24 +9,18 @@ Item {
     id: msg_reply
     width: row.width + 12*Devices.density
     height: row.height + 4*Devices.density
-    visible: replyMessage || (message && message.replyToMsgId != 0)
+    visible: realMessage
 
     property Telegram telegram
     property Message message
     property Message replyMessage
+    property Dialog dialog
+
+    property Message realMessage: (message && message.replyToMsgId != 0) ? telegram.message(message.replyToMsgId, dialog.peer.channelId) : replyMessage
 
     property real maximumWidth: 100
 
-    property real typeMessageMediaEmpty: 0x3ded6320
-    property real typeMessageMediaPhoto: 0x3d8ce53d
-    property real typeMessageMediaVideo: 0x5bcf1675
-    property real typeMessageMediaGeo: 0x56e0d474
-    property real typeMessageMediaContact: 0x5e7d2f39
-    property real typeMessageMediaUnsupported: 0x9f84f49e
-    property real typeMessageMediaDocument: 0x2fda2204
-    property real typeMessageMediaAudio: 0xc6b68300
-
-    signal messageFocusRequest(int msgId)
+    signal messageFocusRequest(int msgId, int channelId)
 
     Row {
         id: row
@@ -47,17 +41,13 @@ Item {
 
             Label {
                 id: name_text
-                // font.pixelSize: Math.floor(11*Devices.fontDensity)
-                // font.family: AsemanApp.globalFont.family
                 fontSize: "small"
                 font.weight: Font.Normal
                 color: Colors.telegram_blue
                 text: {
-                    if(!replyMessage && (!message || message.replyToMsgId == 0))
+                    if (!realMessage)
                         return ""
-
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
-                    var replyUser = telegram.user(replyMsg.fromId)
+                    var replyUser = telegram.user(realMessage.fromId)
                     return replyUser.firstName + " " + replyUser.lastName
                 }
             }
@@ -74,30 +64,24 @@ Item {
                 source: path
 
                 property size imageSize: Cutegram.imageSize(source)
-                property variant media: {
-                    if(!replyMessage && (!message || message.replyToMsgId == 0))
-                        return 0
+                property variant media: realMessage ? realMessage.media : 0
 
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
-                    return replyMsg.media
-                }
-
-                property bool hasMedia: media? media.classType != typeMessageMediaEmpty : false
+                property bool hasMedia: media? media.messageMediaEnum != MessageMedia.Empty : false
                 onHasMediaChanged: {
                     if( !hasMedia )
                         return
 
-                    switch( media.classType )
+                    switch( media.messageMediaEnum )
                     {
-                    case typeMessageMediaPhoto:
+                    case MessageMedia.Photo:
                         telegramObject.getFile(media.photo.sizes.last.location)
                         break;
 
-                    case typeMessageMediaVideo:
+                    case MessageMedia.Video:
                         telegramObject.getFile(media.video.thumb.location)
                         break;
 
-                    case typeMessageMediaDocument:
+                    case MessageMedia.Document:
                         telegramObject.getFile(media.document.thumb.location)
                         break;
 
@@ -111,25 +95,25 @@ Item {
                     if(!media)
                         return ""
 
-                    switch( media.classType )
+                    switch( media.messageMediaEnum )
                     {
-                    case typeMessageMediaPhoto:
+                    case MessageMedia.Photo:
                         result = media.photo.sizes.last.location.download.location;
                         break;
 
-                    case typeMessageMediaVideo:
+                    case MessageMedia.Video:
                         result = media.video.thumb.location.download.location;
                         break;
 
-                    case typeMessageMediaAudio:
+                    case MessageMedia.Audio:
                         result = "files/audio.png"
                         break;
 
-                    case typeMessageMediaUnsupported:
+                    case MessageMedia.Unsupported:
                         result = "files/document.png"
                         break;
 
-                    case typeMessageMediaDocument:
+                    case MessageMedia.Document:
                         result = media.document.thumb.location.download.location
                         break;
 
@@ -144,34 +128,15 @@ Item {
 
             Label {
                 id: txt
-                width: Math.min(htmlWidth, maximumWidth)
-                // font.pixelSize: Math.floor(Cutegram.font.pointSize*Devices.fontDensity)-1
-                // font.family: Cutegram.font.family
+                width: maximumWidth
                 fontSize: "small"
                 font.weight: Font.Normal
                 horizontalAlignment: Text.AlignLeft
-                // opacity: 0.8
                 visible: text.length != 0
-//                {
-//                    if(!replyMessage && (!message || message.out))
-//                        return Cutegram.currentTheme.messageOutgoingFontColor
-//                    else
-//                        return Cutegram.currentTheme.messageIncomingFontColor
-//                }
                 maximumLineCount: 1
                 elide: Text.ElideRight
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: {
-                    if(!replyMessage && (!message || message.replyToMsgId == 0))
-                        return ""
-
-                    var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
-                    // We use emojis in the font for now, no need to replace them
-                    //return emojis.textToEmojiText(replyMsg.message,16,true)
-                    return replyMsg.message
-                }
-
-                property real htmlWidth: Cutegram.htmlWidth(text)
+                text: realMessage ? realMessage.message : ""
             }
         }
     }
@@ -179,11 +144,8 @@ Item {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            if(!replyMessage && (!message || message.replyToMsgId == 0))
-                return
-
-            var replyMsg = replyMessage? replyMessage : telegram.message(message.replyToMsgId)
-            msg_reply.messageFocusRequest(replyMsg.id)
+            if (realMessage)
+                msg_reply.messageFocusRequest(realMessage.id, dialog.peer.channelId)
         }
     }
 }

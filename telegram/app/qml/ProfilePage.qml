@@ -15,17 +15,15 @@ import "js/time.js" as Time
 import "js/colors.js" as Colors
 
 Page {
-    id: profile_page
-    title: isChat ? i18n.tr("Group Info") : i18n.tr("Contact Info")
-    objectName: "profilePage"
 
     property Telegram telegram
     property Dialog dialog
 
     property bool isChat: dialog.peer.chatId != 0
+    property bool isChannel: dialog.peer.channelId != 0
     property User user: telegram.user(dialog.encrypted ? enChatUid : dialog.peer.userId)
-    property Chat chat: telegram.chat(dialog.peer.chatId)
-    property variant dialogId: isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
+    property Chat chat: telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId)
+    property variant dialogId: isChannel ? dialog.peer.channelId : isChat ? dialog.peer.chatId : (dialog.encrypted ? enChatUid : dialog.peer.userId)
 
     property EncryptedChat enchat: telegram.encryptedChat(dialog.peer.userId)
     property int enChatUid: enchat.adminId==telegram.me ? enchat.participantId : enchat.adminId
@@ -57,9 +55,13 @@ Page {
         }
     ]
 
+    id: profile_page
+    objectName: "profilePage"
+    title: isChannel ? i18n.tr("Channel Info") : isChat ? i18n.tr("Group Info") : i18n.tr("Contact Info")
+
     header: PageHeader {
         title: profile_page.title
-        trailingActionBar.actions: isChat ? groupActions : noActions
+        trailingActionBar.actions: isChat || isChannel ? groupActions : noActions
         leadingActionBar.actions: Action {
             id: back_action
             objectName: "profileBack"
@@ -72,6 +74,14 @@ Page {
 
     onIsChatChanged: {
         if (isChat) {
+            online_count_refresher.restart()
+        } else {
+            online_count_refresher.stop()
+        }
+    }
+
+    onIsChannelChanged: {
+        if (isChannel) {
             online_count_refresher.restart()
         } else {
             online_count_refresher.stop()
@@ -94,6 +104,8 @@ Page {
         notify_check.silentChecked = !telegram.userData.isMuted(dialogId);
         if (isChat) {
             telegram.messagesGetFullChat(chat.id)
+        } else if (isChannel){
+            telegram.channelsGetFullChannel(chat.id)
         } else {
             telegram.usersGetFullUser(user.id)
         }
@@ -109,10 +121,7 @@ Page {
             if (id != dialogId) return;
             notify_check.silentChecked = !telegram.userData.isMuted(id);
         }
-        // onValueChanged: {
-        //     if (key != "love") return;
-        //     love_check.checked = (telegram.userData.value("love") == dialogId);
-        // }
+
     }
 
     Connections {
@@ -272,19 +281,18 @@ Page {
         title.text: {
             if (!dialog) return "";
 
-            if (isChat)
-                return chat ? chat.title : "" // emojis.textToEmojiText(chat ? chat.title : "", 18, true);
+            if (isChat || isChannel)
+                return chat ? chat.title : ""
             else
-                return user ? user.firstName + " " + user.lastName : ""//emojis.textToEmojiText(user ? user.firstName + " " + user.lastName : "", 18, true);
+                return user ? user.firstName + " " + user.lastName : ""
         }
 
         subtitle.text: {
-            //groupModel.count + " " + i18n.tr("members")
 
             var result = ""
             var list = dialog.typingUsers
             if (list.length == 0) {
-                if( isChat ) {
+                if( isChat || isChannel ) {
                     if (onlineCount > 0) {
                         // TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
                         return i18n.tr("%1 members, %2 online").arg(chat.participantsCount).arg(onlineCount)
@@ -348,7 +356,7 @@ Page {
             left: parent.left
             right: parent.right
         }
-        visible: !isChat
+        visible: !isChat && !isChannel
         height: visible ? implicitHeight : 0
 
         ListItem.Empty {
@@ -593,7 +601,7 @@ Page {
             right: parent.right
         }
         showDivider: false
-        visible: !isChat
+        visible: !isChat && !isChannel
 
         onClicked: {
             block_check.checked = !block_check.checked;
@@ -733,7 +741,7 @@ Page {
         id: online_count_refresher
         interval: 2000
         repeat: true
-        triggeredOnStart: isChat
+        triggeredOnStart: isChat || isChannel
         onTriggered: {
             onlineCount = 0
             var chatFull = telegram.chatFull(chat.id)
