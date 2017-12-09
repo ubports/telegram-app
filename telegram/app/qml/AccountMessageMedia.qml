@@ -1,9 +1,9 @@
-import QtQuick 2.4 
-import Ubuntu.Components 1.3 
+import QtQuick 2.4
+import Ubuntu.Components 1.3
 
-import AsemanTools 1.0 
-import TelegramQML 1.0 
-import QtGraphicalEffects 1.0 
+import AsemanTools 1.0
+import TelegramQML 1.0
+import QtGraphicalEffects 1.0
 
 import "components"
 import "ui"
@@ -13,9 +13,9 @@ Item {
 
     property Message message
     property MessageMedia media: message.media
-    property int mediaType: file_handler.targetType
-    property bool hasMedia: mediaType != FileHandler.TypeTargetUnknown &&
+    property bool hasMedia: file_handler.targetType != FileHandler.TypeTargetUnknown &&
                             file_handler.progressType != FileHandler.TypeProgressUpload
+    property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
 
     property real maximumMediaHeight: 256*Devices.density
@@ -26,20 +26,16 @@ Item {
     property alias location: file_handler.filePath
 
     property alias isSticker: file_handler.isSticker
-    property bool isImage: mediaType == FileHandler.TypeTargetMediaPhoto || mediaType == FileHandler.TypeTargetMediaDocument && media.document.mimeType.indexOf("image") != -1
-    property bool isVideo: mediaType == FileHandler.TypeTargetMediaVideo || mediaType == FileHandler.TypeTargetMediaDocument && media.document.mimeType.indexOf("video") != -1
-    property bool isAudio: mediaType == FileHandler.TypeTargetMediaAudio || mediaType == FileHandler.TypeTargetMediaDocument && media.document.mimeType.indexOf("audio") != -1
 
     property bool showStatus: true
 
     property variant mediaPlayer
-
-    onIsAudioChanged: {
-        if(isAudio) {
+    property bool isAudioMessage: file_handler.targetType == FileHandler.TypeTargetMediaAudio
+    onIsAudioMessageChanged: {
+        if(isAudioMessage) {
             if(mediaPlayer)
                 mediaPlayer.destroy()
             mediaPlayer = media_player_component.createObject(msg_media)
-            console.log("Created audio player")
         } else {
             if(mediaPlayer)
                 mediaPlayer.destroy()
@@ -59,7 +55,7 @@ Item {
         if (media_img.source == 0)
             return 0;
 
-        switch( mediaType )
+        switch( file_handler.targetType )
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
@@ -96,13 +92,13 @@ Item {
         if (media_img.source == 0)
             return 0;
 
-        switch( mediaType )
+        switch( file_handler.targetType )
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
             result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        Math.min(file_handler.imageSize.height, maximumMediaHeight)
-                      : Math.min(file_handler.imageSize.width, maximumMediaWidth)*file_handler.imageSize.height/file_handler.imageSize.width
+                        maximumMediaHeight
+                      : maximumMediaWidth*file_handler.imageSize.height/file_handler.imageSize.width
             break;
 
         case FileHandler.TypeTargetMediaAudio:
@@ -125,20 +121,28 @@ Item {
         return result
     }
 
+    property string fileLocation: file_handler.filePath
+
     FileHandler {
         id: file_handler
         telegram: telegramObject
         target: message
         defaultThumbnail: "image://theme/stock_document"
         onTargetTypeChanged: {
-            if((isSticker || targetType == FileHandler.TypeTargetMediaPhoto || targetType == FileHandler.TypeTargetMediaDocument && message.media.document.mimeType.indexOf("image")) && (filePath == ""))
+            switch(targetType)
             {
-                console.log("Immediate download of sticker or foto")
-                download()
-            }
+            case FileHandler.TypeTargetMediaDocument:
+                if(isSticker)
+                    download()
+                break;
 
-            else if(targetType == FileHandler.TypeTargetMediaGeoPoint)
+            case FileHandler.TypeTargetMediaPhoto:
+                download()
+                break;
+
+            case FileHandler.TypeTargetMediaGeoPoint:
                 mapDownloader.addToQueue(Qt.point(message.media.geo.lat, message.media.geo.longitude), media_img.setImage )
+            }
         }
     }
 
@@ -148,7 +152,7 @@ Item {
         fillMode: isSticker? Image.PreserveAspectFit : Image.PreserveAspectCrop
         asynchronous: true
         smooth: true
-        visible: mediaType != FileHandler.TypeTargetMediaVideo || location.length != 0
+        visible: file_handler.targetType != FileHandler.TypeTargetMediaVideo || fileLocation.length != 0
 
         property size imageSize: Cutegram.imageSize(source)
         property string customImage
@@ -163,37 +167,30 @@ Item {
 
         source: {
             var result = ""
-            switch( mediaType )
+            switch( file_handler.targetType )
             {
             case FileHandler.TypeTargetMediaPhoto:
-                console.log("AccountMessageMedia: media type photo detected")
                 result = file_handler.filePath
                 break;
 
             case FileHandler.TypeTargetMediaVideo:
-                console.log("AccountMessageMedia: media type video detected")
+                // console.log("thumb is " + file_handler.thumbPath)
                 result = file_handler.thumbPath
                 break;
 
             case FileHandler.TypeTargetUnknown:
-                break;
             case FileHandler.TypeTargetMediaAudio:
-                console.log("AccountMessageMedia: media type audio detected")
                 break;
 
             case FileHandler.TypeTargetMediaDocument:
-                if (isSticker)
-                    console.log("AccountMessageMedia: media type sticker detected")
-                else
-                    console.log("AccountMessageMedia: media type document detected")
                 if(isSticker) {
-                    result = location
+                    result = fileLocation
                     if(result.length==0)
                         result = file_handler.thumbPath
                 }
                 else
                 if(Cutegram.fileIsImage(file_handler.filePath))
-                    result = location
+                    result = fileLocation
                 else
                     result = file_handler.thumbPath
                 break;
@@ -251,7 +248,7 @@ Item {
     Rectangle {
         id: video_frame
         color: "#44000000"
-        visible: mediaType == FileHandler.TypeTargetMediaVideo && location.length != 0
+        visible: file_handler.targetType == FileHandler.TypeTargetMediaVideo && fileLocation.length != 0
         anchors.fill: media_img
 
         Icon {
@@ -266,9 +263,9 @@ Item {
         id: download_frame
         anchors.fill: parent
         color: "#88000000"
-        visible: location.length == 0 && !isSticker
-                && mediaType != FileHandler.TypeTargetMediaPhoto
-                && mediaType != FileHandler.TypeTargetMediaGeoPoint
+        visible: fileLocation.length == 0 && !isSticker
+                && file_handler.targetType != FileHandler.TypeTargetMediaPhoto
+                && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
         radius: 3*Devices.density
 
         Icon {
@@ -276,12 +273,11 @@ Item {
             width: height
             anchors.centerIn: parent
             color: "white"
-            //sourceSize: Qt.size(width,height)
             name: {
                 if (mediaType == FileHandler.TypeTargetUnknown) {
-                    return "cancel" // indicating error
+                    return "cancel"; // indicating error
                 } else {
-                    return "save"
+                    return "save";
                 }
             }
             visible: !downloading
@@ -334,12 +330,12 @@ Item {
     Image {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.verticalCenter
-        source: mediaType == FileHandler.TypeTargetMediaOther? "files/map-pin.png" : ""
+        source: file_handler.targetType == FileHandler.TypeTargetMediaOther? "files/map-pin.png" : ""
         sourceSize: Qt.size(width,height)
         fillMode: Image.PreserveAspectFit
         width: 92*Devices.density
         height: 92*Devices.density
-        visible: mediaType == FileHandler.TypeTargetMediaOther
+        visible: file_handler.targetType == FileHandler.TypeTargetMediaOther
         asynchronous: true
         smooth: true
     }
@@ -366,7 +362,7 @@ Item {
         width: height
         color: "white"
         name: "cancel"
-        visible: downloading && mediaType != FileHandler.TypeTargetMediaPhoto && !isSticker
+        visible: downloading && file_handler.targetType != FileHandler.TypeTargetMediaPhoto && !isSticker
 
         MouseArea {
             anchors.fill: parent
@@ -375,15 +371,14 @@ Item {
     }
 
     function click() {
-        if (isSticker)
-            return false
-        if (location.length != 0) {
-            console.log("opening! " + location);
-            msg_media.mediaClicked(mediaType, location);
+        console.log("AccountMessageMedia click()");
+        if (fileLocation.length != 0) {
+            console.log("opening! " + fileLocation);
+            msg_media.mediaClicked(mediaType, fileLocation);
         }
         else
         {
-            switch( mediaType )
+            switch( file_handler.targetType )
             {
             case FileHandler.TypeTargetMediaVideo:
             case FileHandler.TypeTargetMediaPhoto:
@@ -411,12 +406,12 @@ Item {
             width: 180*Devices.density
             height: 40*Devices.density
             anchors.verticalCenter: parent.verticalCenter
-            filePath: location
-            z: location.length == 0? -1 : 0
+            filePath: fileLocation
+            z: fileLocation.length == 0? -1 : 0
 
             MouseArea {
                 anchors.fill: parent
-                visible: location.length == 0
+                visible: fileLocation.length == 0
                 onClicked: msg_media.click()
             }
         }
