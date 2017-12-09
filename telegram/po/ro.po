@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-10-30 21:36+0000\n"
+"PO-Revision-Date: 2017-12-09 18:48+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
-"Language-Team: Romanian <https://translate.ubports.com/projects/ubports/"
-"telegram-app/ro/>\n"
+"Language-Team: Romanian <https://translate.ubports.com/projects/ubports"
+"/telegram-app/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,7 +167,7 @@ msgstr "Redirecţionează mesajele către  %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Informații canal"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -245,9 +245,9 @@ msgid "<b>%1</b> added you"
 msgstr "Ai fost adăugat de <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b> a părăsit grupul"
+msgstr "<b>%1</b> sa alăturat grupului"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
@@ -823,8 +823,8 @@ msgstr "%1 membrii"
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] "%1 tastează"
-msgstr[1] "%1 tastează"
+msgstr[0] "%1 scrie"
+msgstr[1] "%1 scriu"
 msgstr[2] "%1 tastează"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -1046,9 +1046,9 @@ msgid "%1 added you"
 msgstr "%1 te-a adăugat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:301
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 a părăsit grupul"
+msgstr "%1 sa alăturat grupului"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
