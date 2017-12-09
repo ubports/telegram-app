@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-10-02 07:51+0000\n"
+"PO-Revision-Date: 2017-12-09 21:28+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
-"Language-Team: Czech <https://translate.ubports.com/projects/ubports/"
-"telegram-app/cs/>\n"
+"Language-Team: Czech <https://translate.ubports.com/projects/ubports"
+"/telegram-app/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,7 +167,7 @@ msgstr "Poslat zprávy kontaktu %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Informace o kanálu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -245,9 +245,9 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> vás přidal(a)"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b> opustil(a) skupinu"
+msgstr "<b>%1</b> se připojil(a) ke skupině"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
@@ -1044,9 +1044,9 @@ msgid "%1 added you"
 msgstr "%1 vás přidal"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:301
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 opustil skupinu"
+msgstr "%1 se připojil(a) ke skupině"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
