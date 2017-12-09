@@ -66,7 +66,7 @@ Item {
                         res = i18n.tr("You added <b>%1</b>").arg(userName)
                     else if (user.id == telegramObject.me)
                         res = i18n.tr("<b>%1</b> added you").arg(fromUserName)
-                    else if (isChannel)
+                    else if (userName=="")
                         res = i18n.tr("<b>%1</b> joined the group").arg(fromUserName)
                     else
                         res = i18n.tr("<b>%1</b> added <b>%2</b>").arg(fromUserName).arg(userName)
