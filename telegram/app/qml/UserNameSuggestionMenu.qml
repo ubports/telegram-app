@@ -3,6 +3,8 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import QtGraphicalEffects 1.0
 
+import "js/colors.js" as Colors
+
 Item {
     id: uname_sgs_menu
     width: parent.width
@@ -38,7 +40,7 @@ Item {
             id: back_frame
             anchors.fill: parent
             anchors.topMargin: 8*Devices.density
-            color: Cutegram.currentTheme.sendFrameColor
+            color: Colors.white
 
             Rectangle {
                 width: parent.width
@@ -58,13 +60,14 @@ Item {
         clip: true
         model: fmodel
 
-        highlightMoveDuration: 0
+        /* @todo: enable again this only for desktop */
+        /*highlightMoveDuration: 0
         highlight: Rectangle {
             width: listv.width
             height: 32*Devices.density
-            color: Cutegram.currentTheme.masterColor
+            color: Colors.list_pressed
             radius: 2*Devices.density
-        }
+        }*/
 
         delegate: Item {
             id: listv_item
@@ -94,7 +97,7 @@ Item {
                 elide: Text.ElideRight
                 maximumLineCount: 1
                 text: user.firstName + " " + user.lastName
-                color: listv.currentIndex==index? Cutegram.currentTheme.sendFrameFontHighlightColor : Cutegram.currentTheme.sendFrameFontColor
+                color: Colors.black
             }
 
             MouseArea {

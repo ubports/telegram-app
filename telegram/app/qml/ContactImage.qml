@@ -29,8 +29,8 @@ Item {
     property Telegram telegram: telegramObject
     property Dialog dialog
 
-    property bool isChat: dialog.peer.chatId != 0
-    property bool isChannel: dialog.peer.channelId != 0
+    property bool isChat: dialog? dialog.peer.chatId != 0 : false
+    property bool isChannel: dialog? dialog.peer.channelId != 0 : false
     property User user: dialog? telegram.user(dialog.encrypted?enChatUid:dialog.peer.userId) : telegram.nullUser
     property Chat chat: dialog? telegram.chat(isChannel ? dialog.peer.channelId : dialog.peer.chatId) : telegram.nullChat
 
