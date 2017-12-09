@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-12-09 20:10+0000\n"
+"PO-Revision-Date: 2017-12-09 20:12+0000\n"
 "Last-Translator: Stefano Melchior <stefano.melchior@me.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/it/>\n"
@@ -405,7 +405,7 @@ msgstr "È necessario mantenere premuta l'icona del microfono"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:765
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
-"Per favore concedi l'accesso al microfono in Impostazioni > Sicurezza & "
+"Per favore concedere l'accesso al microfono in Impostazioni > Sicurezza & "
 "Privacy."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
