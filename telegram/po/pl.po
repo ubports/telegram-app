@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-10-02 18:37+0000\n"
-"Last-Translator: Paweł Cieniek <cieniek@wp.pl>\n"
-"Language-Team: Polish <https://translate.ubports.com/projects/ubports/"
-"telegram-app/pl/>\n"
+"PO-Revision-Date: 2017-12-10 12:49+0000\n"
+"Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
+"Language-Team: Polish <https://translate.ubports.com/projects/ubports"
+"/telegram-app/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,7 +167,7 @@ msgstr "Wysłać do %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Informacje o kanale"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -245,9 +245,9 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> dodał Ciebie"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b> opuścił grupę"
+msgstr "<b>%1</b> dołączyli do grupy"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
@@ -1044,7 +1044,7 @@ msgid "%1 added you"
 msgstr "%1 dodał Ciebie"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:301
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
 msgstr "%1 opuścił(a) grupę"
 
