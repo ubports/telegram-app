@@ -25,10 +25,10 @@ ListItem {
     property real logicalHeight: action_item.hasAction
             ? action_item.height : column.height + frameMargins*2 + textMargins*2
     property real minimumHeight: contact_image.visible ? contact_image.height + units.gu(1) : 0
-    property real maximumWidth: 7*width/10.0
-            - (contact_image.visible ? contact_image.width : 0)
 
+    property real maximumWidth: width * 0.75 - (contact_image.visible ? contact_image.width : 0)
     property real minimumWidth: 0
+
     property real textMargins: units.dp(4)
     property real frameMargins: units.dp(3)
 
@@ -145,8 +145,8 @@ ListItem {
 
         Item {
             id: back_rect
-            width: column.width + 2*textMargins
-            height: column.height + 2*textMargins
+            width: column.width + 2 * textMargins
+            height: column.height + 2 * textMargins
             anchors.verticalCenter: parent.verticalCenter
 
             Rectangle {

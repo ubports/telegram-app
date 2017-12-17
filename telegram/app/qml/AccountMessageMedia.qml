@@ -18,9 +18,9 @@ Item {
     property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
 
-    property real maximumMediaHeight: 256*Devices.density
-    property real maximumMediaWidth: width*0.75
-    property real maximumMediaRatio: maximumMediaWidth/maximumMediaHeight
+    property real maximumMediaHeight: 256 * Devices.density
+    property real maximumMediaWidth: width * 0.75
+    property real maximumMediaRatio: maximumMediaWidth / maximumMediaHeight
 
     property variant msgDate: CalendarConv.fromTime_t(message.date)
     property alias location: file_handler.filePath
@@ -59,9 +59,9 @@ Item {
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
-            result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        Math.min(file_handler.imageSize.height, maximumMediaHeight)*file_handler.imageSize.width/file_handler.imageSize.height
-                      : Math.min(file_handler.imageSize.width, maximumMediaWidth)
+            result = file_handler.imageSize.width / file_handler.imageSize.height < maximumMediaRatio ?
+                    Math.min(file_handler.imageSize.height, maximumMediaHeight) * file_handler.imageSize.width / file_handler.imageSize.height
+                  : Math.min(file_handler.imageSize.width, maximumMediaWidth)
             break;
 
         case FileHandler.TypeTargetUnknown:
@@ -96,9 +96,9 @@ Item {
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
-            result = file_handler.imageSize.width/file_handler.imageSize.height<maximumMediaRatio?
-                        maximumMediaHeight
-                      : maximumMediaWidth*file_handler.imageSize.height/file_handler.imageSize.width
+            result = file_handler.imageSize.width / file_handler.imageSize.height < maximumMediaRatio ?
+                    Math.min(file_handler.imageSize.height, maximumMediaHeight) * file_handler.imageSize.width / file_handler.imageSize.height
+                  : Math.min(file_handler.imageSize.width, maximumMediaWidth)
             break;
 
         case FileHandler.TypeTargetMediaAudio:
@@ -174,7 +174,6 @@ Item {
                 break;
 
             case FileHandler.TypeTargetMediaVideo:
-                // console.log("thumb is " + file_handler.thumbPath)
                 result = file_handler.thumbPath
                 break;
 
@@ -371,9 +370,7 @@ Item {
     }
 
     function click() {
-        console.log("AccountMessageMedia click()");
         if (fileLocation.length != 0) {
-            console.log("opening! " + fileLocation);
             msg_media.mediaClicked(mediaType, fileLocation);
         }
         else
@@ -384,7 +381,6 @@ Item {
             case FileHandler.TypeTargetMediaPhoto:
             case FileHandler.TypeTargetMediaDocument:
             case FileHandler.TypeTargetMediaAudio:
-                console.log("downloading");
                 file_handler.download()
                 break;
 
