@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-12-12 12:11+0000\n"
+"PO-Revision-Date: 2017-12-18 13:00+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.ubports.com/projects/ubports"
 "/telegram-app/pt/>\n"
@@ -1055,7 +1055,7 @@ msgstr "%1 adicionou %2"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:308
 #, qt-format
 msgid "%1 left the group"
-msgstr "%1 saiu o grupo"
+msgstr "%1 saiu do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:311
 #, qt-format
