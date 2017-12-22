@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-09 14:24+0100\n"
+"POT-Creation-Date: 2017-12-22 19:48+0100\n"
 "PO-Revision-Date: 2017-09-29 22:15+0000\n"
 "Last-Translator: Peter Valachovič <peter.valachovic@gmail.com>\n"
 "Language-Team: Slovak <https://translate.ubports.com/projects/ubports/"
@@ -19,107 +19,107 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 2.15\n"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "Pridať do kontaktov"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:45
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:123
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:45
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:123
 msgid "Contacts"
 msgstr "Kontakty"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:30
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:91
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:27
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:30
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:91
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
 msgstr "Hľadať"
 
 #. TRANSLATORS: As in: add new contact
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:36
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:98
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:36
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
 msgstr "Pridať"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:49
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:49
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:125
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
 msgstr "Späť"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
 msgstr "Vyhľadať kontakty..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:81
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
 msgstr "Nový zabezpečený rozhovor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
 msgstr "Pridať do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:107
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:104
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:107
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:104
 msgid "New Group"
 msgstr "Nová skupina"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:118
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:396
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:424
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:325
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:396
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:424
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:325
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
 msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
 msgstr "Nadpis rozhovoru"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:355
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
 msgstr "Pridať kontakt"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
 msgstr "Z adresára"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:367
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
 msgstr "Vložiť podrobnosti"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:336
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:375
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:434
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:336
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:197
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
 msgstr "Zrušiť"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:409
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:267
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:321
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:189
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:605
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:101
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_desktop/app/telegram.desktop.h:1
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:409
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:267
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:321
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:17
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:189
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:605
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:101
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/app/telegram.desktop.h:1
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:441
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:441
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -131,210 +131,210 @@ msgstr ""
 "POčet posledných správ na preposlanie:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:502
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:502
 msgid "Contacts imported"
 msgstr "Kontakt importovaný"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:505
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:505
 msgid "No contacts imported"
 msgstr "Neimportované žiadne kontakty"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:512
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
 msgstr "Tento kontakt používa Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:515
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:515
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "%1 z %2 kontaktov používa Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:113
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogList.qml:113
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "Preposlať správu %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogList.qml:125
 #, qt-format
 msgid "Send messages to %1?"
 msgstr "Poslať správy %1?"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
 msgstr "Informácie o skupine"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 msgid "Profile Info"
 msgstr "Informácie o profile"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:44
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:44
 msgid "Select all"
 msgstr "Označiť všetko"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:56
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:239
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:56
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:239
 msgid "Copy"
 msgstr "Kopírovať"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:62
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:261
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:261
 msgid "Forward"
 msgstr "Preposlať"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:72
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:225
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:72
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:225
 msgid "Delete"
 msgstr "Vymazať"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:50
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:170
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:154
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Prihlásiť sa"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:170
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Registrovať sa"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:215
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:215
 msgid "Invalid password"
 msgstr "Nesprávne heslo"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:53
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:53
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
 msgstr "Pozvali ste %1 na zabezpečený rozhovor."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:55
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:55
 #, qt-format
 msgid "%1 invited you to join a secret chat."
 msgstr "%1 vás pozval na zabezpečený rozhovor."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:289
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:58
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
 msgid "You created the group"
 msgstr "Vytvorili ste skupinu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> vytvoril skupinu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:66
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "You added <b>%1</b>"
 msgstr "Pridali ste <b>%1</b>"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:68
 #, qt-format
 msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> vás pridal"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:70
 #, fuzzy, qt-format
 msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> opustil skupinu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr "<b>%1</b> pridal <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:78
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:78
 #, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "<b>%1</b> opustil skupinu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:81
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "You removed <b>%1</b>"
 msgstr "Ostránili ste <b>%1</b>"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:83
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:83
 #, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "<b>%1</b> vás odstránil"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:85
 #, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "<b>%1</b> ostránil <b>%2</b>"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:93
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:93
 #, qt-format
 msgid "You changed the group name to %1"
 msgstr "Zmenili ste názov skupiny na %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:96
 #, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "<b>%1</b> zmenil názov skupiny na %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:103
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:103
 msgid "You changed the group photo"
 msgstr "Zmenili ste fotku skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "<b>%1</b> zmenil fotku skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:111
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:111
 msgid "You removed the group photo"
 msgstr "Zmazali ste fotku skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:113
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:113
 #, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "<b>%1</b> zmazal ste fotku skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:118
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:321
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:321
 msgid "You joined the group via invite link"
 msgstr "Pripopjili ste sa k skupine cez pozvánku"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:120
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:120
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
 msgstr "<b>%1</b> sa pripopjil k skupine cez pozvánku"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:136
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:136
 msgid "Please select chat"
 msgstr "Zvoľte prosím rozhovor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:203
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:203
 msgid "New messages"
 msgstr "Nové správy"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:245
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Reply"
 msgstr "Odpoveď"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:252
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:252
 msgid "Sticker Pack info"
 msgstr "Info o sade nálepiek"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:411
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:410
 msgid "Secret chat requested."
 msgstr "Zabezpečený rozhovor požadovaný."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:423
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:422
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -343,200 +343,200 @@ msgstr ""
 "Upozorňujeme, že Android prijíma zabezpečené rozhovory automaticky."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:455
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:454
 msgid "Accept"
 msgstr "Prijať"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:469
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:468
 msgid "Reject"
 msgstr "Odmietnuť"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:16
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:32
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:16
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:32
 msgid "Edit name"
 msgstr "Zmeniť meno"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:20
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:21
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:51
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:20
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
 msgstr "Uložiť"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:33
 msgid "First name is required."
 msgstr "Meno je povinné."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:51
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:144
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:51
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:144
 msgid "First name (required)"
 msgstr "Meno (povinné)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:70
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:160
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:70
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:160
 msgid "Last name (optional)"
 msgstr "Priezvisko (dobrovoľné)"
 
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:287
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:301
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:287
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:301
 msgid "Select Chat"
 msgstr "Zvoľ rozhovor"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:194
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:194
 msgid "Type message"
 msgstr "Píšte správu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:669
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:669
 msgid "Audio attachment not supported yet ;("
 msgstr "Audio prílohy zatiaľ nie sú podporované ;("
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:671
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:671
 msgid "You have to press and hold the record icon"
 msgstr "Stlačte a podržte ikonu nahrávania"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:765
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:765
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Prosím udeľte prístup k mikrofónu v \"Nastavenia Systému\" > \"Bezpečnosť a "
 "súkromie\"."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:20
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:133
 msgid "Settings"
 msgstr "Nastavenia"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:25
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:47
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:47
 msgid "Change photo"
 msgstr "Zmeniť fotku"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:95
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:727
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:100
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:95
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:727
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:100
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Informácie"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:105
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:105
 msgid "Phone"
 msgstr "Telefón"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:118
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
 msgstr "Užívateľské meno"
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:127
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:127
 msgid "Messages"
 msgstr "Správy"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:138
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:561
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:465
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:138
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:561
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:465
 msgid "Notifications"
 msgstr "Notifikácie"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:168
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
 msgstr "Odoslať Enterom"
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
 msgstr "Podpora"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:190
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:190
 msgid "Ask a Question"
 msgstr "Spýtať sa otázku"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:200
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:142
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:200
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:142
 msgid "Telegram FAQ"
 msgstr "Telegram časté dotazy"
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:209
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:209
 msgid "Account"
 msgstr "Účet"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:220
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
 msgstr "Odhlásiť sa"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:233
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:233
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram pre Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:283
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:309
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:102
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:283
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:309
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:102
 msgid "online"
 msgstr "pripojený"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:286
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:312
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:286
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:312
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:105
 #, qt-format
 msgid "last seen %1"
 msgstr "naposledy videný %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:289
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:315
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:108
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:289
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:315
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:108
 msgid "last seen recently"
 msgstr "naposledy videný nedávno"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:292
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:318
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:111
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:292
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:318
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:111
 msgid "last seen within a week"
 msgstr "naposledy videný v priebehu týždňa"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:295
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:321
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:114
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:295
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:321
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:114
 msgid "last seen within a month"
 msgstr "naposledy videný v priebehu mesiaca"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:298
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:324
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:324
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
 msgstr "naposledy videný veľmi dávno"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:322
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -545,35 +545,35 @@ msgstr ""
 "Všetky zabezpečené rozhovory za stratia."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr "%1 je dostupný."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr "Prepáčte toto užívateľské meno  meno sa už používa."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:46
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr "Prepáčte toto užívateľské meno je neplatné."
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:102
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
 msgstr "Vaše užívateľské meno"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:110
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
 msgstr "Užívateľské meno musí mať aspoň 5 znakov."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:133
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
 msgstr "Kontrolujem užívateľské meno..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:141
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
@@ -585,239 +585,239 @@ msgstr ""
 "telefónne číslo.<br /><br />Môžte použiť <b>a-z</b>, <b>0-9</b> a "
 "podčiarkovníky.<br />Minimálna dĺžka je <b>5</b> znakov."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
 msgstr "Hotovo"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:127
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
 msgstr "Telefónne číslo (povinné)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:196
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:196
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr "%1 ešte nepouživa Telegram"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:202
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:202
 msgid "Invite to Telegram"
 msgstr "Pozvať na Telegram"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:248
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:248
 msgid "Could not add contact"
 msgstr "Nepodarilo sa pridať kontakt"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:268
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
 msgstr "Prosím uveďte predvoľbu krajiny."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:270
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
 msgstr "Číslo nie je platné telefónne číslo"
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:33
 msgid "Invalid phone code"
 msgstr "Neplatné telefónne číslo"
 
 #. TRANSLATORS: Error text for missing first name.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:48
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:48
 msgid "First name is required"
 msgstr "Meno je povinné"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:115
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:115
 msgid "Code"
 msgstr "Kód"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:132
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
 msgstr "Meno"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:142
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
 msgstr "Priezvisko"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:166
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:166
 msgid "Resend Code"
 msgstr "Znovu poslať kód"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:185
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
 msgstr "Vyžiadať telefonát"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:187
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
 msgstr "Volám, čakajte..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:21
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
 msgstr "Zvoľte krajinu"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:65
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
 msgid "Search countries..."
 msgstr "Hľadať krajiny..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:25
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:73
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Telefónne číslo"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:119
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:119
 msgid "Number correct?"
 msgstr "Je číslo správne?"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:165
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
 msgstr "Telefónne číslo už existuje."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:16
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
 msgstr "Vložte heslo"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
 msgstr "Heslo"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
 msgstr "Inštalovať"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:75
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
 msgstr "Zavrieť"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPage.qml:177
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
 msgstr "Začať komunikáciu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:18
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr "Vitajte vo veku <br>rýchlej a bezpečnej komunikácie"
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:22
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "Rýchly"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:23
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Telegram</b> doručuje správy rýchlejšie<br>ako akákoľvek iná aplikácia"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:27
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "Voľný"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
 "<b>Telegram</b> je zadarmo navždy. Bez reklám.<br> Žiadne členské príspevky"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:32
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "Bezpečný"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
 "<b>Telegram</b> udržuje vaše správy v bezpečí<br>od internetových útočníkov"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:37
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "Výkonný"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:38
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
 "<b>Telegram</b> nemá obmedzenia vo veľkosti<br> vešich médií a rozhovorov"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:42
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "Založený na \"Cloud\"e"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:43
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Telegram</b> vám dovoľuje pristupovať k vašim správam<br> z viacerých "
 "zariadení"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "Súkromné"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr "<b>Telegram</b> správy sú silne šifrované<br>"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
 msgstr "Zvoliľ"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:46
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
 msgstr "Z: %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:57
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
 msgstr "Zdieľať"
 
 #. TRANSLATORS: Action text to add member to group chat.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:41
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:41
 msgid "Add member"
 msgstr "Pridať člena"
 
 #. TRANSLATORS: Action text to change group chat title.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:166
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:53
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:166
 msgid "Change Group Title"
 msgstr "Zmeniť nadpis skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
 msgid "Contact Info"
 msgstr "Informácie o kontakte"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:180
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:180
 msgid "New group chat title"
 msgstr "Nový nadpis skupinového rozhovoru"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:188
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:188
 msgid "Change Title"
 msgstr "Zmeniť nadpis"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:298
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:92
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:92
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr "%1 členov, %2 pripojených"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is group chat member count.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:301
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:95
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:301
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:95
 #, qt-format
 msgid "%1 members"
 msgstr "%1 členov"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:342
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:83
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:342
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:83
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -826,56 +826,56 @@ msgstr[1] "%1 píšu"
 msgstr[2] "%1 píše"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:345
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:345
 #, qt-format
 msgid "%1 are typing"
 msgstr "%1 píšu"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:411
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:411
 msgid "Unknown"
 msgstr "Neznáme"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:420
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:420
 msgid "Mobile"
 msgstr "Mobil"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:480
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:643
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:643
 msgid "Block user"
 msgstr "Blokovať užívateľa"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:714
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:714
 msgid "Remove from group"
 msgstr "Odtrániť zo skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:171
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:171
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Dnes prijatých správ cez Telegram: %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:172
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:172
 msgid "No Telegram messages received today."
 msgstr "Dnes vám cez Telegram neprišli žiadne správy."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:179
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:179
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Dnes odoslaných správ cez Telegram: %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:180
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:180
 msgid "No Telegram messages sent today."
 msgstr "Dnes ste cez Telegram neodoslali žiadne správy."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:466
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:466
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -883,70 +883,70 @@ msgstr ""
 "Ak chcete oznámenia z Telegramu, keď nepoužívate aplikáciu,  prihláste sa do "
 "účtu Ubuntu One."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:473
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:473
 msgid "Sign in to Ubuntu One"
 msgstr "Prihllásiť sa do účtu Ubuntu One"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:481
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:481
 msgid "Remind me later"
 msgstr "Pripomenúť neskôr"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:489
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:489
 msgid "Don't want notifications"
 msgstr "Nechcem oznámenia"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:167
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:167
 msgid "Accounts"
 msgstr "Účty"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:194
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:194
 msgid "Add Account"
 msgstr "Pridať účet"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:91
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:276
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:91
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 msgid "Photo"
 msgstr "Fotka"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:103
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:103
 msgid "Video"
 msgstr "Video"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:115
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
 msgstr "Súbor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AudioRecordingBar.qml:171
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
 msgstr "<<< Potiahnuť pre zrušenie"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:34
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "Čakanie na pripojenie užívateľa..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:36
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "Zabezpečený rozhovor vyžiadaný"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:38
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "Zabezpečený rozhovor vytvorený"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:41
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr "Zabezpečený rozhovor odstránený"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:48
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "Zablokovaný"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:51
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -955,451 +955,451 @@ msgstr[1] "%1 sekundy"
 msgstr[2] "%1 sekúnd"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:54
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 minuta"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:57
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 hodina"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 deň"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:63
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 týždeň"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:62
 msgid "Leave chat"
 msgstr "Opustiť rozhovor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Are you sure you want to leave this chat?"
 msgstr "Ste si istý, že chcete opustiť rozhovor?"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:79
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:79
 msgid "Clear history"
 msgstr "Vyčstiť históriu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:85
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Are you sure you want to clear history?"
 msgstr "Ste si istý, že chcete vyčstiť históriu?"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:220
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:220
 msgid "You: "
 msgstr "Vy: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:241
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:86
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:241
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:86
 msgid "typing..."
 msgstr "píše..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:261
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:261
 #, qt-format
 msgid "You changed the group title to %1"
 msgstr "Zmenili ste nadpis skupiny %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:263
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:263
 #, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 zmenil nadpis skupiny na %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:270
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:270
 msgid "Voice message"
 msgstr "Hlasová správa"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:272
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:272
 msgid "Sticker"
 msgstr "Nálepka"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:284
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:284
 #, qt-format
 msgid "%1 joined your secret chat."
 msgstr "%1 sa pripojil k vášmu zabezpečenému rozhovoru."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:286
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:286
 msgid "You joined the secret chat."
 msgstr "Pripojili ste sa k zabezpečenému rozhovoru."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:291
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:291
 #, qt-format
 msgid "%1 created the group"
 msgstr "%1 vytvoril skupinu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:297
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "You added %1"
 msgstr "Pridali ste %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:299
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 #, qt-format
 msgid "%1 added you"
 msgstr "%1 vás pridal"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:301
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:301
 #, fuzzy, qt-format
 msgid "%1 joined the group"
 msgstr "%1 opustil skupinnu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:303
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
 msgid "%1 added %2"
 msgstr "%1 pridal %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:308
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:308
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 opustil skupinnu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:311
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:311
 #, qt-format
 msgid "You removed %1"
 msgstr "Odstránili ste %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:313
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:313
 #, qt-format
 msgid "%1 removed you"
 msgstr "%1 vás odtránil"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:315
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:206
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:315
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%1 odstránil %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:323
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:323
 #, qt-format
 msgid "%1 joined the group via invite link"
 msgstr "%1 sa pripojil k u skupine cez pozvánku"
 
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:211
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/MessagesListItem.qml:211
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Preposlané od <b>%1</b>"
 
 #. TRANSLATORS: User status: deleted
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Vymazané"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:11
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:46
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:11
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
 msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:14
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:35
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:49
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:14
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "dnes o %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:57
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "včera o %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1 o %2"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
 msgstr "mm:ss"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:68
 msgid "h:mm:ss"
 msgstr "h:mm:ss"
 
 #. TRANSLATORS: Format string: time.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:287
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:287
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:291
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:291
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:295
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:295
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:298
 msgid "dd MMM yy"
 msgstr "dd MMM yy"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:110
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr "vám poslal správu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:114
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr "vám poslal fotku"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr "vám poslal video"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:122
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr "vám poslal dokument"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:126
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr "vám poslal hlasovú správu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:130
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr "s vami zdieľa kontakt"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:134
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr "vám poslal mapu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:139
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:144
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr "%1 poslal správu do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:149
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr "%1 poslal fotku do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:154
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr "%1 poslal video do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:159
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr "%1 poslal dokument do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:164
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr "%1 poslal hlasovú správu do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:169
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr "%1 poslal kontakt do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr "%1 poslal mapu do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:179
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:200
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:179
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr "%1 vás pozval do skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:184
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr "%1 zmenil meno skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:189
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr "%1 zmenil fotku skupiny"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:195
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr "%1 pozval %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:211
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr "%1 vás odstránil zo skupiny"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:216
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr "%1 opustil skupinu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:221
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr "%1 sa vrátil do skupiny"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:226
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:228
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr "%1 sa zapísal"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:234
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr "%1 začal používať Telegram!"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:239
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:245
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:239
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr "Nové prihlásenie z neznámeho zariadenia"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:244
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr "%1 @ %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:249
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr "aktualizoval profilovú fotku"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:254
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
-#: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:264
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:254
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:259
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr "Máte novú správu"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/config.h:24
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr "h:mm ddd, dd/MM/yy"
 
 #. TRANSLATORS: call to action: open this application
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr "Otvoriť appku"
 
 #. TRANSLATORS: call to action: open this chat
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:86
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:120
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:149
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:86
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:120
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr "Otvoriť rozhovor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr "Volanie"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr "Nepodarilo sa získať dáta Telegram-u"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:59
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr "Dotykom otvoriť appku"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:167
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Výsledky pre: Kontakty a rozhovory"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:184
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Výsledky pre: Správy"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:291
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Ľudia, s ktorými sa rozprávate"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:292
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Posledné rozhovory"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:293
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Posledné fotky"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 nová správa"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 nové správy/nových správ"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:301
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Neprečítané spravy (%1)"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:642
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Zvuková správa"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:646
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "Kontakt prijatý"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:650
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "Dukoment prijatý"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:654
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "Fotka prijatá"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:671
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "Video prijaté"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:681
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr "Nepodporavaný typ súboru"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:756
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Prihlásenie do Telegramu"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:792
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Dnes neprišli cez telegram žiadne správy."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr "Toto je rámec pre Telegram"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Hľadajte rozhovor, kontakt alebo správu"
 

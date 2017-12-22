@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-30 20:31+0200\n"
+"POT-Creation-Date: 2017-12-22 19:48+0100\n"
 "PO-Revision-Date: 2016-05-18 07:10+0000\n"
 "Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
@@ -19,107 +19,107 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 "X-Generator: Launchpad (build 18282)\n"
 
-#: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "Hozzáadás a partnerekhez"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:26
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:26
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:45
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:123
 msgid "Contacts"
 msgstr "Partnerek"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
-#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:30
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:91
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
 msgstr "Keresés"
 
 #. TRANSLATORS: As in: add new contact
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:36
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
 msgstr "Hozzáadás"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
-#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:49
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:125
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
 msgstr "Vissza"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
 msgstr "Partner keresése…"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:81
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
 msgstr "Új titkos csevegés"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
 msgstr "Hozzáadás a csoporthoz"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:107
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:77
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:107
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:104
 msgid "New Group"
 msgstr "Új csoport"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:118
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:396
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:424
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:325
-#: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:396
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:424
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:325
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
 msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
 msgstr "Csevegés címe"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:31
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:355
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
 msgstr "Hozzáadás"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:358
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
 msgstr "Névjegyek alkalmazásból"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:367
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
 msgstr "Kézzel megadva"
 
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:375
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:434
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:336
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:188
-#: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:375
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:434
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:336
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:197
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
 msgstr "Mégse"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:409
-#: /telegram-app/telegram/app/qml/AccountPage.qml:300
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:321
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:17
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
-#: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
-#: /telegram-app/telegram/app/telegram.cpp:605
-#: /telegram-app/telegram/push/pushhelper.cpp:101
-#: /telegram-app/telegram/build_mobile/app/telegram.desktop.h:1
-#: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:409
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:267
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:321
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:17
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:189
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:605
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:101
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/app/telegram.desktop.h:1
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:441
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:441
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -131,204 +131,214 @@ msgstr ""
 "Utolsó továbbítandó üzenetek száma:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:502
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:502
 msgid "Contacts imported"
 msgstr "Partnerek importálva"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:505
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:505
 msgid "No contacts imported"
 msgstr "Nem lettek partnerek importálva"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
 msgstr "Ez a partner rendelkezik Telegram fiókkal."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:515
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "A megadott %2 partnerből %1 rendelkezik Telegram fiókkal."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /telegram-app/telegram/app/qml/AccountDialogList.qml:117
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogList.qml:113
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "Továbbítsuk az üzenetet %1 részére?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /telegram-app/telegram/app/qml/AccountDialogList.qml:129
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogList.qml:125
 #, qt-format
 msgid "Send messages to %1?"
 msgstr "Üzenetek elküldése neki: %1?"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
+msgid "Channel Info"
+msgstr ""
+
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
 msgstr "Csoportinformáció"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 msgid "Profile Info"
 msgstr "Profilinformáció"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:44
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:44
 msgid "Select all"
 msgstr "Összes kijelölése"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:56
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:256
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:56
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:239
 msgid "Copy"
 msgstr "Másolás"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:63
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:278
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:261
 msgid "Forward"
 msgstr "Továbbítás"
 
-#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:72
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:225
 msgid "Delete"
 msgstr "Törlés"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:170
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:154
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Bejelentkezés"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:170
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Regisztrálás"
 
-#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:215
 #, fuzzy
 msgid "Invalid password"
 msgstr "Érvénytelen telefonkód"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:53
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:55
 #, fuzzy, qt-format
 msgid "%1 invited you to join a secret chat."
 msgstr "%1 létrehozott egy titkos csevegést"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:58
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
 #, fuzzy
 msgid "You created the group"
 msgstr "%1 létrehozott egy „%2” nevű csoportot"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:60
 #, fuzzy, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "%1 létrehozott egy „%2” nevű csoportot"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:77
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, fuzzy, qt-format
 msgid "You added <b>%1</b>"
 msgstr "Továbbítva tőle: <b>%1</b>"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:68
 #, qt-format
 msgid "<b>%1</b> added you"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:70
+#, fuzzy, qt-format
+msgid "<b>%1</b> joined the group"
+msgstr "%1 elhagyta a csoportot"
+
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:78
 #, fuzzy, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "%1 elhagyta a csoportot"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:90
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, fuzzy, qt-format
 msgid "You removed <b>%1</b>"
 msgstr "Továbbítva tőle: <b>%1</b>"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:83
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "%2 eltávolítva %1 által"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:85
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "%2 eltávolítva %1 által"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:93
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
 msgstr "%1 átnevezte a csoportot: „%2”"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:96
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "%1 átnevezte a csoportot: „%2”"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:103
 #, fuzzy
 msgid "You changed the group photo"
 msgstr "%1 megváltoztatta  a csoportképét"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:105
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "%1 megváltoztatta  a csoportképét"
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:111
 #, fuzzy
 msgid "You removed the group photo"
 msgstr "%1 törölte a csoportképet."
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:113
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "%1 törölte a csoportképet."
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:321
 msgid "You joined the group via invite link"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:120
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
 msgstr ""
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:136
 msgid "Please select chat"
 msgstr "Csevegés megadása"
 
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:224
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:203
 msgid "New messages"
 msgstr "Új üzenetek"
 
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Reply"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:252
 msgid "Sticker Pack info"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:410
 msgid "Secret chat requested."
 msgstr "Titkos csevegés igényelve."
 
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:422
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -337,211 +347,198 @@ msgstr ""
 "Az Android alapértelmezetten elfogadja azt."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:454
 msgid "Accept"
 msgstr "Elfogadás"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /telegram-app/telegram/app/qml/AccountMessageList.qml:499
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:468
 msgid "Reject"
 msgstr "Elutasítás"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /telegram-app/telegram/app/qml/AccountNamePage.qml:16
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:32
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:16
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:32
 msgid "Edit name"
 msgstr "Szerkesztés"
 
-#: /telegram-app/telegram/app/qml/AccountNamePage.qml:20
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
-#: /telegram-app/telegram/app/qml/PreviewPage.qml:51
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:20
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
 msgstr "Mentés"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:33
 msgid "First name is required."
 msgstr "A keresztnév megadása szükséges."
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /telegram-app/telegram/app/qml/AccountNamePage.qml:51
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:144
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:51
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:144
 msgid "First name (required)"
 msgstr "Keresztnév (szükséges)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /telegram-app/telegram/app/qml/AccountNamePage.qml:70
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:160
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:70
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:160
 msgid "Last name (optional)"
 msgstr "Vezetéknév (opcionális)"
 
-#. TRANSLATORS: App header title when connecting to Telegram.
-#: /telegram-app/telegram/app/qml/AccountPage.qml:303
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
-msgid "Connecting..."
-msgstr "Kapcsolódás…"
-
-#. TRANSLATORS: Shown in app header when network is unavailable.
-#: /telegram-app/telegram/app/qml/AccountPage.qml:307
-#: /telegram-app/telegram/app/qml/AccountPage.qml:329
-#: /telegram-app/telegram/app/qml/AccountPage.qml:348
-msgid "Waiting for network..."
-msgstr "Várakozás a hálózatra…"
-
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /telegram-app/telegram/app/qml/AccountPage.qml:326
-#: /telegram-app/telegram/app/qml/AccountPage.qml:345
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:287
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:301
 msgid "Select Chat"
 msgstr "Csevegés kiválasztása"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:194
 msgid "Type message"
 msgstr "Üzenet írása"
 
-#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:669
 msgid "Audio attachment not supported yet ;("
 msgstr "A hangcsatolmányok egyelőre nem támogatottak ;("
 
-#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:671
 msgid "You have to press and hold the record icon"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:765
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:20
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:20
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:133
 msgid "Settings"
 msgstr "Beállítások"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:25
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:49
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:47
 msgid "Change photo"
 msgstr "Fénykép megváltoztatása"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:95
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:712
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:95
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:727
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:100
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Információ"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:105
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:105
 msgid "Phone"
 msgstr "Telefonszám"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:118
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
 msgstr "Felhasználónév"
 
 #. TRANSLATORS: Settings section header.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:127
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:127
 msgid "Messages"
 msgstr "Üzenetek"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:138
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:551
-#: /telegram-app/telegram/app/qml/telegram.qml:493
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:138
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:561
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:465
 msgid "Notifications"
 msgstr "Értesítések"
 
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:168
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
 msgstr "Küldés Enter billentyűvel"
 
 #. TRANSLATORS: Settings section header.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:182
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
 msgstr "Támogatás"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:190
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:190
 msgid "Ask a Question"
 msgstr "Kérdés küldése"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:200
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:115
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:200
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:142
 msgid "Telegram FAQ"
 msgstr "Telegram GYIK"
 
 #. TRANSLATORS: Settings section header.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:209
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:209
 msgid "Account"
 msgstr "Fiók"
 
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:220
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
 msgstr "Kijelentkezés"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:233
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:233
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram Ubuntuhoz %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:283
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:301
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:88
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:283
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:309
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:102
 msgid "online"
 msgstr "elérhető"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:286
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:304
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:91
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:286
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:312
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:105
 #, qt-format
 msgid "last seen %1"
 msgstr "Itt járt: %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:289
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:307
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:94
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:289
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:315
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:108
 msgid "last seen recently"
 msgstr "nem rég járt itt"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:292
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:310
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:97
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:292
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:318
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:111
 msgid "last seen within a week"
 msgstr "egy héten belül járt itt"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:295
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:313
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:100
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:295
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:321
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:114
 msgid "last seen within a month"
 msgstr "egy hónapon belül járt itt"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:298
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:316
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:103
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:324
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
 msgstr "régen járt itt"
 
-#: /telegram-app/telegram/app/qml/AccountSettings.qml:322
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -550,35 +547,35 @@ msgstr ""
 "Minden titkos csevegés el fog veszni."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr "A felhasználónév (%1) elérhető"
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr "Sajnáljuk, ez a felhasználónév foglalt."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr "Sajnáljuk ez a felhasználónév érvénytelen."
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
 msgstr "Az Ön felhasználóneve"
 
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
 msgstr "Legalább 5 karakter hosszú legyen."
 
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
 msgstr "Felhasználónév ellenőrzése…"
 
-#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
@@ -590,246 +587,246 @@ msgstr ""
 "nélkül.<br /><br />Használható karakterek: <b>a-z</b>, <b>0-9</b> és "
 "aláhúzás.<br />Minimum hosszúság: <b>5</b> karakter."
 
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:35
-#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
 msgstr "Kész"
 
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:127
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
 msgstr "Telefonszám (szükséges)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:196
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:196
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr "%1 nem rendelkezik Telegram fiókkal"
 
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:202
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:202
 msgid "Invite to Telegram"
 msgstr "Meghívás a Telegramra"
 
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:248
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:248
 msgid "Could not add contact"
 msgstr "Nem sikerült a partner hozzáadása"
 
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:268
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
 msgstr "Kérjük adja meg az országhívót is."
 
-#: /telegram-app/telegram/app/qml/AddContactPage.qml:270
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
 msgstr "A megadott szám nem érvényes telefonszám"
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:33
 msgid "Invalid phone code"
 msgstr "Érvénytelen telefonkód"
 
 #. TRANSLATORS: Error text for missing first name.
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:48
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:48
 msgid "First name is required"
 msgstr "A keresztnév megadása szükséges"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:115
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:115
 msgid "Code"
 msgstr "Kód"
 
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:132
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
 msgstr "Keresztnév"
 
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:142
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
 msgstr "Vezetéknév"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:166
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:166
 msgid "Resend Code"
 msgstr "Kód újraküldése"
 
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:185
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
 msgstr "Felhívás kérése"
 
-#: /telegram-app/telegram/app/qml/AuthCodePage.qml:187
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
 msgstr "Hívás, kérjük várjon…"
 
-#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
 msgstr ""
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
 #, fuzzy
 msgid "Search countries..."
 msgstr "Partner keresése…"
 
-#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
-#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:25
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Telefonszám"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:119
 msgid "Number correct?"
 msgstr "A telefonszám helyes?"
 
-#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 #, fuzzy
 msgid "Phone number already exists."
 msgstr "Telefonszám (szükséges)"
 
-#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
 msgstr "Bezárás"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /telegram-app/telegram/app/qml/IntroPage.qml:177
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
 msgstr "Csevegés elkezdése"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:18
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr "Üdvözöljük a gyors és biztonságos<br>üzenetküldés korában"
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:22
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "Gyors"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "A <b>Telegram</b> gyorsabban kézbesíti az<br>üzeneteket, mint bármely más "
 "alkalmazás"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "Ingyenes"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
 "A <b>Telegram</b> mindig ingyenes marad.<br>Nincs reklám. Nincs előfizetési "
 "díj"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "Biztonságos"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
 "A <b>Telegram</b> biztonságosan tárolja az üzeneteit,<br> még a hacker-"
 "támadásokkal szemben is"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "Hatékony"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
 "A <b>Telegram</b> nem korlátozza sem<br>a médiafájlok, sem a csevegés méretét"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "Felhőalapú"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "A <b>Telegram</b> lehetővé teszi üzenetei<br>elérését több eszközről is"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "Privát"
 
-#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr "A <b>Telegram</b> üzenetek erősen titkosítottak<br>"
 
-#: /telegram-app/telegram/app/qml/PickerPage.qml:11
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /telegram-app/telegram/app/qml/PreviewPage.qml:46
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
 msgstr "Tőle: %1"
 
-#: /telegram-app/telegram/app/qml/PreviewPage.qml:57
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
 msgstr "Megosztás"
 
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
-msgid "Contact Info"
-msgstr "Információ"
-
 #. TRANSLATORS: Action text to add member to group chat.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:43
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:41
 msgid "Add member"
 msgstr "Résztvevő hozzáadása"
 
 #. TRANSLATORS: Action text to change group chat title.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:55
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:157
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:53
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:166
 #, fuzzy
 msgid "Change Group Title"
 msgstr "%1 megváltoztatta  a csoportnevét"
 
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
+msgid "Contact Info"
+msgstr "Információ"
+
 #. TRANSLATORS: Placeholder for new group chat title
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:171
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:180
 #, fuzzy
 msgid "New group chat title"
 msgstr "Csevegés címe"
 
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:179
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:188
 #, fuzzy
 msgid "Change Title"
 msgstr "Csevegés címe"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:290
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:78
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:92
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr "%1 résztvevő, %2 elérhető"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
-#. TRANSLATORS: %1 is gropu chat member count.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:293
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:81
+#. TRANSLATORS: %1 is group chat member count.
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:301
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:95
 #, qt-format
 msgid "%1 members"
 msgstr "%1 résztvevő"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:334
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:69
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:342
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:83
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -837,56 +834,56 @@ msgstr[0] "%1 gépel"
 msgstr[1] "%1 gépel"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:337
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:345
 #, qt-format
 msgid "%1 are typing"
 msgstr "%1 gépel"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:404
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:411
 msgid "Unknown"
 msgstr "Ismeretlen"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:414
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:420
 msgid "Mobile"
 msgstr "Mobil"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:468
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:480
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:628
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:643
 msgid "Block user"
 msgstr "Partner blokkolása"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /telegram-app/telegram/app/qml/ProfilePage.qml:699
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:714
 msgid "Remove from group"
 msgstr "Eltávolítás a csoportból"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:170
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:171
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Ma érkezett Telegram üzenetek: %1"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:171
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:172
 msgid "No Telegram messages received today."
 msgstr "Nem érkeztek ma Telegram üzenetek."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:178
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:179
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Ma küldött Telegram üzenetek: %1"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:179
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:180
 msgid "No Telegram messages sent today."
 msgstr "Nem küldött ma Telegram üzenetet."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:494
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:466
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -894,70 +891,70 @@ msgstr ""
 "Ha szeretne Telegram értesítéseket úgyis, hogy nem fut az alkalmazás, akkor "
 "jelentkezzen be az Ubuntu One fiókjába."
 
-#: /telegram-app/telegram/app/qml/telegram.qml:501
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:473
 msgid "Sign in to Ubuntu One"
 msgstr "Ubuntu One bejelentkezés"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:509
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:481
 msgid "Remind me later"
 msgstr "Emlékeztessen később"
 
-#: /telegram-app/telegram/app/qml/telegram.qml:517
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:489
 msgid "Don't want notifications"
 msgstr "Nem szeretnék értesítéseket"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:140
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:167
 msgid "Accounts"
 msgstr "Fiókok"
 
-#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:167
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:194
 msgid "Add Account"
 msgstr "Új fiók"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /telegram-app/telegram/app/qml/components/AttachPanel.qml:87
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:91
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 msgid "Photo"
 msgstr "Fénykép"
 
-#: /telegram-app/telegram/app/qml/components/AttachPanel.qml:99
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:103
 msgid "Video"
 msgstr "Videó"
 
-#: /telegram-app/telegram/app/qml/components/AttachPanel.qml:111
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
 msgstr "Fájl"
 
-#: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
 msgstr ""
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "Várakozás a partnerre…"
 
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:36
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "Felkérve titkos csevegésre"
 
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:38
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "Titkos csevegés létrehozva"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:41
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr "Titkos csevegés elvetve"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "Letiltott"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -965,456 +962,462 @@ msgstr[0] "%1 másodperc"
 msgstr[1] "%1 másodperc"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 perc"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 óra"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 nap"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 hét"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:62
 msgid "Leave chat"
 msgstr "Csevegés elhagyása"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:74
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Are you sure you want to leave this chat?"
 msgstr "Biztos, hogy el akarja hagyni ezt a csevegést?"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:79
 msgid "Clear history"
 msgstr "Előzmények törlése"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:91
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Are you sure you want to clear history?"
 msgstr "Biztos benne, hogy törölni szeretné az előzményeket?"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:220
 msgid "You: "
 msgstr ""
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:254
-#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:72
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:241
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:86
 msgid "typing..."
 msgstr "gépel…"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:261
 #, fuzzy, qt-format
 msgid "You changed the group title to %1"
 msgstr "%1 átnevezte a csoportot: „%2”"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:263
 #, fuzzy, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 átnevezte a csoportot: „%2”"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:270
 #, fuzzy
 msgid "Voice message"
 msgstr "Üzenet írása"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:272
 msgid "Sticker"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:284
 #, fuzzy, qt-format
 msgid "%1 joined your secret chat."
 msgstr "%1 létrehozott egy titkos csevegést"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:286
 #, fuzzy
 msgid "You joined the secret chat."
 msgstr "%1 létrehozott egy titkos csevegést"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:291
 #, fuzzy, qt-format
 msgid "%1 created the group"
 msgstr "%1 létrehozott egy „%2” nevű csoportot"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "You added %1"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 #, fuzzy, qt-format
 msgid "%1 added you"
 msgstr "%2 hozzá lett adva a csoporthoz %1 által"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:301
+#, fuzzy, qt-format
+msgid "%1 joined the group"
+msgstr "%1 elhagyta a csoportot"
+
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:303
 #, fuzzy, qt-format
 msgid "%1 added %2"
 msgstr "%1, %2"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:308
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 elhagyta a csoportot"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:311
 #, fuzzy, qt-format
 msgid "You removed %1"
 msgstr "%2 eltávolítva %1 által"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:313
 #, fuzzy, qt-format
 msgid "%1 removed you"
 msgstr "%2 eltávolítva %1 által"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
-#: /telegram-app/telegram/push/pushhelper.cpp:206
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:315
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%2 eltávolítva %1 által"
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:323
 #, qt-format
 msgid "%1 joined the group via invite link"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
-#, qt-format
-msgid "%1 is currently offline"
-msgstr ""
-
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/MessagesListItem.qml:211
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Továbbítva tőle: <b>%1</b>"
 
 #. TRANSLATORS: User status: deleted
-#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Törölt"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /telegram-app/telegram/app/qml/js/time.js:11
-#: /telegram-app/telegram/app/qml/js/time.js:46
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:11
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
 msgstr "hh.mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /telegram-app/telegram/app/qml/js/time.js:14
-#: /telegram-app/telegram/app/qml/js/time.js:35
-#: /telegram-app/telegram/app/qml/js/time.js:49
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:14
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:35
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "MMM d."
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /telegram-app/telegram/app/qml/js/time.js:54
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "ma, %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /telegram-app/telegram/app/qml/js/time.js:57
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "tegnap, %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /telegram-app/telegram/app/qml/js/time.js:60
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1, %2"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /telegram-app/telegram/app/qml/js/time.js:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
 msgstr ""
 
-#: /telegram-app/telegram/app/qml/js/time.js:68
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:68
 #, fuzzy
 msgid "h:mm:ss"
 msgstr "hh.mm"
 
 #. TRANSLATORS: Format string: time.
-#: /telegram-app/telegram/app/telegram.cpp:287
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:287
 msgid "HH:mm"
 msgstr "HH.mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /telegram-app/telegram/app/telegram.cpp:291
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:291
 msgid "ddd HH:mm"
 msgstr "ddd HH.mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /telegram-app/telegram/app/telegram.cpp:295
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:295
 msgid "dd MMM"
 msgstr "MMM dd."
 
 #. TRANSLATORS: Format string: full date
-#: /telegram-app/telegram/app/telegram.cpp:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:298
 msgid "dd MMM yy"
 msgstr "yy. MMM dd."
 
-#: /telegram-app/telegram/push/pushhelper.cpp:110
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr "üzenetet küldött"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:114
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr "fényképet küldött"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:118
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr "videót küldött"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:122
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr "dokumentumot küldött"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:126
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr "hangüzenetet küldött"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:130
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr "megosztott egy partnert"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:134
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr "térképet küldött"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:139
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:144
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr "%1 üzenetet küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:149
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr "%1 fényképet küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:154
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr "%1 videót küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:159
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr "%1 dokumentumot küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:164
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr "%1 hangüzenetet küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:169
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr "%1 egy partnert küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:174
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr "%1 térképet küldött a csoportnak"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:179
-#: /telegram-app/telegram/push/pushhelper.cpp:200
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:179
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr "%1 meghívott a csoportba"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:184
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr "%1 megváltoztatta  a csoportnevét"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:189
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr "%1 megváltoztatta  a csoportképét"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /telegram-app/telegram/push/pushhelper.cpp:195
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr "%1 meghívta Őt: %2"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:211
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr "%1 eltávolított a csoportból"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:216
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr "%1 elhagyta a csoportot"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:221
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr "%1 visszatért a csoportba"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /telegram-app/telegram/push/pushhelper.cpp:226
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /telegram-app/telegram/push/pushhelper.cpp:228
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr "%1 bejelentkezett valahonnan"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /telegram-app/telegram/push/pushhelper.cpp:234
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr "%1 csatlakozott a Telegram szolgáltatáshoz!"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:239
-#: /telegram-app/telegram/push/pushhelper.cpp:245
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:239
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr "Új bejelentkezés ismeretlen eszközről"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /telegram-app/telegram/push/pushhelper.cpp:244
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr "%1 @ %2"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:249
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr "profilkép frissítve"
 
-#: /telegram-app/telegram/push/pushhelper.cpp:254
-#: /telegram-app/telegram/push/pushhelper.cpp:259
-#: /telegram-app/telegram/push/pushhelper.cpp:264
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:254
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:259
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr "Új üzenete érkezett"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /telegram-app/telegram/scope/config.h:24
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr "yy.MM.dd. ddd. h.mm"
 
 #. TRANSLATORS: call to action: open this application
-#: /telegram-app/telegram/scope/preview.cpp:62
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr "Alkalmazás megnyitása"
 
 #. TRANSLATORS: call to action: open this chat
-#: /telegram-app/telegram/scope/preview.cpp:86
-#: /telegram-app/telegram/scope/preview.cpp:120
-#: /telegram-app/telegram/scope/preview.cpp:149
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:86
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:120
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr "Csevegés megnyitása"
 
-#: /telegram-app/telegram/scope/preview.cpp:94
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr "Hívás"
 
-#: /telegram-app/telegram/scope/query.cpp:58
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr "Nem sikerült a Telegram adatok megszerzése"
 
-#: /telegram-app/telegram/scope/query.cpp:59
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr "Koppintson az alkalmazás megnyitásához"
 
-#: /telegram-app/telegram/scope/query.cpp:167
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Találat a partnerek és a csevegések között"
 
-#: /telegram-app/telegram/scope/query.cpp:184
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Találat az üzenetek között"
 
-#: /telegram-app/telegram/scope/query.cpp:291
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Beszélgetőpartnerek"
 
-#: /telegram-app/telegram/scope/query.cpp:292
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Legutóbbi csevegések"
 
-#: /telegram-app/telegram/scope/query.cpp:293
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Legutóbbi fényképek"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /telegram-app/telegram/scope/query.cpp:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 új üzenet"
 
-#: /telegram-app/telegram/scope/query.cpp:298
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 új üzenet"
 
-#: /telegram-app/telegram/scope/query.cpp:301
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Olvasatlan csevegések (%1)"
 
-#: /telegram-app/telegram/scope/query.cpp:642
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Hangüzenet"
 
-#: /telegram-app/telegram/scope/query.cpp:646
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "A partner megérkezett"
 
-#: /telegram-app/telegram/scope/query.cpp:650
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "A dokumentum megérkezett"
 
-#: /telegram-app/telegram/scope/query.cpp:654
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "A fénykép megérkezett"
 
-#: /telegram-app/telegram/scope/query.cpp:671
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "A videó megérkezett"
 
-#: /telegram-app/telegram/scope/query.cpp:681
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr "Nem kezelt médiatípus"
 
-#: /telegram-app/telegram/scope/query.cpp:756
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Telegram bejelentkezés"
 
-#: /telegram-app/telegram/scope/query.cpp:792
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Nem érkezett ma üzenet."
 
-#: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr "Telegram lencse"
 
-#: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Keressen csevegésre, partnerre vagy üzenetre"
+
+#~ msgid "Connecting..."
+#~ msgstr "Kapcsolódás…"
+
+#~ msgid "Waiting for network..."
+#~ msgstr "Várakozás a hálózatra…"
 
 #~ msgid "Log in"
 #~ msgstr "Bejelenkezés"

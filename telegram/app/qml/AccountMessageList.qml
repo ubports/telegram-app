@@ -366,14 +366,12 @@ Rectangle {
         anchors.topMargin: topMargin; reverse: true
     }
 
-    Rectangle {
+    ProportionalShape {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.bottomMargin: bottomMargin + units.gu(1)
         anchors.rightMargin: units.gu(1)
-        width: units.gu(7)//units.gu(8)
-        height: width
-        radius: height / 2//units.gu(0.625)
+        width: units.gu(7)
         color: "#88000000"
 //        normalColor: "#88000000"
 //        highlightColor: "#aa000000"
@@ -382,6 +380,7 @@ Rectangle {
 //        iconHeight: units.gu(2.25)
         visible: opacity != 0
         opacity: mlist.visibleArea.yPosition+mlist.visibleArea.heightRatio < 0.95? 1 : 0
+        aspect: UbuntuShape.Flat
 
         MouseArea {
             anchors.fill: parent
@@ -390,11 +389,11 @@ Rectangle {
 
 //        onClicked: mlist.positionViewAtBeginning()
 
-        Image {
+        Icon {
             anchors.centerIn: parent
-            height: units.gu(2)
-            fillMode: Image.PreserveAspectFit
-            source: "qrc:/qml/files/down.png"
+            height: units.gu(3.25)
+            color: "white"
+            name: "down"
         }
 
         Behavior on opacity {
