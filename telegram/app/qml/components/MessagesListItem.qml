@@ -167,7 +167,7 @@ ListItem {
                 visible: (message_item.message != "" || forward_user_name.visible) && !message_media.isSticker
                 radius: units.gu(0.7)
                 color: {
-                    return message.out ? Colors.outgoing : Colors.incoming
+                    return message.out ? message_status.bgMessageColor : Colors.incoming
                 }
             }
 
@@ -331,3 +331,4 @@ ListItem {
         return message_media.click()
     }
 }
+

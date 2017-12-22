@@ -15,6 +15,7 @@ Item {
 
     property variant message
     property bool hasMedia: false
+    property var bgMessageColor: !message.sent ? Colors.grey : ((message.out && message.unread) ? Colors.blue : (message.out ? Colors.outgoing : Colors.outgoing ))
 
     Rectangle {
         visible: hasMedia
@@ -75,26 +76,27 @@ Item {
 
         }
 
-        Image {
-            id: status_image
-            objectName: "statusImage"
-            anchors.verticalCenter: parent.verticalCenter
-            width: units.gu(2)
-            height: width
-            visible: message.out
-            z: 1
-            fillMode: Image.PreserveAspectFit
-            source: {
-                if (!message.sent) {
-                    return Qt.resolvedUrl("qrc:/qml/files/clock_white.svg");
-                } else if (message.out && message.unread) {
-                    return Qt.resolvedUrl("qrc:/qml/files/tick_single_white.svg");
-                } else if (message.out) {
-                    return Qt.resolvedUrl("qrc:/qml/files/tick_double_white2.svg");
-                } else {
-                    return "";
-                }
-            }
-        }
+//        Image {
+//            id: status_image
+//            objectName: "statusImage"
+//            anchors.verticalCenter: parent.verticalCenter
+//            width: units.gu(2)
+//            height: width
+//            visible: message.out
+//            z: 1
+//            fillMode: Image.PreserveAspectFit
+//            source: {
+//                if (!message.sent) {
+//                    return Qt.resolvedUrl("qrc:/qml/files/clock_white.svg");
+//                } else if (message.out && message.unread) {
+//                    return Qt.resolvedUrl("qrc:/qml/files/tick_single_white.svg");
+//                } else if (message.out) {
+//                    return Qt.resolvedUrl("qrc:/qml/files/tick_double_white2.svg");
+//                } else {
+//                    return "";
+//                }
+//            }
+//        }
     }
 }
+
