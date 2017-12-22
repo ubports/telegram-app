@@ -19,7 +19,7 @@ Item {
         width: parent.width*2
         height: parent.height*2
         visible: false
-        radius: 10*Devices.density
+        radius: units.gu(1.25)
         scale: 2
 
         ContactImage {
@@ -37,7 +37,7 @@ Item {
         Rectangle {
             radius: item.radius
             anchors.fill: parent
-            anchors.margins: 1*Devices.density
+            anchors.margins: units.gu(0.125)
         }
     }
 

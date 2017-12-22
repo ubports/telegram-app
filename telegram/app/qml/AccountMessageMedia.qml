@@ -18,7 +18,7 @@ Item {
     property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
 
-    property real maximumMediaHeight: 256 * Devices.density
+    property real maximumMediaHeight: units.gu(32)
     property real maximumMediaWidth: width * 0.75
     property real maximumMediaRatio: maximumMediaWidth / maximumMediaHeight
 
@@ -265,7 +265,7 @@ Item {
         visible: fileLocation.length == 0 && !isSticker
                 && file_handler.targetType != FileHandler.TypeTargetMediaPhoto
                 && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
-        radius: 3*Devices.density
+        radius: units.gu(0.375)
 
         Icon {
             height: units.gu(4)
@@ -298,7 +298,7 @@ Item {
             id:filesize_lbl
             anchors.top: parent.top
             anchors.left: parent.left
-            anchors.margins: 3*Devices.density
+            anchors.margins: units.gu(0.375)
             font.weight: Font.DemiBold
             fontSize: "small"
             color: "white"
@@ -319,7 +319,7 @@ Item {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: 4*Devices.density
+        anchors.margins: units.gu(0.5)
         height: units.dp(3)
         radius: 0
         percent: downloading ? file_handler.progressPercent : 0
@@ -332,8 +332,8 @@ Item {
         source: file_handler.targetType == FileHandler.TypeTargetMediaOther? "files/map-pin.png" : ""
         sourceSize: Qt.size(width,height)
         fillMode: Image.PreserveAspectFit
-        width: 92*Devices.density
-        height: 92*Devices.density
+        width: units.gu(11.5)
+        height: units.gu(11.5)
         visible: file_handler.targetType == FileHandler.TypeTargetMediaOther
         asynchronous: true
         smooth: true
@@ -399,8 +399,8 @@ Item {
     Component {
         id: media_player_component
         MediaPlayerItem {
-            width: 180*Devices.density
-            height: 40*Devices.density
+            width: units.gu(22.5)
+            height: units.gu(5)
             anchors.verticalCenter: parent.verticalCenter
             filePath: fileLocation
             z: fileLocation.length == 0? -1 : 0

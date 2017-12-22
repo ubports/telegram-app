@@ -16,7 +16,7 @@ ContactImage {
         anchors.fill: parent
         light: true
         modern: true
-        indicatorSize: 22*Devices.density
+        indicatorSize: units.gu(2.75)
         property bool active: user_photo_marea.loadingPhoto
 
         onActiveChanged: {
