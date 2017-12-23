@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-22 23:07+0100\n"
+"POT-Creation-Date: 2017-05-30 20:31+0200\n"
 "PO-Revision-Date: 2016-04-08 16:17+0000\n"
 "Last-Translator: Aggelos Arnaoutis <angelosarn@hotmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -19,107 +19,107 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 "X-Generator: Launchpad (build 18282)\n"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
+#: /telegram-app/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
 msgstr "Προσθήκη στις επαφές μου"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:26
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:45
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:123
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:26
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:45
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:96
 msgid "Contacts"
 msgstr "Επαφές"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:30
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:91
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:30
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:91
+#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
 msgstr "Αναζήτηση"
 
 #. TRANSLATORS: As in: add new contact
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:36
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:98
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:36
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:98
 msgid "Add"
 msgstr "Προσθήκη"
 
 #. TRANSLATORS: As in, back out of contacts page.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:49
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:125
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:49
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:125
+#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
 msgstr "Πίσω"
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:69
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
 msgstr "Αναζήτηση στις επαφές..."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:81
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:114
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:81
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:87
 msgid "New Secret Chat"
 msgstr "Νέα μυστική συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:87
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
 msgstr "Προσθήκη στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:107
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:104
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:107
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:77
 msgid "New Group"
 msgstr "Νέα ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:118
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:396
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:424
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:325
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:118
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:396
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:424
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:325
+#: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
 msgstr "Εντάξει"
 
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:241
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
 msgstr "Τίτλος συνομιλίας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:355
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:31
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:355
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
 msgstr "Προσθήκη Επαφής"
 
 #. TRANSLATORS: Pick contact to add from address book.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:358
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
 msgstr "Από βιβλίο διευθύνσεων"
 
 #. TRANSLATORS: Manually enter details of contact being added.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:367
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
 msgstr "Εισαγωγή λεπτομερειών"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:375
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:434
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:336
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:197
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:375
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:434
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:336
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:188
+#: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
 msgstr "Ακύρωση"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:409
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:267
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:321
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:189
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:605
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:101
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/app/telegram.desktop.h:1
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:409
+#: /telegram-app/telegram/app/qml/AccountPage.qml:300
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:321
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:17
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
+#: /telegram-app/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
+#: /telegram-app/telegram/app/telegram.cpp:605
+#: /telegram-app/telegram/push/pushhelper.cpp:101
+#: /telegram-app/telegram/build_mobile/app/telegram.desktop.h:1
+#: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:441
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:441
 #, qt-format
 msgid ""
 "Add %1 to %2?\n"
@@ -131,214 +131,204 @@ msgstr ""
 "Αριθμός τελευταίων μηνυμάτων προς προώθηση:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:502
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:502
 msgid "Contacts imported"
 msgstr "Επαφές εισήχθησαν"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:505
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:505
 msgid "No contacts imported"
 msgstr "Καμία επαφή δεν εισήχθησε"
 
 #. TRANSLATORS: Indicates result of a single contact import.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:512
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
 msgstr "Αυτή η επαφή είναι στο Telegram."
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountContactsPage.qml:515
+#: /telegram-app/telegram/app/qml/AccountContactsPage.qml:515
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
 msgstr "%1 από %2 επαφές είναι στο Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogList.qml:113
+#: /telegram-app/telegram/app/qml/AccountDialogList.qml:117
 #, qt-format
 msgid "Forward message to %1?"
 msgstr "Προώθηση μηνύματος σε %1;"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogList.qml:125
+#: /telegram-app/telegram/app/qml/AccountDialogList.qml:129
 #, qt-format
 msgid "Send messages to %1?"
 msgstr "Αποστολή μηνυμάτων σε %1;"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
-msgid "Channel Info"
-msgstr ""
-
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
+#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
 msgid "Group Info"
 msgstr "Πληροφορίες ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:33
+#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:33
 msgid "Profile Info"
 msgstr "Πληροφορίες προφιλ"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:44
+#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:44
 msgid "Select all"
 msgstr "Επιλογή όλων"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:56
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:239
+#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:56
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:256
 msgid "Copy"
 msgstr "Αντιγραφή"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:62
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:261
+#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:63
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:278
 msgid "Forward"
 msgstr "Προώθηση"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountDialogPage.qml:72
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:225
+#: /telegram-app/telegram/app/qml/AccountDialogPage.qml:73
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:245
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:170
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:25
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:154
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
 msgstr "Είσοδος"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:170
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:25
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:154
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:170
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:25
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "Εγγραφή"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountListItem.qml:215
+#: /telegram-app/telegram/app/qml/AccountListItem.qml:215
 #, fuzzy
 msgid "Invalid password"
 msgstr "Μη έγκυρος κωδικός τηλεφώνου"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:53
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:64
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:55
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:66
 #, fuzzy, qt-format
 msgid "%1 invited you to join a secret chat."
 msgstr "%1 δημιούργησε μυστική συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:58
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:69
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:302
 #, fuzzy
 msgid "You created the group"
 msgstr "%1 δημιούργησε την ομάδα %2\""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:60
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:71
 #, fuzzy, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "%1 δημιούργησε την ομάδα %2\""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:66
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:77
 #, fuzzy, qt-format
 msgid "You added <b>%1</b>"
 msgstr "Προώθηση από <b>%1</b>"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:68
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:79
 #, qt-format
 msgid "<b>%1</b> added you"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:70
-#, fuzzy, qt-format
-msgid "<b>%1</b> joined the group"
-msgstr "%1 αποχώρησε από την ομάδα"
-
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:72
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:78
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:87
 #, fuzzy, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "%1 αποχώρησε από την ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:81
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:90
 #, fuzzy, qt-format
 msgid "You removed <b>%1</b>"
 msgstr "Προώθηση από <b>%1</b>"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:83
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:92
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "%1 αφαίρεσε %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:85
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:94
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "%1 αφαίρεσε %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:93
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:102
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
 msgstr "%1 άλλαξε το όνομα ομάδας σε %2\""
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:96
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:105
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "%1 άλλαξε το όνομα ομάδας σε %2\""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:103
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:112
 #, fuzzy
 msgid "You changed the group photo"
 msgstr "%1 άλλαξε την φωτογραφία ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:105
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:114
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "%1 άλλαξε την φωτογραφία ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:111
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:120
 #, fuzzy
 msgid "You removed the group photo"
 msgstr "%1 διέγραψε την φωτογραφία ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:113
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:122
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "%1 διέγραψε την φωτογραφία ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:118
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:321
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:127
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:332
 msgid "You joined the group via invite link"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageAction.qml:120
+#: /telegram-app/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
 msgstr ""
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:136
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:149
 msgid "Please select chat"
 msgstr "Παρακαλώ επιλέξτε συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:203
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:224
 msgid "New messages"
 msgstr "Νέα μηνύματα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:245
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:262
 msgid "Reply"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:252
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:269
 msgid "Sticker Pack info"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:410
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:441
 msgid "Secret chat requested."
 msgstr "Αίτηση για μυστική συνομιλία."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:422
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:453
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -347,198 +337,211 @@ msgstr ""
 "Σημειώστε πως  το Android αποδέχεται της μυστικές συνομιλίες αυτόματα."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:454
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:485
 msgid "Accept"
 msgstr "Αποδοχή"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountMessageList.qml:468
+#: /telegram-app/telegram/app/qml/AccountMessageList.qml:499
 msgid "Reject"
 msgstr "Απόρριψη"
 
 #. TRANSLATORS: Edit your profile first and last name.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:16
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:32
+#: /telegram-app/telegram/app/qml/AccountNamePage.qml:16
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:32
 msgid "Edit name"
 msgstr "Επεξεργασία ονόματος"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:20
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:51
+#: /telegram-app/telegram/app/qml/AccountNamePage.qml:20
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:21
+#: /telegram-app/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
 msgstr "Αποθήκευση"
 
 #. TRANSLATORS: Error message when first name was not provided.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:33
+#: /telegram-app/telegram/app/qml/AccountNamePage.qml:33
 msgid "First name is required."
 msgstr "Απαιτείται μικρό όνομα"
 
 #. TRANSLATORS: This is a placeholder in the 'first name' text field.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:51
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:144
+#: /telegram-app/telegram/app/qml/AccountNamePage.qml:51
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:144
 msgid "First name (required)"
 msgstr "Μικρό όνομα (απαιτείται)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountNamePage.qml:70
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:160
+#: /telegram-app/telegram/app/qml/AccountNamePage.qml:70
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:160
 msgid "Last name (optional)"
 msgstr "Επίθετο (προαιρετικό)"
 
+#. TRANSLATORS: App header title when connecting to Telegram.
+#: /telegram-app/telegram/app/qml/AccountPage.qml:303
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:183
+msgid "Connecting..."
+msgstr "Γίνεται σύνδεση..."
+
+#. TRANSLATORS: Shown in app header when network is unavailable.
+#: /telegram-app/telegram/app/qml/AccountPage.qml:307
+#: /telegram-app/telegram/app/qml/AccountPage.qml:329
+#: /telegram-app/telegram/app/qml/AccountPage.qml:348
+msgid "Waiting for network..."
+msgstr "Αναμονή σύνδεσης στο διαδύκτιο..."
+
 #. TRANSLATORS: Page title when forwarding messages.
 #. TRANSLATORS: Page title when sharing files.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:287
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountPage.qml:301
+#: /telegram-app/telegram/app/qml/AccountPage.qml:326
+#: /telegram-app/telegram/app/qml/AccountPage.qml:345
 msgid "Select Chat"
 msgstr "Επιλογή συνομιλίας"
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:194
+#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:182
 msgid "Type message"
 msgstr "Πληκτρολογήστε μήνυμα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:669
+#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:653
 msgid "Audio attachment not supported yet ;("
 msgstr "Η σύναψη ήχου δεν υποστηρίζεται ακόμα ;("
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:671
+#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:655
 msgid "You have to press and hold the record icon"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSendMessage.qml:765
+#: /telegram-app/telegram/app/qml/AccountSendMessage.qml:749
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:20
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:133
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:20
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:106
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:25
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:47
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:25
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:49
 msgid "Change photo"
 msgstr "Αλλαγή φωτογραφίας"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:95
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:727
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:100
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:95
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:712
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:106
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
 msgstr "Πληροφορίες"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:105
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:105
 msgid "Phone"
 msgstr "Τηλέφωνο"
 
 #. TRANSLATORS: Visible right under username in settings page.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:118
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:118
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
 msgstr "Όνομα χρήστη"
 
 #. TRANSLATORS: Settings section header.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:127
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:127
 msgid "Messages"
 msgstr "Μηνύματα"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:138
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:561
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:465
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:138
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:551
+#: /telegram-app/telegram/app/qml/telegram.qml:493
 msgid "Notifications"
 msgstr "Ειδοποιήσεις"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:168
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
 msgstr "Αποστολή μηνύματος πατώντας το Enter"
 
 #. TRANSLATORS: Settings section header.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:182
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
 msgstr "Υποστήριξη"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:190
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:190
 msgid "Ask a Question"
 msgstr "Κάντε μια Ερώτηση"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:200
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:142
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:200
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:115
 msgid "Telegram FAQ"
 msgstr "Telegram συχνές ερωτήσεις"
 
 #. TRANSLATORS: Settings section header.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:209
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:209
 msgid "Account"
 msgstr "Λογαριασμός"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:220
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
 msgstr "Αποσύνδεση"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:233
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:233
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram για Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:283
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:309
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:102
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:283
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:301
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:41
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:88
 msgid "online"
 msgstr "συνδεδεμένος"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:286
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:312
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:105
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:286
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:304
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:44
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:91
 #, qt-format
 msgid "last seen %1"
 msgstr "εμφανίστηκε τελευταία %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:289
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:315
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:108
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:289
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:307
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:47
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:94
 msgid "last seen recently"
 msgstr "εμφανίστηκε τελευταία πρόσφατα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:292
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:318
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:111
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:292
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:310
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:50
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:97
 msgid "last seen within a week"
 msgstr "εμφανίστηκε τελευταία μέσα στην εβδομάδα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:295
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:321
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:114
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:295
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:313
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:53
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:100
 msgid "last seen within a month"
 msgstr "εμφανίστηκε τελευταία μέσα στο μήνα"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:298
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:324
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:117
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:298
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:316
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:56
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:103
 msgid "last seen a long time ago"
 msgstr "εμφανίστηκε τελευταία αρκετό καιρό"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountSettings.qml:322
+#: /telegram-app/telegram/app/qml/AccountSettings.qml:322
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
@@ -547,35 +550,35 @@ msgstr ""
 "Τυχόν μυστικές συνομιλίες θα χαθούν."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
 msgstr "%1 είναι διαθέσιμος"
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
 msgstr "Λυπούμαστε, αυτό το όνομα χρήστη δεν είναι διαθέσιμο."
 
 #. TRANSLATORS: Error message when choosing new username.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
 msgstr "Συγγνώμη, αυτό το όνομα χρήστη είναι μη έγκυρο."
 
 #. TRANSLATORS: Placeholder of the username text field.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
 msgstr "Το όνομα χρήστη σας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
 msgstr "Το όνομα χρήστη πρέπει να έχει τουλάχιστον 5 χαρακτήρες."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
 msgstr "Έλεγχος ονόματος χρήστη..."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
+#: /telegram-app/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
 "You can choose a username on <b>Telegram</b>. If you do, other people will "
 "be able to find you by this username and contact you without knowing your "
@@ -589,246 +592,246 @@ msgstr ""
 "b>, αριθμούς από <b>0-9</b> ή κάτω παύλα (_).<br />Οι ελάχιστοι χαρακτήρες "
 "είναι <b>5</b>"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:35
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:86
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:35
+#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
 msgstr "Ολοκληρώθηκε"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:127
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
 msgstr "Νούμερο τηλεφώνου (απαιτείται)"
 
 #. TRANSLATORS: %1 is the contact's name, who was being imported from the addressbook.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:196
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:196
 #, qt-format
 msgid "%1 is not yet on Telegram"
 msgstr "%1 δεν είναι ακόμα στο Telegram"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:202
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:202
 msgid "Invite to Telegram"
 msgstr "Προσκαλέστε στο Telegram"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:248
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:248
 msgid "Could not add contact"
 msgstr "Αδυναμία προσθήκης επαφής"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:268
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
 msgstr "Παρακαλώ συμπεριλάβετε τον κωδικό χώρας."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AddContactPage.qml:270
+#: /telegram-app/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
 msgstr "Ο αριθμός δεν είναι έγκυρος αριθμός τηλεφώνου."
 
 #. TRANSLATORS: Error text for an invalid phone code.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:33
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:33
 msgid "Invalid phone code"
 msgstr "Μη έγκυρος κωδικός τηλεφώνου"
 
 #. TRANSLATORS: Error text for missing first name.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:48
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:48
 msgid "First name is required"
 msgstr "Απαιτείται μικρό ονόμα"
 
 #. TRANSLATORS: One time code entered during sign in process.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:115
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:115
 msgid "Code"
 msgstr "Κωδικός"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:132
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
 msgstr "Μικρό όνομα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:142
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
 msgstr "Επίθετο"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:166
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:166
 msgid "Resend Code"
 msgstr "Επαναποστολή κωδικού"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:185
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
 msgstr "Αίτηση κλήσης"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCodePage.qml:187
+#: /telegram-app/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
 msgstr "Γίνεται κλήση, παρακαλώ περιμένετε..."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
+#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
 msgstr ""
 
 #. TRANSLATORS: Placeholder for contacts search field.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
+#: /telegram-app/telegram/app/qml/AuthCountriesPage.qml:65
 #, fuzzy
 msgid "Search countries..."
 msgstr "Αναζήτηση στις επαφές..."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:25
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:73
+#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:25
+#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
 msgstr "Αριθμός τηλεφώνου"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:119
+#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:119
 msgid "Number correct?"
 msgstr "Αριθμός σωστός;"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthNumberPage.qml:165
+#: /telegram-app/telegram/app/qml/AuthNumberPage.qml:165
 #, fuzzy
 msgid "Phone number already exists."
 msgstr "Νούμερο τηλεφώνου (απαιτείται)"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
+#: /telegram-app/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
+#: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
+#: /telegram-app/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
 msgstr "Κλείσιμο"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPage.qml:177
+#: /telegram-app/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
 msgstr "Άρχισε να ανταλλάσεις μηνύματα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:18
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
 msgstr ""
 "Καλως ήρθατε στην εποχή<br> της γρήγορης και ασφαλούς ανταλλαγής μηνυμάτων"
 
 #. TRANSLATORS: Adjective, describing fast application.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:22
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
 msgstr "Γρήγορο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:23
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
 "<b>Το Telegram</b> παραδίδει τα μηνύματα ταχύτερα<br> από κάθε άλλη εφαρμογή"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:27
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
 msgstr "Δωρεάν"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:28
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr "<b>Telegram</b>δωρεάν για πάντα. Χωρίς διαφημίσεις.<br>Χωρίς συνδρομή"
 
 #. TRANSLATORS: Adjective, describing secure application.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:32
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
 msgstr "Ασφαλής"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:33
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
 "<b>Το Telegram</b> κρατάει τα μηνύματά σας ασφαλή<br> από επιθέσεις χάκερ"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:37
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
 msgstr "Ισχυρό"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:38
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
 "<b>Το Telegram</b> δεν βάζει όρια στο μέγεθος<br> των μέσων σας και των "
 "συνομιλιών σας."
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:42
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
 msgstr "Βασισμένο στο σύννεφο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:43
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
 "<b>Το Telegram</b> σας επιτρέπει να έχετε πρόσβαση στα μηνύματά σας<br> από "
 "πολλαπλές συσκευές."
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:47
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
 msgstr "Ιδιωτικό"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/IntroPageListModel.qml:48
+#: /telegram-app/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr ""
 "Τα μηνύματα του <b>Telegram</b> είναι κρυπτογραφημένο σε μεγάλο βαθμό<br>"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PickerPage.qml:11
+#: /telegram-app/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
 msgstr ""
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:46
+#: /telegram-app/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
 msgstr "Από: %1"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/PreviewPage.qml:57
+#: /telegram-app/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
 msgstr "Κοινή χρήση"
 
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:19
+msgid "Contact Info"
+msgstr "Πληροφορίες επικοινωνίας"
+
 #. TRANSLATORS: Action text to add member to group chat.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:41
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:43
 msgid "Add member"
 msgstr "Προσθήκη μέλους"
 
 #. TRANSLATORS: Action text to change group chat title.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:53
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:166
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:55
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:157
 #, fuzzy
 msgid "Change Group Title"
 msgstr "%1 άλλαξε το όνομα ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:60
-msgid "Contact Info"
-msgstr "Πληροφορίες επικοινωνίας"
-
 #. TRANSLATORS: Placeholder for new group chat title
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:180
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:171
 #, fuzzy
 msgid "New group chat title"
 msgstr "Τίτλος συνομιλίας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:188
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:179
 #, fuzzy
 msgid "Change Title"
 msgstr "Τίτλος συνομιλίας"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:298
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:92
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:290
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:78
 #, qt-format
 msgid "%1 members, %2 online"
 msgstr "%1 μέλη, %2 συνδεδεμένα"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
-#. TRANSLATORS: %1 is group chat member count.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:301
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:95
+#. TRANSLATORS: %1 is gropu chat member count.
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:293
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:81
 #, qt-format
 msgid "%1 members"
 msgstr "%1 μέλη"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:342
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:83
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:334
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:69
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
@@ -836,56 +839,56 @@ msgstr[0] "%1 πληκτρογραφεί"
 msgstr[1] "%1 πληκτρογραφούν"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:345
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:337
 #, qt-format
 msgid "%1 are typing"
 msgstr "%1 πληκτρογραφούν"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:411
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:404
 msgid "Unknown"
 msgstr "Άγνωστο"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:420
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:414
 msgid "Mobile"
 msgstr "Κινητό τηλέφωνο"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:480
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:468
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:643
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:628
 msgid "Block user"
 msgstr "Μπλοκάρισμα χρήστη"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/ProfilePage.qml:714
+#: /telegram-app/telegram/app/qml/ProfilePage.qml:699
 msgid "Remove from group"
 msgstr "Αφαίρεση από ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:171
+#: /telegram-app/telegram/app/qml/telegram.qml:170
 #, qt-format
 msgid "Telegram messages received today: %1"
 msgstr "Μηνύματα του Telegram που παρελήφθησαν σήμερα: %1"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:172
+#: /telegram-app/telegram/app/qml/telegram.qml:171
 msgid "No Telegram messages received today."
 msgstr "Δεν παρελήφθησαν μηνύματα του Telegram σήμερα."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:179
+#: /telegram-app/telegram/app/qml/telegram.qml:178
 #, qt-format
 msgid "Telegram messages sent today: %1"
 msgstr "Μηνύματα του Telegram που στάλθηκαν σήμερα: %1"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:180
+#: /telegram-app/telegram/app/qml/telegram.qml:179
 msgid "No Telegram messages sent today."
 msgstr "Δεν στάλθηκαν μηνύματα του Telegram σήμερα."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:466
+#: /telegram-app/telegram/app/qml/telegram.qml:494
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
@@ -893,70 +896,70 @@ msgstr ""
 "Εάν θέλετε ειδοποιήσεις Telegram όταν δεν χρησιμοποιείτε την εφαρμογή, "
 "συνδεθείτε στον λογαριασμό Ubuntu One."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:473
+#: /telegram-app/telegram/app/qml/telegram.qml:501
 msgid "Sign in to Ubuntu One"
 msgstr "Σύνδεση στο Ubuntu One"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:481
+#: /telegram-app/telegram/app/qml/telegram.qml:509
 msgid "Remind me later"
 msgstr "Υπενθύμιση αργότερα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/telegram.qml:489
+#: /telegram-app/telegram/app/qml/telegram.qml:517
 msgid "Don't want notifications"
 msgstr "Δεν θέλετε ειδοποιήσεις"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:167
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:140
 msgid "Accounts"
 msgstr "Λογαριασμοί"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AccountPanel.qml:194
+#: /telegram-app/telegram/app/qml/components/AccountPanel.qml:167
 msgid "Add Account"
 msgstr "Προσθήκη λογαριασμού"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:91
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
+#: /telegram-app/telegram/app/qml/components/AttachPanel.qml:87
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:289
 msgid "Photo"
 msgstr "Φωτογραφία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:103
+#: /telegram-app/telegram/app/qml/components/AttachPanel.qml:99
 msgid "Video"
 msgstr "Βίντεο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AttachPanel.qml:115
+#: /telegram-app/telegram/app/qml/components/AttachPanel.qml:111
 msgid "File"
 msgstr "Αρχείο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
+#: /telegram-app/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
 msgstr ""
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
 msgstr "Αναμονή μέχρι ο χρήστης να συνδεθεί..."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:36
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
 msgstr "Έγινε αίτηση για μυστική συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:38
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
 msgstr "Δημιουργήθηκε μυστική συνομιλία"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:41
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
 msgstr "Απόρριψη μυστικής συνομιλίας"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
 msgstr "Απενεργοποιημένο"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:51
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
@@ -964,462 +967,456 @@ msgstr[0] "%1 δευτερόλεπτο"
 msgstr[1] "%1 δευτερόλεπτα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
 msgstr "1 λεπτό"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:57
 msgid "1 hour"
 msgstr "1 ώρα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
 msgstr "1 ημέρα"
 
 #. TRANSLATORS: Secret chat self destruct timer.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
+#: /telegram-app/telegram/app/qml/components/DelegateUtils.qml:63
 msgid "1 week"
 msgstr "1 εβδομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:62
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Leave chat"
 msgstr "Αποχώρηση από συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:68
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:74
 msgid "Are you sure you want to leave this chat?"
 msgstr "Είστε σίγουροι πως θέλετε να αποχωρήσετε από την συνομιλία;"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:79
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Clear history"
 msgstr "Εκκαθάριση ιστορικού"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:85
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:91
 msgid "Are you sure you want to clear history?"
 msgstr "Είστε σίγουροι ότι θέλετε να εκκαθαρίσετε το ιστορικό"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:220
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:232
 msgid "You: "
 msgstr ""
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:241
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramHeader.qml:86
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:254
+#: /telegram-app/telegram/app/qml/components/TelegramHeader.qml:72
 msgid "typing..."
 msgstr "πληκτρολογεί..."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:261
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
 msgid "You changed the group title to %1"
 msgstr "%1 άλλαξε το όνομα ομάδας σε %2\""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:263
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:276
 #, fuzzy, qt-format
 msgid "%1 changed the group title to %2"
 msgstr "%1 άλλαξε το όνομα ομάδας σε %2\""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:270
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:283
 #, fuzzy
 msgid "Voice message"
 msgstr "Πληκτρολογήστε μήνυμα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:272
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:284
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
 #, fuzzy, qt-format
 msgid "%1 joined your secret chat."
 msgstr "%1 δημιούργησε μυστική συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:286
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
 #, fuzzy
 msgid "You joined the secret chat."
 msgstr "%1 δημιούργησε μυστική συνομιλία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:291
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:304
 #, fuzzy, qt-format
 msgid "%1 created the group"
 msgstr "%1 δημιούργησε την ομάδα %2\""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:297
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:299
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:312
 #, fuzzy, qt-format
 msgid "%1 added you"
 msgstr "%1 πρόσεθεσε %2 στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:301
-#, fuzzy, qt-format
-msgid "%1 joined the group"
-msgstr "%1 αποχώρησε από την ομάδα"
-
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:303
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:314
 #, fuzzy, qt-format
 msgid "%1 added %2"
 msgstr "%1 στις %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:308
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 αποχώρησε από την ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:311
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:322
 #, fuzzy, qt-format
 msgid "You removed %1"
 msgstr "%1 αφαίρεσε %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:313
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:324
 #, fuzzy, qt-format
 msgid "%1 removed you"
 msgstr "%1 αφαίρεσε %2"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:315
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:206
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:326
+#: /telegram-app/telegram/push/pushhelper.cpp:206
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%1 αφαίρεσε %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/DialogsListItem.qml:323
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:334
 #, qt-format
 msgid "%1 joined the group via invite link"
 msgstr ""
 
+#: /telegram-app/telegram/app/qml/components/DialogsListItem.qml:338
+#, qt-format
+msgid "%1 is currently offline"
+msgstr ""
+
 #. TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/MessagesListItem.qml:211
+#: /telegram-app/telegram/app/qml/components/MessagesListItem.qml:229
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Προώθηση από <b>%1</b>"
 
 #. TRANSLATORS: User status: deleted
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#: /telegram-app/telegram/app/qml/components/TelegramContactsListItem.qml:34
 msgid "Deleted"
 msgstr "Διαγραφή"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:11
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:46
+#: /telegram-app/telegram/app/qml/js/time.js:11
+#: /telegram-app/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
 msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:14
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:35
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:49
+#: /telegram-app/telegram/app/qml/js/time.js:14
+#: /telegram-app/telegram/app/qml/js/time.js:35
+#: /telegram-app/telegram/app/qml/js/time.js:49
 msgid "MMM d"
 msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:54
+#: /telegram-app/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
 msgstr "σήμερα στις %1"
 
 #. TRANSLATORS %1 refers to a time of the day
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:57
+#: /telegram-app/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
 msgstr "εχθές στις %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:60
+#: /telegram-app/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
 msgstr "%1 στις %2"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:68
+#: /telegram-app/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/qml/js/time.js:68
+#: /telegram-app/telegram/app/qml/js/time.js:68
 #, fuzzy
 msgid "h:mm:ss"
 msgstr "hh:mm"
 
 #. TRANSLATORS: Format string: time.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:287
+#: /telegram-app/telegram/app/telegram.cpp:287
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:291
+#: /telegram-app/telegram/app/telegram.cpp:291
 msgid "ddd HH:mm"
 msgstr "ddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:295
+#: /telegram-app/telegram/app/telegram.cpp:295
 msgid "dd MMM"
 msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/app/telegram.cpp:298
+#: /telegram-app/telegram/app/telegram.cpp:298
 msgid "dd MMM yy"
 msgstr "dd MMM yy"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:110
+#: /telegram-app/telegram/push/pushhelper.cpp:110
 msgid "sent you a message"
 msgstr "έστειλε σε εσάς ένα μήνυμα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:114
+#: /telegram-app/telegram/push/pushhelper.cpp:114
 msgid "sent you a photo"
 msgstr "έστειλε σε εσάς μια φωτογραφία"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:118
+#: /telegram-app/telegram/push/pushhelper.cpp:118
 msgid "sent you a video"
 msgstr "έστειλε σε εσάς ένα βίντεο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:122
+#: /telegram-app/telegram/push/pushhelper.cpp:122
 msgid "sent you a document"
 msgstr "έστειλε σε εσάς ένα έγγραφο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:126
+#: /telegram-app/telegram/push/pushhelper.cpp:126
 msgid "sent you a voice message"
 msgstr "έστειλε σε εσάς ένα μήνυμα ήχου"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:130
+#: /telegram-app/telegram/push/pushhelper.cpp:130
 msgid "shared a contact with you"
 msgstr "διαμοίρασε μια επαφή σε εσάς"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:134
+#: /telegram-app/telegram/push/pushhelper.cpp:134
 msgid "sent you a map"
 msgstr "έστειλε σε εσάς ένα χάρτη"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:139
+#: /telegram-app/telegram/push/pushhelper.cpp:139
 #, qt-format
 msgid "%1: %2"
 msgstr "%1: %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:144
+#: /telegram-app/telegram/push/pushhelper.cpp:144
 #, qt-format
 msgid "%1 sent a message to the group"
 msgstr "%1 έστειλε ένα μήνυμα στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:149
+#: /telegram-app/telegram/push/pushhelper.cpp:149
 #, qt-format
 msgid "%1 sent a photo to the group"
 msgstr "%1 έστειλε μια φωτογραφία στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:154
+#: /telegram-app/telegram/push/pushhelper.cpp:154
 #, qt-format
 msgid "%1 sent a video to the group"
 msgstr "%1 έστειλε ένα βίντεο στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:159
+#: /telegram-app/telegram/push/pushhelper.cpp:159
 #, qt-format
 msgid "%1 sent a document to the group"
 msgstr "%1 έστειλε ένα έγγραφο στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:164
+#: /telegram-app/telegram/push/pushhelper.cpp:164
 #, qt-format
 msgid "%1 sent a voice message to the group"
 msgstr "%1 έστειλε ένα μήνυμα ήχου στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:169
+#: /telegram-app/telegram/push/pushhelper.cpp:169
 #, qt-format
 msgid "%1 sent a contact to the group"
 msgstr "%1 έστειλε μια επαφή στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:174
+#: /telegram-app/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a map to the group"
 msgstr "%1 έστειλε ένα χάρτη στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:179
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:200
+#: /telegram-app/telegram/push/pushhelper.cpp:179
+#: /telegram-app/telegram/push/pushhelper.cpp:200
 #, qt-format
 msgid "%1 invited you to the group"
 msgstr "%1 σας προσκάλεσε στην ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:184
+#: /telegram-app/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 changed group name"
 msgstr "%1 άλλαξε το όνομα ομάδας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:189
+#: /telegram-app/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 changed group photo"
 msgstr "%1 άλλαξε την φωτογραφία ομάδας"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:195
+#: /telegram-app/telegram/push/pushhelper.cpp:195
 #, qt-format
 msgid "%1 invited %2"
 msgstr "%1 προσκάλεσε %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:211
+#: /telegram-app/telegram/push/pushhelper.cpp:211
 #, qt-format
 msgid "%1 removed you from the group"
 msgstr "%1 σας αφαίρεσε από την ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:216
+#: /telegram-app/telegram/push/pushhelper.cpp:216
 #, qt-format
 msgid "%1 has left the group"
 msgstr "%1 αποχώρησε από την ομάδα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:221
+#: /telegram-app/telegram/push/pushhelper.cpp:221
 #, qt-format
 msgid "%1 has returned to the group"
 msgstr "%1 επέστρεψε στην ομάδα"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:226
+#: /telegram-app/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "@ %1"
 msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:228
+#: /telegram-app/telegram/push/pushhelper.cpp:228
 #, qt-format
 msgid "%1 has checked-in"
 msgstr ""
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:234
+#: /telegram-app/telegram/push/pushhelper.cpp:234
 #, qt-format
 msgid "%1 joined Telegram!"
 msgstr "%1 μόλις συνδέθηκε στο Telegram!"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:239
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:245
+#: /telegram-app/telegram/push/pushhelper.cpp:239
+#: /telegram-app/telegram/push/pushhelper.cpp:245
 msgid "New login from unrecognized device"
 msgstr "Νέα είσοδος από μη αναγνωρισμένη συσκευή"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:244
+#: /telegram-app/telegram/push/pushhelper.cpp:244
 #, qt-format
 msgid "%1 @ %2"
 msgstr "%1 @ %2"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:249
+#: /telegram-app/telegram/push/pushhelper.cpp:249
 msgid "updated profile photo"
 msgstr "ενημερωμένη φωτογραφία προφίλ"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:254
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:259
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/push/pushhelper.cpp:264
+#: /telegram-app/telegram/push/pushhelper.cpp:254
+#: /telegram-app/telegram/push/pushhelper.cpp:259
+#: /telegram-app/telegram/push/pushhelper.cpp:264
 msgid "You have a new message"
 msgstr "Έχετε ένα νέο μήυμα"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/config.h:24
+#: /telegram-app/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
 msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:62
+#: /telegram-app/telegram/scope/preview.cpp:62
 msgid "Open app"
 msgstr "Άνοιγμα εφαρμογής"
 
 #. TRANSLATORS: call to action: open this chat
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:86
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:120
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:149
+#: /telegram-app/telegram/scope/preview.cpp:86
+#: /telegram-app/telegram/scope/preview.cpp:120
+#: /telegram-app/telegram/scope/preview.cpp:149
 msgid "Open chat"
 msgstr "Άνοιγμα συνομιλίας"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/preview.cpp:94
+#: /telegram-app/telegram/scope/preview.cpp:94
 msgid "Call"
 msgstr "Κλήση"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:58
+#: /telegram-app/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
 msgstr "Αδυναμία απόκτησης δεδομένων Telegram"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:59
+#: /telegram-app/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
 msgstr "Αγγίξτε εδώ για να ανοίξετε την εφαρμογή"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:167
+#: /telegram-app/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
 msgstr "Αποτελέσματα σε: Επαφές & Συνομιλίες"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:184
+#: /telegram-app/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
 msgstr "Αποτελέσματα σε: Μηνύματα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:291
+#: /telegram-app/telegram/scope/query.cpp:291
 msgid "People You Talk To"
 msgstr "Άτομα που μιλάτε"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:292
+#: /telegram-app/telegram/scope/query.cpp:292
 msgid "Recent Chats"
 msgstr "Πρόσφατες συνομιλίες"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:293
+#: /telegram-app/telegram/scope/query.cpp:293
 msgid "Recent Photos"
 msgstr "Πρόσφατες φωτογραφίες"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:298
+#: /telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
 msgstr "%1 νέο μήνυμα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:298
+#: /telegram-app/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
 msgstr "%1 νέα μηνύματα"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:301
+#: /telegram-app/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
 msgstr "Μη αναγνωσμένες συνομιλίες (%1)"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:642
+#: /telegram-app/telegram/scope/query.cpp:642
 msgid "Audio message"
 msgstr "Μήνυμα ήχου"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:646
+#: /telegram-app/telegram/scope/query.cpp:646
 msgid "Contact received"
 msgstr "Έγινε λήψη επαφής"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:650
+#: /telegram-app/telegram/scope/query.cpp:650
 msgid "Document received"
 msgstr "Έγινε λήψη εγγράφου"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:654
+#: /telegram-app/telegram/scope/query.cpp:654
 msgid "Photo received"
 msgstr "Έγινε λήψη τηλεφώνου"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:671
+#: /telegram-app/telegram/scope/query.cpp:671
 msgid "Video received"
 msgstr "Έγινε λήψη βίντεο"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:681
+#: /telegram-app/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
 msgstr ""
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:756
+#: /telegram-app/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
 msgstr "Είσοδος στο Telegram"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/scope/query.cpp:792
+#: /telegram-app/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "Κανένα μήνυμα δεν λήφθηκε σήμερα."
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
 msgstr "Αυτό είναι το επισκόπιο Telegram"
 
-#: /home/mike/Documenti/PC/App/telegram-app/telegram/build_desktop/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /telegram-app/telegram/build_mobile/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
 msgstr "Αναζήτηση για συνομιλία, επαφή ή μήνυμα"
-
-#~ msgid "Connecting..."
-#~ msgstr "Γίνεται σύνδεση..."
-
-#~ msgid "Waiting for network..."
-#~ msgstr "Αναμονή σύνδεσης στο διαδύκτιο..."
 
 #~ msgid "Log in"
 #~ msgstr "Σύνδεση"
