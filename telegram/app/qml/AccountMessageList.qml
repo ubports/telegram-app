@@ -124,7 +124,7 @@ Rectangle {
         color: "#ffffff"
         width: welcome_txt.width + units.gu(2.5)
         height: welcome_txt.height + units.gu(1.25)
-        radius: units.gu(0.625)
+        radius: units.dp(4)
         visible: currentDialog == telegramObject.nullDialog
 
         Text {
