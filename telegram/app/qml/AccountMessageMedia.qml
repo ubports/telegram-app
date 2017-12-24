@@ -332,8 +332,8 @@ Item {
         source: file_handler.targetType == FileHandler.TypeTargetMediaOther? "files/map-pin.png" : ""
         sourceSize: Qt.size(width,height)
         fillMode: Image.PreserveAspectFit
-        width: units.gu(11.5)
-        height: units.gu(11.5)
+        width: units.gu(12)
+        height: units.gu(12)
         visible: file_handler.targetType == FileHandler.TypeTargetMediaOther
         asynchronous: true
         smooth: true
@@ -399,7 +399,7 @@ Item {
     Component {
         id: media_player_component
         MediaPlayerItem {
-            width: units.gu(22.5)
+            width: units.gu(22)
             height: units.gu(5)
             anchors.verticalCenter: parent.verticalCenter
             filePath: fileLocation
