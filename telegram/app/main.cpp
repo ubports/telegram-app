@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
     QCommandLineParser parser;
     // TRANSLATORS: Application description.
-    parser.setApplicationDescription("Telegram for Ubuntu is a freen and open source Telegram client.");
+    parser.setApplicationDescription("Telegram for Ubuntu is a free and open source Telegram client.");
     parser.addHelpOption();
     parser.addVersionOption();
     parser.addOption(forceOption);

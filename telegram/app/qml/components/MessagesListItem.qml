@@ -192,6 +192,7 @@ ListItem {
                     elide: Text.ElideRight
                     visible: visibleNames && !message.out && !hasMedia
                     color: Avatar.getColor(message.fromId)
+                    textFormat: Text.RichText
                     text: user.firstName + " " + user.lastName
 
                     Component.onCompleted: {
@@ -208,6 +209,7 @@ ListItem {
                     color:  Colors.telegram_blue
                     visible: message.fwdFromId !== 0 && message.fwdFromId.userId !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
+                    textFormat: Text.RichText
                     text: visible ? i18n.tr("Forwarded from <b>%1</b>").arg(fwdUser.firstName + " " + fwdUser.lastName) : ""
                 }
 
