@@ -39,6 +39,7 @@ Item {
             fontSize: "small"
             color: "#333333"
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+            textFormat: Text.RichText
             text: {
                 var res = ""
                 var userName = user.firstName + " " + user.lastName
