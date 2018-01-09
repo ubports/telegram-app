@@ -42,7 +42,7 @@ Item {
         Rectangle {
             id: play_btn
             anchors.fill: parent
-            anchors.margins: units.gu(0.375)
+            anchors.margins: units.gu(0.5)
             radius: width/2
             color: "#ffffff"
             visible: !parent.isInsideBar
@@ -149,7 +149,7 @@ Item {
             radius: width/2
             color: "#ffffff"
             border.color: "#aaaaaa"
-            border.width: units.gu(0.125)
+            border.width: units.dp(1)
             x: (seeker_scene.width-seeker.width)*player.position/player.duration
         }
     }
