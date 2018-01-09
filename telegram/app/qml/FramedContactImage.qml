@@ -37,7 +37,7 @@ Item {
         Rectangle {
             radius: item.radius
             anchors.fill: parent
-            anchors.margins: units.gu(0.125)
+            anchors.margins: units.dp(1)
         }
     }
 
