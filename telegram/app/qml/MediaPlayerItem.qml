@@ -8,7 +8,7 @@ import "js/time.js" as Time
 
 Item {
     width: 100
-    height: units.gu(7.75)
+    height: units.gu(8)
 
     property alias filePath: player.source
     property bool isInsideBar: false
