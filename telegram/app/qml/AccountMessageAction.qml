@@ -135,8 +135,8 @@ Item {
         Image {
             id: img
             anchors.horizontalCenter: parent.horizontalCenter
-            width: 64*Devices.density
-            height: 80*Devices.density
+            width: units.gu(8)
+            height: units.gu(10)
             sourceSize: Qt.size(width,width)
             source: {
                 if(imgPath.length==0)

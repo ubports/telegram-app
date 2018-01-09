@@ -8,7 +8,7 @@ import "js/colors.js" as Colors
 Item {
     id: uname_sgs_menu
     width: parent.width
-    height: 3*32*Devices.density + back_frame.anchors.topMargin
+    height: 3*units.gu(4) + back_frame.anchors.topMargin
     visible: fmodel.count != 0
     clip: true
 
@@ -25,10 +25,10 @@ Item {
     DropShadow {
         anchors.fill: source
         source: back
-        radius: 8*Devices.density
+        radius: units.gu(1)
         samples: 16
-        horizontalOffset: 1*Devices.density
-        verticalOffset: 1*Devices.density
+        horizontalOffset: units.dp(1)
+        verticalOffset: units.dp(1)
         color: "#66111111"
     }
 
@@ -39,7 +39,7 @@ Item {
         Rectangle {
             id: back_frame
             anchors.fill: parent
-            anchors.topMargin: 8*Devices.density
+            anchors.topMargin: units.gu(1)
             color: Colors.white
 
             Rectangle {
@@ -53,8 +53,8 @@ Item {
 
     ListView {
         id: listv
-        width: back_frame.width-8*Devices.density
-        height: back_frame.height-4*Devices.density
+        width: back_frame.width-units.gu(1)
+        height: back_frame.height-units.gu(0.5)
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         clip: true
@@ -64,15 +64,15 @@ Item {
         /*highlightMoveDuration: 0
         highlight: Rectangle {
             width: listv.width
-            height: 32*Devices.density
+            height: units.gu(4)
             color: Colors.list_pressed
-            radius: 2*Devices.density
+            radius: units.gu(0.25)
         }*/
 
         delegate: Item {
             id: listv_item
             width: listv.width
-            height: 32*Devices.density
+            height: units.gu(4)
 
             property User user: telegram.user(userId)
 
@@ -81,7 +81,7 @@ Item {
                 anchors.top: parent.top
                 anchors.bottom: parent.bottom
                 anchors.left: parent.left
-                anchors.margins: 4*Devices.density
+                anchors.margins: units.gu(0.5)
                 width: height
                 user: listv_item.user
                 isChat: false
@@ -92,7 +92,7 @@ Item {
                 anchors.left: profile_img.right
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
-                anchors.margins: 4*Devices.density
+                anchors.margins: units.gu(0.5)
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 elide: Text.ElideRight
                 maximumLineCount: 1

@@ -24,12 +24,12 @@ Rectangle {
 
     Column {
         anchors.centerIn: parent
-        spacing: 8*Devices.density
+        spacing: units.gu(1)
 
         Indicator {
             id: indicator
             anchors.horizontalCenter: parent.horizontalCenter
-            indicatorSize: 22*Devices.density
+            indicatorSize: units.gu(2.75)
             modern: true
             light: false
             Component.onCompleted: start()
@@ -47,7 +47,7 @@ Rectangle {
         id: logout_text
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.verticalCenter
-        anchors.topMargin: 80*Devices.density
+        anchors.topMargin: units.gu(10)
         font.family: AsemanApp.globalFont.family
         font.pixelSize: 10*Devices.fontDensity
         font.underline: true
@@ -56,7 +56,7 @@ Rectangle {
 
         MouseArea {
             anchors.fill: parent
-            anchors.margins: -10*Devices.density
+            anchors.margins: -units.gu(1.25)
             cursorShape: Qt.PointingHandCursor
             onClicked: Cutegram.logout(telegramObject.phoneNumber)
         }

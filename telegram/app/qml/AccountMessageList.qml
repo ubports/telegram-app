@@ -122,9 +122,9 @@ Rectangle {
     Rectangle {
         anchors.centerIn: parent
         color: "#ffffff"
-        width: welcome_txt.width + 20*Devices.density
-        height: welcome_txt.height + 10*Devices.density
-        radius: 5*Devices.density
+        width: welcome_txt.width + units.gu(2.5)
+        height: welcome_txt.height + units.gu(1.25)
+        radius: units.dp(4)
         visible: currentDialog == telegramObject.nullDialog
 
         Text {
@@ -361,27 +361,26 @@ Rectangle {
     }
 
     PhysicalScrollBar {
-        scrollArea: mlist; height: mlist.height-bottomMargin-topMargin; width: 6*Devices.density
+        scrollArea: mlist; height: mlist.height-bottomMargin-topMargin; width: units.gu(0.75)
         anchors.right: mlist.right; anchors.top: mlist.top;
         anchors.topMargin: topMargin; reverse: true
     }
 
-    Rectangle {
+    ProportionalShape {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: bottomMargin + 8*Devices.density
-        anchors.rightMargin: 8*Devices.density
-        width: units.gu(7)//64*Devices.density
-        height: width
-        radius: height / 2//5*Devices.density
+        anchors.bottomMargin: bottomMargin + units.gu(1)
+        anchors.rightMargin: units.gu(1)
+        width: units.gu(7)
         color: "#88000000"
 //        normalColor: "#88000000"
 //        highlightColor: "#aa000000"
 //        iconSource: "files/down.png"
 //        cursorShape: Qt.PointingHandCursor
-//        iconHeight: 18*Devices.density
+//        iconHeight: units.gu(2.25)
         visible: opacity != 0
         opacity: mlist.visibleArea.yPosition+mlist.visibleArea.heightRatio < 0.95? 1 : 0
+        aspect: UbuntuShape.Flat
 
         MouseArea {
             anchors.fill: parent
@@ -390,11 +389,11 @@ Rectangle {
 
 //        onClicked: mlist.positionViewAtBeginning()
 
-        Image {
+        Icon {
             anchors.centerIn: parent
-            height: units.gu(2)
-            fillMode: Image.PreserveAspectFit
-            source: "qrc:/qml/files/down.png"
+            height: units.gu(3.25)
+            color: "white"
+            name: "down"
         }
 
         Behavior on opacity {
@@ -439,10 +438,10 @@ Rectangle {
 
     Column {
         anchors.top: acc_rjc_txt.bottom
-        anchors.topMargin: 10*Devices.density
+        anchors.topMargin: units.gu(1.25)
         anchors.left: parent.left
         anchors.right: parent.right
-        spacing: 10*Devices.density
+        spacing: units.gu(1.25)
         visible: acc_rjc_txt.visible
 
         TelegramButton {
