@@ -265,7 +265,7 @@ Item {
         visible: fileLocation.length == 0 && !isSticker
                 && file_handler.targetType != FileHandler.TypeTargetMediaPhoto
                 && file_handler.targetType != FileHandler.TypeTargetMediaGeoPoint
-        radius: units.gu(0.375)
+        radius: units.dp(4)
 
         Icon {
             height: units.gu(4)
@@ -298,7 +298,7 @@ Item {
             id:filesize_lbl
             anchors.top: parent.top
             anchors.left: parent.left
-            anchors.margins: units.gu(0.375)
+            anchors.margins: units.gu(0.5)
             font.weight: Font.DemiBold
             fontSize: "small"
             color: "white"
