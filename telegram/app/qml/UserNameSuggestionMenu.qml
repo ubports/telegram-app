@@ -27,8 +27,8 @@ Item {
         source: back
         radius: units.gu(1)
         samples: 16
-        horizontalOffset: units.gu(0.125)
-        verticalOffset: units.gu(0.125)
+        horizontalOffset: units.dp(1)
+        verticalOffset: units.dp(1)
         color: "#66111111"
     }
 
