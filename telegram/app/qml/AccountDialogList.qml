@@ -110,7 +110,7 @@ Item {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
                         null, {
                             // TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-                            text: i18n.tr("Forward messages to %1?").arg(title),
+                            text: i18n.tr("Forward message to %1?").arg(title),
                             onAccept: function() {
                                 telegramObject.forwardMessages(messageIdsToForward, dialogId, forwardFromPeer)
                                 clearForwardedMessages()
