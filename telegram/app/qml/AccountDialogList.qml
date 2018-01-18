@@ -110,7 +110,7 @@ Item {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
                         null, {
                             // TRANSLATORS: %1 represents person to whom we are forwarding messages to.
-                            text: i18n.tr("Forward message to %1?".arg(title)),
+                            text: i18n.tr("Forward messages to %1?").arg(title),
                             onAccept: function() {
                                 telegramObject.forwardMessages(messageIdsToForward, dialogId, forwardFromPeer)
                                 clearForwardedMessages()
@@ -122,7 +122,7 @@ Item {
                     PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
                         null, {
                             // TRANSLATORS: %1 represents person to whom we are sending files to.
-                            text: i18n.tr("Send messages to %1?".arg(title)),
+                            text: i18n.tr("Send messages to %1?").arg(title),
                             onAccept: function() {
                                 // Shared content is processed in AccountSendMessage.qml
                                 currentDialogChanged(dialog)
