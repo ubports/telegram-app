@@ -7,8 +7,8 @@ ContactImage {
     width: 100
     height: 62
 
-    property FileLocation photoBigLocation: isChat ? chat.photo.photoBig : user.photo.photoBig
-    property FileLocation photoSmallLocation: isChat ? chat.photo.photoSmall : user.photo.photoSmall
+    property FileLocation photoBigLocation: (isChat || isChannel) ? chat.photo.photoBig : user.photo.photoBig
+    property FileLocation photoSmallLocation: (isChat || isChannel) ? chat.photo.photoSmall : user.photo.photoSmall
 
     signal clicked(string path)
 
