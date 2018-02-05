@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2018-01-18 22:42+0000\n"
-"Last-Translator: Noock <nklowns@gmail.com>\n"
+"PO-Revision-Date: 2018-02-05 20:08+0000\n"
+"Last-Translator: Willian Eduardo <WillianEduardoT@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://translate.ubports.com/projects/ubports/telegram-app/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -162,25 +162,25 @@ msgstr "Encaminhar mensagem para %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "Enviar mensagens para %1?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Informação do canal"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
-msgstr ""
+msgstr "Informações do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 msgid "Profile Info"
-msgstr ""
+msgstr "Informações do perfil"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:44
 msgid "Select all"
-msgstr ""
+msgstr "Selecionar tudo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:239
@@ -212,150 +212,152 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:215
 msgid "Invalid password"
-msgstr ""
+msgstr "Senha inválida"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:53
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr ""
+msgstr "Você convidou %1 para participar de um chat secreto."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:55
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr ""
+msgstr "%1 convidou você para participar de um chat secreto."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:289
 msgid "You created the group"
-msgstr ""
+msgstr "Você criou o grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:60
 #, qt-format
 msgid "<b>%1</b> created the group"
-msgstr ""
+msgstr "<b>%1</b> criou o grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:66
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr ""
+msgstr "Você adicionou <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:68
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr ""
+msgstr "<b>%1</b> adicionou você"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
 #, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr ""
+msgstr "<b>%1</b> entrou no grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> adicionou <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:78
 #, qt-format
 msgid "<b>%1</b> left the group"
-msgstr ""
+msgstr "<b>%1</b> deixou o grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:81
 #, qt-format
 msgid "You removed <b>%1</b>"
-msgstr ""
+msgstr "Você removeu <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:83
 #, qt-format
 msgid "<b>%1</b> removed you"
-msgstr ""
+msgstr "<b>%1</b> removeu você"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
 #, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> removeu <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:93
 #, qt-format
 msgid "You changed the group name to %1"
-msgstr ""
+msgstr "Você mudou o nome do grupo para %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
 #, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr ""
+msgstr "<b>%1</b> mudou o nome do grupo para %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:103
 msgid "You changed the group photo"
-msgstr ""
+msgstr "Você mudou a foto do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr ""
+msgstr "<b>%1</b> mudou a foto do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:111
 msgid "You removed the group photo"
-msgstr ""
+msgstr "Você removeu a foto do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:113
 #, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr ""
+msgstr "<b>%1</b> removeu a foto do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:321
 msgid "You joined the group via invite link"
-msgstr ""
+msgstr "Você entrou no grupo via link de convite"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:120
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> entrou no grupo via link de convite"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:136
 msgid "Please select chat"
-msgstr ""
+msgstr "Selecione um chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:203
 msgid "New messages"
-msgstr ""
+msgstr "Novas mensagens"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:245
 msgid "Reply"
-msgstr ""
+msgstr "Responder"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:252
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Informações do Pacote de Sticker"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:411
 msgid "Secret chat requested."
-msgstr ""
+msgstr "Chat secreto solicitado."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:423
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
+"Chat secreto rejeitado ou aceito em outro dispositivo.\n"
+"Note que o Android aceita chats secretos automaticamente."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:455
 msgid "Accept"
-msgstr ""
+msgstr "Aceitar"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:469
 msgid "Reject"
-msgstr ""
+msgstr "Rejeitar"
 
 #. TRANSLATORS: Edit your profile first and last name.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:16
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:32
 msgid "Edit name"
-msgstr ""
+msgstr "Editar nome"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:21
@@ -385,16 +387,16 @@ msgstr "Sobrenome (Obrigatório)"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:287
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:301
 msgid "Select Chat"
-msgstr ""
+msgstr "Selecione o Chat"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:194
 msgid "Type message"
-msgstr ""
+msgstr "Digita mensagem"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:669
 msgid "Audio attachment not supported yet ;("
-msgstr ""
+msgstr "Chamada de áudio ainda não suportada ;("
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:671
 msgid "You have to press and hold the record icon"
@@ -403,6 +405,8 @@ msgstr "Você deve pressionar e segurar o ícone do registro"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:765
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
+"Por favor, permita acesso ao microfone nas Configurações do Sistema > "
+"Segurança e Privacidade."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
@@ -414,7 +418,7 @@ msgstr "Configurações"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:47
 msgid "Change photo"
-msgstr ""
+msgstr "Mudar foto"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
@@ -451,38 +455,38 @@ msgstr "Notificações"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
-msgstr ""
+msgstr "Enviar com Enter"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
-msgstr ""
+msgstr "Suporte"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:190
 msgid "Ask a Question"
-msgstr ""
+msgstr "Fazer uma Pergunta"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:200
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:142
 msgid "Telegram FAQ"
-msgstr ""
+msgstr "Perguntas Frequentes"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:209
 msgid "Account"
-msgstr ""
+msgstr "Conta"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
-msgstr ""
+msgstr "Sair"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:233
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "Telegram para Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:283
@@ -499,7 +503,7 @@ msgstr "online"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
 #, qt-format
 msgid "last seen %1"
-msgstr ""
+msgstr "visto pela última vez há %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:289
@@ -507,7 +511,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:108
 msgid "last seen recently"
-msgstr ""
+msgstr "visto recentemente"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:292
@@ -515,7 +519,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:111
 msgid "last seen within a week"
-msgstr ""
+msgstr "visto pela última vez há uma semana"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:295
@@ -523,7 +527,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:114
 msgid "last seen within a month"
-msgstr ""
+msgstr "visto pela última vez há um mês"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:298
@@ -531,13 +535,15 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "visto há muito tempo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:322
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
+"Tem certeza que deseja sair?\n"
+"Qualquer chat secreto será perdido."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
@@ -553,20 +559,20 @@ msgstr ""
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr ""
+msgstr "Desculpe, este nome de usuário é inválido."
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
-msgstr ""
+msgstr "Seu nome de usuário"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr ""
+msgstr "Um nome de usuário deve ter pelo menos 5 caracteres."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr ""
+msgstr "Verificando o nome de usuário..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
@@ -589,7 +595,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:196
 #, qt-format
 msgid "%1 is not yet on Telegram"
-msgstr ""
+msgstr "%1 ainda não está no Telegram"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:202
 msgid "Invite to Telegram"
@@ -620,20 +626,20 @@ msgstr ""
 #. TRANSLATORS: One time code entered during sign in process.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:115
 msgid "Code"
-msgstr ""
+msgstr "Código"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
-msgstr ""
+msgstr "Nome"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
-msgstr ""
+msgstr "Sobrenome"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:166
 msgid "Resend Code"
-msgstr ""
+msgstr "Reenviar código"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
@@ -645,7 +651,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Escolha um país"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:65
@@ -655,7 +661,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
-msgstr ""
+msgstr "Número de telefone"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:119
@@ -668,7 +674,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Digite a senha"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
@@ -694,7 +700,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing fast application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr ""
+msgstr "Rápido"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
@@ -703,25 +709,28 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr ""
+msgstr "Gratuito"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
+"<b>Telegram</b> é grátis para sempre. Sem anúncios.<br> Sem taxas de "
+"assinatura"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:32
 msgid "Secure"
-msgstr ""
+msgstr "Seguro"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
 msgstr ""
+"<b>Telegram</b> mantém suas mensagens seguras<br> contra ataques de hackers"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
-msgstr ""
+msgstr "Poderoso"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
@@ -730,11 +739,12 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
-msgstr ""
+msgstr "Baseado em nuvem"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
+"<b>Telegram</b> permite acessar suas mensagens<br> de vários dispositivos"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
@@ -743,11 +753,11 @@ msgstr "Privado"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr ""
+msgstr "As mensagens do <b>Telegram</b> são altamente criptografadas<br>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Escolher"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:46
@@ -762,17 +772,17 @@ msgstr "Compartilhar"
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:41
 msgid "Add member"
-msgstr ""
+msgstr "Adicionar membro"
 
 #. TRANSLATORS: Action text to change group chat title.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:166
 msgid "Change Group Title"
-msgstr ""
+msgstr "Alterar o título do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Contact Info"
-msgstr ""
+msgstr "Informações de contato"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:180
@@ -790,7 +800,7 @@ msgstr "Alterar Título"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:92
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr ""
+msgstr "%1 membros, %2 online"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is group chat member count.
@@ -798,7 +808,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:95
 #, qt-format
 msgid "%1 members"
-msgstr ""
+msgstr "%1 membros"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -807,14 +817,14 @@ msgstr ""
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 está digitando"
+msgstr[1] "%1 estão digitando"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:345
 #, qt-format
 msgid "%1 are typing"
-msgstr ""
+msgstr "%1 estão digitando"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:411
@@ -830,35 +840,35 @@ msgstr "Celular"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
 #, qt-format
 msgid "@%1"
-msgstr ""
+msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:643
 msgid "Block user"
-msgstr ""
+msgstr "Bloquear usuário"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:714
 msgid "Remove from group"
-msgstr ""
+msgstr "Remover do grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:171
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Mensagens do Telegram recebidas hoje: %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:172
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "Nenhuma mensagem do Telegram recebida hoje."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:179
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Mensagens do Telegram enviadas hoje: %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:180
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "Nenhuma mensagem do Telegram enviada hoje."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:466
 msgid ""
@@ -881,11 +891,11 @@ msgstr "Não quero notificações"
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:167
 msgid "Accounts"
-msgstr ""
+msgstr "Contas"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:194
 msgid "Add Account"
-msgstr ""
+msgstr "Adicionar Conta"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:91
@@ -912,11 +922,11 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr ""
+msgstr "Chat secreto solicitado"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
-msgstr ""
+msgstr "Chat secreto criado"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:41
@@ -933,8 +943,8 @@ msgstr "Desativado"
 #, qt-format
 msgid "%1 second"
 msgid_plural "%1 seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 segundo"
+msgstr[1] "%1 segundos"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:54
