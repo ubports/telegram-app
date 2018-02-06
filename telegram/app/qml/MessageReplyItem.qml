@@ -106,11 +106,11 @@ Item {
                         break;
 
                     case MessageMedia.Audio:
-                        result = "files/audio.png"
+                        result = "image://theme/audio-x-generic-symbolic"
                         break;
 
                     case MessageMedia.Unsupported:
-                        result = "files/document.png"
+                        result = "image://theme/stock_document"
                         break;
 
                     case MessageMedia.Document:

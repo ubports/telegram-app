@@ -29,7 +29,7 @@ Item {
             if(isImage)
                 return Devices.localFilesPrePath + message.upload.location
             else
-                return "files/document.png"
+                return "image://theme/stock_document" 
         }
 
         sourceSize: {
@@ -110,4 +110,3 @@ Item {
         percent: 100*message.upload.uploaded/message.upload.totalSize
     }
 }
-
