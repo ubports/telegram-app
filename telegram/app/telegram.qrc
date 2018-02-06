@@ -133,5 +133,6 @@
         <file>qml/InstallStickerDialog.qml</file>
         <file>qml/files/eyeWhite.svg</file>
         <file>qml/files/eye.svg</file>
+		<file>qml/files/broadcast.svg</file>
     </qresource>
 </RCC>

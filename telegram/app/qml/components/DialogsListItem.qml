@@ -103,6 +103,11 @@ ListItem {
                             telegram: list_item.telegram,
                             dialog: list_item.dialog
                     });
+
+                    console.log("isChat: "+isChat)
+                    console.log("isChannel: "+isChannel)
+                    console.log("chat.megaGroup: "+chat.megaGroup)
+
                 }
             }
         ]
@@ -160,13 +165,26 @@ ListItem {
 
         Icon {
             id: contact_group_icon
-            visible: isChat || isChannel
+            visible: isChat || (isChannel && chat.megaGroup)
             name: "contact-group"
             anchors {
                 top: parent.top
                 bottom: parent.bottom
-                topMargin: units.dp(4)
-                bottomMargin: units.dp(4)
+                topMargin: units.dp(2)
+                bottomMargin: units.dp(2)
+            }
+            width: height
+        }
+
+        Icon {
+            id: contact_channel_icon
+            visible: isChannel && !chat.megaGroup
+            source: "qrc:/qml/files/broadcast.svg"
+            anchors {
+                top: parent.top
+                bottom: parent.bottom
+                topMargin: units.dp(2)
+                bottomMargin: units.dp(2)
             }
             width: height
         }
