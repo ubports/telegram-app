@@ -193,15 +193,14 @@ Rectangle {
             Rectangle {
                 id: unread_background
                 anchors.fill: parent
-                color: Qt.rgba(1, 1, 1, 0.5)
+                color: UbuntuColors.blue
             }
 
             Label {
                 id: unread_texts
                 anchors.centerIn: parent
-                color: Colors.telegram_blue
+                color: Qt.rgba(1, 1, 1, 1)
                 text: section=="false" ? i18n.tr("New messages") : ""
-                fontSize: "medium"
                 font.weight: Font.Normal
             }
         }
