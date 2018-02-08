@@ -57,7 +57,7 @@ Page {
 
     id: profile_page
     objectName: "profilePage"
-    title: isChannel ? i18n.tr("Channel Info") : isChat ? i18n.tr("Group Info") : i18n.tr("Contact Info")
+    title: (isChat || chat.megaGroup) ? i18n.tr("Group Info") : (isChannel && !chat.megaGroup) ? i18n.tr("Channel Info") : i18n.tr("Contact Info")
 
     header: PageHeader {
         title: profile_page.title

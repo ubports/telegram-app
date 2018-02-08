@@ -29,7 +29,7 @@ Item {
             if(isImage)
                 return Devices.localFilesPrePath + message.upload.location
             else
-                return "files/document.png"
+                return "image://theme/stock_document" 
         }
 
         sourceSize: {
@@ -60,7 +60,7 @@ Item {
         id: filesize_lbl
         anchors.top: parent.top
         anchors.left: parent.left
-        anchors.margins: 2*Devices.density
+        anchors.margins: units.gu(0.25)
         font.weight: Font.DemiBold
         fontSize: "small"
         color: "white"
@@ -88,7 +88,7 @@ Item {
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: pbar.top
-        anchors.margins: 2*Devices.density
+        anchors.margins: units.gu(0.25)
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         elide: Text.ElideRight
@@ -104,10 +104,9 @@ Item {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: 4*Devices.density
+        anchors.margins: units.gu(0.5)
         height: units.dp(3)
         radius: 0
         percent: 100*message.upload.uploaded/message.upload.totalSize
     }
 }
-

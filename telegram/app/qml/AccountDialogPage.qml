@@ -30,7 +30,7 @@ Page {
         Action {
             objectName: "groupInfo"
             iconName: "stock_contact"
-            text: isChannel ? i18n.tr("Channel Info") : isChat ? i18n.tr("Group Info") : i18n.tr("Profile Info")
+            text: (isChat || chat.megaGroup) ? i18n.tr("Group Info") : (isChannel && !chat.megaGroup) ? i18n.tr("Channel Info") : i18n.tr("Contact Info")
             onTriggered: {
                 Qt.inputMethod.hide();
                 headerClicked();

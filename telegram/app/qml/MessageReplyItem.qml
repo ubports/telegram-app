@@ -7,8 +7,8 @@ import "js/colors.js" as Colors
 
 Item {
     id: msg_reply
-    width: row.width + 12*Devices.density
-    height: row.height + 4*Devices.density
+    width: row.width + units.gu(1.5)
+    height: row.height + units.gu(0.5)
     visible: realMessage
 
     property Telegram telegram
@@ -37,7 +37,7 @@ Item {
         Column {
             id: column
             anchors.verticalCenter: parent.verticalCenter
-            spacing: 2*Devices.density
+            spacing: units.gu(0.25)
 
             Label {
                 id: name_text
@@ -55,7 +55,7 @@ Item {
             Image {
                 id: media_img
                 width: height*imageSize.width/imageSize.height
-                height: 48*Devices.density
+                height: units.gu(6)
                 fillMode: Image.PreserveAspectFit
                 asynchronous: true
                 sourceSize: Qt.size(width,height)
@@ -106,11 +106,11 @@ Item {
                         break;
 
                     case MessageMedia.Audio:
-                        result = "files/audio.png"
+                        result = "image://theme/audio-x-generic-symbolic"
                         break;
 
                     case MessageMedia.Unsupported:
-                        result = "files/document.png"
+                        result = "image://theme/stock_document"
                         break;
 
                     case MessageMedia.Document:

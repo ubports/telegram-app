@@ -8,7 +8,7 @@ import "js/time.js" as Time
 
 Item {
     width: 100
-    height: 62*Devices.density
+    height: units.gu(8)
 
     property alias filePath: player.source
     property bool isInsideBar: false
@@ -42,7 +42,7 @@ Item {
         Rectangle {
             id: play_btn
             anchors.fill: parent
-            anchors.margins: 3*Devices.density
+            anchors.margins: units.gu(0.5)
             radius: width/2
             color: "#ffffff"
             visible: !parent.isInsideBar
@@ -128,9 +128,9 @@ Item {
         anchors.left: play_btn_scene.right
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
-        anchors.margins: 4*Devices.density
-        height: 6*Devices.density
-        radius: 2*Devices.density
+        anchors.margins: units.gu(0.5)
+        height: units.gu(0.75)
+        radius: units.gu(0.25)
         color: "#555555"
 
         Rectangle {
@@ -149,7 +149,7 @@ Item {
             radius: width/2
             color: "#ffffff"
             border.color: "#aaaaaa"
-            border.width: 1*Devices.density
+            border.width: units.dp(1)
             x: (seeker_scene.width-seeker.width)*player.position/player.duration
         }
     }

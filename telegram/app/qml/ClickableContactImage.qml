@@ -7,8 +7,8 @@ ContactImage {
     width: 100
     height: 62
 
-    property FileLocation photoBigLocation: isChat ? chat.photo.photoBig : user.photo.photoBig
-    property FileLocation photoSmallLocation: isChat ? chat.photo.photoSmall : user.photo.photoSmall
+    property FileLocation photoBigLocation: (isChat || isChannel) ? chat.photo.photoBig : user.photo.photoBig
+    property FileLocation photoSmallLocation: (isChat || isChannel) ? chat.photo.photoSmall : user.photo.photoSmall
 
     signal clicked(string path)
 
@@ -16,7 +16,7 @@ ContactImage {
         anchors.fill: parent
         light: true
         modern: true
-        indicatorSize: 22*Devices.density
+        indicatorSize: units.gu(2.75)
         property bool active: user_photo_marea.loadingPhoto
 
         onActiveChanged: {
