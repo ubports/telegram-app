@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-12-29 17:07+0000\n"
+"PO-Revision-Date: 2018-01-21 19:12+0000\n"
 "Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
@@ -166,7 +166,7 @@ msgstr "Cheres imbiare sos messàgios a %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Informatzione de su canale"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -244,9 +244,9 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> t'at agiuntu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b> at lassadu su grupu"
+msgstr "<b>%1</b> at aderidu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
@@ -1044,9 +1044,9 @@ msgid "%1 added you"
 msgstr "%1 t'at agiuntu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:301
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 at lassadu su grupu"
+msgstr "%1 at aderidu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
@@ -1104,7 +1104,7 @@ msgstr "hh:mm"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:49
 msgid "MMM d"
-msgstr "MMM d"
+msgstr "d MMM"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
@@ -1316,7 +1316,6 @@ msgid "Open chat"
 msgstr "Aberi tzarrada"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
-#, fuzzy
 msgid "Call"
 msgstr "Muti"
 

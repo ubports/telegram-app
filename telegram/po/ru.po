@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-11-22 23:40+0000\n"
-"Last-Translator: Alexey Balmashnov <a.balmashnov@gmail.com>\n"
-"Language-Team: Russian <https://translate.ubports.com/projects/ubports/"
-"telegram-app/ru/>\n"
+"PO-Revision-Date: 2018-02-09 18:40+0000\n"
+"Last-Translator: Nelly Simkova <stylinsonnelly@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports"
+"/telegram-app/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
@@ -151,7 +151,7 @@ msgstr "Этот контакт в Telegram."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:515
 #, qt-format
 msgid "%1 out of %2 contacts are on Telegram."
-msgstr "%1 из %2 контактов в Telegram."
+msgstr "%1 из %2 контактов пользуются Telegram."
 
 #. TRANSLATORS: %1 represents person to whom we are forwarding messages to.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:113
@@ -168,7 +168,7 @@ msgstr "Отправить сообщения %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Информация о канале"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -246,9 +246,9 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> добавил Вас"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:70
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b> покинул группу"
+msgstr "<b>%1</b> вступил в группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:72
 #, qt-format
@@ -389,7 +389,7 @@ msgstr "Фамилия (необязательно)"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:287
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:301
 msgid "Select Chat"
-msgstr "Выбор чата"
+msgstr "Выберите диалог"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:194
@@ -614,7 +614,7 @@ msgstr "Не получается добавить контакт"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Введите код страны."
+msgstr "Пожалуйста, укажите код страны."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
@@ -1044,9 +1044,9 @@ msgid "%1 added you"
 msgstr "%1 добавил Вас"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:301
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 покинул группу"
+msgstr "%1 вступил в группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:303
 #, qt-format
@@ -1321,7 +1321,7 @@ msgstr "Позвонить"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr "Ошибка получения данных Telegram"
+msgstr "Ошибка получения данных от Telegram"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
