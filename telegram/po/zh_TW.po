@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2015-09-22 10:54+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-02-23 09:40+0000\n"
+"Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
+"Language-Team: Chinese (Traditional) "
+"<https://translate.ubports.com/projects/ubports/telegram-app/zh_Hant/>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:45+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -46,12 +47,12 @@ msgstr "加入"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
-msgstr ""
+msgstr "搜尋聯絡人..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
@@ -428,7 +429,7 @@ msgstr "資訊"
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:105
 msgid "Phone"
-msgstr ""
+msgstr "電話"
 
 #. TRANSLATORS: Visible right under username in settings page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:118
@@ -677,11 +678,11 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPage.qml:177
@@ -827,7 +828,7 @@ msgstr "未知"
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:420
 msgid "Mobile"
-msgstr ""
+msgstr "手機"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
