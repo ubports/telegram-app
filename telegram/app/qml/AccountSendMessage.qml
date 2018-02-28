@@ -18,11 +18,17 @@ Rectangle {
     id: smsg
     height: txt.height + units.gu(2)
     z: 2
-    color: "white"
+    color: channelToolbar ? "transparent" : "white"
 
     property Dialog currentDialog
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
     property bool isChannel: currentDialog != telegramObject.nullDialog ? currentDialog.peer.channelId != 0 : false
+    property bool dialogIsChannel: currentDialog ? currentDialog.peer.channelId != 0 : false
+    property Chat chat: currentDialog ?  telegramObject.chat(dialogIsChannel ? currentDialog.peer.channelId : currentDialog.peer.chatId) : null
+    property int dialogId: isChannel ? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
+    property bool isMuted: telegramObject.userData.isMuted(dialogId)
+
+    property bool channelToolbar: isChannel && !chat.megaGroup && false //need to replace 'false' with the property saying if you can write messages to the channel or not
 
     signal accepted( string text, int inReplyTo )
     signal copyRequest()
@@ -83,6 +89,26 @@ Rectangle {
         isChannel = currentDialog != telegramObject.nullDialog ? currentDialog.peer.channelId != 0 : false
 
         checkForSharedContent()
+    }
+
+
+    UC.Button {
+        visible: channelToolbar
+        anchors.fill: parent
+        anchors.margins: units.dp(6)
+        text: isMuted ? i18n.tr("Unmute") : i18n.tr("Mute")
+        //iconName: "notification"
+        onClicked: {
+            //if (override) return;
+
+            if (isMuted)
+                telegramObject.unmute(dialogId);
+            else
+                telegramObject.mute(dialogId);
+
+            isMuted = telegramObject.userData.isMuted(dialogId)
+            text = isMuted ? i18n.tr("Unmute") : i18n.tr("Mute")
+        }
     }
 
     HashObject {
@@ -159,7 +185,7 @@ Rectangle {
         height: parent.height
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
-        visible: enchat && (isWaiting || isDiscarded)
+        visible: enchat && (isWaiting || isDiscarded) && !channelToolbar
         color: "grey"
         fontSize: "medium"
         text: enchat ? delegate_utils.getSecretChatState(encryptedTypes, enchat.classType) : ""
@@ -181,7 +207,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible
+        visible: (opacity > 0 && !messagePlaceholder.visible) && !channelToolbar
 
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
@@ -295,7 +321,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible && (!txt.focus || (txt.text.length == 0 && !txt.inputMethodComposing))
+        visible: (opacity > 0 && !messagePlaceholder.visible && (!txt.focus || (txt.text.length == 0 && !txt.inputMethodComposing))) && !channelToolbar
 
         AbstractButton {
             anchors.fill: parent
@@ -339,7 +365,7 @@ Rectangle {
 
         opacity: privates.buttonsOpacity
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0 && !messagePlaceholder.visible && (!txt.focus || (txt.text.length == 0 && !txt.inputMethodComposing))
+        visible: (opacity > 0 && !messagePlaceholder.visible && (!txt.focus || (txt.text.length == 0 && !txt.inputMethodComposing))) && !channelToolbar
 
         AbstractButton {
             anchors.fill: parent
@@ -378,7 +404,7 @@ Rectangle {
             bottom: parent.bottom
         }
         width: send_mouse_area.width
-        visible: !messagePlaceholder.visible
+        visible: !messagePlaceholder.visible && !channelToolbar
 
         // To work on desktop change the following line to:
         // enabled: True
@@ -514,7 +540,7 @@ Rectangle {
         width: parent.width
         height: messageReply.height
         anchors.bottom: parent.top
-        visible: messageReply.replyMessage
+        visible: messageReply.replyMessage && !channelToolbar
 
         Rectangle {
             anchors.fill: parent
@@ -693,7 +719,7 @@ Rectangle {
 
         opacity: privates.audioRecorded ? 1.0 : 0.0
         Behavior on opacity { UbuntuNumberAnimation {} }
-        visible: opacity > 0
+        visible: opacity > 0 && !channelToolbar
 
         signal resetRequested()
         onResetRequested: {
@@ -736,6 +762,7 @@ Rectangle {
 
     AudioRecordingBar {
         id: audioRecordingBar
+        visible: !channelToolbar
 
         telegram: telegramObject
         signal totalUploadedPercentChanged()
