@@ -178,8 +178,15 @@ Rectangle {
         header: Item{ width: 4; height: units.dp(4) }
         footer: Item{ width: 4; height: units.dp(4) }
 
-        onAtYBeginningChanged: if( atYBeginning && contentHeight>height &&
-                                   currentDialog != telegramObject.nullDialog ) messages_model.loadMore()
+//        onAtYBeginningChanged: if( atYBeginning && contentHeight>height &&
+//                                   currentDialog != telegramObject.nullDialog )
+        onContentYChanged:
+            if (contentHeight>height && (contentY - originY) * (height / contentHeight) < 250)
+            {
+                 console.log("Reached loading window: ", (contentY - originY) * (height / contentHeight) )
+                 messages_model.loadMore()
+            }
+
 
         section.property: "unreaded"
         section.criteria: ViewSection.FullString

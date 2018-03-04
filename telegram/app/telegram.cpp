@@ -201,7 +201,6 @@ QSize Cutegram::imageSize(const QString &pt)
         return QSize();
 
     QImage img(path);
-    qWarning() << "Image " << path << ", image size: " << img.size().width() << "x" << img.size().height();
     return img.size();
 }
 
