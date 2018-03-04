@@ -128,7 +128,7 @@ ListItem {
                 topMargin: units.gu(.5)
             }
             height: units.gu(5)
-            visible: message_item.visibleNames && !message.out && !(dialogIsChannel && !message_item.chat.megagroup)
+            visible: message_item.visibleNames && !message.out && !(dialogIsChannel && !message_item.chat.megaGroup)
 
             telegram: telegramObject
             user: message_item.user
