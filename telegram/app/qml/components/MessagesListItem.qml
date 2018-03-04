@@ -36,6 +36,9 @@ ListItem {
 
     property Message message
     property Dialog dialog
+    property bool dialogIsChat: dialog ? dialog.peer.chatId != 0 : false
+    property bool dialogIsChannel: dialog ? dialog.peer.channelId != 0 : false
+    property Chat chat: dialog ?  telegramObject.chat(dialogIsChannel ? dialog.peer.channelId : dialog.peer.chatId) : null
     property string messageText: message.message
     property string messageHtmlText: parseText(message.message)
     property User user: telegramObject.user(message.fromId)
@@ -125,7 +128,7 @@ ListItem {
                 topMargin: units.gu(.5)
             }
             height: units.gu(5)
-            visible: message_item.visibleNames && !message.out
+            visible: message_item.visibleNames && !message.out && !(dialogIsChannel && !message_item.chat.megagroup)
 
             telegram: telegramObject
             user: message_item.user
@@ -134,6 +137,9 @@ ListItem {
             onClicked:{
                 userTapBackHome = false;
                 message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
+                console.log("\n")
+                console.log("dialogIsChannel: "+dialogIsChannel)
+                console.log("megagroup: "+message_item.chat.megaGroup)
             }
         }
 

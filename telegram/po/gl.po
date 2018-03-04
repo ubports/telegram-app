@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-09 14:24+0100\n"
-"PO-Revision-Date: 2017-06-30 17:51+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
-"Language-Team: Galician <https://ubpweblate.tnvcomp.com/projects/ubports/"
-"telegram-app/gl/>\n"
+"PO-Revision-Date: 2018-01-23 21:53+0000\n"
+"Last-Translator: hensip <hensip@gmail.com>\n"
+"Language-Team: Galician <https://translate.ubports.com/projects/ubports"
+"/telegram-app/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,7 +48,7 @@ msgstr "Engadir"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr "Atrás"
+msgstr "Volver"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
@@ -442,7 +442,7 @@ msgstr "Teléfono"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
-msgstr "Nome de usuario"
+msgstr "Nome do usuario"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:127
@@ -1330,7 +1330,7 @@ msgstr "Abrir conversa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr "Chamada"
+msgstr "Chamar"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
