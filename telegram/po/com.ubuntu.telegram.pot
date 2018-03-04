@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-04 12:43+0100\n"
+"POT-Creation-Date: 2018-03-04 12:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -383,20 +383,30 @@ msgstr ""
 msgid "Select Chat"
 msgstr ""
 
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
+msgid "Unmute"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
+msgid "Mute"
+msgstr ""
+
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:194
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:220
 msgid "Type message"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:669
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:695
 msgid "Audio attachment not supported yet ;("
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:671
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:697
 msgid "You have to press and hold the record icon"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:765
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:792
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 
@@ -1053,7 +1063,7 @@ msgstr ""
 msgid "%1 joined the group via invite link"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:213
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:219
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr ""
