@@ -26,7 +26,7 @@ ListItem {
             ? action_item.height : column.height + frameMargins*2 + textMargins*2
     property real minimumHeight: contact_image.visible ? contact_image.height + units.gu(1) : 0
 
-    property real maximumWidth: width * 0.75 - (contact_image.visible ? contact_image.width : 0)
+    property real maximumWidth: width * 0.85 - (contact_image.visible ? contact_image.width : 0)
     property real minimumWidth: 0
 
     property real textMargins: units.dp(4)
