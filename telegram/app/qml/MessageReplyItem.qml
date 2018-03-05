@@ -18,7 +18,7 @@ Item {
 
     property Message realMessage: (message && message.replyToMsgId != 0) ? telegram.message(message.replyToMsgId, dialog.peer.channelId) : replyMessage
 
-    property real maximumWidth: 100
+    property real maximumWidth: 90
 
     signal messageFocusRequest(int msgId, int channelId)
 
