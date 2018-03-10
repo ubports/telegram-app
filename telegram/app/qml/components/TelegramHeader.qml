@@ -144,10 +144,10 @@ PageHeader {
         Rectangle {
             id: connectingIndicator
             anchors.fill: headerImage
-            visible: isConnecting || !Connectivity.online
+            visible: isConnecting || !Connectivity.online || telegram.busy
             color: "white"
             Icon {
-                name: isConnecting? "sync-updating" : "sync-paused"
+                name: telegram.busy? "sync-updating" : isConnecting? "sync-error" : "sync-paused"
                 anchors.fill: parent
             }
             SequentialAnimation {

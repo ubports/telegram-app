@@ -275,7 +275,7 @@ Page {
         extension: profiles.count > 1 ? sections : null
         trailingActionBar.actions: Action {
             visible: !telegram.connected || !Connectivity.online
-            iconName: !Connectivity.online? "sync-paused" : !telegram.connected? "sync-updating" : "ok"
+            iconName: telegram.busy? "sync-updating" : !telegram.connected? "sync-error" : "sync-paused"
         }
     }
 

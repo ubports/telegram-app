@@ -28,7 +28,7 @@ Rectangle {
     property int dialogId: isChannel ? currentDialog.peer.channelId : isChat ? currentDialog.peer.chatId : currentDialog.peer.userId
     property bool isMuted: telegramObject.userData.isMuted(dialogId)
 
-    property bool channelToolbar: isChannel && !chat.megaGroup && false //need to replace 'false' with the property saying if you can write messages to the channel or not
+    property bool channelToolbar: isChannel && !chat.megaGroup && !(chat.isCreator || chat.isEditor || chat.isModerator)
 
     signal accepted( string text, int inReplyTo )
     signal copyRequest()
