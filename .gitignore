@@ -1,5 +1,3 @@
-deps/libqtelegram-ae
-deps/TelegramQML
 usr
 click
 click/*

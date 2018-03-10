@@ -8,18 +8,6 @@ fi
 
 cd $TG_DIR/deps
 
-if [ ! -d "libqtelegram-ae" ]; then
-    git clone -b ubuntu-touch-2.x https://github.com/ubports/libqtelegram-aseman-edition.git libqtelegram-ae
-else
-    git -C libqtelegram-ae pull 
-fi
-
-if [ ! -d "TelegramQML" ]; then
-    git clone -b ubuntu-touch-2.x https://github.com/ubports/TelegramQML.git TelegramQML
-else
-    git -C TelegramQML pull
-fi
-
 echo "Building libqtelegram"
 
 cd libqtelegram-ae
