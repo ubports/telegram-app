@@ -85,10 +85,6 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
         key = message["loc_key"].toString();    // no-i18n
     }
 
-    //Early bail-out: Telegram server just removes notification, message has been read elsewhere
-    if (key == "")
-        return QJsonObject();
-
     QJsonArray args;
     if (message.keys().contains("loc_args")) {
         args = message["loc_args"].toArray();   // no-i18n
@@ -103,6 +99,10 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
     if (custom.keys().contains("channel_id")) {
         tag = custom["channel_id"].toString();
     }
+
+    //Early bail-out: Telegram server just removes notification, message has been read elsewhere
+    if (key == "")
+        return QJsonObject();
 
     qint64 chatId = tag.toInt();
 
