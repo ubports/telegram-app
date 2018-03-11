@@ -63,15 +63,22 @@ Item {
             }
             Label {
             anchors.verticalCenter: parent.verticalCenter
-            text: message.views
-                font.weight: Font.DemiBold
-                fontSize: "x-small"
-                color: {
-                    if (hasMedia) {
-                        return Colors.white;
-                    }
-                    return message.out ? "aliceblue" : Colors.time_in;
+            text: {
+                    if (message.views > 9999 && message.views <= 999999)
+                        return ~~(message.views / 100) / 10 + "K";
+                    else if (message.views > 999999)
+                        return ~~(message.views / 100000) / 10 + "M";
+                    else
+                        return message.views;
+            }
+            font.weight: Font.DemiBold
+            fontSize: "x-small"
+            color: {
+                if (hasMedia) {
+                    return Colors.white;
                 }
+                return message.out ? "aliceblue" : Colors.time_in;
+            }
             }
 
         }
