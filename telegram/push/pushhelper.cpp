@@ -108,86 +108,87 @@ QJsonObject PushHelper::pushToPostalMessage(const QJsonObject &push, QString &ta
 
     // TRANSLATORS: Application name.
     QString tg = QString(N_("Telegram")); // no-i18n
+
     summary = args[0].toString();
 
-    if (key == "MESSAGE_TEXT") { // no-i18n
+    if (key == "MESSAGE_TEXT" || key == "CHANNEL_MESSAGE_TEXT") { // no-i18n
 
         body = args[1].toString();
 
-    } else if (key == "MESSAGE_NOTEXT") { // no-i18n
+    } else if (key == "MESSAGE_NOTEXT" || key == "CHANNEL_MESSAGE_NOTEXT") { // no-i18n
 
         body = N_("sent you a message");
 
-    } else if (key == "MESSAGE_PHOTO") { // no-i18n
+    } else if (key == "MESSAGE_PHOTO" || key == "CHANNEL_MESSAGE_PHOTO") { // no-i18n
 
         body = N_("sent you a photo");
 
-    } else if (key == "MESSAGE_STICKER") { // no-i18n
+    } else if (key == "MESSAGE_STICKER" || key == "CHANNEL_MESSAGE_STICKER") { // no-i18n
 
         body = N_("sent you a sticker");
 
-    } else if (key == "MESSAGE_VIDEO") { // no-i18n
+    } else if (key == "MESSAGE_VIDEO" || key == "CHANNEL_MESSAGE_VIDEO") { // no-i18n
 
         body = N_("sent you a video");
 
-    } else if (key == "MESSAGE_DOC") { // no-i18n
+    } else if (key == "MESSAGE_DOC" || key == "CHANNEL_MESSAGE_DOC") { // no-i18n
 
         body = N_("sent you a document");
 
-    } else if (key == "MESSAGE_AUDIO") { // no-i18n
+    } else if (key == "MESSAGE_AUDIO" || key == "CHANNEL_MESSAGE_AUDIO") { // no-i18n
 
         body = N_("sent you a voice message");
 
-    } else if (key == "MESSAGE_CONTACT") { // no-i18n
+    } else if (key == "MESSAGE_CONTACT" || key == "CHANNEL_MESSAGE_CONTACT") { // no-i18n
 
         body = N_("shared a contact with you");
 
-    } else if (key == "MESSAGE_GEO") { // no-i18n
+    } else if (key == "MESSAGE_GEO" || key == "CHANNEL_MESSAGE_GEO") { // no-i18n
 
         body = N_("sent you a map");
 
-    } else if (key == "CHAT_MESSAGE_TEXT" || key == "CHANNEL_MESSAGE_TEXT") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_TEXT") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1: %2")).arg(args[0].toString()).arg(args[2].toString()); // no-i18n
 
-    } else if (key == "CHAT_MESSAGE_NOTEXT" || key == "CHANNEL_MESSAGE_NOTEXT") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_NOTEXT") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a message to the group")).arg(args[0].toString());
 
-    } else if (key == "CHAT_MESSAGE_PHOTO" || key == "CHANNEL_MESSAGE_PHOTO") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_PHOTO") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a photo to the group")).arg(args[0].toString());
 
-    } else if (key == "CHAT_MESSAGE_STICKER" || key == "CHANNEL_MESSAGE_STICKER") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_STICKER") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a sticker to the group")).arg(args[0].toString());
 
 
-    } else if (key == "CHAT_MESSAGE_VIDEO" || key == "CHANNEL_MESSAGE_VIDEO") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_VIDEO") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a video to the group")).arg(args[0].toString());
 
-    } else if (key == "CHAT_MESSAGE_DOC" || key == "CHANNEL_MESSAGE_DOC") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_DOC") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a document to the group")).arg(args[0].toString());
 
-    } else if (key == "CHAT_MESSAGE_AUDIO" || key == "CHANNEL_MESSAGE_AUDIO") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_AUDIO") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a voice message to the group")).arg(args[0].toString());
 
-    } else if (key == "CHAT_MESSAGE_CONTACT" || key == "CHANNEL_MESSAGE_CONTACT") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_CONTACT") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a contact to the group")).arg(args[0].toString());
 
-    } else if (key == "CHAT_MESSAGE_GEO" || key == "CHANNEL_MESSAGE_GEO") { // no-i18n
+    } else if (key == "CHAT_MESSAGE_GEO") { // no-i18n
 
         summary = args[1].toString();
         body = QString(N_("%1 sent a map to the group")).arg(args[0].toString());
