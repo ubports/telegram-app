@@ -88,6 +88,7 @@ public:
     bool pushNotifications;
     QString pushNumber;
     bool smoothScroll;
+    bool darkTheme;
 
     QTextDocument *doc;
 
@@ -168,6 +169,8 @@ Cutegram::Cutegram(QObject *parent) :
     p->searchEngine = AsemanApplication::settings()->value("General/searchEngine","https://duckduckgo.com/?q=").toString();
 
     p->searchEngines = QStringList() << "https://duckduckgo.com/?q=" << "https://google.com/?q=" << "https://bing.com/?q=";
+
+    p->darkTheme = AsemanApplication::settings()->value("General/darkTheme", false ).toBool();
 
 #ifdef Q_OS_ANDROID
     p->close_blocker = true;
@@ -903,6 +906,21 @@ void Cutegram::setSendWithEnter(bool stt)
 bool Cutegram::sendWithEnter() const
 {
     return p->sendWithEnter;
+}
+
+void Cutegram::setDarkTheme(bool stt)
+{
+    if (p->darkTheme == stt)
+        return;
+    p->darkTheme = stt;
+    AsemanApplication::settings()->setValue("General/darkTheme", stt);
+
+    emit darkThemeChanged();
+}
+
+bool Cutegram::darkTheme() const
+{
+    return p->darkTheme;
 }
 
 void Cutegram::setPromptForPush(bool value)
