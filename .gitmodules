@@ -1,0 +1,6 @@
+[submodule "deps/TelegramQML"]
+	path = deps/TelegramQML
+	url = https://github.com/ubports/TelegramQML.git
+[submodule "deps/libqtelegram-ae"]
+	path = deps/libqtelegram-ae
+	url = https://github.com/ubports/libqtelegram-aseman-edition.git
