@@ -184,10 +184,7 @@ Page {
                 Switch {
                     checked: Cutegram.darkTheme
                     SlotsLayout.position: SlotsLayout.Last
-                    onCheckedChanged: {
-                        mainView.theme.name= checked? "Ubuntu.Components.Themes.SuruDark" : "Ubuntu.Components.Themes.Ambiance"
-                        Cutegram.darkTheme = checked
-                    }
+                    onCheckedChanged: Cutegram.darkTheme = checked
                 }
             }
         }

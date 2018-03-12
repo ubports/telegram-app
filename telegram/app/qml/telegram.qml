@@ -63,6 +63,8 @@ MainView {
     signal pushUnregister(string token)
     signal resumed()
 
+    theme.name: Cutegram.darkTheme
+
     onActiveFocusChanged: {
         if (activeFocus) {
             mainView.resumed()
