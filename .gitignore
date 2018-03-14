@@ -8,3 +8,8 @@ telegram/manifest.json
 telegram/telegram.pro.user
 build_desktop
 build_mobile
+
+# Gradle files
+.gradle/
+build/
+

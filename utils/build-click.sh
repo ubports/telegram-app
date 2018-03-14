@@ -22,10 +22,7 @@ install_deb() {
 
 install_dependencies() {
 
-	echo "I: Installing QML modules"
-	mv $CLICK_TARGET_DIR/usr/lib/$DEB_HOST_MULTIARCH/qt5/qml/* $CLICK_TARGET_DIR/usr/lib/$DEB_HOST_MULTIARCH
-	echo "I: Installing libraries"
-	mv $CLICK_TARGET_DIR/usr/* $CLICK_TARGET_DIR/
+	echo "Empty"
 }
 
 build_telegram() {
@@ -36,7 +33,7 @@ build_telegram() {
 	      -DCMAKE_MAKE_PROGRAM=/usr/bin/ninja \
 	      -DCMAKE_PREFIX_PATH="${CLICK_TARGET_DIR}" \
 	      -DCMAKE_INSTALL_PREFIX="${CLICK_TARGET_DIR}" \
-	      -DI18N=1 \
+	      -DI18N=0 \
 	      -DUBUNTU_TOUCH=1 \
 	      -DCLICK_ARCH="${ARCH}"
 
