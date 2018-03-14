@@ -2,6 +2,8 @@
 
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/bin/ubuntu-touch/tmp" # tmp is hard-coded into clickable
+BUILD_DIR_BASENAME=build_mobile
+QMAKE_BIN=/usr/bin/qt5-qmake-arm-linux-gnueabihf
 
 mkdir -p $CLICK_TARGET_DIR
 
@@ -22,7 +24,45 @@ install_deb() {
 
 install_dependencies() {
 
-	echo "Empty"
+echo "nothing do be done currently..."
+
+}
+
+build_libqtelegram() {
+echo "Building libqtelegram"
+
+cd $TELEGRAM_SOURCES/deps/libqtelegram-ae
+mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
+# FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
+# QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
+$QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
+# $QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
+$MAKE_BIN -j4 || exit 1
+$MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
+cd $TG_DIR/deps
+
+
+}
+
+build_TelegramQML() {
+
+echo "Building TelegramQML"
+
+cd $TELEGRAM_SOURCES/deps/TelegramQML
+mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
+# FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
+# QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
+$QMAKE_BIN \
+    LIBS+=-L$TG_LIBS LIBS+=-lqtelegram-ae \
+    LIBQTELEGRAM_INCLUDE_PATH+=$TG_INCS/libqtelegram-ae \
+    LIBS+=-L$TH_LIBS LIBS+=-lthumbnailer-qt \
+    INCLUDEPATH+=$TH_INCS \
+    TELEGRAMQML_INCLUDE_PATH=$TG_INCS/telegramqml \
+    PREFIX=/usr BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
+#    PREFIX=/usr BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
+$MAKE_BIN -j4 || exit 1
+$MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
+cd $TG_DIR
 }
 
 build_telegram() {
@@ -63,7 +103,8 @@ echo "*****************************************"
 echo "Building Telegram"
 echo "*****************************************"
 
-build_telegram
+/usr/bin/qt5-qmake-arm-linux-gnueabihf -version
+build_libqtelegram && build_TelegramQML && build_telegram
 
 cleanup_click_dir
 

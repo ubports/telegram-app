@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.11)
 set(CMAKE_CXX_STANDARD 14)
-set(QT_MIN_VERSION "5.3.0")
+set(QT_MIN_VERSION "5.9.3")
 
 project(telegram)
 
@@ -31,7 +31,7 @@ include(GNUInstallDirs)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 
 # Find packages
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Qml Widgets Sql QuickControls2)
+find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Qml Widgets Sql Quick)
 
 # Main telegram sources
 include("${CMAKE_SOURCE_DIR}/telegram/app/CMakeLists.txt")

@@ -9,8 +9,9 @@
   "dependencies": [
     "ninja-build",
     "curl",
-    "libthumbnailer-qt1.0",
-    "libthumbnailer-qt-dev"
+    "libthumbnailer-qt1.0:armhf",
+    "libthumbnailer-qt-dev:armhf",
+    "qtdeclarative5-dev:armhf"
   ]
 }
 
