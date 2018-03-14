@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.11)
 set(CMAKE_CXX_STANDARD 14)
-set(QT_MIN_VERSION "5.9.3")
+set(QT_MIN_VERSION "5.5.1")
 
 project(telegram)
 

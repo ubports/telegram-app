@@ -11,7 +11,10 @@
     "curl",
     "libthumbnailer-qt1.0:armhf",
     "libthumbnailer-qt-dev:armhf",
-    "qtdeclarative5-dev:armhf"
+    "qtdeclarative5-dev:armhf",
+    "qt5-qmake:armhf",
+    "qtbase5-dev:armhf",
+    "g++-arm-linux-gnueabihf"
   ]
 }
 

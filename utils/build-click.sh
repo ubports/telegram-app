@@ -2,8 +2,9 @@
 
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/bin/ubuntu-touch/tmp" # tmp is hard-coded into clickable
-BUILD_DIR_BASENAME=build_mobile
-QMAKE_BIN=/usr/bin/qt5-qmake-arm-linux-gnueabihf
+export BUILD_DIR_BASENAME=build_mobile
+export QMAKE_BIN=/usr/bin/qt5-qmake-arm-linux-gnueabihf
+export QT_SELECT=qt5
 
 mkdir -p $CLICK_TARGET_DIR
 
