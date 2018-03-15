@@ -16,6 +16,7 @@ ListItem {
     height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
     divider.visible: false
+//    highlightColor: theme.palette.selected.selection
 
     property real messageFrameX: back_rect.x
     property real messageFrameY: back_rect.y
@@ -172,7 +173,7 @@ ListItem {
                 visible: (message_item.message != "" || forward_user_name.visible) && !message_media.isSticker
                 radius: units.gu(0.7)
                 color: {
-                    return message.out ? message_status.bgMessageColor : theme.palette.normal.background
+                    return message.out ? message_status.bgMessageColor : theme.palette.normal.overlay
                 }
             }
 

@@ -111,6 +111,7 @@ ListItem {
         maximumLineCount: 1
         font.pixelSize: FontUtils.sizeToPixels("large")
         text: title
+        color: theme.palette.normal.backgroundText
     }
 
     Text {

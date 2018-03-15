@@ -381,7 +381,7 @@ Rectangle {
         width: units.gu(7)
         color: "#88000000"
 //        normalColor: "#88000000"
-//        highlightColor: "#aa000000"
+        highlightColor: "#aa000000"
 //        iconSource: "files/down.png"
 //        cursorShape: Qt.PointingHandCursor
 //        iconHeight: units.gu(2.25)
