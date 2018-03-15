@@ -92,7 +92,7 @@ Page {
                     pixelSize: FontUtils.sizeToPixels("large")
                     bold: true
                 }
-                color: Colors.black
+                color: theme.palette.normal.backgroundText
             }
 
             Text {
@@ -109,7 +109,7 @@ Page {
                 font {
                     pixelSize: FontUtils.sizeToPixels("medium")
                 }
-                color: Colors.grey
+                color: theme.palette.normal.backgroundTertiaryText
             }
         }
 
@@ -171,7 +171,7 @@ Page {
                 right: parent.right
             }
             horizontalAlignment: Text.AlignHCenter
-            color: "red"
+            color: UbuntuColors.red
             visible: text != ""
         }
 

@@ -18,7 +18,7 @@ Rectangle {
     id: smsg
     height: txt.height + units.gu(2)
     z: 2
-    color: channelToolbar ? "transparent" : "white"
+    color: channelToolbar ? "transparent" : theme.palette.normal.background
 
     property Dialog currentDialog
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false

@@ -44,7 +44,7 @@ Item {
             anchors.fill: parent
             anchors.margins: units.gu(0.5)
             radius: width/2
-            color: "#ffffff"
+            color: theme.palette.normal.background
             visible: !parent.isInsideBar
         }
 
@@ -59,7 +59,7 @@ Item {
             }
             visible: parent.isInsideBar
 
-            iconColor: "#777777"//"grey"
+            iconColor: theme.palette.normal.backgroundTertiaryText
             iconName: (player.playbackState == MediaPlayer.PlayingState) ? "media-playback-pause" : "media-playback-start"
 
             textSize: FontUtils.sizeToPixels("x-small")

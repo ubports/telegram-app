@@ -162,7 +162,7 @@ ListItem {
 
                 y: units.dp(1)
                 x: units.dp(1)
-                color: "#cdcdcd"    // theme.palette.normal.base (i.e. #CDCDCD) with opacity: 0.5
+                color: theme.palette.normal.base //(i.e. #CDCDCD) with opacity: 0.5
                 visible: msg_frame_box.visible
             }
 
@@ -172,7 +172,7 @@ ListItem {
                 visible: (message_item.message != "" || forward_user_name.visible) && !message_media.isSticker
                 radius: units.gu(0.7)
                 color: {
-                    return message.out ? message_status.bgMessageColor : Colors.incoming
+                    return message.out ? message_status.bgMessageColor : theme.palette.normal.background
                 }
             }
 
@@ -211,7 +211,7 @@ ListItem {
                     id: forward_user_name
                     fontSize: "smaller"
                     font.weight: Font.Normal
-                    color:  Colors.telegram_blue
+                    color:  mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
                     visible: message.fwdFromId !== 0 && message.fwdFromId.userId !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
                     textFormat: Text.RichText
@@ -275,7 +275,7 @@ ListItem {
                         textFormat: Text.RichText
                         text: message_item.messageHtmlText
                         //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
-                        color: message.out? "aliceblue" : "black"
+                        color: message.out? "aliceblue" : theme.palette.normal.backgroundText
                         onLinkActivated: {
                             if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
                             {

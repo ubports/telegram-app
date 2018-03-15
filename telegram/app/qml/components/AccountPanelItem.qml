@@ -31,6 +31,7 @@ ListItem {
 
     height: units.gu(6)
     divider.visible: showDivider
+    color: theme.palette.normal.background
 
     Icon {
         id: image

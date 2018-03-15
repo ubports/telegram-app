@@ -15,7 +15,7 @@ Item {
 
     property variant message
     property bool hasMedia: false
-    property var bgMessageColor: !message.sent ? Colors.grey : ((message.out && message.unread) ? Colors.blue : (message.out ? Colors.outgoing : Colors.outgoing ))
+    property var bgMessageColor: !message.sent ? theme.palette.normal.backgroundTertiaryText : ((message.out && message.unread) ? Colors.blue : (message.out ? Colors.outgoing : Colors.outgoing ))
 
     Rectangle {
         visible: hasMedia

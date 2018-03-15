@@ -63,7 +63,7 @@ MainView {
     signal pushUnregister(string token)
     signal resumed()
 
-    theme.name: Cutegram.darkTheme
+    theme.name: "Ubuntu.Components.Themes.SuruDark"
 
     onActiveFocusChanged: {
         if (activeFocus) {

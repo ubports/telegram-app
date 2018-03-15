@@ -97,7 +97,7 @@ Item {
                 elide: Text.ElideRight
                 maximumLineCount: 1
                 text: user.firstName + " " + user.lastName
-                color: Colors.black
+                color: theme.palette.normal.backgroundText
             }
 
             MouseArea {

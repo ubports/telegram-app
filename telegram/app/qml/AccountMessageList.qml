@@ -14,6 +14,7 @@ import "ui"
 
 Rectangle {
     id: acc_msg_list
+    color: theme.palette.normal.background
 
     property alias telegramObject: messages_model.telegram
     property alias currentDialog: messages_model.dialog
@@ -110,7 +111,7 @@ Rectangle {
         verticalAlignment: Image.AlignTop
         sourceSize: Qt.size(width,height)
         source: {
-            return "qrc:/qml/files/telegram_background.png"
+            return mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? "qrc:/qml/files/telegram_background_dark.png" : "qrc:/qml/files/telegram_background.png"
 //            if(backgroundManager.background == "")
 //                return Cutegram.background.length==0? "qrc:/qml/files/telegram_background.png" : Devices.localFilesPrePath + Cutegram.background
 //            else
@@ -121,7 +122,7 @@ Rectangle {
 
     Rectangle {
         anchors.centerIn: parent
-        color: "#ffffff"
+        color: theme.palette.normal.background
         width: welcome_txt.width + units.gu(2.5)
         height: welcome_txt.height + units.gu(1.25)
         radius: units.dp(4)
@@ -134,7 +135,7 @@ Rectangle {
             font.family: Cutegram.font.family
             // TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
             text: i18n.tr("Please select chat")
-            color: "#111111"
+            color: theme.palette.normal.backgroundText
         }
     }
 

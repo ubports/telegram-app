@@ -43,7 +43,7 @@ Item {
                 id: name_text
                 fontSize: "small"
                 font.weight: Font.Normal
-                color: Colors.telegram_blue
+                color: mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
                 text: {
                     if (!realMessage)
                         return ""

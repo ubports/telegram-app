@@ -29,7 +29,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: "white"
+        color: theme.palette.normal.background
     }
 
     ListView {
@@ -79,7 +79,7 @@ Item {
         id: separator
         anchors { left: parent.left; right: parent.right; top: selectionView.bottom }
         height: units.dp(1)
-        color: "black"
+        color: theme.palette.normal.backgroundText
     }
 
     GridView {
@@ -163,7 +163,7 @@ Item {
             id: sitem
             anchors.fill: parent
             border.width: units.dp(1)
-            border.color: selected ? UbuntuColors.lightGrey : "transparent"
+            border.color: selected ? theme.palette.normal.base : "transparent"
             color: selected ? "#33929292" : "transparent"
             property bool selected: stickers_model.currentStickerSet === "" && emodel.currentKey === emodel.keys[index]
 

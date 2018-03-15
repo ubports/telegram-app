@@ -96,7 +96,7 @@ TelegramPage {
             id: error_label
             width: phone_number.width
             visible: false
-            color: "red"
+            color: UbuntuColors.red
         }
     }
 

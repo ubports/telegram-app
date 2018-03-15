@@ -12,7 +12,6 @@ import "../js/colors.js" as Colors
 ListItem {
     id: contact_item
     height: units.gu(8)
-    color: selected ? Colors.list_pressed : Colors.white
     divider.visible: false
 
     property Telegram telegram
@@ -133,7 +132,7 @@ ListItem {
         wrapMode: Text.WrapAnywhere
         maximumLineCount: 1
         font.pixelSize: FontUtils.sizeToPixels("medium")
-        color: isOnline ? Colors.dark_blue : Colors.grey
+        color: isOnline ? mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue : theme.palette.normal.backgroundTertiaryText
         visible: text !== ""
         text: subtitle
     }

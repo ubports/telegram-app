@@ -71,7 +71,7 @@ Page {
 
         Rectangle {
             anchors.fill: parent
-            color: Colors.page_background
+            color: theme.palette.normal.background
         }
 
         SingleMediaViewer {
