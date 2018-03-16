@@ -30,6 +30,7 @@ TelegramPage {
             anchors.fill: parent
 
             Rectangle {
+                color: theme.palette.normal.backgroud
                 anchors {
                     top: parent.top
                     left: parent.left
@@ -37,7 +38,6 @@ TelegramPage {
                     bottom: parent.bottom
                     bottomMargin: page.isWide ? units.gu(2) : 0
                 }
-                color: theme.palette.normal.backgroud
 
                 Layouts.item: "item_body"
 

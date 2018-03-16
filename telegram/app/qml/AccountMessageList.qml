@@ -207,7 +207,7 @@ Rectangle {
             Label {
                 id: unread_texts
                 anchors.centerIn: parent
-                color: Qt.rgba(1, 1, 1, 1)
+                color: "white"
                 text: section=="false" ? i18n.tr("New messages") : ""
                 font.weight: Font.Normal
             }

@@ -102,13 +102,9 @@ ListItem {
                             telegram: list_item.telegram,
                             dialog: list_item.dialog
                     });
-
                     console.log("isChat: "+isChat)
                     console.log("isChannel: "+isChannel)
                     console.log("chat.megaGroup: "+chat.megaGroup)
-
-                    console.log("color of my custom Palette: "+theme.palette.normal.activityText)
-
                 }
             }
         ]

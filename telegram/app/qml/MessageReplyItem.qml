@@ -31,7 +31,7 @@ Item {
             id: reply_separator
             width: units.dp(2)
             height: parent.height
-            color: theme.palette.normal.activityText
+            color: !message.out ? theme.palette.normal.activityText : Colors.new_blue
         }
 
         Column {
@@ -43,7 +43,7 @@ Item {
                 id: name_text
                 fontSize: "small"
                 font.weight: Font.Normal
-                color: theme.palette.normal.activityText
+                color: !message.out ? theme.palette.normal.activityText : Colors.new_blue
                 text: {
                     if (!realMessage)
                         return ""

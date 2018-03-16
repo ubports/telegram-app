@@ -97,7 +97,8 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: units.dp(6)
         text: isMuted ? i18n.tr("Unmute") : i18n.tr("Mute")
-        //iconName: "notification"
+//        iconName: "notification"
+        color: theme.palette.normal.overlaySecondaryText
         onClicked: {
             //if (override) return;
 
@@ -422,7 +423,7 @@ Rectangle {
                     PropertyChanges {
                         target: send_image
                         name: "send"
-                        color: send_mouse_area.enabled ? UC.UbuntuColors.blue : UC.UbuntuColors.silk
+                        color: send_mouse_area.enabled ? theme.palette.normal.activityText : UC.UbuntuColors.silk
                     }
                 },
                 State {

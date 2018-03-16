@@ -155,12 +155,15 @@ PageHeader {
             Icon {
                 name: telegram.busy? "sync-updating" : isConnecting? "sync-error" : "sync-paused"
                 anchors.fill: parent
+                color: Theme.palette.normal.backgroundSecondaryText
             }
             SequentialAnimation {
                 running: visible
                 loops: Animation.Infinite
                 PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 500 }
-                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 1000 }
+                PropertyAnimation { duration: 300 }
+                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 800 }
+                PropertyAnimation { duration: 300 }
             }
         }
 
