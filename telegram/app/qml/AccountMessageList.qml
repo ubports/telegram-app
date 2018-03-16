@@ -111,7 +111,7 @@ Rectangle {
         verticalAlignment: Image.AlignTop
         sourceSize: Qt.size(width,height)
         source: {
-            return mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? "qrc:/qml/files/telegram_background_dark.png" : "qrc:/qml/files/telegram_background.png"
+            return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "qrc:/qml/files/telegram_background_dark.png" : "qrc:/qml/files/telegram_background.png"
 //            if(backgroundManager.background == "")
 //                return Cutegram.background.length==0? "qrc:/qml/files/telegram_background.png" : Devices.localFilesPrePath + Cutegram.background
 //            else
@@ -379,12 +379,7 @@ Rectangle {
         anchors.bottomMargin: bottomMargin + units.gu(1)
         anchors.rightMargin: units.gu(1)
         width: units.gu(7)
-        color: "#88000000"
-//        normalColor: "#88000000"
-        highlightColor: "#aa000000"
-//        iconSource: "files/down.png"
-//        cursorShape: Qt.PointingHandCursor
-//        iconHeight: units.gu(2.25)
+        color: Qt.rgba(theme.palette.normal.backgroundText.r, theme.palette.normal.backgroundText.g, theme.palette.normal.backgroundText.b, 0.53)
         visible: opacity != 0
         opacity: mlist.visibleArea.yPosition+mlist.visibleArea.heightRatio < 0.95? 1 : 0
         aspect: UbuntuShape.Flat
@@ -399,7 +394,7 @@ Rectangle {
         Icon {
             anchors.centerIn: parent
             height: units.gu(3.25)
-            color: "white"
+            color: theme.palette.normal.background
             name: "down"
         }
 

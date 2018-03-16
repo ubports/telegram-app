@@ -213,8 +213,8 @@ Rectangle {
         height: units.gu(4.3)
 
         // To work on desktop change the following line to:
-        // enabled: True
-        enabled: Connectivity.online && telegramObject.connected
+         enabled: True
+        //enabled: Connectivity.online && telegramObject.connected
 
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -329,8 +329,8 @@ Rectangle {
             onClicked: {
 
                 // To work on desktop change the following line to:
-                // if (!telegramObject.connected) return
-                if (!telegramObject.connected || !Connectivity.online) return
+                 if (!telegramObject.connected) return
+//                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
                     smsg.focusOut();
@@ -342,13 +342,11 @@ Rectangle {
             }
         }
 
-        Image {
+        Icon {
             id: sticker_image
             anchors.centerIn: parent
             height: units.gu(2.5)
             width: height
-            sourceSize: Qt.size(width, height)
-            fillMode: Image.PreserveAspectFit
             source: Qt.resolvedUrl("qrc:/qml/files/msg_panel_stickers.svg")
             visible: !messagePlaceholder.visible
         }
@@ -373,8 +371,8 @@ Rectangle {
             onClicked: {
 
                 // To work on desktop change the following line to:
-                // if (!telegramObject.connected) return
-                if (!telegramObject.connected || !Connectivity.online) return
+                 if (!telegramObject.connected) return
+//                if (!telegramObject.connected || !Connectivity.online) return
 
                 Haptics.play()
                 if (!privates.attachmentItem) {
@@ -407,8 +405,8 @@ Rectangle {
         visible: !messagePlaceholder.visible && !channelToolbar
 
         // To work on desktop change the following line to:
-        // enabled: True
-        enabled: Connectivity.online && telegramObject.connected
+         enabled: True
+//        enabled: Connectivity.online && telegramObject.connected
 
         MouseArea {
             id: send_mouse_area
@@ -441,8 +439,8 @@ Rectangle {
                 Qt.inputMethod.commit();
 
                 // To work on desktop change the following line to:
-                // if (!telegramObject.connected) return
-                if (!telegramObject.connected || !Connectivity.online) return
+                 if (!telegramObject.connected) return
+//                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (state == "send" && txt.text.length > 0) {
                     Haptics.play()

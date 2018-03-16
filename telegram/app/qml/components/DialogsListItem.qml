@@ -107,6 +107,8 @@ ListItem {
                     console.log("isChannel: "+isChannel)
                     console.log("chat.megaGroup: "+chat.megaGroup)
 
+                    console.log("color of my custom Palette: "+theme.palette.normal.activityText)
+
                 }
             }
         ]
@@ -232,7 +234,7 @@ ListItem {
             visible: showMessage && message && (message.out || isChat || isChannel) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == MessageAction.Empty)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
-            color: mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
+            color: theme.palette.normal.activityText
             text: {
                 if (!message || dialog.typingUsers.length > 0) return '';
                 if (message.out) return i18n.tr("You: ");
@@ -344,7 +346,7 @@ ListItem {
                             default:
                                 break
                         }
-                        return "<font color=\"" + Colors.telegram_blue + "\">" + res + "</font>"
+                        return "<font color=\"" + theme.palette.normal.activityText + "\">" + res + "</font>"
                     }
                     return message.message
                 }

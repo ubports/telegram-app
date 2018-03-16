@@ -86,8 +86,8 @@ TelegramPage {
             text: i18n.tr("Done")
 
             // To work on desktop change the following line to:
-            // enabled: phoneNumber.length > 0
-            enabled: isOnline && phoneNumber.length > 0
+             enabled: phoneNumber.length > 0
+//            enabled: isOnline && phoneNumber.length > 0
             focus: true
             onClicked: phone_number.accepted()
         }

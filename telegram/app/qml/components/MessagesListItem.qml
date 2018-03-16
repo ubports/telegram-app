@@ -212,7 +212,7 @@ ListItem {
                     id: forward_user_name
                     fontSize: "smaller"
                     font.weight: Font.Normal
-                    color:  mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
+                    color:  theme.palette.normal.activityText
                     visible: message.fwdFromId !== 0 && message.fwdFromId.userId !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
                     textFormat: Text.RichText

@@ -31,7 +31,7 @@ Item {
             id: reply_separator
             width: units.dp(2)
             height: parent.height
-            color:  Colors.telegram_blue
+            color: theme.palette.normal.activityText
         }
 
         Column {
@@ -43,7 +43,7 @@ Item {
                 id: name_text
                 fontSize: "small"
                 font.weight: Font.Normal
-                color: mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
+                color: theme.palette.normal.activityText
                 text: {
                     if (!realMessage)
                         return ""

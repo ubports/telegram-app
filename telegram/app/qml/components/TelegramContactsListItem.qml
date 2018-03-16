@@ -133,7 +133,7 @@ ListItem {
         wrapMode: Text.WrapAnywhere
         maximumLineCount: 1
         font.pixelSize: FontUtils.sizeToPixels("medium")
-        color: isOnline ? mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue : theme.palette.normal.backgroundTertiaryText
+        color: isOnline ? theme.palette.normal.activityText : theme.palette.normal.backgroundTertiaryText
         visible: text !== ""
         text: subtitle
     }

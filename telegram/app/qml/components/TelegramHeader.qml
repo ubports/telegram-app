@@ -244,7 +244,7 @@ PageHeader {
             wrapMode: Text.WordWrap
             maximumLineCount: 1
             text: header.subtitle
-            color: header.isOnline ? mainView.theme.name == "Ubuntu.Components.Themes.SuruDark" ? "qrc:/qml/files/telegram_background_dark.png" : "qrc:/qml/files/telegram_background.png" : theme.palette.normal.backgroundTertiaryText
+            color: header.isOnline ? theme.palette.normal.activityText : theme.palette.normal.backgroundTertiaryText
 
             Connections {
                 target: header
