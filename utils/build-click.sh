@@ -2,9 +2,9 @@
 
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/bin/ubuntu-touch/tmp" # tmp is hard-coded into clickable
-export BUILD_DIR_BASENAME=build_mobile
-export QMAKE_BIN=/usr/bin/qt5-qmake-arm-linux-gnueabihf
-export QT_SELECT=qt5
+BUILD_DIR_BASENAME=build_mobile
+QMAKE_BIN=/usr/bin/qt5-qmake-arm-linux-gnueabihf
+QT_SELECT=qt5
 
 mkdir -p $CLICK_TARGET_DIR
 
@@ -30,14 +30,14 @@ echo "nothing do be done currently..."
 }
 
 build_libqtelegram() {
-echo "Building libqtelegram"
-
+echo "Calling qmake"
 cd $TELEGRAM_SOURCES/deps/libqtelegram-ae
 mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
 # FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
 # QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
-$QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
+$QMAKE_BIN -spec linux-g++ -Wall PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
 # $QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
+echo "Calling make"
 $MAKE_BIN -j4 || exit 1
 $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
 cd $TG_DIR/deps
