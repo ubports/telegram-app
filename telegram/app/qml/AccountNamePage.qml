@@ -81,6 +81,6 @@ Page {
             right: parent.right
         }
         horizontalAlignment: Text.AlignHCenter
-        color: "red"
+        color: theme.palette.normal.negative
     }
 }

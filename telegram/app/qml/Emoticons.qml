@@ -29,7 +29,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: "white"
+        color: theme.palette.normal.background
     }
 
     ListView {
@@ -79,7 +79,7 @@ Item {
         id: separator
         anchors { left: parent.left; right: parent.right; top: selectionView.bottom }
         height: units.dp(1)
-        color: "black"
+        color: theme.palette.normal.overlaySecondaryText
     }
 
     GridView {
@@ -163,8 +163,8 @@ Item {
             id: sitem
             anchors.fill: parent
             border.width: units.dp(1)
-            border.color: selected ? UbuntuColors.lightGrey : "transparent"
-            color: selected ? "#33929292" : "transparent"
+            border.color: selected ? theme.palette.normal.base : "transparent"
+            color: selected ? theme.palette.normal.base : "transparent"
             property bool selected: stickers_model.currentStickerSet === "" && emodel.currentKey === emodel.keys[index]
 
             property int index
@@ -192,8 +192,8 @@ Item {
             id: sitem
             anchors.fill: parent
             border.width: units.dp(1)
-            border.color: selected ? UbuntuColors.lightGrey : "transparent"
-            color: selected ? "#33929292" : "transparent"
+            border.color: selected ? theme.palette.normal.overlaySecondaryText : "transparent"
+            color: selected ? theme.palette.normal.overlaySecondaryText : "transparent"
             property bool selected: stickers_model.currentStickerSet === currentStickerSet
 
             property Document document

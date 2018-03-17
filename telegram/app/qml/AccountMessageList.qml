@@ -14,6 +14,7 @@ import "ui"
 
 Rectangle {
     id: acc_msg_list
+    color: theme.palette.normal.background
 
     property alias telegramObject: messages_model.telegram
     property alias currentDialog: messages_model.dialog
@@ -110,7 +111,7 @@ Rectangle {
         verticalAlignment: Image.AlignTop
         sourceSize: Qt.size(width,height)
         source: {
-            return "qrc:/qml/files/telegram_background.png"
+            return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "qrc:/qml/files/telegram_background_dark.png" : "qrc:/qml/files/telegram_background.png"
 //            if(backgroundManager.background == "")
 //                return Cutegram.background.length==0? "qrc:/qml/files/telegram_background.png" : Devices.localFilesPrePath + Cutegram.background
 //            else
@@ -121,7 +122,7 @@ Rectangle {
 
     Rectangle {
         anchors.centerIn: parent
-        color: "#ffffff"
+        color: theme.palette.normal.background
         width: welcome_txt.width + units.gu(2.5)
         height: welcome_txt.height + units.gu(1.25)
         radius: units.dp(4)
@@ -134,7 +135,7 @@ Rectangle {
             font.family: Cutegram.font.family
             // TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
             text: i18n.tr("Please select chat")
-            color: "#111111"
+            color: theme.palette.normal.backgroundText
         }
     }
 
@@ -206,7 +207,7 @@ Rectangle {
             Label {
                 id: unread_texts
                 anchors.centerIn: parent
-                color: Qt.rgba(1, 1, 1, 1)
+                color: "white"
                 text: section=="false" ? i18n.tr("New messages") : ""
                 font.weight: Font.Normal
             }
@@ -378,12 +379,7 @@ Rectangle {
         anchors.bottomMargin: bottomMargin + units.gu(1)
         anchors.rightMargin: units.gu(1)
         width: units.gu(7)
-        color: "#88000000"
-//        normalColor: "#88000000"
-//        highlightColor: "#aa000000"
-//        iconSource: "files/down.png"
-//        cursorShape: Qt.PointingHandCursor
-//        iconHeight: units.gu(2.25)
+        color: Qt.rgba(theme.palette.normal.backgroundText.r, theme.palette.normal.backgroundText.g, theme.palette.normal.backgroundText.b, 0.53)
         visible: opacity != 0
         opacity: mlist.visibleArea.yPosition+mlist.visibleArea.heightRatio < 0.95? 1 : 0
         aspect: UbuntuShape.Flat
@@ -398,7 +394,7 @@ Rectangle {
         Icon {
             anchors.centerIn: parent
             height: units.gu(3.25)
-            color: "white"
+            color: theme.palette.normal.background
             name: "down"
         }
 

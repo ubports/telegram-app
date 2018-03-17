@@ -31,6 +31,7 @@ ListItem {
 
     height: units.gu(6)
     divider.visible: showDivider
+    color: theme.palette.normal.background
 
     Icon {
         id: image
@@ -41,6 +42,8 @@ ListItem {
         }
         width: visible ? units.gu(3) : 0
         visible: !showProportionalShape
+        color: Theme.palette.normal.backgroundSecondaryText
+        Component.onCompleted: console.log("icon color: "+color)
     }
 
     ProportionalShape {

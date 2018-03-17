@@ -15,6 +15,7 @@
  */
 
 import QtGraphicalEffects 1.0
+import Ubuntu.Components 1.3
 
 DropShadow {
     property int depth: 1
@@ -26,7 +27,7 @@ DropShadow {
     anchors.fill: source
     horizontalOffset: topShadow ? 0 : __hOffset
     verticalOffset: topShadow ? - __vOffset : __vOffset
-    color: Qt.rgba(0.6, 0.6, 0.6, 0.6)
+    color: Qt.rgba(UbuntuColors.slate.r,UbuntuColors.slate.g,UbuntuColors.slate.b,0.6)
     radius: 8
     samples: 16 // radius * 2
     transparentBorder: true

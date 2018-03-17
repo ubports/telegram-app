@@ -30,6 +30,7 @@ TelegramPage {
             anchors.fill: parent
 
             Rectangle {
+                color: theme.palette.normal.backgroud
                 anchors {
                     top: parent.top
                     left: parent.left
@@ -37,7 +38,6 @@ TelegramPage {
                     bottom: parent.bottom
                     bottomMargin: page.isWide ? units.gu(2) : 0
                 }
-                color: Colors.intro_background
 
                 Layouts.item: "item_body"
 
@@ -91,7 +91,7 @@ TelegramPage {
 
                                 horizontalAlignment: TextInput.AlignHCenter
                                 font.pixelSize: FontUtils.sizeToPixels("large")
-                                color: "#000000"
+                                color: theme.palette.normal.backgroundText
                                 text: title
                             }
                             // Not using Ubuntu font color, because it's affected by background color.
@@ -110,7 +110,7 @@ TelegramPage {
                                 font.pixelSize: FontUtils.sizeToPixels("medium")
                                 wrapMode: Text.WordWrap
                                 // Using Ubuntu Theme color.
-                                color: "#777777"
+                                color: theme.palette.normal.backgroundTertiaryText
                                 text: body
                             }
                         }

@@ -186,7 +186,7 @@ Page {
 
              UC.Button {
                  text: i18n.tr("Change Title")
-                 color: UbuntuColors.orange
+                 color: UbuntuColors.green
                  onClicked: {
                      //console.log("CHANGE TITLE qsTr: " + qsTr(group_Title_Textfield.text));
                      telegram.messagesEditChatTitle(dialogId, qsTr(group_Title_Textfield.text));
@@ -239,7 +239,7 @@ Page {
         anchors.fill: parent
         // Due to some fancy Page behavior, in fact,
         // this doesn't end up as white anyway..
-        color: Colors.page_background
+        color: theme.palette.normal.background
     }
 
     ActivityIndicator {
@@ -406,7 +406,7 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "large"
-                    color: Colors.black
+                    color: theme.palette.normal.backgroundText
                     // TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
                     text: user.phone ? "+" + user.phone : i18n.tr("Unknown")
                 }
@@ -415,7 +415,7 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "small"
-                    color: Colors.grey
+                    color: theme.palette.normal.backgroundTertiaryText
                     // TRANSLATORS: The subtitle for the user's phone field in user profile.
                     text: i18n.tr("Mobile")
                 }
@@ -475,7 +475,7 @@ Page {
                     fontSize: "large"
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
-                    color: Colors.black
+                    color:  theme.palette.normal.backgroundText
                     // TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
                     text: user.username.length > 0 ? i18n.tr("@%1").arg(user.username) : ""
                 }
@@ -484,7 +484,7 @@ Page {
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     fontSize: "small"
-                    color: Colors.grey
+                    color: theme.palette.normal.backgroundTertiaryText
                     // TRANSLATORS: The subtitle for the user's username field in user profile.
                     text: "Username"
                 }
@@ -556,7 +556,7 @@ Page {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             fontSize: "large"
-            color: Colors.black
+            color: theme.palette.normal.backgroundText
             // TRANSLATORS: Text of the notifications switch label in user profile page.
             text: i18n.tr("Notifications")
         }
@@ -616,7 +616,7 @@ Page {
                 left: parent.left
                 bottom: parent.bottom
             }
-            Image {
+            Icon {
                 width: units.gu(3)
                 height: width
                 anchors.centerIn: parent
@@ -638,7 +638,7 @@ Page {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             fontSize: "large"
-            color: Colors.black
+            color: theme.palette.normal.backgroundText
             // TRANSLATORS: Text of the block user switch label in user profile page.
             text: i18n.tr("Block user")
         }

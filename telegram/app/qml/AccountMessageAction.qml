@@ -37,7 +37,7 @@ Item {
             width: Screen.width * 0.85
             horizontalAlignment: Text.AlignHCenter
             fontSize: "small"
-            color: "#333333"
+            color: theme.palette.normal.backgroundSecondaryText
             wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             textFormat: Text.RichText
             text: {

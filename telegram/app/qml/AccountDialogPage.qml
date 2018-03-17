@@ -8,6 +8,8 @@ import AsemanTools 1.0
 import TelegramQML 1.0
 import Cutegram 1.0
 
+import "js/colors.js" as Colors
+
 import "components"
 
 
@@ -82,7 +84,7 @@ Page {
 
     header: TelegramHeader {
         StyleHints {
-            backgroundColor: currentDialog.encrypted ? Colors.secret_green : "white"
+            backgroundColor: currentDialog.encrypted ? Colors.secret_green : theme.palette.normal.background
             dividerColor: Qt.darker(backgroundColor, 1.1)
         }
         id: dialog_page_header

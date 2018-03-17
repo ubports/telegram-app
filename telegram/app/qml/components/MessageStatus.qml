@@ -15,7 +15,7 @@ Item {
 
     property variant message
     property bool hasMedia: false
-    property var bgMessageColor: !message.sent ? Colors.grey : ((message.out && message.unread) ? Colors.blue : (message.out ? Colors.outgoing : Colors.outgoing ))
+    property var bgMessageColor: !message.sent ? theme.palette.normal.backgroundTertiaryText : ((message.out && message.unread) ? theme.palette.normal.activity : (message.out ? theme.palette.normal.positive : theme.palette.normal.positive ))
 
     Rectangle {
         visible: hasMedia
@@ -54,12 +54,12 @@ Item {
             id: channel_views
             visible: message.views > 0
             anchors.verticalCenter: parent.verticalCenter
-            Image {
+            Icon {
                 anchors.verticalCenter: parent.verticalCenter
                 width: units.gu(2)
                 height: width
-                fillMode: Image.PreserveAspectFit
-                source: message.out? Qt.resolvedUrl("qrc:/qml/files/eyeWhite.svg") : Qt.resolvedUrl("qrc:/qml/files/eye.svg")
+                source: Qt.resolvedUrl("qrc:/qml/files/eye.svg")
+                color: message.out ? "white" : "aliceblue"
             }
             Label {
             anchors.verticalCenter: parent.verticalCenter

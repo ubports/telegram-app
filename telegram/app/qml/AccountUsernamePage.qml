@@ -129,7 +129,7 @@ Page {
             width: parent.width
             visible: text != ""
             // horizontalAlignment: Text.AlignLeft
-            color: checking ? "grey" : (error.length > 0 ? "red" : "green")
+            color: checking ? theme.palette.normal.backgroundTertiaryText : (error.length > 0 ? UbuntuColors.red : UbuntuColors.green)
             text: checking ? i18n.tr("Checking username...") : (error.length > 0 ? error : success)
         }
 

@@ -59,7 +59,7 @@ TelegramPage {
             id: error_txt
             width: column.width
             visible: text != ""
-            color: "red"
+            color: UbuntuColors.red
         }
     }
 

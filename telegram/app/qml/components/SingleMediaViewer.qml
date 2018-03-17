@@ -58,6 +58,12 @@ Item {
         }
     }
 
+    Rectangle {
+        anchors.fill: parent
+        z: -1
+        color: theme.palette.normal.background
+    }
+
     ActivityIndicator {
         id: activityIndicator
         anchors.centerIn: parent

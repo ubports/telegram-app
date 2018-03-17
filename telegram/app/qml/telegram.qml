@@ -17,6 +17,7 @@
 import QtQuick 2.4
 
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Themes 1.3
 import Ubuntu.Components.Popups 1.3 as Popup
 import Ubuntu.Content 1.3
 import UserMetrics 0.1
@@ -29,12 +30,13 @@ import TelegramQML 1.0
 import "components"
 import "js/version.js" as Version
 import "ui"
+import "js/colors.js" as Colors
 
 MainView {
     id: mainView
     objectName: "appMainView"
-    width: units.gu(38)
-    height: units.gu(50)
+    width: units.gu(50)
+    height: units.gu(70)
     focus: true
 
     applicationName: "com.ubuntu.telegram"
@@ -63,7 +65,13 @@ MainView {
     signal pushUnregister(string token)
     signal resumed()
 
-    theme.name: Cutegram.darkTheme
+    theme.name: Cutegram.darkTheme ? "Ubuntu.Components.Themes.SuruDark" : "Ubuntu.Components.Themes.Ambiance"
+    theme.palette: Palette {
+        normal.activityText: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
+        normal.activity: Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.blue : Colors.new_blue
+        normal.positiveText: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.green : Colors.new_green
+        normal.positive: Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green
+    }
 
     onActiveFocusChanged: {
         if (activeFocus) {

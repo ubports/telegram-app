@@ -12,7 +12,6 @@ import "qrc:/qml/js/colors.js" as Colors
 ListItem {
     id: list_item
     height: units.gu(7)
-    color: selected ? Colors.list_pressed : Colors.white
 
     property Telegram telegram
     property bool connected: true
@@ -103,11 +102,9 @@ ListItem {
                             telegram: list_item.telegram,
                             dialog: list_item.dialog
                     });
-
                     console.log("isChat: "+isChat)
                     console.log("isChannel: "+isChannel)
                     console.log("chat.megaGroup: "+chat.megaGroup)
-
                 }
             }
         ]
@@ -213,6 +210,7 @@ ListItem {
             font.pixelSize: units.dp(17)
             text: list_item.title
             width: parent.width - (secret_chat_icon.visible? secret_chat_icon.width : 0.0) - (contact_group_icon.visible? contact_group_icon.width : 0.0) - (audio_volume_muted_icon.visible? audio_volume_muted_icon.width : 0.0)
+            color: theme.palette.normal.backgroundText
         }
     }
 
@@ -232,7 +230,7 @@ ListItem {
             visible: showMessage && message && (message.out || isChat || isChannel) && dialog.typingUsers.length === 0 && (message.message != "" || message.action.classType == MessageAction.Empty)
             maximumLineCount: 1
             font.pixelSize: units.dp(15)//FontUtils.sizeToPixels("smaller")
-            color: Colors.telegram_blue
+            color: theme.palette.normal.activityText
             text: {
                 if (!message || dialog.typingUsers.length > 0) return '';
                 if (message.out) return i18n.tr("You: ");
@@ -248,7 +246,7 @@ ListItem {
             wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
             font.pixelSize: units.dp(15)
-            color: Colors.grey
+            color: theme.palette.normal.backgroundTertiaryText
             width: parent.width - (message_author.visible? message_author.width : 0.0) - (unread_rect.visible ? unread_rect.width : 0.0)
             text: {
                 if (!visible) return "";
@@ -344,7 +342,7 @@ ListItem {
                             default:
                                 break
                         }
-                        return "<font color=\"" + Colors.telegram_blue + "\">" + res + "</font>"
+                        return "<font color=\"" + theme.palette.normal.activityText + "\">" + res + "</font>"
                     }
                     return message.message
                 }
@@ -363,7 +361,7 @@ ListItem {
         verticalAlignment: Text.AlignVCenter
         visible: showMessage
         font.pixelSize: units.dp(12)
-        color: Colors.grey
+        color: theme.palette.normal.backgroundTertiaryText
         text: messageDate > 0 ? Cutegram.getTimeString(messageDate) : ""
     }
 

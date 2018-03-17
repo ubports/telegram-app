@@ -50,7 +50,7 @@ Panel {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: "white"
+        color: theme.palette.normal.background
     }
 
     EdgeShadow {
