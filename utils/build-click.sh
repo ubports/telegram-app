@@ -3,8 +3,14 @@
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/bin/ubuntu-touch/tmp" # tmp is hard-coded into clickable
 BUILD_DIR_BASENAME=build_mobile
-QMAKE_BIN=/usr/bin/qt5-qmake-arm-linux-gnueabihf
+# modifications to g++.conf
+QMAKE_CC=arm-linux-gnueabihf-gcc
+QMAKE_CXX=arm-linux-gnueabihf-g++
+QMAKE_LINK=arm-linux-gnueabihf-g++
+QMAKE_LINK_SHLIB=arm-linux-gnueabihf-g++
+QMAKE_BIN="/usr/lib/qt5/bin/qmake"
 QT_SELECT=qt5
+MAKE_BIN=make
 
 mkdir -p $CLICK_TARGET_DIR
 
@@ -35,7 +41,7 @@ cd $TELEGRAM_SOURCES/deps/libqtelegram-ae
 mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
 # FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
 # QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
-$QMAKE_BIN -spec linux-g++ -Wall PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
+$QMAKE_BIN -Wall PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
 # $QMAKE_BIN PREFIX=/usr -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
 echo "Calling make"
 $MAKE_BIN -j4 || exit 1

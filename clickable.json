@@ -9,10 +9,16 @@
   "dependencies": [
     "ninja-build",
     "curl",
-    "libthumbnailer-qt1.0:armhf",
-    "libthumbnailer-qt-dev:armhf"
-
-    
+    "libthumbnailer-qt-dev:armhf",
+    "qt5-qmake",
+    "qtbase5-dev",
+    "qtmultimedia5-dev",
+    "libgles2-mesa-dev",
+    "libegl1-mesa-dev",
+    "libmirclient-dev",
+    "libmircommon-dev",
+    "libxkbcommon-dev",
+    "libssl-dev"
   ]
 }
 
