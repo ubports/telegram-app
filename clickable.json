@@ -9,9 +9,10 @@
   "dependencies": [
     "ninja-build",
     "curl",
-    "libthumbnailer-qt-dev:armhf",
+    "libthumbnailer-qt-dev",
     "qt5-qmake",
     "qtbase5-dev",
+    "qtdeclarative5-dev",
     "qtmultimedia5-dev",
     "libgles2-mesa-dev",
     "libegl1-mesa-dev",
