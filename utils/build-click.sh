@@ -2,15 +2,12 @@
 
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/bin/ubuntu-touch/tmp" # tmp is hard-coded into clickable
-BUILD_DIR_BASENAME=build_mobile
+BUILD_DIR_BASENAME=build_clickable
 # modifications to g++.conf
-export QMAKE_CC=arm-linux-gnueabihf-gcc
-export QMAKE_CXX=arm-linux-gnueabihf-g++
-export QMAKE_LINK=arm-linux-gnueabihf-g++
-export QMAKE_LINK_SHLIB=arm-linux-gnueabihf-g++
-export QMAKE_BIN="/usr/lib/qt5/bin/qmake"
-QT_SELECT=qt5
+
+QMAKE_BIN="qt5-qmake-arm-linux-gnueabihf -spec /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/ubuntu-arm-gnueabihf-g++"
 MAKE_BIN=make
+DEB_HOST_MULTIARCH="dpkg-architecture -q DEB_HOST_MULTIARCH"
 
 mkdir -p $CLICK_TARGET_DIR
 
@@ -24,8 +21,9 @@ cd $TELEGRAM_SOURCES/deps/libqtelegram-ae
 mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
 # FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
 # QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
-$QMAKE_BIN -Wall PREFIX=/ -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
-# $QMAKE_BIN PREFIX=/ -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
+$QMAKE_BIN \
+    PREFIX=/ QMAKE_CFLAGS_ISYSTEM= -r .. || exit 1
+#    PREFIX=/ QMAKE_CFLAGS_ISYSTEM= -r .. CONFIG+=debug || exit 1 //for debugging
 echo "Calling make"
 $MAKE_BIN -j4 || exit 1
 $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
@@ -47,8 +45,8 @@ $QMAKE_BIN \
     LIBS+=-lthumbnailer-qt \
     INCLUDEPATH+=/usr/include/thumbnailer-qt-1.0/unity/thumbnailer/qt \
     TELEGRAMQML_INCLUDE_PATH=$TG_INCS/telegramqml \
-    PREFIX=/ BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE -r .. QMAKE_CFLAGS_ISYSTEM= || exit 1
-#    PREFIX=/ BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE -r .. QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug || exit 1 //for debugging
+    PREFIX=/ BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE QMAKE_CFLAGS_ISYSTEM= -r .. || exit 1
+#    PREFIX=/ BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug -r .. || exit 1 //for debugging
 $MAKE_BIN -j4 || exit 1
 $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
 
@@ -62,9 +60,12 @@ echo "*****************************************"
 
 cd $TELEGRAM_SOURCES/telegram
 mkdir -p $BUILD_DIR_BASENAME/po && cd $BUILD_DIR_BASENAME || exit 1
-$QMAKE_BIN LIBS+=-L$CLICK_TARGET_DIR/lib/x86_64-linux-gnu INCLUDEPATH+=/include/thumbnailer-qt-1.0/unity/thumbnailer/qt INCLUDEPATH+=$CLICK_TARGET_DIR/include/libqtelegram-ae INCLUDEPATH+=$CLICK_TARGET_DIR/include/telegramqml PREFIX=/ -r .. || exit 1
-# $QMAKE_BIN LIBS+=-L$TH_LIBS LIBS+=-L$TG_LIBS INCLUDEPATH+=$TH_INCS INCLUDEPATH+=$TG_INCS/libqtelegram-ae INCLUDEPATH+=$TG_INCS/telegramqml PREFIX=/ -r .. CONFIG+=debug || exit 1 //for debugging
-#LIBS+=-lunity-scopes INCLUDEPATH+=/usr/include/unity-scopes-0 -r ..
+$QMAKE_BIN \
+    LIBS+=-L$CLICK_TARGET_DIR/lib/x86_64-linux-gnu \
+    INCLUDEPATH+=/include/thumbnailer-qt-1.0/unity/thumbnailer/qt \
+    INCLUDEPATH+=$CLICK_TARGET_DIR/include/libqtelegram-ae \
+    INCLUDEPATH+=$CLICK_TARGET_DIR/include/telegramqml PREFIX=/ -r .. || exit 1
+#    INCLUDEPATH+=$CLICK_TARGET_DIR/include/telegramqml PREFIX=/ CONFIG+=debug -r .. || exit 1 //for debugging
 $MAKE_BIN -j4 || exit 1
 $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
 
@@ -80,6 +81,7 @@ echo "*****************************************"
 	rm -r $CLICK_TARGET_DIR/include
 }
 
+echo $QMAKE_VARS
 build_libqtelegram && build_TelegramQML && build_telegram && cleanup_click_dir
 
 echo "*****************************************"
