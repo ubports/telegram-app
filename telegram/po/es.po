@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2017-12-09 15:56+0000\n"
+"PO-Revision-Date: 2018-03-18 19:14+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
-"Language-Team: Spanish <https://translate.ubports.com/projects/ubports/"
-"telegram-app/es/>\n"
+"Language-Team: Spanish <https://translate.ubports.com/projects/ubports"
+"/telegram-app/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,16 +57,16 @@ msgstr "Buscar contactos..."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
-msgstr "Crear chat secreto"
+msgstr "Nuevo chat secreto"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
-msgstr "Añadir a un grupo"
+msgstr "Añadir al grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:107
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:104
 msgid "New Group"
-msgstr "Grupo nuevo"
+msgstr "Nuevo grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:396
@@ -162,7 +162,7 @@ msgstr "¿Reenviar mensaje a %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
 #, qt-format
 msgid "Send messages to %1?"
-msgstr "¿Enviar mensaje a %1?"
+msgstr "¿Enviar mensajes a %1?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -233,7 +233,7 @@ msgstr "Creó un grupo"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
 #, qt-format
 msgid "<b>%1</b> created the group"
-msgstr "<b>%1</b> creó un grupo"
+msgstr "<b>%1</b> creó el grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
@@ -279,13 +279,13 @@ msgstr "<b>%1</b> eliminó a <b>%2</b>"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
 msgid "You changed the group name to %1"
-msgstr "Cambió el nombre de grupo a %1"
+msgstr "Cambió el nombre del grupo a %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:97
 #, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr "<b>%1</b> cambió el nombre de grupo a %2"
+msgstr "<b>%1</b> cambió el nombre del grupo a %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:104
 msgid "You changed the group photo"
@@ -330,7 +330,7 @@ msgstr "Responder"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:251
 msgid "Sticker Pack info"
-msgstr "Información de paquete de Stickers"
+msgstr "Información del paquete de pegatinas"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:409
 msgid "Secret chat requested."
@@ -393,12 +393,12 @@ msgstr "Seleccionar chat"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Unmute"
-msgstr ""
+msgstr "No silenciar"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Mute"
-msgstr ""
+msgstr "Silenciar"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:220
@@ -645,11 +645,11 @@ msgstr "Código"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:132
 msgid "First Name"
-msgstr "Nombre(s)"
+msgstr "Nombre"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:142
 msgid "Last Name"
-msgstr "Apellido(s)"
+msgstr "Apellidos"
 
 #. TRANSLATORS: Request to re-send the one time code used in sign in process.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:166
@@ -666,7 +666,7 @@ msgstr "Llamando. Por favor, espere..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr "Código de país"
+msgstr "Elija un país"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:65
@@ -676,7 +676,7 @@ msgstr "Buscar países..."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:73
 msgid "Phone Number"
-msgstr "Número telefónico"
+msgstr "Número de teléfono"
 
 #. TRANSLATORS: Dialog prompt to ensure provided number is correct.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:119
@@ -685,11 +685,11 @@ msgstr "¿Es correcto el número?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:165
 msgid "Phone number already exists."
-msgstr "El número telefónico ya existe."
+msgstr "El número de teléfono ya existe."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr "Introduzca contraseña"
+msgstr "Introduzca la contraseña"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
@@ -769,7 +769,7 @@ msgstr "Privado"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr "Los mensajes de <b>Telegram</b> tienen una encriptación fuerte<br>"
+msgstr "Los mensajes de <b>Telegram</b> están fuertemente cifrados<br>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
@@ -794,12 +794,12 @@ msgstr "Añadir miembro"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:166
 msgid "Change Group Title"
-msgstr "Cambiar nombre de grupo"
+msgstr "Cambiar el nombre del grupo"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:180
 msgid "New group chat title"
-msgstr "Nombre de nuevo grupo"
+msgstr "Nombre del chat del nuevo grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:188
 msgid "Change Title"
@@ -962,7 +962,7 @@ msgstr[1] "%1 segundos"
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:54
 msgid "1 minute"
-msgstr "un minuto"
+msgstr "1 minuto"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:57
@@ -981,7 +981,7 @@ msgstr "1 semana"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:62
 msgid "Leave chat"
-msgstr "Abandonar chat"
+msgstr "Abandonar el chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:68
 msgid "Are you sure you want to leave this chat?"
@@ -1009,7 +1009,7 @@ msgstr "escribiendo..."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:279
 #, qt-format
 msgid "You changed the group title to %1"
-msgstr "Cambió el nombre de grupo a %1"
+msgstr "Cambió el nombre del grupo a %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:281
 #, qt-format
@@ -1027,11 +1027,11 @@ msgstr "Pegatina"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 le invitó a un chat secreto."
+msgstr "%1 se unió a su chat secreto."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:304
 msgid "You joined the secret chat."
-msgstr "Se unión a un chat secreto."
+msgstr "Se unió al chat secreto."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:309
 #, qt-format
@@ -1156,7 +1156,7 @@ msgstr "dd MMM"
 #. TRANSLATORS: Format string: full date
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:297
 msgid "dd MMM yy"
-msgstr "dd/MMM/yy"
+msgstr "dd MMM yy"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:114
 msgid "sent you a message"
@@ -1167,9 +1167,8 @@ msgid "sent you a photo"
 msgstr "le envió una foto"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:122
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "le envió un vídeo"
+msgstr "le envió una pegatina"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:126
 msgid "sent you a video"
@@ -1207,9 +1206,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1 envió una foto al grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:162
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 envió un vídeo al grupo"
+msgstr "%1 envió una pegatina al grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
@@ -1304,7 +1303,7 @@ msgstr "%1 en %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:263
 msgid "updated profile photo"
-msgstr "foto de perfil actualizada"
+msgstr "foto del perfil actualizada"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:268
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:273
@@ -1315,19 +1314,19 @@ msgstr "Tiene un mensaje nuevo"
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr "h:mm ddd, dd/MM/yy"
+msgstr "h:mm ddd, dd-MM-yy"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr "Abrir app"
+msgstr "Abrir la aplicación"
 
 #. TRANSLATORS: call to action: open this chat
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:86
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:120
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr "Abrir chat"
+msgstr "Abrir el chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
 msgid "Call"
