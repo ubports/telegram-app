@@ -94,16 +94,19 @@ quotes = {
   '›': '‹'
 },
 
+global_options,
+
 default_options = {
   callback: function( text, href ) {
-    return href ? '<a href="' + href + '" title="' + href + '">' + text + '</a>' : text;
+    return href ? '<a style="color:'+ global_options.color +'" href="' + href + '" title="' + href + '">' + text + '</a>' : text;
   },
   punct_regexp: new RegExp("(?:[!?.,:;'\"]|(?:&|&amp;)(?:lt|gt|quot|apos|raquo|laquo|rsaquo|lsaquo);)$")
 };
 
 function linkify( txt, options ) {
   options = options || {};
-  
+  global_options = options;
+
   // Temp variables.
   var arr,
     i,

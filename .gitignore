@@ -5,6 +5,6 @@ click/*
 telegram/build*
 telegram/scope/build*
 telegram/manifest.json
-telegram/telegram.pro.user
+*.pro.user
 build_desktop
 build_mobile

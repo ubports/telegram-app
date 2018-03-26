@@ -423,7 +423,7 @@ Rectangle {
                     PropertyChanges {
                         target: send_image
                         name: "send"
-                        color: send_mouse_area.enabled ? theme.palette.normal.activityText : UC.UbuntuColors.silk
+                        color: send_mouse_area.enabled ? UbuntuColors.blue : UbuntuColors.silk
                     }
                 },
                 State {

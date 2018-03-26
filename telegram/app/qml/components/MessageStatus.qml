@@ -44,10 +44,11 @@ Item {
                 if (hasMedia) {
                     return Colors.white;
                 }
-                return message.out ? "aliceblue" : Colors.time_in;
+                return message.out ? "white" : theme.palette.normal.backgroundText
             }
             text: Cutegram.getTimeString(messageDate)
             property variant messageDate: CalendarConv.fromTime_t(message.date)
+            opacity: message.out ? 1 : 0.6
         }
 
         Row {
@@ -59,51 +60,31 @@ Item {
                 width: units.gu(2)
                 height: width
                 source: Qt.resolvedUrl("qrc:/qml/files/eye.svg")
-                color: message.out ? "white" : "aliceblue"
+                color: message.out ? "white" : theme.palette.normal.backgroundText
+                opacity: message.out ? 1 : 0.6
             }
             Label {
-            anchors.verticalCenter: parent.verticalCenter
-            text: {
-                    if (message.views > 9999 && message.views <= 999999)
-                        return ~~(message.views / 100) / 10 + "K";
-                    else if (message.views > 999999)
-                        return ~~(message.views / 100000) / 10 + "M";
-                    else
-                        return message.views;
-            }
-            font.weight: Font.DemiBold
-            fontSize: "x-small"
-            color: {
-                if (hasMedia) {
-                    return Colors.white;
+                anchors.verticalCenter: parent.verticalCenter
+                text: {
+                        if (message.views > 9999 && message.views <= 999999)
+                            return ~~(message.views / 100) / 10 + "K";
+                        else if (message.views > 999999)
+                            return ~~(message.views / 100000) / 10 + "M";
+                        else
+                            return message.views;
                 }
-                return message.out ? "aliceblue" : Colors.time_in;
-            }
+                font.weight: Font.DemiBold
+                fontSize: "x-small"
+                color: {
+                    if (hasMedia) {
+                        return Colors.white;
+                    }
+                    return message.out ? "white" : theme.palette.normal.backgroundText;
+                }
+                opacity: message.out ? 1 : 0.6
             }
 
         }
-
-//        Image {
-//            id: status_image
-//            objectName: "statusImage"
-//            anchors.verticalCenter: parent.verticalCenter
-//            width: units.gu(2)
-//            height: width
-//            visible: message.out
-//            z: 1
-//            fillMode: Image.PreserveAspectFit
-//            source: {
-//                if (!message.sent) {
-//                    return Qt.resolvedUrl("qrc:/qml/files/clock_white.svg");
-//                } else if (message.out && message.unread) {
-//                    return Qt.resolvedUrl("qrc:/qml/files/tick_single_white.svg");
-//                } else if (message.out) {
-//                    return Qt.resolvedUrl("qrc:/qml/files/tick_double_white2.svg");
-//                } else {
-//                    return "";
-//                }
-//            }
-//        }
     }
 }
 

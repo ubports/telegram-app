@@ -16,7 +16,7 @@ ListItem {
     height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
     divider.visible: false
-//    highlightColor: theme.palette.selected.selection
+    highlightColor: theme.palette.selected.selection
 
     property real messageFrameX: back_rect.x
     property real messageFrameY: back_rect.y
@@ -78,7 +78,8 @@ ListItem {
         // Check for Usernames
         // TODO: Find a way to highlight usernames starting with @ (probably needs lookup if this is a valid username
         // check for links
-        var htmlText = BaLinkify.linkify(text);
+        var myoptions = {one:x,two:y,color:Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue};
+        var htmlText = BaLinkify.linkify(text, myoptions);
         if (htmlText !== text) {
             return htmlText;
         }
@@ -276,7 +277,7 @@ ListItem {
                         textFormat: Text.RichText
                         text: message_item.messageHtmlText
                         //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
-                        color: message.out? "aliceblue" : theme.palette.normal.backgroundText
+                        color: message.out? "white" : theme.palette.normal.backgroundText
                         onLinkActivated: {
                             if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
                             {
