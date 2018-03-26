@@ -78,7 +78,11 @@ ListItem {
         // Check for Usernames
         // TODO: Find a way to highlight usernames starting with @ (probably needs lookup if this is a valid username
         // check for links
-        var myoptions = {one:x,two:y,color:Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue};
+        var myoptions = {
+          callback: function( text, href ) {
+            return href ? '<a style="color:'+ theme.palette.normal.activityText +'" href="' + href + '" title="' + href + '">' + text + '</a>' : text;
+          }
+        };
         var htmlText = BaLinkify.linkify(text, myoptions);
         if (htmlText !== text) {
             return htmlText;

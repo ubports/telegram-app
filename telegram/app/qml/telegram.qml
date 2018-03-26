@@ -69,8 +69,6 @@ MainView {
     theme.palette: Palette {
         normal.activityText: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.blue : Colors.new_blue
         normal.activity: Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.blue : Colors.new_blue
-        normal.positiveText: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.green : Colors.new_green
-        normal.positive: Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green
         selected.background: Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.inkstone : Colors.list_pressed
     }
 
