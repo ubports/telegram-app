@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2017-12-18 13:00+0000\n"
+"PO-Revision-Date: 2018-03-26 11:24+0000\n"
 "Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
-"Language-Team: Portuguese <https://translate.ubports.com/projects/ubports/"
-"telegram-app/pt/>\n"
+"Language-Team: Portuguese <https://translate.ubports.com/projects/ubports"
+"/telegram-app/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1168,9 +1168,8 @@ msgid "sent you a photo"
 msgstr "enviou-lhe uma fotografia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:122
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "enviou-lhe um vídeo"
+msgstr "enviou-lhe um autocolante"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:126
 msgid "sent you a video"
@@ -1208,9 +1207,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1 enviou uma foto para o grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:162
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 enviou um vídeo para o grupo"
+msgstr "%1 enviou um autocolante para o grupo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
