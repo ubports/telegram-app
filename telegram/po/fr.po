@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2017-12-10 09:21+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
-"Language-Team: French <https://translate.ubports.com/projects/ubports/"
-"telegram-app/fr/>\n"
+"PO-Revision-Date: 2018-03-29 20:37+0000\n"
+"Last-Translator: RedXXIII <redxxiii@zaclys.net>\n"
+"Language-Team: French <https://translate.ubports.com/projects/ubports"
+"/telegram-app/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -393,12 +393,12 @@ msgstr "Sélectionner une discussion"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Unmute"
-msgstr ""
+msgstr "Activer le son"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Mute"
-msgstr ""
+msgstr "Désactiver le son"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:220
@@ -1172,9 +1172,8 @@ msgid "sent you a photo"
 msgstr "vous a envoyé une photo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:122
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "vous a envoyé une vidéo"
+msgstr "vous a envoyé un autocollant"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:126
 msgid "sent you a video"
@@ -1212,9 +1211,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1 a envoyé une photo au groupe"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:162
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 a envoyé une vidéo au groupe"
+msgstr "%1 a envoyé un autocollant au groupe"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
