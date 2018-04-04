@@ -371,6 +371,7 @@ Rectangle {
         scrollArea: mlist; height: mlist.height-bottomMargin-topMargin; width: units.gu(0.75)
         anchors.right: mlist.right; anchors.top: mlist.top;
         anchors.topMargin: topMargin; reverse: true
+        color: theme.palette.normal.backgroundSecondaryText
     }
 
     ProportionalShape {
@@ -379,7 +380,7 @@ Rectangle {
         anchors.bottomMargin: bottomMargin + units.gu(1)
         anchors.rightMargin: units.gu(1)
         width: units.gu(7)
-        color: Qt.rgba(theme.palette.normal.backgroundText.r, theme.palette.normal.backgroundText.g, theme.palette.normal.backgroundText.b, 0.53)
+        color: Qt.rgba(theme.palette.normal.backgroundSecondaryText.r, theme.palette.normal.backgroundSecondaryText.g, theme.palette.normal.backgroundSecondaryText.b, 0.6)
         visible: opacity != 0
         opacity: mlist.visibleArea.yPosition+mlist.visibleArea.heightRatio < 0.95? 1 : 0
         aspect: UbuntuShape.Flat
