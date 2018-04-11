@@ -30,7 +30,7 @@ TelegramPage {
             anchors.fill: parent
 
             Rectangle {
-                color: theme.palette.normal.backgroud
+                color: theme.palette.normal.background
                 anchors {
                     top: parent.top
                     left: parent.left
