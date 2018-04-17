@@ -9,7 +9,7 @@
   "dependencies": [
     "libthumbnailer-qt-dev:armhf",
     "qt5-qmake-arm-linux-gnueabihf",
-    "qt5-qmake-bin",
+    "qt5-qmake-bin:armhf",
     "qt5-qmake:armhf",
     "qtbase5-dev:armhf",
     "qtdeclarative5-dev:armhf",
