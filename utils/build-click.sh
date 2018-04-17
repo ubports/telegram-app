@@ -11,6 +11,23 @@ DEB_HOST_MULTIARCH="dpkg-architecture -q DEB_HOST_MULTIARCH"
 
 mkdir -p $CLICK_TARGET_DIR
 
+hotfix_qmake() {
+# Hotfix for broken qmake in container:
+# 1) we copy the qmake binary to a new directory
+# 2) we use qt.conf from nymea.io's cross build containers which reconfigures qmake to make it work
+# 3) we use the qmake in our directory
+echo "*****************************************"
+echo "Hotfixing qmake"
+echo "*****************************************"
+
+cd $TELEGRAM_SOURCES/deps/
+mkdir -p qmake-fix/
+cp /usr/bin/qt5-qmake-arm-linux-gnueabihf qmake-fix/
+cp $TELEGRAM_SOURCES/utils/qt.conf qmake-fix/
+
+QMAKE_BIN=$TELEGRAM_SOURCES/deps/qmake-fix/qt5-qmake-arm-linux-gnueabihf
+}
+
 build_libqtelegram() {
 
 echo "*****************************************"
@@ -19,6 +36,7 @@ echo "*****************************************"
 
 cd $TELEGRAM_SOURCES/deps/libqtelegram-ae
 mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
+
 # FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
 # QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
 $QMAKE_BIN \
@@ -40,7 +58,7 @@ mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
 # FIXME (rmescandon): workaround for letting yakkety desktop version compile. Seems that leaving
 # QMAKE_CFLAGS_ISYSTEM to default /usr/include yields stdlib.h error. Instead it is set to nothing
 $QMAKE_BIN \
-    LIBS+=-L$CLICK_TARGET_DIR/lib/x86_64-linux-gnu LIBS+=-lqtelegram-ae \
+    LIBS+=-L$CLICK_TARGET_DIR/lib/arm-linux-gnueabihf LIBS+=-lqtelegram-ae \
     LIBQTELEGRAM_INCLUDE_PATH+=$CLICK_TARGET_DIR/include/libqtelegram-ae \
     LIBS+=-lthumbnailer-qt \
     INCLUDEPATH+=/usr/include/thumbnailer-qt-1.0/unity/thumbnailer/qt \
@@ -61,7 +79,7 @@ echo "*****************************************"
 cd $TELEGRAM_SOURCES/telegram
 mkdir -p $BUILD_DIR_BASENAME/po && cd $BUILD_DIR_BASENAME || exit 1
 $QMAKE_BIN \
-    LIBS+=-L$CLICK_TARGET_DIR/lib/x86_64-linux-gnu \
+    LIBS+=-L$CLICK_TARGET_DIR/lib/arm-linux-gnueabihf \
     INCLUDEPATH+=/include/thumbnailer-qt-1.0/unity/thumbnailer/qt \
     INCLUDEPATH+=$CLICK_TARGET_DIR/include/libqtelegram-ae \
     INCLUDEPATH+=$CLICK_TARGET_DIR/include/telegramqml PREFIX=/ -r .. || exit 1
@@ -82,7 +100,7 @@ echo "*****************************************"
 }
 
 echo $QMAKE_VARS
-build_libqtelegram && build_TelegramQML && build_telegram && cleanup_click_dir
+hotfix_qmake && build_libqtelegram && build_TelegramQML && build_telegram && cleanup_click_dir
 
 echo "*****************************************"
 echo "Build script finished, now leaving work to 'click build'"
