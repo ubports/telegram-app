@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-04-15 03:13+0000\n"
+"PO-Revision-Date: 2018-04-27 11:43+0000\n"
 "Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://translate.ubports.com/projects/ubports/telegram-app/zh_Hant/>\n"
@@ -162,7 +162,7 @@ msgstr "轉傳訊息給 %1？"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
 #, qt-format
 msgid "Send messages to %1?"
-msgstr ""
+msgstr "傳送訊息給 %1？"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -203,17 +203,17 @@ msgstr "刪除"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
-msgstr ""
+msgstr "登入"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
-msgstr ""
+msgstr "註冊"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:215
 msgid "Invalid password"
-msgstr ""
+msgstr "無效的密碼"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:54
 #, qt-format
@@ -239,7 +239,7 @@ msgstr "%1 退出群組"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:67
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr ""
+msgstr "您新增了 <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:69
 #, qt-format
@@ -716,7 +716,7 @@ msgstr "<b>Telegram</b> 傳遞訊息的速度比起<br>其他任何程式都還�
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr "免费"
+msgstr "免費"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
@@ -729,7 +729,7 @@ msgstr "安全"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr "<b>Telegram</b> 保障您的訊息安全<br>遠離黑客的魔爪"
+msgstr "<b>Telegram</b> 保障您的訊息安全<br>遠離駭客的魔爪"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:37
