@@ -1,0 +1,27 @@
+
+{
+  "template": "custom",
+  "dir": "./target/",
+  "build": "../utils/build-click.sh",
+  "kill": "telegram",
+  "sdk": "ubuntu-sdk-16.04",
+  "specificDependencies": true,
+  "dependencies": [
+    "libthumbnailer-qt-dev:armhf",
+    "qt5-qmake-arm-linux-gnueabihf",
+    "qt5-qmake-bin:armhf",
+    "qt5-qmake:armhf",
+    "qtbase5-dev:armhf",
+    "qtdeclarative5-dev:armhf",
+    "qtmultimedia5-dev:armhf",
+    "libgles2-mesa-dev:armhf",
+    "libegl1-mesa-dev:armhf",
+    "libmirclient-dev:armhf",
+    "libmircommon-dev:armhf",
+    "libxkbcommon-dev:armhf",
+    "libssl-dev:armhf",
+    "libglib2.0-dev:armhf",
+    "libpulse-dev:armhf"
+  ]
+}
+
