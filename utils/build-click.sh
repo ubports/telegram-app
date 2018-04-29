@@ -4,7 +4,7 @@ TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/target/tmp" # tmp is hard-coded into clickable
 LSB_RELEASE=`lsb_release -cs`
 DEB_HOST_MULTIARCH=`dpkg-architecture -q DEB_HOST_MULTIARCH`
-BUILD_DIR_BASENAME=build_clickable_$(LSB_RELEASE)_$(DEB_HOST_MULTIARCH)
+BUILD_DIR_BASENAME=build_clickable_${LSB_RELEASE}_${DEB_HOST_MULTIARCH}
 # modifications to g++.conf
 
 MAKE_BIN=make
