@@ -1,12 +1,12 @@
 #!/bin/bash -e
 
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
-CLICK_TARGET_DIR="$TELEGRAM_SOURCES/bin/ubuntu-touch/tmp" # tmp is hard-coded into clickable
-BUILD_DIR_BASENAME=build_clickable
+DEB_HOST_MULTIARCH=`dpkg-architecture -q DEB_HOST_MULTIARCH`
+CLICK_TARGET_DIR="$TELEGRAM_SOURCES/target/tmp" # tmp is hard-coded into clickable
+BUILD_DIR_BASENAME=build_clickable_$DEB_HOST_MULTIARCH
 # modifications to g++.conf
 
 MAKE_BIN=make
-DEB_HOST_MULTIARCH=`dpkg-architecture -q DEB_HOST_MULTIARCH`
 
 mkdir -p $CLICK_TARGET_DIR
 
@@ -103,7 +103,7 @@ case $DEB_HOST_MULTIARCH in
         hotfix_qmake
     ;;
     *)
-        QMAKE_BIN="qt5-qmake"
+        QMAKE_BIN="qmake"
     ;;
 esac
 
