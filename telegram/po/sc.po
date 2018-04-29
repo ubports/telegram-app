@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-04-29 08:56+0000\n"
+"PO-Revision-Date: 2018-04-29 09:02+0000\n"
 "Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
@@ -1215,27 +1215,27 @@ msgstr "%1 at imbiadu un'adesivu a su grupu"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr "%1 nch'at imbiadu unu vìdeu a su grupu"
+msgstr "%1 at imbiadu unu vìdeu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:173
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr "%1 nch'at imbiadu unu documentu a su grupu"
+msgstr "%1 at imbiadu unu documentu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:178
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr "%1 nch'at imbiadu unu messàgiu vocale a su grupu"
+msgstr "%1 at imbiadu unu messàgiu vocale a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:183
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr "%1 nch'at imbiadu unu cuntatu a su grupu"
+msgstr "%1 at imbiadu unu cuntatu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:188
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr "%1 nch'at imbiadu una mapa a su grupu"
+msgstr "%1 at imbiadu una mapa a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:193
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:214
@@ -1290,7 +1290,7 @@ msgstr "%1 s'est registradu"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:248
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 si nch'est iscritu a Telegram!"
+msgstr "%1 s'est iscritu a Telegram!"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:253
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
@@ -1352,7 +1352,7 @@ msgstr "Resurtados in: Messàgios"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr "Persones cun sas cales faeddas"
+msgstr "Persones cun is chi faeddas"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:292
 msgid "Recent Chats"
