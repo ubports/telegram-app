@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
 "PO-Revision-Date: 2018-04-29 08:56+0000\n"
-"Last-Translator: Matteo Mandis <mandismatteo@gmail.com>\n"
+"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
@@ -1208,9 +1208,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1 at imbiadu una fotografia a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:162
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 nch'at imbiadu unu vìdeu a su grupu"
+msgstr "%1 at imbiadu un'adesivu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
