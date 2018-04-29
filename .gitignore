@@ -1,5 +1,6 @@
 usr
 click
+target
 click/*
 *.click
 telegram/build*

@@ -1,9 +1,10 @@
 #!/bin/bash -e
 
 TELEGRAM_SOURCES=$(dirname "$(readlink -f "${0}")")/..
-DEB_HOST_MULTIARCH=`dpkg-architecture -q DEB_HOST_MULTIARCH`
 CLICK_TARGET_DIR="$TELEGRAM_SOURCES/target/tmp" # tmp is hard-coded into clickable
-BUILD_DIR_BASENAME=build_clickable_$DEB_HOST_MULTIARCH
+LSB_RELEASE=`lsb_release -cs`
+DEB_HOST_MULTIARCH=`dpkg-architecture -q DEB_HOST_MULTIARCH`
+BUILD_DIR_BASENAME=build_clickable_$(LSB_RELEASE)_$(DEB_HOST_MULTIARCH)
 # modifications to g++.conf
 
 MAKE_BIN=make
@@ -15,9 +16,9 @@ hotfix_qmake() {
 # 1) we copy the qmake binary to a new directory
 # 2) we use qt.conf from nymea.io's cross build containers which reconfigures qmake to make it work
 # 3) we use the qmake in our directory
-echo "*****************************************"
+echo "***************"
 echo "Hotfixing qmake"
-echo "*****************************************"
+echo "***************"
 
 cd $TELEGRAM_SOURCES/deps/
 mkdir -p qmake-fix/
@@ -29,9 +30,9 @@ QMAKE_BIN=$TELEGRAM_SOURCES/deps/qmake-fix/qt5-qmake-arm-linux-gnueabihf
 
 build_libqtelegram() {
 
-echo "*****************************************"
+echo "************************"
 echo "Building libqtelegram-ae"
-echo "*****************************************"
+echo "************************"
 
 cd $TELEGRAM_SOURCES/deps/libqtelegram-ae
 mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
@@ -48,9 +49,9 @@ $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
 
 build_TelegramQML() {
 
-echo "*****************************************"
+echo "********************"
 echo "Building TelegramQML"
-echo "*****************************************"
+echo "********************"
 
 cd $TELEGRAM_SOURCES/deps/TelegramQML
 mkdir -p $BUILD_DIR_BASENAME && cd $BUILD_DIR_BASENAME || exit 1
@@ -71,9 +72,9 @@ $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
 
 build_telegram() {
 
-echo "*****************************************"
+echo "*********************"
 echo "Building Telegram App"
-echo "*****************************************"
+echo "*********************"
 
 cd $TELEGRAM_SOURCES/telegram
 mkdir -p $BUILD_DIR_BASENAME/po && cd $BUILD_DIR_BASENAME || exit 1
@@ -90,9 +91,9 @@ $MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
 
 cleanup_click_dir() {
 
-echo "*****************************************"
+echo "***********"
 echo "Cleaning up"
-echo "*****************************************"
+echo "***********"
 
 	# Strip out documentation and includes
 	rm -r $CLICK_TARGET_DIR/include
@@ -107,10 +108,11 @@ case $DEB_HOST_MULTIARCH in
     ;;
 esac
 
+echo "Building telegram app on $LSB_RELEASE for $DEB_HOST_MULTIARCH... (target directory is $BUILD_DIR_BASENAME)"
 
 build_libqtelegram && build_TelegramQML && build_telegram && cleanup_click_dir
 
-echo "*****************************************"
+echo "********************************************************"
 echo "Build script finished, now leaving work to 'click build'"
-echo "******************************************"
+echo "********************************************************"
 
