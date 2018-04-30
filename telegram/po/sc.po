@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-04-29 09:02+0000\n"
-"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
+"PO-Revision-Date: 2018-04-30 15:12+0000\n"
+"Last-Translator: Flavia <flavia.efloris@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
@@ -20,6 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2.15\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
+#, fuzzy
 msgid "Add to contacts"
 msgstr "Agiunghe a sos cuntatos"
 
@@ -55,6 +56,7 @@ msgstr "Chirca cuntatos..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
+#, fuzzy
 msgid "New Secret Chat"
 msgstr "Tzarrada segreta noa"
 
@@ -328,6 +330,7 @@ msgid "Reply"
 msgstr "Risponde"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:251
+#, fuzzy
 msgid "Sticker Pack info"
 msgstr "Informatziones de sos adesivos"
 
@@ -827,7 +830,7 @@ msgstr "%1 membros"
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:342
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:83
-#, qt-format
+#, fuzzy, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
 msgstr[0] "%1 est iscriende"
@@ -994,6 +997,7 @@ msgid "Clear history"
 msgstr "Cantzella cronologia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:85
+#, fuzzy
 msgid "Are you sure you want to clear history?"
 msgstr "Ses seguru chi nde boles isboidare sa cronologia?"
 
@@ -1335,6 +1339,7 @@ msgid "Call"
 msgstr "Muti"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
+#, fuzzy
 msgid "Failed to get Telegram data"
 msgstr "No est possìbile a otènnere sos datos de Telegram"
 
