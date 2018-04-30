@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2016-01-20 01:57+0000\n"
-"Last-Translator: Gema Aji Wardian <gema_wardian@hotmail.com>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"PO-Revision-Date: 2018-04-30 13:55+0000\n"
+"Last-Translator: Dito Kurnia P <ditokpl@gmail.com>\n"
+"Language-Team: Indonesian <https://translate.ubports.com/projects/ubports"
+"/telegram-app/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.15\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -27,7 +28,7 @@ msgstr "Tambahkan ke kontak"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:45
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:123
 msgid "Contacts"
-msgstr "Daftar kontak"
+msgstr "Kontak"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:30
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:91
@@ -46,7 +47,7 @@ msgstr "Tambahkan"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr "Sebelumnya"
+msgstr "Kembali"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
@@ -101,7 +102,7 @@ msgstr "Masukan Detail"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
-msgstr "Batalkan"
+msgstr "Batal"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -125,7 +126,10 @@ msgid ""
 "Add %1 to %2?\n"
 "\n"
 "Number of last messages to forward:"
-msgstr "Tambah %1 ke %2?"
+msgstr ""
+"Tambah %1 ke %2?\n"
+"\n"
+"Berapa banyak pesan terakhir yang akan diteruskan:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:502
@@ -168,7 +172,7 @@ msgstr "Info Grup"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Info Channel"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:33
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -215,7 +219,7 @@ msgstr "Kode telepon salah"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:54
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr ""
+msgstr "Anda diundang %1 untuk bergabung dalam chat rahasia."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, fuzzy, qt-format
@@ -241,17 +245,17 @@ msgstr "Diteruskan dari <b>%1</b>"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:69
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr ""
+msgstr "<b>%1</b> menambahkan anda"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "%1 keluar dari grup"
+msgstr "<b>%1</b> bergabung ke grup"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:73
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr ""
+msgstr "<b>%1</b> menambahkan <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:79
@@ -308,12 +312,12 @@ msgstr "%1 menghapus foto grup"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:119
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:339
 msgid "You joined the group via invite link"
-msgstr ""
+msgstr "Anda bergabung ke grup dengan link undangan"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:121
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> bergabung dalam grup dengan link undangan"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:136
@@ -326,11 +330,11 @@ msgstr "Pesan baru"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:244
 msgid "Reply"
-msgstr ""
+msgstr "Balas"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:251
 msgid "Sticker Pack info"
-msgstr ""
+msgstr "Info Pak Stiker"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:409
 msgid "Secret chat requested."
@@ -393,12 +397,12 @@ msgstr "Pilih Obrolan"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Unmute"
-msgstr ""
+msgstr "Nyalakan"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Mute"
-msgstr ""
+msgstr "Bisukan"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:220
@@ -411,16 +415,18 @@ msgstr "Berkas suara belum terdukung ;("
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:697
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Anda harus menekan dan menahan ikon rekaman"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:792
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
+"Tolong izinkan akses mikrofon di dalam Pengaturan Sistem > Keamanan & "
+"Privasi."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
 msgid "Settings"
-msgstr "Setelan"
+msgstr "Pengaturan"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -489,7 +495,7 @@ msgstr "Akun"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:220
 msgid "Log out"
-msgstr "Log out"
+msgstr "Keluar"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:233
@@ -665,7 +671,7 @@ msgstr "Menelepon, harap tunggu..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:21
 msgid "Choose a country"
-msgstr ""
+msgstr "Pilih negara"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:65
@@ -690,15 +696,15 @@ msgstr "Nomor telepon (diperlukan)"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
-msgstr ""
+msgstr "Masukkan kata sandi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:35
 msgid "Password"
-msgstr ""
+msgstr "Kata sandi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr ""
+msgstr "Pasang"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
@@ -767,7 +773,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Tertutup"
+msgstr "Pribadi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -775,7 +781,7 @@ msgstr "Pesan dari <b>Telegram</b> terenkripsi dengan ketat<br>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Pilih"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:46
@@ -785,7 +791,7 @@ msgstr "Dari: %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
-msgstr "Berbagi"
+msgstr "Bagikan"
 
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:41
@@ -926,11 +932,11 @@ msgstr "Video"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
-msgstr "Berkas"
+msgstr "File"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Geser untuk membatalkan"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:34
@@ -1000,7 +1006,7 @@ msgstr "Apakah anda yakin untuk membersihkan riwayat?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:238
 msgid "You: "
-msgstr ""
+msgstr "Anda: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
@@ -1026,7 +1032,7 @@ msgstr "Jenis pesan"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:290
 msgid "Sticker"
-msgstr ""
+msgstr "Stiker"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
 #, fuzzy, qt-format
@@ -1046,7 +1052,7 @@ msgstr "%1 membuat grup \"%2\""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:315
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "Anda menambahkan %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
 #, fuzzy, qt-format
@@ -1088,7 +1094,7 @@ msgstr "%1 mengeluarkan %2"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:341
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "%1 bergabung ke grup dengan link undangan"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:219
 #, qt-format
@@ -1137,7 +1143,7 @@ msgstr "%1 pada %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
 #, fuzzy
