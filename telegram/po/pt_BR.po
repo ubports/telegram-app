@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-02-05 20:08+0000\n"
+"PO-Revision-Date: 2018-05-03 20:56+0000\n"
 "Last-Translator: Willian Eduardo <WillianEduardoT@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://translate.ubports.com/projects/"
-"ubports/telegram-app/pt_BR/>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://translate.ubports.com/projects/ubports/telegram-app/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1384,11 +1384,11 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:654
 msgid "Photo received"
-msgstr ""
+msgstr "Foto recebida"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:671
 msgid "Video received"
-msgstr ""
+msgstr "Vídeo recebido"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
