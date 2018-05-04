@@ -1,5 +1,6 @@
 usr
 click
+target
 click/*
 *.click
 telegram/build*
@@ -8,3 +9,5 @@ telegram/manifest.json
 *.pro.user
 build_desktop
 build_mobile
+clickable.json
+
