@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
 "PO-Revision-Date: 2018-05-06 12:09+0000\n"
-"Last-Translator: Matteo Mandis <mandismatteo@gmail.com>\n"
+"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
@@ -995,7 +995,7 @@ msgstr "Cantzella cronologia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Are you sure you want to clear history?"
-msgstr "Ses seguru chi nde cheres cantzellare sa cronologia?"
+msgstr "Ses seguru chi nde boles cantzellare sa cronologia?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:238
 msgid "You: "
