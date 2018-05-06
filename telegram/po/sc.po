@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-05-06 12:09+0000\n"
-"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
+"PO-Revision-Date: 2018-05-06 12:10+0000\n"
+"Last-Translator: Flavia <flavia.efloris@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
@@ -1335,9 +1335,8 @@ msgid "Call"
 msgstr "Muti"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
-#, fuzzy
 msgid "Failed to get Telegram data"
-msgstr "No est possìbile a otènnere sos datos de Telegram"
+msgstr "Non si sunt pòdidos otènnere is datos de Telegram"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
