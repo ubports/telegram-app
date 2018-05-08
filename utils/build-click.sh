@@ -28,6 +28,13 @@ hotfix_qmake() {
 	QMAKE_BIN=$TELEGRAM_SOURCES/deps/qmake-fix/qt5-qmake-arm-linux-gnueabihf
 }
 
+make_step() {
+
+	echo "Calling make"
+	$MAKE_BIN -j4 || exit 1
+	$MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
+}
+
 build_libqtelegram() {
 
 	echo "************************"
@@ -42,9 +49,7 @@ build_libqtelegram() {
 	$QMAKE_BIN \
 		PREFIX=/ QMAKE_CFLAGS_ISYSTEM= -r .. || exit 1
 	#    PREFIX=/ QMAKE_CFLAGS_ISYSTEM= -r .. CONFIG+=debug || exit 1 //for debugging
-	echo "Calling make"
-	$MAKE_BIN -j4 || exit 1
-	$MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
+	make_step
 }
 
 build_TelegramQML() {
@@ -65,9 +70,7 @@ build_TelegramQML() {
 		TELEGRAMQML_INCLUDE_PATH=$TG_INCS/telegramqml \
 		PREFIX=/ BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE QMAKE_CFLAGS_ISYSTEM= -r .. || exit 1
 	#    PREFIX=/ BUILD_MODE+=lib DEFINES+=UBUNTU_PHONE QMAKE_CFLAGS_ISYSTEM= CONFIG+=debug -r .. || exit 1 //for debugging
-	$MAKE_BIN -j4 || exit 1
-	$MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
-
+	make_step
 }
 
 build_telegram() {
@@ -84,9 +87,7 @@ build_telegram() {
 		INCLUDEPATH+=$CLICK_TARGET_DIR/include/libqtelegram-ae \
 		INCLUDEPATH+=$CLICK_TARGET_DIR/include/telegramqml PREFIX=/ -r .. || exit 1
 	#    INCLUDEPATH+=$CLICK_TARGET_DIR/include/telegramqml PREFIX=/ CONFIG+=debug -r .. || exit 1 //for debugging
-	$MAKE_BIN -j4 || exit 1
-	$MAKE_BIN INSTALL_ROOT=$CLICK_TARGET_DIR install || exit 1
-
+	make_step
 }
 
 cleanup_click_dir() {
