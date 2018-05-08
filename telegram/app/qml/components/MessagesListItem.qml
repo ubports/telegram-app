@@ -88,7 +88,7 @@ ListItem {
             return htmlText;
         }
         // linkify phone numbers if no web links were found
-        return text.replace(phoneExp, '<a href="tel:///$1">$1</a>');
+        return text.replace(phoneExp, '<a style="color:'+ theme.palette.normal.activityText +'" href="tel:///$1">$1</a>');
     }
 
     function htmlHasLinks(html) {
