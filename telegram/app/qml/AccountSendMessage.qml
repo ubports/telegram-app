@@ -214,8 +214,8 @@ Rectangle {
         height: units.gu(4.3)
 
         // To work on desktop change the following line to:
-         enabled: True
-        //enabled: Connectivity.online && telegramObject.connected
+        // enabled: true
+        enabled: Connectivity.online && telegramObject.connected
 
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
@@ -330,8 +330,8 @@ Rectangle {
             onClicked: {
 
                 // To work on desktop change the following line to:
-                 if (!telegramObject.connected) return
-//                if (!telegramObject.connected || !Connectivity.online) return
+                // if (!telegramObject.connected) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (!privates.emojiItem) {
                     smsg.focusOut();
@@ -372,8 +372,8 @@ Rectangle {
             onClicked: {
 
                 // To work on desktop change the following line to:
-                 if (!telegramObject.connected) return
-//                if (!telegramObject.connected || !Connectivity.online) return
+                // if (!telegramObject.connected) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 Haptics.play()
                 if (!privates.attachmentItem) {
@@ -406,8 +406,8 @@ Rectangle {
         visible: !messagePlaceholder.visible && !channelToolbar
 
         // To work on desktop change the following line to:
-         enabled: True
-//        enabled: Connectivity.online && telegramObject.connected
+        // enabled: true
+        enabled: Connectivity.online && telegramObject.connected
 
         MouseArea {
             id: send_mouse_area
@@ -440,8 +440,8 @@ Rectangle {
                 Qt.inputMethod.commit();
 
                 // To work on desktop change the following line to:
-                 if (!telegramObject.connected) return
-//                if (!telegramObject.connected || !Connectivity.online) return
+                // if (!telegramObject.connected) return
+                if (!telegramObject.connected || !Connectivity.online) return
 
                 if (state == "send" && txt.text.length > 0) {
                     Haptics.play()
