@@ -55,7 +55,7 @@ ListItem {
         }
         width: visible ? units.gu(5) : 0
         visible: showProportionalShape
-        aspect: UbuntuShape.Flat
+        aspect: UbuntuShape.DropShadow
     }
 
     Label {

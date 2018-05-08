@@ -138,6 +138,26 @@ Panel {
                 }
             }
             AccountPanelItem {
+                objectName:"panelDark"
+                icon: "night-mode"
+                text: i18n.tr("Dark theme")
+                showDivider: false
+                onClicked: sswitch.checked = !sswitch.checked
+                Switch {
+                    id: sswitch
+                    checked: Cutegram.darkTheme
+                    anchors {
+                        right: parent.right
+                        rightMargin: units.gu(2)
+                        verticalCenter: parent.verticalCenter
+                    }
+                    onCheckedChanged: {
+                        Cutegram.darkTheme = checked
+                        Theme.name = !Cutegram.darkTheme ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark"
+                    }
+                }
+            }
+            AccountPanelItem {
                 icon: "help"
                 text: i18n.tr("Telegram FAQ")
                 showDivider: false

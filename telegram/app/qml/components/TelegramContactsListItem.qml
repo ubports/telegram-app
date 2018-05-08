@@ -12,6 +12,7 @@ import "../js/colors.js" as Colors
 ListItem {
     id: contact_item
     height: units.gu(8)
+    color: selected ? theme.palette.selected.background : theme.palette.normal.background
     divider.visible: false
 
     property Telegram telegram
