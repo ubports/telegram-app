@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-05-09 05:13+0000\n"
+"PO-Revision-Date: 2018-05-09 07:05+0000\n"
 "Last-Translator: Dito Kurnia P <ditokpl@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/id/>\n"
@@ -482,7 +482,7 @@ msgstr "Ajukan pertanyaan"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:200
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:142
 msgid "Telegram FAQ"
-msgstr "Telegram FAQ"
+msgstr "FAQ Telegram"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:209
