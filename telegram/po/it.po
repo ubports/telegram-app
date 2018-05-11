@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-04-20 19:25+0000\n"
+"PO-Revision-Date: 2018-05-11 16:59+0000\n"
 "Last-Translator: Tommaso Pelà <tom_pla@yahoo.it>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/it/>\n"
@@ -73,8 +73,9 @@ msgstr "Nuovo gruppo"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:424
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:325
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
+#, fuzzy
 msgid "OK"
-msgstr "OK"
+msgstr "Ok"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
