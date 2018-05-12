@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-03-18 19:14+0000\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"PO-Revision-Date: 2018-05-12 09:04+0000\n"
+"Last-Translator: Francisco Molinero <paco@byasl.com>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports"
 "/telegram-app/es/>\n"
 "Language: es\n"
@@ -949,7 +949,7 @@ msgstr "Chat secreto descartado"
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr "Inhabilitado"
+msgstr "Desactivado"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:51
