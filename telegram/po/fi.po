@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-05-12 19:48+0000\n"
+"PO-Revision-Date: 2018-05-14 12:12+0000\n"
 "Last-Translator: Veli-Matti Rautiainen <velraut@gmail.com>\n"
 "Language-Team: Finnish <https://translate.ubports.com/projects/ubports"
 "/telegram-app/fi/>\n"
@@ -73,7 +73,6 @@ msgstr "Uusi ryhmä"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:424
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:325
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
-#, fuzzy
 msgid "OK"
 msgstr "Selvä"
 
