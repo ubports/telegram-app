@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2017-11-30 18:50+0000\n"
-"Last-Translator: Mappack Owner <mappack@null.net>\n"
-"Language-Team: Dutch <https://translate.ubports.com/projects/ubports/"
-"telegram-app/nl/>\n"
+"PO-Revision-Date: 2018-05-12 10:03+0000\n"
+"Last-Translator: Laurentijn Tilleman <laurentijn.tilleman@gmail.com>\n"
+"Language-Team: Dutch <https://translate.ubports.com/projects/ubports"
+"/telegram-app/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,7 +74,7 @@ msgstr "Nieuwe groep"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:325
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr "Oké"
+msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
