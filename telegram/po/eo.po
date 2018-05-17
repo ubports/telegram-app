@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2017-12-09 19:01+0000\n"
-"Last-Translator: Pablo Foche <pablo.foche@gmail.com>\n"
-"Language-Team: Esperanto <https://translate.ubports.com/projects/ubports/"
-"telegram-app/eo/>\n"
+"PO-Revision-Date: 2018-05-14 13:29+0000\n"
+"Last-Translator: nuramo <larugxakoro@protonmail.com>\n"
+"Language-Team: Esperanto <https://translate.ubports.com/projects/ubports"
+"/telegram-app/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -600,7 +600,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr "Finita"
+msgstr "Fini"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"

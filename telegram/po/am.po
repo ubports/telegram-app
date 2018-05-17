@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2017-12-24 00:02+0000\n"
+"PO-Revision-Date: 2018-05-13 20:51+0000\n"
 "Last-Translator: Samson <sambelet@yahoo.com>\n"
-"Language-Team: Amharic <https://translate.ubports.com/projects/ubports/"
-"telegram-app/am/>\n"
+"Language-Team: Amharic <https://translate.ubports.com/projects/ubports"
+"/telegram-app/am/>\n"
 "Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -422,7 +422,7 @@ msgstr "እባክዎን ለ ማይክሮፎን ፍቃድ ይስጡ እንዲደ�
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
 msgid "Settings"
-msgstr "ማሰናጃዎች"
+msgstr "ማሰናጃ"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.

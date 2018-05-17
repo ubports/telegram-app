@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-01-21 19:12+0000\n"
-"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
-"Language-Team: Sardinian <https://translate.ubports.com/projects/ubports/"
-"telegram-app/sc/>\n"
+"PO-Revision-Date: 2018-05-06 12:10+0000\n"
+"Last-Translator: Flavia <flavia.efloris@gmail.com>\n"
+"Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
+"/telegram-app/sc/>\n"
 "Language: sc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
-msgstr "Agiunghe a sos cuntatos"
+msgstr "Agiunghe a is cuntatos"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:26
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:45
@@ -329,7 +329,7 @@ msgstr "Risponde"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:251
 msgid "Sticker Pack info"
-msgstr "Informatziones de sos adesivos"
+msgstr "Informatziones de su pachete de adesivos"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:409
 msgid "Secret chat requested."
@@ -392,12 +392,12 @@ msgstr "Seletziona tzarrada"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Unmute"
-msgstr ""
+msgstr "Ativa su sonu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Mute"
-msgstr ""
+msgstr "A sa muda"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:220
@@ -730,8 +730,8 @@ msgstr "De badas"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
 msgstr ""
-"<b>Telegram</b> est de badas pro semper. Peruna publitzidade.<br> Perunu "
-"annùntziu"
+"<b>Telegram</b> est de badas pro semper. Peruna publitzidade.<br> Peruna "
+"tassa de abbonamentu"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:32
@@ -995,7 +995,7 @@ msgstr "Cantzella cronologia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:85
 msgid "Are you sure you want to clear history?"
-msgstr "Ses seguru chi nche cheres cantzellare sa cronologia?"
+msgstr "Ses seguru chi nde boles cantzellare sa cronologia?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:238
 msgid "You: "
@@ -1169,9 +1169,8 @@ msgid "sent you a photo"
 msgstr "t'at imbiadu una fotografia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:122
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "t'at imbiadu unu vìdeu"
+msgstr "t'at imbiadu un'adesivu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:126
 msgid "sent you a video"
@@ -1201,42 +1200,42 @@ msgstr "%1: %2"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:152
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr "%1 nch'at imbiadu unu messàgiu a su grupu"
+msgstr "%1 at imbiadu unu messàgiu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:157
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr "%1 nch'at imbiadu una fotografia a su grupu"
+msgstr "%1 at imbiadu una fotografia a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:162
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 nch'at imbiadu unu vìdeu a su grupu"
+msgstr "%1 at imbiadu un'adesivu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr "%1 nch'at imbiadu unu vìdeu a su grupu"
+msgstr "%1 at imbiadu unu vìdeu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:173
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr "%1 nch'at imbiadu unu documentu a su grupu"
+msgstr "%1 at imbiadu unu documentu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:178
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr "%1 nch'at imbiadu unu messàgiu vocale a su grupu"
+msgstr "%1 at imbiadu unu messàgiu vocale a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:183
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr "%1 nch'at imbiadu unu cuntatu a su grupu"
+msgstr "%1 at imbiadu unu cuntatu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:188
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr "%1 nch'at imbiadu una mapa a su grupu"
+msgstr "%1 at imbiadu una mapa a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:193
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:214
@@ -1291,7 +1290,7 @@ msgstr "%1 s'est registradu"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:248
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 si nch'est iscritu a Telegram!"
+msgstr "%1 s'est iscritu a Telegram!"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:253
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
@@ -1337,7 +1336,7 @@ msgstr "Muti"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr "No est possìbile a otènnere sos datos de Telegram"
+msgstr "Non si sunt pòdidos otènnere is datos de Telegram"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
@@ -1353,7 +1352,7 @@ msgstr "Resurtados in: Messàgios"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr "Persones cun sas cales faeddas"
+msgstr "Persones cun is chi faeddas"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:292
 msgid "Recent Chats"
