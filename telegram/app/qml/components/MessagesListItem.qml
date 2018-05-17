@@ -80,7 +80,7 @@ ListItem {
         // check for links
         var myoptions = {
           callback: function( text, href ) {
-            return href ? '<a style="color:'+ theme.palette.normal.activityText +'" href="' + href + '" title="' + href + '">' + text + '</a>' : text;
+             return href ? '<a href="' + href + '" title="' + href + '" style="color:'+ theme.palette.normal.activityText +';" >' + text + '</a>' : text;
           }
         };
         var htmlText = BaLinkify.linkify(text, myoptions);
