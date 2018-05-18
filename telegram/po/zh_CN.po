@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-04 12:45+0100\n"
-"PO-Revision-Date: 2018-05-01 18:09+0000\n"
+"PO-Revision-Date: 2018-05-18 15:21+0000\n"
 "Last-Translator: Hugh Y <hugh_yan@live.com>\n"
 "Language-Team: Chinese (Simplified) "
 "<https://translate.ubports.com/projects/ubports/telegram-app/zh_Hans/>\n"
@@ -831,7 +831,7 @@ msgstr "未知"
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:420
 msgid "Mobile"
-msgstr ""
+msgstr "移动电话"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
