@@ -58,7 +58,7 @@ Item {
 
         Rectangle {
             anchors.fill: parent
-            color: "#aaffffff"
+            color: theme.palette.normal.background
 
             MouseArea {
                 anchors.fill: parent

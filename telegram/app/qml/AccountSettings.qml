@@ -175,6 +175,23 @@ Page {
             }
         }
 
+        ListItem {
+            divider.visible: false
+            height: units.gu(6)
+            ListItemLayout {
+                title.text: i18n.tr("Night Mode")
+
+                Switch {
+                    checked: Cutegram.darkTheme
+                    SlotsLayout.position: SlotsLayout.Last
+                    onCheckedChanged: {
+                        Cutegram.darkTheme = checked
+                        Theme.name = !Cutegram.darkTheme ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark"
+                    }
+                }
+            }
+        }
+
         // TODO Terminate all sessions
 
         ListItems.Header {

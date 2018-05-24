@@ -16,6 +16,7 @@ ListItem {
     height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
     divider.visible: false
+    highlightColor: theme.palette.selected.selection
 
     property real messageFrameX: back_rect.x
     property real messageFrameY: back_rect.y
@@ -77,12 +78,17 @@ ListItem {
         // Check for Usernames
         // TODO: Find a way to highlight usernames starting with @ (probably needs lookup if this is a valid username
         // check for links
-        var htmlText = BaLinkify.linkify(text);
+        var myoptions = {
+          callback: function( text, href ) {
+             return href ? '<a href="' + href + '" title="' + href + '" style="color:'+ theme.palette.normal.activityText +';" >' + text + '</a>' : text;
+          }
+        };
+        var htmlText = BaLinkify.linkify(text, myoptions);
         if (htmlText !== text) {
             return htmlText;
         }
         // linkify phone numbers if no web links were found
-        return text.replace(phoneExp, '<a href="tel:///$1">$1</a>');
+        return text.replace(phoneExp, '<a style="color:'+ theme.palette.normal.activityText +'" href="tel:///$1">$1</a>');
     }
 
     function htmlHasLinks(html) {
@@ -162,7 +168,7 @@ ListItem {
 
                 y: units.dp(1)
                 x: units.dp(1)
-                color: "#cdcdcd"    // theme.palette.normal.base (i.e. #CDCDCD) with opacity: 0.5
+                color: theme.palette.normal.base //(i.e. #CDCDCD) with opacity: 0.5
                 visible: msg_frame_box.visible
             }
 
@@ -172,7 +178,7 @@ ListItem {
                 visible: (message_item.message != "" || forward_user_name.visible) && !message_media.isSticker
                 radius: units.gu(0.7)
                 color: {
-                    return message.out ? message_status.bgMessageColor : Colors.incoming
+                    return message.out ? message_status.bgMessageColor : theme.palette.normal.overlay
                 }
             }
 
@@ -211,7 +217,7 @@ ListItem {
                     id: forward_user_name
                     fontSize: "smaller"
                     font.weight: Font.Normal
-                    color:  Colors.telegram_blue
+                    color:  theme.palette.normal.activityText
                     visible: message.fwdFromId !== 0 && message.fwdFromId.userId !== 0 && !message_media.isSticker
                     // TRANSLATORS: %1 indicates contact from whom the message was frowarded from.
                     textFormat: Text.RichText
@@ -275,7 +281,7 @@ ListItem {
                         textFormat: Text.RichText
                         text: message_item.messageHtmlText
                         //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
-                        color: message.out? "aliceblue" : "black"
+                        color: message.out? "white" : theme.palette.normal.backgroundText
                         onLinkActivated: {
                             if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
                             {

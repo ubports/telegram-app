@@ -67,6 +67,8 @@ class Cutegram : public QObject
     Q_PROPERTY(bool pushNotifications READ pushNotifications WRITE setPushNotifications NOTIFY pushNotificationsChanged)
     Q_PROPERTY(QString pushNumber     READ pushNumber        WRITE setPushNumber      NOTIFY pushNumberChanged       )
 
+    Q_PROPERTY(bool darkTheme     READ darkTheme     WRITE setDarkTheme   NOTIFY darkThemeChanged    )
+
     Q_PROPERTY(ThemeItem* currentTheme READ currentTheme NOTIFY currentThemeChanged)
     Q_PROPERTY(QStringList themes READ themes NOTIFY themesChanged)
     Q_PROPERTY(QString theme READ theme WRITE setTheme NOTIFY themeChanged)
@@ -182,6 +184,9 @@ public:
     void setSendWithEnter(bool stt);
     bool sendWithEnter() const;
 
+    void setDarkTheme(bool stt);
+    bool darkTheme() const;
+
     void setPromptForPush(bool value);
     bool promptForPush() const;
 
@@ -258,6 +263,7 @@ signals:
     void promptForPushChanged();
     void pushNotificationsChanged();
     void pushNumberChanged();
+    void darkThemeChanged();
 
     void themesChanged();
     void currentThemeChanged();

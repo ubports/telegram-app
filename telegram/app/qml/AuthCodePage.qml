@@ -200,7 +200,7 @@ TelegramPage {
             id: error_label
             width: column.width
             visible: text != ""
-            color: "red"
+            color: UbuntuColors.red
         }
     }
 }

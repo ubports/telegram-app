@@ -18,7 +18,7 @@ Rectangle {
     id: smsg
     height: txt.height + units.gu(2)
     z: 2
-    color: channelToolbar ? "transparent" : "white"
+    color: channelToolbar ? "transparent" : theme.palette.normal.background
 
     property Dialog currentDialog
     property bool isChat: currentDialog != telegramObject.nullDialog ? currentDialog.peer.chatId != 0 : false
@@ -97,7 +97,8 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: units.dp(6)
         text: isMuted ? i18n.tr("Unmute") : i18n.tr("Mute")
-        //iconName: "notification"
+//        iconName: "notification"
+        color: theme.palette.normal.overlaySecondaryText
         onClicked: {
             //if (override) return;
 
@@ -213,7 +214,7 @@ Rectangle {
         height: units.gu(4.3)
 
         // To work on desktop change the following line to:
-        // enabled: True
+        // enabled: true
         enabled: Connectivity.online && telegramObject.connected
 
         // TRANSLATORS: Placeholder for the message input text area.
@@ -342,13 +343,11 @@ Rectangle {
             }
         }
 
-        Image {
+        Icon {
             id: sticker_image
             anchors.centerIn: parent
             height: units.gu(2.5)
             width: height
-            sourceSize: Qt.size(width, height)
-            fillMode: Image.PreserveAspectFit
             source: Qt.resolvedUrl("qrc:/qml/files/msg_panel_stickers.svg")
             visible: !messagePlaceholder.visible
         }
@@ -407,7 +406,7 @@ Rectangle {
         visible: !messagePlaceholder.visible && !channelToolbar
 
         // To work on desktop change the following line to:
-        // enabled: True
+        // enabled: true
         enabled: Connectivity.online && telegramObject.connected
 
         MouseArea {
@@ -424,7 +423,7 @@ Rectangle {
                     PropertyChanges {
                         target: send_image
                         name: "send"
-                        color: send_mouse_area.enabled ? UC.UbuntuColors.blue : UC.UbuntuColors.silk
+                        color: send_mouse_area.enabled ? UbuntuColors.blue : UbuntuColors.silk
                     }
                 },
                 State {

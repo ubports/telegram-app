@@ -73,6 +73,7 @@
         <file>qml/files/attachment_download.png</file>
         <file>qml/files/attachment_play.png</file>
         <file>qml/files/background_hd.jpg</file>
+        <file>qml/files/background_hd_dark.jpg</file>
         <file>qml/files/call.png</file>
         <file>qml/files/tick_double_white2.svg</file>
         <file>qml/files/tick_single_white.svg</file>
@@ -110,6 +111,7 @@
         <file>qml/files/symbol_lock.png</file>
         <file>qml/files/symbol_group.png</file>
         <file>qml/files/telegram_background.png</file>
+        <file>qml/files/telegram_background_dark.png</file>
         <file>qml/files/user_aqua.png</file>
         <file>qml/files/user_blue.png</file>
         <file>qml/files/user_green.png</file>
@@ -133,6 +135,7 @@
         <file>qml/InstallStickerDialog.qml</file>
         <file>qml/files/eyeWhite.svg</file>
         <file>qml/files/eye.svg</file>
-		<file>qml/files/broadcast.svg</file>
+        <file>qml/files/broadcast.svg</file>
+        <file>qml/components/Icon.qml</file>
     </qresource>
 </RCC>

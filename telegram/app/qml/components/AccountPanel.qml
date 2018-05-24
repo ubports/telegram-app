@@ -50,7 +50,7 @@ Panel {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: "white"
+        color: theme.palette.normal.background
     }
 
     EdgeShadow {
@@ -135,6 +135,26 @@ Panel {
                 onClicked: {
                     panel.close();
                     panel.settingsClicked();
+                }
+            }
+            AccountPanelItem {
+                objectName:"panelDark"
+                icon: "night-mode"
+                text: i18n.tr("Dark theme")
+                showDivider: false
+                onClicked: sswitch.checked = !sswitch.checked
+                Switch {
+                    id: sswitch
+                    checked: Cutegram.darkTheme
+                    anchors {
+                        right: parent.right
+                        rightMargin: units.gu(2)
+                        verticalCenter: parent.verticalCenter
+                    }
+                    onCheckedChanged: {
+                        Cutegram.darkTheme = checked
+                        Theme.name = !Cutegram.darkTheme ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark"
+                    }
                 }
             }
             AccountPanelItem {

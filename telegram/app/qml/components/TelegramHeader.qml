@@ -126,6 +126,12 @@ PageHeader {
     contents: Item {
         anchors.fill: parent
 
+        Rectangle {
+            anchors.fill: parent
+            z:-1
+            color: theme.palette.normal.background
+        }
+
         Avatar {
             id: headerImage
             width: height
@@ -145,16 +151,19 @@ PageHeader {
             id: connectingIndicator
             anchors.fill: headerImage
             visible: isConnecting || !Connectivity.online || telegram.busy
-            color: "white"
+            color: theme.palette.normal.background
             Icon {
                 name: telegram.busy? "sync-updating" : isConnecting? "sync-error" : "sync-paused"
                 anchors.fill: parent
+                color: Theme.palette.normal.backgroundSecondaryText
             }
             SequentialAnimation {
                 running: visible
                 loops: Animation.Infinite
                 PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 1; duration: 500 }
-                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 1000 }
+                PropertyAnimation { duration: 300 }
+                PropertyAnimation { target: connectingIndicator; property: "opacity"; to: 0.0; duration: 800 }
+                PropertyAnimation { duration: 300 }
             }
         }
 
@@ -238,7 +247,7 @@ PageHeader {
             wrapMode: Text.WordWrap
             maximumLineCount: 1
             text: header.subtitle
-            color: header.isOnline ? Colors.dark_blue : Colors.grey
+            color: header.isOnline ? UbuntuColors.blue : theme.palette.normal.backgroundTertiaryText
 
             Connections {
                 target: header

@@ -27,3 +27,8 @@ var chat_section    = "#99a6bcca"
 var telegram_blue   = "#53749d"
 var secret_start    = "#0053749d"
 var secret_end      = "#ff53749d"
+
+//https://github.com/CanonicalLtd/desktop-design/blob/master/Colour/colour.png
+var new_blue        = "#335280"
+//https://docs.google.com/document/d/1CjPvxz_dk9Cn5HiZ_d0POYtqNAHjO1c5omAbNjZJiKg
+var new_green       = "#0E8420"

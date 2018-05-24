@@ -40,7 +40,7 @@ Item {
             id: back_frame
             anchors.fill: parent
             anchors.topMargin: units.gu(1)
-            color: Colors.white
+            color: theme.palette.normal.background
 
             Rectangle {
                 width: parent.width
@@ -97,7 +97,7 @@ Item {
                 elide: Text.ElideRight
                 maximumLineCount: 1
                 text: user.firstName + " " + user.lastName
-                color: Colors.black
+                color: theme.palette.normal.backgroundText
             }
 
             MouseArea {

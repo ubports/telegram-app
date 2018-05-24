@@ -12,7 +12,7 @@ import "../js/colors.js" as Colors
 ListItem {
     id: contact_item
     height: units.gu(8)
-    color: selected ? Colors.list_pressed : Colors.white
+    color: selected ? theme.palette.selected.background : theme.palette.normal.background
     divider.visible: false
 
     property Telegram telegram
@@ -112,6 +112,7 @@ ListItem {
         maximumLineCount: 1
         font.pixelSize: FontUtils.sizeToPixels("large")
         text: title
+        color: theme.palette.normal.backgroundText
     }
 
     Text {
@@ -133,7 +134,7 @@ ListItem {
         wrapMode: Text.WrapAnywhere
         maximumLineCount: 1
         font.pixelSize: FontUtils.sizeToPixels("medium")
-        color: isOnline ? Colors.dark_blue : Colors.grey
+        color: isOnline ? theme.palette.normal.activityText : theme.palette.normal.backgroundTertiaryText
         visible: text !== ""
         text: subtitle
     }

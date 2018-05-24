@@ -1,4 +1,4 @@
-import QtQuick 2.3
+import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 
@@ -26,7 +26,7 @@ Dialog {
 
     Button {
         text: altText
-        strokeColor: UbuntuColors.lightGrey
+        strokeColor: theme.palette.normal.overlaySecondaryText
         visible: text.length > 0
         onClicked: optionSelected(onAlt)
     }
@@ -34,7 +34,7 @@ Dialog {
     Button {
         objectName: "cancelButton"
         text: cancelText
-        color: UbuntuColors.lightGrey
+        color: theme.palette.normal.overlaySecondaryText
         onClicked: optionSelected(onCancel)
     }
 

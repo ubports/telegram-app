@@ -31,7 +31,7 @@ Item {
             id: reply_separator
             width: units.dp(2)
             height: parent.height
-            color:  Colors.telegram_blue
+            color: theme.palette.normal.activityText
         }
 
         Column {
@@ -43,7 +43,7 @@ Item {
                 id: name_text
                 fontSize: "small"
                 font.weight: Font.Normal
-                color: Colors.telegram_blue
+                color: theme.palette.normal.activityText
                 text: {
                     if (!realMessage)
                         return ""
@@ -130,13 +130,13 @@ Item {
                 id: txt
                 width: maximumWidth
                 fontSize: "small"
-                font.weight: Font.Normal
                 horizontalAlignment: Text.AlignLeft
                 visible: text.length != 0
                 maximumLineCount: 1
                 elide: Text.ElideRight
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: realMessage ? realMessage.message : ""
+                color: message.out? "white" : theme.palette.normal.backgroundText
             }
         }
     }
