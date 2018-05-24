@@ -140,7 +140,7 @@ Panel {
             AccountPanelItem {
                 objectName:"panelDark"
                 icon: "night-mode"
-                text: i18n.tr("Dark theme")
+                text: i18n.tr("Night mode")
                 showDivider: false
                 onClicked: sswitch.checked = !sswitch.checked
                 Switch {

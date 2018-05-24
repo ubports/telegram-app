@@ -459,6 +459,11 @@ msgstr ""
 msgid "Send by Enter"
 msgstr ""
 
+#: /home/mike/Documenti/UTapps/telegram-app/telegram/app/qml/AccountSettings.qml:182
+#: /home/mike/Documenti/UTapps/telegram-app/telegram/app/qml/components/AccountPanel.qml:143
+msgid "Night Mode"
+msgstr ""
+
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 msgid "Support"
