@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-05-25 09:04+0000\n"
-"Last-Translator: Matteo Mandis <mandismatteo@gmail.com>\n"
+"PO-Revision-Date: 2018-05-25 09:14+0000\n"
+"Last-Translator: Flavia <flavia.efloris@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
@@ -724,8 +724,8 @@ msgstr "Lestru"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
 msgstr ""
-"<b>Telegram</b> imbiat e retzit messàgios a sa lestra<br> prus de cale si "
-"siat àtera aplicatzione"
+"<b>Telegram</b> imbiat e retzit messàgios prus a lestru<br> de cale si siat "
+"àtera aplicatzione"
 
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:27
@@ -745,7 +745,7 @@ msgstr "Seguru"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr "<b>Telegram</b> amparat sos messàgios<br> dae sos atacos de sos hacker"
+msgstr "<b>Telegram</b> amparat is messàgios<br> dae is atacos de is hacker"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:37
@@ -766,7 +766,7 @@ msgstr "Archiviatzione Web"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
-"<b>Telegram</b> permitit de nch'intrare a sos messàgios<br> dae prus "
+"<b>Telegram</b> permitit de nch'intrare a is messàgios<br> dae prus "
 "dispositivos"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
@@ -776,7 +776,7 @@ msgstr "Privada"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr "<b>Telegram</b> tenet sos messàgios critografados<br>"
+msgstr "<b>Telegram</b> tenet is messàgios critografados<br>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
@@ -906,7 +906,7 @@ msgstr "Ammenta·mi·lu luego"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:498
 msgid "Don't want notifications"
-msgstr "Non chèrgio notìficas"
+msgstr "Non bògio notìficas"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:187
@@ -1121,19 +1121,19 @@ msgstr "d MMM"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
-msgstr "oe a sas %1"
+msgstr "oe a is %1"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
-msgstr "eris a sas %1"
+msgstr "eris a is %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
-msgstr "%1 a sas %2"
+msgstr "%1 a is %2"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1175,7 +1175,7 @@ msgstr "t'at imbiadu una fotografia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
 msgid "sent you a sticker"
-msgstr "t'at imbiadu un'adesivu"
+msgstr "t'at imbiadu unu adesivu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
@@ -1310,7 +1310,7 @@ msgstr "%1 in %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:269
 msgid "updated profile photo"
-msgstr "agiornada sa fotografia de su profilu"
+msgstr "fotografia de su profilu agiornada"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:274
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:279
