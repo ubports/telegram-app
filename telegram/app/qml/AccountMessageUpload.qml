@@ -15,12 +15,11 @@ Item {
     property bool uploading: message.upload.fileId != 0
     property bool isSticker: telegram.documentIsSticker(message.media.document)
 
-    Image {
+    Icon {
         id: upload_img
         visible: uploading
         anchors.fill: parent
         smooth: true
-        fillMode: isSticker? Image.PreserveAspectFit : Image.PreserveAspectCrop
         source: {
             if(!uploading)
                 return ""
@@ -31,14 +30,16 @@ Item {
             else
                 return "image://theme/stock_document" 
         }
+        color: {
+            if(!uploading)
+               return Qt.rgba(0.0, 0.0, 0.0, 0.0)
 
-        sourceSize: {
-            var ratio = imageSize.width/imageSize.height
-            if(ratio>1)
-                return Qt.size( height*ratio, height)
+            var isImage = Cutegram.fileIsImage(message.upload.location)
+            if(isImage)
+               return Qt.rgba(0.0, 0.0, 0.0, 0.0)
             else
-                return Qt.size( width, width/ratio)
-        }
+               return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
+         }
 
         property size imageSize: uploading? Cutegram.imageSize(message.upload.location) : Qt.size(0,0)
     }
