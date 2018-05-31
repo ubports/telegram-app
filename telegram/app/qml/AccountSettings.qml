@@ -180,7 +180,6 @@ Page {
             height: units.gu(6)
             ListItemLayout {
                 title.text: i18n.tr("Night mode")
-
                 Switch {
                     checked: Cutegram.darkTheme
                     SlotsLayout.position: SlotsLayout.Last
