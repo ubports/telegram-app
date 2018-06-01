@@ -1,15 +1,12 @@
-# **Telegram for Ubuntu**
+# **Telegram for Ubuntu Touch**
 
 ## **TL;DR**
-    "./setup.sh -t mobile -dbc" for a full mobile build
+    "clickable" for a full mobile build[1]
     "./setup.sh -t desktop -db" for a full desktop build
 
 This build setup has been tested on:
     - Ubuntu Vivid   15.04 with Overlay PPA enabled
-    - Ubuntu Wily    15.10
     - Ubuntu Xenial  16.04
-    - Ubuntu Yakkety 16.10
-
 
 The following instructions assume you downloaded Telegram for Ubuntu source and changed ("cd") to the project's root directory.
 
@@ -58,7 +55,7 @@ The following instructions assume you downloaded Telegram for Ubuntu source and 
     as the path to qmake or make, the path to system libraries, the name of the chroot, etc.
     The env variables are grouped at the beginning of setup.sh, to make the customization easier.
     
-4)  Build Telegram for Ubuntu
+4)  Build Telegram for Ubuntu Touch
 
         $ ./setup.sh -t <build_type> -b
     
