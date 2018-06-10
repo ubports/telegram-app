@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2017-09-29 07:33+0000\n"
-"Last-Translator: Jeff <jeffi27@live.at>\n"
-"Language-Team: Albanian <https://translate.ubports.com/projects/ubports/"
-"telegram-app/sq/>\n"
+"PO-Revision-Date: 2018-06-05 11:01+0000\n"
+"Last-Translator: Jeff Gashi <jeffi27@live.at>\n"
+"Language-Team: Albanian <https://translate.ubports.com/projects/ubports"
+"/telegram-app/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,7 +73,7 @@ msgstr "Grupë e re"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:342
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr "Ok"
+msgstr "OK"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
@@ -171,7 +171,7 @@ msgstr "Info e Grupit"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Informacion i kanalit"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -245,7 +245,7 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b> ju ka futur"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> braktisi Grupin"
 
@@ -273,7 +273,7 @@ msgstr "<b>%1</b> ju hoqi juve"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:86
 #, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "<b>%1</b> hoqi <b>%2</b>"
+msgstr "<b>%1</b> ka hoq<b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
 #, qt-format
@@ -392,12 +392,12 @@ msgstr "Zhgjidh bisedën"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
 msgid "Unmute"
-msgstr ""
+msgstr "Ktheje me zë"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
 msgid "Mute"
-msgstr ""
+msgstr "I heshtur"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:221
@@ -421,7 +421,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
 msgid "Settings"
-msgstr "Konfigurimi"
+msgstr "Cilsimet"
 
 #. TRANSLATORS: Action text to change profile photo.
 #. TRANSLATORS: Action text to change group photo.
@@ -470,7 +470,7 @@ msgstr "Dërgo më Enter"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Night Mode"
-msgstr ""
+msgstr "Modaliteti i natës"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:199
@@ -518,7 +518,7 @@ msgstr "Lidhur"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
 #, qt-format
 msgid "last seen %1"
-msgstr "Të shiquara së fundi %1"
+msgstr "shiquara së fundi %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:306
@@ -564,7 +564,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr "Emri i përdoruesit %1 është i disponueshëm."
+msgstr "Emri i përdoruesit »%1« është i disponueshëm."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
@@ -606,7 +606,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr "U kry"
+msgstr "Përfundoi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
@@ -1056,9 +1056,9 @@ msgid "%1 added you"
 msgstr "%1 ju futi juve"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 braktisi Grupin"
+msgstr "%1 braktisi grupin"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1174,9 +1174,8 @@ msgid "sent you a photo"
 msgstr "ka dërguar juve një imazh"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "ka dërguar juve një video"
+msgstr "Ka dërguar juve një video"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
@@ -1214,9 +1213,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1 ka dërguar një imazh tek Grupi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 ka dërguar një video tek Grupi"
+msgstr "%1 ka dërguar një video tek grupi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format

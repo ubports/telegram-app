@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-05-11 20:27+0000\n"
-"Last-Translator: Eran <etherpulse@gmail.com>\n"
-"Language-Team: Hebrew <https://translate.ubports.com/projects/ubports/"
-"telegram-app/he/>\n"
+"PO-Revision-Date: 2018-06-03 17:17+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://translate.ubports.com/projects/ubports"
+"/telegram-app/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,14 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
-#, fuzzy
 msgid "Add to contacts"
 msgstr "הוספה לאנשי קשר"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:26
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:45
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:123
-#, fuzzy
 msgid "Contacts"
 msgstr "אנשי קשר"
 
@@ -49,7 +47,7 @@ msgstr "הוספה"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr "אחורה"
+msgstr "חזרה"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
@@ -58,12 +56,10 @@ msgstr "חיפוש באנשי קשר…"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
-#, fuzzy
 msgid "New Secret Chat"
 msgstr "שיחה סודית חדשה"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
-#, fuzzy
 msgid "Add to group"
 msgstr "הוספה לקבוצה"
 
@@ -82,27 +78,23 @@ msgstr "בסדר"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
-#, fuzzy
 msgid "Chat title"
 msgstr "כותרת שיחה"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
-#, fuzzy
 msgid "Add Contact"
 msgstr "הוספת איש קשר"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
-#, fuzzy
 msgid "From Address Book"
 msgstr "הוספה מספר הכתובות"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:367
-#, fuzzy
 msgid "Enter Details"
-msgstr "הכניסו פרטים"
+msgstr "נא להקליד פרטים"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
@@ -124,7 +116,6 @@ msgstr "ביטול"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:110
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/app/telegram.desktop.h:1
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:1
-#, fuzzy
 msgid "Telegram"
 msgstr "טלגרם"
 
@@ -194,7 +185,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:46
 msgid "Select all"
-msgstr "בחר הכל"
+msgstr "בחירת הכול"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:58
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:246

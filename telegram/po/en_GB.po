@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-05-05 20:41+0000\n"
-"Last-Translator: Jolan <jo@jolanberard.com>\n"
-"Language-Team: English (United Kingdom) <https://translate.ubports.com/"
-"projects/ubports/telegram-app/en_GB/>\n"
+"PO-Revision-Date: 2018-06-10 19:53+0000\n"
+"Last-Translator: Eran <etherpulse@gmail.com>\n"
+"Language-Team: English (United Kingdom) "
+"<https://translate.ubports.com/projects/ubports/telegram-app/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,7 +47,7 @@ msgstr "Add"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr "Back"
+msgstr "Tillbaka"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
@@ -101,6 +101,7 @@ msgstr "Enter Details"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:353
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
+#, fuzzy
 msgid "Cancel"
 msgstr "Cancel"
 
@@ -195,8 +196,9 @@ msgstr "Forward"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:74
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:232
+#, fuzzy
 msgid "Delete"
-msgstr "Supprimer"
+msgstr "Delete"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
@@ -368,7 +370,7 @@ msgstr "Edit name"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:21
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:51
 msgid "Save"
-msgstr "Enregistrer"
+msgstr "Spara"
 
 #. TRANSLATORS: Error message when first name was not provided.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:33
