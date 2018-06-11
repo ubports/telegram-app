@@ -63,14 +63,57 @@ Item {
                     break
 
                 case MessageAction.ChatAddUser:
-                    if (fromUser.id == telegramObject.me)
-                        res = i18n.tr("You added <b>%1</b>").arg(userName)
-                    else if (user.id == telegramObject.me)
-                        res = i18n.tr("<b>%1</b> added you").arg(fromUserName)
-                    else if (userName=="")
-                        res = i18n.tr("<b>%1</b> joined the group").arg(fromUserName)
-                    else
-                        res = i18n.tr("<b>%1</b> added <b>%2</b>").arg(fromUserName).arg(userName)
+                    {
+                        var singleUserId = action.userId
+                        if (singleUserId == 0 && action.users.length == 1)
+                            singleUserId = action.users[0]
+                        if (singleUserId != 0)
+                        {
+                            var whoUser = telegramObject.user(singleUserId)
+                            if (whoUser == null)
+                            {
+                                res = "Unknown error, report this to Github plz!"
+                                break;
+                            }
+                            var whoUserName = whoUser.firstName + " " + whoUser.lastName
+                            whoUserName = whoUserName.trim()
+                            if (singleUserId == message.fromId)
+                            {
+                                if (isChannel && !chat.megaGroup)
+                                    res = i18n.tr("You joined the channel")
+                                else
+                                {
+                                    if (isChannel && chat.megaGroup)
+                                        if (singleUserId == telegramObject.me)
+                                            res = i18n.tr("You joined the group")
+                                        else
+                                            res = i18n.tr("<b>%1</b> joined the group").arg(fromUserName)
+                                    else if (message.out)
+                                        res = i18n.tr("You returned to the group")
+                                    else
+                                        res = i18n.tr("<b>%1</b> returned to the group").arg(fromUserName)
+                                }
+                            }
+                            else
+                            {
+                                if (message.out)
+                                    res = i18n.tr("You added <b>%1</b>").arg(whoUserName)
+                                else if (singleUserId == telegramObject.me)
+                                {
+                                    res = i18n.tr("<b>%1</b> added you").arg(fromUserName)
+                                }
+                                else
+                                    res = i18n.tr("<b>%1</b> added <b>%2</b>").arg(fromUserName).arg(whoUserName)
+                            }
+                        }
+                        else
+                        {
+                            if (message.out)
+                                res = i18n.tr("You added multiple users")
+                            else
+                                res = i18n.tr("<b>%1</b> added multiple users").arg(fromUserName)
+                        }
+                    }
                     break
 
                 case MessageAction.ChatDeleteUser:
