@@ -73,6 +73,7 @@ UCP.Dialog {
     }
     UC.Button {
         text: i18n.tr("Close")
+        color: theme.palette.normal.overlaySecondaryText
         onClicked: PopupUtils.close(root)
     }
 }
