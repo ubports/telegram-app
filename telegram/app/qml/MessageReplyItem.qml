@@ -52,16 +52,23 @@ Item {
                 }
             }
 
-            Image {
+            Icon {
                 id: media_img
                 width: height*imageSize.width/imageSize.height
                 height: units.gu(6)
-                fillMode: Image.PreserveAspectFit
                 asynchronous: true
-                sourceSize: Qt.size(width,height)
                 smooth: true
                 visible: path.length != 0
                 source: path
+                color: switch( media.messageMediaEnum )
+                    {
+                    case MessageMedia.Unsupported:
+                    case MessageMedia.Audio:
+                        return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
+
+                    default:
+                        return Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                    }
 
                 property size imageSize: Cutegram.imageSize(source)
                 property variant media: realMessage ? realMessage.media : 0
