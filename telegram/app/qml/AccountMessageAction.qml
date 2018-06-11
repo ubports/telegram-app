@@ -46,6 +46,8 @@ Item {
                 var fromUserName = fromUser.firstName + " " + fromUser.lastName
                 userName = userName.trim()
                 fromUserName = fromUserName.trim()
+                if (fromUserName.length == 0)
+                    fromUserName = i18n.tr("Deleted Account")
 
                 switch(action.messageActionEnum) {
                 case MessageAction.ChatCreate:
