@@ -250,6 +250,7 @@ Rectangle {
                     Action {
                         iconName: "mail-reply"
                         text: i18n.tr("Reply")
+                        visible: !isChannel || isChannel && chat.megaGroup
                         onTriggered: {
                             acc_msg_list.replyToRequest(message_item.message.id, currentDialog.peer.channelId);
                         }
