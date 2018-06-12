@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-06-12 09:54+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2018-06-12 15:38+0000\n"
+"Last-Translator: Ari Börde Kröyer <ari.kroyer@online.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://translate.ubports.com/projects/ubports/telegram-app/nb/>\n"
 "Language: nb\n"
@@ -203,7 +203,7 @@ msgstr "Slett"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
-msgstr "Logg Inn"
+msgstr "Logg inn"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
@@ -334,7 +334,7 @@ msgstr "Info om klistremerkepakke"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:413
 msgid "Secret chat requested."
-msgstr "Hemmelig samtale forespurt."
+msgstr "Lukket samtale forespurt."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:425
 msgid ""
@@ -551,7 +551,7 @@ msgstr "sett innen en måned siden"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
-msgstr "sett for lenge siden"
+msgstr "sist sett for lenge siden"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:339
 msgid ""
@@ -720,7 +720,7 @@ msgstr "Velkommen til en epoke<br>med raske og sikre meldingstjenester"
 #. TRANSLATORS: Adjective, describing fast application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr "Raskt"
+msgstr "Rask"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
@@ -1145,22 +1145,22 @@ msgstr "t:mm:ss"
 #. TRANSLATORS: Format string: time.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:289
 msgid "HH:mm"
-msgstr "HH:mm"
+msgstr "tt:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:293
 msgid "ddd HH:mm"
-msgstr "ddd. HH:mm"
+msgstr "ddd tt:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:297
 msgid "dd MMM"
-msgstr "dd. MMM."
+msgstr "dd mmm"
 
 #. TRANSLATORS: Format string: full date
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:300
 msgid "dd MMM yy"
-msgstr "d. MMM. yyyy"
+msgstr "dd mmm åååå"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:120
 msgid "sent you a message"
@@ -1292,7 +1292,7 @@ msgstr "%1 er sjekket inn"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:254
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 registrerte seg på Telegram."
+msgstr "%1 registrerte seg på Telegram!"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:265
