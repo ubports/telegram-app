@@ -24,7 +24,8 @@ SOURCES += main.cpp \
     cutegramenums.cpp \
     textemojiwrapper.cpp \
     emoticonsmodel.cpp \
-    stickerfilemanager.cpp
+    stickerfilemanager.cpp \
+    qtdtextformatter.cpp
 
 include(qmake/qtcAddDeployment.pri)
 include(asemantools/asemantools.pri)
@@ -39,7 +40,8 @@ HEADERS += \
     themeitem.h \
     textemojiwrapper.h \
     emoticonsmodel.h \
-    stickerfilemanager.h
+    stickerfilemanager.h \
+    qtdtextformatter.h
 
 RESOURCES += telegram.qrc
 

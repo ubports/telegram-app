@@ -263,7 +263,7 @@ ListItem {
                     anchors.left: parent.left
                     visible: !hasMedia
 
-                    Label {
+                    TextEdit {
                         id: message_text
                         objectName: "messageText"
 
@@ -274,10 +274,11 @@ ListItem {
                         // units.dp is used here, because Label wraps too early as compared to TextEdit.
                         width: Math.min(units.dp(htmlWidth), maximumWidth)
                         height: contentHeight
-                        fontSize: message_item.hasMedia ? "small" : "medium"
+                        readOnly: true
+                        font.pointSize: message_item.hasMedia ? 24 : 28
                         font.weight: Font.Light
                         horizontalAlignment: Text.AlignLeft
-                        wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                        wrapMode: Text.Wrap
                         textFormat: Text.RichText
                         text: message_item.messageHtmlText
                         //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
@@ -296,6 +297,20 @@ ListItem {
                         }
 
                         property real htmlWidth: Cutegram.htmlWidth(text)
+                    }
+
+                    Loader {
+                        id: entityFormatter
+                        active: false
+                        asynchronous: true
+                        sourceComponent: Component {
+                            TextFormatter {
+                                codeColor: Suru.color(Suru.LightBlue, 0.8)
+                                linkColor: Suru.color(Suru.LightBlue)
+                                textDocument: message_text.textDocument
+                                content: message_item.message
+                            }
+                        }
                     }
 
                     MessageStatus {
