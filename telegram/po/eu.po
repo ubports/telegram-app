@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-06-14 12:52+0000\n"
+"PO-Revision-Date: 2018-06-14 13:03+0000\n"
 "Last-Translator: Aitzol Berasategi <aitzol76@gmail.com>\n"
 "Language-Team: Basque <https://translate.ubports.com/projects/ubports"
 "/telegram-app/eu/>\n"
@@ -247,7 +247,7 @@ msgstr "<b>%1</b>-(e)k gehitu egin zaitu"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
 #, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b>(e)k taldea utzi du"
+msgstr "<b>%1</b> taldera batu da"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:73
 #, qt-format
@@ -416,7 +416,7 @@ msgstr "Grabaketa ikonoa sakaturik mantendu behar duzu"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Mesedez baimendu mikrofono sarbidea Sistemaren Ezarpenak > Segurtasuna eta "
-"Pribatasuna atalean."
+"Pribatutasuna atalean."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
@@ -564,7 +564,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr "%1 dago erabilgarri."
+msgstr "%1 erabilgarri dago."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
@@ -731,7 +731,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr "Dohainekoa"
+msgstr "Doan"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
@@ -1022,7 +1022,7 @@ msgstr "Taldearen izena aldatu duzu %1-(e)ra"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:279
 #, qt-format
 msgid "%1 changed the group title to %2"
-msgstr "%1-ek taldearen izena aldatu du %2-(e)ra"
+msgstr "%1-(e)k taldearen izena aldatu du %2-(e)ra"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:286
 msgid "Voice message"
@@ -1030,7 +1030,7 @@ msgstr "Ahots mezua"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
 msgid "Sticker"
-msgstr "Eranskina"
+msgstr "Eranskailu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
 #, qt-format
@@ -1122,7 +1122,7 @@ msgstr "MMM-(a)k d"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
-msgstr "gaur %1-tan"
+msgstr "gaur %1-(e)tan"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:57
