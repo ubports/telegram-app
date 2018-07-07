@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-05-25 23:21+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2018-06-12 15:38+0000\n"
+"Last-Translator: Ari Börde Kröyer <ari.kroyer@online.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://translate.ubports.com/projects/ubports/telegram-app/nb/>\n"
 "Language: nb\n"
@@ -79,7 +79,7 @@ msgstr "OK"
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
-msgstr "Samtalenavn"
+msgstr "Sludringstittel"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
@@ -127,19 +127,19 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
-"Vil du legge til %1 i %2?\n"
+"Legg til %1 i %2?\n"
 "\n"
-"Antall nylige meldinger som skal sendes:"
+"Antall nylige meldinger som skal videresendes:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:502
 msgid "Contacts imported"
-msgstr "Kontakter importert"
+msgstr "Kontakter lagt til"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:505
 msgid "No contacts imported"
-msgstr "Ingen kontakter importert"
+msgstr "Ingen kontakter lagt til"
 
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:512
@@ -203,7 +203,7 @@ msgstr "Slett"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:50
 msgid "Sign In"
-msgstr "Logg Inn"
+msgstr "Logg inn"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
@@ -212,9 +212,8 @@ msgid "Sign Up"
 msgstr "Registrer deg"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:215
-#, fuzzy
 msgid "Invalid password"
-msgstr "Ugyldig telefonkode"
+msgstr "Ugyldig passord"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:54
 #, qt-format
@@ -222,35 +221,34 @@ msgid "You have invited %1 to join a secret chat."
 msgstr "Du har invitert %1 til å ta del i hemmelig sludring."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 laget en hemmelig samtale"
+msgstr "%1 har invitert deg til en lukket samtale."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:59
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:305
-#, fuzzy
 msgid "You created the group"
-msgstr "%1 laget gruppa «%2»"
+msgstr "Du opprettet gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> created the group"
-msgstr "%1 laget gruppa «%2»"
+msgstr "<b>%1</b> laget gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:67
-#, fuzzy, qt-format
+#, qt-format
 msgid "You added <b>%1</b>"
-msgstr "Videresendt fra <b>%1</b>"
+msgstr "Du la til <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:69
 #, qt-format
 msgid "<b>%1</b> added you"
-msgstr "<b>%1</b> lar lagt deg til"
+msgstr "<b>%1</b> la deg til"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "%1 forlot gruppa"
+msgstr "<b>%1</b> ble med i gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:73
 #, qt-format
@@ -259,65 +257,63 @@ msgstr "<b>%1</b> la til <b>%2</b>"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:79
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> left the group"
-msgstr "%1 forlot gruppa"
+msgstr "<b>%1</b> forlot gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:82
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed <b>%1</b>"
-msgstr "Videresendt fra <b>%1</b>"
+msgstr "Du fjernet <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:84
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed you"
-msgstr "%1 fjernet %2"
+msgstr "<b>%1</b> fjernet deg"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:86
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
-msgstr "%1 fjernet %2"
+msgstr "<b>%1</b> fjernet <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group name to %1"
-msgstr "%1 endret gruppenavn til «%2»"
+msgstr "Du endret gruppenavnet til %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:97
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group name to %2"
-msgstr "%1 endret gruppenavn til «%2»"
+msgstr "<b>%1</b> endret gruppenavnet til %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:104
-#, fuzzy
 msgid "You changed the group photo"
-msgstr "%1 endret gruppebilde"
+msgstr "Du endret gruppebildet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:106
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> changed the group photo"
-msgstr "%1 endret gruppebilde"
+msgstr "<b>%1</b> endret gruppebilde"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:112
-#, fuzzy
 msgid "You removed the group photo"
-msgstr "%1 slettet gruppebilde"
+msgstr "Du slettet gruppebildet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> removed the group photo"
-msgstr "%1 slettet gruppebilde"
+msgstr "<b>%1</b> slettet gruppebildet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:119
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:337
 msgid "You joined the group via invite link"
-msgstr "Du tok del i gruppen via invitasjonslenke"
+msgstr "Du knyttet deg til gruppa via invitasjonslenke"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:121
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr "<b>%1</b> tok del i gruppen via invitasjonslenke"
+msgstr "<b>%1</b> tok knyttet seg til gruppa via invitasjonslenke"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:137
@@ -338,7 +334,7 @@ msgstr "Info om klistremerkepakke"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:413
 msgid "Secret chat requested."
-msgstr "Hemmelig samtale forespurt."
+msgstr "Lukket samtale forespurt."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:425
 msgid ""
@@ -418,10 +414,10 @@ msgid "You have to press and hold the record icon"
 msgstr "Du må trykke og holde opptaksikonet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:791
-#, fuzzy
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
-"Tildel mikrofontilgang i Systeminnstillinger > Sikkerhet og personvern."
+"Vennligst tildel mikrofontilgang i Systeminnstillinger > Sikkerhet og "
+"personvern."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
@@ -555,7 +551,7 @@ msgstr "sett innen en måned siden"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
-msgstr "sett for lenge siden"
+msgstr "sist sett for lenge siden"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:339
 msgid ""
@@ -679,9 +675,8 @@ msgstr "Velg et land"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:65
-#, fuzzy
 msgid "Search countries..."
-msgstr "Søk etter kontakter …"
+msgstr "Søk etter land…"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:73
@@ -694,9 +689,8 @@ msgid "Number correct?"
 msgstr "Er nummeret riktig?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:165
-#, fuzzy
 msgid "Phone number already exists."
-msgstr "Telefonnummer (påkrevd)"
+msgstr "Telefonnummeret er registrert fra før."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:16
 msgid "Enter Password"
@@ -708,7 +702,7 @@ msgstr "Passord"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
-msgstr "Installer"
+msgstr "Installér"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
@@ -726,7 +720,7 @@ msgstr "Velkommen til en epoke<br>med raske og sikre meldingstjenester"
 #. TRANSLATORS: Adjective, describing fast application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:22
 msgid "Fast"
-msgstr "Raskt"
+msgstr "Rask"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:23
 msgid "<b>Telegram</b> delivers messages faster<br> than any other application"
@@ -803,20 +797,17 @@ msgstr "Legg til deltaker"
 #. TRANSLATORS: Action text to change group chat title.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:166
-#, fuzzy
 msgid "Change Group Title"
-msgstr "%1 endret gruppenavn"
+msgstr "Endre gruppenavn"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:180
-#, fuzzy
 msgid "New group chat title"
-msgstr "Samtalenavn"
+msgstr "Nytt samtalenavn"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:188
-#, fuzzy
 msgid "Change Title"
-msgstr "Samtalenavn"
+msgstr "Endre samtalenavn"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -1020,38 +1011,36 @@ msgid "typing..."
 msgstr "skriver …"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:277
-#, fuzzy, qt-format
+#, qt-format
 msgid "You changed the group title to %1"
-msgstr "%1 endret gruppenavn til «%2»"
+msgstr "Du endret gruppenavnet til %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:279
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 changed the group title to %2"
-msgstr "%1 endret gruppenavn til «%2»"
+msgstr "%1 endret gruppenavnet til «%2»"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:286
-#, fuzzy
 msgid "Voice message"
-msgstr "Skriv melding"
+msgstr "Stemmemelding"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
 msgid "Sticker"
 msgstr "Klistremerke"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 laget en hemmelig samtale"
+msgstr "%1 knyttet seg til din lukkede samtale."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
-#, fuzzy
 msgid "You joined the secret chat."
-msgstr "%1 laget en hemmelig samtale"
+msgstr "Du knyttet deg til den lukkede samtalen."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:307
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 created the group"
-msgstr "%1 laget gruppa «%2»"
+msgstr "%1 opprettet gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:313
 #, qt-format
@@ -1059,19 +1048,19 @@ msgid "You added %1"
 msgstr "Du la til %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:315
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added you"
-msgstr "%1 la til %2 i gruppa"
+msgstr "%1 la deg til"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 forlot gruppa"
+msgstr "%1 tok del i gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:319
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
-msgstr "%1 kl. %2"
+msgstr "%1 la til %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:324
 #, qt-format
@@ -1079,14 +1068,14 @@ msgid "%1 left the group"
 msgstr "%1 forlot gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:327
-#, fuzzy, qt-format
+#, qt-format
 msgid "You removed %1"
-msgstr "%1 fjernet %2"
+msgstr "Du fjernet %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:329
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 removed you"
-msgstr "%1 fjernet %2"
+msgstr "%1 fjernet deg"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:331
@@ -1150,29 +1139,28 @@ msgid "mm:ss"
 msgstr "mm:ss"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
-msgstr "HH:mm"
+msgstr "t:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:289
 msgid "HH:mm"
-msgstr "HH:mm"
+msgstr "tt:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:293
 msgid "ddd HH:mm"
-msgstr "ddd. HH:mm"
+msgstr "ddd tt:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:297
 msgid "dd MMM"
-msgstr "dd. MMM."
+msgstr "dd mmm"
 
 #. TRANSLATORS: Format string: full date
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:300
 msgid "dd MMM yy"
-msgstr "d. MMM. yyyy"
+msgstr "dd mmm åååå"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:120
 msgid "sent you a message"
@@ -1183,9 +1171,8 @@ msgid "sent you a photo"
 msgstr "sendte deg et bilde"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "sendte deg en video"
+msgstr "sendte deg et klistermerke"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
@@ -1223,9 +1210,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1 sendte et bilde til gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 sendte en video til gruppa"
+msgstr "%1 sendte et klistermerke til gruppa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format
@@ -1305,7 +1292,7 @@ msgstr "%1 er sjekket inn"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:254
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr "%1 registrerte seg på Telegram."
+msgstr "%1 registrerte seg på Telegram!"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:265

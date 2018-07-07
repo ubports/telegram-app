@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-24 18:02+0000\n"
-"PO-Revision-Date: 2018-05-11 20:40+0000\n"
-"Last-Translator: Mikel Larrea <developer@larreamikel.com>\n"
-"Language-Team: Basque <https://translate.ubports.com/projects/ubports/"
-"telegram-app/eu/>\n"
+"PO-Revision-Date: 2018-06-14 13:03+0000\n"
+"Last-Translator: Aitzol Berasategi <aitzol76@gmail.com>\n"
+"Language-Team: Basque <https://translate.ubports.com/projects/ubports"
+"/telegram-app/eu/>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -171,7 +171,7 @@ msgstr "Taldearen informazioa"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Channel Info"
-msgstr ""
+msgstr "Kanalaren informazioa"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -245,9 +245,9 @@ msgid "<b>%1</b> added you"
 msgstr "<b>%1</b>-(e)k gehitu egin zaitu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> joined the group"
-msgstr "<b>%1</b>-(e)k taldea utzi du"
+msgstr "<b>%1</b> taldera batu da"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:73
 #, qt-format
@@ -392,12 +392,12 @@ msgstr "Txata aukeratu"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
 msgid "Unmute"
-msgstr ""
+msgstr "Ez isilarazi"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
 msgid "Mute"
-msgstr ""
+msgstr "Isilarazi"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:221
@@ -416,7 +416,7 @@ msgstr "Grabaketa ikonoa sakaturik mantendu behar duzu"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Mesedez baimendu mikrofono sarbidea Sistemaren Ezarpenak > Segurtasuna eta "
-"Pribatasuna atalean."
+"Pribatutasuna atalean."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
@@ -470,7 +470,7 @@ msgstr "Enter sakatzean bidali"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Night Mode"
-msgstr ""
+msgstr "Gau modua"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:199
@@ -564,7 +564,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr "%1 dago erabilgarri."
+msgstr "%1 erabilgarri dago."
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
@@ -731,7 +731,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing non-paid application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:27
 msgid "Free"
-msgstr "Dohainekoa"
+msgstr "Doan"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
@@ -1022,7 +1022,7 @@ msgstr "Taldearen izena aldatu duzu %1-(e)ra"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:279
 #, qt-format
 msgid "%1 changed the group title to %2"
-msgstr "%1-ek taldearen izena aldatu du %2-(e)ra"
+msgstr "%1-(e)k taldearen izena aldatu du %2-(e)ra"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:286
 msgid "Voice message"
@@ -1030,7 +1030,7 @@ msgstr "Ahots mezua"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
 msgid "Sticker"
-msgstr "Eranskina"
+msgstr "Eranskailu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
 #, qt-format
@@ -1057,9 +1057,9 @@ msgid "%1 added you"
 msgstr "%1-(e)k zu gehitu zaitu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1-(e)k taldea utzi du"
+msgstr "%1 taldera gehitu da"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1122,7 +1122,7 @@ msgstr "MMM-(a)k d"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
-msgstr "gaur %1-tan"
+msgstr "gaur %1-(e)tan"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:57
@@ -1175,9 +1175,8 @@ msgid "sent you a photo"
 msgstr "argazki bat bidali dizu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "bideo bat bidali dizu"
+msgstr "eranskailu bat bidali dizu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
@@ -1215,9 +1214,9 @@ msgid "%1 sent a photo to the group"
 msgstr "%1-(e)k argazki bat bidali du taldera"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1-(e)k bideo bat bidali du taldera"
+msgstr "%1-(e)k eranskailu bat bidali du taldera"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format
