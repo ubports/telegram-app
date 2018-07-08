@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-07-08 07:44+0000\n"
+"PO-Revision-Date: 2018-07-08 07:46+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@openmailbox.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports"
 "/telegram-app/fr/>\n"
@@ -549,7 +549,7 @@ msgstr "connecté"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
 #, qt-format
 msgid "last seen %1"
-msgstr "dernier accès %1"
+msgstr "vu la dernière fois %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:305
