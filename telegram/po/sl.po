@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-24 18:02+0000\n"
+"POT-Creation-Date: 2018-06-11 20:39+0000\n"
 "PO-Revision-Date: 2018-05-12 19:46+0000\n"
 "Last-Translator: Kristijan Tkalec <kristijan.tkalec@biotehna.org>\n"
 "Language-Team: Slovenian <https://translate.ubports.com/projects/ubports/"
@@ -72,7 +72,7 @@ msgstr "Nova skupina"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:396
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:424
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:342
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:341
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 #, fuzzy
 msgid "OK"
@@ -100,7 +100,7 @@ msgstr "Vnesite podrobnosti"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:353
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:352
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
@@ -110,7 +110,7 @@ msgstr "Prekliči"
 #. TRANSLATORS: Application name.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:409
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:267
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:338
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:337
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:198
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
@@ -191,7 +191,7 @@ msgid "Copy"
 msgstr "Kopiraj"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:64
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:268
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:269
 msgid "Forward"
 msgstr "Posreduj"
 
@@ -218,105 +218,139 @@ msgstr "Vpis"
 msgid "Invalid password"
 msgstr "Neveljavna telefonska številka"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:54
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
+#, fuzzy
+msgid "Deleted Account"
+msgstr "Račun"
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
 #, fuzzy, qt-format
 msgid "%1 invited you to join a secret chat."
 msgstr "%1 je začel tajen pogovor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:59
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:305
 #, fuzzy
 msgid "You created the group"
 msgstr "%1 je ustvaril skupino \"%2\""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:63
 #, fuzzy, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "%1 je ustvaril skupino \"%2\""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:67
-#, qt-format
-msgid "You added <b>%1</b>"
-msgstr ""
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
+#, fuzzy
+msgid "You joined the channel"
+msgstr "%1 je začel tajen pogovor"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:69
-#, qt-format
-msgid "<b>%1</b> added you"
-msgstr ""
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
+#, fuzzy
+msgid "You joined the group"
+msgstr "%1 je zaupustil skupino"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, fuzzy, qt-format
 msgid "<b>%1</b> joined the group"
 msgstr "%1 je zaupustil skupino"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:73
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
+#, fuzzy
+msgid "You returned to the group"
+msgstr "%1 je ustvaril skupino \"%2\""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
+#, fuzzy, qt-format
+msgid "<b>%1</b> returned to the group"
+msgstr "%1 je ustvaril skupino \"%2\""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
+#, qt-format
+msgid "You added <b>%1</b>"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
+#, qt-format
+msgid "<b>%1</b> added you"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:108
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr ""
 
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
+msgid "You added multiple users"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
+#, fuzzy, qt-format
+msgid "<b>%1</b> added multiple users"
+msgstr "%1 je ustvaril skupino \"%2\""
+
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:79
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
 #, fuzzy, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "%1 je zaupustil skupino"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:82
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:127
 #, qt-format
 msgid "You removed <b>%1</b>"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:84
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:129
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "%1 je izključil %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:86
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:131
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "%1 je izključil %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:139
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
 msgstr "%1 je preimenoval skupino v \"%2\""
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:97
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:142
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "%1 je preimenoval skupino v \"%2\""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:104
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:149
 #, fuzzy
 msgid "You changed the group photo"
 msgstr "%1 je spremenil fotografijo skupine"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:106
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:151
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "%1 je spremenil fotografijo skupine"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:112
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:157
 #, fuzzy
 msgid "You removed the group photo"
 msgstr "%1 je zbrisal fotografijo skupine"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:159
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "%1 je zbrisal fotografijo skupine"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:119
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:164
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:337
 msgid "You joined the group via invite link"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:121
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:166
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
 msgstr ""
@@ -334,15 +368,15 @@ msgstr "Nova sporočila"
 msgid "Reply"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:259
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:260
 msgid "Sticker Pack info"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:413
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:414
 msgid "Secret chat requested."
 msgstr "Zahtevan je tajen pogovor."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:425
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:426
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -351,12 +385,12 @@ msgstr ""
 "Vedite, da Android samodejno sprejema tajne pogovore."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:457
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:458
 msgid "Accept"
 msgstr "Sprejmi"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:471
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:472
 msgid "Reject"
 msgstr "Zavrni"
 
@@ -478,38 +512,38 @@ msgid "Night Mode"
 msgstr ""
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:199
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
 msgid "Support"
 msgstr "Podpora"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:207
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:206
 msgid "Ask a Question"
 msgstr "Vprašajte"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:217
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:216
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:162
 msgid "Telegram FAQ"
 msgstr "V&O o Telegramu"
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:226
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:225
 msgid "Account"
 msgstr "Račun"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:237
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:236
 msgid "Log out"
 msgstr "Odjavi"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:250
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:249
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Telegram za Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:300
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:299
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:309
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:102
@@ -517,7 +551,7 @@ msgid "online"
 msgstr "povezan"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:303
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:302
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:312
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:44
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
@@ -526,7 +560,7 @@ msgid "last seen %1"
 msgstr "zadnjič na voljo %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:306
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:305
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:315
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:108
@@ -534,7 +568,7 @@ msgid "last seen recently"
 msgstr "zadnjič na voljo pred kratkim"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:309
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:308
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:318
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:111
@@ -542,7 +576,7 @@ msgid "last seen within a week"
 msgstr "zadnjič na voljo ta teden"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:312
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:311
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:321
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:114
@@ -550,14 +584,14 @@ msgid "last seen within a month"
 msgstr "zadnjič na voljo ta mesec"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:315
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:314
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:324
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
 msgstr "zadnjič na voljo že davno"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:339
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:338
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."

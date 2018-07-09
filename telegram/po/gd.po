@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-24 18:02+0000\n"
+"POT-Creation-Date: 2018-06-11 20:39+0000\n"
 "PO-Revision-Date: 2016-01-29 12:49+0000\n"
 "Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Fòram na Gàidhlig\n"
@@ -71,7 +71,7 @@ msgstr "Buidheann ùr"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:396
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:424
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:342
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:341
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
 msgstr "Ceart ma-thà"
@@ -98,7 +98,7 @@ msgstr "Cuir fiosrachadh a-steach"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:353
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:352
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
@@ -108,7 +108,7 @@ msgstr "Sguir dheth"
 #. TRANSLATORS: Application name.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:409
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:267
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:338
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:337
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:198
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
@@ -189,7 +189,7 @@ msgid "Copy"
 msgstr "Dèan lethbhreac"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:64
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:268
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:269
 msgid "Forward"
 msgstr "Sìn air adhart"
 
@@ -216,105 +216,139 @@ msgstr "Clàraich"
 msgid "Invalid password"
 msgstr "Còd fòn mì-dhligheach"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:54
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
+#, fuzzy
+msgid "Deleted Account"
+msgstr "Cuir cunntas ris"
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
 #, fuzzy, qt-format
 msgid "%1 invited you to join a secret chat."
 msgstr "Chruthaich %1 cabadaich dhìomhair"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:59
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:305
 #, fuzzy
 msgid "You created the group"
 msgstr "Chruthaich %1 am buidheann \"%2\""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:63
 #, fuzzy, qt-format
 msgid "<b>%1</b> created the group"
 msgstr "Chruthaich %1 am buidheann \"%2\""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:67
-#, fuzzy, qt-format
-msgid "You added <b>%1</b>"
-msgstr "Air a shìneadh air adhart o <b>%1</b>"
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
+#, fuzzy
+msgid "You joined the channel"
+msgstr "Chruthaich %1 cabadaich dhìomhair"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:69
-#, qt-format
-msgid "<b>%1</b> added you"
-msgstr ""
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
+#, fuzzy
+msgid "You joined the group"
+msgstr "Dh'fhàg %1 am buidheann"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:71
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, fuzzy, qt-format
 msgid "<b>%1</b> joined the group"
 msgstr "Dh'fhàg %1 am buidheann"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:73
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
+#, fuzzy
+msgid "You returned to the group"
+msgstr "Thill %1 dhan bhuidheann"
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
+#, fuzzy, qt-format
+msgid "<b>%1</b> returned to the group"
+msgstr "Chruthaich %1 am buidheann \"%2\""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
+#, fuzzy, qt-format
+msgid "You added <b>%1</b>"
+msgstr "Air a shìneadh air adhart o <b>%1</b>"
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
+#, qt-format
+msgid "<b>%1</b> added you"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:108
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
 msgstr ""
 
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
+msgid "You added multiple users"
+msgstr ""
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
+#, fuzzy, qt-format
+msgid "<b>%1</b> added multiple users"
+msgstr "Chruthaich %1 am buidheann \"%2\""
+
 #. TRANSLATORS: %1 is the person, who left the group chat.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:79
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
 #, fuzzy, qt-format
 msgid "<b>%1</b> left the group"
 msgstr "Dh'fhàg %1 am buidheann"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:82
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:127
 #, fuzzy, qt-format
 msgid "You removed <b>%1</b>"
 msgstr "Air a shìneadh air adhart o <b>%1</b>"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:84
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:129
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed you"
 msgstr "Thug %1 %2 air falbh"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:86
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:131
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed <b>%2</b>"
 msgstr "Thug %1 %2 air falbh"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:139
 #, fuzzy, qt-format
 msgid "You changed the group name to %1"
 msgstr "Dh'atharraich %1 ainm a' bhuidhinn gu \"%2\""
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:97
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:142
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group name to %2"
 msgstr "Dh'atharraich %1 ainm a' bhuidhinn gu \"%2\""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:104
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:149
 #, fuzzy
 msgid "You changed the group photo"
 msgstr "Dh'atharraich %1 dealbh a' bhuidhinn"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:106
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:151
 #, fuzzy, qt-format
 msgid "<b>%1</b> changed the group photo"
 msgstr "Dh'atharraich %1 dealbh a' bhuidhinn"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:112
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:157
 #, fuzzy
 msgid "You removed the group photo"
 msgstr "Sguab %1 dealbh a' bhuidhinn às."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:159
 #, fuzzy, qt-format
 msgid "<b>%1</b> removed the group photo"
 msgstr "Sguab %1 dealbh a' bhuidhinn às."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:119
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:164
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:337
 msgid "You joined the group via invite link"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:121
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:166
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
 msgstr ""
@@ -332,15 +366,15 @@ msgstr "Teachdaireachdan ùra"
 msgid "Reply"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:259
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:260
 msgid "Sticker Pack info"
 msgstr ""
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:413
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:414
 msgid "Secret chat requested."
 msgstr "Chaidh cabadaich dhìomhair iarraidh."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:425
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:426
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -349,12 +383,12 @@ msgstr ""
 "Thoir an aire gun gabh Android ri cabadaich dhìomhair gu fèin-obrachail."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:457
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:458
 msgid "Accept"
 msgstr "Gabh ris"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:471
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:472
 msgid "Reject"
 msgstr "Diùlt"
 
@@ -476,38 +510,38 @@ msgid "Night Mode"
 msgstr ""
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:199
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
 msgid "Support"
 msgstr "Taic"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:207
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:206
 msgid "Ask a Question"
 msgstr "Faighnich ceist"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:217
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:216
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:162
 msgid "Telegram FAQ"
 msgstr "CÀBHA Teileagraim"
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:226
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:225
 msgid "Account"
 msgstr "Cunntas"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:237
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:236
 msgid "Log out"
 msgstr "Clàraich a-mach"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:250
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:249
 #, qt-format
 msgid "Telegram for Ubuntu %1"
 msgstr "Teileagram airson Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:300
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:299
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:309
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:41
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:102
@@ -515,7 +549,7 @@ msgid "online"
 msgstr "air loidhne"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:303
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:302
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:312
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:44
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
@@ -524,7 +558,7 @@ msgid "last seen %1"
 msgstr "air fhaicinn roimhe %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:306
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:305
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:315
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:108
@@ -532,7 +566,7 @@ msgid "last seen recently"
 msgstr "air fhaicinn o chionn goirid"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:309
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:308
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:318
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:111
@@ -540,7 +574,7 @@ msgid "last seen within a week"
 msgstr "air fhaicinn an t-seachdain seo chaidh"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:312
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:311
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:321
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:114
@@ -548,14 +582,14 @@ msgid "last seen within a month"
 msgstr "air fhaicinn am mìos seo chaidh"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:315
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:314
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:324
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
 msgstr "gun fhaicinn o chionn fhada"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:339
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:338
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
