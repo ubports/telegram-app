@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-07-17 10:43+0000\n"
+"PO-Revision-Date: 2018-07-22 00:00+0000\n"
 "Last-Translator: Joachim Lazaroms <joachim.pc@gmail.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/ubports"
 "/telegram-app/nl/>\n"
@@ -1042,7 +1042,7 @@ msgstr "U: "
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:257
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:86
 msgid "typing..."
-msgstr "aan het typen..."
+msgstr "aan het typen…"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:277
 #, qt-format
@@ -1060,7 +1060,7 @@ msgstr "Spraakbericht"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
 msgid "Sticker"
-msgstr "Sticker"
+msgstr "Stikker"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
 #, qt-format
