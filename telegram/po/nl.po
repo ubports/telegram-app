@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-07-17 10:12+0000\n"
-"Last-Translator: Joachim Lazaroms <joachim.pc@gmail.com>\n"
+"PO-Revision-Date: 2018-07-17 10:24+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/ubports"
 "/telegram-app/nl/>\n"
 "Language: nl\n"
@@ -268,7 +268,7 @@ msgstr "<b>%1</b> heeft de groep aangemaakt"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr "U hebt <b>%1</b> toegevoegd"
+msgstr "U heeft <b>%1</b> toegevoegd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
@@ -298,7 +298,7 @@ msgstr "<b>%1</b> heeft de groep verlaten"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:127
 #, qt-format
 msgid "You removed <b>%1</b>"
-msgstr "U hebt <b>%1</b> verwijderd"
+msgstr "U heeft <b>%1</b> verwijderd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
@@ -313,7 +313,7 @@ msgstr "<b>%1</b> heeft <b>%2</b> verwijderd"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:139
 #, qt-format
 msgid "You changed the group name to %1"
-msgstr "U hebt de groepsnaam veranderd in %1"
+msgstr "U heeft de groepsnaam veranderd in %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:142
