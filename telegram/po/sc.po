@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-07-22 00:00+0000\n"
-"Last-Translator: Stefania Reccia <stefa.reccia@gmail.com>\n"
+"PO-Revision-Date: 2018-07-22 11:40+0000\n"
+"Last-Translator: Adrià <adriamartinmor@gmail.com>\n"
 "Language-Team: Sardinian <https://translate.ubports.com/projects/ubports"
 "/telegram-app/sc/>\n"
 "Language: sc\n"
@@ -215,9 +215,8 @@ msgid "Invalid password"
 msgstr "Sa crae no est vàlida"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
-#, fuzzy
 msgid "Deleted Account"
-msgstr "Agiunghe contu"
+msgstr "Contu cantzelladu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
@@ -240,14 +239,12 @@ msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> at creadu su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
-#, fuzzy
 msgid "You joined the channel"
-msgstr "As aderidu a sa tzarrada segreta."
+msgstr "As aderidu a su canale"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 at aderidu a su grupu"
+msgstr "As aderidu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -255,14 +252,13 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> at aderidu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "%1 est torradu a su grupu"
+msgstr "Ses torradu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b> at creadu su grupu"
+msgstr "<b>%1</b> est torradu a su grupu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -280,14 +276,13 @@ msgid "<b>%1</b> added <b>%2</b>"
 msgstr "<b>%1</b> at agiuntu a <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
-#, fuzzy
 msgid "You added multiple users"
-msgstr "As agiuntu paritzos utentes"
+msgstr "As agiuntu vàrios usuàrios"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> t'at agiuntu"
+msgstr "<b>%1</b> at agiuntu vàrios usuàrios"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
