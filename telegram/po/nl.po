@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-05-24 20:54+0000\n"
-"Last-Translator: Joeke de Graaf <mappack@null.net>\n"
-"Language-Team: Dutch <https://translate.ubports.com/projects/ubports/"
-"telegram-app/nl/>\n"
+"PO-Revision-Date: 2018-07-22 00:00+0000\n"
+"Last-Translator: Joachim Lazaroms <joachim.pc@gmail.com>\n"
+"Language-Team: Dutch <https://translate.ubports.com/projects/ubports"
+"/telegram-app/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.17\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -216,9 +216,8 @@ msgid "Invalid password"
 msgstr "Fout wachtwoord"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
-#, fuzzy
 msgid "Deleted Account"
-msgstr "Account toevoegen"
+msgstr "Account verwijderen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
@@ -228,7 +227,7 @@ msgstr "U hebt %1 uitgenodigd om zich aan een geheime chat aan te sluiten."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 heeft U uitgenodigd om zich aan een geheime chat aan te sluiten."
+msgstr "%1 heeft U uitgenodigd om deel te nemen aan een beveiligde chat."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:305
@@ -241,14 +240,12 @@ msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> heeft de groep aangemaakt"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
-#, fuzzy
 msgid "You joined the channel"
-msgstr "U heeft zich bij de geheime chat aangesloten."
+msgstr "U heeft zich aangesloten"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 is lid geworden van de groep"
+msgstr "U bent lid geworden van de groep"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -256,19 +253,18 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> is lid geworden van fe groep"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "%1 is teruggekeerd naar de groep"
+msgstr "U bent teruggekeerd naar de groep"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b> heeft de groep aangemaakt"
+msgstr "<b>%1</b> is teruggekeerd naar de groep"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr "U hebt <b>%1</b> toegevoegd"
+msgstr "U heeft <b>%1</b> toegevoegd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
@@ -282,12 +278,12 @@ msgstr "<b>%1</b> heeft <b>%2</b> toegevoegd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
 msgid "You added multiple users"
-msgstr ""
+msgstr "Meerdere gebruikers toegevoegd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> heeft U toegevoegd"
+msgstr "<b>%1</b> heeft meerdere personen toegevoegd"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
@@ -298,7 +294,7 @@ msgstr "<b>%1</b> heeft de groep verlaten"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:127
 #, qt-format
 msgid "You removed <b>%1</b>"
-msgstr "U hebt <b>%1</b> verwijderd"
+msgstr "U heeft <b>%1</b> verwijderd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:129
 #, qt-format
@@ -313,7 +309,7 @@ msgstr "<b>%1</b> heeft <b>%2</b> verwijderd"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:139
 #, qt-format
 msgid "You changed the group name to %1"
-msgstr "U hebt de groepsnaam veranderd in %1"
+msgstr "U heeft de groepsnaam veranderd in %1"
 
 #. TRANSLATORS: %1 is the person, who changed group name to title %2.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:142
@@ -364,7 +360,7 @@ msgstr "Beantwoorden"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:260
 msgid "Sticker Pack info"
-msgstr "Sticker Pack info"
+msgstr "Sticker Pack informatie"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:414
 msgid "Secret chat requested."
@@ -1046,7 +1042,7 @@ msgstr "U: "
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:257
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:86
 msgid "typing..."
-msgstr "aan het typen..."
+msgstr "aan het typen…"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:277
 #, qt-format
@@ -1064,7 +1060,7 @@ msgstr "Spraakbericht"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
 msgid "Sticker"
-msgstr "Sticker"
+msgstr "Stikker"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
 #, qt-format
