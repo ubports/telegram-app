@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2017-11-15 19:24+0000\n"
-"Last-Translator: Henrik Holm <hbir@post10.tele.dk>\n"
+"PO-Revision-Date: 2018-08-05 00:00+0000\n"
+"Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
 "Language: da\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.20\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -183,12 +183,12 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:58
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:246
 msgid "Copy"
-msgstr ""
+msgstr "Kopiér"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:64
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:269
 msgid "Forward"
-msgstr ""
+msgstr "Videre"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:74
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:232
@@ -436,7 +436,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:696
 msgid "You have to press and hold the record icon"
-msgstr ""
+msgstr "Du er nødt til at trykke og holde optager ikonet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:791
 msgid "Please grant microphone access on System Settings > Security & Privacy."
@@ -460,8 +460,9 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:727
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:66
+#, fuzzy
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #. TRANSLATORS: Visible right under phone number in settings page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:105
@@ -477,7 +478,7 @@ msgstr ""
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:127
 msgid "Messages"
-msgstr ""
+msgstr "Beskeder"
 
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
@@ -723,7 +724,7 @@ msgstr "Installér"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr "Luk"
+msgstr "Afslut"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPage.qml:177
@@ -782,7 +783,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr ""
+msgstr "Privat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -933,7 +934,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:103
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
@@ -941,7 +942,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
-msgstr ""
+msgstr "<<< Stryg for at afbryde"
 
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:34
@@ -1107,15 +1108,16 @@ msgstr ""
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
+#, fuzzy
 msgid "Deleted"
-msgstr ""
+msgstr "Slettet"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:11
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
-msgstr ""
+msgstr "hh:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
@@ -1147,7 +1149,7 @@ msgstr "%1 kl. %2"
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
 msgid "h:mm:ss"
@@ -1345,7 +1347,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "Ringer"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
