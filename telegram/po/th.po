@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2017-08-02 20:12+0000\n"
-"Last-Translator: Hans <hans1977se@gmail.com>\n"
-"Language-Team: Thai <https://ubpweblate.tnvcomp.com/projects/ubports/"
+"PO-Revision-Date: 2018-08-05 01:01+0000\n"
+"Last-Translator: thanakit srisearmpok <thanakit.ssp@gmail.com>\n"
+"Language-Team: Thai <https://translate.ubports.com/projects/ubports/"
 "telegram-app/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.20\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -27,7 +27,7 @@ msgstr "เพิ่มเข้าที่อยู่ติดต่อ"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:45
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:123
 msgid "Contacts"
-msgstr "ที่อยู่ติดต่อ"
+msgstr "ผู้ติดต่อ"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:30
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:91
@@ -743,7 +743,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:75
 msgid "Close"
-msgstr ""
+msgstr "ปิด"
 
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPage.qml:177
