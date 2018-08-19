@@ -335,12 +335,12 @@ msgstr "<b>%1</b> fjernede gruppens foto"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:164
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:337
 msgid "You joined the group via invite link"
-msgstr "Du blev en del af gruppen via invitationslinket"
+msgstr "Du blev en del af gruppen via invitationslink"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:166
 #, qt-format
 msgid "<b>%1</b> joined the group via invite link"
-msgstr ""
+msgstr "<b>%1</b> sluttede sig til gruppen via invitationslink"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:137
