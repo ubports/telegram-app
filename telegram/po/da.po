@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-19 19:19+0000\n"
+"PO-Revision-Date: 2018-08-19 19:24+0000\n"
 "Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -445,8 +445,8 @@ msgstr "Du skal trykke og holde optag-ikonet"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:791
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
-"Giv venligst adgang til mikrofonen i Systemindstilllinger > Sikkerhed og "
-"Privatliv"
+"Giv venligst adgang til mikrofonen i Systemindstilllinger > Sikkerhed & "
+"Privatliv."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
@@ -458,7 +458,7 @@ msgstr "Indstillinger"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:47
 msgid "Change photo"
-msgstr ""
+msgstr "Skift billede"
 
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
@@ -478,7 +478,7 @@ msgstr "Telefon"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
-msgstr ""
+msgstr "Brugernavn"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:127
@@ -491,47 +491,47 @@ msgstr "Beskeder"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:561
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:474
 msgid "Notifications"
-msgstr ""
+msgstr "Notifikationer"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:168
 msgid "Send by Enter"
-msgstr ""
+msgstr "Send med Enter"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Night Mode"
-msgstr ""
+msgstr "Nat-mode"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:206
 msgid "Ask a Question"
-msgstr ""
+msgstr "Stil et spørgsmål"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:216
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:162
 msgid "Telegram FAQ"
-msgstr ""
+msgstr "Telegram FAQ"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:225
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:236
 msgid "Log out"
-msgstr ""
+msgstr "Log ud"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:249
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr ""
+msgstr "Telegram til Ubuntu %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:299
@@ -548,7 +548,7 @@ msgstr "online"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
 #, qt-format
 msgid "last seen %1"
-msgstr ""
+msgstr "Sidst set %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:305
@@ -556,7 +556,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:47
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:108
 msgid "last seen recently"
-msgstr ""
+msgstr "Set fornylig"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:308
@@ -564,7 +564,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:50
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:111
 msgid "last seen within a week"
-msgstr ""
+msgstr "Sidst set indenfor en uge"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:311
@@ -572,7 +572,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:114
 msgid "last seen within a month"
-msgstr ""
+msgstr "Sidst set indenfor en måned"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:314
@@ -580,19 +580,21 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "Sidst set for længe siden"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:338
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
+"Er du sikker på at du vil logge ud?\n"
+"Alle hemmelige chats vil gå tabt."
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
 #, qt-format
 msgid "%1 is available."
-msgstr ""
+msgstr "%1 er tilgængelig"
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
