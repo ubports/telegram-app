@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-12 01:02+0000\n"
+"PO-Revision-Date: 2018-08-19 17:19+0000\n"
 "Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -622,7 +622,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr ""
+msgstr "Færdig"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
@@ -937,7 +937,7 @@ msgstr "Video"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
-msgstr ""
+msgstr "Fil"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AudioRecordingBar.qml:171
 msgid "<<< Swipe to cancel"
