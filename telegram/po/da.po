@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-19 17:19+0000\n"
+"PO-Revision-Date: 2018-08-19 17:24+0000\n"
 "Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -57,16 +57,16 @@ msgstr "Søg efter kontakter"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
-msgstr ""
+msgstr "Ny hemmelig chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
-msgstr ""
+msgstr "Tilføj til gruppe"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:107
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:104
 msgid "New Group"
-msgstr ""
+msgstr "Ny gruppe"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:396
@@ -79,22 +79,22 @@ msgstr "OK"
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
-msgstr ""
+msgstr "Navn på chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
-msgstr ""
+msgstr "Tilføj kontakt"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
-msgstr ""
+msgstr "Fra adressebogen"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
-msgstr ""
+msgstr "Tilføj detaljer"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
@@ -117,7 +117,7 @@ msgstr "Annullér"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/app/telegram.desktop.h:1
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #. TRANSLATORS: Asking whether to add person %1 to group chat %2 and how many last messages to forward.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:441
@@ -141,7 +141,7 @@ msgstr ""
 #. TRANSLATORS: Indicates result of a single contact import.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:512
 msgid "This contact is on Telegram."
-msgstr ""
+msgstr "Denne kontakt er allerede på telegram"
 
 #. TRANSLATORS: Indicates result of contacts import (how many have been imported).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:515
