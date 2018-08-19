@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-19 17:38+0000\n"
+"PO-Revision-Date: 2018-08-19 17:39+0000\n"
 "Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -335,7 +335,7 @@ msgstr "<b>%1</b> fjernede gruppens foto"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:164
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:337
 msgid "You joined the group via invite link"
-msgstr "Du blev en del af gruppen via invitationslink"
+msgstr "Du sluttede dig til gruppen via invitationslink"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:166
 #, qt-format
@@ -345,7 +345,7 @@ msgstr "<b>%1</b> sluttede sig til gruppen via invitationslink"
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:137
 msgid "Please select chat"
-msgstr ""
+msgstr "Vælg chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:211
 msgid "New messages"
