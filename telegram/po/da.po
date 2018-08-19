@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-19 20:06+0000\n"
+"PO-Revision-Date: 2018-08-21 22:45+0000\n"
 "Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -771,12 +771,12 @@ msgstr "Sikker"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:33
 msgid "<b>Telegram</b> keeps your messages safe<br> from hacker attacks"
-msgstr ""
+msgstr "<b>Telegram</b> holder dine beskeder sikre<br> mod hackerangreb"
 
 #. TRANSLATORS: Adjective, describing a powerful/efficient application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:37
 msgid "Powerful"
-msgstr ""
+msgstr "Kraftig"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
