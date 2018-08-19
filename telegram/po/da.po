@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-19 17:43+0000\n"
+"PO-Revision-Date: 2018-08-19 19:11+0000\n"
 "Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -127,6 +127,8 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
+"Add %1 to %2?\n"
+"Antallet af nye beskeder der skal videresendes"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:502
@@ -402,7 +404,7 @@ msgstr "Fornavn er obligatorisk"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:51
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:144
 msgid "First name (required)"
-msgstr ""
+msgstr "Fornavn (obligatorisk)"
 
 #. TRANSLATORS: This is a placeholder in the 'last name' text field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountNamePage.qml:70
