@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-21 22:45+0000\n"
+"PO-Revision-Date: 2018-08-24 20:18+0000\n"
 "Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -159,9 +159,9 @@ msgstr "Ønsker du at videresende beskeden til %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
-#, fuzzy, qt-format
+#, qt-format
 msgid "Send messages to %1?"
-msgstr "Vil du sende beskeder til %1"
+msgstr "Vil du sende beskeder til %1?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -781,6 +781,8 @@ msgstr "Kraftig"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:38
 msgid "<b>Telegram</b> has no limits on the size<br> of your media and chats"
 msgstr ""
+"<b>Telegram</b> har ingen begrænsninger for størrelsen<br> af dine data og "
+"samtaler"
 
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:42
