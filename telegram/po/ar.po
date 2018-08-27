@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-27 06:38+0000\n"
+"PO-Revision-Date: 2018-08-27 06:39+0000\n"
 "Last-Translator: Ahmed Suliman <ahmedselaman@gmail.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/ubports/"
 "telegram-app/ar/>\n"
@@ -260,7 +260,7 @@ msgstr "لقد تم اعادة انضمامك الي المجموع"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
 #, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr ""
+msgstr "<b>%1</b> لقد عاد الي المجموعة"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -279,12 +279,12 @@ msgstr "<b>%1</b> اضيف <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
 msgid "You added multiple users"
-msgstr ""
+msgstr "لقد قمت باضافة مستخدمين متعددين"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> اضافك"
+msgstr "<b>%1</b> قام باضافة مستخدمين متعددين"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
@@ -424,12 +424,12 @@ msgstr "اختر دردشة"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
 msgid "Unmute"
-msgstr ""
+msgstr "الغاء الكتم"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
 msgid "Mute"
-msgstr ""
+msgstr "كتم"
 
 #. TRANSLATORS: Placeholder for the message input text area.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:221
@@ -502,7 +502,7 @@ msgstr "إرسال بالنقر على Enter"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Night Mode"
-msgstr ""
+msgstr "الضع الليلي"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
