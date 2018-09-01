@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-05-25 05:32+0000\n"
+"PO-Revision-Date: 2018-08-05 00:00+0000\n"
 "Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/ubports/"
 "telegram-app/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.20\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -216,9 +216,8 @@ msgid "Invalid password"
 msgstr "Nesprávné heslo"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
-#, fuzzy
 msgid "Deleted Account"
-msgstr "Přidat účet"
+msgstr "Zrušený účet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
@@ -241,14 +240,12 @@ msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> vytvořil skupinu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
-#, fuzzy
 msgid "You joined the channel"
-msgstr "Připojili jste se k zabezpečenému rozhovoru."
+msgstr "Připojili jste se ke kanálu"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 se připojil(a) ke skupině"
+msgstr "Připojil(a) jste se ke skupině"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -256,14 +253,13 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> se připojil(a) ke skupině"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "%1 se vrátil do skupiny"
+msgstr "Vrátil(a) jste se do skupiny"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b> vytvořil skupinu"
+msgstr "<b>%1</b> se vrátil(a) do skupiny"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -282,12 +278,12 @@ msgstr "<b>%1</b> přidal(a) <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
 msgid "You added multiple users"
-msgstr ""
+msgstr "Přidali jste více uživatelů"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> vás přidal(a)"
+msgstr "<b>%1</b> přidal(a) více uživatelů"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
@@ -989,7 +985,7 @@ msgstr "Zabezpečený rozhovor odmítnut"
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr "Zakázáno"
+msgstr "Zablokováno"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:51

@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: telegram-app\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-07-22 01:02+0000\n"
+"PO-Revision-Date: 2018-08-12 00:00+0000\n"
 "Last-Translator: ierihon <idekovets@mail.ru>\n"
-"Language-Team: Belarusian <https://translate.ubports.com/projects/ubports"
-"/telegram-app/be/>\n"
+"Language-Team: Belarusian <https://translate.ubports.com/projects/ubports/"
+"telegram-app/be/>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.17\n"
+"X-Generator: Weblate 2.20\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -48,7 +48,7 @@ msgstr "Дадаць"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:125
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:36
 msgid "Back"
-msgstr "Вярнуцца"
+msgstr "Назад"
 
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
@@ -75,7 +75,7 @@ msgstr "Новая суполка"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:341
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
-msgstr "Добра"
+msgstr "ОК"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
@@ -90,7 +90,7 @@ msgstr "Дадаць кантакт"
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
-msgstr "З адрэснай кнігі"
+msgstr "З адраснай кнігі"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:367
@@ -157,7 +157,7 @@ msgstr "%1 з %2 кантактаў у Telegram."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:113
 #, qt-format
 msgid "Forward message to %1?"
-msgstr "Пераслаць паведамленні для %1?"
+msgstr "Пераслаць паведамленне для %1?"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
@@ -168,7 +168,7 @@ msgstr "Даслаць паведамленне %1?"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
 msgid "Group Info"
-msgstr "Iнфармацыя пра групу"
+msgstr "Інфармацыя пра групу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:60
@@ -875,7 +875,7 @@ msgstr "%1 друкуе"
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:411
 msgid "Unknown"
-msgstr "Невядомы"
+msgstr "Невядома"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:420

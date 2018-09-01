@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-05-19 13:12+0000\n"
+"PO-Revision-Date: 2018-08-19 16:08+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.20\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -216,9 +216,8 @@ msgid "Invalid password"
 msgstr "Virheellinen salasana"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
-#, fuzzy
 msgid "Deleted Account"
-msgstr "Lisää tili"
+msgstr "Poistettu tili"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
@@ -241,14 +240,12 @@ msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> loi ryhmän"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
-#, fuzzy
 msgid "You joined the channel"
-msgstr "Liityit salaiseen keskusteluun."
+msgstr "Liityit kanavalle"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 liittyi ryhmään"
+msgstr "Liityit ryhmään"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -256,14 +253,13 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> liittyi ryhmään"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "%1 palasi ryhmään"
+msgstr "Palasit ryhmään"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b> loi ryhmän"
+msgstr "<b>%1</b> palasi ryhmään"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -282,12 +278,12 @@ msgstr "<b>%1</b> lisäsi <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
 msgid "You added multiple users"
-msgstr ""
+msgstr "Lisäsit useita käyttäjiä"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> lisäsi sinut"
+msgstr "<b>%1</b> lisäsi useita käyttäjiä"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
@@ -505,7 +501,7 @@ msgstr "Lähetä enterillä"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Night Mode"
-msgstr ""
+msgstr "Yötila"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
