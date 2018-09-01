@@ -110,7 +110,7 @@ ListItem {
                 highlightColor = color;
 
                 leadingActions = null;
-                trailingActions = null;
+                //trailingActions = null;
             }
         }
     }

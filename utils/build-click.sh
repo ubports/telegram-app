@@ -11,23 +11,6 @@ MAKE_BIN=make
 
 mkdir -p $CLICK_TARGET_DIR
 
-hotfix_qmake() {
-	# Hotfix for broken qmake in container:
-	# 1) we copy the qmake binary to a new directory
-	# 2) we use qt.conf from nymea.io's cross build containers which reconfigures qmake to make it work
-	# 3) we use the qmake in our directory
-	echo "***************"
-	echo "Hotfixing qmake"
-	echo "***************"
-
-	cd $TELEGRAM_SOURCES/deps/
-	mkdir -p qmake-fix/
-	cp /usr/bin/qt5-qmake-arm-linux-gnueabihf qmake-fix/
-	cp $TELEGRAM_SOURCES/utils/qt.conf qmake-fix/
-
-	QMAKE_BIN=$TELEGRAM_SOURCES/deps/qmake-fix/qt5-qmake-arm-linux-gnueabihf
-}
-
 make_step() {
 
 	echo "Calling make"
@@ -102,7 +85,7 @@ cleanup_click_dir() {
 
 case $DEB_HOST_MULTIARCH in
 "arm-linux-gnueabihf")
-	hotfix_qmake
+	QMAKE_BIN="qt5-qmake-arm-linux-gnueabihf"
 	;;
 *)
 	QMAKE_BIN="qmake"
