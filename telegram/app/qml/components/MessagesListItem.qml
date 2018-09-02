@@ -41,14 +41,13 @@ ListItem {
     property bool dialogIsChannel: dialog ? dialog.peer.channelId != 0 : false
     property Chat chat: dialog ?  telegramObject.chat(dialogIsChannel ? dialog.peer.channelId : dialog.peer.chatId) : null
     property string messageText: message.message
-    property string messageHtmlText: parseText(message.message)
     property User user: telegramObject.user(message.fromId)
     property User fwdUser: telegramObject.user(message.fwdFromId ? message.fwdFromId.userId : 0)
 
     property bool sent: message.sent
     property bool uploading: message.upload.fileId !== 0
 
-    property bool hasLink: htmlHasLinks(messageHtmlText)
+    property bool hasLink: htmlHasLinks(messageText)
     property bool allowLoadLinks: telegram.userData.isLoadLink(user.id)
 
     property alias maximumMediaHeight: message_media.maximumMediaHeight
@@ -279,8 +278,8 @@ ListItem {
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: message_item.messageHtmlText
-                        //text: "ID: " + message_item.messageId + " " + message_item.messageHtmlText
+                        text: message_item.messageText
+                        //text: "ID: " + message_item.messageId + " " + message_item.messageText
                         color: message.out? "white" : theme.palette.normal.backgroundText
                         onLinkActivated: {
                             if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
