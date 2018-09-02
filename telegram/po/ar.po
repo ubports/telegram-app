@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-08-27 06:39+0000\n"
+"PO-Revision-Date: 2018-09-01 21:36+0000\n"
 "Last-Translator: Ahmed Suliman <ahmedselaman@gmail.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/ubports/"
 "telegram-app/ar/>\n"
@@ -502,7 +502,7 @@ msgstr "إرسال بالنقر على Enter"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:182
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:143
 msgid "Night Mode"
-msgstr "الضع الليلي"
+msgstr "الوضع الليلي"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
@@ -1087,9 +1087,9 @@ msgid "%1 added you"
 msgstr "%1 اضافك"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 غادر المجموعة"
+msgstr "%1 انضم الي المجموعة"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:319
 #, qt-format
@@ -1205,9 +1205,8 @@ msgid "sent you a photo"
 msgstr "أرسل إليك صورة"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
-#, fuzzy
 msgid "sent you a sticker"
-msgstr "أرسل إليك فيديو"
+msgstr "أرسل إليك ملصق"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
@@ -1245,9 +1244,9 @@ msgid "%1 sent a photo to the group"
 msgstr "أرسل %1 صورة إلى المجموعة"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "أرسل %1 فيديو إلى المجموعة"
+msgstr "أرسل %1 ملصق إلى المجموعة"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format
@@ -1368,7 +1367,6 @@ msgid "Open chat"
 msgstr "فتح المحادثة"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
-#, fuzzy
 msgid "Call"
 msgstr "اتصال"
 
