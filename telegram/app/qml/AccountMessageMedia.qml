@@ -17,9 +17,12 @@ Item {
                             file_handler.progressType != FileHandler.TypeProgressUpload
     property variant mediaType: file_handler.targetType
     property bool downloading: file_handler.progressType != FileHandler.TypeProgressEmpty
+    property alias mediaWidth: file_handler.imageSize.width
+    property alias mediaHeight: file_handler.imageSize.height
 
-    property real maximumMediaHeight: units.gu(32)
-    property real maximumMediaWidth: width * 0.75
+    property real maximumMediaHeight: units.gu(24)
+    property real minimumMediaHeight: units.gu(16)
+    property real maximumMediaWidth: parent.width
     property real maximumMediaRatio: maximumMediaWidth / maximumMediaHeight
 
     property variant msgDate: CalendarConv.fromTime_t(message.date)
@@ -59,26 +62,22 @@ Item {
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
-            result = file_handler.imageSize.width / file_handler.imageSize.height < maximumMediaRatio ?
-                    Math.min(file_handler.imageSize.height, maximumMediaHeight) * file_handler.imageSize.width / file_handler.imageSize.height
-                  : Math.min(file_handler.imageSize.width, maximumMediaWidth)
+            result = mediaWidth > mediaHeight?
+                        Math.min(mediaWidth, maximumMediaWidth):
+                        mediaWidth * Math.min(1, maximumMediaHeight / mediaHeight)
             break;
-
         case FileHandler.TypeTargetUnknown:
         case FileHandler.TypeTargetMediaAudio:
         case FileHandler.TypeTargetMediaDocument:
             result = isSticker ? units.gu(20) : units.gu(17)
             break;
-
         case FileHandler.TypeTargetMediaGeoPoint:
             result = mapDownloader.size.width
             break;
-
         default:
             result = 0
             break;
         }
-
         return result
     }
 
@@ -96,11 +95,10 @@ Item {
         {
         case FileHandler.TypeTargetMediaVideo:
         case FileHandler.TypeTargetMediaPhoto:
-            result = file_handler.imageSize.width / file_handler.imageSize.height < maximumMediaRatio ?
-                    Math.min(file_handler.imageSize.height, maximumMediaHeight) * file_handler.imageSize.width / file_handler.imageSize.height
-                  : Math.min(file_handler.imageSize.width, maximumMediaWidth)
+            result = mediaHeight >= mediaWidth?
+                        Math.min(mediaHeight, maximumMediaHeight):
+                        Math.max(mediaHeight * Math.min(1, maximumMediaWidth / mediaWidth), minimumMediaHeight)
             break;
-
         case FileHandler.TypeTargetMediaAudio:
             result = 0;
             break;
@@ -108,16 +106,13 @@ Item {
         case FileHandler.TypeTargetMediaDocument:
             result = isSticker ? width*media_img.imageSize.height/media_img.imageSize.width : width
             break;
-
         case FileHandler.TypeTargetMediaGeoPoint:
             result = mapDownloader.size.height
             break;
-
         default:
             result = 0
             break;
         }
-
         return result
     }
 
@@ -149,21 +144,13 @@ Item {
     Image {
         id: media_img
         anchors.fill: parent
-        fillMode: isSticker? Image.PreserveAspectFit : Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectFit
         asynchronous: true
         smooth: true
         visible: file_handler.targetType != FileHandler.TypeTargetMediaVideo || fileLocation.length != 0
 
         property size imageSize: Cutegram.imageSize(source)
         property string customImage
-
-        sourceSize: {
-            var ratio = imageSize.width/imageSize.height
-            if(ratio>1)
-                return Qt.size( height*ratio, height)
-            else
-                return Qt.size( width, width/ratio)
-        }
 
         source: {
             var result = ""

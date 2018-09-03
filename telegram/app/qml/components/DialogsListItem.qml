@@ -243,11 +243,11 @@ ListItem {
             id: message_text
             visible: showMessage
             elide: Text.ElideRight
-            wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
             font.pixelSize: units.dp(15)
             color: theme.palette.normal.backgroundTertiaryText
             width: parent.width - (message_author.visible? message_author.width : 0.0) - (unread_rect.visible ? unread_rect.width : 0.0)
+            textFormat: Text.RichText
             text: {
                 if (!visible) return "";
 
@@ -256,11 +256,8 @@ ListItem {
                     // TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
                     return i18n.tr("typing...")
                 } else {
-                    if (!message) return "";
-
-                    // We use emojis in our font currently, so no need to replace them here for now
-                    //return emojis.bodyTextToEmojiText(message.message, 16, true);
-
+                    if (!message)
+                        return "";
                     if (message.message == "") {
                         var res = "";
                         var user = telegramObject.user(message.action.userId) 
@@ -344,7 +341,11 @@ ListItem {
                         }
                         return "<font color=\"" + theme.palette.normal.activityText + "\">" + res + "</font>"
                     }
-                    return message.message
+                    return '<html><style type="text/css">a:link, #social {color:'
+                            + theme.palette.normal.activityText
+                            + '; text-decoration: none;}</style><body>'
+                            + message.message
+                            + "</body></html>"
                 }
             }
         }

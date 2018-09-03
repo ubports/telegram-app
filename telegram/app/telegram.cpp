@@ -592,12 +592,6 @@ void Cutegram::init_systray()
         p->unityTray = new UnitySystemTray( QCoreApplication::applicationName(), UNITY_ICON_PATH(0) );
         if( !p->unityTray->pntr() )
             QGuiApplication::setQuitOnLastWindowClosed(true);
-
-        // p->unityTray->addMenu( tr("Show"), this, "active" );
-        // p->unityTray->addMenu( tr("Configure"), this, "configure" );
-        // p->unityTray->addMenu( tr("Contact"), this, "contact" );
-        // p->unityTray->addMenu( tr("About"), this, "about" );
-        // p->unityTray->addMenu( tr("Quit"), this, "quit" );
     }
     if( !p->unityTray || !p->unityTray->pntr() )
     {
@@ -618,16 +612,6 @@ QMenu *Cutegram::contextMenu()
 {
     QMenu *menu = new QMenu();
     menu->move( QCursor::pos() );
-
-    // menu->addAction( tr("Show"), this, SLOT(active()) );
-    // menu->addSeparator();
-    // menu->addAction( tr("Configure"), this, SLOT(configure()) );
-    // menu->addAction( tr("Contact"), this, SLOT(contact()) );
-    // menu->addSeparator();
-    // menu->addAction( tr("About"), this, SLOT(about()) );
-    // menu->addSeparator();
-    // menu->addAction( tr("Exit"), this, SLOT(quit()) );
-
     return menu;
 }
 
