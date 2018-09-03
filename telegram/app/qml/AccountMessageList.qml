@@ -27,7 +27,7 @@ Rectangle {
     property real topMargin
     property real bottomMargin
 
-    property real maximumMediaHeight: maximumMediaWidth
+    property real maximumMediaHeight: units.gu(24)
     // This is neat, but I don't like it resizes the photo live: (height-topMargin-bottomMargin)*0.75
     property real maximumMediaWidth: width*0.75
 

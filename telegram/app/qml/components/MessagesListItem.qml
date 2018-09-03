@@ -123,7 +123,7 @@ ListItem {
         }
         layoutDirection: message.out ? Qt.RightToLeft : Qt.LeftToRight
         visible: !action_item.hasAction
-        spacing: units.dp(3)
+        spacing: units.dp(2)
 
         Avatar {
             id: contact_image
@@ -278,8 +278,12 @@ ListItem {
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text: message_item.messageText
-                        //text: "ID: " + message_item.messageId + " " + message_item.messageText
+                        text:
+                            '<html><style type="text/css">a:link, #social {color:'
+                            + theme.palette.normal.activityText
+                            + '; text-decoration: none;} </style><body>'
+                            + message_item.messageText
+                            + "</body></html>"
                         color: message.out? "white" : theme.palette.normal.backgroundText
                         onLinkActivated: {
                             if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)
