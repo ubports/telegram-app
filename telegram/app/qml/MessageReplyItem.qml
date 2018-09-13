@@ -143,7 +143,7 @@ Item {
                 elide: Text.ElideRight
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: realMessage ? realMessage.message : ""
-                color: message.out? "white" : theme.palette.normal.backgroundText
+                color: message && message.out? "white" : theme.palette.normal.backgroundText
             }
         }
     }
