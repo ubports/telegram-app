@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-01 21:36+0000\n"
-"Last-Translator: Øjvind Fritjof Arnfred <fritjofarnfred@protonmail.com>\n"
+"PO-Revision-Date: 2018-09-15 18:02+0000\n"
+"Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
 "Language: da\n"
@@ -102,7 +102,7 @@ msgstr "Tilføj detaljer"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
-msgstr "Annuller"
+msgstr "Annullér"
 
 #. TRANSLATORS: Default app header title. Application name.
 #. TRANSLATORS: Application name.
@@ -787,11 +787,13 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing cloud based app that allows syncing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:42
 msgid "Cloud-Based"
-msgstr ""
+msgstr "Sky-baseret"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:43
 msgid "<b>Telegram</b> lets you access your messages<br> from multiple devices"
 msgstr ""
+"<b>Telegram</b>lader dig tilgå dine meddelelser<br> fra flere forskellige "
+"enheder"
 
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
@@ -800,17 +802,17 @@ msgstr "Privat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
-msgstr ""
+msgstr "<b>Telegram</b> meddelelser er kraftigt krypterede<br>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
-msgstr ""
+msgstr "Vælg"
 
 #. TRANSLATORS: %1 is the person from whom the app is previewing media.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:46
 #, qt-format
 msgid "From: %1"
-msgstr ""
+msgstr "Fra: %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PreviewPage.qml:57
 msgid "Share"
@@ -819,22 +821,22 @@ msgstr "Del"
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:41
 msgid "Add member"
-msgstr ""
+msgstr "Tilføj medlem"
 
 #. TRANSLATORS: Action text to change group chat title.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:166
 msgid "Change Group Title"
-msgstr ""
+msgstr "Skift Gruppe Titel"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:180
 msgid "New group chat title"
-msgstr ""
+msgstr "Ny gruppe chat titel"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:188
 msgid "Change Title"
-msgstr ""
+msgstr "Skift Titel"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
@@ -842,7 +844,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:92
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr ""
+msgstr "%1 medlemmer, %2 online"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is group chat member count.
@@ -850,7 +852,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:95
 #, qt-format
 msgid "%1 members"
-msgstr ""
+msgstr "%1 medlemmer"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -859,8 +861,8 @@ msgstr ""
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1 skriver"
+msgstr[1] "%1 skriver"
 
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:345
