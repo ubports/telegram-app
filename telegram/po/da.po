@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-15 18:24+0000\n"
+"PO-Revision-Date: 2018-09-16 16:12+0000\n"
 "Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -1060,68 +1060,68 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr "%1 kom med i din skjulte chat"
+msgstr "%1 kom med i din skjulte chat."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
 msgid "You joined the secret chat."
-msgstr ""
+msgstr "Du kom med i den skjulte chat."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:307
 #, qt-format
 msgid "%1 created the group"
-msgstr ""
+msgstr "%1 skabte gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:313
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "Du tilføjede %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:315
 #, qt-format
 msgid "%1 added you"
-msgstr ""
+msgstr "%1 tilføjede dig"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
 #, qt-format
 msgid "%1 joined the group"
-msgstr ""
+msgstr "%1 sluttede sig til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:319
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 added %2"
-msgstr "%1 kl. %2"
+msgstr "%1 tilføjede %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:324
 #, qt-format
 msgid "%1 left the group"
-msgstr ""
+msgstr "%1 forlod gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:327
 #, qt-format
 msgid "You removed %1"
-msgstr ""
+msgstr "Du fjernede %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:329
 #, qt-format
 msgid "%1 removed you"
-msgstr ""
+msgstr "%1 fjernede dig"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:331
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "%1 removed %2"
-msgstr ""
+msgstr "%1 fjernede %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:339
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "%1 sluttede sig til gruppen via et invitationslink"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:224
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr ""
+msgstr "Videresendt fra <b>%1</b>"
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
@@ -1147,13 +1147,13 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
 #, qt-format
 msgid "today at %1"
-msgstr ""
+msgstr "Idag kl. %1"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:57
 #, qt-format
 msgid "yesterday at %1"
-msgstr ""
+msgstr "Igår kl. %1"
 
 #. TRANSLATORS %1 refers to a date, and %2 to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:60
@@ -1169,17 +1169,17 @@ msgstr "mm:ss"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
 msgid "h:mm:ss"
-msgstr ""
+msgstr "t:mm:ss"
 
 #. TRANSLATORS: Format string: time.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:289
 msgid "HH:mm"
-msgstr ""
+msgstr "TT:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:293
 msgid "ddd HH:mm"
-msgstr ""
+msgstr "ddd TT:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:297
@@ -1189,15 +1189,15 @@ msgstr ""
 #. TRANSLATORS: Format string: full date
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:300
 msgid "dd MMM yy"
-msgstr ""
+msgstr "dd MMM åå"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:120
 msgid "sent you a message"
-msgstr ""
+msgstr "har sendt dig en meddelelse"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:124
 msgid "sent you a photo"
-msgstr ""
+msgstr "har sendt dig et billede"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
 msgid "sent you a sticker"
@@ -1205,38 +1205,38 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
-msgstr ""
+msgstr "har sendt dig en video"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:136
 msgid "sent you a document"
-msgstr ""
+msgstr "har sendt dig et dokument"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:140
 msgid "sent you a voice message"
-msgstr ""
+msgstr "har sendt dig en talemeddelelse"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:144
 msgid "shared a contact with you"
-msgstr ""
+msgstr "har delt en kontakt med dig"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:148
 msgid "sent you a map"
-msgstr ""
+msgstr "har sendt dig et kort"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:153
 #, qt-format
 msgid "%1: %2"
-msgstr ""
+msgstr "%1: %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:158
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr ""
+msgstr "%1 har sendt en meddelelse til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:163
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr ""
+msgstr "%1 har sendt et billede til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
@@ -1246,76 +1246,76 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr ""
+msgstr "%1 har sendt en video til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:179
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr ""
+msgstr "%1 har sendt et dokument til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr ""
+msgstr "%1 har sendt en talebesked til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr ""
+msgstr "%1 har sendt en kontakt til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:194
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr ""
+msgstr "%1 har sendt et kort til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:199
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:220
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr ""
+msgstr "%1 har inviteret dig til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:204
 #, qt-format
 msgid "%1 changed group name"
-msgstr ""
+msgstr "%1 ændrede gruppenavnet"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:209
 #, qt-format
 msgid "%1 changed group photo"
-msgstr ""
+msgstr "%1 ændrede gruppebilledet"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:215
 #, qt-format
 msgid "%1 invited %2"
-msgstr ""
+msgstr "%1 har inviteret %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:231
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr ""
+msgstr "%1 har fjernet dig fra gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:236
 #, qt-format
 msgid "%1 has left the group"
-msgstr ""
+msgstr "%1 har forladt gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:241
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr ""
+msgstr "%1 er vendt tilbage til gruppen"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:246
 #, qt-format
 msgid "@ %1"
-msgstr ""
+msgstr "På %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:248
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "%1 er tjekket ind"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:254
@@ -1326,23 +1326,23 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:265
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "Nyt log ind fra ikke genkendt enhed"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:264
 #, qt-format
 msgid "%1 @ %2"
-msgstr ""
+msgstr "%1 @ %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:269
 msgid "updated profile photo"
-msgstr ""
+msgstr "Opdateret profilbillede"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:274
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:279
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:284
 msgid "You have a new message"
-msgstr ""
+msgstr "Du har fået en ny meddelelse"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/config.h:24
