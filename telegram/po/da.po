@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-15 18:02+0000\n"
+"PO-Revision-Date: 2018-09-15 18:24+0000\n"
 "Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -868,7 +868,7 @@ msgstr[1] "%1 skriver"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:345
 #, qt-format
 msgid "%1 are typing"
-msgstr ""
+msgstr "%1 skriver"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:411
@@ -884,7 +884,7 @@ msgstr "Mobil"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
 #, qt-format
 msgid "@%1"
-msgstr ""
+msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:643
@@ -894,58 +894,60 @@ msgstr ""
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:714
 msgid "Remove from group"
-msgstr ""
+msgstr "Fjern fra gruppe"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:180
 #, qt-format
 msgid "Telegram messages received today: %1"
-msgstr ""
+msgstr "Telegram meddelelser modtaget idag: %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:181
 msgid "No Telegram messages received today."
-msgstr ""
+msgstr "Ingen Telegram meddelelser modtaget idag."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:188
 #, qt-format
 msgid "Telegram messages sent today: %1"
-msgstr ""
+msgstr "Telegram meddelelser sendt idag: %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:189
 msgid "No Telegram messages sent today."
-msgstr ""
+msgstr "Ingen Telegram meddelelser sendt idag."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:475
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
 msgstr ""
+"Hvis du ønsker at modtage Telegram notifikationer når du ikke bruger app'en, "
+"skal du logge ind på din Ubuntu One konto."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:482
 msgid "Sign in to Ubuntu One"
-msgstr ""
+msgstr "Log ind på Ubuntu One"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:490
 msgid "Remind me later"
-msgstr ""
+msgstr "Mind mig om det senere"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:498
 msgid "Don't want notifications"
-msgstr ""
+msgstr "Ønsker ikke notifikationer"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:187
 msgid "Accounts"
-msgstr ""
+msgstr "Kontoer"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:214
 msgid "Add Account"
-msgstr ""
+msgstr "Tilføj konto"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:91
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:292
 msgid "Photo"
-msgstr ""
+msgstr "Billede"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:103
 msgid "Video"
@@ -962,25 +964,25 @@ msgstr "<<< Stryg for at afbryde"
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr ""
+msgstr "Venter på at brugeren kommer online..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
-msgstr ""
+msgstr "Der er bedt om skjult chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:38
 msgid "Secret chat created"
-msgstr ""
+msgstr "Skjult chat er oprettet"
 
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr ""
+msgstr "Skjult chat afbrudt"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:48
 msgid "Disabled"
-msgstr ""
+msgstr "Afsluttet"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:51
@@ -1012,44 +1014,44 @@ msgstr "1 uge"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:61
 msgid "Leave chat"
-msgstr ""
+msgstr "Forlad chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:67
 msgid "Are you sure you want to leave this chat?"
-msgstr ""
+msgstr "Er du sikker på at du vil forlade denne chat?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:78
 msgid "Clear history"
-msgstr ""
+msgstr "Ryd historik"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:84
 msgid "Are you sure you want to clear history?"
-msgstr ""
+msgstr "Er du sikker på at du vil rydde historikken?"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:236
 msgid "You: "
-msgstr ""
+msgstr "Dig: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:257
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:86
 msgid "typing..."
-msgstr ""
+msgstr "skriver..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:277
 #, qt-format
 msgid "You changed the group title to %1"
-msgstr ""
+msgstr "Du ændrede gruppetitlen til %1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:279
 #, qt-format
 msgid "%1 changed the group title to %2"
-msgstr ""
+msgstr "%1 ændrede gruppetitlen til %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:286
 msgid "Voice message"
-msgstr ""
+msgstr "Talemeddelelse"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
 msgid "Sticker"
@@ -1058,7 +1060,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr ""
+msgstr "%1 kom med i din skjulte chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
 msgid "You joined the secret chat."
