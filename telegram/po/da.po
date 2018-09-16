@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-16 18:53+0000\n"
+"PO-Revision-Date: 2018-09-16 20:02+0000\n"
 "Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -1134,7 +1134,7 @@ msgstr "Slettet"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:11
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:46
 msgid "hh:mm"
-msgstr "hh:mm"
+msgstr "tt:mm"
 
 #. TRANSLATORS: localized date string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
