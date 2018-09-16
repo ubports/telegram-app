@@ -142,7 +142,12 @@ Item {
                 maximumLineCount: 1
                 elide: Text.ElideRight
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: realMessage ? realMessage.message : ""
+                textFormat: Text.RichText
+                text: '<html><style type="text/css">a:link, #social {color:'
+                      + theme.palette.normal.activityText
+                      + '; text-decoration: none;} </style><body>'
+                      + realMessage && realMessage.message ? realMessage.message : ""
+                      + "</body></html>"
                 color: message && message.out? "white" : theme.palette.normal.backgroundText
             }
         }
