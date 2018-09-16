@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-16 16:12+0000\n"
+"PO-Revision-Date: 2018-09-16 18:53+0000\n"
 "Last-Translator: Tom Rausner <tomrausner@gmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
-msgstr "Tilføj kontakt"
+msgstr "Tilføj til kontakter"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:26
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:45
@@ -52,12 +52,12 @@ msgstr "Tilbage"
 #. TRANSLATORS: Placeholder for contacts search field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:69
 msgid "Search contacts..."
-msgstr "Søg efter kontakter"
+msgstr "Søg i kontakter..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
-msgstr "Ny hemmelig chat"
+msgstr "Ny Skjult Chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
@@ -79,7 +79,7 @@ msgstr "OK"
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:241
 msgid "Chat title"
-msgstr "Navn på chat"
+msgstr "Chat titel"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
@@ -89,12 +89,12 @@ msgstr "Tilføj kontakt"
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
 msgid "From Address Book"
-msgstr "Fra adressebogen"
+msgstr "Fra Adressebogen"
 
 #. TRANSLATORS: Manually enter details of contact being added.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:367
 msgid "Enter Details"
-msgstr "Tilføj detaljer"
+msgstr "Indføj detaljer"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
@@ -127,7 +127,8 @@ msgid ""
 "\n"
 "Number of last messages to forward:"
 msgstr ""
-"Add %1 to %2?\n"
+"Tilføje %1 til %2?\n"
+"\n"
 "Antallet af nye beskeder der skal videresendes:"
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
@@ -889,7 +890,7 @@ msgstr "@%1"
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:643
 msgid "Block user"
-msgstr ""
+msgstr "Blok bruger"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:714
@@ -1184,7 +1185,7 @@ msgstr "ddd TT:mm"
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:297
 msgid "dd MMM"
-msgstr ""
+msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:300
@@ -1347,19 +1348,19 @@ msgstr "Du har fået en ny meddelelse"
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr ""
+msgstr "t:mm ddd, dd-MM-åå"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:62
 msgid "Open app"
-msgstr ""
+msgstr "Start app"
 
 #. TRANSLATORS: call to action: open this chat
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:86
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:120
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr ""
+msgstr "Åben chat"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
 msgid "Call"
@@ -1367,84 +1368,84 @@ msgstr "Ringer"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "Fejl ved hentning af Telegram data"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr ""
+msgstr "Tap her for at åbne app"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr ""
+msgstr "Resultater i: Kontakter & Chats"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
-msgstr ""
+msgstr "Resultater i: Meddelelser"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr ""
+msgstr "Personer Du Snakker Med"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr ""
+msgstr "Nylige chats"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr ""
+msgstr "Nylige Billeder"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
-msgstr ""
+msgstr "%1 ny meddelelse"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
-msgstr ""
+msgstr "%1 nye meddelelser"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr ""
+msgstr "Ulæste Chats (%1)"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr ""
+msgstr "Lydmeddelelse"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr ""
+msgstr "Kontakt modtaget"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:650
 msgid "Document received"
-msgstr ""
+msgstr "Dokument modtaget"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:654
 msgid "Photo received"
-msgstr ""
+msgstr "Billede modtaget"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:671
 msgid "Video received"
-msgstr ""
+msgstr "Video modtaget"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr ""
+msgstr "Uhåndteret medietype"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr ""
+msgstr "Login til Telegram"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:792
 msgid "No messages received Today."
-msgstr ""
+msgstr "Ingen meddelelser modtaget Idag."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr ""
+msgstr "Dette er Telegrams scope"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "Søg efter en chat, kontakt eller meddelelse"
