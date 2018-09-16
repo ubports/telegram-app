@@ -15,7 +15,7 @@ Item {
 
     property variant message
     property bool hasMedia: false
-    property var bgMessageColor: !message.sent ? theme.palette.normal.backgroundTertiaryText : ((message.out && message.unread) ? theme.palette.normal.activity : (message.out ? Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green : Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green ))
+    property var bgMessageColor: !message.sent ? theme.palette.normal.backgroundTertiaryText : ((message.out && message.unread) ? theme.palette.normal.activity : (Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green ))
 
     Rectangle {
         visible: hasMedia

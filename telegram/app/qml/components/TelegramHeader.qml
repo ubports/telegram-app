@@ -26,17 +26,7 @@ PageHeader {
     property bool isOnline: !isChat && !isChannel && user.status.classType == userStatusType.typeUserStatusOnline
     property bool isSecretChat: dialog.encrypted
     property bool isConnecting: !telegram.connected
-    property int participantsCount: {
-        if (isChannel)
-        {
-            var chatFull = telegram.chatFull(chat.id)
-            return chatFull.participants.participants.count;
-        }
-        else if (isChat)
-            return chat.participantsCount;
-        else
-            return 0;
-    }
+    property int participantsCount: chat.participantsCount;
 
     property int onlineCount: {
         var result = 0;
