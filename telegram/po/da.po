@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-17 07:26+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2018-09-18 12:43+0000\n"
+"Last-Translator: agdamsbo <agdamsbo@protonmail.com>\n"
 "Language-Team: Danish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/da/>\n"
 "Language: da\n"
@@ -1202,7 +1202,7 @@ msgstr "har sendt dig et billede"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
 msgid "sent you a sticker"
-msgstr ""
+msgstr "sendte dig et klistermærke"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
@@ -1242,7 +1242,7 @@ msgstr "%1 har sendt et billede til gruppen"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
 #, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr ""
+msgstr "%1 sendte et klistermærke til gruppen"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format
