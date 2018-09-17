@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-09-17 15:55+0000\n"
+"PO-Revision-Date: 2018-09-18 20:52+0000\n"
 "Last-Translator: Aitzol Berasategi <aitzol@disroot.org>\n"
 "Language-Team: Basque <https://translate.ubports.com/projects/ubports/"
 "telegram-app/eu/>\n"
@@ -240,12 +240,11 @@ msgstr "<b>%1</b>-(e)k taldea sortu du"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
 msgid "You joined the channel"
-msgstr "Kanalera elkartu zara."
+msgstr "Kanalera elkartu zara"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 taldera gehitu da"
+msgstr "Taldera elkartu zara"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -253,14 +252,13 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> taldera batu da"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "%1 taldera itzuli da"
+msgstr "Taldera itzuli zara"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b>-(e)k taldea sortu du"
+msgstr "<b>%1</b> taldera itzuli da"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
