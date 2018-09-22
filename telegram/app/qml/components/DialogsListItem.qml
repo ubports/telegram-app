@@ -243,11 +243,11 @@ ListItem {
             id: message_text
             visible: showMessage
             elide: Text.ElideRight
+            wrapMode: Text.WrapAnywhere
             maximumLineCount: 1
             font.pixelSize: units.dp(15)
             color: theme.palette.normal.backgroundTertiaryText
             width: parent.width - (message_author.visible? message_author.width : 0.0) - (unread_rect.visible ? unread_rect.width : 0.0)
-            textFormat: Text.RichText
             text: {
                 if (!visible) return "";
 
@@ -341,11 +341,7 @@ ListItem {
                         }
                         return "<font color=\"" + theme.palette.normal.activityText + "\">" + res + "</font>"
                     }
-                    return '<html><style type="text/css">a:link, #social {color:'
-                            + theme.palette.normal.activityText
-                            + '; text-decoration: none;}</style><body>'
-                            + message.message
-                            + "</body></html>"
+                    return message.message
                 }
             }
         }
