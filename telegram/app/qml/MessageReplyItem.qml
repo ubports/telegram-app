@@ -60,15 +60,16 @@ Item {
                 smooth: true
                 visible: path.length != 0
                 source: path
-                color: switch( media.messageMediaEnum )
-                    {
-                    case MessageMedia.Unsupported:
-                    case MessageMedia.Audio:
-                        return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
+                color: if (media)
+                           switch( media.messageMediaEnum )
+                           {
+                           case MessageMedia.Unsupported:
+                           case MessageMedia.Audio:
+                               return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
 
-                    default:
-                        return Qt.rgba(0.0, 0.0, 0.0, 0.0)
-                    }
+                           default:
+                               return Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                           }
 
                 property size imageSize: Cutegram.imageSize(source)
                 property variant media: realMessage ? realMessage.media : 0

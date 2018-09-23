@@ -36,6 +36,20 @@ Item {
         anchors.right: parent.right
 
         Label {
+            id: edited_label
+            text: i18n.tr("Edited");
+            visible: message.editDate > 0;
+            font.weight: Font.DemiBold
+            fontSize: "x-small"
+            color: {
+                if (hasMedia) {
+                    return Colors.white;
+                }
+                return message.out ? "white" : theme.palette.normal.backgroundText
+            }
+        }
+
+        Label {
             id: time_label
             anchors.verticalCenter: parent.verticalCenter
             font.weight: Font.DemiBold
