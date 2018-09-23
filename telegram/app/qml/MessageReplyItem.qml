@@ -61,7 +61,7 @@ Item {
                 visible: path.length != 0
                 source: path
                 color: {
-					if (media) {
+                    if (media) {
                         switch( media.messageMediaEnum )
                         {
                             case MessageMedia.Unsupported:
@@ -69,8 +69,8 @@ Item {
                                var color = Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
                                return color || Qt.rgba(0.0, 0.0, 0.0, 0.0)
                         }
-					}
-					return Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                    }
+                    return Qt.rgba(0.0, 0.0, 0.0, 0.0)
                 }
 
                 property size imageSize: Cutegram.imageSize(source)
