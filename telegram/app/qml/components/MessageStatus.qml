@@ -15,7 +15,7 @@ Item {
 
     property variant message
     property bool hasMedia: false
-    property var bgMessageColor: !message.sent ? theme.palette.normal.backgroundTertiaryText : ((message.out && message.unread) ? theme.palette.normal.activity : (Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green ))
+    property var bgMessageColor: !message.sent ? theme.palette.normal.backgroundTertiaryText : ((message.out && message.unread && !status_image.visible) ? theme.palette.normal.activity : (Theme.name == "Ubuntu.Components.Themes.Ambiance" ? UbuntuColors.green : Colors.new_green ))
 
     Rectangle {
         visible: hasMedia
@@ -77,6 +77,7 @@ Item {
                 color: message.out ? "white" : theme.palette.normal.backgroundText
                 opacity: message.out ? 1 : 0.6
             }
+            
             Label {
                 anchors.verticalCenter: parent.verticalCenter
                 text: {
@@ -97,8 +98,31 @@ Item {
                 }
                 opacity: message.out ? 1 : 0.6
             }
-
         }
+        
+        Image {
+            id: status_image
+            objectName: "statusImage"
+            anchors.verticalCenter: parent.verticalCenter
+            width: visible ? units.gu(2) : 0
+            height: width
+            visible: Cutegram.showIndicators && status === Image.Ready
+            z: 1
+            fillMode: Image.PreserveAspectFit
+            source: {
+                if(!message.sent) {
+                    return Qt.resolvedUrl("qrc:/qml/files/clock_white.svg");
+                }
+                else if(message.out && message.unread) {
+                    return Qt.resolvedUrl("qrc:/qml/files/tick_single_white.svg");
+                }
+                else if(message.out) {
+                    return Qt.resolvedUrl("qrc:/qml/files/tick_double_white2.svg");
+                }
+                else {
+                    return "";
+                }
+            }
+        } 
     }
 }
-
