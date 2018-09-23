@@ -1,6 +1,8 @@
 [submodule "deps/TelegramQML"]
 	path = deps/TelegramQML
-	url = https://github.com/ubports/TelegramQML.git -b ubports-API53
+	url = https://github.com/ubports/TelegramQML.git
+	branch = ubports-API53
 [submodule "deps/libqtelegram-ae"]
 	path = deps/libqtelegram-ae
-	url = https://github.com/ubports/libqtelegram-aseman-edition.git -b ubports-API53
+	url = https://github.com/ubports/libqtelegram-aseman-edition.git
+	branch = ubports-API53
