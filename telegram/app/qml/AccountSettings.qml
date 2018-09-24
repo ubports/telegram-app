@@ -195,7 +195,7 @@ Page {
             divider.visible: false
             height: units.gu(6)
             ListItemLayout {
-                title.text: i18n.tr("Show message state indicators")
+                title.text: i18n.tr("Use classic message checkmarks")
                 Switch {
                     checked: Cutegram.showIndicators
                     SlotsLayout.position: SlotsLayout.Last
