@@ -77,7 +77,7 @@ MainView {
             mainView.resumed()
         }
 
-        if (activeFocus) {
+        if (activeFocus && pushClient) {
             processUri();
             if (!pushClient.registered && Cutegram.pushNotifications) {
                 console.log("push - retrying registration");
@@ -211,7 +211,7 @@ MainView {
         }
 
         Connections {
-            target: transfer_helper.transfer
+            target: if(transfer_helper.transfer) transfer_helper.transfer
             onStateChanged: {
                 switch (transfer_helper.transfer.state) {
                 case ContentTransfer.Charged:
