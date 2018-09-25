@@ -6,8 +6,6 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import AsemanTools 1.0
 import TelegramQML 1.0
 
-// Cutegram: AccountFrame.qml
-
 Item {
     id: account_list_item
 
@@ -178,11 +176,6 @@ Item {
                     }
                 }
             }
-
-    //        property bool authNeeded: (telegram.authNeeded
-    //                || telegram.authSignInError.length != 0
-    //                || telegram.authSignUpError.length != 0)
-    //                        && telegram.authPhoneChecked
 
             onSignInRequest: telegram.authSignIn(code)
             onSignUpRequest: telegram.authSignUp(code, fname, lname)
