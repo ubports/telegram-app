@@ -247,7 +247,7 @@ ListItem {
                             left: parent.left
                         }
                         // units.dp is used here, because Label wraps too early as compared to TextEdit.
-                        width: Math.min(units.dp(htmlWidth), maximumWidth)
+                        width: Math.min(units.dp(htmlWidth * 0.5), maximumWidth)
                         height: contentHeight
                         fontSize: message_item.hasMedia ? "small" : "medium"
                         font.weight: Font.Light
