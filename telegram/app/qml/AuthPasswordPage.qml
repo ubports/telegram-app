@@ -7,6 +7,7 @@ TelegramPage {
     id: authPassword
 
     property alias errorText: error_txt.text
+    property string hint
 
     focus: true
 
@@ -39,6 +40,15 @@ TelegramPage {
                 errorText = ""
                 passwordAccepted(code_txt.text)
             }
+        }
+
+        Label {
+            id: hint_txt
+            width: column.width
+            anchors.horizontalCenter: parent.horizontalCenter
+            horizontalAlignment: TextInput.AlignLeft
+            verticalAlignment: TextInput.AlignVCenter
+            text: i18n.tr("Password hint: ") + hint
         }
 
         TelegramButton {

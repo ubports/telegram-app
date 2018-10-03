@@ -198,7 +198,7 @@ Item {
 
         AuthPasswordPage {
             id: auth_password_page
-
+            hint: telegramObject.hint
             onPasswordAccepted: telegramObject.authCheckPassword(password)
 
             Connections {
