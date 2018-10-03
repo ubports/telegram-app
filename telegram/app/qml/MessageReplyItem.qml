@@ -60,16 +60,18 @@ Item {
                 smooth: true
                 visible: path.length != 0
                 source: path
-                color: if (media)
-                           switch( media.messageMediaEnum )
-                           {
-                           case MessageMedia.Unsupported:
-                           case MessageMedia.Audio:
-                               return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
-
-                           default:
-                               return Qt.rgba(0.0, 0.0, 0.0, 0.0)
-                           }
+                color: {
+                    if (media) {
+                        switch( media.messageMediaEnum )
+                        {
+                            case MessageMedia.Unsupported:
+                            case MessageMedia.Audio:
+                               var color = Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
+                               return color || Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                        }
+                    }
+                    return Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                }
 
                 property size imageSize: Cutegram.imageSize(source)
                 property variant media: realMessage ? realMessage.media : 0
@@ -143,7 +145,7 @@ Item {
                 maximumLineCount: 1
                 elide: Text.ElideRight
                 text: realMessage ? realMessage.message : ""
-                color: message.out? "white" : theme.palette.normal.backgroundText
+                color: message && message.out ? "white" : theme.palette.normal.backgroundText
             }
         }
     }
