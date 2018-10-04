@@ -8,7 +8,6 @@ import "qrc:/qml"
 import "qrc:/qml/components"
 import "qrc:/qml/js/colors.js" as Colors
 import "../js/avatar.js" as Avatar
-import "../js/ba-linkify.js" as BaLinkify
 
 ListItem {
     id: message_item
@@ -40,7 +39,7 @@ ListItem {
     property bool dialogIsChat: dialog ? dialog.peer.chatId != 0 : false
     property bool dialogIsChannel: dialog ? dialog.peer.channelId != 0 : false
     property Chat chat: dialog ?  telegramObject.chat(dialogIsChannel ? dialog.peer.channelId : dialog.peer.chatId) : null
-    property string messageText: message.message
+    property string messageText: message.htmlMessage
     property User user: telegramObject.user(message.fromId)
     property User fwdUser: telegramObject.user(message.fwdFromId ? message.fwdFromId.userId : 0)
 
@@ -66,29 +65,6 @@ ListItem {
     signal tagSearchRequest(string tag);
     signal messageFocusRequest(int msgId, int channelId);
     signal previewRequest(int type, string path)
-
-    // Taken from messaging-app
-    function parseText(text) {
-        var phoneExp = /(\+?([0-9]+[ ]?)?\(?([0-9]+)\)?[-. ]?([0-9]+)[-. ]?([0-9]+)[-. ]?([0-9]+))/img;
-        // remove html tags
-        text = text.replace(/</g,'&lt;').replace(/>/g,'<tt>&gt;</tt>');
-        // replace line breaks
-        text = text.replace(/(\n)+/g, '<br />');
-        // Check for Usernames
-        // TODO: Find a way to highlight usernames starting with @ (probably needs lookup if this is a valid username
-        // check for links
-        var myoptions = {
-          callback: function( text, href ) {
-             return href ? '<a href="' + href + '" title="' + href + '" style="color:'+ theme.palette.normal.activityText +';" >' + text + '</a>' : text;
-          }
-        };
-        var htmlText = BaLinkify.linkify(text, myoptions);
-        if (htmlText !== text) {
-            return htmlText;
-        }
-        // linkify phone numbers if no web links were found
-        return text.replace(phoneExp, '<a style="color:'+ theme.palette.normal.activityText +'" href="tel:///$1">$1</a>');
-    }
 
     function htmlHasLinks(html) {
         return html.indexOf('<a href="') !== -1;
@@ -278,12 +254,7 @@ ListItem {
                         horizontalAlignment: Text.AlignLeft
                         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                         textFormat: Text.RichText
-                        text:
-                            '<html><style type="text/css">a:link, #social {color:'
-                            + theme.palette.normal.activityText
-                            + '; text-decoration: none;} </style><body>'
-                            + message_item.messageText
-                            + "</body></html>"
+                        text: message_item.messageText
                         color: message.out? "white" : theme.palette.normal.backgroundText
                         onLinkActivated: {
                             if (link.indexOf("t.me/") >= 0 || link.indexOf("telegram.me/") >= 0)

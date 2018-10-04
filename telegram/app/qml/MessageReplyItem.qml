@@ -60,15 +60,18 @@ Item {
                 smooth: true
                 visible: path.length != 0
                 source: path
-                color: switch( media.messageMediaEnum )
-                    {
-                    case MessageMedia.Unsupported:
-                    case MessageMedia.Audio:
-                        return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
-
-                    default:
-                        return Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                color: {
+                    if (media) {
+                        switch( media.messageMediaEnum )
+                        {
+                            case MessageMedia.Unsupported:
+                            case MessageMedia.Audio:
+                               var color = Theme.name == "Ubuntu.Components.Themes.SuruDark" ? UbuntuColors.porcelain : Colors.graphite
+                               return color || Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                        }
                     }
+                    return Qt.rgba(0.0, 0.0, 0.0, 0.0)
+                }
 
                 property size imageSize: Cutegram.imageSize(source)
                 property variant media: realMessage ? realMessage.media : 0
@@ -141,14 +144,8 @@ Item {
                 visible: text.length != 0
                 maximumLineCount: 1
                 elide: Text.ElideRight
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                textFormat: Text.RichText
-                text: '<html><style type="text/css">a:link, #social {color:'
-                      + theme.palette.normal.activityText
-                      + '; text-decoration: none;} </style><body>'
-                      + realMessage && realMessage.message ? realMessage.message : ""
-                      + "</body></html>"
-                color: message && message.out? "white" : theme.palette.normal.backgroundText
+                text: realMessage ? realMessage.message : ""
+                color: message && message.out ? "white" : theme.palette.normal.backgroundText
             }
         }
     }
