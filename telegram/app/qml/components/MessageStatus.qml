@@ -47,6 +47,7 @@ Item {
                 }
                 return message.out ? "white" : theme.palette.normal.backgroundText
             }
+            opacity: message.out ? 1 : 0.6
         }
 
         Label {

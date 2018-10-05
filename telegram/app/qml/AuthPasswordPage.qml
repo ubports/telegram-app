@@ -7,9 +7,11 @@ TelegramPage {
     id: authPassword
 
     property alias errorText: error_txt.text
+    property string hint
 
     focus: true
 
+    signal error(string errorText)
     signal passwordAccepted(string password)
 
     header: PageHeader {
@@ -27,7 +29,7 @@ TelegramPage {
         spacing: units.gu(2)
 
         TextField {
-            id: code_txt
+            id: password_txt
             width: column.width
             anchors.horizontalCenter: parent.horizontalCenter
             horizontalAlignment: TextInput.AlignHCenter
@@ -37,20 +39,31 @@ TelegramPage {
             echoMode: TextInput.Password
             onAccepted: {
                 errorText = ""
-                passwordAccepted(code_txt.text)
+                isBusy = true;
+                passwordAccepted(password_txt.text)
             }
+        }
+
+        Label {
+            id: hint_txt
+            width: column.width
+            anchors.horizontalCenter: parent.horizontalCenter
+            horizontalAlignment: TextInput.AlignLeft
+            verticalAlignment: TextInput.AlignVCenter
+            text: i18n.tr("Password hint") + ": " + hint
         }
 
         TelegramButton {
             id: accept_button
             objectName: "signInButton"
             width: column.width
-            height: code_txt.height
+            height: password_txt.height
             anchors.horizontalCenter: parent.horizontalCenter
             text: i18n.tr("Sign In")
             onClicked: {
                 errorText = ""
-                passwordAccepted(code_txt.text)
+                isBusy = true;
+                passwordAccepted(password_txt.text)
             }
             focus: true
         }
@@ -64,6 +77,6 @@ TelegramPage {
     }
 
     function forceActiveFocus() {
-        code_txt.forceActiveFocus()
+        password_txt.forceActiveFocus()
     }
 }

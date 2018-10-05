@@ -298,7 +298,7 @@ Page {
                         return i18n.tr("%1 members, %2 online").arg(chat.participantsCount).arg(onlineCount)
                     } else {
                         // TRANSLATORS: %1 is how many members the group chat has.
-                        return i18n.tr("%1 members").arg(chat.participantsCount)
+                        return i18n.tr("%1 member", "%1 members", chat.participantsCount).arg(chat.participantsCount)
                     }
                     return result;
                 } else {
@@ -337,13 +337,8 @@ Page {
                     result += ", "
             }
 
-            if (list.length == 1) {
-                // TRANSLATORS: Indicates in the chat header who is typing.
-                result = i18n.tr("%1 is typing").arg(result.trim());
-            } else {
-                // TRANSLATORS: Indicates in the chat header which contacts are typing.
-                result = i18n.tr("%1 are typing").arg(result.trim());
-            }
+            // TRANSLATORS: Indicates in the chat header who is typing.
+            result = i18n.tr("%1 is typing", "%1 are typing", list.length).arg(result.trim());
             return result;
         }
     }
