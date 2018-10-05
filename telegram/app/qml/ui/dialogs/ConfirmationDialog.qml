@@ -21,6 +21,7 @@ Dialog {
         objectName: "acceptButton"
         text: acceptText
         color: UbuntuColors.green
+        visible: text.length > 0
         onClicked: optionSelected(onAccept)
     }
 
@@ -35,6 +36,7 @@ Dialog {
         objectName: "cancelButton"
         text: cancelText
         color: theme.palette.normal.overlaySecondaryText
+        visible: text.length > 0
         onClicked: optionSelected(onCancel)
     }
 
