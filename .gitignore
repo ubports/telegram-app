@@ -7,7 +7,7 @@ telegram/build*
 telegram/scope/build*
 telegram/manifest.json
 *.pro.user
-build_desktop
-build_mobile
+build*
 clickable.json
+.clickable
 
