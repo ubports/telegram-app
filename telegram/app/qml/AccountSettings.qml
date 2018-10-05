@@ -191,6 +191,21 @@ Page {
             }
         }
 
+        ListItem {
+            divider.visible: false
+            height: units.gu(6)
+            ListItemLayout {
+                title.text: i18n.tr("Use classic message checkmarks")
+                Switch {
+                    checked: Cutegram.showIndicators
+                    SlotsLayout.position: SlotsLayout.Last
+                    onCheckedChanged: {
+                        Cutegram.showIndicators = checked
+                    }
+                }
+            }
+        }
+
         // TODO Terminate all sessions
 
         ListItems.Header {
