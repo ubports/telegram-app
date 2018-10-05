@@ -87,6 +87,7 @@ Item {
         onErrorChanged: {
             console.log("telegram error: " + error)
             if (error == "AUTH_RESTART") {
+                isBusy = false
                 profiles.remove(telegram.phoneNumber);
                 console.log("*** Authentication stopped for: " + telegram.phoneNumber);
             }
@@ -204,6 +205,7 @@ Item {
             Connections {
                 target: telegramObject
                 onErrorChanged: {
+                    isBusy = false;
                     if (telegramObject.error == "PASSWORD_HASH_INVALID")
                         auth_password_page.errorText = i18n.tr("Invalid password");
                 }
