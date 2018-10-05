@@ -6,8 +6,6 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import AsemanTools 1.0
 import TelegramQML 1.0
 
-// Cutegram: AccountFrame.qml
-
 Item {
     id: account_list_item
 
@@ -89,6 +87,7 @@ Item {
         onErrorChanged: {
             console.log("telegram error: " + error)
             if (error == "AUTH_RESTART") {
+                isBusy = false
                 profiles.remove(telegram.phoneNumber);
                 console.log("*** Authentication stopped for: " + telegram.phoneNumber);
             }
@@ -179,11 +178,6 @@ Item {
                 }
             }
 
-    //        property bool authNeeded: (telegram.authNeeded
-    //                || telegram.authSignInError.length != 0
-    //                || telegram.authSignUpError.length != 0)
-    //                        && telegram.authPhoneChecked
-
             onSignInRequest: telegram.authSignIn(code)
             onSignUpRequest: telegram.authSignUp(code, fname, lname)
             onCodeRequest: {
@@ -205,12 +199,13 @@ Item {
 
         AuthPasswordPage {
             id: auth_password_page
-
+            hint: telegramObject.hint
             onPasswordAccepted: telegramObject.authCheckPassword(password)
 
             Connections {
                 target: telegramObject
                 onErrorChanged: {
+                    isBusy = false;
                     if (telegramObject.error == "PASSWORD_HASH_INVALID")
                         auth_password_page.errorText = i18n.tr("Invalid password");
                 }

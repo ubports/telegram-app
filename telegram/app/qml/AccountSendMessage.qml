@@ -789,6 +789,7 @@ Rectangle {
                 PopupUtils.open(Qt.resolvedUrl("qrc:/qml/ui/dialogs/ConfirmationDialog.qml"),
                     null, {
                         text: i18n.tr("Please grant microphone access on System Settings > Security & Privacy."),
+                        cancelText: "",
                         onAccept: function() {
                             Qt.openUrlExternally("settings:///system/security-privacy")
                         }
