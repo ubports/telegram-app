@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-11 20:39+0000\n"
 "PO-Revision-Date: 2018-10-14 18:56+0000\n"
-"Last-Translator: Johannes Ledermüller <schwindelfrei@firemail.de>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports/"
 "telegram-app/de/>\n"
 "Language: de\n"
@@ -659,7 +659,7 @@ msgstr "Kontakt konnte nicht hinzugefügt werden"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:268
 msgid "Please include the country code."
-msgstr "Bitte auch die Landesvorwahl angeben."
+msgstr "Bitte auch die Ländervorwahl angeben."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:270
 msgid "Number is not a valid phone number"
