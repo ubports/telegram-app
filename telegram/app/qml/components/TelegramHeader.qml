@@ -82,7 +82,7 @@ PageHeader {
                     result += i18n.tr("%1 members, %2 online").arg(participantsCount).arg(onlineCount)
                 } else {
                     // TRANSLATORS: %1 is group chat member count.
-                    result += i18n.tr("%1 members").arg(participantsCount)
+                    result += i18n.tr("%1 member", "%1 members", participantsCount).arg(participantsCount)
                 }
             } else {
                 switch(user.status.classType)
