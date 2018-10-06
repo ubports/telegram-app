@@ -4,7 +4,6 @@
   "dir": "./target/",
   "build": "../utils/build-click.sh",
   "kill": "telegram",
-  "sdk": "ubuntu-sdk-15.04",
   "specificDependencies": true,
   "dependencies": [
     "libthumbnailer-qt-dev:armhf",
