@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-07-07 14:32+0000\n"
+"PO-Revision-Date: 2018-10-14 19:45+0000\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/es/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.0\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
 msgid "Add to contacts"
@@ -505,7 +505,7 @@ msgstr "Modo nocturno"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
 msgid "Use classic message checkmarks"
-msgstr ""
+msgstr "Usar las marcas clásicas de verificación de mensajes"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:213
@@ -735,9 +735,8 @@ msgid "Password"
 msgstr "Contraseña"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:53
-#, fuzzy
 msgid "Password hint"
-msgstr "Contraseña"
+msgstr "Pista de la contraseña"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -861,10 +860,10 @@ msgstr "%1 miembros, %2 conectados"
 #. TRANSLATORS: %1 is group chat member count.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:301
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:85
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 member"
 msgid_plural "%1 members"
-msgstr[0] "%1 miembros"
+msgstr[0] "%1 miembro"
 msgstr[1] "%1 miembros"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
@@ -1131,9 +1130,8 @@ msgid "Forwarded from <b>%1</b>"
 msgstr "Reenviado desde <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessageStatus.qml:40
-#, fuzzy
 msgid "Edited"
-msgstr "Editar nombre"
+msgstr "Editado"
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
