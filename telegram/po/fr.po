@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-10-15 18:09+0000\n"
+"PO-Revision-Date: 2018-10-21 00:00+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports/"
 "telegram-app/fr/>\n"
@@ -447,7 +447,7 @@ msgstr "Vous devez maintenir appuyée l'icône d'enregistrement"
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Veuillez autoriser l'accès au microphone dans les Paramètres système > "
-"Securité et confidentialité."
+"Sécurité et vie privée."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:20
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:133
