@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-10-15 18:15+0000\n"
+"PO-Revision-Date: 2018-10-21 00:00+0000\n"
 "Last-Translator: Max Libre <libremax@protonmail.com>\n"
 "Language-Team: English (United Kingdom) <https://translate.ubports.com/"
 "projects/ubports/telegram-app/en_GB/>\n"
@@ -504,7 +504,7 @@ msgstr "Night Mode"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
 msgid "Use classic message checkmarks"
-msgstr "Utiliser les cases à cocher classiques des messages"
+msgstr "Use classic message checkmarks"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:213
@@ -735,7 +735,7 @@ msgstr "Password"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:53
 msgid "Password hint"
-msgstr "Indice de mot de passe"
+msgstr "Password hint"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -859,8 +859,8 @@ msgstr "%1 members, %2 online"
 #, qt-format
 msgid "%1 member"
 msgid_plural "%1 members"
-msgstr[0] "%1 membre"
-msgstr[1] "%1 membres"
+msgstr[0] "%1 member"
+msgstr[1] "%1 members"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -1127,7 +1127,7 @@ msgstr "Forwarded from <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessageStatus.qml:40
 msgid "Edited"
-msgstr "Modifié"
+msgstr "Edited"
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
