@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-10-21 00:00+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"PO-Revision-Date: 2018-11-04 00:01+0000\n"
+"Last-Translator: honigwald <sblanck@win.tu-berlin.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports/"
 "telegram-app/de/>\n"
 "Language: de\n"
@@ -34,7 +34,7 @@ msgstr "Kontakte"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:91
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCountriesPage.qml:27
 msgid "Search"
-msgstr "Suchen"
+msgstr "Suche"
 
 #. TRANSLATORS: As in: add new contact
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:36
