@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-10-28 00:01+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2018-11-04 00:01+0000\n"
+"Last-Translator: Gianmarco <gianmarcoesgarix@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports/"
 "telegram-app/it/>\n"
 "Language: it\n"
@@ -505,7 +505,7 @@ msgstr "Modalità Notte"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
 msgid "Use classic message checkmarks"
-msgstr ""
+msgstr "Usa le classiche spunte dei messaggi"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:213
@@ -737,7 +737,7 @@ msgstr "Password"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:53
 #, fuzzy
 msgid "Password hint"
-msgstr "Password"
+msgstr "Suggerimento password"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
