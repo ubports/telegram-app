@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-11-08 16:52+0000\n"
+"PO-Revision-Date: 2018-11-11 00:02+0000\n"
 "Last-Translator: Aurelio Cilia <spacedriver88@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports/"
 "telegram-app/it/>\n"
@@ -639,7 +639,7 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
 msgid "Done"
-msgstr "Fatto"
+msgstr "Completata"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:127
 msgid "Phone number (required)"
