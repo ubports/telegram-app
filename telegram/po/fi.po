@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-08-19 16:08+0000\n"
+"PO-Revision-Date: 2018-11-11 00:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.ubports.com/projects/ubports/"
 "telegram-app/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.20\n"
+"X-Generator: Weblate 3.1.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -736,9 +736,8 @@ msgid "Password"
 msgstr "Salasana"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:53
-#, fuzzy
 msgid "Password hint"
-msgstr "Salasana"
+msgstr "Salasanavihje"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -862,10 +861,10 @@ msgstr "%1 jäsentä, %2 linjoilla"
 #. TRANSLATORS: %1 is group chat member count.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:301
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:85
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 member"
 msgid_plural "%1 members"
-msgstr[0] "%1 jäsentä"
+msgstr[0] "%1 jäsen"
 msgstr[1] "%1 jäsentä"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
@@ -1132,9 +1131,8 @@ msgid "Forwarded from <b>%1</b>"
 msgstr "Edelleenlähetetty käyttäjältä <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessageStatus.qml:40
-#, fuzzy
 msgid "Edited"
-msgstr "Muokkaa nimeä"
+msgstr "Muokattu"
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-11-04 00:00+0000\n"
+"PO-Revision-Date: 2018-11-07 17:41+0000\n"
 "Last-Translator: Louies <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports/telegram-app/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:45+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -1177,7 +1177,6 @@ msgstr "%1 %2"
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "mm:ss"
 msgstr "mm:ss"
 
@@ -1226,9 +1225,8 @@ msgid "sent you a sticker"
 msgstr "向您發送一個貼圖"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
-#, fuzzy
 msgid "sent you a video"
-msgstr "向您發送一個視頻"
+msgstr "向您發送一個影片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:136
 #, fuzzy
