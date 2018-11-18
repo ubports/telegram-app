@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-11-11 13:05+0000\n"
+"PO-Revision-Date: 2018-11-18 08:47+0000\n"
 "Last-Translator: Louies <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports/telegram-app/zh_Hant/>\n"
@@ -84,7 +84,7 @@ msgstr "聊天標題"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
-msgstr "新增聯絡人"
+msgstr "加入聯絡人"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
@@ -266,7 +266,7 @@ msgstr "<b>%1</b> 返回到群組"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr "您新增了 <b>%1</b>"
+msgstr "您加入了 <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
@@ -276,16 +276,16 @@ msgstr "<b>%1</b> 將您加入"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:108
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr "<b>%1</b> 新增了 <b>%2</b>"
+msgstr "<b>%1</b> 加入了 <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
 msgid "You added multiple users"
-msgstr "您添加了多個用戶"
+msgstr "您加入了多個用戶"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
 #, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>1%1</b>添加了多個用戶"
+msgstr "<b>1%1</b>加入了多個用戶"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
@@ -480,7 +480,7 @@ msgstr "電話"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
-msgstr "使用者名稱"
+msgstr "用戶名稱"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:127
@@ -528,7 +528,7 @@ msgstr "Telegram 常見問答集"
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:240
 msgid "Account"
-msgstr "帳號"
+msgstr "帳戶"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:251
 msgid "Log out"
@@ -609,25 +609,25 @@ msgstr "%1 可用。"
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr "抱歉，此使用者名稱已被使用。"
+msgstr "抱歉，此用戶名稱已被使用。"
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr "抱歉，此使用者名稱無效。"
+msgstr "抱歉，此用戶名稱無效。"
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
-msgstr "您的使用者名稱"
+msgstr "您的用戶名稱"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr "使用者名稱至少需要五個字元。"
+msgstr "用戶名稱至少需要五個字元。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr "檢查使用者名稱中..."
+msgstr "檢查用戶名稱中..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
@@ -636,9 +636,8 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
-"您可以在 <b>Telegram</b> 上建立一個使用者名稱。如此以來，其他人便可以透過此使"
-"用者名稱找到您，而無須知道您的電話號碼。<br /><br />您可以使用 <b>a-z</b>，"
-"<b>0-9</b> 與底線。<br />最小長度限制為 <b>5</b> 個字元。"
+"您可以在 <b>Telegram</b> 上建立一個用戶名稱。如此以來，其他人便可以透過此用戶名稱找到您，而無須知道您的電話號碼。<br /><br />"
+"您可以使用 <b>a-z</b>，<b>0-9</b> 與底線。<br />最小長度限制為 <b>5</b> 個字元。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
@@ -777,7 +776,7 @@ msgstr "免費"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr "<b>Telegram</b> 永遠免費。沒有廣告。<br> 也不必收取註冊費。"
+msgstr "<b>Telegram</b> 永遠免費。沒有廣告。<br> 也不必收取註冊費"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:32
@@ -834,7 +833,7 @@ msgstr "分享"
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:41
 msgid "Add member"
-msgstr "新增成員"
+msgstr "加入成員"
 
 #. TRANSLATORS: Action text to change group chat title.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
@@ -898,7 +897,7 @@ msgstr "@%1"
 #. TRANSLATORS: Text of the block user switch label in user profile page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:638
 msgid "Block user"
-msgstr "封鎖使用者"
+msgstr "封鎖用戶"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:709
@@ -949,7 +948,7 @@ msgstr "帳戶"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:214
 msgid "Add Account"
-msgstr "新增帳號"
+msgstr "加入帳戶"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:91
@@ -959,7 +958,7 @@ msgstr "相片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:103
 msgid "Video"
-msgstr "視訊"
+msgstr "影片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
@@ -972,7 +971,7 @@ msgstr "<<< 滑動以取消"
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr "正在等候使用者上線..."
+msgstr "正在等候用戶上線..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
@@ -1013,7 +1012,7 @@ msgstr "1 小時"
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
-msgstr "1 日"
+msgstr "1 天"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:63
@@ -1045,7 +1044,7 @@ msgstr "你: "
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:257
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "typing..."
-msgstr "輸入中⋯"
+msgstr "輸入中..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:274
 #, fuzzy, qt-format
@@ -1082,12 +1081,12 @@ msgstr "%1 創建了群組"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
-msgstr "您添加了％1"
+msgstr "您加入了％1"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:312
 #, qt-format
 msgid "%1 added you"
-msgstr "%1 添加了您"
+msgstr "%1 加入了您"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:314
 #, qt-format
@@ -1097,7 +1096,7 @@ msgstr "%1 加入了群組"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:316
 #, qt-format
 msgid "%1 added %2"
-msgstr "％1添加了％2"
+msgstr "％1加入了％2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:321
 #, fuzzy, qt-format
