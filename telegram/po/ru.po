@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-10-28 19:25+0000\n"
-"Last-Translator: Igor Polyakov <igorpolyakov@protonmail.com>\n"
+"PO-Revision-Date: 2018-11-19 07:28+0000\n"
+"Last-Translator: ierihon <idekovets@mail.ru>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports/"
 "telegram-app/ru/>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
 "4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:44+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -217,7 +217,6 @@ msgid "Invalid password"
 msgstr "Неверный пароль"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
-#, fuzzy
 msgid "Deleted Account"
 msgstr "Удаленный аккаунт"
 
@@ -242,14 +241,12 @@ msgid "<b>%1</b> created the group"
 msgstr "<b>%1</b> создал группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
-#, fuzzy
 msgid "You joined the channel"
-msgstr "Вы присоединились к секретному чату."
+msgstr "Вы присоединились к чату"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 вступил в группу"
+msgstr "Вы вступили в группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -257,14 +254,13 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> вступил в группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "%1 вернулся в группу"
+msgstr "Вы вернулись в группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b> создал группу"
+msgstr "<b>%1</b> вернулся в группу"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
@@ -286,9 +282,9 @@ msgid "You added multiple users"
 msgstr "Вы добавили несколько пользователей"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> добавил Вас"
+msgstr "<b>%1</b> добавил нескольких пользователей"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
@@ -510,7 +506,6 @@ msgid "Night Mode"
 msgstr "Ночной режим"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
-#, fuzzy
 msgid "Use classic message checkmarks"
 msgstr "Использовать классические флажки сообщений"
 
@@ -743,9 +738,8 @@ msgid "Password"
 msgstr "Пароль"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:53
-#, fuzzy
 msgid "Password hint"
-msgstr "Пароль"
+msgstr "Подсказка пароля"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -814,7 +808,7 @@ msgstr ""
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "Личное"
+msgstr "Личные"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
@@ -866,12 +860,12 @@ msgstr "%1 участников, %2 в сети"
 #. TRANSLATORS: %1 is group chat member count.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:301
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:85
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 member"
 msgid_plural "%1 members"
-msgstr[0] "%1 участников"
+msgstr[0] "%1 участник"
 msgstr[1] "%1 участников"
-msgstr[2] "%1 участников"
+msgstr[2] "%1 участника"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
@@ -1139,9 +1133,8 @@ msgid "Forwarded from <b>%1</b>"
 msgstr "Переслано от <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessageStatus.qml:40
-#, fuzzy
 msgid "Edited"
-msgstr "Изменить имя"
+msgstr "Отредактированный"
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
