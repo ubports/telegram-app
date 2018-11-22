@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-05 18:55+0000\n"
-"PO-Revision-Date: 2018-11-22 07:08+0000\n"
+"PO-Revision-Date: 2018-11-22 12:56+0000\n"
 "Last-Translator: Louies <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports/telegram-app/zh_Hant/>\n"
@@ -57,7 +57,7 @@ msgstr "搜尋聯絡人..."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
-msgstr "開始祕密通訊模式"
+msgstr "開始私密通訊模式"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
@@ -129,7 +129,7 @@ msgid ""
 msgstr ""
 "將 %1 加入 %2？\n"
 "\n"
-"最近轉傳的訊息數："
+"最近轉寄的訊息數量："
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:502
@@ -191,7 +191,7 @@ msgstr "複製"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:64
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:269
 msgid "Forward"
-msgstr "轉傳"
+msgstr "轉發"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:74
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:232
@@ -222,12 +222,12 @@ msgstr "已刪除帳戶"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr "您已邀請 %1 進行祕密通訊。"
+msgstr "您已邀請 %1 進行私密通訊。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 邀請您進行祕密通訊。"
+msgstr "%1 邀請您進行私密通訊。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
@@ -364,15 +364,15 @@ msgstr "貼圖資訊"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:414
 msgid "Secret chat requested."
-msgstr "已送出祕密通訊請求。"
+msgstr "已送出私密通訊請求。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:426
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
-"已在其他裝置上接受或拒絕祕密通訊。\n"
-"註：Android 系統會自動接受祕密通訊的邀請。"
+"已在其他裝置上接受或拒絕私密通訊。\n"
+"註：Android 系統會自動接受私密通訊的邀請。"
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:458
@@ -591,7 +591,7 @@ msgid ""
 "Any secret chats will be lost."
 msgstr ""
 "您確定要登出嗎？\n"
-"所有祕密通訊將會被清空。"
+"所有私密通訊將會被清空。"
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
@@ -1215,7 +1215,7 @@ msgstr "向您發送一個語音留言"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:144
 msgid "shared a contact with you"
-msgstr "向您分享了聯繫方式"
+msgstr "向您分享了聯絡方式"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:148
 msgid "sent you a map"
@@ -1413,7 +1413,7 @@ msgstr "語音訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr "已收到聯繫"
+msgstr "已收到聯絡"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:650
 msgid "Document received"
@@ -1445,7 +1445,7 @@ msgstr "這是 Telegram 範圍"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr "搜尋:聊天、連絡人或郵件訊息"
+msgstr "搜尋:聊天、聯絡人或郵件訊息"
 
 #~ msgid "%1 are typing"
 #~ msgstr "%1 正在輸入"
