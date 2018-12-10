@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-10 19:12+0000\n"
+"POT-Creation-Date: 2018-12-10 23:15+0000\n"
 "PO-Revision-Date: 2017-12-09 18:48+0000\n"
 "Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
 "Language-Team: Romanian <https://translate.ubports.com/projects/ubports/"
@@ -112,7 +112,7 @@ msgstr "Anulează"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:17
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:188
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:603
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:604
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:110
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/app/telegram.desktop.h:1
 #: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:1
@@ -184,17 +184,17 @@ msgid "Select all"
 msgstr "Selectează tot"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:58
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:246
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:242
 msgid "Copy"
 msgstr "Copiază"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:64
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:269
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:265
 msgid "Forward"
 msgstr "Redirecţionează"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:74
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:232
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:228
 msgid "Delete"
 msgstr "Șterge"
 
@@ -350,27 +350,27 @@ msgid "<b>%1</b> joined the group via invite link"
 msgstr "<b>%1</b> sa alăturat grupului folosind link-ul de invitaţie"
 
 #. TRANSLATORS: Label for an empty 'chat area' side of the screen (for larger screens).
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:137
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:133
 msgid "Please select chat"
 msgstr "Selectează o conversaţie"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:211
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:207
 msgid "New messages"
 msgstr "Mesaje noi"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:252
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:248
 msgid "Reply"
 msgstr "Răspunde"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:260
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:256
 msgid "Sticker Pack info"
 msgstr "Informații despre pachetul de stickere"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:414
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:408
 msgid "Secret chat requested."
 msgstr "Cerere de conversaţie privată."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:426
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:420
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
@@ -379,12 +379,12 @@ msgstr ""
 "Trebuie să ştii că Android acceptă conversaţiile private în mod automat."
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:458
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:452
 msgid "Accept"
 msgstr "Acceptă"
 
 #. TRANSLATORS: Button label to reject an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:472
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:466
 msgid "Reject"
 msgstr "Respinge"
 
@@ -425,29 +425,29 @@ msgid "Select Chat"
 msgstr "Alege conversaţia"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Unmute"
 msgstr ""
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:99
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:111
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:110
 msgid "Mute"
 msgstr ""
 
 #. TRANSLATORS: Placeholder for the message input text area.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:221
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:216
 msgid "Type message"
 msgstr "Tastează mesajul"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:694
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:689
 msgid "Audio attachment not supported yet ;("
 msgstr "Trimiterea de fişiere audio nu a fost încă implementată :("
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:696
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:691
 msgid "You have to press and hold the record icon"
 msgstr "Va trebui să apeşi şi să menţii icoana de înregistrare"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:791
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSendMessage.qml:786
 msgid "Please grant microphone access on System Settings > Security & Privacy."
 msgstr ""
 "Trebuie să acorzi acces la microfon din  Configurări de sistem >  Securitate "
@@ -1134,7 +1134,7 @@ msgstr "%1 l-a îndepărtat pe %2"
 msgid "%1 joined the group via invite link"
 msgstr "%1 sa alăturat grupului prin legătura de invitaţie"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:199
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:196
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
 msgstr "Redirecţionat de la <b>%1</b>"
@@ -1193,22 +1193,22 @@ msgid "h:mm:ss"
 msgstr "hh:mm:ss"
 
 #. TRANSLATORS: Format string: time.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:291
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:292
 msgid "HH:mm"
 msgstr "HH:mm"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:295
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:296
 msgid "ddd HH:mm"
 msgstr "dddd HH:mm"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:299
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:300
 msgid "dd MMM"
 msgstr "dd MMMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:302
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:303
 msgid "dd MMM yy"
 msgstr "dd MMMM  yyyy"
 

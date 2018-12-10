@@ -233,8 +233,9 @@ bool Cutegram::fileIsAudio(const QString &pt)
 
 qreal Cutegram::htmlWidth(const QString &txt)
 {
+    p->doc->clear();
     p->doc->setHtml(txt);
-    return p->doc->size().width() + 10;
+    return p->doc->size().width() * 0.35;
 }
 
 void Cutegram::deleteFile(const QString &pt)
