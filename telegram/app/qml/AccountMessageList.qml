@@ -112,10 +112,6 @@ Rectangle {
         sourceSize: Qt.size(width,height)
         source: {
             return Theme.name == "Ubuntu.Components.Themes.SuruDark" ? "qrc:/qml/files/telegram_background_dark.png" : "qrc:/qml/files/telegram_background.png"
-//            if(backgroundManager.background == "")
-//                return Cutegram.background.length==0? "qrc:/qml/files/telegram_background.png" : Devices.localFilesPrePath + Cutegram.background
-//            else
-//                return backgroundManager.background
         }
         opacity: 0.7
     }
@@ -390,8 +386,6 @@ Rectangle {
             anchors.fill: parent
             onClicked: mlist.positionViewAtBeginning()
         }
-
-//        onClicked: mlist.positionViewAtBeginning()
 
         Icon {
             anchors.centerIn: parent
