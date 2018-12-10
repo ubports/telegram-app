@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-05 18:11+0000\n"
+"POT-Creation-Date: 2018-10-05 18:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -455,7 +455,7 @@ msgstr ""
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:95
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:727
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:722
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
@@ -480,7 +480,7 @@ msgstr ""
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:138
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:561
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:556
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:474
 msgid "Notifications"
 msgstr ""
@@ -841,12 +841,14 @@ msgstr ""
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:301
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:85
 #, qt-format
-msgid "%1 members"
-msgstr ""
+msgid "%1 member"
+msgid_plural "%1 members"
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:342
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:341
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:73
 #, qt-format
 msgid "%1 is typing"
@@ -854,35 +856,29 @@ msgid_plural "%1 are typing"
 msgstr[0] ""
 msgstr[1] ""
 
-#. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:345
-#, qt-format
-msgid "%1 are typing"
-msgstr ""
-
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:411
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:406
 msgid "Unknown"
 msgstr ""
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:420
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:415
 msgid "Mobile"
 msgstr ""
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:475
 #, qt-format
 msgid "@%1"
 msgstr ""
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:643
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:638
 msgid "Block user"
 msgstr ""
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:714
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:709
 msgid "Remove from group"
 msgstr ""
 

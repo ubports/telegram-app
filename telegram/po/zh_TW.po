@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libqtelegram\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 20:39+0000\n"
-"PO-Revision-Date: 2018-07-03 05:43+0000\n"
-"Last-Translator: P.-H. Lin <cypressyew@gmail.com>\n"
+"POT-Creation-Date: 2018-10-05 18:55+0000\n"
+"PO-Revision-Date: 2018-11-22 12:56+0000\n"
+"Last-Translator: Louies <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports/telegram-app/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.1.1\n"
 "X-Launchpad-Export-Date: 2016-11-30 05:45+0000\n"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountAddContactHeader.qml:40
@@ -57,7 +57,7 @@ msgstr "搜尋聯絡人..."
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:81
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:114
 msgid "New Secret Chat"
-msgstr "開始祕密通訊模式"
+msgstr "開始私密通訊模式"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:87
 msgid "Add to group"
@@ -71,7 +71,7 @@ msgstr "新增群組"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:396
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:424
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:341
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:356
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:11
 msgid "OK"
 msgstr "確定"
@@ -84,7 +84,7 @@ msgstr "聊天標題"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:355
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:31
 msgid "Add Contact"
-msgstr "新增聯絡人"
+msgstr "加入聯絡人"
 
 #. TRANSLATORS: Pick contact to add from address book.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:358
@@ -98,7 +98,7 @@ msgstr "輸入詳細資訊"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:375
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:434
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:352
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:367
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:197
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:13
 msgid "Cancel"
@@ -108,14 +108,14 @@ msgstr "取消"
 #. TRANSLATORS: Application name.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:409
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountPage.qml:267
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:337
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:352
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:17
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:198
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:188
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ui/dialogs/ConfirmationDialog.qml:8
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:607
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:603
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:110
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/app/telegram.desktop.h:1
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:1
+#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/app/telegram.desktop.h:1
+#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:1
 msgid "Telegram"
 msgstr "Telegram"
 
@@ -129,7 +129,7 @@ msgid ""
 msgstr ""
 "將 %1 加入 %2？\n"
 "\n"
-"最近轉傳的訊息數："
+"最近轉寄的訊息數量："
 
 #. TRANSLATORS: Title of the dialog with contact(s) import result.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountContactsPage.qml:502
@@ -156,7 +156,7 @@ msgstr "在 %2 位聯絡人中有 %1 位在 Telegram 上。"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:113
 #, qt-format
 msgid "Forward message to %1?"
-msgstr "轉傳訊息給 %1？"
+msgstr "轉寄訊息給 %1？"
 
 #. TRANSLATORS: %1 represents person to whom we are sending files to.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogList.qml:125
@@ -191,64 +191,61 @@ msgstr "複製"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:64
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:269
 msgid "Forward"
-msgstr "轉傳"
+msgstr "轉發"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountDialogPage.qml:74
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:232
 msgid "Delete"
 msgstr "刪除"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:169
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:50
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:62
 msgid "Sign In"
 msgstr "登入"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:170
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:169
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:25
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:154
 msgid "Sign Up"
 msgstr "註冊"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:215
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountListItem.qml:210
 msgid "Invalid password"
 msgstr "無效的密碼"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:50
-#, fuzzy
 msgid "Deleted Account"
-msgstr "新增帳號"
+msgstr "已刪除帳戶"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:56
 #, qt-format
 msgid "You have invited %1 to join a secret chat."
-msgstr "您已邀請 %1 進行祕密通訊。"
+msgstr "您已邀請 %1 進行私密通訊。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:58
 #, qt-format
 msgid "%1 invited you to join a secret chat."
-msgstr "%1 邀請您進行祕密通訊。"
+msgstr "%1 邀請您進行私密通訊。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:61
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:305
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
 msgid "You created the group"
-msgstr "您建立了此群組"
+msgstr "您建立了該群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:63
 #, qt-format
 msgid "<b>%1</b> created the group"
-msgstr "<b>%1</b> 建立了此群組"
+msgstr "<b>%1</b> 建立了群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:85
-#, fuzzy
 msgid "You joined the channel"
-msgstr "您已透過邀請連結加入群組"
+msgstr "您已透過邀請連結加入了群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:90
-#, fuzzy
 msgid "You joined the group"
-msgstr "%1 退出群組"
+msgstr "您加入了群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:92
 #, qt-format
@@ -256,19 +253,18 @@ msgid "<b>%1</b> joined the group"
 msgstr "<b>%1</b> 加入了群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:94
-#, fuzzy
 msgid "You returned to the group"
-msgstr "您建立了此群組"
+msgstr "您返回到了群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:96
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> returned to the group"
-msgstr "<b>%1</b> 建立了此群組"
+msgstr "<b>%1</b> 返回到群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:102
 #, qt-format
 msgid "You added <b>%1</b>"
-msgstr "您新增了 <b>%1</b>"
+msgstr "您加入了 <b>%1</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:105
 #, qt-format
@@ -278,22 +274,22 @@ msgstr "<b>%1</b> 將您加入"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:108
 #, qt-format
 msgid "<b>%1</b> added <b>%2</b>"
-msgstr "<b>%1</b> 新增了 <b>%2</b>"
+msgstr "<b>%1</b> 加入了 <b>%2</b>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:114
 msgid "You added multiple users"
-msgstr ""
+msgstr "您加入了多個用戶"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:116
-#, fuzzy, qt-format
+#, qt-format
 msgid "<b>%1</b> added multiple users"
-msgstr "<b>%1</b> 將您加入"
+msgstr "<b>1%1</b>加入了多個用戶"
 
 #. TRANSLATORS: %1 is the person, who left the group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:124
 #, qt-format
 msgid "<b>%1</b> left the group"
-msgstr "<b>%1</b> 離開了此群組"
+msgstr "<b>%1</b> 離開了群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:127
 #, qt-format
@@ -340,7 +336,7 @@ msgid "<b>%1</b> removed the group photo"
 msgstr "<b>%1</b> 移除了群組照片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageAction.qml:164
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:337
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:334
 msgid "You joined the group via invite link"
 msgstr "您已透過邀請連結加入群組"
 
@@ -364,19 +360,19 @@ msgstr "回覆"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:260
 msgid "Sticker Pack info"
-msgstr "貼圖包資訊"
+msgstr "貼圖資訊"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:414
 msgid "Secret chat requested."
-msgstr "已送出祕密通訊請求。"
+msgstr "已送出私密通訊請求。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:426
 msgid ""
 "Secret chat rejected or accepted from another device.\n"
 "Note that Android accepts secret chats automatically."
 msgstr ""
-"已在其他裝置上接受或拒絕祕密通訊。\n"
-"註：Android 系統會自動接受祕密通訊的邀請。"
+"已在其他裝置上接受或拒絕私密通訊。\n"
+"註：Android 系統會自動接受私密通訊的邀請。"
 
 #. TRANSLATORS: Button label to accept an incoming secret chat request. (Temporarily secret chats are automatically accepted.)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountMessageList.qml:458
@@ -466,7 +462,7 @@ msgstr "更換相片"
 #. TRANSLATORS: Settings section header, visible above phone and username fields.
 #. TRANSLATORS: Text of trailing action of group chat participants list item.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:95
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:727
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:722
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:99
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:66
 msgid "Info"
@@ -481,7 +477,7 @@ msgstr "電話"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:118
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:62
 msgid "Username"
-msgstr "使用者名稱"
+msgstr "用戶名稱"
 
 #. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:127
@@ -491,7 +487,7 @@ msgstr "訊息"
 #. TRANSLATORS: Text of notifications switch in settings.
 #. TRANSLATORS: Text of the notifications switch label in user profile page.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:138
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:561
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:556
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:474
 msgid "Notifications"
 msgstr "通知"
@@ -505,93 +501,97 @@ msgstr "按下 Enter 傳送"
 msgid "Night Mode"
 msgstr "夜間模式"
 
-#. TRANSLATORS: Settings section header.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:198
+msgid "Use classic message checkmarks"
+msgstr "使用經典郵件複選標記"
+
+#. TRANSLATORS: Settings section header.
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:213
 msgid "Support"
 msgstr "支援"
 
 #. TRANSLATORS: Text of settings item visible in the Support section.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:206
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:221
 msgid "Ask a Question"
 msgstr "發問"
 
 #. TRANSLATORS: Text of settings item visible in the Support section
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:216
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:231
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:162
 msgid "Telegram FAQ"
 msgstr "Telegram 常見問答集"
 
 #. TRANSLATORS: Settings section header.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:225
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:240
 msgid "Account"
-msgstr "帳號"
+msgstr "帳戶"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:236
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:251
 msgid "Log out"
 msgstr "登出"
 
 #. TRANSLATORS: Visible at bottom of settings screen. The argument is application version.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:249
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:264
 #, qt-format
 msgid "Telegram for Ubuntu %1"
-msgstr "Telegram for Ubuntu %1"
+msgstr "Ubuntu 的 Telegram %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:299
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:314
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:309
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:41
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:102
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:92
 msgid "online"
 msgstr "上線"
 
 #. TRANSLATORS: %1 is the time when the person was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:302
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:317
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:312
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:44
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:105
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:95
 #, qt-format
 msgid "last seen %1"
 msgstr "上次上線 %1"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:305
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:320
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:315
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:47
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:108
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:98
 msgid "last seen recently"
-msgstr ""
+msgstr "最近一次查看"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:308
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:323
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:318
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:50
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:111
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:101
 msgid "last seen within a week"
-msgstr ""
+msgstr "最後出現在一個星期內"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:311
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:326
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:321
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:53
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:114
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:104
 msgid "last seen within a month"
-msgstr ""
+msgstr "最後出現在一個月內"
 
 #. TRANSLATORS: Indicates when the contact was last seen.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:314
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:329
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:324
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:56
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:117
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:107
 msgid "last seen a long time ago"
-msgstr ""
+msgstr "最後出現在很久以前"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:338
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountSettings.qml:353
 msgid ""
 "Are you sure you want to log out?\n"
 "Any secret chats will be lost."
 msgstr ""
 "您確定要登出嗎？\n"
-"所有祕密通訊將會被清空。"
+"所有私密通訊將會被清空。"
 
 #. TRANSLATORS: %1 is the the newly chosen username, one that is availalbe
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:35
@@ -602,25 +602,25 @@ msgstr "%1 可用。"
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:38
 msgid "Sorry, this username is already taken."
-msgstr "抱歉，此使用者名稱已被使用。"
+msgstr "抱歉，此用戶名稱已被使用。"
 
 #. TRANSLATORS: Error message when choosing new username.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:46
 msgid "Sorry, this username is invalid."
-msgstr "抱歉，此使用者名稱無效。"
+msgstr "抱歉，此用戶名稱無效。"
 
 #. TRANSLATORS: Placeholder of the username text field.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:102
 msgid "Your Username"
-msgstr "您的使用者名稱"
+msgstr "您的用戶名稱"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:110
 msgid "A username must have at least 5 characters."
-msgstr "使用者名稱至少需要五個字元。"
+msgstr "用戶名稱至少需要五個字元。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:133
 msgid "Checking username..."
-msgstr "檢查使用者名稱中..."
+msgstr "檢查用戶名稱中..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AccountUsernamePage.qml:141
 msgid ""
@@ -629,9 +629,8 @@ msgid ""
 "phone number.<br /><br />You can use <b>a-z</b>, <b>0-9</b> and underscores."
 "<br />Minimum length is <b>5</b> characters."
 msgstr ""
-"您可以在 <b>Telegram</b> 上建立一個使用者名稱。如此以來，其他人便可以透過此使"
-"用者名稱找到您，而無須知道您的電話號碼。<br /><br />您可以使用 <b>a-z</b>，"
-"<b>0-9</b> 與底線。<br />最小長度限制為 <b>5</b> 個字元。"
+"您可以在 <b>Telegram</b> 上建立一個用戶名稱。如此以來，其他人便可以透過此用戶名稱找到您，而無須知道您的電話號碼。<br /><br />"
+"您可以使用 <b>a-z</b>，<b>0-9</b> 與底線。<br />最小長度限制為 <b>5</b> 個字元。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AddContactPage.qml:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthNumberPage.qml:86
@@ -694,7 +693,7 @@ msgstr "重新傳送驗證碼"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:185
 msgid "Request Call"
-msgstr ""
+msgstr "電話請求"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthCodePage.qml:187
 msgid "Calling, please wait..."
@@ -723,13 +722,17 @@ msgstr "號碼是否正確？"
 msgid "Phone number already exists."
 msgstr "電話號碼已存在。"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:16
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:18
 msgid "Enter Password"
 msgstr "輸入密碼"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:35
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:37
 msgid "Password"
 msgstr "密碼"
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/AuthPasswordPage.qml:53
+msgid "Password hint"
+msgstr "密碼提示"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/InstallStickerDialog.qml:67
 msgid "Install"
@@ -742,7 +745,7 @@ msgstr "關閉"
 #. TRANSLATORS: Text of the button visible on the intro pages.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPage.qml:177
 msgid "Start Messaging"
-msgstr "開始傳訊"
+msgstr "開始傳訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:18
 msgid "Welcome to the era<br>of fast and secure messaging"
@@ -764,7 +767,7 @@ msgstr "免費"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:28
 msgid "<b>Telegram</b> is free forever. No ads.<br> No subscription fees"
-msgstr "<b>Telegram</b> 永遠免費。沒有廣告。<br> 也不必收取註冊費。"
+msgstr "<b>Telegram</b> 永遠免費。沒有廣告。<br> 也不必收取註冊費"
 
 #. TRANSLATORS: Adjective, describing secure application.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:32
@@ -796,11 +799,13 @@ msgstr "<b>Telegram</b> 讓您可從各個裝置<br>存取您的訊息"
 #. TRANSLATORS: Adjective, describing application allowing for private conversations.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:47
 msgid "Private"
-msgstr "隱私"
+msgstr "私人"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/IntroPageListModel.qml:48
 msgid "<b>Telegram</b> messages are heavily encrypted<br>"
 msgstr ""
+"<b> Telegram </ b>消息被大量加密<b\n"
+"<br>"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/PickerPage.qml:11
 msgid "Choose"
@@ -819,7 +824,7 @@ msgstr "分享"
 #. TRANSLATORS: Action text to add member to group chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:41
 msgid "Add member"
-msgstr "新增成員"
+msgstr "加入成員"
 
 #. TRANSLATORS: Action text to change group chat title.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:53
@@ -829,69 +834,62 @@ msgstr "更換群組名稱"
 
 #. TRANSLATORS: Placeholder for new group chat title
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:180
-#, fuzzy
 msgid "New group chat title"
-msgstr "聊天標題"
+msgstr "新的群組聊天標題"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:188
-#, fuzzy
 msgid "Change Title"
-msgstr "聊天標題"
+msgstr "更改標題"
 
 #. TRANSLATORS: %1 is how many members the group chat has, %2 is how many are online.
 #. TRANSLATORS: %1 is group chat member count, %2 is online member count.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:298
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:92
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:82
 #, qt-format
 msgid "%1 members, %2 online"
-msgstr ""
+msgstr "%1 成員,%2 線上"
 
 #. TRANSLATORS: %1 is how many members the group chat has.
 #. TRANSLATORS: %1 is group chat member count.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:301
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:95
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:85
 #, qt-format
-msgid "%1 members"
-msgstr "%1 位成員"
+msgid "%1 member"
+msgid_plural "%1 members"
+msgstr[0] "%1位成員"
 
 #. TRANSLATORS: Indicates in the chat header who is typing.
 #. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:342
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:83
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:341
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:73
 #, qt-format
 msgid "%1 is typing"
 msgid_plural "%1 are typing"
-msgstr[0] "%1 正在輸入"
-
-#. TRANSLATORS: Indicates in the chat header which contacts are typing.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:345
-#, qt-format
-msgid "%1 are typing"
-msgstr "%1 正在輸入"
+msgstr[0] "%1 正在輸入中"
 
 #. TRANSLATORS: Indicates unknown (not provided) phone number of a user in the profile.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:411
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:406
 msgid "Unknown"
 msgstr "未知"
 
 #. TRANSLATORS: The subtitle for the user's phone field in user profile.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:420
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:415
 msgid "Mobile"
 msgstr "手機"
 
 #. TRANSLATORS: Title for the user's username field. Normally should take be "@username", no space between @ symbol and username.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:480
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:475
 #, qt-format
 msgid "@%1"
 msgstr "@%1"
 
 #. TRANSLATORS: Text of the block user switch label in user profile page.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:643
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:638
 msgid "Block user"
-msgstr "封鎖使用者"
+msgstr "封鎖用戶"
 
 #. TRANSLATORS: Text of leading action of group chat participants list item.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:714
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/ProfilePage.qml:709
 msgid "Remove from group"
 msgstr "從群組中移除"
 
@@ -917,11 +915,11 @@ msgstr "今天尚未傳送 Telegram 訊息。"
 msgid ""
 "If you want Telegram notifications when you're not using the app, sign in to "
 "your Ubuntu One account."
-msgstr ""
+msgstr "如果您在不使用該應用程序的情況下需要Telegram通知，請登入您的Ubuntu One帳戶。"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:482
 msgid "Sign in to Ubuntu One"
-msgstr "登入 Ubuntu One"
+msgstr "登入至 Ubuntu One"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:490
 msgid "Remind me later"
@@ -929,26 +927,26 @@ msgstr "稍後提醒我"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/telegram.qml:498
 msgid "Don't want notifications"
-msgstr "不想要有通知"
+msgstr "不想要通知"
 
 #. TRANSLATORS: Main menu list separator, right above signed in accounts list.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:187
 msgid "Accounts"
-msgstr "帳號"
+msgstr "帳戶"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AccountPanel.qml:214
 msgid "Add Account"
-msgstr "新增帳號"
+msgstr "加入帳戶"
 
 #. TRANSLATORS: Used in attach menu, when sending a photo to the conversation.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:91
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:292
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:289
 msgid "Photo"
 msgstr "相片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:103
 msgid "Video"
-msgstr "視訊"
+msgstr "影片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/AttachPanel.qml:115
 msgid "File"
@@ -961,7 +959,7 @@ msgstr "<<< 滑動以取消"
 #. TRANSLATORS: Used at bottom of screen when requesting secret chat.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:34
 msgid "Waiting for user to get online..."
-msgstr "正在等候使用者上線⋯"
+msgstr "正在等候用戶上線..."
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:36
 msgid "Secret chat requested"
@@ -974,7 +972,7 @@ msgstr "已建立秘密通訊"
 #. TRANSLATORS: Used at bottom of screen when secret chat was discarded by the other party.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:41
 msgid "Secret chat discarded"
-msgstr ""
+msgstr "私密訊息已丟棄"
 
 #. TRANSLATORS: Secret chat self destruct timer disabled.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:48
@@ -1001,7 +999,7 @@ msgstr "1 小時"
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:60
 msgid "1 day"
-msgstr "1 日"
+msgstr "1 天"
 
 #. TRANSLATORS: Secret chat self destruct timer.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DelegateUtils.qml:63
@@ -1010,11 +1008,11 @@ msgstr "1 週"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:61
 msgid "Leave chat"
-msgstr ""
+msgstr "離開聊天"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:67
 msgid "Are you sure you want to leave this chat?"
-msgstr ""
+msgstr "你確定要離開這個聊天室嗎？"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:78
 msgid "Clear history"
@@ -1026,99 +1024,102 @@ msgstr "您確定要清除歷史記錄？"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:236
 msgid "You: "
-msgstr ""
+msgstr "你: "
 
 #. TRANSLATORS: Indicates in a subtitle of a dialog list item that someone is typing.
 #. TRANSLATORS: Indicates in the chat header the contact is typing.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:257
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:86
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramHeader.qml:76
 msgid "typing..."
-msgstr "輸入中⋯"
+msgstr "輸入中..."
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:277
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:274
 #, qt-format
 msgid "You changed the group title to %1"
-msgstr ""
+msgstr "您將群組名稱更改為 %1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:279
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:276
 #, qt-format
 msgid "%1 changed the group title to %2"
-msgstr ""
+msgstr "％1 將組名稱更改為 ％2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:286
-#, fuzzy
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:283
 msgid "Voice message"
-msgstr "輸入訊息"
+msgstr "語音留言"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:288
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:285
 msgid "Sticker"
-msgstr ""
+msgstr "貼圖"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:300
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:297
 #, qt-format
 msgid "%1 joined your secret chat."
-msgstr ""
+msgstr "％1 加入了您的私密聊天。"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:302
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:299
 msgid "You joined the secret chat."
-msgstr ""
+msgstr "你加入了秘密聊天。"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:307
-#, fuzzy, qt-format
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:304
+#, qt-format
 msgid "%1 created the group"
-msgstr "%1 退出群組"
+msgstr "%1 創建了群組"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:313
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:310
 #, qt-format
 msgid "You added %1"
-msgstr ""
+msgstr "您加入了％1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:315
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:312
 #, qt-format
 msgid "%1 added you"
-msgstr ""
+msgstr "%1 加入了您"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:317
-#, fuzzy, qt-format
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:314
+#, qt-format
 msgid "%1 joined the group"
-msgstr "%1 退出群組"
+msgstr "%1 加入了群組"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:319
-#, fuzzy, qt-format
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:316
+#, qt-format
 msgid "%1 added %2"
-msgstr "%1 %2"
+msgstr "％1加入了％2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:324
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:321
 #, qt-format
 msgid "%1 left the group"
 msgstr "%1 退出群組"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:327
-#, fuzzy, qt-format
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:324
+#, qt-format
 msgid "You removed %1"
-msgstr "%1 已移除 %2"
+msgstr "您刪除了％1"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:329
-#, fuzzy, qt-format
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:326
+#, qt-format
 msgid "%1 removed you"
-msgstr "%1 已移除 %2"
+msgstr "%1 已刪除您"
 
 #. TRANSLATORS: Notification message saying: person A removed person B (from a group)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:331
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:328
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:226
 #, qt-format
 msgid "%1 removed %2"
 msgstr "%1 已移除 %2"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:339
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/DialogsListItem.qml:336
 #, qt-format
 msgid "%1 joined the group via invite link"
-msgstr ""
+msgstr "％1透過邀請鏈結加入了該群組"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:224
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessagesListItem.qml:199
 #, qt-format
 msgid "Forwarded from <b>%1</b>"
-msgstr ""
+msgstr "轉發自<b>%1</b>"
+
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/MessageStatus.qml:40
+msgid "Edited"
+msgstr "編輯"
 
 #. TRANSLATORS: User status: deleted
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/components/TelegramContactsListItem.qml:34
@@ -1138,7 +1139,7 @@ msgstr "hh:mm"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:35
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:49
 msgid "MMM d"
-msgstr "M月d日"
+msgstr "MMM d"
 
 #. TRANSLATORS %1 refers to a time of the day
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:54
@@ -1156,175 +1157,174 @@ msgstr "昨天 %1"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:60
 #, qt-format
 msgid "%1 at %2"
-msgstr "%1 %2"
+msgstr "%1\t於 %2"
 
 #. TRANSLATORS: localized time string, see available formats at
 #. http://doc.qt.io/qt-5/qml-qtqml-qt.html#formatDateTime-method
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
 msgid "mm:ss"
-msgstr ""
+msgstr "mm:ss"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/app/qml/js/time.js:68
-#, fuzzy
 msgid "h:mm:ss"
-msgstr "hh:mm"
+msgstr "時:分:秒"
 
 #. TRANSLATORS: Format string: time.
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:289
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:291
 msgid "HH:mm"
-msgstr ""
+msgstr "時:分"
 
 #. TRANSLATORS: Format string: day and time (ex. Tue 21:30)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:293
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:295
 msgid "ddd HH:mm"
-msgstr ""
+msgstr "ddd 時:分"
 
 #. TRANSLATORS: Format string: day and month (ex. 28 Feb)
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:297
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:299
 msgid "dd MMM"
-msgstr ""
+msgstr "dd MMM"
 
 #. TRANSLATORS: Format string: full date
-#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:300
+#: /home/florian/UT-Apps/telegram-app/github/telegram/app/telegram.cpp:302
 msgid "dd MMM yy"
-msgstr ""
+msgstr "yy MMM dd"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:120
 msgid "sent you a message"
-msgstr ""
+msgstr "向您發送一封訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:124
 msgid "sent you a photo"
-msgstr ""
+msgstr "向您發送一張照片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:128
 msgid "sent you a sticker"
-msgstr ""
+msgstr "向您發送一個貼圖"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:132
 msgid "sent you a video"
-msgstr ""
+msgstr "向您發送一個影片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:136
 msgid "sent you a document"
-msgstr ""
+msgstr "向您發送一份文件"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:140
 msgid "sent you a voice message"
-msgstr ""
+msgstr "向您發送一個語音留言"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:144
 msgid "shared a contact with you"
-msgstr ""
+msgstr "向您分享了聯絡方式"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:148
 msgid "sent you a map"
-msgstr ""
+msgstr "發給你一個位置"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:153
 #, qt-format
 msgid "%1: %2"
-msgstr ""
+msgstr "%1: %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:158
 #, qt-format
 msgid "%1 sent a message to the group"
-msgstr ""
+msgstr "%1 向群組發送了訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:163
 #, qt-format
 msgid "%1 sent a photo to the group"
-msgstr ""
+msgstr "％1向群組發送了圖片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:168
-#, fuzzy, qt-format
+#, qt-format
 msgid "%1 sent a sticker to the group"
-msgstr "%1 退出群組"
+msgstr "%1 向群組發送了一張貼圖"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:174
 #, qt-format
 msgid "%1 sent a video to the group"
-msgstr ""
+msgstr "％1向群組發送了影片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:179
 #, qt-format
 msgid "%1 sent a document to the group"
-msgstr ""
+msgstr "％1向群組發送了一件文件"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:184
 #, qt-format
 msgid "%1 sent a voice message to the group"
-msgstr ""
+msgstr "％1向群組發送了一個語音留言"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:189
 #, qt-format
 msgid "%1 sent a contact to the group"
-msgstr ""
+msgstr "％1向群組發送了聯絡人"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:194
 #, qt-format
 msgid "%1 sent a map to the group"
-msgstr ""
+msgstr "％1向群組發送了位置"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:199
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:220
 #, qt-format
 msgid "%1 invited you to the group"
-msgstr ""
+msgstr "％1邀請您加入該群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:204
 #, qt-format
 msgid "%1 changed group name"
-msgstr ""
+msgstr "％1更改了群組名稱"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:209
 #, qt-format
 msgid "%1 changed group photo"
-msgstr ""
+msgstr "％1更改了群組圖片"
 
 #. TRANSLATORS: Notification message saying: person A invited person B (to a group)
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:215
 #, qt-format
 msgid "%1 invited %2"
-msgstr ""
+msgstr "％1邀請％2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:231
 #, qt-format
 msgid "%1 removed you from the group"
-msgstr ""
+msgstr "％1將您從群組中刪除"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:236
 #, qt-format
 msgid "%1 has left the group"
-msgstr ""
+msgstr "％1已離開群組"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:241
 #, qt-format
 msgid "%1 has returned to the group"
-msgstr ""
+msgstr "％1已返回群組"
 
 #. TRANSLATORS: This format string tells location, like: @ McDonals, New York
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:246
 #, qt-format
 msgid "@ %1"
-msgstr ""
+msgstr "@ %1"
 
 #. TRANSLATORS: This format string tells who has checked in (in a geographical location).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:248
 #, qt-format
 msgid "%1 has checked-in"
-msgstr ""
+msgstr "％1 已登記"
 
 #. TRANSLATORS: This format string tells who has just joined Telegram.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:254
 #, qt-format
 msgid "%1 joined Telegram!"
-msgstr ""
+msgstr "％1加入了Telegram!"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:259
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:265
 msgid "New login from unrecognized device"
-msgstr ""
+msgstr "從無法識別的設備中進行新的登入"
 
 #. TRANSLATORS: This format string indicates new login of: (device name) at (location).
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:264
@@ -1334,18 +1334,18 @@ msgstr "%1 @ %2"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:269
 msgid "updated profile photo"
-msgstr ""
+msgstr "更新個人資料圖片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:274
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:279
 #: /home/florian/UT-Apps/telegram-app/github/telegram/push/pushhelper.cpp:284
 msgid "You have a new message"
-msgstr ""
+msgstr "您有一個新的訊息"
 
 #. TRANSLATORS: Time format for items displayed in the scope.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/config.h:24
 msgid "h:mm ddd, dd-MM-yy"
-msgstr "h:mm ddd, dd-MM-yy"
+msgstr "ddd h:mm, yy-MM-dd"
 
 #. TRANSLATORS: call to action: open this application
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:62
@@ -1357,63 +1357,63 @@ msgstr "開啟應用程式"
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:120
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:149
 msgid "Open chat"
-msgstr ""
+msgstr "打開聊天"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/preview.cpp:94
 msgid "Call"
-msgstr ""
+msgstr "通話"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:58
 msgid "Failed to get Telegram data"
-msgstr ""
+msgstr "無法取得Telegram數據"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:59
 msgid "Touch here to open app"
-msgstr "點這裡來開啟應用程式"
+msgstr "點擊這裡來開啟應用程式"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:167
 msgid "Results in: Contacts & Chats"
-msgstr ""
+msgstr "搜尋結果: 連絡人和聊天記錄"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:184
 msgid "Results in: Messages"
-msgstr ""
+msgstr "結果: 訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:291
 msgid "People You Talk To"
-msgstr ""
+msgstr "與你交談的人"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:292
 msgid "Recent Chats"
-msgstr ""
+msgstr "最近的聊天記錄"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:293
 msgid "Recent Photos"
-msgstr ""
+msgstr "最近的照片"
 
 #. TRANSLATORS: Unread message count shown in the scope unread category.
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new message"
-msgstr "%1 條新訊息"
+msgstr "%1 封新的訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:298
 #, qt-format
 msgid "%1 new messages"
-msgstr "%1 條新訊息"
+msgstr "%1 封新的訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:301
 #, qt-format
 msgid "Unread Chats (%1)"
-msgstr ""
+msgstr "未讀訊息（%1）"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:642
 msgid "Audio message"
-msgstr ""
+msgstr "語音訊息"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:646
 msgid "Contact received"
-msgstr ""
+msgstr "已收到聯絡"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:650
 msgid "Document received"
@@ -1429,23 +1429,26 @@ msgstr "已收到影片"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:681
 msgid "Unhandled media type"
-msgstr ""
+msgstr "未處理的媒體類型"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:756
 msgid "Login to Telegram"
-msgstr "登入 Telegram"
+msgstr "登入至Telegram"
 
 #: /home/florian/UT-Apps/telegram-app/github/telegram/scope/query.cpp:792
 msgid "No messages received Today."
 msgstr "今日沒有收到任何訊息。"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:2
+#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:2
 msgid "This is the Telegram scope"
-msgstr ""
+msgstr "這是 Telegram 範圍"
 
-#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_vivid_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:3
+#: /home/florian/UT-Apps/telegram-app/github/telegram/build_clickable_xenial_arm-linux-gnueabihf/scope/com.ubuntu.telegram_sctelegram.ini.h:3
 msgid "Search for a chat, contact or message"
-msgstr ""
+msgstr "搜尋:聊天、聯絡人或郵件訊息"
+
+#~ msgid "%1 are typing"
+#~ msgstr "%1 正在輸入"
 
 #~ msgid "Profile Info"
 #~ msgstr "個人資訊"
