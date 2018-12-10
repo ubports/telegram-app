@@ -11,7 +11,7 @@ import "../js/avatar.js" as Avatar
 
 ListItem {
     id: message_item
-    width: 100
+    width: 85
     height: (logicalHeight > minimumHeight) ? logicalHeight : minimumHeight
     clip: true
     divider.visible: false
@@ -26,7 +26,7 @@ ListItem {
             ? action_item.height : column.height + frameMargins*2 + textMargins*2
     property real minimumHeight: contact_image.visible ? contact_image.height + units.gu(1) : 0
 
-    property real maximumWidth: width * 0.85 - (contact_image.visible ? contact_image.width : 0)
+    property real maximumWidth: width - (contact_image.visible ? contact_image.width : 0)
     property real minimumWidth: 0
 
     property real textMargins: units.dp(4)
@@ -117,9 +117,6 @@ ListItem {
             onClicked:{
                 userTapBackHome = false;
                 message_item.dialogRequest(telegramObject.fakeDialogObject(contact_image.user.id, false))
-                console.log("\n")
-                console.log("dialogIsChannel: "+dialogIsChannel)
-                console.log("megagroup: "+message_item.chat.megaGroup)
             }
         }
 
