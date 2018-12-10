@@ -60,15 +60,6 @@ Item {
         clip: true
         model: fmodel
 
-        /* @todo: enable again this only for desktop */
-        /*highlightMoveDuration: 0
-        highlight: Rectangle {
-            width: listv.width
-            height: units.gu(4)
-            color: Colors.list_pressed
-            radius: units.gu(0.25)
-        }*/
-
         delegate: Item {
             id: listv_item
             width: listv.width

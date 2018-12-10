@@ -7,7 +7,7 @@ import "js/colors.js" as Colors
 
 Item {
     id: msg_reply
-    width: row.width + units.gu(1.5)
+    width: 85
     height: row.height + units.gu(0.5)
     visible: realMessage
 
@@ -18,14 +18,15 @@ Item {
 
     property Message realMessage: (message && message.replyToMsgId != 0) ? telegram.message(message.replyToMsgId, dialog.peer.channelId) : replyMessage
 
-    property real maximumWidth: 85
+    property real maximumWidth: 0
 
     signal messageFocusRequest(int msgId, int channelId)
 
     Row {
         id: row
-        anchors.centerIn: parent
+        anchors.left: parent.left
         spacing: units.dp(6)
+        width: maximumWidth
 
         Rectangle {
             id: reply_separator
@@ -36,6 +37,7 @@ Item {
 
         Column {
             id: column
+            width: parent.width
             anchors.verticalCenter: parent.verticalCenter
             spacing: units.gu(0.25)
 
@@ -138,10 +140,10 @@ Item {
 
             Label {
                 id: txt
-                width: maximumWidth
                 fontSize: "small"
                 horizontalAlignment: Text.AlignLeft
                 visible: text.length != 0
+                width: parent.width
                 maximumLineCount: 1
                 elide: Text.ElideRight
                 text: realMessage ? realMessage.message : ""

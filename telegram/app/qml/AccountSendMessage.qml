@@ -97,7 +97,6 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: units.dp(6)
         text: isMuted ? i18n.tr("Unmute") : i18n.tr("Mute")
-//        iconName: "notification"
         color: theme.palette.normal.overlaySecondaryText
         onClicked: {
             //if (override) return;
@@ -212,10 +211,6 @@ Rectangle {
 
         // This value is to avoid letter and underline being cut off.
         height: units.gu(4.3)
-
-        // To work on desktop change the following line to:
-        // enabled: true
-        enabled: Connectivity.online && telegramObject.connected
 
         // TRANSLATORS: Placeholder for the message input text area.
         placeholderText: i18n.tr("Type message")
