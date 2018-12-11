@@ -236,6 +236,17 @@ ListItem {
                     visible: !hasMedia
 
                     Label {
+                        id: render_helper
+                        visible: false
+                        fontSize: message_item.hasMedia ? "small" : "medium"
+                        font.weight: Font.Light
+                        horizontalAlignment: Text.AlignLeft
+                        wrapMode: Text.WordWrap
+                        textFormat: Text.RichText
+                        text: message_item.messageText
+                    }
+
+                    Label {
                         id: message_text
                         objectName: "messageText"
 
@@ -243,13 +254,11 @@ ListItem {
                             top: parent.top
                             left: parent.left
                         }
-                        // units.dp is used here, because Label wraps too early as compared to TextEdit.
-                        width: Math.min(units.dp(htmlWidth), maximumWidth * 0.85)
                         height: contentHeight
                         fontSize: message_item.hasMedia ? "small" : "medium"
                         font.weight: Font.Light
                         horizontalAlignment: Text.AlignLeft
-                        wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                        wrapMode: Text.WordWrap
                         textFormat: Text.RichText
                         text: message_item.messageText
                         color: message.out? "white" : theme.palette.normal.backgroundText
@@ -265,7 +274,9 @@ ListItem {
                                 Qt.openUrlExternally(link);
                             }
                         }
-                        property real htmlWidth: Cutegram.htmlWidth(text)
+                        Component.onCompleted: {
+                            width = Math.min(render_helper.width, maximumWidth * 0.85)
+                        }
                     }
 
                     MessageStatus {
@@ -279,7 +290,7 @@ ListItem {
                         message: message_item.message
                         hasMedia: message_item.hasMedia
 
-                        property int deltaY: message_wrapper.timeFitsSide ? -units.dp(4) : height
+                        property int deltaY: message_wrapper.timeFitsSide ? -units.dp(3.5) : height
                         property int extraHeight: message_wrapper.timeFitsSide ? 0 : height
 
                         states: [
@@ -290,7 +301,7 @@ ListItem {
                                     target: message_status
                                     anchors.right: undefined
                                     anchors.topMargin: -units.dp(12)
-                                    x: column.x + column.width - message_status.width - units.gu(1)
+                                    x: column.x + column.width - message_status.width - units.gu(0.5)
                                 }
                             },
                             State {
